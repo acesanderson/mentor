@@ -13,3 +13,7 @@ openai==1.51.1
 py_expression_eval==0.3.14
 pytest==8.3.3
 python-dotenv==1.0.1
+chromadb==0.5.11
+FlagEmbedding==1.2.11
+pandas==2.2.3
+rich==13.9.2
