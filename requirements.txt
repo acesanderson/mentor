@@ -1,0 +1,15 @@
+Chain==1.0
+Curate==0.15
+lp==1.0.0
+pydantic==2.9.2
+anthropic==0.35.0
+chromadb==0.5.5
+google_api_python_client==2.133.0
+groq==0.11.0
+instructor==1.5.1
+Jinja2==3.1.4
+ollama==0.3.3
+openai==1.51.1
+py_expression_eval==0.3.14
+pytest==8.3.3
+python-dotenv==1.0.1
