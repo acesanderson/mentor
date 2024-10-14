@@ -1,0 +1,6 @@
+README.md
+setup.py
+Mentor.egg-info/PKG-INFO
+Mentor.egg-info/SOURCES.txt
+Mentor.egg-info/dependency_links.txt
+Mentor.egg-info/top_level.txt

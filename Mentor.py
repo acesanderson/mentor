@@ -244,7 +244,7 @@ def identify_courses(curriculum: Curriculum) -> Curation:
 
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description="Run the Mentor.py script.")
-	parser.add_argument("topic", type=str, help="The topic for the curriculum.")
+	parser.add_argument("topic", type=str, nargs = "?", help="The topic for the curriculum.")
 	args = parser.parse_args()
 	if args.topic:
 		topic = args.topic
