@@ -21,6 +21,18 @@ from Curate import Curate  # type: ignore
 from Get import Get
 from Chain import Prompt, Model, Chain, Parser
 import argparse
+import json
+from message_store import MessageStore
+from rich import console
+from pathlib import Path
+from json import JSONEncoder
+
+# Initialize our log
+# ------------------------------------------------
+# dir_path = Path(__file__).parent
+# console = console.Console(width=100)
+# messagestore = MessageStore(console, dir_path / ".mentor_messages.pkl")
+log = {}
 
 # Our pydantic data models
 # ------------------------------------------------
@@ -154,7 +166,11 @@ prompt_lnd = """
 A colleague has asked you to create a learning path on the following topic:
 {{topic}}
 
-Please design a learning path.
+Please design a learning path. Put your answer between XML tags.
+
+<curriculum_description>
+[Your description of the learning path curriculum here]
+</curriculum_description>
 """.strip()
 
 prompt_curriculum_specialist = """
@@ -190,6 +206,9 @@ And here are the courses that you have to choose from:
 Please select the most appropriate courses to fulfill the objectives of this curriculum.
 REMEMBER TO PICK 6-12 COURSES TOTAL; NO LESS THAN SIX, NO MORE THAN TWELVE.
 YOU SHOULD MAKE SURE YOU ARE PROVIDING THE COURSE TITLE VERBATIM AS IT APPEARS IN THE COURSE DATABASE.
+
+Provide a structured Curation object that includes the topic of the curriculum and the course titles of the selected video courses.
+"Topic" should be the verbatim topic of the curriculum provided to you above.
 """.strip()
 
 # Our chains
@@ -205,7 +224,13 @@ def lnd_curriculum(topic: str) -> str:
 	messages = Chain.create_messages(persona_lnd)
 	chain = Chain(prompt, model)
 	response = chain.run(messages = messages, input_variables = {'topic': topic})
-	return response.content
+	log['lnd_curriculum_prompt'] = response.prompt
+	# Extract the answer from between the XML tags
+	response_content = response.content
+	start = response_content.find("<curriculum_description>") + len("<curriculum_description>")
+	end = response_content.find("</curriculum_description>")
+	return response_content[start:end]
+
 
 def curriculum_specialist_curriculum(ideal_curriculum: str, topic: str) -> Curriculum:
 	"""
@@ -218,6 +243,7 @@ def curriculum_specialist_curriculum(ideal_curriculum: str, topic: str) -> Curri
 	parser = Parser(Curriculum)
 	chain = Chain(prompt, model, parser)
 	response = chain.run(messages = messages, input_variables = {'ideal_curriculum': ideal_curriculum, 'topic': topic})
+	log['curriculum_specialist_prompt'] = response.prompt
 	return response.content
 
 def identify_courses(curriculum: Curriculum) -> Curation:
@@ -228,23 +254,40 @@ def identify_courses(curriculum: Curriculum) -> Curation:
 	recommended_courses = []
 	for module in curriculum.modules:
 		# RAG: get the top 10 courses for this module
-		courses = Curate(module.title)
-		courses = [c[0] for c in courses]
+		course_matches = Curate(module.title)
 		# Get a pretty printed version of the courses
-		recommended_courses += courses
-	recommended_courses = "\n".join([f"{course[0]}: {course[1]}" for course in courses])
+		recommended_courses += course_matches 
+	course_context = "\n".join([f"{course[0]}: {course[1]}" for course in recommended_courses])
+	print("COURSE CONTEXT: " + course_context)
 	# Ask the library
 	model = Model("gpt")
 	prompt = Prompt(prompt_video_course_librarian)
 	messages = Chain.create_messages(video_course_librarian)
 	parser = Parser(Curation)
 	chain = Chain(prompt, model, parser)
-	response = chain.run(messages = messages, input_variables = {'topic': module.title, 'curriculum': curriculum, 'courses': courses})
+	response = chain.run(messages = messages, input_variables = {'topic': module.title, 'curriculum': curriculum, 'courses': course_context})
+	log['video_course_librarian_prompt'] = response.prompt
 	return response.content
+
+def Mentor(topic: str) -> Curation:
+	"""
+	Runs the entire Mentor pipeline.
+	"""
+	ideal_curriculum = lnd_curriculum(topic)
+	curriculum = curriculum_specialist_curriculum(ideal_curriculum, topic)
+	curation = identify_courses(curriculum)
+	return curation
+
+class PydanticJSONEncoder(JSONEncoder):
+	def default(self, obj):
+		if isinstance(obj, BaseModel):
+			return obj.model_dump()
+		return super().default(obj)
 
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description="Run the Mentor.py script.")
 	parser.add_argument("topic", type=str, nargs = "?", help="The topic for the curriculum.")
+	parser.add_argument("-l", "--log", action="store_true", help="Log the output to a file.")
 	args = parser.parse_args()
 	if args.topic:
 		topic = args.topic
@@ -252,13 +295,19 @@ if __name__ == "__main__":
 		topic = "Financial Analysis and Modeling"
 	print("Creating an ideal curriculum for the topic:", topic)
 	ideal_curriculum = lnd_curriculum(topic)
+	log['ideal_curriculum'] = ideal_curriculum
 	# RAG: convert the ideal curriculum into a structured object
 	print(f"Converting the ideal curriculum into a structured object for the topic: {topic}")
 	curriculum = curriculum_specialist_curriculum(ideal_curriculum, topic)
+	log['curriculum'] = curriculum
 	# RAG: get the course descriptions
 	print("Identifying courses for the curriculum.")
 	curation = identify_courses(curriculum)
+	log['curation'] = curation
 	# RAG: get the curated courses
 	print("Curation object:")
 	print(curation)
-
+	# Then use it when dumping JSON:
+	if args.log:
+		with open('log.json', 'w') as f:
+			json.dump(log, f, cls=PydanticJSONEncoder, indent=2)

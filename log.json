@@ -1,0 +1,106 @@
+{
+  "lnd_curriculum_prompt": "A colleague has asked you to create a learning path on the following topic:\nFinancial Analysis and Modeling\n\nPlease design a learning path. Put your answer between XML tags.\n\n<curriculum_description>\n[Your description of the learning path curriculum here]\n</curriculum_description>",
+  "ideal_curriculum": "\n\nLearning Path: Financial Analysis and Modeling\n\nThis learning path is designed for finance professionals and business analysts who want to enhance their skills in financial analysis and modeling. The curriculum covers foundational concepts to advanced techniques, enabling learners to build robust financial models, perform in-depth analysis, and make data-driven financial decisions.\n\n1. Fundamentals of Financial Analysis (2 hours)\n   Description: This course introduces key financial concepts, financial statements, and basic analytical techniques. Learners will understand the importance of financial analysis in business decision-making.\n   Relevance: Provides a solid foundation for all subsequent courses in the learning path.\n\n2. Excel for Financial Modeling (2 hours)\n   Description: Learn essential Excel functions and features specifically used in financial modeling, including advanced formulas, pivot tables, and data visualization techniques.\n   Relevance: Excel is the primary tool for financial modeling; mastering it is crucial for effective analysis.\n\n3. Building Financial Models (2 hours)\n   Description: This course teaches the structure and best practices of financial modeling. Learners will create income statements, balance sheets, and cash flow projections.\n   Relevance: Develops core skills in constructing coherent and accurate financial models.\n\n4. Valuation Techniques and Methods (2 hours)\n   Description: Explore various valuation methodologies including Discounted Cash Flow (DCF), comparable company analysis, and precedent transactions.\n   Relevance: Essential for understanding company valuation, a key aspect of financial analysis.\n\n5. Advanced Financial Modeling (2 hours)\n   Description: Build on previous courses to create more complex models, including merger models, leveraged buyout (LBO) models, and sensitivity analyses.\n   Relevance: Provides advanced techniques for comprehensive financial analysis and decision-making.\n\n6. Financial Statement Analysis (2 hours)\n   Description: Learn to analyze financial statements in-depth, including ratio analysis, trend analysis, and comparative analysis.\n   Relevance: Crucial for assessing company performance and financial health.\n\n7. Data Analytics for Finance (2 hours)\n   Description: Introduction to data analytics tools and techniques specific to finance, including data visualization and basic predictive modeling.\n   Relevance: Enhances financial analysis with modern data-driven approaches.\n\n8. Financial Modeling for Decision Making (2 hours)\n   Description: Apply financial modeling skills to real-world business scenarios, focusing on how models inform strategic decisions.\n   Relevance: Bridges the gap between technical modeling skills and practical business applications.\n\nThis learning path provides a comprehensive foundation in financial analysis and modeling, progressing from basic concepts to advanced techniques. It equips learners with the skills to build sophisticated financial models, perform in-depth analysis, and leverage these insights for strategic decision-making in various business contexts.\n\n",
+  "curriculum_specialist_prompt": "You have been provided with a detailed curriculum description.\n\nThe description is for this topic:\nFinancial Analysis and Modeling\n\nHere is the description:\n=========================\n\n\nLearning Path: Financial Analysis and Modeling\n\nThis learning path is designed for finance professionals and business analysts who want to enhance their skills in financial analysis and modeling. The curriculum covers foundational concepts to advanced techniques, enabling learners to build robust financial models, perform in-depth analysis, and make data-driven financial decisions.\n\n1. Fundamentals of Financial Analysis (2 hours)\n   Description: This course introduces key financial concepts, financial statements, and basic analytical techniques. Learners will understand the importance of financial analysis in business decision-making.\n   Relevance: Provides a solid foundation for all subsequent courses in the learning path.\n\n2. Excel for Financial Modeling (2 hours)\n   Description: Learn essential Excel functions and features specifically used in financial modeling, including advanced formulas, pivot tables, and data visualization techniques.\n   Relevance: Excel is the primary tool for financial modeling; mastering it is crucial for effective analysis.\n\n3. Building Financial Models (2 hours)\n   Description: This course teaches the structure and best practices of financial modeling. Learners will create income statements, balance sheets, and cash flow projections.\n   Relevance: Develops core skills in constructing coherent and accurate financial models.\n\n4. Valuation Techniques and Methods (2 hours)\n   Description: Explore various valuation methodologies including Discounted Cash Flow (DCF), comparable company analysis, and precedent transactions.\n   Relevance: Essential for understanding company valuation, a key aspect of financial analysis.\n\n5. Advanced Financial Modeling (2 hours)\n   Description: Build on previous courses to create more complex models, including merger models, leveraged buyout (LBO) models, and sensitivity analyses.\n   Relevance: Provides advanced techniques for comprehensive financial analysis and decision-making.\n\n6. Financial Statement Analysis (2 hours)\n   Description: Learn to analyze financial statements in-depth, including ratio analysis, trend analysis, and comparative analysis.\n   Relevance: Crucial for assessing company performance and financial health.\n\n7. Data Analytics for Finance (2 hours)\n   Description: Introduction to data analytics tools and techniques specific to finance, including data visualization and basic predictive modeling.\n   Relevance: Enhances financial analysis with modern data-driven approaches.\n\n8. Financial Modeling for Decision Making (2 hours)\n   Description: Apply financial modeling skills to real-world business scenarios, focusing on how models inform strategic decisions.\n   Relevance: Bridges the gap between technical modeling skills and practical business applications.\n\nThis learning path provides a comprehensive foundation in financial analysis and modeling, progressing from basic concepts to advanced techniques. It equips learners with the skills to build sophisticated financial models, perform in-depth analysis, and leverage these insights for strategic decision-making in various business contexts.\n\n\n=========================\n\nPlease convert this into a structured JSON representation of the curriculum.\nYour answer should include the topic, description, audience, and a list of modules.\nYOU SHOULD ALWAYS RETURN AT LEAST SIX MODULES, AND NO MORE THAN TWELVE.",
+  "curriculum": {
+    "topic": "Financial Analysis and Modeling",
+    "description": "This learning path is designed for finance professionals and business analysts who want to enhance their skills in financial analysis and modeling. The curriculum covers foundational concepts to advanced techniques, enabling learners to build robust financial models, perform in-depth analysis, and make data-driven financial decisions. It progresses from basic concepts to advanced techniques, equipping learners with the skills to build sophisticated financial models, perform in-depth analysis, and leverage these insights for strategic decision-making in various business contexts.",
+    "audience": "Finance professionals and business analysts",
+    "modules": [
+      {
+        "title": "Fundamentals of Financial Analysis",
+        "description": "This course introduces key financial concepts, financial statements, and basic analytical techniques. Learners will understand the importance of financial analysis in business decision-making.",
+        "learning_objectives": [
+          "Understand key financial concepts",
+          "Learn about financial statements",
+          "Master basic analytical techniques",
+          "Recognize the importance of financial analysis in business decision-making"
+        ]
+      },
+      {
+        "title": "Excel for Financial Modeling",
+        "description": "Learn essential Excel functions and features specifically used in financial modeling, including advanced formulas, pivot tables, and data visualization techniques.",
+        "learning_objectives": [
+          "Master essential Excel functions for financial modeling",
+          "Learn advanced Excel formulas",
+          "Create and use pivot tables",
+          "Develop data visualization techniques in Excel"
+        ]
+      },
+      {
+        "title": "Building Financial Models",
+        "description": "This course teaches the structure and best practices of financial modeling. Learners will create income statements, balance sheets, and cash flow projections.",
+        "learning_objectives": [
+          "Understand the structure of financial models",
+          "Learn best practices in financial modeling",
+          "Create income statements",
+          "Construct balance sheets",
+          "Develop cash flow projections"
+        ]
+      },
+      {
+        "title": "Valuation Techniques and Methods",
+        "description": "Explore various valuation methodologies including Discounted Cash Flow (DCF), comparable company analysis, and precedent transactions.",
+        "learning_objectives": [
+          "Understand different valuation methodologies",
+          "Learn Discounted Cash Flow (DCF) analysis",
+          "Master comparable company analysis",
+          "Explore precedent transactions analysis"
+        ]
+      },
+      {
+        "title": "Advanced Financial Modeling",
+        "description": "Build on previous courses to create more complex models, including merger models, leveraged buyout (LBO) models, and sensitivity analyses.",
+        "learning_objectives": [
+          "Create complex financial models",
+          "Develop merger models",
+          "Construct leveraged buyout (LBO) models",
+          "Perform sensitivity analyses"
+        ]
+      },
+      {
+        "title": "Financial Statement Analysis",
+        "description": "Learn to analyze financial statements in-depth, including ratio analysis, trend analysis, and comparative analysis.",
+        "learning_objectives": [
+          "Conduct in-depth financial statement analysis",
+          "Perform ratio analysis",
+          "Execute trend analysis",
+          "Carry out comparative analysis"
+        ]
+      },
+      {
+        "title": "Data Analytics for Finance",
+        "description": "Introduction to data analytics tools and techniques specific to finance, including data visualization and basic predictive modeling.",
+        "learning_objectives": [
+          "Understand data analytics tools for finance",
+          "Learn finance-specific data analytics techniques",
+          "Master data visualization for financial data",
+          "Explore basic predictive modeling in finance"
+        ]
+      },
+      {
+        "title": "Financial Modeling for Decision Making",
+        "description": "Apply financial modeling skills to real-world business scenarios, focusing on how models inform strategic decisions.",
+        "learning_objectives": [
+          "Apply financial modeling to real-world scenarios",
+          "Understand how financial models inform strategic decisions",
+          "Bridge technical modeling skills with practical business applications",
+          "Make data-driven financial decisions"
+        ]
+      }
+    ]
+  },
+  "video_course_librarian_prompt": "You have a received a curriculum object on the topic of:\nFinancial Modeling for Decision Making\n\nHere is the curriculum object:\n=========================\ntopic='Financial Analysis and Modeling' description='This learning path is designed for finance professionals and business analysts who want to enhance their skills in financial analysis and modeling. The curriculum covers foundational concepts to advanced techniques, enabling learners to build robust financial models, perform in-depth analysis, and make data-driven financial decisions. It progresses from basic concepts to advanced techniques, equipping learners with the skills to build sophisticated financial models, perform in-depth analysis, and leverage these insights for strategic decision-making in various business contexts.' audience='Finance professionals and business analysts' modules=[Module(title='Fundamentals of Financial Analysis', description='This course introduces key financial concepts, financial statements, and basic analytical techniques. Learners will understand the importance of financial analysis in business decision-making.', learning_objectives=['Understand key financial concepts', 'Learn about financial statements', 'Master basic analytical techniques', 'Recognize the importance of financial analysis in business decision-making']), Module(title='Excel for Financial Modeling', description='Learn essential Excel functions and features specifically used in financial modeling, including advanced formulas, pivot tables, and data visualization techniques.', learning_objectives=['Master essential Excel functions for financial modeling', 'Learn advanced Excel formulas', 'Create and use pivot tables', 'Develop data visualization techniques in Excel']), Module(title='Building Financial Models', description='This course teaches the structure and best practices of financial modeling. Learners will create income statements, balance sheets, and cash flow projections.', learning_objectives=['Understand the structure of financial models', 'Learn best practices in financial modeling', 'Create income statements', 'Construct balance sheets', 'Develop cash flow projections']), Module(title='Valuation Techniques and Methods', description='Explore various valuation methodologies including Discounted Cash Flow (DCF), comparable company analysis, and precedent transactions.', learning_objectives=['Understand different valuation methodologies', 'Learn Discounted Cash Flow (DCF) analysis', 'Master comparable company analysis', 'Explore precedent transactions analysis']), Module(title='Advanced Financial Modeling', description='Build on previous courses to create more complex models, including merger models, leveraged buyout (LBO) models, and sensitivity analyses.', learning_objectives=['Create complex financial models', 'Develop merger models', 'Construct leveraged buyout (LBO) models', 'Perform sensitivity analyses']), Module(title='Financial Statement Analysis', description='Learn to analyze financial statements in-depth, including ratio analysis, trend analysis, and comparative analysis.', learning_objectives=['Conduct in-depth financial statement analysis', 'Perform ratio analysis', 'Execute trend analysis', 'Carry out comparative analysis']), Module(title='Data Analytics for Finance', description='Introduction to data analytics tools and techniques specific to finance, including data visualization and basic predictive modeling.', learning_objectives=['Understand data analytics tools for finance', 'Learn finance-specific data analytics techniques', 'Master data visualization for financial data', 'Explore basic predictive modeling in finance']), Module(title='Financial Modeling for Decision Making', description='Apply financial modeling skills to real-world business scenarios, focusing on how models inform strategic decisions.', learning_objectives=['Apply financial modeling to real-world scenarios', 'Understand how financial models inform strategic decisions', 'Bridge technical modeling skills with practical business applications', 'Make data-driven financial decisions'])]\n=========================\n\nAnd here are the courses that you have to choose from:\n=========================\nStarting Your Career as a Financial Analyst: 2.138671875\nCorporate Financial Statement Analysis: -0.143798828125\nFinancial Literacy for Employees: -0.70263671875\nGetting Started with Python for Finance: -2.5078125\nExcel for Financial Planning and Analysis (FP&A): -2.7265625\nExcel for Banking Professionals: 3.9296875\nFinancial Modeling Foundations: 3.283203125\nExcel for Financial Planning and Analysis (FP&A): 3.171875\nExcel for Finance: Building a Three-Statement Operating Model: 1.9853515625\nExcel and PowerPoint: Creating High-Impact Financial Presentations: 0.947265625\nFinancial Modeling Foundations: 4.42578125\nCorporate Finance: Robust Financial Modeling: 3.34375\nBusiness Financials Explained: 1.51953125\nExcel for Banking Professionals: 1.5126953125\nBIM Foundations: -2.48046875\nFinance Foundations: Business Valuation: 1.2646484375\nInvestment Evaluation: -3.626953125\nPricing Strategy Explained: -4.40625\nCustomer Service: Creating Customer Value: -4.6015625\nHow to Sell on Value, Not Price: -4.64453125\nFinancial Modeling Foundations: 0.08636474609375\nAdvanced Python in Excel for Finance: A Hands-On Approach: -0.332763671875\nCorporate Finance: Robust Financial Modeling: -2.068359375\nPanel Data Analysis Essential Training: -3.4375\nExcel for Banking Professionals: -3.62890625\nCorporate Financial Statement Analysis: 3.2265625\nFinancial Accounting Part 2: -1.4951171875\nSQL for Finance: Income Statement Project: -1.9462890625\nFinancial Accounting Part 1: -1.947265625\nReading Corporate Financial Statements: -2.060546875\nPython in Excel for Financial Professionals: 3.814453125\nSQL for Finance: Income Statement Project: 2.169921875\nFinancial Forecasting with Analytics Essential Training: 0.34326171875\nFinancial Modeling Foundations: 0.05731201171875\nGetting Started with Python for Finance: -0.35400390625\nFinancial Modeling Foundations: 4.30859375\nCorporate Finance: Robust Financial Modeling: 2.466796875\nCorporate Finance Foundations: -1.587890625\nManagerial Finance Foundations: -2.90234375\nLean Technology Strategy: Economic Frameworks for Portfolio and Product Management: -3.171875\n=========================\n\nPlease select the most appropriate courses to fulfill the objectives of this curriculum.\nREMEMBER TO PICK 6-12 COURSES TOTAL; NO LESS THAN SIX, NO MORE THAN TWELVE.\nYOU SHOULD MAKE SURE YOU ARE PROVIDING THE COURSE TITLE VERBATIM AS IT APPEARS IN THE COURSE DATABASE.\n\nProvide a structured Curation object that includes the topic of the curriculum and the course titles of the selected video courses.\n\"Topic\" should be the verbatim topic of the curriculum provided to you above.",
+  "curation": {
+    "topic": "Financial Analysis and Modeling",
+    "course_titles": [
+      "Financial Modeling Foundations",
+      "Corporate Financial Statement Analysis",
+      "Corporate Finance: Robust Financial Modeling",
+      "Excel for Finance: Building a Three-Statement Operating Model",
+      "Finance Foundations: Business Valuation",
+      "Financial Forecasting with Analytics Essential Training",
+      "SQL for Finance: Income Statement Project"
+    ]
+  }
+}
