@@ -14,16 +14,16 @@ Improve quality of curation objects for these criteria:
     - what else? (do we need to bring in metadata?)
 
 ### How we will get there
-- import from analyze_lp: generate_curriculum (whatever that's called)
-- import from review_certificates: curriculum_review, learner_review (whatever those are called)
-- create these simple chains to understand how the prompts interact:
- - Mentor --curation_object--> curriculum review
- - Mentor --curation_object--> learner review
-- have a bare LLM take in the following:
- - $CURATION, $TOCS, $CRITIQUE
- - and return a natural language description of how they would fix it
- - optimize that prompt for the correct understanding of what needs to be done
-- turn it into agent with the RAG function
- - a "reflect" function?
- - add a "blacklist" function?
- - a "new Curation object" function that LLM is actually handling? (return <curation>[new curation object]</curation>)
+- [x] import from analyze_lp: generate_curriculum (whatever that's called)
+- [x] import from review_certificates: curriculum_review, learner_review (whatever those are called)
+- [x] create these simple chains to understand how the prompts interact:
+ - [x] Mentor --curation_object--> curriculum review
+ - [ ] Mentor --curation_object--> learner review
+- [x] have a bare LLM take in the following:
+ - [x] $CURATION, $TOCS, $CRITIQUE
+ - [x] and return a natural language description of how they would fix it
+ - [ ] optimize that prompt for the correct understanding of what needs to be done
+- [ ] turn it into agent with the RAG function
+ - [ ] a "reflect" function?
+ - [ ] add a "blacklist" function?
+ - [ ] a "new Curation object" function that LLM is actually handling? (return <curation>[new curation object]</curation>)

@@ -258,7 +258,6 @@ def identify_courses(curriculum: Curriculum) -> Curation:
 		# Get a pretty printed version of the courses
 		recommended_courses += course_matches 
 	course_context = "\n".join([f"{course[0]}: {course[1]}" for course in recommended_courses])
-	print("COURSE CONTEXT: " + course_context)
 	# Ask the library
 	model = Model("gpt")
 	prompt = Prompt(prompt_video_course_librarian)
@@ -311,3 +310,4 @@ if __name__ == "__main__":
 	if args.log:
 		with open('log.json', 'w') as f:
 			json.dump(log, f, cls=PydanticJSONEncoder, indent=2)
+
