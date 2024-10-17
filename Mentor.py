@@ -219,7 +219,8 @@ def lnd_curriculum(topic: str) -> str:
 	We have an L&D professional dream up an ideal curriculum.
 	Returns a string.
 	"""
-	model = Model("claude")
+	# model = Model("claude")
+	model = Model('llama3.1:latest')
 	prompt = Prompt(prompt_lnd)
 	messages = Chain.create_messages(persona_lnd)
 	chain = Chain(prompt, model)
@@ -237,7 +238,8 @@ def curriculum_specialist_curriculum(ideal_curriculum: str, topic: str) -> Curri
 	We have a Curriculum Specialist dream up an ideal curriculum.
 	Interprets the L&D professional's suggestions into a curriculum object.
 	"""
-	model = Model("claude")
+	# model = Model("claude")
+	model = Model('llama3.1:latest')
 	prompt = Prompt(prompt_curriculum_specialist)
 	messages = Chain.create_messages(persona_curriculum_specialist)
 	parser = Parser(Curriculum)
@@ -259,7 +261,8 @@ def identify_courses(curriculum: Curriculum) -> Curation:
 		recommended_courses += course_matches 
 	course_context = "\n".join([f"{course[0]}: {course[1]}" for course in recommended_courses])
 	# Ask the library
-	model = Model("gpt")
+	# model = Model("gpt")
+	model = Model('llama3.1:latest')
 	prompt = Prompt(prompt_video_course_librarian)
 	messages = Chain.create_messages(video_course_librarian)
 	parser = Parser(Curation)
@@ -286,7 +289,6 @@ class PydanticJSONEncoder(JSONEncoder):
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description="Run the Mentor.py script.")
 	parser.add_argument("topic", type=str, nargs = "?", help="The topic for the curriculum.")
-	parser.add_argument("-l", "--log", action="store_true", help="Log the output to a file.")
 	args = parser.parse_args()
 	if args.topic:
 		topic = args.topic
@@ -295,19 +297,21 @@ if __name__ == "__main__":
 	print("Creating an ideal curriculum for the topic:", topic)
 	ideal_curriculum = lnd_curriculum(topic)
 	log['ideal_curriculum'] = ideal_curriculum
+	with open('log.json', 'w') as f:
+		json.dump(log, f, cls=PydanticJSONEncoder, indent=2)
 	# RAG: convert the ideal curriculum into a structured object
 	print(f"Converting the ideal curriculum into a structured object for the topic: {topic}")
 	curriculum = curriculum_specialist_curriculum(ideal_curriculum, topic)
 	log['curriculum'] = curriculum
+	with open('log.json', 'w') as f:
+		json.dump(log, f, cls=PydanticJSONEncoder, indent=2)
 	# RAG: get the course descriptions
 	print("Identifying courses for the curriculum.")
 	curation = identify_courses(curriculum)
 	log['curation'] = curation
+	with open('log.json', 'w') as f:
+		json.dump(log, f, cls=PydanticJSONEncoder, indent=2)
 	# RAG: get the curated courses
 	print("Curation object:")
 	print(curation)
-	# Then use it when dumping JSON:
-	if args.log:
-		with open('log.json', 'w') as f:
-			json.dump(log, f, cls=PydanticJSONEncoder, indent=2)
 
