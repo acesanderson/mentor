@@ -17,7 +17,7 @@ class LearningPath(BaseModel):
 
 from pydantic import BaseModel
 from lp import LearningPath
-from Curate import Curate  # type: ignore
+from Curator import Curate  # type: ignore
 from Get import Get
 from Chain import Prompt, Model, Chain, Parser, create_messages
 import argparse
