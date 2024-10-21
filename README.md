@@ -27,6 +27,9 @@ This tool is ideal for:
 3. **Structure Curriculum**: A Curriculum Structuring Specialist model converts the outline into a machine-readable format.
 4. **Course Curation**: Video Course Librarian model selects the best-fitting courses to match the curriculum objectives.
 
+## Dependencies
+- See requirements.txt for pip packages
+
 ## User Guide
 
 ### Prerequisites
@@ -36,7 +39,9 @@ This tool is ideal for:
   ```bash
   pip install -r requirements.txt
   ```
-- Basic understanding of command-line usage.
+- You need to install the following additional packages:
+ - [Curator](https://github.com/acesanderson/Curator): for the Librarian to be able to access course data
+ - [Chain](https://github.com/acesanderson/Chain): for our LLM calls
 
 ### Running the Program
 
@@ -79,17 +84,3 @@ python Mentor.py "Data Science Basics"
   ]
 }
 ```
-## Support and Contributions
-
-For support or to contribute to this project:
-
-- **Issues**: Find a bug or have a feature request? Raise an issue in the project's GitHub repository.
-- **Contributions**: We welcome improvements, bug fixes, and feature suggestions!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
----
-
-Thank you for using Mentor: Learning Path Generation! We hope this tool enhances your educational initiatives and empowers your learning strategies.
