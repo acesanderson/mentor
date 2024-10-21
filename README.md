@@ -64,8 +64,21 @@ This tool is ideal for:
 For generating a learning path on "Data Science Basics":
 ```bash
 python Mentor.py "Data Science Basics"
-```
 
+{
+  "topic": "Ethics and Privacy in Data Science",
+  "course_titles": [
+    "Introduction to Data Science",
+    "Probability Foundations for Data Science",
+    "pandas Essential Training",
+    "Data Visualization with Matplotlib and Seaborn",
+    "Artificial Intelligence Foundations: Machine Learning",
+    "Intermediate SQL for Data Scientists",
+    "Foundations of Responsible AI",
+    "Ethics and Law in Data Analytics"
+  ]
+}
+```
 ## Support and Contributions
 
 For support or to contribute to this project:
