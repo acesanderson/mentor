@@ -269,7 +269,7 @@ def identify_courses(curriculum: Curriculum) -> Curation:
     recommended_courses = []
     for module in curriculum.modules:
         # RAG: get the top 10 courses for this module
-        course_matches = Curate(module.title)
+        course_matches = Curate(module.title + ": " + module.description + "\nLearning Objectives:\n" + "\n\t".join(module.learning_objectives))
         # Get a pretty printed version of the courses
         recommended_courses += course_matches
     course_context = "\n".join(
