@@ -229,7 +229,7 @@ def lnd_curriculum(topic: str) -> str:
     model = Model("claude")
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_lnd)
-    messages = Chain.create_messages(persona_lnd)
+    messages = create_messages(persona_lnd)
     chain = Chain(prompt, model)
     response = chain.run(messages=messages, input_variables={"topic": topic})
     log["lnd_curriculum_prompt"] = response.prompt
@@ -250,7 +250,7 @@ def curriculum_specialist_curriculum(ideal_curriculum: str, topic: str) -> Curri
     model = Model("claude")
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_curriculum_specialist)
-    messages = Chain.create_messages(persona_curriculum_specialist)
+    messages = create_messages(persona_curriculum_specialist)
     parser = Parser(Curriculum)
     chain = Chain(prompt, model, parser)
     response = chain.run(
@@ -279,7 +279,7 @@ def identify_courses(curriculum: Curriculum) -> Curation:
     model = Model("gpt")
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_video_course_librarian)
-    messages = Chain.create_messages(video_course_librarian)
+    messages = create_messages(video_course_librarian)
     parser = Parser(Curation)
     chain = Chain(prompt, model, parser)
     response = chain.run(
