@@ -11,21 +11,16 @@ Welcome to the **Mentor: Learning Path Generation** project! This project is des
 - **Video Course Integration**: Selects appropriate video courses aligned with outlined learning objectives.
 - **Structured Output**: Provides well-organized JSON representations of curricula for easy integration into Learning Management Systems (LMS).
 
-## Target Audience
-
-This tool is ideal for:
-
-- **Learning & Development Professionals**: Seeking to create effective training programs for employees.
-- **Curriculum Designers**: Looking to structure detailed curricula in a digital format.
-- **Educational Technologists**: Who require a seamless way to integrate learning paths into existing systems.
-- **Corporate Trainers**: Who need resources for employee skill enhancement and career development.
-
 ## How It Works
 
 1. **Define a Topic**: Start by specifying the topic of interest for the learning path.
 2. **Generate Curriculum**: An experienced L&D model provides an ideal curriculum outline.
 3. **Structure Curriculum**: A Curriculum Structuring Specialist model converts the outline into a machine-readable format.
 4. **Course Curation**: Video Course Librarian model selects the best-fitting courses to match the curriculum objectives.
+
+## Caveats
+- LLM models are non-deterministic, and you will get different results on each run of the script.
+- The RAG pipeline (from [Curator](https://github.com/acesanderson/Curator)) does its best to find the most relevant courses, but will struggle if there isn't a clear match. 
 
 ## Dependencies
 - See requirements.txt for pip packages
@@ -84,3 +79,11 @@ python Mentor.py "Data Science Basics"
   ]
 }
 ```
+
+### Upcoming Features
+- LP copy generation for resulting Curation object
+- Agentic workflows that send reviews back to Librarian
+
+
+
+

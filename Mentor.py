@@ -61,6 +61,11 @@ class Curriculum(BaseModel):
 
 
 class Curation(BaseModel):
+    """
+    Curation objects are the output of the Mentor pipeline.
+    They contain the topic and the course titles.
+    """
+
     topic: str
     course_titles: list[str]
 
@@ -80,6 +85,18 @@ class Curation(BaseModel):
             course = Get(course)
             curriculum_text += course.course_TOC_verbose
         return curriculum_text
+
+
+class PydanticJSONEncoder(JSONEncoder):
+    """
+    This is a custom JSON encoder for Pydantic models.
+    Used to serialize the Pydantic models into JSON for logging.
+    """
+
+    def default(self, obj):
+        if isinstance(obj, BaseModel):
+            return obj.model_dump()
+        return super().default(obj)
 
 
 # Persona prompts
@@ -308,13 +325,6 @@ def Mentor(topic: str) -> Curation:
     curriculum = curriculum_specialist_curriculum(ideal_curriculum, topic)
     curation = identify_courses(curriculum)
     return curation
-
-
-class PydanticJSONEncoder(JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, BaseModel):
-            return obj.model_dump()
-        return super().default(obj)
 
 
 if __name__ == "__main__":
