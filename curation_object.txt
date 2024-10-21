@@ -1,0 +1,39 @@
+Creating an ideal curriculum for the topic: Generative AI for Supply Chain
+Model: claude-3-5-sonnet-20240620   Query: [{'role': 'system', 'content': "You are an experienced Learning and Development (L&D) professional with extensive experience across various industries
+Converting the ideal curriculum into a structured object for the topic: Generative AI for Supply Chain
+Model: claude-3-5-sonnet-20240620   Query: [{'role': 'system', 'content': 'You are a Curriculum Structuring Specialist, an expert in transforming detailed curriculum descriptions into well-orga
+Identifying courses for the curriculum.
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Model: gpt-4o   Query: [{'role': 'system', 'content': 'You are a highly skilled Video Course Librarian specializing in curating educational content for corporate training an
+Curation object:
+{
+  "topic": "Generative AI for Supply Chain",
+  "course_titles": [
+    "Introducing AI to Your Organization",
+    "Generative AI and Predictive AI in the Cloud: Foundational Concepts and Scenarios",
+    "Artificial Intelligence Foundations: Neural Networks",
+    "Using Generative Artificial Intelligence (AI) in Supply Chains",
+    "Supply Chain Foundations: Risk and Resilience",
+    "Responsible AI: Principles and Practical Applications"
+  ]
+}
+{
+  "topic": "Generative AI for Supply Chain",
+  "course_titles": [
+    "Introducing AI to Your Organization",
+    "Generative AI and Predictive AI in the Cloud: Foundational Concepts and Scenarios",
+    "Artificial Intelligence Foundations: Neural Networks",
+    "Using Generative Artificial Intelligence (AI) in Supply Chains",
+    "Supply Chain Foundations: Risk and Resilience",
+    "Responsible AI: Principles and Practical Applications"
+  ]
+}
+This is the output for piping.
+
