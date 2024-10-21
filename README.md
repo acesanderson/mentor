@@ -66,7 +66,7 @@ For generating a learning path on "Data Science Basics":
 python Mentor.py "Data Science Basics"
 
 {
-  "topic": "Ethics and Privacy in Data Science",
+  "topic": "Data Science Basics",
   "course_titles": [
     "Introduction to Data Science",
     "Probability Foundations for Data Science",
