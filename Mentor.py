@@ -19,20 +19,16 @@ from pydantic import BaseModel
 from lp import LearningPath
 from Curator import Curate  # type: ignore
 from Get import Get
-from Chain import Prompt, Model, Chain, Parser, create_messages
+from Chain import Prompt, Model, Chain, Parser, create_messages, MessageStore
 import argparse
 import json
-from message_store import MessageStore
 from rich import console
 from pathlib import Path
-from json import JSONEncoder
 
 # Initialize our log
 # ------------------------------------------------
-# dir_path = Path(__file__).parent
-# console = console.Console(width=100)
-# messagestore = MessageStore(console, dir_path / ".mentor_messages.pkl")
-log = {}
+
+Chain._message_store = MessageStore(log_file = "log.json")
 
 
 # Our pydantic data models
@@ -85,18 +81,6 @@ class Curation(BaseModel):
             course = Get(course)
             curriculum_text += course.course_TOC_verbose
         return curriculum_text
-
-
-class PydanticJSONEncoder(JSONEncoder):
-    """
-    This is a custom JSON encoder for Pydantic models.
-    Used to serialize the Pydantic models into JSON for logging.
-    """
-
-    def default(self, obj):
-        if isinstance(obj, BaseModel):
-            return obj.model_dump()
-        return super().default(obj)
 
 
 # Persona prompts
@@ -249,7 +233,6 @@ def lnd_curriculum(topic: str) -> str:
     messages = create_messages(persona_lnd)
     chain = Chain(prompt, model)
     response = chain.run(messages=messages, input_variables={"topic": topic})
-    log["lnd_curriculum_prompt"] = response.prompt
     # Extract the answer from between the XML tags
     response_content = response.content
     start = response_content.find("<curriculum_description>") + len(
@@ -274,7 +257,6 @@ def curriculum_specialist_curriculum(ideal_curriculum: str, topic: str) -> Curri
         messages=messages,
         input_variables={"ideal_curriculum": ideal_curriculum, "topic": topic},
     )
-    log["curriculum_specialist_prompt"] = response.prompt
     return response.content
 
 
@@ -313,7 +295,6 @@ def identify_courses(curriculum: Curriculum) -> Curation:
             "courses": course_context,
         },
     )
-    log["video_course_librarian_prompt"] = response.prompt
     return response.content
 
 
@@ -339,23 +320,14 @@ if __name__ == "__main__":
         topic = "Financial Analysis and Modeling"
     print("Creating an ideal curriculum for the topic:", topic)
     ideal_curriculum = lnd_curriculum(topic)
-    log["ideal_curriculum"] = ideal_curriculum
-    with open("log.json", "w") as f:
-        json.dump(log, f, cls=PydanticJSONEncoder, indent=2)
     # RAG: convert the ideal curriculum into a structured object
     print(
         f"Converting the ideal curriculum into a structured object for the topic: {topic}"
     )
     curriculum = curriculum_specialist_curriculum(ideal_curriculum, topic)
-    log["curriculum"] = curriculum
-    with open("log.json", "w") as f:
-        json.dump(log, f, cls=PydanticJSONEncoder, indent=2)
     # RAG: get the course descriptions
     print("Identifying courses for the curriculum.")
     curation = identify_courses(curriculum)
-    log["curation"] = curation
-    with open("log.json", "w") as f:
-        json.dump(log, f, cls=PydanticJSONEncoder, indent=2)
     # RAG: get the curated courses
     print("Curation object:")
     print(curation)
