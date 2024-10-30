@@ -16,19 +16,15 @@ class LearningPath(BaseModel):
 """
 
 from pydantic import BaseModel
-from lp import LearningPath
 from Curator import Curate  # type: ignore
 from Get import Get
-from Chain import Prompt, Model, Chain, Parser, create_messages, MessageStore
+from Chain import Prompt, Model, Chain, Parser, MessageStore, create_system_message
 import argparse
-import json
-from rich import console
-from pathlib import Path
 
 # Initialize our log
 # ------------------------------------------------
 
-Chain._message_store = MessageStore(log_file = "log.json")
+Chain._message_store = MessageStore(log_file="log.json")
 
 
 # Our pydantic data models
@@ -230,7 +226,7 @@ def lnd_curriculum(topic: str) -> str:
     model = Model("claude")
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_lnd)
-    messages = create_messages(persona_lnd)
+    messages = [create_system_message(persona_lnd)]
     chain = Chain(prompt, model)
     response = chain.run(messages=messages, input_variables={"topic": topic})
     # Extract the answer from between the XML tags
@@ -250,7 +246,7 @@ def curriculum_specialist_curriculum(ideal_curriculum: str, topic: str) -> Curri
     model = Model("claude")
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_curriculum_specialist)
-    messages = create_messages(persona_curriculum_specialist)
+    messages = [create_system_message(persona_curriculum_specialist)]
     parser = Parser(Curriculum)
     chain = Chain(prompt, model, parser)
     response = chain.run(
@@ -284,7 +280,7 @@ def identify_courses(curriculum: Curriculum) -> Curation:
     model = Model("gpt")
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_video_course_librarian)
-    messages = create_messages(video_course_librarian)
+    messages = [create_system_message(video_course_librarian)]
     parser = Parser(Curation)
     chain = Chain(prompt, model, parser)
     response = chain.run(
