@@ -277,8 +277,7 @@ def identify_courses(curriculum: Curriculum) -> Curation:
         [f"{course[0]}: {course[1]}" for course in recommended_courses]
     )
     # Ask the library
-    model = Model("gpt")
-    # model = Model('llama3.1:latest')
+    model = Model("llama3.1:latest")
     prompt = Prompt(prompt_video_course_librarian)
     messages = [create_system_message(video_course_librarian)]
     parser = Parser(Curation)
