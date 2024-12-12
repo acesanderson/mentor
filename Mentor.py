@@ -1,22 +1,14 @@
 """
-This is a rework of Curation.py to take into account improvements in my scripts, in the LLMs, and the power of reranking models.
+This script builds a prompt flow over Curator.
 
-### Considerations
-- curriculum, curation, and LP
-- boost the temperature (amend Chain.py to take temperature)
-- use reranker score to determine "quality" of a curation
-
-class LearningPath(BaseModel):
-    title: str
-    courses: Curation
-    audience: str
-    description: str
-    learning_objectives: str
-    announcement: str
+Three personas are leveraged:
+- an L&D specialist who designs an ideal curriculum for a given topic
+- a Curriculum Structuring Specialist who turns that into a structured object
+- a Course Librarian who is provided with the RAG (output of Curator queries) and designs a Curation object.
 """
 
 from pydantic import BaseModel
-from Curator import Curate  # type: ignore
+from Curator import Curate
 from Get import Get
 from Chain import Prompt, Model, Chain, Parser, MessageStore, create_system_message
 import argparse
@@ -50,6 +42,33 @@ class Curriculum(BaseModel):
     description: str
     audience: str
     modules: list[Module]
+
+    def __str__(self) -> str:
+        """
+        Convert this pydantic object into its XML representation.
+        """
+        return (
+            f"<curriculum>\n"
+            f"\t<topic>{self.topic}</topic>\n"
+            f"\t<description>{self.description}</description>\n"
+            f"\t<audience>{self.audience}</audience>\n"
+            f"\t<modules>\n"
+            + "\n".join(
+                f"\t\t<module>\n"
+                f"\t\t\t<title>{module.title}</title>\n"
+                f"\t\t\t<description>{module.description}</description>\n"
+                f"\t\t\t<learning_objectives>\n"
+                + "\n".join(
+                    f"\t\t\t\t<objective>{objective}</objective>"
+                    for objective in module.learning_objectives
+                )
+                + "\n\t\t</learning_objectives>\n"
+                f"\t\t</module>"
+                for module in self.modules
+            )
+            + "\n\t</modules>\n"
+            + "</curriculum>"
+        )
 
 
 class Curation(BaseModel):
@@ -167,7 +186,9 @@ YOU SHOULD MAKE SURE YOU ARE PROVIDING THE COURSE TITLE VERBATIM AS IT APPEARS I
 
 prompt_lnd = """
 A colleague has asked you to create a learning path on the following topic:
+<topic>
 {{topic}}
+</topic>
 
 Please design a learning path. Put your answer between XML tags.
 
@@ -180,12 +201,14 @@ prompt_curriculum_specialist = """
 You have been provided with a detailed curriculum description.
 
 The description is for this topic:
+<topic>
 {{topic}}
+</topic>
 
 Here is the description:
-=========================
+<ideal_curriculum>
 {{ideal_curriculum}}
-=========================
+</ideal_curriculum>
 
 Please convert this into a structured JSON representation of the curriculum.
 Your answer should include the topic, description, audience, and a list of modules.
@@ -194,17 +217,19 @@ YOU SHOULD ALWAYS RETURN AT LEAST SIX MODULES, AND NO MORE THAN TWELVE.
 
 prompt_video_course_librarian = """
 You have a received a curriculum object on the topic of:
+<topic>
 {{topic}}
+</topic>
 
 Here is the curriculum object:
-=========================
+<curriculum>
 {{curriculum}}
-=========================
+</curriculum>
 
 And here are the courses that you have to choose from:
-=========================
+<courses>
 {{courses}}
-=========================
+</courses>
 
 Please select the most appropriate courses to fulfill the objectives of this curriculum.
 REMEMBER TO PICK 6-12 COURSES TOTAL; NO LESS THAN SIX, NO MORE THAN TWELVE.
@@ -277,7 +302,8 @@ def identify_courses(curriculum: Curriculum) -> Curation:
         [f"{course[0]}: {course[1]}" for course in recommended_courses]
     )
     # Ask the library
-    model = Model("llama3.1:latest")
+    # model = Model("llama3.1:latest")
+    model = Model("claude")
     prompt = Prompt(prompt_video_course_librarian)
     messages = [create_system_message(video_course_librarian)]
     parser = Parser(Curation)
