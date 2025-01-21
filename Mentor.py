@@ -11,6 +11,7 @@ from pydantic import BaseModel
 from Curator import Curate
 from Get import Get
 from Chain import Prompt, Model, Chain, Parser, MessageStore, create_system_message
+from Kramer.courses.Curation import Curation
 import argparse
 
 # Initialize our log
@@ -69,33 +70,6 @@ class Curriculum(BaseModel):
             + "\n\t</modules>\n"
             + "</curriculum>"
         )
-
-
-class Curation(BaseModel):
-    """
-    Curation objects are the output of the Mentor pipeline.
-    They contain the topic and the course titles.
-    """
-
-    topic: str
-    course_titles: list[str]
-
-    def __str__(self):
-        """
-        Pretty print the json.
-        """
-        return self.model_dump_json(indent=2)
-
-    def curation_TOCs(self, verbose=True) -> str:
-        """
-        Concatenates the tocs for the courses so that there's a high level curriculum for LLMs to review.
-        Use local models (i.e. Magnus)
-        """
-        curriculum_text = ""
-        for course in self.course_titles:
-            course = Get(course)
-            curriculum_text += course.course_TOC_verbose
-        return curriculum_text
 
 
 # Persona prompts
