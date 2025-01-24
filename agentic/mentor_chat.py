@@ -6,10 +6,21 @@ TODO:
 - user can generate LP from Curation object
 """
 
-from Chain import Chat, Model
+from Chain import Chat, Model, Prompt, Chain
 from Curator import Curate
-from Kramer import Course, Get, Curation, LearningPath, build_LearningPath_from_Curation
-from Mentor import Mentor
+from Kramer import Course, Get, Curation, build_LearningPath_from_Curation
+from Mentor import (
+    Mentor,
+    review_curriculum,
+    title_certificate,
+    classify_audience,
+    learner_progression,
+)
+import readline  # This silently enables input history for `input`
+from rich.console import Console
+from datetime import timedelta
+
+_ = readline.get_history_item(1)  # Minimal interaction to silence IDE
 
 
 class MentorChat(Chat):
@@ -17,6 +28,7 @@ class MentorChat(Chat):
         # Access the self.one_param_commands from parent class
         super().__init__(model)
         self.welcome_message = "[green]Hello! Let's build a Curation together.[/green]"
+        self.console = Console(width=120)
         self.one_param_commands.append("query")  # Query a single string
         self.two_param_commands.append("get")
         # The Curation we're building in the chat
@@ -44,6 +56,18 @@ class MentorChat(Chat):
                 return Get(course_request)
         else:
             return Get(course_request)
+
+    def convert_duration(self, duration: str | int) -> str:
+        """
+        Convert a duration in seconds to a 00:00:00 format.
+        """
+        if isinstance(duration, str):
+            duration = int(duration)
+        time_str = str(timedelta(seconds=duration))
+        return time_str
+
+    def convert_urls(self, urls: str) -> str:
+        return urls.split(",")[0]
 
     def number_courses(self) -> dict:
         """
@@ -92,13 +116,52 @@ class MentorChat(Chat):
         if course:
             print(course.metadata["Course Description"])
 
-    def command_get_metadata(self, param):
+    def command_get_data(self, param):
         """
-        Get the metadata of a course.
+        Get a useful subset of metadata of a course.
         """
         course = self.parse_course_request(param)
         if course:
-            print(course.metadata)
+            metadata = {
+                k: course.metadata[k]
+                for k in [
+                    "Course ID",
+                    "Course Name",
+                    "Course Description",
+                    "LIL URL",
+                    "Instructor Name",
+                    "Instructor Short Bio",
+                    "Course Release Date",
+                    "Visible Duration",
+                    "Internal Library",
+                    "Internal Subject",
+                ]
+            }
+            # Convert duration to a human-readable format
+            metadata["Visible Duration"] = self.convert_duration(
+                metadata["Visible Duration"]
+            )
+            # Grab just first URL
+            metadata["LIL URL"] = self.convert_urls(metadata["LIL URL"])
+            # Scrunch title + id
+            metadata["Course Name"] = (
+                f"{metadata['Course Name']} - {metadata['Course ID']}"
+            )
+            metadata.pop("Course ID")
+            # Scrunch instructor + bio
+            metadata["Instructor Name"] = (
+                f"{metadata['Instructor Name']} - {metadata['Instructor Short Bio']}"
+            )
+            metadata.pop("Instructor Short Bio")
+            # Scrunch library + subject
+            metadata["Internal Library"] = (
+                f"{metadata['Internal Library']} - {metadata['Internal Subject']}"
+            )
+            metadata.pop("Internal Subject")
+            formatted = [
+                f"[green]{k}[/green]: [yellow]{v}[/yellow]" for k, v in metadata.items()
+            ]
+            self.console.print("\n".join(formatted))
 
     def command_get_toc(self, param):
         """
@@ -153,6 +216,9 @@ class MentorChat(Chat):
         """
         View the duration of the current curation.
         """
+        if not self.curation:
+            self.console.print("No curation.")
+            return
         duration = self.curation.duration
         print(duration)
 
@@ -160,6 +226,8 @@ class MentorChat(Chat):
         """
         Add a course to the curation.
         """
+        if not self.curation:
+            self.curation = Curation(title=None, courses=[])
         course = self.parse_course_request(param)
         if course:
             self.curation.courses.append(course)
@@ -168,6 +236,9 @@ class MentorChat(Chat):
         """
         Remove a course from the curation.
         """
+        if not self.curation:
+            self.console.print("No curation.")
+            return
         course = self.parse_course_request(param)
         if course:
             self.curation.courses.remove(course)
@@ -176,7 +247,7 @@ class MentorChat(Chat):
         """
         Clear the current curation.
         """
-        self.curation = []
+        self.curation = None
 
     def command_save_curation(self, param):
         """
@@ -191,41 +262,104 @@ class MentorChat(Chat):
         """
         Build a Learning Path from the current curation.
         """
-        title = param
-        # prompt user for curation title
-        learning_path = build_LearningPath_from_Curation(self.curation, title)
-        print(learning_path)
+        if self.curation:
+            self.curation.title = param
+            # prompt user for curation title
+            learning_path = build_LearningPath_from_Curation(self.curation)
+            print(learning_path)
+        else:
+            self.console.print("No curation.")
 
     ## LLMs! Our special prompt functions
-    def command_query_curation(self):
+    def command_query_curation(self, param):
         """
-        Ask a question about the curation. This uses titles + descriptions.
+        Ask a question about the curation. This uses the snapshot.
         """
-        pass
+        if not self.curation:
+            self.console.print("No curation.")
+            return
+        query = f"Look at this description of a curriculum for an online learning program and then answer the question:\n<curriculum>{self.curation.snapshot}</curriculum>"
+        query += f"\n\n<question>{param}</question>"
+        prompt = Prompt(query)
+        chain = Chain(model=self.model, prompt=prompt)
+        response = chain.run()
+        self.console.print(response)
 
-    def command_query_TOCs(self):
+    def command_query_TOCs(self, param):
         """
-        Ask a question about the combined TOCs of the curation.
+        Ask a question about the combined TOCs of the curation. This uses the TOCs.
         """
-        pass
+        if not self.curation:
+            self.console.print("No curation.")
+            return
+        query = f"Look at this description of a curriculum for an online learning program and then answer the question:\n<curriculum>{self.curation.TOCs}</curriculum>"
+        query += f"\n\n<question>{param}</question>"
+        prompt = Prompt(query)
+        chain = Chain(model=self.model, prompt=prompt)
+        response = chain.run()
+        self.console.print(response)
 
     def command_query_transcript(self, param):
         """
-        Use a local model to query the transcript of a course.
+        Use a local model to query the transcript of a course. This uses llama3.1:latest for data privacy.
         """
         course = self.parse_course_request(param)
-        pass
+        if course:
+            query = f"Look at this transcript of a course and then answer the question:\n<transcript>{course.course_transcript}</transcript>"
+            query += f"\n\n<question>{param}</question>"
+            prompt = Prompt(query)
+            model = Model("llama3.1:latest")
+            chain = Chain(model=model, prompt=prompt)
+            response = chain.run()
+            self.console.print(response)
 
-    def command_review_curation(self):
+    def command_consult_lnd(self, param):
         """
-        Have an L&D expert critique the curation.
+        Have an L&D expert critique the curation. Need to pass an audience param.
         """
-        pass
+        audience = param
+        if not self.curation:
+            self.console.print("No curation.")
+            return
+        review = review_curriculum(
+            curation=self.curation, audience=audience, model=self.model
+        )
+        return review
 
-    def command_learner_feedback(self):
+    def command_consult_learner(self, param):
         """
-        Have a learner provide feedback on the curation.
+        Have a learner provide feedback on the curation. Need to pass an audience param.
         """
+        audience = param
+        if not self.curation:
+            self.console.print("No curation.")
+            return
+        feedback = learner_progression(
+            curation=self.curation, audience=audience, model=self.model
+        )
+        return feedback
+
+    def command_consult_audience(self):
+        """
+        Classify the audience for the curation.
+        """
+        if not self.curation:
+            self.console.print("No curation.")
+            return
+        audience = classify_audience(curation=self.curation, model=self.model)
+        return audience
+
+    def command_title_certificate(self):
+        """
+        Title the certificate for the curation. This will also guess a partner.
+        """
+        if not self.curation:
+            self.console.print("No curation.")
+            return
+        title = title_certificate(curation=self.curation, model=self.model)
+        return title
+
+    def command_suggest_partner(self):
         pass
 
     ## Our commands for managing the workspace
@@ -285,6 +419,6 @@ class MentorChat(Chat):
 
 
 if __name__ == "__main__":
-    model = Model("gpt")
+    model = Model("claude")
     chat = MentorChat(model)
     chat.chat()
