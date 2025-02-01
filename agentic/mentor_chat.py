@@ -18,7 +18,9 @@ from Mentor import (
 )
 import readline  # This silently enables input history for `input`
 from rich.console import Console
+from rich.markdown import Markdown
 from datetime import timedelta
+from Kramer.courses.FirstCourse import first_course, pretty_curriculum
 
 _ = readline.get_history_item(1)  # Minimal interaction to silence IDE
 
@@ -198,7 +200,7 @@ class MentorChat(Chat):
         """
         numbered_curation = self.number_courses()["curation"]
         for number, course in numbered_curation:
-            print(f"{number}. {course}")
+            print(f"{number}. {course.course_title}")
 
     def command_view_curation_duration(self):
         """
@@ -290,6 +292,7 @@ class MentorChat(Chat):
     def command_query_transcript(self, param):
         """
         Use a local model to query the transcript of a course. This uses llama3.1:latest for data privacy.
+        TODO: This actually requires two parameters: the course ID and the question.
         """
         course = self.parse_course_request(param)
         if course:
@@ -336,6 +339,14 @@ class MentorChat(Chat):
             return
         audience = classify_audience(curation=self.curation, model=self.model)
         return audience
+
+    def command_consult_first_course(self, param):
+        """
+        Consult for a curation based on the first, foundational course.
+        """
+        course = self.parse_course_request(param)
+        first_course_curriculum = first_course(course.course_title)
+        self.console.print(Markdown(pretty_curriculum(first_course_curriculum)))
 
     def command_title_certificate(self):
         """
