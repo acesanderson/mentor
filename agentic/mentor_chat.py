@@ -25,12 +25,9 @@ _ = readline.get_history_item(1)  # Minimal interaction to silence IDE
 
 class MentorChat(Chat):
     def __init__(self, model):
-        # Access the self.one_param_commands from parent class
         super().__init__(model)
         self.welcome_message = "[green]Hello! Let's build a Curation together.[/green]"
         self.console = Console(width=120)
-        self.one_param_commands.append("query")  # Query a single string
-        self.two_param_commands.append("get")
         # The Curation we're building in the chat
         self.curation: Curation | None = (
             None  # TODO: Curations require titles, which makes this a bit more complex
@@ -80,8 +77,7 @@ class MentorChat(Chat):
             curation_courses = self.curation.courses
         else:
             curation_courses = []
-        workspace_courses = self.workspace
-        # First, number the courses in the curation
+        workspace_courses = self.workspace  # First, number the courses in the curation
         numbered_curation = [
             (i + 1, course) for i, course in enumerate(curation_courses)
         ]
@@ -100,14 +96,6 @@ class MentorChat(Chat):
 
     # Commands
     ## Our research functions
-    def command_get_course(self, param):
-        """
-        Get a course by the course ID.
-        """
-        course = self.parse_course_request(param)
-        if course:
-            print(course)
-
     def command_get_description(self, param):
         """
         Get the description of a course.
@@ -360,6 +348,9 @@ class MentorChat(Chat):
         return title
 
     def command_suggest_partner(self):
+        """
+        For the current curation, suggest a partner.
+        """
         pass
 
     ## Our commands for managing the workspace
