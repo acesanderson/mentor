@@ -198,9 +198,14 @@ class MentorChat(Chat):
         """
         View the current curation, with numbers.
         """
+        if self.curation == None or self.curation.courses == []:
+            self.console.print("[red]No curation (yes).[/red]")
+            return
         numbered_curation = self.number_courses()["curation"]
         for number, course in numbered_curation:
-            print(f"{number}. {course.course_title}")
+            self.console.print(
+                f"[green]{number}[/green]. [yellow]{course.course_title}[/yellow]"
+            )
 
     def command_view_curation_duration(self):
         """
@@ -226,8 +231,8 @@ class MentorChat(Chat):
         """
         Remove a course from the curation.
         """
-        if not self.curation:
-            self.console.print("No curation.")
+        if not self.curation or self.curation.courses == []:
+            self.console.print("[red]No courses to remove.[/red]")
             return
         course = self.parse_course_request(param)
         if course:
