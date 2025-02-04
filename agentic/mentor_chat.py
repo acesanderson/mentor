@@ -1,9 +1,9 @@
 """
 Rough draft of a chatbot for building curations.
 TODO:
-- use a simple list for self.curation
-- user can "bless" curation into a Curation object, giving it a title.
-- user can generate LP from Curation object
+- implement lazy loading
+- implement numbering for courses, and referencing by number
+- implement a workspace for courses
 """
 
 from Chain import Chat, Model, Prompt, Chain
@@ -198,7 +198,12 @@ class MentorChat(Chat):
         query = param
         mentor = Mentor(query)
         if mentor:
-            print(mentor.courses)
+            for index, course in enumerate(mentor.courses):
+                self.console.print(
+                    f"[green]{index+1}[/green]. [yellow]{course.course_title}[/yellow]"
+                )
+        else:
+            raise ValueError("Mentor returned None.")
 
     ## Our functions for building / editing curations
     def command_view_duration(self):
@@ -316,6 +321,18 @@ class MentorChat(Chat):
             response = chain.run()
             self.console.print(response)
 
+    def command_query_lens(self, param):
+        """
+        "Lens" performs text search across all transcript, returns course titles that contain the query string.
+        """
+        pass
+
+    def command_query_laser(self, param):
+        """
+        "Laser" searches for a query string in all course titles.
+        """
+        pass
+
     def command_consult_lnd(self, param):
         """
         Have an L&D expert critique the curation. Need to pass an audience param.
@@ -363,6 +380,20 @@ class MentorChat(Chat):
             self.console.print("Course not found.")
             return
         self.console.print(Markdown(pretty_curriculum(first_course_curriculum)))
+
+    def command_consult_sequence(self):
+        """
+        For the courses in the Curation, provide a detailed recommendation for course order.
+        """
+        pass
+
+    def command_situate_course(self, param):
+        """
+        For a given course, speculate on what certificate it would be in, and for whom.
+        Also good for understanding prerequisites
+        """
+        course = self.parse_course_request(param)
+        pass
 
     def command_title_certificate(self):
         """
