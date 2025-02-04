@@ -182,7 +182,14 @@ class MentorChat(Chat):
         Similarity search courses by a query string.
         """
         query = param
-        print(Curate(query))
+        results = Curate(query)
+        if results:
+            for index, result in enumerate(results):
+                course = result[0]
+                score = result[1]
+                self.console.print(
+                    f"[green]{index+1}[/green]. [yellow]{course}[/yellow] - [cyan]{score}[/cyan]"
+                )
 
     def command_mentor(self, param):
         """
@@ -194,6 +201,16 @@ class MentorChat(Chat):
             print(mentor.courses)
 
     ## Our functions for building / editing curations
+    def command_view_duration(self):
+        """
+        View the duration of the current curation.
+        """
+        if not self.curation:
+            self.console.print("No curation.")
+            return
+        duration = self.curation.duration
+        print(duration)
+
     def command_view_curation(self):
         """
         View the current curation, with numbers.
@@ -206,16 +223,6 @@ class MentorChat(Chat):
             self.console.print(
                 f"[green]{number}[/green]. [yellow]{course.course_title}[/yellow]"
             )
-
-    def command_view_curation_duration(self):
-        """
-        View the duration of the current curation.
-        """
-        if not self.curation:
-            self.console.print("No curation.")
-            return
-        duration = self.curation.duration
-        print(duration)
 
     def command_add_course(self, param):
         """
@@ -261,7 +268,7 @@ class MentorChat(Chat):
             self.curation.title = param
             # prompt user for curation title
             learning_path = build_LearningPath_from_Curation(self.curation)
-            print(learning_path)
+            learning_path.print_markdown()
         else:
             self.console.print("No curation.")
 
@@ -320,7 +327,7 @@ class MentorChat(Chat):
         review = review_curriculum(
             curation=self.curation, audience=audience, model=self.model
         )
-        return review
+        print(review)
 
     def command_consult_learner(self, param):
         """
@@ -333,7 +340,7 @@ class MentorChat(Chat):
         feedback = learner_progression(
             curation=self.curation, audience=audience, model=self.model
         )
-        return feedback
+        print(feedback)
 
     def command_consult_audience(self):
         """
@@ -350,7 +357,11 @@ class MentorChat(Chat):
         Consult for a curation based on the first, foundational course.
         """
         course = self.parse_course_request(param)
-        first_course_curriculum = first_course(course.course_title)
+        try:
+            first_course_curriculum = first_course(course.course_title)
+        except AttributeError:
+            self.console.print("Course not found.")
+            return
         self.console.print(Markdown(pretty_curriculum(first_course_curriculum)))
 
     def command_title_certificate(self):
