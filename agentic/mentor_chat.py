@@ -8,7 +8,15 @@ TODO:
 
 from Chain import Chat, Model, Prompt, Chain
 from Curator import Curate
-from Kramer import Course, Get, Curation, build_LearningPath_from_Curation
+from Kramer import (
+    Course,
+    Get,
+    Curation,
+    LearningPath,
+    build_LearningPath_from_Curation,
+    Lens,
+    Laser,
+)
 from Mentor import (
     Mentor,
     review_curriculum,
@@ -21,6 +29,7 @@ from rich.console import Console
 from rich.markdown import Markdown
 from datetime import timedelta
 from Kramer.courses.FirstCourse import first_course, pretty_curriculum
+import json
 
 _ = readline.get_history_item(1)  # Minimal interaction to silence IDE
 
@@ -31,13 +40,13 @@ class MentorChat(Chat):
         self.welcome_message = "[green]Hello! Let's build a Curation together.[/green]"
         self.console = Console(width=120)
         # The Curation we're building in the chat
-        self.curation: Curation | None = (
-            None  # TODO: Curations require titles, which makes this a bit more complex
-        )
+        self.curation: Curation = Curation(title="", courses=[])
         # A sort of scratchpad area for courses I'm considering
         self.workspace: list[Course] = []
         # A blacklist
         self.blacklist: list[Course] = []
+        # A course cache (for short term memory of numbers-> courses)
+        self.course_cache = {}
 
     # Functions
     def parse_course_request(self, course_request) -> Course | None:
@@ -67,6 +76,15 @@ class MentorChat(Chat):
 
     def convert_urls(self, urls: str) -> str:
         return urls.split(",")[0]
+
+    def print_course_list(self, courselist: list[Course]):
+        """
+        Formats courselist (with numbers) and prints to console.
+        """
+        for index, course in enumerate(courselist):
+            self.console.print(
+                f"[green]{index+1}[/green]. [yellow]{course.course_title}[/yellow]"
+            )
 
     def number_courses(self) -> dict:
         """
@@ -198,20 +216,22 @@ class MentorChat(Chat):
         query = param
         mentor = Mentor(query)
         if mentor:
-            for index, course in enumerate(mentor.courses):
-                self.console.print(
-                    f"[green]{index+1}[/green]. [yellow]{course.course_title}[/yellow]"
-                )
+            self.print_course_list(mentor.courses)
         else:
             raise ValueError("Mentor returned None.")
 
     ## Our functions for building / editing curations
+    def command_name_curation(self, param):
+        name = param
+        self.curation.title = name
+        self.console.print(f"[green]Curation title changed: {name}[/green]")
+
     def command_view_duration(self):
         """
         View the duration of the current curation.
         """
-        if not self.curation:
-            self.console.print("No curation.")
+        if not self.curation.courses:
+            self.console.print("[red]No courses in Curation.[/red]")
             return
         duration = self.curation.duration
         print(duration)
@@ -221,13 +241,55 @@ class MentorChat(Chat):
         View the current curation, with numbers.
         """
         if self.curation == None or self.curation.courses == []:
+            if self.curation.title:
+                self.console.print(
+                    f"[bold yellow]{self.curation.title}[/bold yellow]\n[red]No courses (yet).[/red]"
+                )
             self.console.print("[red]No curation (yes).[/red]")
+        else:
+            self.console.print(f"[bold yellow]{self.curation.title}[/bold yellow]")
+            self.print_course_list(self.curation.courses)
+
+    def command_reorder_curation(self):
+        """
+        Allow user to change the order of courses in the Curation.
+        """
+        if self.curation == None or self.curation.courses == []:
+            self.console.print("[red]No courses in Curation.[/red]")
             return
-        numbered_curation = self.number_courses()["curation"]
-        for number, course in numbered_curation:
-            self.console.print(
-                f"[green]{number}[/green]. [yellow]{course.course_title}[/yellow]"
-            )
+        self.print_course_list(self.curation.courses)
+        for index, course in enumerate(self.curation.courses):
+            self.course_cache[index + 1] = course
+        self.console.print(
+            "Write the two numbers you want to swap, separated by a space."
+        )
+        user_input = self.console.input("[bold green]Swap[/bold green]: ")
+        swap = user_input.split(" ")
+        if len(swap) != 2:
+            self.console.print("[red]Invalid input.[/red]")
+            return
+        try:
+            swap = [int(x) for x in swap]
+            course1 = self.course_cache[swap[0]]
+            course2 = self.course_cache[swap[1]]
+            # Swap the courses in self.curation.courses
+            index1 = self.curation.courses.index(course1)
+            index2 = self.curation.courses.index(course2)
+            self.curation.courses[index1] = course2
+            self.curation.courses[index2] = course1
+            self.course_cache[swap[0]] = course2
+            self.course_cache[swap[1]] = course1
+            # Refresh the course_cache
+            for index, course in enumerate(self.curation.courses):
+                self.course_cache[index + 1] = course
+            # Print the new curation for user
+            self.print_course_list(self.curation.courses)
+        except KeyError:
+            self.console.print("[red]Invalid course number.[/red]")
+        except ValueError:
+            self.console.print("[red]Invalid input.[/red]")
+        except:
+            self.console.print("[red]Invalid input.[/red]")
 
     def command_add_course(self, param):
         """
@@ -250,32 +312,47 @@ class MentorChat(Chat):
         if course:
             self.curation.courses.remove(course)
 
-    def command_clear_curation(self):
+    def command_clear(self):
         """
         Clear the current curation.
         """
-        self.curation = None
+        self.curation = Curation(title="", courses=[])
+        self.console.print("Curation cleared.")
 
     def command_save_curation(self, param):
         """
         Save the current curation to a file.
         """
-        filename = param
-        # prompt user for curation title
-        # save curation to file
-        pass
+        filename = param + ".json"
+        if self.curation.courses == []:
+            self.console.print("No curation to save.")
+        else:
+            with open(filename + ".json", "w") as f:
+                json.dump(self.curation.model_dump_json())
+            self.console.print(f"Curation saved to {filename}.")
 
-    def command_build_learningpath(self, param):
+    def command_build_learningpath(self):
         """
         Build a Learning Path from the current curation.
         """
-        if self.curation:
-            self.curation.title = param
-            # prompt user for curation title
-            learning_path = build_LearningPath_from_Curation(self.curation)
-            learning_path.print_markdown()
+        if self.curation.title == "":
+            self.console.print(
+                f"[red]Curation has no title. Set one with /name curation[/red]"
+            )
+            return
+        elif self.curation.courses == []:
+            self.console.print(
+                f"[red]Curation has no courses. Add some with /add course[/red]"
+            )
+            return
         else:
-            self.console.print("No curation.")
+            if len(self.curation.courses) > 0:
+                learning_path: LearningPath = build_LearningPath_from_Curation(
+                    self.curation
+                )
+                learning_path.print_markdown()
+                learning_path.save_to_markdown()
+        self.console.print(f"LP saved to {self.curation.title}.md.", style="green")
 
     ## LLMs! Our special prompt functions
     def command_query_curation(self, param):
@@ -325,13 +402,17 @@ class MentorChat(Chat):
         """
         "Lens" performs text search across all transcript, returns course titles that contain the query string.
         """
-        pass
+        query = param
+        hits = Lens(query)
+        return hits
 
     def command_query_laser(self, param):
         """
         "Laser" searches for a query string in all course titles.
         """
-        pass
+        query = param
+        hits = Laser(query)
+        return hits
 
     def command_consult_lnd(self, param):
         """
