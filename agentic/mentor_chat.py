@@ -195,6 +195,54 @@ class MentorChat(Chat):
         if course:
             print(course.metadata["Course URL"])
 
+    def command_get_tocs(self):
+        """
+        Get the combined table of contents of the curation.
+        """
+        if not self.curation:
+            self.console.print("[red]No curation.[/red]")
+            return
+        tocs = self.curation.TOCs
+        self.console.print(tocs)
+
+    def command_get_descriptions(self):
+        """
+        Get the combined descriptions of the curation.
+        """
+        if not self.curation:
+            self.console.print("[red]No curation.[/red]")
+            return
+        snapshot_text = self.curation.snapshot
+        self.console.print(snapshot_text)
+
+    def command_head(self, param):
+        """
+        Get the first transcript of a course.
+        """
+        course = self.parse_course_request(param)
+        if course:
+            head = course.head
+            if head:
+                self.console.print(head)
+            else:
+                self.console.print("[red]No head found.[/red]")
+        else:
+            pass
+
+    def command_tail(self, param):
+        """
+        Get the last transcript of a course.
+        """
+        course = self.parse_course_request(param)
+        if course:
+            tail = course.tail
+            if tail:
+                self.console.print(tail)
+            else:
+                self.console.print("[red]No tail found.[/red]")
+        else:
+            pass
+
     def command_curate(self, param):
         """
         Similarity search courses by a query string.
@@ -222,6 +270,9 @@ class MentorChat(Chat):
 
     ## Our functions for building / editing curations
     def command_name_curation(self, param):
+        """
+        `   Assign a name to the curation. Necessary for saving, creating learning paths, and using many of the consult commands.
+        """
         name = param
         self.curation.title = name
         self.console.print(f"[green]Curation title changed: {name}[/green]")
@@ -404,7 +455,7 @@ class MentorChat(Chat):
         """
         query = param
         hits = Lens(query)
-        return hits
+        self.print_course_list(hits)
 
     def command_query_laser(self, param):
         """
@@ -412,7 +463,7 @@ class MentorChat(Chat):
         """
         query = param
         hits = Laser(query)
-        return hits
+        self.print_course_list(hits)
 
     def command_consult_lnd(self, param):
         """
