@@ -43,12 +43,12 @@ class MentorChat(Chat):
         self.console = Console(width=120)
         # The Curation we're building in the chat
         self.curation: Curation = Curation(title="", courses=[])
-        # A sort of scratchpad area for courses I'm considering
+        # Workspace = a bucket for all courses that have come up in the chat, either from user input, curate, mentor, etc.
         self.workspace: list[Course] = []
         # A blacklist
         self.blacklist: list[Course] = []
         # A course cache (for short term memory of numbers-> courses)
-        self.course_cache = {}
+        self.course_cache: dict[int, str] = {}
 
     # Functions
     def parse_course_request(self, course_request) -> Course | None:
@@ -61,7 +61,12 @@ class MentorChat(Chat):
         if course_request.isdigit():
             course_number = int(course_request)
             if course_number < 100:
-                return self.number_courses()["catalog"][course_number]
+                try:
+                    course_title = self.course_cache[course_number]
+                    return Get(course_title)
+                except KeyError:
+                    self.console.print("[red]Invalid course number.[/red]")
+                    return None
             else:
                 return Get(course_request)
         else:
@@ -79,9 +84,20 @@ class MentorChat(Chat):
     def convert_urls(self, urls: str) -> str:
         return urls.split(",")[0]
 
+    def update_course_cache(self, courselist: list[Course]):
+        """
+        Update the course cache with a new list of courses.
+        This is invoked whenever a course list is printed to user (therefore from print_course_list).
+        """
+        self.course_cache = {}
+        for index, course in enumerate(courselist):
+            self.course_cache[index + 1] = course.course_title
+        print(self.course_cache)
+
     def print_course_list(self, courselist: list[Course]):
         """
         Formats courselist (with numbers) and prints to console.
+        Invoked whenever we want to present a course list to a user.
         """
         for index, course in enumerate(courselist):
             self.console.print(
@@ -270,6 +286,9 @@ class MentorChat(Chat):
                 self.console.print(
                     f"[green]{index+1}[/green]. [yellow]{course}[/yellow] - [cyan]{score}[/cyan]"
                 )
+        self.course_cache = {
+            index + 1: course for index, (course, score) in enumerate(results)
+        }
 
     def command_mentor(self, param):
         """
