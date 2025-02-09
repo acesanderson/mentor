@@ -252,7 +252,7 @@ def lnd_curriculum(topic: str) -> str:
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_lnd)
     messages = [create_system_message(persona_lnd)]
-    chain = Chain(prompt, model)
+    chain = Chain(prompt=prompt, model=model)
     response = chain.run(messages=messages, input_variables={"topic": topic})
     # Extract the answer from between the XML tags
     response_content = response.content
@@ -273,7 +273,7 @@ def curriculum_specialist_curriculum(ideal_curriculum: str, topic: str) -> Curri
     prompt = Prompt(prompt_curriculum_specialist)
     messages = [create_system_message(persona_curriculum_specialist)]
     parser = Parser(Curriculum)
-    chain = Chain(prompt, model, parser)
+    chain = Chain(prompt=prompt, model=model, parser=parser)
     response = chain.run(
         messages=messages,
         input_variables={"ideal_curriculum": ideal_curriculum, "topic": topic},
@@ -307,7 +307,7 @@ def identify_courses(curriculum: Curriculum) -> Curation:
     prompt = Prompt(prompt_video_course_librarian)
     messages = [create_system_message(video_course_librarian)]
     parser = Parser(Curation)
-    chain = Chain(prompt, model, parser)
+    chain = Chain(prompt=prompt, model=model, parser=parser)
     response = chain.run(
         messages=messages,
         input_variables={
