@@ -31,7 +31,6 @@ from rich.markdown import Markdown
 from datetime import timedelta
 from Kramer.courses.FirstCourse import first_course, pretty_curriculum
 import json
-import sys
 
 _ = readline.get_history_item(1)  # Minimal interaction to silence IDE
 
@@ -72,6 +71,27 @@ class MentorChat(Chat):
         else:
             return Get(course_request)
 
+    def add_to_workspace(self, payload: Course | list[Course] | str | list[str]):
+        """
+        Add a course or courses to workspace, if not already there.
+        """
+        course_titles = [course.course_title for course in self.workspace]
+        if isinstance(payload, Course):
+            if payload.course_title not in course_titles:
+                self.workspace.append(payload)
+        elif isinstance(payload, list):
+            for item in payload:
+                self.add_to_workspace(item)
+        elif isinstance(payload, str):
+            course = Get(payload)
+            if course:
+                if course.course_title not in course_titles:
+                    self.workspace.append(course)
+            else:
+                raise ValueError(
+                    f"Course not found: this suggests an error in code. Input = {payload}"
+                )
+
     def convert_duration(self, duration: str | int) -> str:
         """
         Convert a duration in seconds to a 00:00:00 format.
@@ -92,7 +112,6 @@ class MentorChat(Chat):
         self.course_cache = {}
         for index, course in enumerate(courselist):
             self.course_cache[index + 1] = course.course_title
-        print(self.course_cache)
 
     def print_course_list(self, courselist: list[Course]):
         """
@@ -103,6 +122,7 @@ class MentorChat(Chat):
             self.console.print(
                 f"[green]{index+1}[/green]. [yellow]{course.course_title}[/yellow]"
             )
+        self.update_course_cache(courselist)
 
     def number_courses(self) -> dict:
         """
@@ -141,6 +161,7 @@ class MentorChat(Chat):
         course = self.parse_course_request(param)
         if course:
             self.console.print(course.metadata["Course Description"])
+            self.add_to_workspace(course)
 
     def command_get_data(self, param):
         """
@@ -188,6 +209,7 @@ class MentorChat(Chat):
                 f"[green]{k}[/green]: [yellow]{v}[/yellow]" for k, v in metadata.items()
             ]
             self.console.print("\n".join(formatted))
+            self.add_to_workspace(course)
 
     def command_get_toc(self, param):
         """
@@ -196,6 +218,7 @@ class MentorChat(Chat):
         course = self.parse_course_request(param)
         if course:
             self.console.print(course.course_TOC)
+            self.add_to_workspace(course)
 
     def command_get_transcript(self, param):
         """
@@ -204,6 +227,7 @@ class MentorChat(Chat):
         course = self.parse_course_request(param)
         if course:
             self.console.print(course.course_transcript)
+            self.add_to_workspace(course)
 
     def command_get_url(self, param):
         """
@@ -212,6 +236,7 @@ class MentorChat(Chat):
         course = self.parse_course_request(param)
         if course:
             self.console.print(course.metadata["Course URL"])
+            self.add_to_workspace(course)
 
     def command_get_tocs(self):
         """
@@ -245,6 +270,7 @@ class MentorChat(Chat):
                 self.console.print(head)
             else:
                 self.console.print("[red]No head found.[/red]")
+            self.add_to_workspace(course)
         else:
             pass
 
@@ -259,6 +285,7 @@ class MentorChat(Chat):
                 self.console.print(tail)
             else:
                 self.console.print("[red]No tail found.[/red]")
+            self.add_to_workspace(course)
         else:
             pass
 
@@ -270,12 +297,14 @@ class MentorChat(Chat):
         hits = instructor_courses(instructor)
         if hits:
             self.print_course_list(hits)
+            self.add_to_workspace(hits)
         else:
             self.console.print("No courses found.", style="red")
 
     def command_curate(self, param):
         """
         Similarity search courses by a query string.
+        Logic is custom since Curator returns course name and score (not Course objects).
         """
         query = param
         results = Curate(query, n_results=100, k=10)
@@ -289,6 +318,13 @@ class MentorChat(Chat):
         self.course_cache = {
             index + 1: course for index, (course, score) in enumerate(results)
         }
+        courses = [Get(course) for course, score in results]
+        if any([course == None for course in courses]):
+            self.console.print(
+                "[red]Some courses not found; this suggests an error in code.[/red]"
+            )
+        else:
+            self.add_to_workspace(courses)
 
     def command_mentor(self, param):
         """
@@ -298,13 +334,14 @@ class MentorChat(Chat):
         mentor = Mentor(query)
         if mentor:
             self.print_course_list(mentor.courses)
+            self.add_to_workspace(mentor.courses)
         else:
             raise ValueError("Mentor returned None.")
 
     ## Our functions for building / editing curations
     def command_name_curation(self, param):
         """
-        `   Assign a name to the curation. Necessary for saving, creating learning paths, and using many of the consult commands.
+        Assign a name to the curation. Necessary for saving, creating learning paths, and using many of the consult commands.
         """
         name = param
         self.curation.title = name
@@ -363,11 +400,10 @@ class MentorChat(Chat):
             self.curation.courses[index2] = course1
             self.course_cache[swap[0]] = course2
             self.course_cache[swap[1]] = course1
-            # Refresh the course_cache
-            for index, course in enumerate(self.curation.courses):
-                self.course_cache[index + 1] = course
             # Print the new curation for user
             self.print_course_list(self.curation.courses)
+            # Refresh the course_cache
+            self.update_course_cache(self.curation.courses)
         except KeyError:
             self.console.print("[red]Invalid course number.[/red]")
         except ValueError:
@@ -384,6 +420,7 @@ class MentorChat(Chat):
         course = self.parse_course_request(param)
         if course:
             self.curation.courses.append(course)
+            self.add_to_workspace(course)
 
     def command_remove_course(self, param):
         """
@@ -489,6 +526,7 @@ class MentorChat(Chat):
         query = param
         hits = Lens(query)
         self.print_course_list(hits)
+        self.add_to_workspace(hits)
 
     def command_query_laser(self, param):
         """
@@ -497,6 +535,7 @@ class MentorChat(Chat):
         query = param
         hits = Laser(query)
         self.print_course_list(hits)
+        self.add_to_workspace(hits)
 
     def command_consult_lnd(self, param):
         """
@@ -560,16 +599,6 @@ class MentorChat(Chat):
         course = self.parse_course_request(param)
         pass
 
-    def command_title_certificate(self):
-        """
-        Title the certificate for the curation. This will also guess a partner.
-        """
-        if not self.curation:
-            self.console.print("No curation.")
-            return
-        title = title_certificate(curation=self.curation, model=self.model)
-        return title
-
     def command_suggest_partner(self):
         """
         For the current curation, suggest a partner.
@@ -579,57 +608,37 @@ class MentorChat(Chat):
     ## Our commands for managing the workspace
     def command_view_workspace(self):
         """
-        View the workspace, with numbers.
+        View the workspace.
         """
-        # Numbers start in the Curation, then the Workspace.
-        pass
+        self.print_course_list(self.workspace)
 
     def command_add_workspace(self, param):
         """
         Add a course to the workspace.
         """
         course = self.parse_course_request(param)
-        pass
+        if course:
+            self.add_to_workspace(course)
+            self.console.print(f"{course.course_title} added to workspace.")
 
     def command_remove_workspace(self, param):
         """
         Remove a course from the workspace.
         """
         course = self.parse_course_request(param)
-        pass
+        course_title = course.course_title
+        if course in self.workspace:
+            self.workspace.remove(course)
+            self.console.print(f"{course_title} removed from workspace.")
+        else:
+            self.console.print(f"{course_title} not in workspace")
 
     def command_clear_workspace(self):
         """
         Clear the workspace.
         """
-        pass
-
-    ## Our commands for managing the blacklist
-    def command_view_blacklist(self):
-        """
-        View the blacklist.
-        """
-        pass
-
-    def command_clear_blacklist(self):
-        """
-        Clear the blacklist.
-        """
-        pass
-
-    def command_add_blacklist(self, param):
-        """
-        Add a course to the blacklist.
-        """
-        course = self.parse_course_request(param)
-        pass
-
-    def command_remove_blacklist(self, param):
-        """
-        Remove a course from the blacklist.
-        """
-        course = self.parse_course_request(param)
-        pass
+        self.workspace = []
+        self.console.print("Workspace cleared.", style="green")
 
 
 if __name__ == "__main__":
