@@ -33,7 +33,3 @@ Sales leadership requires a unique blend of coaching, strategy, and organization
 - Next Level Sales Leadership
 - How to Motivate Your Sales Teams
 
-### Announcement
-
-NASP has signed for a Sales Management Professional Certificate! As businesses face increasing pressure to optimize their revenue operations, effective sales leadership has become crucial for organizational success. The National Association of Sales Professionals (NASP) is the perfect partner for this certificate, being the premier organization for sales leadership training with over 60,000 members and a track record of developing world-class sales professionals through their industry-standard certifications.
-

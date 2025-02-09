@@ -1,10 +1,18 @@
 """
 Rough draft of a chatbot for building curations.
 TODO:
-- implement lazy loading
-- implement numbering for courses, and referencing by number
-- implement a workspace for courses
+- [ ] implement lazy loading
+- [ ] suppress logging
+- [ ] allow multiple params for query commands
+- [x] fix encoding issues
+- [x] implement numbering for courses, and referencing by number
+- [x] implement a workspace for courses
 """
+
+# We don't want logging to show up, and our imports are noisy.
+import logging
+
+logging.getLogger().setLevel(logging.CRITICAL)  # Only show critical errors
 
 from Chain import Chat, Model, Prompt, Chain
 from Curator import Curate
@@ -31,6 +39,7 @@ from rich.markdown import Markdown
 from datetime import timedelta
 from Kramer.courses.FirstCourse import first_course, pretty_curriculum
 import json
+
 
 _ = readline.get_history_item(1)  # Minimal interaction to silence IDE
 
