@@ -16,6 +16,7 @@ from Kramer import (
     build_LearningPath_from_Curation,
     Lens,
     Laser,
+    instructor_courses,
 )
 from Mentor import (
     Mentor,
@@ -30,6 +31,7 @@ from rich.markdown import Markdown
 from datetime import timedelta
 from Kramer.courses.FirstCourse import first_course, pretty_curriculum
 import json
+import sys
 
 _ = readline.get_history_item(1)  # Minimal interaction to silence IDE
 
@@ -122,7 +124,7 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            print(course.metadata["Course Description"])
+            self.console.print(course.metadata["Course Description"])
 
     def command_get_data(self, param):
         """
@@ -177,7 +179,7 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            print(course.course_TOC)
+            self.console.print(course.course_TOC)
 
     def command_get_transcript(self, param):
         """
@@ -185,7 +187,7 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            print(course.course_transcript)
+            self.console.print(course.course_transcript)
 
     def command_get_url(self, param):
         """
@@ -193,7 +195,7 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            print(course.metadata["Course URL"])
+            self.console.print(course.metadata["Course URL"])
 
     def command_get_tocs(self):
         """
@@ -205,7 +207,7 @@ class MentorChat(Chat):
         tocs = self.curation.TOCs
         self.console.print(tocs)
 
-    def command_get_descriptions(self):
+    def command_get_snapshot(self):
         """
         Get the combined descriptions of the curation.
         """
@@ -213,6 +215,7 @@ class MentorChat(Chat):
             self.console.print("[red]No curation.[/red]")
             return
         snapshot_text = self.curation.snapshot
+        snapshot_text = Markdown(snapshot_text)
         self.console.print(snapshot_text)
 
     def command_head(self, param):
@@ -243,12 +246,23 @@ class MentorChat(Chat):
         else:
             pass
 
+    def command_instructor(self, param):
+        """
+        Get a list of courses by instructor name.
+        """
+        instructor = param
+        hits = instructor_courses(instructor)
+        if hits:
+            self.print_course_list(hits)
+        else:
+            self.console.print("No courses found.", style="red")
+
     def command_curate(self, param):
         """
         Similarity search courses by a query string.
         """
         query = param
-        results = Curate(query)
+        results = Curate(query, n_results=100, k=10)
         if results:
             for index, result in enumerate(results):
                 course = result[0]
@@ -285,7 +299,7 @@ class MentorChat(Chat):
             self.console.print("[red]No courses in Curation.[/red]")
             return
         duration = self.curation.duration
-        print(duration)
+        self.console.print(duration)
 
     def command_view_curation(self):
         """
@@ -476,7 +490,7 @@ class MentorChat(Chat):
         review = review_curriculum(
             curation=self.curation, audience=audience, model=self.model
         )
-        print(review)
+        self.console.print(review)
 
     def command_consult_learner(self, param):
         """
@@ -489,7 +503,7 @@ class MentorChat(Chat):
         feedback = learner_progression(
             curation=self.curation, audience=audience, model=self.model
         )
-        print(feedback)
+        self.console.print(feedback)
 
     def command_consult_audience(self):
         """
@@ -499,7 +513,7 @@ class MentorChat(Chat):
             self.console.print("No curation.")
             return
         audience = classify_audience(curation=self.curation, model=self.model)
-        return audience
+        self.console.print(audience)
 
     def command_consult_first_course(self, param):
         """
