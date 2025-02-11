@@ -128,8 +128,12 @@ class MentorChat(Chat):
         Invoked whenever we want to present a course list to a user.
         """
         for index, course in enumerate(courselist):
+            try:
+                course_release_date = course.metadata["Course Release Date"][:4]
+            except (KeyError, TypeError):
+                course_release_date = ""
             self.console.print(
-                f"[green]{index+1}[/green]. [yellow]{course.course_title}[/yellow]"
+                f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow]\t[cyan]{course_release_date}[/cyan]"
             )
         self.update_course_cache(courselist)
 
@@ -317,23 +321,28 @@ class MentorChat(Chat):
         """
         query = param
         results = Curate(query, n_results=100, k=10)
+        results = [(Get(course), score) for course, score in results]
+        if any([course == None for (course, _) in results]):
+            self.console.print(
+                "[red]Some courses not found; this suggests an error in code.[/red]"
+            )
+            return
         if results:
             for index, result in enumerate(results):
                 course = result[0]
                 score = result[1]
+                course_title = course.course_title
+                try:
+                    course_release_date = course.metadata["Course Release Date"][:4]
+                except (KeyError, TypeError):
+                    course_release_date = ""
                 self.console.print(
-                    f"[green]{index+1}[/green]. [yellow]{course}[/yellow] - [cyan]{score}[/cyan]"
+                    f"[green]{index+1}[/green]. [yellow]{course_title: <80}[/yellow]\t[magenta]{score}[/magenta]\t[cyan]{course_release_date}[/cyan]"
                 )
         self.course_cache = {
-            index + 1: course for index, (course, score) in enumerate(results)
+            index + 1: course.course_title for index, (course, _) in enumerate(results)
         }
-        courses = [Get(course) for course, score in results]
-        if any([course == None for course in courses]):
-            self.console.print(
-                "[red]Some courses not found; this suggests an error in code.[/red]"
-            )
-        else:
-            self.add_to_workspace(courses)
+        self.add_to_workspace([course for (course, _) in results])
 
     def command_mentor(self, param):
         """
@@ -481,7 +490,7 @@ class MentorChat(Chat):
                     self.curation
                 )
                 learning_path.print_markdown()
-                learning_path.save_to_markdown()
+                learning_path.save_to_google_doc()
         self.console.print(f"LP saved to {self.curation.title}.md.", style="green")
 
     ## LLMs! Our special prompt functions
