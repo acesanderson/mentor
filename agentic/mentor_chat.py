@@ -69,14 +69,26 @@ class MentorChat(Chat):
         self.course_cache: dict[int, str] = {}
 
     # Functions
-    def parse_course_request(self, course_request) -> Course | None:
+    def parse_course_request(self, course_request) -> Course | list[Course] | None:
         """
         Parse a course request string.
         If the course request is a number less than 100, return the course at that index in the workspace or the curation.
         Numbering: starts in curation, then workspace.
         If course request is a string, return the course with that ID. (Get already parses course IDs v. titles)
         """
-        if course_request.isdigit():
+        if course_request.replace(" ", "").isdigit():  # Multiple numbers
+            course_numbers = [int(x) for x in course_request.split(" ")]
+            course_list = []
+            for course_number in course_numbers:
+                try:
+                    course_title = self.course_cache[course_number]
+                    course = Get(course_title)
+                    course_list.append(course)
+                except KeyError:
+                    self.console.print("[red]Invalid course number.[/red]")
+                    return None
+            return course_list
+        if course_request.isdigit():  # Single number, either an index or a course ID
             course_number = int(course_request)
             if course_number < 100:
                 try:
@@ -458,9 +470,15 @@ class MentorChat(Chat):
     def command_add_course(self, param):
         """
         Add a course to the curation.
+        Allows multiple courses to be added at once.
         """
         course = self.parse_course_request(param)
-        if course:
+        if isinstance(course, list):
+            for item in course:
+                self.curation.courses.append(item)
+                self.add_to_workspace(item)
+            self.save_curation()
+        elif isinstance(course, Course):
             self.curation.courses.append(course)
             self.add_to_workspace(course)
             self.save_curation()
@@ -468,13 +486,18 @@ class MentorChat(Chat):
     def command_remove_course(self, param):
         """
         Remove a course from the curation.
+        Allows multiple courses to be removed at once.
         """
-        if not self.curation or self.curation.courses == UniqueList():
-            self.console.print("[red]No courses to remove.[/red]")
-            return
         course = self.parse_course_request(param)
-        if course:
+        if isinstance(course, list):
+            for item in course:
+                self.curation.courses.remove(item)
+                self.add_to_workspace(item)
+            self.save_curation()
+        elif isinstance(course, Course):
             self.curation.courses.remove(course)
+            self.add_to_workspace(course)
+            self.save_curation()
 
     def command_clear(self):
         """
