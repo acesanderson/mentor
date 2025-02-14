@@ -36,6 +36,7 @@ import json
 from typing import TypeVar, Generic
 from typing import TypeVar, Generic
 from pathlib import Path
+import re
 
 dir_path = Path(__file__).parent
 curation_save_file = dir_path / ".curation.json"
@@ -69,6 +70,50 @@ class MentorChat(Chat):
         self.course_cache: dict[int, str] = {}
 
     # Functions
+    # def query_model(self, prompt: Prompt) -> str | None:
+    #     """
+    #     Override the query_model method to intercept Prompt object and parse the user templates.
+    #     User templates:
+    #     {{snapshot}} = curation snapshot (i.e. descriptions)
+    #     {{tocs}} = curation tocs
+    #     {{course.transcript}} = a course (retrieved with parse_course_request)
+    #     {{course.description}} = description of a course (retrieved with parse_course_request)
+    #     """
+    #     _query_model = super().query_model
+    #     # Extract the prompt string from Prompt object
+    #     new_prompt = prompt[0].content
+    #     if "{{snapshot}}" in new_prompt:
+    #         new_prompt.replace(
+    #             "{{snapshot}}",
+    #             f"<course_descriptions>\n{self.curation.snapshot}\n</course_descriptions>",
+    #         )
+    #     if "{{tocs}}" in new_prompt:
+    #         new_prompt.replace(
+    #             "{{tocs}}",
+    #             f"<course_tocs>\n{self.curation.TOCs}\n</course_tocs>",
+    #         )
+    #     if ".transcript}}" or ".description}}" in new_prompt:
+    #         # Extract the course_param from the prompt string; it's everything before the dot
+    #         course_param = re.search(r"{{(.*?)\.", new_prompt).group(1)
+    #         # Get the course object
+    #         course = self.parse_course_request(course_param)
+    #         if isinstance(course, Course):
+    #             if ".transcript}}" in new_prompt:
+    #                 new_prompt.replace(
+    #                     "{{course.transcript}}",
+    #                     f"<course_transcript>\n{course.course_transcript}\n</course_transcript>",
+    #                 )
+    #             if ".description}}" in new_prompt:
+    #                 new_prompt.replace(
+    #                     "{{course.description}}",
+    #                     f"<course_description>\n{course.metadata['Course Description']}\n</course_description>",
+    #                 )
+    #         elif isinstance(course, list):
+    #             self.console.print("Not found. Did you mean:", style="red")
+    #             self.print_course_list(course)
+    #             return
+    #     return _query_model(new_prompt)
+
     def parse_course_request(self, course_request) -> Course | list[Course] | None:
         """
         Parse a course request string.
