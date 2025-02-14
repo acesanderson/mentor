@@ -100,7 +100,7 @@ class MentorChat(Chat):
             else:
                 return Get(course_request)
         else:
-            return Get(course_request)
+            return Get(course_request, return_recommendations=True)
 
     def add_to_workspace(self, payload: Course | list[Course] | str | list[str]):
         """
@@ -211,8 +211,12 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            self.console.print(course.metadata["Course Description"])
-            self.add_to_workspace(course)
+            if isinstance(course, Course):
+                self.console.print(course.metadata["Course Description"])
+                self.add_to_workspace(course)
+            elif isinstance(course, list):
+                self.console.print("Not found. Did you mean:", style="red")
+                self.print_course_list(course)
 
     def command_get_data(self, param):
         """
@@ -220,47 +224,52 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            metadata = {
-                k: course.metadata[k]
-                for k in [
-                    "Course ID",
-                    "Course Name",
-                    "Course Description",
-                    "LIL URL",
-                    "Instructor Name",
-                    "Instructor Short Bio",
-                    "Course Release Date",
-                    "Visible Duration",
-                    "Internal Library",
-                    "Internal Subject",
+            if isinstance(course, Course):
+                metadata = {
+                    k: course.metadata[k]
+                    for k in [
+                        "Course ID",
+                        "Course Name",
+                        "Course Description",
+                        "LIL URL",
+                        "Instructor Name",
+                        "Instructor Short Bio",
+                        "Course Release Date",
+                        "Visible Duration",
+                        "Internal Library",
+                        "Internal Subject",
+                    ]
+                }
+                # Convert duration to a human-readable format
+                metadata["Visible Duration"] = self.convert_duration(
+                    metadata["Visible Duration"]
+                )
+                # Grab just first URL
+                metadata["LIL URL"] = self.convert_urls(metadata["LIL URL"])
+                # Scrunch title + id
+                metadata["Course Name"] = (
+                    f"{metadata['Course Name']} - {metadata['Course ID']}"
+                )
+                metadata.pop("Course ID")
+                # Scrunch instructor + bio
+                metadata["Instructor Name"] = (
+                    f"{metadata['Instructor Name']} - {metadata['Instructor Short Bio']}"
+                )
+                metadata.pop("Instructor Short Bio")
+                # Scrunch library + subject
+                metadata["Internal Library"] = (
+                    f"{metadata['Internal Library']} - {metadata['Internal Subject']}"
+                )
+                metadata.pop("Internal Subject")
+                formatted = [
+                    f"[green]{k}[/green]: [yellow]{v}[/yellow]"
+                    for k, v in metadata.items()
                 ]
-            }
-            # Convert duration to a human-readable format
-            metadata["Visible Duration"] = self.convert_duration(
-                metadata["Visible Duration"]
-            )
-            # Grab just first URL
-            metadata["LIL URL"] = self.convert_urls(metadata["LIL URL"])
-            # Scrunch title + id
-            metadata["Course Name"] = (
-                f"{metadata['Course Name']} - {metadata['Course ID']}"
-            )
-            metadata.pop("Course ID")
-            # Scrunch instructor + bio
-            metadata["Instructor Name"] = (
-                f"{metadata['Instructor Name']} - {metadata['Instructor Short Bio']}"
-            )
-            metadata.pop("Instructor Short Bio")
-            # Scrunch library + subject
-            metadata["Internal Library"] = (
-                f"{metadata['Internal Library']} - {metadata['Internal Subject']}"
-            )
-            metadata.pop("Internal Subject")
-            formatted = [
-                f"[green]{k}[/green]: [yellow]{v}[/yellow]" for k, v in metadata.items()
-            ]
-            self.console.print("\n".join(formatted))
-            self.add_to_workspace(course)
+                self.console.print("\n".join(formatted))
+                self.add_to_workspace(course)
+            elif isinstance(course, list):
+                self.console.print("Not found. Did you mean:", style="red")
+                self.print_course_list(course)
 
     def command_get_toc(self, param):
         """
@@ -268,8 +277,12 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            self.console.print(course.course_TOC)
-            self.add_to_workspace(course)
+            if isinstance(course, Course):
+                self.console.print(course.course_TOC)
+                self.add_to_workspace(course)
+            elif isinstance(course, list):
+                self.console.print("Not found. Did you mean:", style="red")
+                self.print_course_list(course)
 
     def command_get_transcript(self, param):
         """
@@ -277,8 +290,12 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            self.console.print(course.course_transcript)
-            self.add_to_workspace(course)
+            if isinstance(course, Course):
+                self.console.print(course.course_transcript)
+                self.add_to_workspace(course)
+            elif isinstance(course, list):
+                self.console.print("Not found. Did you mean:", style="red")
+                self.print_course_list(course)
 
     def command_get_url(self, param):
         """
@@ -286,8 +303,12 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            self.console.print(course.metadata["Course URL"])
-            self.add_to_workspace(course)
+            if isinstance(course, Course):
+                self.console.print(course.metadata["Course URL"])
+                self.add_to_workspace(course)
+            elif isinstance(course, list):
+                self.console.print("Not found. Did you mean:", style="red")
+                self.print_course_list(course)
 
     def command_get_tocs(self):
         """
@@ -316,14 +337,16 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            head = course.head
-            if head:
-                self.console.print(head)
-            else:
-                self.console.print("[red]No head found.[/red]")
-            self.add_to_workspace(course)
-        else:
-            pass
+            if isinstance(course, Course):
+                head = course.head
+                if head:
+                    self.console.print(head)
+                else:
+                    self.console.print("[red]No head found.[/red]")
+                self.add_to_workspace(course)
+            elif isinstance(course, list):
+                self.console.print("Not found. Did you mean:", style="red")
+                self.print_course_list(course)
 
     def command_tail(self, param):
         """
@@ -331,14 +354,16 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if course:
-            tail = course.tail
-            if tail:
-                self.console.print(tail)
-            else:
-                self.console.print("[red]No tail found.[/red]")
-            self.add_to_workspace(course)
-        else:
-            pass
+            if isinstance(course, Course):
+                tail = course.tail
+                if tail:
+                    self.console.print(tail)
+                else:
+                    self.console.print("[red]No tail found.[/red]")
+                self.add_to_workspace(course)
+            elif isinstance(course, list):
+                self.console.print("Not found. Did you mean:", style="red")
+                self.print_course_list(course)
 
     def command_instructor(self, param):
         """
@@ -474,10 +499,15 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if isinstance(course, list):
-            for item in course:
-                self.curation.courses.append(item)
-                self.add_to_workspace(item)
-            self.save_curation()
+            if param.replace(
+                " ", ""
+            ).isdigit():  # If it's a list and the param reduces to digits, it was a bulk request
+                for item in course:
+                    self.curation.courses.append(item)
+                    self.add_to_workspace(item)
+                self.save_curation()
+            else:  # Otherwise, param didn't find a match and this is a list of recommendations
+                self.print_course_list(course)
         elif isinstance(course, Course):
             self.curation.courses.append(course)
             self.add_to_workspace(course)
@@ -490,10 +520,15 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if isinstance(course, list):
-            for item in course:
-                self.curation.courses.remove(item)
-                self.add_to_workspace(item)
-            self.save_curation()
+            if param.replace(
+                " ", ""
+            ).isdigit():  # If it's a list and the param reduces to digits, it was a bulk request
+                for item in course:
+                    self.curation.courses.remove(item)
+                    self.add_to_workspace(item)
+                self.save_curation()
+            else:  # Otherwise, param didn't find a match and this is a list of recommendations
+                self.print_course_list(course)
         elif isinstance(course, Course):
             self.curation.courses.remove(course)
             self.add_to_workspace(course)
