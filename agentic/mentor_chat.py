@@ -76,7 +76,9 @@ class MentorChat(Chat):
         Numbering: starts in curation, then workspace.
         If course request is a string, return the course with that ID. (Get already parses course IDs v. titles)
         """
-        if course_request.replace(" ", "").isdigit():  # Multiple numbers
+        if (
+            " " in course_request and course_request.replace(" ", "").isdigit()
+        ):  # Multiple numbers
             course_numbers = [int(x) for x in course_request.split(" ")]
             course_list = []
             for course_number in course_numbers:
@@ -491,6 +493,16 @@ class MentorChat(Chat):
             self.console.print("[red]Invalid input.[/red]")
         except:
             self.console.print("[red]Invalid input.[/red]")
+
+    def command_view_cache(self):
+        """
+        View the course cache.
+        """
+        indices = sorted(list(self.course_cache.keys()))
+        courses = []
+        for index in indices:
+            courses.append(Get(self.course_cache[index]))
+        self.print_course_list(courses)
 
     def command_add_course(self, param):
         """
