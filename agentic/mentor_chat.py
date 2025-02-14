@@ -9,11 +9,6 @@ TODO:
 - [x] implement a workspace for courses
 """
 
-# We don't want logging to show up, and our imports are noisy.
-import logging
-
-logging.getLogger().setLevel(logging.CRITICAL)  # Only show critical errors
-
 from Chain import Chat, Model, Prompt, Chain
 from Curator import Curate
 from Kramer import (
@@ -29,7 +24,6 @@ from Kramer import (
 from Mentor import (
     Mentor,
     review_curriculum,
-    title_certificate,
     classify_audience,
     learner_progression,
 )
@@ -39,9 +33,25 @@ from rich.markdown import Markdown
 from datetime import timedelta
 from Kramer.courses.FirstCourse import first_course, pretty_curriculum
 import json
+from typing import TypeVar, Generic
+from typing import TypeVar, Generic
+from pathlib import Path
+
+dir_path = Path(__file__).parent
+curation_save_file = dir_path / ".curation.json"
+
+T = TypeVar("T")  # This is part of the dance to make UniqueList work as a type hint.
 
 
-_ = readline.get_history_item(1)  # Minimal interaction to silence IDE
+class UniqueList(list, Generic[T]):  # Note the use of our TypeVar T here.
+    """
+    Our own data structure for a list that only allows unique elements.
+    Our various course inventories (including Curation.courses) will be stored in this.
+    """
+
+    def append(self, item):
+        if item not in self:
+            super().append(item)
 
 
 class MentorChat(Chat):
@@ -50,11 +60,11 @@ class MentorChat(Chat):
         self.welcome_message = "[green]Hello! Let's build a Curation together.[/green]"
         self.console = Console(width=120)
         # The Curation we're building in the chat
-        self.curation: Curation = Curation(title="", courses=[])
+        self.curation = self.load_curation()
         # Workspace = a bucket for all courses that have come up in the chat, either from user input, curate, mentor, etc.
-        self.workspace: list[Course] = []
+        self.workspace: UniqueList[Course] = UniqueList()
         # A blacklist
-        self.blacklist: list[Course] = []
+        self.blacklist: UniqueList[Course] = UniqueList()
         # A course cache (for short term memory of numbers-> courses)
         self.course_cache: dict[int, str] = {}
 
@@ -110,6 +120,22 @@ class MentorChat(Chat):
         time_str = str(timedelta(seconds=duration))
         return time_str
 
+    def save_curation(self):
+        with open(curation_save_file, "w") as f:
+            json.dump(self.curation.model_dump_json(), f)
+
+    def load_curation(self) -> Curation:
+        if curation_save_file.exists():
+            with open(curation_save_file, "r") as f:
+                try:
+                    curation = Curation.model_validate_json(json.load(f))
+                    return curation
+                except:
+                    print("Error validating curation from file.")
+                    return Curation(title="", courses=UniqueList())
+        else:
+            return Curation(title="", courses=UniqueList())
+
     def convert_urls(self, urls: str) -> str:
         return urls.split(",")[0]
 
@@ -147,7 +173,7 @@ class MentorChat(Chat):
         if self.curation:
             curation_courses = self.curation.courses
         else:
-            curation_courses = []
+            curation_courses = UniqueList()
         workspace_courses = self.workspace  # First, number the courses in the curation
         numbered_curation = [
             (i + 1, course) for i, course in enumerate(curation_courses)
@@ -379,7 +405,7 @@ class MentorChat(Chat):
         """
         View the current curation, with numbers.
         """
-        if self.curation == None or self.curation.courses == []:
+        if self.curation == None or self.curation.courses == UniqueList():
             if self.curation.title:
                 self.console.print(
                     f"[bold yellow]{self.curation.title}[/bold yellow]\n[red]No courses (yet).[/red]"
@@ -393,7 +419,7 @@ class MentorChat(Chat):
         """
         Allow user to change the order of courses in the Curation.
         """
-        if self.curation == None or self.curation.courses == []:
+        if self.curation == None or self.curation.courses == UniqueList():
             self.console.print("[red]No courses in Curation.[/red]")
             return
         self.print_course_list(self.curation.courses)
@@ -433,18 +459,17 @@ class MentorChat(Chat):
         """
         Add a course to the curation.
         """
-        if not self.curation:
-            self.curation = Curation(title=None, courses=[])
         course = self.parse_course_request(param)
         if course:
             self.curation.courses.append(course)
             self.add_to_workspace(course)
+            self.save_curation()
 
     def command_remove_course(self, param):
         """
         Remove a course from the curation.
         """
-        if not self.curation or self.curation.courses == []:
+        if not self.curation or self.curation.courses == UniqueList():
             self.console.print("[red]No courses to remove.[/red]")
             return
         course = self.parse_course_request(param)
@@ -455,7 +480,7 @@ class MentorChat(Chat):
         """
         Clear the current curation.
         """
-        self.curation = Curation(title="", courses=[])
+        self.curation = Curation(title="", courses=UniqueList())
         self.console.print("Curation cleared.")
 
     def command_save_curation(self, param):
@@ -463,11 +488,11 @@ class MentorChat(Chat):
         Save the current curation to a file.
         """
         filename = param + ".json"
-        if self.curation.courses == []:
+        if self.curation.courses == UniqueList():
             self.console.print("No curation to save.")
         else:
             with open(filename + ".json", "w") as f:
-                json.dump(self.curation.model_dump_json())
+                json.dump(self.curation.model_dump_json(), f)
             self.console.print(f"Curation saved to {filename}.")
 
     def command_build_learningpath(self):
@@ -479,7 +504,7 @@ class MentorChat(Chat):
                 f"[red]Curation has no title. Set one with /name curation[/red]"
             )
             return
-        elif self.curation.courses == []:
+        elif self.curation.courses == UniqueList():
             self.console.print(
                 f"[red]Curation has no courses. Add some with /add course[/red]"
             )
@@ -655,7 +680,7 @@ class MentorChat(Chat):
         """
         Clear the workspace.
         """
-        self.workspace = []
+        self.workspace = UniqueList()
         self.console.print("Workspace cleared.", style="green")
 
 
