@@ -36,7 +36,6 @@ import json
 from typing import TypeVar, Generic
 from typing import TypeVar, Generic
 from pathlib import Path
-import re
 
 dir_path = Path(__file__).parent
 curation_save_file = dir_path / ".curation.json"
@@ -190,7 +189,7 @@ class MentorChat(Chat):
                     curation = Curation.model_validate_json(json.load(f))
                     return curation
                 except:
-                    print("Error validating curation from file.")
+                    self.console.print("Error validating curation from file.")
                     return Curation(title="", courses=UniqueList())
         else:
             return Curation(title="", courses=UniqueList())
@@ -494,7 +493,7 @@ class MentorChat(Chat):
                 self.console.print(
                     f"[bold yellow]{self.curation.title}[/bold yellow]\n[red]No courses (yet).[/red]"
                 )
-            self.console.print("[red]No curation (yes).[/red]")
+            self.console.print("[red]No curation (yet).[/red]")
         else:
             self.console.print(f"[bold yellow]{self.curation.title}[/bold yellow]")
             self.print_course_list(self.curation.courses)
@@ -677,7 +676,7 @@ class MentorChat(Chat):
             response = chain.run()
             self.console.print(response)
 
-    def command_query_lens(self, param):
+    def command_lens(self, param):
         """
         "Lens" performs text search across all transcript, returns course titles that contain the query string.
         """
@@ -686,7 +685,7 @@ class MentorChat(Chat):
         self.print_course_list(hits)
         self.add_to_workspace(hits)
 
-    def command_query_laser(self, param):
+    def command_laser(self, param):
         """
         "Laser" searches for a query string in all course titles.
         """

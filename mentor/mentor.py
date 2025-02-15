@@ -9,9 +9,15 @@ Three personas are leveraged:
 
 from pydantic import BaseModel
 from Curator import Curate
-from Get import Get
-from Chain import Prompt, Model, Chain, Parser, MessageStore, create_system_message
-from Kramer.courses.Curation import Curation
+from Chain import (
+    Prompt,
+    Model,
+    Chain,
+    Parser,
+    MessageStore,
+    create_system_message,
+)
+from Kramer import Get, Curation
 import argparse
 
 # Initialize our log
@@ -272,12 +278,16 @@ def identify_courses(curriculum: Curriculum) -> Curation:
         )
         # Get a pretty printed version of the courses
         recommended_courses += course_matches
-    course_context = "\n".join(
-        [f"{course[0]}: {course[1]}" for course in recommended_courses]
-    )
+    recommended_courses = [Get(course_match[0]) for course_match in recommended_courses]
+    course_context = ""
+    for course in recommended_courses:
+        course_context += f"<course_title>{course.course_title}</course_title>\n"
+        course_context += f"<course_description>{course.metadata["Course Description"]}</course_description>\n"
+    with open("text_example.txt", "w", encoding="utf-8") as f:
+        f.write(course_context)
     # Ask the library
     # model = Model("llama3.1:latest")
-    model = Model("claude")
+    model = Model("o3-mini")
     prompt = Prompt(prompt_video_course_librarian)
     messages = [create_system_message(video_course_librarian)]
     parser = Parser(Curation)
