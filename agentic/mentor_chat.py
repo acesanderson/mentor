@@ -9,7 +9,7 @@ TODO:
 - [x] implement a workspace for courses
 """
 
-from Chain import Chat, Model, Prompt, Chain
+from Chain import Chat, Model, Prompt, Chain, Message, MessageStore, ChainCache
 from Curator import Curate
 from Kramer import (
     Course,
@@ -37,9 +37,13 @@ import json
 from typing import TypeVar, Generic
 from typing import TypeVar, Generic
 from pathlib import Path
+import re
 
 dir_path = Path(__file__).parent
 curation_save_file = dir_path / ".curation.json"
+log_file = dir_path / ".chat_log.txt"
+Chain._message_store = MessageStore(log_file=log_file)
+Model._chain_cache = ChainCache(db_name=".chat_cache.db")
 
 T = TypeVar("T")  # This is part of the dance to make UniqueList work as a type hint.
 
@@ -68,51 +72,66 @@ class MentorChat(Chat):
         self.blacklist: UniqueList[Course] = UniqueList()
         # A course cache (for short term memory of numbers-> courses)
         self.course_cache: dict[int, str] = {}
+        # We want a log file for this one.
+        self.log_file = log_file
 
     # Functions
-    # def query_model(self, prompt: Prompt) -> str | None:
-    #     """
-    #     Override the query_model method to intercept Prompt object and parse the user templates.
-    #     User templates:
-    #     {{snapshot}} = curation snapshot (i.e. descriptions)
-    #     {{tocs}} = curation tocs
-    #     {{course.transcript}} = a course (retrieved with parse_course_request)
-    #     {{course.description}} = description of a course (retrieved with parse_course_request)
-    #     """
-    #     _query_model = super().query_model
-    #     # Extract the prompt string from Prompt object
-    #     new_prompt = prompt[0].content
-    #     if "{{snapshot}}" in new_prompt:
-    #         new_prompt.replace(
-    #             "{{snapshot}}",
-    #             f"<course_descriptions>\n{self.curation.snapshot}\n</course_descriptions>",
-    #         )
-    #     if "{{tocs}}" in new_prompt:
-    #         new_prompt.replace(
-    #             "{{tocs}}",
-    #             f"<course_tocs>\n{self.curation.TOCs}\n</course_tocs>",
-    #         )
-    #     if ".transcript}}" or ".description}}" in new_prompt:
-    #         # Extract the course_param from the prompt string; it's everything before the dot
-    #         course_param = re.search(r"{{(.*?)\.", new_prompt).group(1)
-    #         # Get the course object
-    #         course = self.parse_course_request(course_param)
-    #         if isinstance(course, Course):
-    #             if ".transcript}}" in new_prompt:
-    #                 new_prompt.replace(
-    #                     "{{course.transcript}}",
-    #                     f"<course_transcript>\n{course.course_transcript}\n</course_transcript>",
-    #                 )
-    #             if ".description}}" in new_prompt:
-    #                 new_prompt.replace(
-    #                     "{{course.description}}",
-    #                     f"<course_description>\n{course.metadata['Course Description']}\n</course_description>",
-    #                 )
-    #         elif isinstance(course, list):
-    #             self.console.print("Not found. Did you mean:", style="red")
-    #             self.print_course_list(course)
-    #             return
-    #     return _query_model(new_prompt)
+    def query_model(self, input: list[Message]) -> str | None:
+        """
+        Middleware that intercepts the query to parse user templates.
+        User templates:
+        {{snapshot}} = curation snapshot (i.e. descriptions)
+        {{tocs}} = curation tocs
+        {{course.transcript}} = a course (retrieved with parse_course_request)
+        {{course.description}} = description of a course (retrieved with parse_course_request)
+        {{course.toc}} = toc of a course (retrieved with parse_course_request)
+        """
+        # Load the original function
+        _query_model = super().query_model
+        # Extract the prompt string from input
+        new_prompt = str(input[-1].content)
+        # Parse user queries. First, the easy substitutions.
+        if "{{snapshot}}" in new_prompt:
+            new_prompt = new_prompt.replace(
+                "{{snapshot}}",
+                f"<course_descriptions>\n{self.curation.snapshot}\n</course_descriptions>",
+            )
+        if "{{tocs}}" in new_prompt:
+            new_prompt = new_prompt.replace(
+                "{{tocs}}",
+                f"<course_tocs>\n{self.curation.TOCs}\n</course_tocs>",
+            )
+        # Now for course-specific substitutions.
+        VALID_KEYWORDS = ["transcript", "description", "toc"]
+        pattern = r"{{(.*?)\.(.*?)}}"
+        matches = re.findall(pattern, new_prompt)
+        for match in matches:
+            # Parse the compound command
+            course_param, keyword = match
+            if keyword not in VALID_KEYWORDS:
+                continue
+            course = self.parse_course_request(course_param)
+            if not isinstance(course, Course):
+                self.console.print("Not found. Did you mean:", style="red")
+                self.print_course_list(course)
+                return
+            # Build the content string
+            template_string_to_be_replaced = "{{" + course_param + "." + keyword + "}}"
+            replacement_content = None
+            if keyword == "transcript":
+                replacement_content = course.course_transcript
+            elif keyword == "description":
+                replacement_content = course.metadata["Course Description"]
+            elif keyword == "toc":
+                replacement_content = course.course_TOC
+            if replacement_content:
+                new_prompt = new_prompt.replace(
+                    template_string_to_be_replaced,
+                    f"<course>\n<course_title>\n{course.course_title}\n</course_title>\n<course_{keyword}>\n{replacement_content}\n</course_{keyword}>\n</course>",
+                )
+        # Replace the prompt in the input
+        input[-1].content = new_prompt
+        return _query_model(input)
 
     def parse_course_request(self, course_request) -> Course | list[Course] | None:
         """
