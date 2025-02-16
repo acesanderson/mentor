@@ -21,6 +21,8 @@ from Kramer import (
     Laser,
     instructor_courses,
 )
+from Kramer.courses.FirstCourse import first_course, pretty_curriculum
+from Kramer.certs.GetCert import GetCert
 from Mentor import (
     Mentor,
     review_curriculum,
@@ -31,7 +33,6 @@ import readline  # This silently enables input history for `input`
 from rich.console import Console
 from rich.markdown import Markdown
 from datetime import timedelta
-from Kramer.courses.FirstCourse import first_course, pretty_curriculum
 import json
 from typing import TypeVar, Generic
 from typing import TypeVar, Generic
@@ -464,6 +465,20 @@ class MentorChat(Chat):
             self.add_to_workspace(mentor.courses)
         else:
             raise ValueError("Mentor returned None.")
+
+    ## Get certs!
+    def command_view_cert(self, param):
+        """
+        Get a cert for comparison purposes.
+        """
+        cert_title = param
+        cert = GetCert(cert_title, print_suggestions=False)
+        # If not a complete match, just print out the top fuzzy match.
+        if isinstance(cert, list):
+            cert = cert[0]
+        self.console.print(f"[bold green]{cert.title}[/bold green]")  # type: ignore
+        self.print_course_list(cert.courses)  # type: ignore
+        self.add_to_workspace(cert.courses)  # type: ignore
 
     ## Our functions for building / editing curations
     def command_name_curation(self, param):
