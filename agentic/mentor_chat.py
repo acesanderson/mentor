@@ -611,6 +611,8 @@ class MentorChat(Chat):
         """
         self.curation = Curation(title="", courses=UniqueList())
         self.console.print("Curation cleared.")
+        with open(curation_save_file, "w") as f:
+            pass
 
     def command_save_curation(self, param):
         """
