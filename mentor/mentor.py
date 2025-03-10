@@ -7,12 +7,13 @@ Three personas are leveraged:
 - a Course Librarian who is provided with the RAG (output of Curator queries) and designs a Curation object.
 """
 
-from pydantic import BaseModel
+from Mentor.mentor.CurriculumModule import Curriculum
 from Curator import Curate
 from Chain import (
     Prompt,
     Model,
     Chain,
+    ChainCache,
     Parser,
     MessageStore,
     create_system_message,
@@ -20,62 +21,12 @@ from Chain import (
 from Kramer import Get, Curation
 import argparse
 
-# Initialize our log
+# Configs
 # ------------------------------------------------
 
-Chain._message_store = MessageStore(log_file="log.json")
-
-
-# Our pydantic data models
-# ------------------------------------------------
-class Module(BaseModel):
-    """
-    Subsidiary to Curriculum. A module what the LLM wants for a course.
-    Combining all of these into a string will be helpful for vector embedding search.
-    """
-
-    title: str
-    description: str
-    learning_objectives: list[str]
-
-
-class Curriculum(BaseModel):
-    """
-    A structured data object that carries rich context about a curriculum.
-    This is given to a librarian to associate courses with each module, so we then can have a Curation.
-    """
-
-    topic: str
-    description: str
-    audience: str
-    modules: list[Module]
-
-    def __str__(self) -> str:
-        """
-        Convert this pydantic object into its XML representation.
-        """
-        return (
-            f"<curriculum>\n"
-            f"\t<topic>{self.topic}</topic>\n"
-            f"\t<description>{self.description}</description>\n"
-            f"\t<audience>{self.audience}</audience>\n"
-            f"\t<modules>\n"
-            + "\n".join(
-                f"\t\t<module>\n"
-                f"\t\t\t<title>{module.title}</title>\n"
-                f"\t\t\t<description>{module.description}</description>\n"
-                f"\t\t\t<learning_objectives>\n"
-                + "\n".join(
-                    f"\t\t\t\t<objective>{objective}</objective>"
-                    for objective in module.learning_objectives
-                )
-                + "\n\t\t</learning_objectives>\n"
-                f"\t\t</module>"
-                for module in self.modules
-            )
-            + "\n\t</modules>\n"
-            + "</curriculum>"
-        )
+Chain._message_store = MessageStore(log_file=".log.json")
+Model._chain_cache = ChainCache()
+preferred_model = "o3-mini"
 
 
 # Persona prompts
@@ -228,7 +179,7 @@ def lnd_curriculum(topic: str) -> str:
     We have an L&D professional dream up an ideal curriculum.
     Returns a string.
     """
-    model = Model("claude")
+    model = Model(preferred_model)
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_lnd)
     messages = [create_system_message(persona_lnd)]
@@ -248,7 +199,7 @@ def curriculum_specialist_curriculum(ideal_curriculum: str, topic: str) -> Curri
     We have a Curriculum Specialist dream up an ideal curriculum.
     Interprets the L&D professional's suggestions into a curriculum object.
     """
-    model = Model("claude")
+    model = Model(preferred_model)
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_curriculum_specialist)
     messages = [create_system_message(persona_curriculum_specialist)]
@@ -281,13 +232,17 @@ def identify_courses(curriculum: Curriculum) -> Curation:
     recommended_courses = [Get(course_match[0]) for course_match in recommended_courses]
     course_context = ""
     for course in recommended_courses:
-        course_context += f"<course_title>{course.course_title}</course_title>\n"
-        course_context += f"<course_description>{course.metadata["Course Description"]}</course_description>\n"
+        try:
+            course_context += f"<course_title>{course.course_title}</course_title>\n"
+            course_context += f"<course_description>{course.metadata["Course Description"]}</course_description>\n"
+        except Exception as e:
+            print(f"Error retrieving course: {e}")
+            continue
     with open("text_example.txt", "w", encoding="utf-8") as f:
         f.write(course_context)
     # Ask the library
     # model = Model("llama3.1:latest")
-    model = Model("o3-mini")
+    model = Model(preferred_model)
     prompt = Prompt(prompt_video_course_librarian)
     messages = [create_system_message(video_course_librarian)]
     parser = Parser(Curation)
@@ -323,16 +278,7 @@ if __name__ == "__main__":
         topic = args.topic
     else:
         topic = "Financial Analysis and Modeling"
-    print("Creating an ideal curriculum for the topic:", topic)
-    ideal_curriculum = lnd_curriculum(topic)
-    # RAG: convert the ideal curriculum into a structured object
-    print(
-        f"Converting the ideal curriculum into a structured object for the topic: {topic}"
-    )
-    curriculum = curriculum_specialist_curriculum(ideal_curriculum, topic)
-    # RAG: get the course descriptions
-    print("Identifying courses for the curriculum.")
-    curation = identify_courses(curriculum)
+    curation = Mentor(topic)
     # RAG: get the curated courses
     print("Curation object:")
     print(curation)

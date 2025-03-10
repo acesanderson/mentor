@@ -3,10 +3,11 @@ Rough draft of a chatbot for building curations.
 TODO:
 - [ ] implement lazy loading
 - [ ] suppress logging
-- [ ] allow multiple params for query commands
+- [x] allow multiple params for query commands
 - [x] fix encoding issues
 - [x] implement numbering for courses, and referencing by number
 - [x] implement a workspace for courses
+- [x] query_model middleware parsing templates
 """
 
 from Chain import Chat, Model, Prompt, Chain, Message, MessageStore, ChainCache
@@ -39,12 +40,12 @@ from typing import TypeVar, Generic
 from pathlib import Path
 import re
 
+# Configs
 dir_path = Path(__file__).parent
 curation_save_file = dir_path / ".curation.json"
 log_file = dir_path / ".chat_log.txt"
 Chain._message_store = MessageStore(log_file=log_file)
-Model._chain_cache = ChainCache(db_name=".chat_cache.db")
-
+_ = readline.get_current_history_length()
 T = TypeVar("T")  # This is part of the dance to make UniqueList work as a type hint.
 
 
