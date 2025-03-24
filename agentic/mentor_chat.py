@@ -36,7 +36,7 @@ from rich.markdown import Markdown
 from datetime import timedelta
 import json
 from typing import TypeVar, Generic
-from typing import TypeVar, Generic
+from enum import Enum
 from pathlib import Path
 import re
 
@@ -58,6 +58,13 @@ class UniqueList(list, Generic[T]):  # Note the use of our TypeVar T here.
     def append(self, item):
         if item not in self:
             super().append(item)
+
+
+class MoveDirection(Enum):
+    UP = "up"
+    DOWN = "down"
+    TOP = "top"
+    BOTTOM = "bottom"
 
 
 class MentorChat(Chat):
@@ -269,6 +276,54 @@ class MentorChat(Chat):
             "workspace": numbered_workspace,
             "catalog": catalog,
         }
+
+    def move_course(self, course: Course, direction: MoveDirection):
+        """
+        Move a course in the curation.
+        """
+        if course in self.curation.courses:
+            index = self.curation.courses.index(course)
+            if direction == MoveDirection.UP:
+                if index > 0:
+                    self.curation.courses[index], self.curation.courses[index - 1] = (
+                        self.curation.courses[index - 1],
+                        self.curation.courses[index],
+                    )
+                    # Print the new curation for user
+                    self.print_course_list(self.curation.courses)
+                    # Refresh the course_cache
+                    self.update_course_cache(self.curation.courses)
+                else:
+                    self.console.print("[red]Already at top.[/red]")
+            elif direction == MoveDirection.DOWN:
+                if index < len(self.curation.courses) - 1:
+                    self.curation.courses[index], self.curation.courses[index + 1] = (
+                        self.curation.courses[index + 1],
+                        self.curation.courses[index],
+                    )
+                    # Print the new curation for user
+                    self.print_course_list(self.curation.courses)
+                    # Refresh the course_cache
+                    self.update_course_cache(self.curation.courses)
+                else:
+                    self.console.print("[red]Already at bottom.[/red]")
+            elif direction == MoveDirection.TOP and index > 0:
+                self.curation.courses.insert(0, self.curation.courses.pop(index))
+                # Print the new curation for user
+                self.print_course_list(self.curation.courses)
+                # Refresh the course_cache
+                self.update_course_cache(self.curation.courses)
+            elif (
+                direction == MoveDirection.BOTTOM
+                and index < len(self.curation.courses) - 1
+            ):
+                # Print the new curation for user
+                self.print_course_list(self.curation.courses)
+                # Refresh the course_cache
+                self.update_course_cache(self.curation.courses)
+                self.curation.courses.append(self.curation.courses.pop(index))
+        else:
+            print("[red]Course not in curation.[/red]")
 
     # Commands
     ## Our research functions
@@ -533,46 +588,6 @@ class MentorChat(Chat):
             self.console.print(f"[bold yellow]{self.curation.title}[/bold yellow]")
             self.print_course_list(self.curation.courses)
 
-    def command_reorder_curation(self):
-        """
-        Allow user to change the order of courses in the Curation.
-        """
-        if self.curation == None or self.curation.courses == UniqueList():
-            self.console.print("[red]No courses in Curation.[/red]")
-            return
-        self.print_course_list(self.curation.courses)
-        for index, course in enumerate(self.curation.courses):
-            self.course_cache[index + 1] = course
-        self.console.print(
-            "Write the two numbers you want to swap, separated by a space."
-        )
-        user_input = self.console.input("[bold green]Swap[/bold green]: ")
-        swap = user_input.split(" ")
-        if len(swap) != 2:
-            self.console.print("[red]Invalid input.[/red]")
-            return
-        try:
-            swap = [int(x) for x in swap]
-            course1 = self.course_cache[swap[0]]
-            course2 = self.course_cache[swap[1]]
-            # Swap the courses in self.curation.courses
-            index1 = self.curation.courses.index(course1)
-            index2 = self.curation.courses.index(course2)
-            self.curation.courses[index1] = course2
-            self.curation.courses[index2] = course1
-            self.course_cache[swap[0]] = course2
-            self.course_cache[swap[1]] = course1
-            # Print the new curation for user
-            self.print_course_list(self.curation.courses)
-            # Refresh the course_cache
-            self.update_course_cache(self.curation.courses)
-        except KeyError:
-            self.console.print("[red]Invalid course number.[/red]")
-        except ValueError:
-            self.console.print("[red]Invalid input.[/red]")
-        except:
-            self.console.print("[red]Invalid input.[/red]")
-
     def command_view_cache(self):
         """
         View the course cache.
@@ -634,6 +649,68 @@ class MentorChat(Chat):
         with open(curation_save_file, "w") as f:
             pass
 
+    # Reorder / move courses around.
+    def command_reorder_curation(self):
+        """
+        Allow user to change the order of courses in the Curation.
+        """
+        if self.curation == None or self.curation.courses == UniqueList():
+            self.console.print("[red]No courses in Curation.[/red]")
+            return
+        self.print_course_list(self.curation.courses)
+        for index, course in enumerate(self.curation.courses):
+            self.course_cache[index + 1] = course
+        self.console.print(
+            "Write the two numbers you want to swap, separated by a space."
+        )
+        user_input = self.console.input("[bold green]Swap[/bold green]: ")
+        swap = user_input.split(" ")
+        if len(swap) != 2:
+            self.console.print("[red]Invalid input.[/red]")
+            return
+        try:
+            swap = [int(x) for x in swap]
+            course1 = self.course_cache[swap[0]]
+            course2 = self.course_cache[swap[1]]
+            # Swap the courses in self.curation.courses
+            index1 = self.curation.courses.index(course1)
+            index2 = self.curation.courses.index(course2)
+            self.curation.courses[index1] = course2
+            self.curation.courses[index2] = course1
+            self.course_cache[swap[0]] = course2
+            self.course_cache[swap[1]] = course1
+            # Print the new curation for user
+            self.print_course_list(self.curation.courses)
+            # Refresh the course_cache
+            self.update_course_cache(self.curation.courses)
+        except KeyError:
+            self.console.print("[red]Invalid course number.[/red]")
+        except ValueError:
+            self.console.print("[red]Invalid input.[/red]")
+        except:
+            self.console.print("[red]Invalid input.[/red]")
+
+    def command_move_up(self, param):
+        course = self.parse_course_request(param)
+        if isinstance(course, Course):
+            self.move_course(course, MoveDirection.UP)
+
+    def command_move_down(self, param):
+        course = self.parse_course_request(param)
+        if isinstance(course, Course):
+            self.move_course(course, MoveDirection.DOWN)
+
+    def command_move_bottom(self, param):
+        course = self.parse_course_request(param)
+        if isinstance(course, Course):
+            self.move_course(course, MoveDirection.BOTTOM)
+
+    def command_move_top(self, param):
+        course = self.parse_course_request(param)
+        if isinstance(course, Course):
+            self.move_course(course, MoveDirection.TOP)
+
+    # Save / load functions
     def command_save_curation(self, param):
         """
         Save the current curation to a file.

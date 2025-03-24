@@ -9,8 +9,14 @@ from Kramer.certs.CertsCRUD import get_all_cert_titles, get_cert_by_name
 from torch import Tensor
 from Mentor import Mentor
 from statistics import mean
+import json
+from pathlib import Path
+from rich.console import Console
 
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2", trust_remote_code=True).cuda()
+dir_path = Path(__file__).resolve(strict=True).parent
+json_file = dir_path / "mentor_evaluation.json"
+console = Console(width=100)
 
 
 def get_certs() -> list[Curation]:
@@ -75,19 +81,41 @@ def generate_score(curation: Curation, certs: list[Curation], n: int = 10) -> fl
     cert_embeddings = generate_cert_embeddings(certs)
     curation_embedding = generate_cert_embedding(curation)
     similarities = get_similarities(curation_embedding, cert_embeddings)
-    sorted_similarities = sorted(similarities, reverse=True)
+    scalar_similarities = [float(sim.item()) for sim in similarities]
+    sorted_similarities = sorted(scalar_similarities, reverse=True)
     top_similarities = sorted_similarities[:n]
     score = mean(top_similarities)
     return score
 
 
-if __name__ == "__main__":
-    print("Mentoring...")
-    curation = Mentor("Body Language for Leaders")
-    print("Curation generated.")
-    print("Loading cert corpus...")
-    certs = get_certs()
-    print("Cert corpus loaded.")
-    print("Generating score...")
+def mentor_evaluation_chain(
+    topic: str, certs: list[Curation]
+) -> tuple[Curation, float]:
+    """
+    Generate a mentor curation, then generate a score.
+    """
+    curation = Mentor(topic, cache=False)
     score = generate_score(curation, certs)
-    print(f"Score generated: {score}")
+    return curation, score
+
+
+if __name__ == "__main__":
+    certs = get_certs()
+    test_topic = "Business Analysis Fundamentals"
+    test_results = []
+    n_iterations = 100
+    for i in range(n_iterations):
+        console.print(f"[green]Evaluating {i+1}/{n_iterations}...[/green]")
+        try:
+            curation, score = mentor_evaluation_chain(test_topic, certs)
+            console.print("[yellow]----------------------------[/yellow]")
+            console.print("[cyan]" + curation + "[/cyan]")
+            console.print("[yellow]----------------------------[/yellow]")
+            curation = curation.model_dump_json()
+            test_results.append((curation, score))
+        except Exception as e:
+            print(f"Error during evaluation: {e}")
+            continue
+        finally:
+            with open(json_file, "w") as f:
+                json.dump(test_results, f, indent=4)

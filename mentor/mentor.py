@@ -174,7 +174,7 @@ Provide a structured Curation object that includes the topic of the curriculum a
 # ------------------------------------------------
 
 
-def lnd_curriculum(topic: str) -> str:
+def lnd_curriculum(topic: str, cache=True) -> str:
     """
     We have an L&D professional dream up an ideal curriculum.
     Returns a string.
@@ -184,7 +184,9 @@ def lnd_curriculum(topic: str) -> str:
     prompt = Prompt(prompt_lnd)
     messages = [create_system_message(persona_lnd)]
     chain = Chain(prompt=prompt, model=model)
-    response = chain.run(messages=messages, input_variables={"topic": topic})
+    response = chain.run(
+        messages=messages, input_variables={"topic": topic}, cache=cache
+    )
     # Extract the answer from between the XML tags
     response_content = response.content
     start = response_content.find("<curriculum_description>") + len(
@@ -194,7 +196,9 @@ def lnd_curriculum(topic: str) -> str:
     return response_content[start:end]
 
 
-def curriculum_specialist_curriculum(ideal_curriculum: str, topic: str) -> Curriculum:
+def curriculum_specialist_curriculum(
+    ideal_curriculum: str, topic: str, cache=True
+) -> Curriculum:
     """
     We have a Curriculum Specialist dream up an ideal curriculum.
     Interprets the L&D professional's suggestions into a curriculum object.
@@ -208,11 +212,12 @@ def curriculum_specialist_curriculum(ideal_curriculum: str, topic: str) -> Curri
     response = chain.run(
         messages=messages,
         input_variables={"ideal_curriculum": ideal_curriculum, "topic": topic},
+        cache=cache,
     )
     return response.content
 
 
-def identify_courses(curriculum: Curriculum) -> Curation:
+def identify_courses(curriculum: Curriculum, cache=True) -> Curation:
     """
     We have a Curriculum Specialist identify the courses that best fit the ideal curriculum.
     Returns a Curation object.
@@ -238,14 +243,12 @@ def identify_courses(curriculum: Curriculum) -> Curation:
         except Exception as e:
             print(f"Error retrieving course: {e}")
             continue
-    with open("text_example.txt", "w", encoding="utf-8") as f:
-        f.write(course_context)
-    # Ask the library
+    # Ask the Video Course Librarian to curate the courses
     # model = Model("llama3.1:latest")
     model = Model(preferred_model)
     prompt = Prompt(prompt_video_course_librarian)
     messages = [create_system_message(video_course_librarian)]
-    parser = Parser(Curation)
+    parser = Parser(Curation)  # Librarian returns a neutered Curation object
     chain = Chain(prompt=prompt, model=model, parser=parser)
     response = chain.run(
         messages=messages,
@@ -254,17 +257,26 @@ def identify_courses(curriculum: Curriculum) -> Curation:
             "curriculum": curriculum,
             "courses": course_context,
         },
+        cache=cache,
     )
-    return response.content
+    # Make proper Course objects from the librarian's curation
+    librarian_curation = response.content
+    courses = [Get(course.course_title) for course in librarian_curation.courses]
+    # Create a new Curation object
+    curation_result = Curation(
+        title=librarian_curation.title,
+        courses=courses,
+    )
+    return curation_result
 
 
-def Mentor(topic: str) -> Curation:
+def Mentor(topic: str, cache=True) -> Curation:
     """
     Runs the entire Mentor pipeline.
     """
-    ideal_curriculum = lnd_curriculum(topic)
-    curriculum = curriculum_specialist_curriculum(ideal_curriculum, topic)
-    curation = identify_courses(curriculum)
+    ideal_curriculum = lnd_curriculum(topic, cache=cache)
+    curriculum = curriculum_specialist_curriculum(ideal_curriculum, topic, cache=cache)
+    curation = identify_courses(curriculum, cache=cache)
     return curation
 
 
