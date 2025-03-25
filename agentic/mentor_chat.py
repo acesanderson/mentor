@@ -21,6 +21,8 @@ from Kramer import (
     Lens,
     Laser,
     instructor_courses,
+    get_course_prerequisites,
+    get_curation_prerequisites,
 )
 from Kramer.courses.FirstCourse import first_course, pretty_curriculum
 from Kramer.certs.GetCert import GetCert
@@ -864,6 +866,34 @@ class MentorChat(Chat):
             return
         audience = classify_audience(curation=self.curation, model=self.model)
         self.console.print(audience)
+
+    def command_consult_prereqs(self, param):
+        """
+        Get prerequisites for a course. (or entire curation -- input "curation")
+        """
+        # If user inputs "curation", get prerequisites for all courses in the curation.
+        if param == "curation":
+            prereqs_dicts: list[dict] = get_curation_prerequisites(self.curation)
+            output = ""
+            for prereq_dict in prereqs_dicts:
+                output = ""
+                output += "---------------------------------------------------------------------\n"
+                output += f'[green]{prereq_dict["course_title"]}[/green]\n'
+                output += "---------------------------------------------------------------------\n"
+                output += f'[yellow]{prereq_dict["prerequisites"]}[/yellow]\n'
+                self.console.print(output)
+        # Or if we have a param, do a single course
+        course = self.parse_course_request(param)
+        if isinstance(course, Course):
+            prerequisites = get_course_prerequisites(course)
+            output = ""
+            output += "---------------------------------------------------------------------\n"
+            output += f"[green]{course.course_title}[/green]\n"
+            output += "---------------------------------------------------------------------\n"
+            output += f"[yellow]{prerequisites}[/yellow]\n"
+            self.console.print(output)
+        else:
+            raise ValueError("Course not found.")
 
     def command_consult_first_course(self, param):
         """
