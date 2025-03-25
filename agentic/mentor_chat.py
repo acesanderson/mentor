@@ -293,6 +293,8 @@ class MentorChat(Chat):
                     self.print_course_list(self.curation.courses)
                     # Refresh the course_cache
                     self.update_course_cache(self.curation.courses)
+                    # Save the curation
+                    self.save_curation()
                 else:
                     self.console.print("[red]Already at top.[/red]")
             elif direction == MoveDirection.DOWN:
@@ -305,6 +307,8 @@ class MentorChat(Chat):
                     self.print_course_list(self.curation.courses)
                     # Refresh the course_cache
                     self.update_course_cache(self.curation.courses)
+                    # Save the curation
+                    self.save_curation()
                 else:
                     self.console.print("[red]Already at bottom.[/red]")
             elif direction == MoveDirection.TOP and index > 0:
@@ -313,6 +317,8 @@ class MentorChat(Chat):
                 self.print_course_list(self.curation.courses)
                 # Refresh the course_cache
                 self.update_course_cache(self.curation.courses)
+                # Save the curation
+                self.save_curation()
             elif (
                 direction == MoveDirection.BOTTOM
                 and index < len(self.curation.courses) - 1
@@ -322,6 +328,8 @@ class MentorChat(Chat):
                 # Refresh the course_cache
                 self.update_course_cache(self.curation.courses)
                 self.curation.courses.append(self.curation.courses.pop(index))
+                # Save the curation
+                self.save_curation()
         else:
             print("[red]Course not in curation.[/red]")
 
@@ -444,7 +452,7 @@ class MentorChat(Chat):
         tocs = self.curation.TOCs
         self.console.print(tocs)
 
-    def command_get_snapshot(self):
+    def command_view_snapshot(self):
         """
         Get the combined descriptions of the curation.
         """
@@ -454,6 +462,15 @@ class MentorChat(Chat):
         snapshot_text = self.curation.get_snapshot("markdown")
         snapshot_text = Markdown(snapshot_text)
         self.console.print(snapshot_text)
+
+    def command_view_difficulty(self):
+        """
+        Get the difficulty (LI Level) for each course.
+        """
+        output = ""
+        for course in self.curation.courses:
+            output += f"[yellow]{course.course_title}[/yellow]: [cyan]{course.metadata["LI Level"]}[/cyan]\n"
+        self.console.print(output)
 
     def command_head(self, param):
         """
@@ -685,6 +702,8 @@ class MentorChat(Chat):
             self.print_course_list(self.curation.courses)
             # Refresh the course_cache
             self.update_course_cache(self.curation.courses)
+            # Save the curation
+            self.save_curation()
         except KeyError:
             self.console.print("[red]Invalid course number.[/red]")
         except ValueError:
