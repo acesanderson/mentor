@@ -864,3 +864,1435 @@
 [34m• Proficient computer literacy, including file navigation and software installation  [0m
 [34m• Basic familiarity with operating systems [0m[1;34m([0m[34mWindows, Mac, or Linux[0m[1;34m)[0m[34m and using web browsers[0m
 
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mProgramming Generative AI: From Variational Autoencoders to Stable Diffusion with PyTorch and [0m
+[33mHugging Face[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;In this course, Jonathan Dinuâ€”a dedicated educator, author, and speakerâ€”presents an [0m
+[33minteractive tour of deep generative modeling. Learn how to train your own generative models from [0m
+[33mscratch to create an infinity of images. Discover how you can generate text with large language [0m
+[33mmodels similar to the ones that power applications like ChatGPT. Write your own text-to-image [0m
+[33mpipeline to understand how prompt- based generative models actually work. Plus, personalize large[0m
+[33mpretrained models like stable diffusion to generate images of novel subjects in unique visual [0m
+[33mstyles. This course offers you an applied resource to complement any theoretical or conceptual [0m
+[33mknowledge you have. &lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course was created by Jonathan Dinu and Pearson. We [0m
+[33mare pleased to host this training in our library.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Programming Generative AI: From Variational Autoencoders to Stable Diffusion with PyTorch and [0m
+[33mHugging Face[0m
+[33m## Introduction[0m
+[33m        [0m[33mProgramming generative AI: Introduction [0m[1;33m314[0m
+[33m## [0m[1;33m1[0m[33m. The What, Why, and How of Generative AI[0m
+[33m        [0m[33mTopics  [0m[1;33m49[0m
+[33m        [0m[33mGenerative AI in the wild       [0m[1;33m586[0m
+[33m        [0m[33mDefining generative AI  [0m[1;33m382[0m
+[33m        [0m[33mMultitudes of media     [0m[1;33m790[0m
+[33m        [0m[33mHow machines create     [0m[1;33m720[0m
+[33m        [0m[33mFormalizing generative models   [0m[1;33m809[0m
+[33m        [0m[33mGenerative versus discriminative models [0m[1;33m634[0m
+[33m        [0m[33mThe generative modeling trilemma        [0m[1;33m434[0m
+[33m        [0m[33mIntroduction to Google Colab    [0m[1;33m1196[0m
+[33m## [0m[1;33m2[0m[33m. PyTorch for the Impatient[0m
+[33m        [0m[33mTopics  [0m[1;33m52[0m
+[33m        [0m[33mWhat is PyTorch?        [0m[1;33m274[0m
+[33m        [0m[33mThe PyTorch layer cake  [0m[1;33m686[0m
+[33m        [0m[33mThe deep learning software trilemma     [0m[1;33m424[0m
+[33m        [0m[33mWhat are tensors, really?       [0m[1;33m324[0m
+[33m        [0m[33mTensors in PyTorch      [0m[1;33m603[0m
+[33m        [0m[33mIntroduction to computational graphs    [0m[1;33m765[0m
+[33m        [0m[33mBackpropagation is just the chain rule  [0m[1;33m991[0m
+[33m        [0m[33mEffortless backpropagation with torch.autograd  [0m[1;33m819[0m
+[33m        [0m[33mPyTorch's device abstraction [0m[1;33m([0m[33mi.e., GPUs[0m[1;33m)[0m[33m       [0m[1;33m240[0m
+[33m        [0m[33mWorking with devices    [0m[1;33m647[0m
+[33m        [0m[33mComponents of a learning algorithm      [0m[1;33m429[0m
+[33m        [0m[33mIntroduction to gradient descent        [0m[1;33m364[0m
+[33m        [0m[33mGetting to stochastic gradient descent [0m[1;33m([0m[33mSGD[0m[1;33m)[0m[33m    [0m[1;33m248[0m
+[33m        [0m[33mComparing gradient descent and SGD      [0m[1;33m350[0m
+[33m        [0m[33mLinear regression with PyTorch  [0m[1;33m1436[0m
+[33m        [0m[33mPerceptrons and neurons [0m[1;33m472[0m
+[33m        [0m[33mLayers and activations with torch.nn    [0m[1;33m761[0m
+[33m        [0m[33mMulti-layer feedforward neural networks [0m[1;33m([0m[33mMLP[0m[1;33m)[0m[33m   [0m[1;33m538[0m
+[33m## [0m[1;33m3[0m[33m. Latent Space Rules Everything Around Me[0m
+[33m        [0m[33mTopics  [0m[1;33m54[0m
+[33m        [0m[33mRepresenting images as tensors  [0m[1;33m465[0m
+[33m        [0m[33mDesiderata for computer vision  [0m[1;33m297[0m
+[33m        [0m[33mFeatures of convolutional neural networks       [0m[1;33m476[0m
+[33m        [0m[33mWorking with images in Python   [0m[1;33m620[0m
+[33m        [0m[33mThe Fashion-MNIST dataset       [0m[1;33m288[0m
+[33m        [0m[33mConvolutional neural networks in PyTorch        [0m[1;33m643[0m
+[33m        [0m[33mComponents of a latent variable model [0m[1;33m([0m[33mLVM[0m[1;33m)[0m[33m     [0m[1;33m537[0m
+[33m        [0m[33mThe humble autoencoder  [0m[1;33m329[0m
+[33m        [0m[33mDefining an autoencoder with PyTorch    [0m[1;33m342[0m
+[33m        [0m[33mSetting up a training loop      [0m[1;33m587[0m
+[33m        [0m[33mInference with an autoencoder   [0m[1;33m256[0m
+[33m        [0m[33mLook ma, no features!   [0m[1;33m501[0m
+[33m        [0m[33mAdding probability to autoencoders [0m[1;33m([0m[33mVAE[0m[1;33m)[0m[33m        [0m[1;33m289[0m
+[33m        [0m[33mVariational inference: Not just for autoencoders        [0m[1;33m440[0m
+[33m        [0m[33mTransforming an autoencoder into a VAE  [0m[1;33m806[0m
+[33m        [0m[33mTraining a VAE with PyTorch     [0m[1;33m813[0m
+[33m        [0m[33mExploring latent space  [0m[1;33m697[0m
+[33m        [0m[33mLatent space interpolation and attribute vectors        [0m[1;33m750[0m
+[33m## [0m[1;33m4[0m[33m. Demystifying Diffusion[0m
+[33m        [0m[33mTopics  [0m[1;33m58[0m
+[33m        [0m[33mGeneration as a reversible process      [0m[1;33m295[0m
+[33m        [0m[33mSampling as iterative denoising [0m[1;33m249[0m
+[33m        [0m[33mDiffusers and the Hugging Face ecosystem        [0m[1;33m411[0m
+[33m        [0m[33mGenerating images with diffusers pipelines      [0m[1;33m1700[0m
+[33m        [0m[33mDeconstructing the diffusion process    [0m[1;33m1149[0m
+[33m        [0m[33mForward process as encoder      [0m[1;33m1007[0m
+[33m        [0m[33mReverse process as decoder      [0m[1;33m438[0m
+[33m        [0m[33mInterpolating diffusion models  [0m[1;33m566[0m
+[33m        [0m[33mImage-to-image translation with SDEdit  [0m[1;33m484[0m
+[33m        [0m[33mImage restoration and enhancement       [0m[1;33m683[0m
+[33m## [0m[1;33m5[0m[33m. Generating and Encoding Text with Transformers[0m
+[33m        [0m[33mTopics  [0m[1;33m50[0m
+[33m        [0m[33mThe natural language processing pipeline        [0m[1;33m780[0m
+[33m        [0m[33mGenerative models of language   [0m[1;33m571[0m
+[33m        [0m[33mGenerating text with transformers pipelines     [0m[1;33m905[0m
+[33m        [0m[33mDeconstructing transformers pipelines   [0m[1;33m495[0m
+[33m        [0m[33mDecoding strategies     [0m[1;33m786[0m
+[33m        [0m[33mTransformers are just latent variable models for sequences      [0m[1;33m736[0m
+[33m        [0m[33mVisualizing and understanding attention [0m[1;33m1461[0m
+[33m        [0m[33mTurning words into vectors      [0m[1;33m644[0m
+[33m        [0m[33mThe vector space model  [0m[1;33m434[0m
+[33m        [0m[33mEmbedding sequences with transformers   [0m[1;33m611[0m
+[33m        [0m[33mComputing the similarity between embeddings     [0m[1;33m468[0m
+[33m        [0m[33mSemantic search with embeddings [0m[1;33m392[0m
+[33m        [0m[33mContrastive embeddings with sentence transformers       [0m[1;33m406[0m
+[33m## [0m[1;33m6[0m[33m. Connecting Text and Images[0m
+[33m        [0m[33mTopics  [0m[1;33m51[0m
+[33m        [0m[33mComponents of a multimodal model        [0m[1;33m324[0m
+[33m        [0m[33mVision-language understanding   [0m[1;33m573[0m
+[33m        [0m[33mContrastive language-image pretraining  [0m[1;33m368[0m
+[33m        [0m[33mEmbedding text and images with CLIP     [0m[1;33m847[0m
+[33m        [0m[33mZero-shot image classification with CLIP        [0m[1;33m216[0m
+[33m        [0m[33mSemantic image search with CLIP [0m[1;33m640[0m
+[33m        [0m[33mConditional generative models   [0m[1;33m326[0m
+[33m        [0m[33mIntroduction to latent diffusion models [0m[1;33m522[0m
+[33m        [0m[33mThe latent diffusion model architecture [0m[1;33m350[0m
+[33m        [0m[33mFailure modes and additional tools      [0m[1;33m400[0m
+[33m        [0m[33mStable diffusion deconstructed  [0m[1;33m690[0m
+[33m        [0m[33mWriting your own stable diffusion pipeline      [0m[1;33m676[0m
+[33m        [0m[33mDecoding images from the stable diffusion latent space  [0m[1;33m272[0m
+[33m        [0m[33mImproving generation with guidance      [0m[1;33m552[0m
+[33m        [0m[33mPlaying with prompts    [0m[1;33m1814[0m
+[33m## [0m[1;33m7[0m[33m. Post-Training Procedures for Diffusion Models[0m
+[33m        [0m[33mTopics  [0m[1;33m46[0m
+[33m        [0m[33mMethods and metrics for evaluating generative AI        [0m[1;33m425[0m
+[33m        [0m[33mManual evaluation of stable diffusion with DrawBench    [0m[1;33m836[0m
+[33m        [0m[33mQuantitative evaluation of diffusion models with human preference predictors    [0m[1;33m1201[0m
+[33m        [0m[33mOverview of methods for fine-tuning diffusion models    [0m[1;33m574[0m
+[33m        [0m[33mSourcing and preparing image datasets for fine-tuning   [0m[1;33m461[0m
+[33m        [0m[33mGenerating automatic captions with BLIP-[0m[1;33m2[0m[33m       [0m[1;33m508[0m
+[33m        [0m[33mParameter efficient fine-tuning with LoRa       [0m[1;33m710[0m
+[33m        [0m[33mInspecting the results of fine-tuning   [0m[1;33m302[0m
+[33m        [0m[33mInference with LoRas for style-specific generation      [0m[1;33m742[0m
+[33m        [0m[33mConceptual overview of textual inversion        [0m[1;33m494[0m
+[33m        [0m[33mSubject-specific personalization with DreamBooth        [0m[1;33m463[0m
+[33m        [0m[33mDreamBooth versus LoRa fine-tuning      [0m[1;33m388[0m
+[33m        [0m[33mDreamBooth fine-tuning with Hugging Face        [0m[1;33m851[0m
+[33m        [0m[33mInference with DreamBooth to create personalized AI avatars     [0m[1;33m861[0m
+[33m        [0m[33mAdding conditional control to text-to-image diffusion models    [0m[1;33m247[0m
+[33m        [0m[33mCreating edge and depth maps for conditioning   [0m[1;33m935[0m
+[33m        [0m[33mDepth and edge-guided stable diffusion with ControlNet  [0m[1;33m1030[0m
+[33m        [0m[33mUnderstanding and experimenting with ControlNet parameters      [0m[1;33m512[0m
+[33m        [0m[33mGenerative text effects with font depth maps    [0m[1;33m169[0m
+[33m        [0m[33mFew step generation with adversarial diffusion distillation [0m[1;33m([0m[33mADD[0m[1;33m)[0m[33m       [0m[1;33m422[0m
+[33m        [0m[33mReasons to distill      [0m[1;33m369[0m
+[33m        [0m[33mComparing SDXL and SDXL Turbo   [0m[1;33m709[0m
+[33m        [0m[33mText-guided image-to-image translation  [0m[1;33m1012[0m
+[33m        [0m[33mVideo-driven frame-by-frame generation with SDXL Turbo  [0m[1;33m780[0m
+[33m        [0m[33mNear real-time inference with PyTorch performance optimizations [0m[1;33m678[0m
+[33m## Conclusion[0m
+[33m        [0m[33mProgramming generative AI: Summary      [0m[1;33m60[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a [0m
+[33mspecific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficient Python programming skills  [0m
+[34m• Fundamental understanding of deep learning concepts [0m[1;34m([0m[34me.g., neural networks, gradient descent, [0m
+[34mand backpropagation[0m[1;34m)[0m[34m  [0m
+[34m• Basic knowledge of linear algebra and tensor/matrix operations  [0m
+[34m• Familiarity with interactive coding environments [0m[1;34m([0m[34me.g., Jupyter Notebook or Google Colab[0m[1;34m)[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mProgramming Generative AI: From Variational Autoencoders to Stable Diffusion with PyTorch and [0m
+[33mHugging Face[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;In this course, Jonathan Dinuâ€”a dedicated educator, author, and speakerâ€”presents an [0m
+[33minteractive tour of deep generative modeling. Learn how to train your own generative models from [0m
+[33mscratch to create an infinity of images. Discover how you can generate text with large language [0m
+[33mmodels similar to the ones that power applications like ChatGPT. Write your own text-to-image [0m
+[33mpipeline to understand how prompt- based generative models actually work. Plus, personalize large[0m
+[33mpretrained models like stable diffusion to generate images of novel subjects in unique visual [0m
+[33mstyles. This course offers you an applied resource to complement any theoretical or conceptual [0m
+[33mknowledge you have. &lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course was created by Jonathan Dinu and Pearson. We [0m
+[33mare pleased to host this training in our library.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Programming Generative AI: From Variational Autoencoders to Stable Diffusion with PyTorch and [0m
+[33mHugging Face[0m
+[33m## Introduction[0m
+[33m        [0m[33mProgramming generative AI: Introduction [0m[1;33m314[0m
+[33m## [0m[1;33m1[0m[33m. The What, Why, and How of Generative AI[0m
+[33m        [0m[33mTopics  [0m[1;33m49[0m
+[33m        [0m[33mGenerative AI in the wild       [0m[1;33m586[0m
+[33m        [0m[33mDefining generative AI  [0m[1;33m382[0m
+[33m        [0m[33mMultitudes of media     [0m[1;33m790[0m
+[33m        [0m[33mHow machines create     [0m[1;33m720[0m
+[33m        [0m[33mFormalizing generative models   [0m[1;33m809[0m
+[33m        [0m[33mGenerative versus discriminative models [0m[1;33m634[0m
+[33m        [0m[33mThe generative modeling trilemma        [0m[1;33m434[0m
+[33m        [0m[33mIntroduction to Google Colab    [0m[1;33m1196[0m
+[33m## [0m[1;33m2[0m[33m. PyTorch for the Impatient[0m
+[33m        [0m[33mTopics  [0m[1;33m52[0m
+[33m        [0m[33mWhat is PyTorch?        [0m[1;33m274[0m
+[33m        [0m[33mThe PyTorch layer cake  [0m[1;33m686[0m
+[33m        [0m[33mThe deep learning software trilemma     [0m[1;33m424[0m
+[33m        [0m[33mWhat are tensors, really?       [0m[1;33m324[0m
+[33m        [0m[33mTensors in PyTorch      [0m[1;33m603[0m
+[33m        [0m[33mIntroduction to computational graphs    [0m[1;33m765[0m
+[33m        [0m[33mBackpropagation is just the chain rule  [0m[1;33m991[0m
+[33m        [0m[33mEffortless backpropagation with torch.autograd  [0m[1;33m819[0m
+[33m        [0m[33mPyTorch's device abstraction [0m[1;33m([0m[33mi.e., GPUs[0m[1;33m)[0m[33m       [0m[1;33m240[0m
+[33m        [0m[33mWorking with devices    [0m[1;33m647[0m
+[33m        [0m[33mComponents of a learning algorithm      [0m[1;33m429[0m
+[33m        [0m[33mIntroduction to gradient descent        [0m[1;33m364[0m
+[33m        [0m[33mGetting to stochastic gradient descent [0m[1;33m([0m[33mSGD[0m[1;33m)[0m[33m    [0m[1;33m248[0m
+[33m        [0m[33mComparing gradient descent and SGD      [0m[1;33m350[0m
+[33m        [0m[33mLinear regression with PyTorch  [0m[1;33m1436[0m
+[33m        [0m[33mPerceptrons and neurons [0m[1;33m472[0m
+[33m        [0m[33mLayers and activations with torch.nn    [0m[1;33m761[0m
+[33m        [0m[33mMulti-layer feedforward neural networks [0m[1;33m([0m[33mMLP[0m[1;33m)[0m[33m   [0m[1;33m538[0m
+[33m## [0m[1;33m3[0m[33m. Latent Space Rules Everything Around Me[0m
+[33m        [0m[33mTopics  [0m[1;33m54[0m
+[33m        [0m[33mRepresenting images as tensors  [0m[1;33m465[0m
+[33m        [0m[33mDesiderata for computer vision  [0m[1;33m297[0m
+[33m        [0m[33mFeatures of convolutional neural networks       [0m[1;33m476[0m
+[33m        [0m[33mWorking with images in Python   [0m[1;33m620[0m
+[33m        [0m[33mThe Fashion-MNIST dataset       [0m[1;33m288[0m
+[33m        [0m[33mConvolutional neural networks in PyTorch        [0m[1;33m643[0m
+[33m        [0m[33mComponents of a latent variable model [0m[1;33m([0m[33mLVM[0m[1;33m)[0m[33m     [0m[1;33m537[0m
+[33m        [0m[33mThe humble autoencoder  [0m[1;33m329[0m
+[33m        [0m[33mDefining an autoencoder with PyTorch    [0m[1;33m342[0m
+[33m        [0m[33mSetting up a training loop      [0m[1;33m587[0m
+[33m        [0m[33mInference with an autoencoder   [0m[1;33m256[0m
+[33m        [0m[33mLook ma, no features!   [0m[1;33m501[0m
+[33m        [0m[33mAdding probability to autoencoders [0m[1;33m([0m[33mVAE[0m[1;33m)[0m[33m        [0m[1;33m289[0m
+[33m        [0m[33mVariational inference: Not just for autoencoders        [0m[1;33m440[0m
+[33m        [0m[33mTransforming an autoencoder into a VAE  [0m[1;33m806[0m
+[33m        [0m[33mTraining a VAE with PyTorch     [0m[1;33m813[0m
+[33m        [0m[33mExploring latent space  [0m[1;33m697[0m
+[33m        [0m[33mLatent space interpolation and attribute vectors        [0m[1;33m750[0m
+[33m## [0m[1;33m4[0m[33m. Demystifying Diffusion[0m
+[33m        [0m[33mTopics  [0m[1;33m58[0m
+[33m        [0m[33mGeneration as a reversible process      [0m[1;33m295[0m
+[33m        [0m[33mSampling as iterative denoising [0m[1;33m249[0m
+[33m        [0m[33mDiffusers and the Hugging Face ecosystem        [0m[1;33m411[0m
+[33m        [0m[33mGenerating images with diffusers pipelines      [0m[1;33m1700[0m
+[33m        [0m[33mDeconstructing the diffusion process    [0m[1;33m1149[0m
+[33m        [0m[33mForward process as encoder      [0m[1;33m1007[0m
+[33m        [0m[33mReverse process as decoder      [0m[1;33m438[0m
+[33m        [0m[33mInterpolating diffusion models  [0m[1;33m566[0m
+[33m        [0m[33mImage-to-image translation with SDEdit  [0m[1;33m484[0m
+[33m        [0m[33mImage restoration and enhancement       [0m[1;33m683[0m
+[33m## [0m[1;33m5[0m[33m. Generating and Encoding Text with Transformers[0m
+[33m        [0m[33mTopics  [0m[1;33m50[0m
+[33m        [0m[33mThe natural language processing pipeline        [0m[1;33m780[0m
+[33m        [0m[33mGenerative models of language   [0m[1;33m571[0m
+[33m        [0m[33mGenerating text with transformers pipelines     [0m[1;33m905[0m
+[33m        [0m[33mDeconstructing transformers pipelines   [0m[1;33m495[0m
+[33m        [0m[33mDecoding strategies     [0m[1;33m786[0m
+[33m        [0m[33mTransformers are just latent variable models for sequences      [0m[1;33m736[0m
+[33m        [0m[33mVisualizing and understanding attention [0m[1;33m1461[0m
+[33m        [0m[33mTurning words into vectors      [0m[1;33m644[0m
+[33m        [0m[33mThe vector space model  [0m[1;33m434[0m
+[33m        [0m[33mEmbedding sequences with transformers   [0m[1;33m611[0m
+[33m        [0m[33mComputing the similarity between embeddings     [0m[1;33m468[0m
+[33m        [0m[33mSemantic search with embeddings [0m[1;33m392[0m
+[33m        [0m[33mContrastive embeddings with sentence transformers       [0m[1;33m406[0m
+[33m## [0m[1;33m6[0m[33m. Connecting Text and Images[0m
+[33m        [0m[33mTopics  [0m[1;33m51[0m
+[33m        [0m[33mComponents of a multimodal model        [0m[1;33m324[0m
+[33m        [0m[33mVision-language understanding   [0m[1;33m573[0m
+[33m        [0m[33mContrastive language-image pretraining  [0m[1;33m368[0m
+[33m        [0m[33mEmbedding text and images with CLIP     [0m[1;33m847[0m
+[33m        [0m[33mZero-shot image classification with CLIP        [0m[1;33m216[0m
+[33m        [0m[33mSemantic image search with CLIP [0m[1;33m640[0m
+[33m        [0m[33mConditional generative models   [0m[1;33m326[0m
+[33m        [0m[33mIntroduction to latent diffusion models [0m[1;33m522[0m
+[33m        [0m[33mThe latent diffusion model architecture [0m[1;33m350[0m
+[33m        [0m[33mFailure modes and additional tools      [0m[1;33m400[0m
+[33m        [0m[33mStable diffusion deconstructed  [0m[1;33m690[0m
+[33m        [0m[33mWriting your own stable diffusion pipeline      [0m[1;33m676[0m
+[33m        [0m[33mDecoding images from the stable diffusion latent space  [0m[1;33m272[0m
+[33m        [0m[33mImproving generation with guidance      [0m[1;33m552[0m
+[33m        [0m[33mPlaying with prompts    [0m[1;33m1814[0m
+[33m## [0m[1;33m7[0m[33m. Post-Training Procedures for Diffusion Models[0m
+[33m        [0m[33mTopics  [0m[1;33m46[0m
+[33m        [0m[33mMethods and metrics for evaluating generative AI        [0m[1;33m425[0m
+[33m        [0m[33mManual evaluation of stable diffusion with DrawBench    [0m[1;33m836[0m
+[33m        [0m[33mQuantitative evaluation of diffusion models with human preference predictors    [0m[1;33m1201[0m
+[33m        [0m[33mOverview of methods for fine-tuning diffusion models    [0m[1;33m574[0m
+[33m        [0m[33mSourcing and preparing image datasets for fine-tuning   [0m[1;33m461[0m
+[33m        [0m[33mGenerating automatic captions with BLIP-[0m[1;33m2[0m[33m       [0m[1;33m508[0m
+[33m        [0m[33mParameter efficient fine-tuning with LoRa       [0m[1;33m710[0m
+[33m        [0m[33mInspecting the results of fine-tuning   [0m[1;33m302[0m
+[33m        [0m[33mInference with LoRas for style-specific generation      [0m[1;33m742[0m
+[33m        [0m[33mConceptual overview of textual inversion        [0m[1;33m494[0m
+[33m        [0m[33mSubject-specific personalization with DreamBooth        [0m[1;33m463[0m
+[33m        [0m[33mDreamBooth versus LoRa fine-tuning      [0m[1;33m388[0m
+[33m        [0m[33mDreamBooth fine-tuning with Hugging Face        [0m[1;33m851[0m
+[33m        [0m[33mInference with DreamBooth to create personalized AI avatars     [0m[1;33m861[0m
+[33m        [0m[33mAdding conditional control to text-to-image diffusion models    [0m[1;33m247[0m
+[33m        [0m[33mCreating edge and depth maps for conditioning   [0m[1;33m935[0m
+[33m        [0m[33mDepth and edge-guided stable diffusion with ControlNet  [0m[1;33m1030[0m
+[33m        [0m[33mUnderstanding and experimenting with ControlNet parameters      [0m[1;33m512[0m
+[33m        [0m[33mGenerative text effects with font depth maps    [0m[1;33m169[0m
+[33m        [0m[33mFew step generation with adversarial diffusion distillation [0m[1;33m([0m[33mADD[0m[1;33m)[0m[33m       [0m[1;33m422[0m
+[33m        [0m[33mReasons to distill      [0m[1;33m369[0m
+[33m        [0m[33mComparing SDXL and SDXL Turbo   [0m[1;33m709[0m
+[33m        [0m[33mText-guided image-to-image translation  [0m[1;33m1012[0m
+[33m        [0m[33mVideo-driven frame-by-frame generation with SDXL Turbo  [0m[1;33m780[0m
+[33m        [0m[33mNear real-time inference with PyTorch performance optimizations [0m[1;33m678[0m
+[33m## Conclusion[0m
+[33m        [0m[33mProgramming generative AI: Summary      [0m[1;33m60[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a [0m
+[33mspecific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficient Python programming skills  [0m
+[34m• Fundamental understanding of deep learning concepts [0m[1;34m([0m[34me.g., neural networks, gradient descent, [0m
+[34mand backpropagation[0m[1;34m)[0m[34m  [0m
+[34m• Basic knowledge of linear algebra and tensor/matrix operations  [0m
+[34m• Familiarity with interactive coding environments [0m[1;34m([0m[34me.g., Jupyter Notebook or Google Colab[0m[1;34m)[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mA colleague has asked you to create a learning path on the following topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mPyTorch Foundations[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mPlease design a learning path. Put your answer between XML tags.[0m
+
+[33m<curriculum_description>[0m
+[1;33m[[0m[33mYour description of the learning path curriculum here[0m[1;33m][0m
+[33m<[0m[33m/[0m[33mcurriculum_description[0m[1;33m>[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum_description[0m[34m>[0m
+[34mThis learning path, [0m[34m"PyTorch Foundations,"[0m[34m is designed to provide professionals with a strong [0m
+[34mgrounding in PyTorch—the widely used deep learning framework—and its application in modern data [0m
+[34mscience and AI projects. Spanning six courses of approximately [0m[1;34m2[0m[34m hours each, the curriculum takes[0m
+[34mlearners from basic concepts to practical model development and evaluation. Each course is [0m
+[34mdelivered as asynchronous video content enriched with chapter quizzes to reinforce understanding.[0m
+
+[34mCourse [0m[1;34m1[0m[34m: Introduction to PyTorch and Deep Learning[0m
+[34m• Overview: Introduces the evolution of deep learning and the role of PyTorch in the AI [0m
+[34mecosystem.[0m
+[34m• Relevance: Sets the stage by explaining industry applications, benefits of PyTorch’s dynamic [0m
+[34mcomputational graph, and the context in which the subsequent lessons will be applied.[0m
+
+[34mCourse [0m[1;34m2[0m[34m: PyTorch Fundamentals: Tensors and Operations[0m
+[34m• Overview: Covers the essential building blocks in PyTorch—tensors—and demonstrates various [0m
+[34mtensor operations.[0m
+[34m• Relevance: Provides a hands-on introduction to handling data, performing arithmetic operations,[0m
+[34mand understanding the core numerical computations that underpin neural network processing.[0m
+
+[34mCourse [0m[1;34m3[0m[34m: Automatic Differentiation with Autograd[0m
+[34m• Overview: Explores the mechanics of the Autograd system, enabling automatic differentiation of [0m
+[34mtensor operations and delving into dynamic computational graphs.[0m
+[34m• Relevance: Equips learners with the techniques necessary to implement backpropagation [0m
+[34mefficiently, a critical component for training neural networks.[0m
+
+[34mCourse [0m[1;34m4[0m[34m: Building Neural Networks with PyTorch[0m
+[34m• Overview: Guides learners through constructing neural network architectures using PyTorch’s [0m
+[34mmodules, layers, and activation functions.[0m
+[34m• Relevance: Focuses on practical skills for defining and customizing network architectures to [0m
+[34msolve real-world problems, bridging theory and hands-on model development.[0m
+
+[34mCourse [0m[1;34m5[0m[34m: Training Techniques and Optimization Strategies[0m
+[34m• Overview: Focuses on training models, discussing loss functions, optimization algorithms [0m[1;34m([0m[34mlike [0m
+[34mSGD and Adam[0m[1;34m)[0m[34m, and techniques to mitigate overfitting.[0m
+[34m• Relevance: Empowers learners to apply best practices in model training, ensuring that they can [0m
+[34mfine-tune model performance and address common challenges in training deep learning systems.[0m
+
+[34mCourse [0m[1;34m6[0m[34m: Model Evaluation, Fine-Tuning, and Deployment Considerations[0m
+[34m• Overview: Addresses how to evaluate model performance using various metrics, perform [0m
+[34mfine-tuning [0m[1;34m([0m[34mincluding transfer learning[0m[1;34m)[0m[34m, and understand considerations for deploying PyTorch [0m
+[34mmodels into production.[0m
+[34m• Relevance: Prepares professionals to transition from development to production, ensuring [0m
+[34mpractical skills in both model assessment and the strategic deployment of AI solutions.[0m
+
+[34mOverall, this structured curriculum offers a comprehensive progression from core PyTorch concepts[0m
+[34mto advanced applications. It is tailored for professionals seeking to enhance their technical [0m
+[34mproficiency in deep learning, ultimately supporting organizational objectives in AI-driven [0m
+[34minnovation and individual career growth in the tech landscape.[0m
+[34m<[0m[34m/[0m[34mcurriculum_description[0m[1;34m>[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou have been provided with a detailed curriculum description.[0m
+
+[33mThe description is for this topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mPyTorch Foundations[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mHere is the description:[0m
+[33m<ideal_curriculum>[0m
+
+[33mThis learning path, [0m[33m"PyTorch Foundations,"[0m[33m is designed to provide professionals with a strong [0m
+[33mgrounding in PyTorch—the widely used deep learning framework—and its application in modern data [0m
+[33mscience and AI projects. Spanning six courses of approximately [0m[1;33m2[0m[33m hours each, the curriculum takes[0m
+[33mlearners from basic concepts to practical model development and evaluation. Each course is [0m
+[33mdelivered as asynchronous video content enriched with chapter quizzes to reinforce understanding.[0m
+
+[33mCourse [0m[1;33m1[0m[33m: Introduction to PyTorch and Deep Learning[0m
+[33m• Overview: Introduces the evolution of deep learning and the role of PyTorch in the AI [0m
+[33mecosystem.[0m
+[33m• Relevance: Sets the stage by explaining industry applications, benefits of PyTorch’s dynamic [0m
+[33mcomputational graph, and the context in which the subsequent lessons will be applied.[0m
+
+[33mCourse [0m[1;33m2[0m[33m: PyTorch Fundamentals: Tensors and Operations[0m
+[33m• Overview: Covers the essential building blocks in PyTorch—tensors—and demonstrates various [0m
+[33mtensor operations.[0m
+[33m• Relevance: Provides a hands-on introduction to handling data, performing arithmetic operations,[0m
+[33mand understanding the core numerical computations that underpin neural network processing.[0m
+
+[33mCourse [0m[1;33m3[0m[33m: Automatic Differentiation with Autograd[0m
+[33m• Overview: Explores the mechanics of the Autograd system, enabling automatic differentiation of [0m
+[33mtensor operations and delving into dynamic computational graphs.[0m
+[33m• Relevance: Equips learners with the techniques necessary to implement backpropagation [0m
+[33mefficiently, a critical component for training neural networks.[0m
+
+[33mCourse [0m[1;33m4[0m[33m: Building Neural Networks with PyTorch[0m
+[33m• Overview: Guides learners through constructing neural network architectures using PyTorch’s [0m
+[33mmodules, layers, and activation functions.[0m
+[33m• Relevance: Focuses on practical skills for defining and customizing network architectures to [0m
+[33msolve real-world problems, bridging theory and hands-on model development.[0m
+
+[33mCourse [0m[1;33m5[0m[33m: Training Techniques and Optimization Strategies[0m
+[33m• Overview: Focuses on training models, discussing loss functions, optimization algorithms [0m[1;33m([0m[33mlike [0m
+[33mSGD and Adam[0m[1;33m)[0m[33m, and techniques to mitigate overfitting.[0m
+[33m• Relevance: Empowers learners to apply best practices in model training, ensuring that they can [0m
+[33mfine-tune model performance and address common challenges in training deep learning systems.[0m
+
+[33mCourse [0m[1;33m6[0m[33m: Model Evaluation, Fine-Tuning, and Deployment Considerations[0m
+[33m• Overview: Addresses how to evaluate model performance using various metrics, perform [0m
+[33mfine-tuning [0m[1;33m([0m[33mincluding transfer learning[0m[1;33m)[0m[33m, and understand considerations for deploying PyTorch [0m
+[33mmodels into production.[0m
+[33m• Relevance: Prepares professionals to transition from development to production, ensuring [0m
+[33mpractical skills in both model assessment and the strategic deployment of AI solutions.[0m
+
+[33mOverall, this structured curriculum offers a comprehensive progression from core PyTorch concepts[0m
+[33mto advanced applications. It is tailored for professionals seeking to enhance their technical [0m
+[33mproficiency in deep learning, ultimately supporting organizational objectives in AI-driven [0m
+[33minnovation and individual career growth in the tech landscape.[0m
+
+[33m<[0m[33m/[0m[33mideal_curriculum[0m[1;33m>[0m
+
+[33mPlease convert this into a structured JSON representation of the curriculum.[0m
+[33mYour answer should include the topic, description, audience, and a list of modules.[0m
+[33mYOU SHOULD ALWAYS RETURN AT LEAST SIX MODULES, AND NO MORE THAN TWELVE.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum[0m[34m>[0m
+[34m        [0m[34m<topic>PyTorch Foundations<[0m[34m/[0m[34mtopic[0m[34m>[0m
+[34m        [0m[34m<description>This learning path, [0m[34m'PyTorch Foundations,'[0m[34m provides professionals with a [0m
+[34mstrong grounding in PyTorch—the widely used deep learning framework—and its application in modern[0m
+[34mdata science and AI projects. It covers core PyTorch concepts, from basic functionalities to [0m
+[34mpractical model development and evaluation, delivered asynchronously via video content with [0m
+[34mchapter quizzes.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m<audience>Professionals seeking to enhance their technical proficiency in deep learning [0m
+[34mand AI-driven innovation.<[0m[34m/[0m[34maudience[0m[34m>[0m
+[34m        [0m[34m<modules>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Introduction to PyTorch and Deep Learning<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Introduces the evolution of deep learning and establishes [0m
+[34mthe role of PyTorch in the AI ecosystem, setting the stage for further exploration of the [0m
+[34mframework.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand the evolution and impact of deep [0m
+[34mlearning.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Recognize PyTorch's role and benefits in modern AI [0m
+[34mapplications.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Relate industry applications to the dynamic [0m
+[34mcomputational graph of PyTorch.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>PyTorch Fundamentals: Tensors and Operations<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Covers the essential building blocks in PyTorch—tensors—and [0m
+[34mdemonstrates various tensor operations and arithmetic processes.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Learn the creation and manipulation of [0m
+[34mtensors.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Perform and understand key arithmetic [0m
+[34moperations.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Grasp the core concepts underlying numerical [0m
+[34mcomputations in neural network processing.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Automatic Differentiation with Autograd<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Explores the mechanics of the Autograd system in PyTorch, [0m
+[34mwhich enables automatic differentiation and efficient backpropagation for training neural [0m
+[34mnetworks.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand how automatic differentiation works in [0m
+[34mPyTorch.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Implement backpropagation using the Autograd [0m
+[34msystem.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Gain insights into managing dynamic computational [0m
+[34mgraphs.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Building Neural Networks with PyTorch<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Guides learners through constructing neural network [0m
+[34marchitectures using PyTorch's modules, layers, and activation functions, bridging theoretical [0m
+[34mconcepts with practical model development.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Design and build neural network [0m
+[34marchitectures.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Utilize PyTorch modules and activation functions [0m
+[34meffectively.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Customize network layers to solve real-world [0m
+[34mproblems.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Training Techniques and Optimization Strategies<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Focuses on the practical aspects of training models, [0m
+[34mincluding discussions on loss functions, optimization algorithms like SGD and Adam, and [0m
+[34mtechniques to mitigate overfitting.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand various training techniques and loss [0m
+[34mfunctions.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Apply optimization strategies such as SGD and [0m
+[34mAdam.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Learn methods to mitigate overfitting and enhance [0m
+[34mmodel performance.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Model Evaluation, Fine-Tuning, and Deployment [0m
+[34mConsiderations<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Addresses methodologies for evaluating model performance, [0m
+[34mfine-tuning techniques including transfer learning, and the essential considerations for [0m
+[34mdeploying PyTorch models to production.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Evaluate model performance using appropriate [0m
+[34mmetrics.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Implement fine-tuning strategies and transfer [0m
+[34mlearning.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand the key steps and considerations for [0m
+[34mdeploying models in production environments.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m<[0m[34m/[0m[34mmodules[0m[34m>[0m
+[34m<[0m[34m/[0m[34mcurriculum[0m[1;34m>[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou have a received a curriculum object on the topic of:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mModel Evaluation, Fine-Tuning, and Deployment Considerations[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mHere is the curriculum object:[0m
+[33m<curriculum>[0m
+[33m<curriculum>[0m
+[33m        [0m[33m<topic>PyTorch Foundations<[0m[33m/[0m[33mtopic[0m[33m>[0m
+[33m        [0m[33m<description>This learning path, [0m[33m'PyTorch Foundations,'[0m[33m provides professionals with a strong grounding in PyTorch—the widely [0m
+[33mused deep learning framework—and its application in modern data science and AI projects. It covers core PyTorch concepts, from basic [0m
+[33mfunctionalities to practical model development and evaluation, delivered asynchronously via video content with chapter [0m
+[33mquizzes.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m<audience>Professionals seeking to enhance their technical proficiency in deep learning and AI-driven innovation.<[0m[33m/[0m[33maudience[0m[33m>[0m
+[33m        [0m[33m<modules>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Introduction to PyTorch and Deep Learning<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Introduces the evolution of deep learning and establishes the role of PyTorch in the AI [0m
+[33mecosystem, setting the stage for further exploration of the framework.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand the evolution and impact of deep learning.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Recognize PyTorch's role and benefits in modern AI applications.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Relate industry applications to the dynamic computational graph of PyTorch.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>PyTorch Fundamentals: Tensors and Operations<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Covers the essential building blocks in PyTorch—tensors—and demonstrates various tensor [0m
+[33moperations and arithmetic processes.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Learn the creation and manipulation of tensors.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Perform and understand key arithmetic operations.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Grasp the core concepts underlying numerical computations in neural network [0m
+[33mprocessing.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Automatic Differentiation with Autograd<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Explores the mechanics of the Autograd system in PyTorch, which enables automatic differentiation[0m
+[33mand efficient backpropagation for training neural networks.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand how automatic differentiation works in PyTorch.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Implement backpropagation using the Autograd system.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Gain insights into managing dynamic computational graphs.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Building Neural Networks with PyTorch<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Guides learners through constructing neural network architectures using PyTorch's modules, [0m
+[33mlayers, and activation functions, bridging theoretical concepts with practical model development.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Design and build neural network architectures.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Utilize PyTorch modules and activation functions effectively.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Customize network layers to solve real-world problems.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Training Techniques and Optimization Strategies<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Focuses on the practical aspects of training models, including discussions on loss functions, [0m
+[33moptimization algorithms like SGD and Adam, and techniques to mitigate overfitting.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand various training techniques and loss functions.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Apply optimization strategies such as SGD and Adam.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Learn methods to mitigate overfitting and enhance model performance.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Model Evaluation, Fine-Tuning, and Deployment Considerations<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Addresses methodologies for evaluating model performance, fine-tuning techniques including [0m
+[33mtransfer learning, and the essential considerations for deploying PyTorch models to production.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Evaluate model performance using appropriate metrics.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Implement fine-tuning strategies and transfer learning.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand the key steps and considerations for deploying models in production [0m
+[33menvironments.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m<[0m[33m/[0m[33mmodules[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcurriculum[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcurriculum[0m[33m>[0m
+
+[33mAnd here are the courses that you have to choose from:[0m
+[33m<courses>[0m
+[33m<course_title>PyTorch Essential Training: Deep Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;PyTorch is the most flexible and expressive library for deep learning, and offers simple Python API, GPU [0m
+[33msupport, and flexibility. Itâ€™s designed to load data, apply transforms, and build deep learning models with just a few lines of [0m
+[33mcode. Many machine learning developers and researchers use PyTorch to accelerate deep learning research, experimentation, and [0m
+[33mprototyping. In this course, software developer Terezija Semenski teaches you the important features of PyTorch with a hands-on [0m
+[33mapproach to help you develop the skills you need to dive into your deep learning projects.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course includes Code[0m
+[33mChallenges powered by CoderPad. Code Challenges are interactive coding exercises with real-time feedback, so you can get hands-on [0m
+[33mcoding practice alongside the course content to advance your programming skills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Building Deep Learning Applications with Keras<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Keras, a high-level neural networks API, is gaining popularity for its ease of use and versatility. With [0m
+[33mbusinesses rapidly moving towards AI solutions, you need an understanding of this valuable tool. In this course, data scientist Isil [0m
+[33mBerkun introduces you to Keras, highlights integrating it with TensorFlow and Theano backends, and offers practical insights into [0m
+[33mcreating neural networks. Learn how to set up Keras, create neural networks, and use pre-trained models. Find out how to deploy models[0m
+[33mon platforms like Google Cloud. When you complete this course, you will be able to understand the Keras architecture, design and train[0m
+[33mdeep learning models, and utilize them for real-world applications.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Artificial Intelligence Foundations: Neural Networks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;An artificial neural network uses the human brain as inspiration for creating a complex machine learning [0m
+[33msystem. They can classify millions of sounds, videos, and images, answer our questions, understand our behaviors, and even drive our [0m
+[33mcars. Neural networks are also the foundation of generative AI.&lt;[0m[33m/[0m[33mp[0m[33m&gt;This course introduces the fundamental techniques and [0m
+[33mprinciples of neural networks, common models, and their applications. Instructor Gwendolyn Stripling takes you through the different [0m
+[33mneural network architectures, their components, appropriate use cases, and best practices for improving neural network model [0m
+[33mperformance.  Plus, gain hands-on experience building and training a neural network using the Keras Sequential API, an open-source [0m
+[33mlibrary that demystifies the design and training of neural networks. If youâ€™re looking to achieve a solid understanding of how to [0m
+[33mbuild, train, improve and use neural networks, join Gwendolyn in this course.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>TensorFlow: Neural Networks and Working with Tables<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>TensorFlow [0m[1;33m2.0[0m[33m is quickly becoming one of the most popular deep learning frameworks and a must-have skill in your [0m
+[33martificial intelligence toolkit. Using a hands-on approach, instructor Jonathan Fernandes covers foundational skills for deep learning[0m
+[33musing TensorFlow [0m[1;33m2.0[0m[33m, from creating single and multi-layer networks, to training a network, and using it to make predictions. He also [0m
+[33mcovers loss functions, optimizers, and some of the data APIs unique to TensorFlow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Deep Learning: Getting Started<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Deep learning as a technology has grown leaps and bounds in the last few years. More and more AI solutions use [0m
+[33mdeep learning as their foundational technology. Studying this technology, however, has several challenges. Most learning resources are[0m
+[33mmath-heavy and are difficult to navigate without good math skills. IT professionals need a simplified resource to learn the concepts [0m
+[33mand build models quickly. This course aims to provide a simplified path to studying the basics of deep learning and becoming [0m
+[33mproductive quickly.Instructor Kumaran Ponnambalam starts off with an intro to deep learning, including artificial neural networks and [0m
+[33marchitectures. He navigates through various building blocks of neural networks with simple and easy to understand explanations. [0m
+[33mKumaran also builds code in Keras to implement these building blocks. He then pulls it all together with an end-to-end exercise. [0m
+[33mFinally, test what you learned with a deep learning problem and compare your solution with Kumaranâ€™s.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>PyTorch Essential Training: Deep Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;PyTorch is the most flexible and expressive library for deep learning, and offers simple Python API, GPU [0m
+[33msupport, and flexibility. Itâ€™s designed to load data, apply transforms, and build deep learning models with just a few lines of [0m
+[33mcode. Many machine learning developers and researchers use PyTorch to accelerate deep learning research, experimentation, and [0m
+[33mprototyping. In this course, software developer Terezija Semenski teaches you the important features of PyTorch with a hands-on [0m
+[33mapproach to help you develop the skills you need to dive into your deep learning projects.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course includes Code[0m
+[33mChallenges powered by CoderPad. Code Challenges are interactive coding exercises with real-time feedback, so you can get hands-on [0m
+[33mcoding practice alongside the course content to advance your programming skills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Hands-On PyTorch Machine Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Many of the worldâ€™s most exciting and innovative new tech projects leverage the power of machine learning. But [0m
+[33mif you want to set yourself apart as a data scientist or machine learning engineer, you need to stay up to date with the current tools[0m
+[33mand best practices for creating effective, predictable models.&lt;br&gt;&lt;br&gt;In this course, instructor Helen Sun shows you how [0m
+[33mto get up and running with PyTorch, the open-source machine learning framework known for its simplicity, performance, and APIs. [0m
+[33mExplore the basic concepts of PyTorch, including tensors, operators, and conversion to and from NumPy, as well as how to utilize [0m
+[33mautograd, which tracks the history of every computation recorded by the framework. By the end of this course, youâ€™ll also be [0m
+[33mequipped with a new set of skills to get the most out of Torchvision, Torchaudio, and Torchtext.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>TensorFlow: Neural Networks and Working with Tables<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>TensorFlow [0m[1;33m2.0[0m[33m is quickly becoming one of the most popular deep learning frameworks and a must-have skill in your [0m
+[33martificial intelligence toolkit. Using a hands-on approach, instructor Jonathan Fernandes covers foundational skills for deep learning[0m
+[33musing TensorFlow [0m[1;33m2.0[0m[33m, from creating single and multi-layer networks, to training a network, and using it to make predictions. He also [0m
+[33mcovers loss functions, optimizers, and some of the data APIs unique to TensorFlow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Applied Machine Learning: Foundations<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;AI models are transforming the workplace. Knowing whatâ€™s going behind those models can help you apply [0m
+[33mmachine learning [0m[1;33m([0m[33mML[0m[1;33m)[0m[33m techniques more effectively. In this course, instructor Matt Harrison shows you how to get started mastering the[0m
+[33messentials of machine learning using the power of the Python programming language.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Explore the fundamentals of an [0m
+[33mend-to-end machine learning application, as you gain hands-on experience of data exploration, data processing, model creation, model [0m
+[33mevaluation, model tuning, and model deployment with MLFlow. Along the way, test out your new coding skills in the practice challenges [0m
+[33mat the end of each section.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>AI Workshop: Build a Neural Network with PyTorch Lightning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;If youâ€™re looking for hands-on AI practice, this workshop-style coding course was designed for you. [0m
+[33mJoin instructor Janani Ravi as she shows you how to build a neural network with PyTorch Lightning, the open-source library from Python[0m
+[33mthat provides an interface for the popular deep learning framework PyTorch. Explore the core components of building a neural network [0m
+[33mwith PyTorch, including setting up the virtual environment, loading and exploring data, preprocessing data for training, creating and [0m
+[33mtraining a simple neural network, setting up the Dataset and DataLoader, visualizing losses, and much more. Along the way, Janani [0m
+[33mcovers the basics of using modules in PyTorch Lightning to build, train, and evaluate both regression and classification [0m
+[33mmodels.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course was created by Loonycorn. We are pleased to host this content in our [0m
+[33mlibrary.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Recurrent Neural Networks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Get started with recurrent neural network [0m[1;33m([0m[33mRNN[0m[1;33m)[0m[33m concepts in a simplified way and build simple applications with [0m
+[33mRNNs and Keras. RNN is a fast-growing domain within the AI world. Popular groundbreaking applications like language translation, [0m
+[33mspeech synthesis, question answering, and text generation use RNNs as their base technology. Studying this technology, however, has [0m
+[33mseveral challenges. Most learning resources are math heavy and are difficult to navigate without good math skills. IT professionals [0m
+[33mfrom varying backgrounds need a simplified resource to learn the concepts and build models quickly. In this course, Kumaran [0m
+[33mPonnambalam provides a simplified path to studying the basics of recurrent neural networks, allowing you to become productive quickly.[0m
+[33mKumaran starts with a simplified introduction of RNN before walking through the process of building a model. He then covers the [0m
+[33mpopular building blocks of RNN with GRUs, LSTMs, word embeddings, and transformers.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Foundational Math for Generative AI: Understanding LLMs and Transformers through Practical Applications<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Unlock the mysteries behind the models powering todayâ€™s most advanced AI applications. In this course, [0m
+[33minstructor Axel Sirota takes you beyond just using large language models [0m[1;33m([0m[33mLLMs[0m[1;33m)[0m[33m like BERT or GPT and highlights the mathematical [0m
+[33mfoundations of generative AI. Explore the challenge of sentiment analysis with simple recurrent neural networks [0m[1;33m([0m[33mRNNs[0m[1;33m)[0m[33m and [0m
+[33mprogressively evolve your approach as you gain a deep understanding of attention mechanisms, transformers, and models. Through [0m
+[33mintuitive explanations and hands-on coding exercises, Axel outlines why attention revolutionized natural language processing, and how [0m
+[33mtransformers reshaped the field by eliminating the need for RNNs altogether. Along the way, get tips on fine-tuning pretrained models,[0m
+[33mapplying cutting-edge techniques like low-rank adaptation [0m[1;33m([0m[33mLoRA[0m[1;33m)[0m[33m, and leveraging your newly acquired skills to build smarter, more [0m
+[33mefficient models and innovate in the fast-evolving world of AI.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Generative NLP with Variational AutoEncoders<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Thereâ€™s so much going on in the world of AI right now that it can seem impossible to feel like youâ€™re[0m
+[33mon track. This is especially true for models that generate text. Which ones should you use, how should you use them, and [0m
+[33mwhen?&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;In this course, join instructor Axel Sirota as he offers an in-depth overview of variational autoencoders [0m
+[1;33m([0m[33mVAEs[0m[1;33m)[0m[33m specifically focused on how to create complex models in Keras, how to create denoising autoencoders, and how to create VAEs for[0m
+[33mtext generation. Throughout the course, Alex provides hands-on demonstrations and exercise challenges to test out your new [0m
+[33mskills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Artificial Intelligence Foundations: Neural Networks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;An artificial neural network uses the human brain as inspiration for creating a complex machine learning [0m
+[33msystem. They can classify millions of sounds, videos, and images, answer our questions, understand our behaviors, and even drive our [0m
+[33mcars. Neural networks are also the foundation of generative AI.&lt;[0m[33m/[0m[33mp[0m[33m&gt;This course introduces the fundamental techniques and [0m
+[33mprinciples of neural networks, common models, and their applications. Instructor Gwendolyn Stripling takes you through the different [0m
+[33mneural network architectures, their components, appropriate use cases, and best practices for improving neural network model [0m
+[33mperformance.  Plus, gain hands-on experience building and training a neural network using the Keras Sequential API, an open-source [0m
+[33mlibrary that demystifies the design and training of neural networks. If youâ€™re looking to achieve a solid understanding of how to [0m
+[33mbuild, train, improve and use neural networks, join Gwendolyn in this course.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Hands-On PyTorch Machine Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Many of the worldâ€™s most exciting and innovative new tech projects leverage the power of machine learning. But [0m
+[33mif you want to set yourself apart as a data scientist or machine learning engineer, you need to stay up to date with the current tools[0m
+[33mand best practices for creating effective, predictable models.&lt;br&gt;&lt;br&gt;In this course, instructor Helen Sun shows you how [0m
+[33mto get up and running with PyTorch, the open-source machine learning framework known for its simplicity, performance, and APIs. [0m
+[33mExplore the basic concepts of PyTorch, including tensors, operators, and conversion to and from NumPy, as well as how to utilize [0m
+[33mautograd, which tracks the history of every computation recorded by the framework. By the end of this course, youâ€™ll also be [0m
+[33mequipped with a new set of skills to get the most out of Torchvision, Torchaudio, and Torchtext.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>PyTorch Essential Training: Deep Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;PyTorch is the most flexible and expressive library for deep learning, and offers simple Python API, GPU [0m
+[33msupport, and flexibility. Itâ€™s designed to load data, apply transforms, and build deep learning models with just a few lines of [0m
+[33mcode. Many machine learning developers and researchers use PyTorch to accelerate deep learning research, experimentation, and [0m
+[33mprototyping. In this course, software developer Terezija Semenski teaches you the important features of PyTorch with a hands-on [0m
+[33mapproach to help you develop the skills you need to dive into your deep learning projects.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course includes Code[0m
+[33mChallenges powered by CoderPad. Code Challenges are interactive coding exercises with real-time feedback, so you can get hands-on [0m
+[33mcoding practice alongside the course content to advance your programming skills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Artificial Intelligence Foundations: Neural Networks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;An artificial neural network uses the human brain as inspiration for creating a complex machine learning [0m
+[33msystem. They can classify millions of sounds, videos, and images, answer our questions, understand our behaviors, and even drive our [0m
+[33mcars. Neural networks are also the foundation of generative AI.&lt;[0m[33m/[0m[33mp[0m[33m&gt;This course introduces the fundamental techniques and [0m
+[33mprinciples of neural networks, common models, and their applications. Instructor Gwendolyn Stripling takes you through the different [0m
+[33mneural network architectures, their components, appropriate use cases, and best practices for improving neural network model [0m
+[33mperformance.  Plus, gain hands-on experience building and training a neural network using the Keras Sequential API, an open-source [0m
+[33mlibrary that demystifies the design and training of neural networks. If youâ€™re looking to achieve a solid understanding of how to [0m
+[33mbuild, train, improve and use neural networks, join Gwendolyn in this course.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Neural Networks and Convolutional Neural Networks Essential Training<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Take a deep dive into neural networks and convolutional neural networks, two key concepts in the area of machine [0m
+[33mlearning. In this hands-on course, instructor Jonathan Fernandes covers fundamental neural and convolutional neural network concepts. [0m
+[33mJonathan begins by providing an introduction to the components of neural networks, discussing activation functions and [0m
+[33mbackpropagation. He then looks at convolutional neural networks, explaining why they're particularly good at image recognition tasks. [0m
+[33mHe also steps through how to build a neural network model using Keras. Plus, learn about VGG16, the history of the ImageNet challenge,[0m
+[33mand more.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Building Deep Learning Applications with Keras<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Keras, a high-level neural networks API, is gaining popularity for its ease of use and versatility. With [0m
+[33mbusinesses rapidly moving towards AI solutions, you need an understanding of this valuable tool. In this course, data scientist Isil [0m
+[33mBerkun introduces you to Keras, highlights integrating it with TensorFlow and Theano backends, and offers practical insights into [0m
+[33mcreating neural networks. Learn how to set up Keras, create neural networks, and use pre-trained models. Find out how to deploy models[0m
+[33mon platforms like Google Cloud. When you complete this course, you will be able to understand the Keras architecture, design and train[0m
+[33mdeep learning models, and utilize them for real-world applications.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>AI Workshop: Build a Neural Network with PyTorch Lightning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;If youâ€™re looking for hands-on AI practice, this workshop-style coding course was designed for you. [0m
+[33mJoin instructor Janani Ravi as she shows you how to build a neural network with PyTorch Lightning, the open-source library from Python[0m
+[33mthat provides an interface for the popular deep learning framework PyTorch. Explore the core components of building a neural network [0m
+[33mwith PyTorch, including setting up the virtual environment, loading and exploring data, preprocessing data for training, creating and [0m
+[33mtraining a simple neural network, setting up the Dataset and DataLoader, visualizing losses, and much more. Along the way, Janani [0m
+[33mcovers the basics of using modules in PyTorch Lightning to build, train, and evaluate both regression and classification [0m
+[33mmodels.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course was created by Loonycorn. We are pleased to host this content in our [0m
+[33mlibrary.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Deep Learning with Python: Optimizing Deep Learning Models<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Discover techniques to optimize deep learning models by improving their performance and efficiency. [0m
+[33mEmphasizing practical applications, instructor Frederick Nwanganga guides you through hands-on coding exercises, covering the [0m
+[33messentials of data preprocessing and augmentation, regularization methods to minimize overfitting, optimization algorithms, advanced [0m
+[33mhyperparameter tuning methods, and more.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course is integrated with GitHub Codespaces, an instant cloud [0m
+[33mdeveloper environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub[0m
+[33mCodespaces, you can get hands-on practice from any machine, at any timeâ€”all while using a tool that youâ€™ll likely encounter in the[0m
+[33mworkplace. Check out â€œUsing GitHub Codespaces with this course to learn how to get started.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>TensorFlow: Practical Skills in Constructing, Training, and Optimizing Models<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Do you want to dive into machine learning? TensorFlow is an essential tool that enables the development of complex[0m
+[33mmachine learning models efficiently. In this course, Greg Damico covers everything from installing TensorFlow and grasping its core [0m
+[33mconcepts to implementing advanced techniques like neural networks and batch normalization. Check out this course to gain practical [0m
+[33mskills in constructing, training, and optimizing models for real-world applications with TensorFlow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Artificial Intelligence Foundations: Neural Networks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;An artificial neural network uses the human brain as inspiration for creating a complex machine learning [0m
+[33msystem. They can classify millions of sounds, videos, and images, answer our questions, understand our behaviors, and even drive our [0m
+[33mcars. Neural networks are also the foundation of generative AI.&lt;[0m[33m/[0m[33mp[0m[33m&gt;This course introduces the fundamental techniques and [0m
+[33mprinciples of neural networks, common models, and their applications. Instructor Gwendolyn Stripling takes you through the different [0m
+[33mneural network architectures, their components, appropriate use cases, and best practices for improving neural network model [0m
+[33mperformance.  Plus, gain hands-on experience building and training a neural network using the Keras Sequential API, an open-source [0m
+[33mlibrary that demystifies the design and training of neural networks. If youâ€™re looking to achieve a solid understanding of how to [0m
+[33mbuild, train, improve and use neural networks, join Gwendolyn in this course.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>TensorFlow: Neural Networks and Working with Tables<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>TensorFlow [0m[1;33m2.0[0m[33m is quickly becoming one of the most popular deep learning frameworks and a must-have skill in your [0m
+[33martificial intelligence toolkit. Using a hands-on approach, instructor Jonathan Fernandes covers foundational skills for deep learning[0m
+[33musing TensorFlow [0m[1;33m2.0[0m[33m, from creating single and multi-layer networks, to training a network, and using it to make predictions. He also [0m
+[33mcovers loss functions, optimizers, and some of the data APIs unique to TensorFlow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Applied Machine Learning: Feature Engineering<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Machine learning is not magic. The quality of the predictions coming out of your model is a direct reflection of [0m
+[33mthe data you feed it during training. This course with instructor Matt Harrison guides you through the nuances of feature engineering [0m
+[33mtechniques for numeric data so you can take a dataset, tease out the signal, and throw out the noise in order to optimize your machine[0m
+[33mlearning model. Matt teaches you techniques like imputation, binning, log transformations, and scaling for numeric data. He covers [0m
+[33mmethods for other types of data, like as one hot encoding, mean targeting coding, principal component analysis, feature aggregation, [0m
+[33mand text processing techniques like TFIDF and embeddings. The tools you learn in this course will generalize to nearly any kind of [0m
+[33mmachine learning algorithm/problem, so join Matt in this course to learn how you can extract the maximum value from your data using [0m
+[33mfeature engineering.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Amazon SageMaker<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Amazon SageMaker is a solution for developers who want to deploy predictive machine learning models into a [0m
+[33mproduction environment. This course teaches you how to set up and configure SageMaker environments, prepare and preprocess datasets, [0m
+[33mand build, train, and deploy machine learning models using SageMaker's built-in algorithms. Instructor Kesha Williams guides you [0m
+[33mthrough evaluating and optimizing model performance, including hyperparameter tuning and performance monitoring, to ensure your models[0m
+[33mdeliver the best results. Additionally, learn best practices for managing costs, implementing security measures, and operationalizing [0m
+[33mmodels with MLOps. Whether new to machine learning or looking to expand your AWS skills, this course will provide the hands-on [0m
+[33mexperience and practical knowledge to use Amazon SageMaker in your projects effectively.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>DevOps for Data Scientists<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Data scientists create data models that need to run in production environments. Many DevOps practices are relevant[0m
+[33mto production-oriented data science applications, but these practices are often overlooked in data science training. In addition, data[0m
+[33mscience and machine learning have distinct requirements, such as the need to revise models while in use. This course was designed for [0m
+[33mdata scientists who need to support their models in production, as well as for DevOps professionals who are tasked with supporting [0m
+[33mdata science and machine learning applications. Learn about key data science development practices, including the testing and [0m
+[33mvalidation of data science models. This course also covers how to use the Predictive Model Markup Language [0m[1;33m([0m[33mPMML[0m[1;33m)[0m[33m, monitor models in [0m
+[33mproduction, work with Docker containers, and more.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Amazon SageMaker<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>SageMaker is Amazonâ€™s solution for developers who want to deploy predictive machine learning models into a [0m
+[33mproduction environment. Programming is done in Python and the results can easily be integrated into cloud-based applications. These [0m
+[33mlessons review the entire Amazon SageMaker workflow: analysis, build, and final deployment. Instructor Martin Kemka introduces the [0m
+[33mbenefits of Amazon SageMaker and reviews its browser-based interface and toolset. In the second chapter, he shows how to import, [0m
+[33minvestigate, visualize, and summarize your data. The next stage is to use a clean data sample to train a machine learning model to [0m
+[33mfulfill a basic task. Finally, Martin shows how the model is deployed. Almost every chapter concludes with a challenge that allows you[0m
+[33mto practice your new SageMaker skills.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Deploying Scalable Machine Learning for Data Science<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Machine learning models often run in complex production environments that can adapt to the ebb and flow of big [0m
+[33mdata. The tools and practices that help data scientists rapidly &lt;em&gt;build&lt;[0m[33m/[0m[33mem[0m[33m&gt; machine learning models are not sufficient [0m
+[33mto &lt;em&gt;deploy&lt;[0m[33m/[0m[33mem[0m[33m&gt; those models at scale. To deliver scalable solutions, you need a whole new toolset. This course [0m
+[33mprovides data scientists and DevOps engineers with an overview of common design patterns for scalable machine learning architectures, [0m
+[33mas well as tools for deploying and maintaining machine learning models in production. Instructor Dan Sullivan reviews three [0m
+[33mtechnologies that enable scalable machine learning: services that expose models through APIs, containers for deploying models, and [0m
+[33morchestration tools like Kubernetes that help manage containers and clusters. Plus, get tips for monitoring the performance of your [0m
+[33mservices in production environments.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Applied Machine Learning: Foundations<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;AI models are transforming the workplace. Knowing whatâ€™s going behind those models can help you apply [0m
+[33mmachine learning [0m[1;33m([0m[33mML[0m[1;33m)[0m[33m techniques more effectively. In this course, instructor Matt Harrison shows you how to get started mastering the[0m
+[33messentials of machine learning using the power of the Python programming language.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Explore the fundamentals of an [0m
+[33mend-to-end machine learning application, as you gain hands-on experience of data exploration, data processing, model creation, model [0m
+[33mevaluation, model tuning, and model deployment with MLFlow. Along the way, test out your new coding skills in the practice challenges [0m
+[33mat the end of each section.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+
+[33m<[0m[33m/[0m[33mcourses[0m[1;33m>[0m
+
+[33mPlease select the most appropriate courses to fulfill the objectives of this curriculum.[0m
+[33mREMEMBER TO PICK [0m[1;33m6[0m[33m-[0m[1;33m12[0m[33m COURSES TOTAL; NO LESS THAN SIX, NO MORE THAN TWELVE.[0m
+[33mYOU SHOULD MAKE SURE YOU ARE PROVIDING THE COURSE TITLE VERBATIM AS IT APPEARS IN THE COURSE DATABASE.[0m
+
+[33mProvide a structured Curation object that includes the topic of the curriculum and the course titles of the selected video courses.[0m
+[33m"Topic"[0m[33m should be the verbatim topic of the curriculum provided to you above.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mModel Evaluation, Fine-Tuning, and Deployment Considerations[0m
+[34m-------------------------------------[0m
+[34mDeep Learning with Python: Optimizing Deep Learning Models[0m
+[34mDeploying Scalable Machine Learning for Data Science[0m
+[34mLearning Amazon SageMaker[0m
+[34mDevOps for Data Scientists[0m
+[34mApplied Machine Learning: Foundations[0m
+[34mAI Workshop: Build a Neural Network with PyTorch Lightning[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mA colleague has asked you to create a learning path on the following topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mPyTorch Foundations[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mPlease design a learning path. Put your answer between XML tags.[0m
+
+[33m<curriculum_description>[0m
+[1;33m[[0m[33mYour description of the learning path curriculum here[0m[1;33m][0m
+[33m<[0m[33m/[0m[33mcurriculum_description[0m[1;33m>[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum_description[0m[34m>[0m
+[34mThis learning path, [0m[34m"PyTorch Foundations,"[0m[34m is designed to provide professionals with a strong grounding in PyTorch—the widely used [0m
+[34mdeep learning framework—and its application in modern data science and AI projects. Spanning six courses of approximately [0m[1;34m2[0m[34m hours [0m
+[34meach, the curriculum takes learners from basic concepts to practical model development and evaluation. Each course is delivered as [0m
+[34masynchronous video content enriched with chapter quizzes to reinforce understanding.[0m
+
+[34mCourse [0m[1;34m1[0m[34m: Introduction to PyTorch and Deep Learning[0m
+[34m• Overview: Introduces the evolution of deep learning and the role of PyTorch in the AI ecosystem.[0m
+[34m• Relevance: Sets the stage by explaining industry applications, benefits of PyTorch’s dynamic computational graph, and the context in[0m
+[34mwhich the subsequent lessons will be applied.[0m
+
+[34mCourse [0m[1;34m2[0m[34m: PyTorch Fundamentals: Tensors and Operations[0m
+[34m• Overview: Covers the essential building blocks in PyTorch—tensors—and demonstrates various tensor operations.[0m
+[34m• Relevance: Provides a hands-on introduction to handling data, performing arithmetic operations, and understanding the core numerical[0m
+[34mcomputations that underpin neural network processing.[0m
+
+[34mCourse [0m[1;34m3[0m[34m: Automatic Differentiation with Autograd[0m
+[34m• Overview: Explores the mechanics of the Autograd system, enabling automatic differentiation of tensor operations and delving into [0m
+[34mdynamic computational graphs.[0m
+[34m• Relevance: Equips learners with the techniques necessary to implement backpropagation efficiently, a critical component for training[0m
+[34mneural networks.[0m
+
+[34mCourse [0m[1;34m4[0m[34m: Building Neural Networks with PyTorch[0m
+[34m• Overview: Guides learners through constructing neural network architectures using PyTorch’s modules, layers, and activation [0m
+[34mfunctions.[0m
+[34m• Relevance: Focuses on practical skills for defining and customizing network architectures to solve real-world problems, bridging [0m
+[34mtheory and hands-on model development.[0m
+
+[34mCourse [0m[1;34m5[0m[34m: Training Techniques and Optimization Strategies[0m
+[34m• Overview: Focuses on training models, discussing loss functions, optimization algorithms [0m[1;34m([0m[34mlike SGD and Adam[0m[1;34m)[0m[34m, and techniques to [0m
+[34mmitigate overfitting.[0m
+[34m• Relevance: Empowers learners to apply best practices in model training, ensuring that they can fine-tune model performance and [0m
+[34maddress common challenges in training deep learning systems.[0m
+
+[34mCourse [0m[1;34m6[0m[34m: Model Evaluation, Fine-Tuning, and Deployment Considerations[0m
+[34m• Overview: Addresses how to evaluate model performance using various metrics, perform fine-tuning [0m[1;34m([0m[34mincluding transfer learning[0m[1;34m)[0m[34m, and [0m
+[34munderstand considerations for deploying PyTorch models into production.[0m
+[34m• Relevance: Prepares professionals to transition from development to production, ensuring practical skills in both model assessment [0m
+[34mand the strategic deployment of AI solutions.[0m
+
+[34mOverall, this structured curriculum offers a comprehensive progression from core PyTorch concepts to advanced applications. It is [0m
+[34mtailored for professionals seeking to enhance their technical proficiency in deep learning, ultimately supporting organizational [0m
+[34mobjectives in AI-driven innovation and individual career growth in the tech landscape.[0m
+[34m<[0m[34m/[0m[34mcurriculum_description[0m[1;34m>[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou have been provided with a detailed curriculum description.[0m
+
+[33mThe description is for this topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mPyTorch Foundations[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mHere is the description:[0m
+[33m<ideal_curriculum>[0m
+
+[33mThis learning path, [0m[33m"PyTorch Foundations,"[0m[33m is designed to provide professionals with a strong grounding in PyTorch—the widely used [0m
+[33mdeep learning framework—and its application in modern data science and AI projects. Spanning six courses of approximately [0m[1;33m2[0m[33m hours [0m
+[33meach, the curriculum takes learners from basic concepts to practical model development and evaluation. Each course is delivered as [0m
+[33masynchronous video content enriched with chapter quizzes to reinforce understanding.[0m
+
+[33mCourse [0m[1;33m1[0m[33m: Introduction to PyTorch and Deep Learning[0m
+[33m• Overview: Introduces the evolution of deep learning and the role of PyTorch in the AI ecosystem.[0m
+[33m• Relevance: Sets the stage by explaining industry applications, benefits of PyTorch’s dynamic computational graph, and the context in[0m
+[33mwhich the subsequent lessons will be applied.[0m
+
+[33mCourse [0m[1;33m2[0m[33m: PyTorch Fundamentals: Tensors and Operations[0m
+[33m• Overview: Covers the essential building blocks in PyTorch—tensors—and demonstrates various tensor operations.[0m
+[33m• Relevance: Provides a hands-on introduction to handling data, performing arithmetic operations, and understanding the core numerical[0m
+[33mcomputations that underpin neural network processing.[0m
+
+[33mCourse [0m[1;33m3[0m[33m: Automatic Differentiation with Autograd[0m
+[33m• Overview: Explores the mechanics of the Autograd system, enabling automatic differentiation of tensor operations and delving into [0m
+[33mdynamic computational graphs.[0m
+[33m• Relevance: Equips learners with the techniques necessary to implement backpropagation efficiently, a critical component for training[0m
+[33mneural networks.[0m
+
+[33mCourse [0m[1;33m4[0m[33m: Building Neural Networks with PyTorch[0m
+[33m• Overview: Guides learners through constructing neural network architectures using PyTorch’s modules, layers, and activation [0m
+[33mfunctions.[0m
+[33m• Relevance: Focuses on practical skills for defining and customizing network architectures to solve real-world problems, bridging [0m
+[33mtheory and hands-on model development.[0m
+
+[33mCourse [0m[1;33m5[0m[33m: Training Techniques and Optimization Strategies[0m
+[33m• Overview: Focuses on training models, discussing loss functions, optimization algorithms [0m[1;33m([0m[33mlike SGD and Adam[0m[1;33m)[0m[33m, and techniques to [0m
+[33mmitigate overfitting.[0m
+[33m• Relevance: Empowers learners to apply best practices in model training, ensuring that they can fine-tune model performance and [0m
+[33maddress common challenges in training deep learning systems.[0m
+
+[33mCourse [0m[1;33m6[0m[33m: Model Evaluation, Fine-Tuning, and Deployment Considerations[0m
+[33m• Overview: Addresses how to evaluate model performance using various metrics, perform fine-tuning [0m[1;33m([0m[33mincluding transfer learning[0m[1;33m)[0m[33m, and [0m
+[33munderstand considerations for deploying PyTorch models into production.[0m
+[33m• Relevance: Prepares professionals to transition from development to production, ensuring practical skills in both model assessment [0m
+[33mand the strategic deployment of AI solutions.[0m
+
+[33mOverall, this structured curriculum offers a comprehensive progression from core PyTorch concepts to advanced applications. It is [0m
+[33mtailored for professionals seeking to enhance their technical proficiency in deep learning, ultimately supporting organizational [0m
+[33mobjectives in AI-driven innovation and individual career growth in the tech landscape.[0m
+
+[33m<[0m[33m/[0m[33mideal_curriculum[0m[1;33m>[0m
+
+[33mPlease convert this into a structured JSON representation of the curriculum.[0m
+[33mYour answer should include the topic, description, audience, and a list of modules.[0m
+[33mYOU SHOULD ALWAYS RETURN AT LEAST SIX MODULES, AND NO MORE THAN TWELVE.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum[0m[34m>[0m
+[34m        [0m[34m<topic>PyTorch Foundations<[0m[34m/[0m[34mtopic[0m[34m>[0m
+[34m        [0m[34m<description>This learning path, [0m[34m'PyTorch Foundations,'[0m[34m provides professionals with a strong grounding in PyTorch—the widely [0m
+[34mused deep learning framework—and its application in modern data science and AI projects. It covers core PyTorch concepts, from basic [0m
+[34mfunctionalities to practical model development and evaluation, delivered asynchronously via video content with chapter [0m
+[34mquizzes.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m<audience>Professionals seeking to enhance their technical proficiency in deep learning and AI-driven innovation.<[0m[34m/[0m[34maudience[0m[34m>[0m
+[34m        [0m[34m<modules>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Introduction to PyTorch and Deep Learning<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Introduces the evolution of deep learning and establishes the role of PyTorch in the AI [0m
+[34mecosystem, setting the stage for further exploration of the framework.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand the evolution and impact of deep learning.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Recognize PyTorch's role and benefits in modern AI applications.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Relate industry applications to the dynamic computational graph of PyTorch.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>PyTorch Fundamentals: Tensors and Operations<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Covers the essential building blocks in PyTorch—tensors—and demonstrates various tensor [0m
+[34moperations and arithmetic processes.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Learn the creation and manipulation of tensors.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Perform and understand key arithmetic operations.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Grasp the core concepts underlying numerical computations in neural network [0m
+[34mprocessing.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Automatic Differentiation with Autograd<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Explores the mechanics of the Autograd system in PyTorch, which enables automatic differentiation[0m
+[34mand efficient backpropagation for training neural networks.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand how automatic differentiation works in PyTorch.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Implement backpropagation using the Autograd system.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Gain insights into managing dynamic computational graphs.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Building Neural Networks with PyTorch<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Guides learners through constructing neural network architectures using PyTorch's modules, [0m
+[34mlayers, and activation functions, bridging theoretical concepts with practical model development.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Design and build neural network architectures.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Utilize PyTorch modules and activation functions effectively.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Customize network layers to solve real-world problems.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Training Techniques and Optimization Strategies<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Focuses on the practical aspects of training models, including discussions on loss functions, [0m
+[34moptimization algorithms like SGD and Adam, and techniques to mitigate overfitting.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand various training techniques and loss functions.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Apply optimization strategies such as SGD and Adam.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Learn methods to mitigate overfitting and enhance model performance.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Model Evaluation, Fine-Tuning, and Deployment Considerations<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Addresses methodologies for evaluating model performance, fine-tuning techniques including [0m
+[34mtransfer learning, and the essential considerations for deploying PyTorch models to production.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Evaluate model performance using appropriate metrics.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Implement fine-tuning strategies and transfer learning.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand the key steps and considerations for deploying models in production [0m
+[34menvironments.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m<[0m[34m/[0m[34mmodules[0m[34m>[0m
+[34m<[0m[34m/[0m[34mcurriculum[0m[1;34m>[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou have a received a curriculum object on the topic of:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mModel Evaluation, Fine-Tuning, and Deployment Considerations[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mHere is the curriculum object:[0m
+[33m<curriculum>[0m
+[33m<curriculum>[0m
+[33m        [0m[33m<topic>PyTorch Foundations<[0m[33m/[0m[33mtopic[0m[33m>[0m
+[33m        [0m[33m<description>This learning path, [0m[33m'PyTorch Foundations,'[0m[33m provides professionals with a strong grounding in PyTorch—the widely [0m
+[33mused deep learning framework—and its application in modern data science and AI projects. It covers core PyTorch concepts, from basic [0m
+[33mfunctionalities to practical model development and evaluation, delivered asynchronously via video content with chapter [0m
+[33mquizzes.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m<audience>Professionals seeking to enhance their technical proficiency in deep learning and AI-driven innovation.<[0m[33m/[0m[33maudience[0m[33m>[0m
+[33m        [0m[33m<modules>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Introduction to PyTorch and Deep Learning<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Introduces the evolution of deep learning and establishes the role of PyTorch in the AI [0m
+[33mecosystem, setting the stage for further exploration of the framework.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand the evolution and impact of deep learning.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Recognize PyTorch's role and benefits in modern AI applications.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Relate industry applications to the dynamic computational graph of PyTorch.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>PyTorch Fundamentals: Tensors and Operations<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Covers the essential building blocks in PyTorch—tensors—and demonstrates various tensor [0m
+[33moperations and arithmetic processes.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Learn the creation and manipulation of tensors.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Perform and understand key arithmetic operations.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Grasp the core concepts underlying numerical computations in neural network [0m
+[33mprocessing.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Automatic Differentiation with Autograd<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Explores the mechanics of the Autograd system in PyTorch, which enables automatic differentiation[0m
+[33mand efficient backpropagation for training neural networks.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand how automatic differentiation works in PyTorch.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Implement backpropagation using the Autograd system.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Gain insights into managing dynamic computational graphs.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Building Neural Networks with PyTorch<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Guides learners through constructing neural network architectures using PyTorch's modules, [0m
+[33mlayers, and activation functions, bridging theoretical concepts with practical model development.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Design and build neural network architectures.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Utilize PyTorch modules and activation functions effectively.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Customize network layers to solve real-world problems.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Training Techniques and Optimization Strategies<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Focuses on the practical aspects of training models, including discussions on loss functions, [0m
+[33moptimization algorithms like SGD and Adam, and techniques to mitigate overfitting.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand various training techniques and loss functions.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Apply optimization strategies such as SGD and Adam.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Learn methods to mitigate overfitting and enhance model performance.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Model Evaluation, Fine-Tuning, and Deployment Considerations<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Addresses methodologies for evaluating model performance, fine-tuning techniques including [0m
+[33mtransfer learning, and the essential considerations for deploying PyTorch models to production.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Evaluate model performance using appropriate metrics.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Implement fine-tuning strategies and transfer learning.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand the key steps and considerations for deploying models in production [0m
+[33menvironments.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m<[0m[33m/[0m[33mmodules[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcurriculum[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcurriculum[0m[33m>[0m
+
+[33mAnd here are the courses that you have to choose from:[0m
+[33m<courses>[0m
+[33m<course_title>PyTorch Essential Training: Deep Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;PyTorch is the most flexible and expressive library for deep learning, and offers simple Python API, GPU [0m
+[33msupport, and flexibility. Itâ€™s designed to load data, apply transforms, and build deep learning models with just a few lines of [0m
+[33mcode. Many machine learning developers and researchers use PyTorch to accelerate deep learning research, experimentation, and [0m
+[33mprototyping. In this course, software developer Terezija Semenski teaches you the important features of PyTorch with a hands-on [0m
+[33mapproach to help you develop the skills you need to dive into your deep learning projects.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course includes Code[0m
+[33mChallenges powered by CoderPad. Code Challenges are interactive coding exercises with real-time feedback, so you can get hands-on [0m
+[33mcoding practice alongside the course content to advance your programming skills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Building Deep Learning Applications with Keras<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Keras, a high-level neural networks API, is gaining popularity for its ease of use and versatility. With [0m
+[33mbusinesses rapidly moving towards AI solutions, you need an understanding of this valuable tool. In this course, data scientist Isil [0m
+[33mBerkun introduces you to Keras, highlights integrating it with TensorFlow and Theano backends, and offers practical insights into [0m
+[33mcreating neural networks. Learn how to set up Keras, create neural networks, and use pre-trained models. Find out how to deploy models[0m
+[33mon platforms like Google Cloud. When you complete this course, you will be able to understand the Keras architecture, design and train[0m
+[33mdeep learning models, and utilize them for real-world applications.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Artificial Intelligence Foundations: Neural Networks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;An artificial neural network uses the human brain as inspiration for creating a complex machine learning [0m
+[33msystem. They can classify millions of sounds, videos, and images, answer our questions, understand our behaviors, and even drive our [0m
+[33mcars. Neural networks are also the foundation of generative AI.&lt;[0m[33m/[0m[33mp[0m[33m&gt;This course introduces the fundamental techniques and [0m
+[33mprinciples of neural networks, common models, and their applications. Instructor Gwendolyn Stripling takes you through the different [0m
+[33mneural network architectures, their components, appropriate use cases, and best practices for improving neural network model [0m
+[33mperformance.  Plus, gain hands-on experience building and training a neural network using the Keras Sequential API, an open-source [0m
+[33mlibrary that demystifies the design and training of neural networks. If youâ€™re looking to achieve a solid understanding of how to [0m
+[33mbuild, train, improve and use neural networks, join Gwendolyn in this course.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>TensorFlow: Neural Networks and Working with Tables<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>TensorFlow [0m[1;33m2.0[0m[33m is quickly becoming one of the most popular deep learning frameworks and a must-have skill in your [0m
+[33martificial intelligence toolkit. Using a hands-on approach, instructor Jonathan Fernandes covers foundational skills for deep learning[0m
+[33musing TensorFlow [0m[1;33m2.0[0m[33m, from creating single and multi-layer networks, to training a network, and using it to make predictions. He also [0m
+[33mcovers loss functions, optimizers, and some of the data APIs unique to TensorFlow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Deep Learning: Getting Started<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Deep learning as a technology has grown leaps and bounds in the last few years. More and more AI solutions use [0m
+[33mdeep learning as their foundational technology. Studying this technology, however, has several challenges. Most learning resources are[0m
+[33mmath-heavy and are difficult to navigate without good math skills. IT professionals need a simplified resource to learn the concepts [0m
+[33mand build models quickly. This course aims to provide a simplified path to studying the basics of deep learning and becoming [0m
+[33mproductive quickly.Instructor Kumaran Ponnambalam starts off with an intro to deep learning, including artificial neural networks and [0m
+[33marchitectures. He navigates through various building blocks of neural networks with simple and easy to understand explanations. [0m
+[33mKumaran also builds code in Keras to implement these building blocks. He then pulls it all together with an end-to-end exercise. [0m
+[33mFinally, test what you learned with a deep learning problem and compare your solution with Kumaranâ€™s.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>PyTorch Essential Training: Deep Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;PyTorch is the most flexible and expressive library for deep learning, and offers simple Python API, GPU [0m
+[33msupport, and flexibility. Itâ€™s designed to load data, apply transforms, and build deep learning models with just a few lines of [0m
+[33mcode. Many machine learning developers and researchers use PyTorch to accelerate deep learning research, experimentation, and [0m
+[33mprototyping. In this course, software developer Terezija Semenski teaches you the important features of PyTorch with a hands-on [0m
+[33mapproach to help you develop the skills you need to dive into your deep learning projects.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course includes Code[0m
+[33mChallenges powered by CoderPad. Code Challenges are interactive coding exercises with real-time feedback, so you can get hands-on [0m
+[33mcoding practice alongside the course content to advance your programming skills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Hands-On PyTorch Machine Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Many of the worldâ€™s most exciting and innovative new tech projects leverage the power of machine learning. But [0m
+[33mif you want to set yourself apart as a data scientist or machine learning engineer, you need to stay up to date with the current tools[0m
+[33mand best practices for creating effective, predictable models.&lt;br&gt;&lt;br&gt;In this course, instructor Helen Sun shows you how [0m
+[33mto get up and running with PyTorch, the open-source machine learning framework known for its simplicity, performance, and APIs. [0m
+[33mExplore the basic concepts of PyTorch, including tensors, operators, and conversion to and from NumPy, as well as how to utilize [0m
+[33mautograd, which tracks the history of every computation recorded by the framework. By the end of this course, youâ€™ll also be [0m
+[33mequipped with a new set of skills to get the most out of Torchvision, Torchaudio, and Torchtext.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>TensorFlow: Neural Networks and Working with Tables<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>TensorFlow [0m[1;33m2.0[0m[33m is quickly becoming one of the most popular deep learning frameworks and a must-have skill in your [0m
+[33martificial intelligence toolkit. Using a hands-on approach, instructor Jonathan Fernandes covers foundational skills for deep learning[0m
+[33musing TensorFlow [0m[1;33m2.0[0m[33m, from creating single and multi-layer networks, to training a network, and using it to make predictions. He also [0m
+[33mcovers loss functions, optimizers, and some of the data APIs unique to TensorFlow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Applied Machine Learning: Foundations<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;AI models are transforming the workplace. Knowing whatâ€™s going behind those models can help you apply [0m
+[33mmachine learning [0m[1;33m([0m[33mML[0m[1;33m)[0m[33m techniques more effectively. In this course, instructor Matt Harrison shows you how to get started mastering the[0m
+[33messentials of machine learning using the power of the Python programming language.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Explore the fundamentals of an [0m
+[33mend-to-end machine learning application, as you gain hands-on experience of data exploration, data processing, model creation, model [0m
+[33mevaluation, model tuning, and model deployment with MLFlow. Along the way, test out your new coding skills in the practice challenges [0m
+[33mat the end of each section.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>AI Workshop: Build a Neural Network with PyTorch Lightning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;If youâ€™re looking for hands-on AI practice, this workshop-style coding course was designed for you. [0m
+[33mJoin instructor Janani Ravi as she shows you how to build a neural network with PyTorch Lightning, the open-source library from Python[0m
+[33mthat provides an interface for the popular deep learning framework PyTorch. Explore the core components of building a neural network [0m
+[33mwith PyTorch, including setting up the virtual environment, loading and exploring data, preprocessing data for training, creating and [0m
+[33mtraining a simple neural network, setting up the Dataset and DataLoader, visualizing losses, and much more. Along the way, Janani [0m
+[33mcovers the basics of using modules in PyTorch Lightning to build, train, and evaluate both regression and classification [0m
+[33mmodels.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course was created by Loonycorn. We are pleased to host this content in our [0m
+[33mlibrary.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Recurrent Neural Networks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Get started with recurrent neural network [0m[1;33m([0m[33mRNN[0m[1;33m)[0m[33m concepts in a simplified way and build simple applications with [0m
+[33mRNNs and Keras. RNN is a fast-growing domain within the AI world. Popular groundbreaking applications like language translation, [0m
+[33mspeech synthesis, question answering, and text generation use RNNs as their base technology. Studying this technology, however, has [0m
+[33mseveral challenges. Most learning resources are math heavy and are difficult to navigate without good math skills. IT professionals [0m
+[33mfrom varying backgrounds need a simplified resource to learn the concepts and build models quickly. In this course, Kumaran [0m
+[33mPonnambalam provides a simplified path to studying the basics of recurrent neural networks, allowing you to become productive quickly.[0m
+[33mKumaran starts with a simplified introduction of RNN before walking through the process of building a model. He then covers the [0m
+[33mpopular building blocks of RNN with GRUs, LSTMs, word embeddings, and transformers.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Foundational Math for Generative AI: Understanding LLMs and Transformers through Practical Applications<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Unlock the mysteries behind the models powering todayâ€™s most advanced AI applications. In this course, [0m
+[33minstructor Axel Sirota takes you beyond just using large language models [0m[1;33m([0m[33mLLMs[0m[1;33m)[0m[33m like BERT or GPT and highlights the mathematical [0m
+[33mfoundations of generative AI. Explore the challenge of sentiment analysis with simple recurrent neural networks [0m[1;33m([0m[33mRNNs[0m[1;33m)[0m[33m and [0m
+[33mprogressively evolve your approach as you gain a deep understanding of attention mechanisms, transformers, and models. Through [0m
+[33mintuitive explanations and hands-on coding exercises, Axel outlines why attention revolutionized natural language processing, and how [0m
+[33mtransformers reshaped the field by eliminating the need for RNNs altogether. Along the way, get tips on fine-tuning pretrained models,[0m
+[33mapplying cutting-edge techniques like low-rank adaptation [0m[1;33m([0m[33mLoRA[0m[1;33m)[0m[33m, and leveraging your newly acquired skills to build smarter, more [0m
+[33mefficient models and innovate in the fast-evolving world of AI.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Generative NLP with Variational AutoEncoders<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Thereâ€™s so much going on in the world of AI right now that it can seem impossible to feel like youâ€™re[0m
+[33mon track. This is especially true for models that generate text. Which ones should you use, how should you use them, and [0m
+[33mwhen?&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;In this course, join instructor Axel Sirota as he offers an in-depth overview of variational autoencoders [0m
+[1;33m([0m[33mVAEs[0m[1;33m)[0m[33m specifically focused on how to create complex models in Keras, how to create denoising autoencoders, and how to create VAEs for[0m
+[33mtext generation. Throughout the course, Alex provides hands-on demonstrations and exercise challenges to test out your new [0m
+[33mskills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Artificial Intelligence Foundations: Neural Networks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;An artificial neural network uses the human brain as inspiration for creating a complex machine learning [0m
+[33msystem. They can classify millions of sounds, videos, and images, answer our questions, understand our behaviors, and even drive our [0m
+[33mcars. Neural networks are also the foundation of generative AI.&lt;[0m[33m/[0m[33mp[0m[33m&gt;This course introduces the fundamental techniques and [0m
+[33mprinciples of neural networks, common models, and their applications. Instructor Gwendolyn Stripling takes you through the different [0m
+[33mneural network architectures, their components, appropriate use cases, and best practices for improving neural network model [0m
+[33mperformance.  Plus, gain hands-on experience building and training a neural network using the Keras Sequential API, an open-source [0m
+[33mlibrary that demystifies the design and training of neural networks. If youâ€™re looking to achieve a solid understanding of how to [0m
+[33mbuild, train, improve and use neural networks, join Gwendolyn in this course.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Hands-On PyTorch Machine Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Many of the worldâ€™s most exciting and innovative new tech projects leverage the power of machine learning. But [0m
+[33mif you want to set yourself apart as a data scientist or machine learning engineer, you need to stay up to date with the current tools[0m
+[33mand best practices for creating effective, predictable models.&lt;br&gt;&lt;br&gt;In this course, instructor Helen Sun shows you how [0m
+[33mto get up and running with PyTorch, the open-source machine learning framework known for its simplicity, performance, and APIs. [0m
+[33mExplore the basic concepts of PyTorch, including tensors, operators, and conversion to and from NumPy, as well as how to utilize [0m
+[33mautograd, which tracks the history of every computation recorded by the framework. By the end of this course, youâ€™ll also be [0m
+[33mequipped with a new set of skills to get the most out of Torchvision, Torchaudio, and Torchtext.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>PyTorch Essential Training: Deep Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;PyTorch is the most flexible and expressive library for deep learning, and offers simple Python API, GPU [0m
+[33msupport, and flexibility. Itâ€™s designed to load data, apply transforms, and build deep learning models with just a few lines of [0m
+[33mcode. Many machine learning developers and researchers use PyTorch to accelerate deep learning research, experimentation, and [0m
+[33mprototyping. In this course, software developer Terezija Semenski teaches you the important features of PyTorch with a hands-on [0m
+[33mapproach to help you develop the skills you need to dive into your deep learning projects.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course includes Code[0m
+[33mChallenges powered by CoderPad. Code Challenges are interactive coding exercises with real-time feedback, so you can get hands-on [0m
+[33mcoding practice alongside the course content to advance your programming skills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Artificial Intelligence Foundations: Neural Networks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;An artificial neural network uses the human brain as inspiration for creating a complex machine learning [0m
+[33msystem. They can classify millions of sounds, videos, and images, answer our questions, understand our behaviors, and even drive our [0m
+[33mcars. Neural networks are also the foundation of generative AI.&lt;[0m[33m/[0m[33mp[0m[33m&gt;This course introduces the fundamental techniques and [0m
+[33mprinciples of neural networks, common models, and their applications. Instructor Gwendolyn Stripling takes you through the different [0m
+[33mneural network architectures, their components, appropriate use cases, and best practices for improving neural network model [0m
+[33mperformance.  Plus, gain hands-on experience building and training a neural network using the Keras Sequential API, an open-source [0m
+[33mlibrary that demystifies the design and training of neural networks. If youâ€™re looking to achieve a solid understanding of how to [0m
+[33mbuild, train, improve and use neural networks, join Gwendolyn in this course.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Neural Networks and Convolutional Neural Networks Essential Training<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Take a deep dive into neural networks and convolutional neural networks, two key concepts in the area of machine [0m
+[33mlearning. In this hands-on course, instructor Jonathan Fernandes covers fundamental neural and convolutional neural network concepts. [0m
+[33mJonathan begins by providing an introduction to the components of neural networks, discussing activation functions and [0m
+[33mbackpropagation. He then looks at convolutional neural networks, explaining why they're particularly good at image recognition tasks. [0m
+[33mHe also steps through how to build a neural network model using Keras. Plus, learn about VGG16, the history of the ImageNet challenge,[0m
+[33mand more.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Building Deep Learning Applications with Keras<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Keras, a high-level neural networks API, is gaining popularity for its ease of use and versatility. With [0m
+[33mbusinesses rapidly moving towards AI solutions, you need an understanding of this valuable tool. In this course, data scientist Isil [0m
+[33mBerkun introduces you to Keras, highlights integrating it with TensorFlow and Theano backends, and offers practical insights into [0m
+[33mcreating neural networks. Learn how to set up Keras, create neural networks, and use pre-trained models. Find out how to deploy models[0m
+[33mon platforms like Google Cloud. When you complete this course, you will be able to understand the Keras architecture, design and train[0m
+[33mdeep learning models, and utilize them for real-world applications.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>AI Workshop: Build a Neural Network with PyTorch Lightning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;If youâ€™re looking for hands-on AI practice, this workshop-style coding course was designed for you. [0m
+[33mJoin instructor Janani Ravi as she shows you how to build a neural network with PyTorch Lightning, the open-source library from Python[0m
+[33mthat provides an interface for the popular deep learning framework PyTorch. Explore the core components of building a neural network [0m
+[33mwith PyTorch, including setting up the virtual environment, loading and exploring data, preprocessing data for training, creating and [0m
+[33mtraining a simple neural network, setting up the Dataset and DataLoader, visualizing losses, and much more. Along the way, Janani [0m
+[33mcovers the basics of using modules in PyTorch Lightning to build, train, and evaluate both regression and classification [0m
+[33mmodels.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course was created by Loonycorn. We are pleased to host this content in our [0m
+[33mlibrary.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Deep Learning with Python: Optimizing Deep Learning Models<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Discover techniques to optimize deep learning models by improving their performance and efficiency. [0m
+[33mEmphasizing practical applications, instructor Frederick Nwanganga guides you through hands-on coding exercises, covering the [0m
+[33messentials of data preprocessing and augmentation, regularization methods to minimize overfitting, optimization algorithms, advanced [0m
+[33mhyperparameter tuning methods, and more.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course is integrated with GitHub Codespaces, an instant cloud [0m
+[33mdeveloper environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub[0m
+[33mCodespaces, you can get hands-on practice from any machine, at any timeâ€”all while using a tool that youâ€™ll likely encounter in the[0m
+[33mworkplace. Check out â€œUsing GitHub Codespaces with this course to learn how to get started.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>TensorFlow: Practical Skills in Constructing, Training, and Optimizing Models<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Do you want to dive into machine learning? TensorFlow is an essential tool that enables the development of complex[0m
+[33mmachine learning models efficiently. In this course, Greg Damico covers everything from installing TensorFlow and grasping its core [0m
+[33mconcepts to implementing advanced techniques like neural networks and batch normalization. Check out this course to gain practical [0m
+[33mskills in constructing, training, and optimizing models for real-world applications with TensorFlow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Artificial Intelligence Foundations: Neural Networks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;An artificial neural network uses the human brain as inspiration for creating a complex machine learning [0m
+[33msystem. They can classify millions of sounds, videos, and images, answer our questions, understand our behaviors, and even drive our [0m
+[33mcars. Neural networks are also the foundation of generative AI.&lt;[0m[33m/[0m[33mp[0m[33m&gt;This course introduces the fundamental techniques and [0m
+[33mprinciples of neural networks, common models, and their applications. Instructor Gwendolyn Stripling takes you through the different [0m
+[33mneural network architectures, their components, appropriate use cases, and best practices for improving neural network model [0m
+[33mperformance.  Plus, gain hands-on experience building and training a neural network using the Keras Sequential API, an open-source [0m
+[33mlibrary that demystifies the design and training of neural networks. If youâ€™re looking to achieve a solid understanding of how to [0m
+[33mbuild, train, improve and use neural networks, join Gwendolyn in this course.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>TensorFlow: Neural Networks and Working with Tables<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>TensorFlow [0m[1;33m2.0[0m[33m is quickly becoming one of the most popular deep learning frameworks and a must-have skill in your [0m
+[33martificial intelligence toolkit. Using a hands-on approach, instructor Jonathan Fernandes covers foundational skills for deep learning[0m
+[33musing TensorFlow [0m[1;33m2.0[0m[33m, from creating single and multi-layer networks, to training a network, and using it to make predictions. He also [0m
+[33mcovers loss functions, optimizers, and some of the data APIs unique to TensorFlow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Applied Machine Learning: Feature Engineering<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Machine learning is not magic. The quality of the predictions coming out of your model is a direct reflection of [0m
+[33mthe data you feed it during training. This course with instructor Matt Harrison guides you through the nuances of feature engineering [0m
+[33mtechniques for numeric data so you can take a dataset, tease out the signal, and throw out the noise in order to optimize your machine[0m
+[33mlearning model. Matt teaches you techniques like imputation, binning, log transformations, and scaling for numeric data. He covers [0m
+[33mmethods for other types of data, like as one hot encoding, mean targeting coding, principal component analysis, feature aggregation, [0m
+[33mand text processing techniques like TFIDF and embeddings. The tools you learn in this course will generalize to nearly any kind of [0m
+[33mmachine learning algorithm/problem, so join Matt in this course to learn how you can extract the maximum value from your data using [0m
+[33mfeature engineering.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Amazon SageMaker<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Amazon SageMaker is a solution for developers who want to deploy predictive machine learning models into a [0m
+[33mproduction environment. This course teaches you how to set up and configure SageMaker environments, prepare and preprocess datasets, [0m
+[33mand build, train, and deploy machine learning models using SageMaker's built-in algorithms. Instructor Kesha Williams guides you [0m
+[33mthrough evaluating and optimizing model performance, including hyperparameter tuning and performance monitoring, to ensure your models[0m
+[33mdeliver the best results. Additionally, learn best practices for managing costs, implementing security measures, and operationalizing [0m
+[33mmodels with MLOps. Whether new to machine learning or looking to expand your AWS skills, this course will provide the hands-on [0m
+[33mexperience and practical knowledge to use Amazon SageMaker in your projects effectively.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>DevOps for Data Scientists<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Data scientists create data models that need to run in production environments. Many DevOps practices are relevant[0m
+[33mto production-oriented data science applications, but these practices are often overlooked in data science training. In addition, data[0m
+[33mscience and machine learning have distinct requirements, such as the need to revise models while in use. This course was designed for [0m
+[33mdata scientists who need to support their models in production, as well as for DevOps professionals who are tasked with supporting [0m
+[33mdata science and machine learning applications. Learn about key data science development practices, including the testing and [0m
+[33mvalidation of data science models. This course also covers how to use the Predictive Model Markup Language [0m[1;33m([0m[33mPMML[0m[1;33m)[0m[33m, monitor models in [0m
+[33mproduction, work with Docker containers, and more.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Amazon SageMaker<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>SageMaker is Amazonâ€™s solution for developers who want to deploy predictive machine learning models into a [0m
+[33mproduction environment. Programming is done in Python and the results can easily be integrated into cloud-based applications. These [0m
+[33mlessons review the entire Amazon SageMaker workflow: analysis, build, and final deployment. Instructor Martin Kemka introduces the [0m
+[33mbenefits of Amazon SageMaker and reviews its browser-based interface and toolset. In the second chapter, he shows how to import, [0m
+[33minvestigate, visualize, and summarize your data. The next stage is to use a clean data sample to train a machine learning model to [0m
+[33mfulfill a basic task. Finally, Martin shows how the model is deployed. Almost every chapter concludes with a challenge that allows you[0m
+[33mto practice your new SageMaker skills.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Deploying Scalable Machine Learning for Data Science<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Machine learning models often run in complex production environments that can adapt to the ebb and flow of big [0m
+[33mdata. The tools and practices that help data scientists rapidly &lt;em&gt;build&lt;[0m[33m/[0m[33mem[0m[33m&gt; machine learning models are not sufficient [0m
+[33mto &lt;em&gt;deploy&lt;[0m[33m/[0m[33mem[0m[33m&gt; those models at scale. To deliver scalable solutions, you need a whole new toolset. This course [0m
+[33mprovides data scientists and DevOps engineers with an overview of common design patterns for scalable machine learning architectures, [0m
+[33mas well as tools for deploying and maintaining machine learning models in production. Instructor Dan Sullivan reviews three [0m
+[33mtechnologies that enable scalable machine learning: services that expose models through APIs, containers for deploying models, and [0m
+[33morchestration tools like Kubernetes that help manage containers and clusters. Plus, get tips for monitoring the performance of your [0m
+[33mservices in production environments.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Applied Machine Learning: Foundations<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;AI models are transforming the workplace. Knowing whatâ€™s going behind those models can help you apply [0m
+[33mmachine learning [0m[1;33m([0m[33mML[0m[1;33m)[0m[33m techniques more effectively. In this course, instructor Matt Harrison shows you how to get started mastering the[0m
+[33messentials of machine learning using the power of the Python programming language.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Explore the fundamentals of an [0m
+[33mend-to-end machine learning application, as you gain hands-on experience of data exploration, data processing, model creation, model [0m
+[33mevaluation, model tuning, and model deployment with MLFlow. Along the way, test out your new coding skills in the practice challenges [0m
+[33mat the end of each section.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+
+[33m<[0m[33m/[0m[33mcourses[0m[1;33m>[0m
+
+[33mPlease select the most appropriate courses to fulfill the objectives of this curriculum.[0m
+[33mREMEMBER TO PICK [0m[1;33m6[0m[33m-[0m[1;33m12[0m[33m COURSES TOTAL; NO LESS THAN SIX, NO MORE THAN TWELVE.[0m
+[33mYOU SHOULD MAKE SURE YOU ARE PROVIDING THE COURSE TITLE VERBATIM AS IT APPEARS IN THE COURSE DATABASE.[0m
+
+[33mProvide a structured Curation object that includes the topic of the curriculum and the course titles of the selected video courses.[0m
+[33m"Topic"[0m[33m should be the verbatim topic of the curriculum provided to you above.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mModel Evaluation, Fine-Tuning, and Deployment Considerations[0m
+[34m-------------------------------------[0m
+[34mDeep Learning with Python: Optimizing Deep Learning Models[0m
+[34mDeploying Scalable Machine Learning for Data Science[0m
+[34mLearning Amazon SageMaker[0m
+[34mDevOps for Data Scientists[0m
+[34mApplied Machine Learning: Foundations[0m
+[34mAI Workshop: Build a Neural Network with PyTorch Lightning[0m
+
