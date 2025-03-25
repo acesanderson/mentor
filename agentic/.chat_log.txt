@@ -1,0 +1,866 @@
+[1;32m───────────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mPyTorch Essential Training: Deep Learning[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;PyTorch is the most flexible and expressive library for deep learning, and offers simple Python API, GPU support, and flexibility. Itâ€™s designed to load data, apply [0m
+[33mtransforms, and build deep learning models with just a few lines of code. Many machine learning developers and researchers use PyTorch to accelerate deep learning research, [0m
+[33mexperimentation, and prototyping. In this course, software developer Terezija Semenski teaches you the important features of PyTorch with a hands-on approach to help you develop [0m
+[33mthe skills you need to dive into your deep learning projects.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course includes Code Challenges powered by CoderPad. Code Challenges are interactive coding [0m
+[33mexercises with real-time feedback, so you can get hands-on coding practice alongside the course content to advance your programming skills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# PyTorch Essential Training: Deep Learning[0m
+[33m## Introduction[0m
+[33m        [0m[33mDeep learning with PyTorch      [0m[1;33m31[0m[33m      [0m[33mTake a closer look at the advantages of PyTorch and explore the goals of this course.[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m77[0m[33m      [0m[33mBefore starting this course, explore what skills and knowledge you need to have to be successful in this course. This video also lists all [0m
+[33minstallation requirements you need to set up before you proceed.[0m
+[33m        [0m[33mTour of CoderPad        [0m[1;33m188[0m
+[33m## [0m[1;33m1[0m[33m. PyTorch Overview and Introduction to Google Colaboratory[0m
+[33m        [0m[33mIntroduction to deep learning   [0m[1;33m260[0m[33m     [0m[33mLearn what deep learning is, and how it is different from ML and AI, and explore examples of its applications in real-life [0m
+[33mscenarios.[0m
+[33m        [0m[33mWhy should you use PyTorch      [0m[1;33m121[0m[33m     [0m[33mPyTorch provides Python with easily run array-based calculations, allows the building of dynamic neural networks, and performs auto[0m
+[33mdifferentiation with strong graphics processing unit [0m[1;33m([0m[33mGPU[0m[1;33m)[0m[33m acceleration. All the above are the most important features required for deep learning development.[0m
+[33m        [0m[33mGoogle Colaboratory basics      [0m[1;33m207[0m[33m     [0m[33mIn this video, explore Google Colab which allows you to write and execute Python and PyTorch code in your browser.[0m
+[33m## [0m[1;33m2[0m[33m. Tensors[0m
+[33m        [0m[33mIntroduction to tensors [0m[1;33m204[0m[33m     [0m[33mIn this video, learn the fundamental data structure used in PyTorch called the tensors. It allows you to understand how PyTorch handles and[0m
+[33mstores the data.[0m
+[33m        [0m[33mCreating a tensor CPU example   [0m[1;33m108[0m[33m     [0m[33mLearn a CPU example of how to create a tensor and perform a tensor operation so you can use a built-in method on the tensor itself.[0m
+[33m        [0m[33mCreating a tensor GPU example   [0m[1;33m106[0m[33m     [0m[33mLearn a GPU example of how to create a tensor and perform a tensor operation so you can use a built-in method on the tensor itself.[0m
+[33m        [0m[33mMoving tensors between CPUs and GPUs    [0m[1;33m130[0m[33m     [0m[33mExplore the [0m[1;33mtorch.to[0m[1;33m([0m[1;33m)[0m[33m method that allows you to move an existing tensor from CPU to GPU device.[0m
+[33m## [0m[1;33m3[0m[33m. Creating Tensors[0m
+[33m        [0m[33mDifferent ways to create tensors        [0m[1;33m219[0m[33m     [0m[33mSometimes you may want to construct tensors from preexisting data stored in array-like structures such as lists, tuples, [0m
+[33mscalars, serialized data files, or NumPy arrays. Learn how to achieve that.[0m
+[33m        [0m[33mTensor attributes       [0m[1;33m131[0m[33m     [0m[33mLearn how to effortlessly find information about tensors by accessing their attributes.[0m
+[33m        [0m[33mTensor data types       [0m[1;33m196[0m[33m     [0m[33mWhen creating tensors, you can specify the data type. It is also possible to cast a tensor to a new data type. In this video, explore how [0m
+[33mto achieve that.[0m
+[33m        [0m[33mCreating tensors from random samples    [0m[1;33m161[0m[33m     [0m[33mOften, you need to initialize weights to random values or create random inputs with specified distributions. Learn [0m
+[33mfunctions that you can apply to create tensors from random data.[0m
+[33m        [0m[33mCreating tensors like other tensors     [0m[1;33m125[0m[33m     [0m[33mLearn similarity functions so you can create and initialize a tensor that has similar properties to the existing tensor.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Create tensors      [0m[1;33m600[0m
+[33m        [0m[33mSolution: Create tensors        [0m[1;33m109[0m[33m     [0m[33mIn this video, learn a solution for creating tensors from different data structures.[0m
+[33m## [0m[1;33m4[0m[33m. Manipulate Tensors[0m
+[33m        [0m[33mTensor operations       [0m[1;33m275[0m[33m     [0m[33mIn this video explore a set of tensor operations that allow you to access and transform your tensor data.[0m
+[33m        [0m[33mMathematical functions  [0m[1;33m216[0m[33m     [0m[33mLearn a set of built-in math functions. It is extremely important to know them as deep learning is based on mathematical computations.[0m
+[33m        [0m[33mLinear algebra operations       [0m[1;33m236[0m[33m     [0m[33mMany computations, including optimization algorithms and gradient descent, use linear algebra to implement the calculations. [0m
+[33mExplore the most important built-in linear algebra operations which you can use.[0m
+[33m        [0m[33mAutomatic differentiation [0m[1;33m([0m[33mAutograd[0m[1;33m)[0m[33m    [0m[1;33m365[0m[33m     [0m[33mLearn the [0m[1;33mbackward[0m[1;33m([0m[1;33m)[0m[33m function. It is important because it is used to differentiate and compute gradients of tensors based [0m
+[33mon the Chain rule.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Split tensors to form new tensors   [0m[1;33m600[0m
+[33m        [0m[33mSolution: Split tensors to form new tensors     [0m[1;33m113[0m[33m     [0m[33mIn this video, learn one solution for splitting tensors to form new tensors.[0m
+[33m## [0m[1;33m5[0m[33m. Developing a Deep Learning Model[0m
+[33m        [0m[33mIntroduction to the DL training process [0m[1;33m151[0m[33m     [0m[33mIn this video, explore the basic pipeline used to train, test, and deploy your deep learning models.[0m
+[33m        [0m[33mData preparation        [0m[1;33m97[0m[33m      [0m[33mLearn the steps of data preparations and why they are important.[0m
+[33m        [0m[33mData loading    [0m[1;33m157[0m[33m     [0m[33mExplore built-in classes and utilities for loading various types of data and learn how to apply them to pull the data from its source and create [0m
+[33mdataset objects.[0m
+[33m        [0m[33mData transforms [0m[1;33m160[0m[33m     [0m[33mData often needs to be adjusted before it is passed into the model for training and testing. Learn different ways to adjust the data by applying [0m
+[33mtransforms.[0m
+[33m        [0m[33mData batching   [0m[1;33m175[0m[33m     [0m[33mIn the process of model training data is passed in small batches at each iteration. That way training is more efficient training and accelerated.[0m
+[33m        [0m[33mModel development and training  [0m[1;33m286[0m[33m     [0m[33mLearn different steps of model development and importance of the each step. Explore fundamental processes used for training models.[0m
+[33m        [0m[33mValidation and testing  [0m[1;33m250[0m[33m     [0m[33mValidation and testing are important parts of model development as they take care that overfitting does not occur and that the model [0m
+[33mperforms well against unseen data. Learn the key steps of each of them.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m48[0m[33m      [0m[33mThis video explains where to go from here.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m───────────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficient Python programming [0m[1;34m([0m[34msyntax, functions, and control structures[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with numerical computing in Python [0m[1;34m([0m[34me.g., working with arrays such as using NumPy[0m[1;34m)[0m[34m  [0m
+[34m• Basic understanding of linear algebra [0m[1;34m([0m[34mvector and matrix operations[0m[1;34m)[0m[34m  [0m
+[34m• Experience with interactive coding environments [0m[1;34m([0m[34msuch as Jupyter notebooks or Google Colaboratory[0m[1;34m)[0m
+
+[1;32m───────────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mPyTorch Essential Training: Deep Learning[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;PyTorch is the most flexible and expressive library for deep learning, and offers simple Python API, GPU support, and flexibility. Itâ€™s designed to load data, apply [0m
+[33mtransforms, and build deep learning models with just a few lines of code. Many machine learning developers and researchers use PyTorch to accelerate deep learning research, [0m
+[33mexperimentation, and prototyping. In this course, software developer Terezija Semenski teaches you the important features of PyTorch with a hands-on approach to help you develop [0m
+[33mthe skills you need to dive into your deep learning projects.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course includes Code Challenges powered by CoderPad. Code Challenges are interactive coding [0m
+[33mexercises with real-time feedback, so you can get hands-on coding practice alongside the course content to advance your programming skills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# PyTorch Essential Training: Deep Learning[0m
+[33m## Introduction[0m
+[33m        [0m[33mDeep learning with PyTorch      [0m[1;33m31[0m[33m      [0m[33mTake a closer look at the advantages of PyTorch and explore the goals of this course.[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m77[0m[33m      [0m[33mBefore starting this course, explore what skills and knowledge you need to have to be successful in this course. This video also lists all [0m
+[33minstallation requirements you need to set up before you proceed.[0m
+[33m        [0m[33mTour of CoderPad        [0m[1;33m188[0m
+[33m## [0m[1;33m1[0m[33m. PyTorch Overview and Introduction to Google Colaboratory[0m
+[33m        [0m[33mIntroduction to deep learning   [0m[1;33m260[0m[33m     [0m[33mLearn what deep learning is, and how it is different from ML and AI, and explore examples of its applications in real-life [0m
+[33mscenarios.[0m
+[33m        [0m[33mWhy should you use PyTorch      [0m[1;33m121[0m[33m     [0m[33mPyTorch provides Python with easily run array-based calculations, allows the building of dynamic neural networks, and performs auto[0m
+[33mdifferentiation with strong graphics processing unit [0m[1;33m([0m[33mGPU[0m[1;33m)[0m[33m acceleration. All the above are the most important features required for deep learning development.[0m
+[33m        [0m[33mGoogle Colaboratory basics      [0m[1;33m207[0m[33m     [0m[33mIn this video, explore Google Colab which allows you to write and execute Python and PyTorch code in your browser.[0m
+[33m## [0m[1;33m2[0m[33m. Tensors[0m
+[33m        [0m[33mIntroduction to tensors [0m[1;33m204[0m[33m     [0m[33mIn this video, learn the fundamental data structure used in PyTorch called the tensors. It allows you to understand how PyTorch handles and[0m
+[33mstores the data.[0m
+[33m        [0m[33mCreating a tensor CPU example   [0m[1;33m108[0m[33m     [0m[33mLearn a CPU example of how to create a tensor and perform a tensor operation so you can use a built-in method on the tensor itself.[0m
+[33m        [0m[33mCreating a tensor GPU example   [0m[1;33m106[0m[33m     [0m[33mLearn a GPU example of how to create a tensor and perform a tensor operation so you can use a built-in method on the tensor itself.[0m
+[33m        [0m[33mMoving tensors between CPUs and GPUs    [0m[1;33m130[0m[33m     [0m[33mExplore the [0m[1;33mtorch.to[0m[1;33m([0m[1;33m)[0m[33m method that allows you to move an existing tensor from CPU to GPU device.[0m
+[33m## [0m[1;33m3[0m[33m. Creating Tensors[0m
+[33m        [0m[33mDifferent ways to create tensors        [0m[1;33m219[0m[33m     [0m[33mSometimes you may want to construct tensors from preexisting data stored in array-like structures such as lists, tuples, [0m
+[33mscalars, serialized data files, or NumPy arrays. Learn how to achieve that.[0m
+[33m        [0m[33mTensor attributes       [0m[1;33m131[0m[33m     [0m[33mLearn how to effortlessly find information about tensors by accessing their attributes.[0m
+[33m        [0m[33mTensor data types       [0m[1;33m196[0m[33m     [0m[33mWhen creating tensors, you can specify the data type. It is also possible to cast a tensor to a new data type. In this video, explore how [0m
+[33mto achieve that.[0m
+[33m        [0m[33mCreating tensors from random samples    [0m[1;33m161[0m[33m     [0m[33mOften, you need to initialize weights to random values or create random inputs with specified distributions. Learn [0m
+[33mfunctions that you can apply to create tensors from random data.[0m
+[33m        [0m[33mCreating tensors like other tensors     [0m[1;33m125[0m[33m     [0m[33mLearn similarity functions so you can create and initialize a tensor that has similar properties to the existing tensor.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Create tensors      [0m[1;33m600[0m
+[33m        [0m[33mSolution: Create tensors        [0m[1;33m109[0m[33m     [0m[33mIn this video, learn a solution for creating tensors from different data structures.[0m
+[33m## [0m[1;33m4[0m[33m. Manipulate Tensors[0m
+[33m        [0m[33mTensor operations       [0m[1;33m275[0m[33m     [0m[33mIn this video explore a set of tensor operations that allow you to access and transform your tensor data.[0m
+[33m        [0m[33mMathematical functions  [0m[1;33m216[0m[33m     [0m[33mLearn a set of built-in math functions. It is extremely important to know them as deep learning is based on mathematical computations.[0m
+[33m        [0m[33mLinear algebra operations       [0m[1;33m236[0m[33m     [0m[33mMany computations, including optimization algorithms and gradient descent, use linear algebra to implement the calculations. [0m
+[33mExplore the most important built-in linear algebra operations which you can use.[0m
+[33m        [0m[33mAutomatic differentiation [0m[1;33m([0m[33mAutograd[0m[1;33m)[0m[33m    [0m[1;33m365[0m[33m     [0m[33mLearn the [0m[1;33mbackward[0m[1;33m([0m[1;33m)[0m[33m function. It is important because it is used to differentiate and compute gradients of tensors based [0m
+[33mon the Chain rule.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Split tensors to form new tensors   [0m[1;33m600[0m
+[33m        [0m[33mSolution: Split tensors to form new tensors     [0m[1;33m113[0m[33m     [0m[33mIn this video, learn one solution for splitting tensors to form new tensors.[0m
+[33m## [0m[1;33m5[0m[33m. Developing a Deep Learning Model[0m
+[33m        [0m[33mIntroduction to the DL training process [0m[1;33m151[0m[33m     [0m[33mIn this video, explore the basic pipeline used to train, test, and deploy your deep learning models.[0m
+[33m        [0m[33mData preparation        [0m[1;33m97[0m[33m      [0m[33mLearn the steps of data preparations and why they are important.[0m
+[33m        [0m[33mData loading    [0m[1;33m157[0m[33m     [0m[33mExplore built-in classes and utilities for loading various types of data and learn how to apply them to pull the data from its source and create [0m
+[33mdataset objects.[0m
+[33m        [0m[33mData transforms [0m[1;33m160[0m[33m     [0m[33mData often needs to be adjusted before it is passed into the model for training and testing. Learn different ways to adjust the data by applying [0m
+[33mtransforms.[0m
+[33m        [0m[33mData batching   [0m[1;33m175[0m[33m     [0m[33mIn the process of model training data is passed in small batches at each iteration. That way training is more efficient training and accelerated.[0m
+[33m        [0m[33mModel development and training  [0m[1;33m286[0m[33m     [0m[33mLearn different steps of model development and importance of the each step. Explore fundamental processes used for training models.[0m
+[33m        [0m[33mValidation and testing  [0m[1;33m250[0m[33m     [0m[33mValidation and testing are important parts of model development as they take care that overfitting does not occur and that the model [0m
+[33mperforms well against unseen data. Learn the key steps of each of them.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m48[0m[33m      [0m[33mThis video explains where to go from here.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m───────────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficient Python programming [0m[1;34m([0m[34msyntax, functions, and control structures[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with numerical computing in Python [0m[1;34m([0m[34me.g., working with arrays such as using NumPy[0m[1;34m)[0m[34m  [0m
+[34m• Basic understanding of linear algebra [0m[1;34m([0m[34mvector and matrix operations[0m[1;34m)[0m[34m  [0m
+[34m• Experience with interactive coding environments [0m[1;34m([0m[34msuch as Jupyter notebooks or Google Colaboratory[0m[1;34m)[0m
+
+[1;32m───────────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mHands-On PyTorch Machine Learning[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mMany of the worldâ€™s most exciting and innovative new tech projects leverage the power of machine learning. But if you want to set yourself apart as a data scientist or machine [0m
+[33mlearning engineer, you need to stay up to date with the current tools and best practices for creating effective, predictable models.&lt;br&gt;&lt;br&gt;In this course, instructor [0m
+[33mHelen Sun shows you how to get up and running with PyTorch, the open-source machine learning framework known for its simplicity, performance, and APIs. Explore the basic concepts [0m
+[33mof PyTorch, including tensors, operators, and conversion to and from NumPy, as well as how to utilize autograd, which tracks the history of every computation recorded by the [0m
+[33mframework. By the end of this course, youâ€™ll also be equipped with a new set of skills to get the most out of Torchvision, Torchaudio, and Torchtext.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Hands-On PyTorch Machine Learning[0m
+[33m## Introduction[0m
+[33m        [0m[33mExplore the capabilities of PyTorch     [0m[1;33m51[0m
+[33m## [0m[1;33m1[0m[33m. Preparation[0m
+[33m        [0m[33mPyTorch overview        [0m[1;33m253[0m[33m     [0m[33mIn this video, learn about PyTorch’s tensor library and neural networks at a high level. This is a context-setting video and an overview of[0m
+[33mkey concepts for the remainder of the videos.[0m
+[33m        [0m[33mPyTorch environment setup       [0m[1;33m230[0m[33m     [0m[33mIn this video, learn how to install PyTorch and configure the environment. Get the environment set up so that you can start to work[0m
+[33mon the use cases.[0m
+[33m        [0m[33mPyTorch use case description    [0m[1;33m143[0m[33m     [0m[33mIn this video, learn about the use case, objectives, and problem space. This is an important context for model development and [0m
+[33mlearning.[0m
+[33m        [0m[33mPyTorch data exploration        [0m[1;33m253[0m[33m     [0m[33mIn this video, learn about the dataset for this use case. Understanding the dimensionality, categories, and distributions of the [0m
+[33mdata is fundamental to developing ML algorithms.[0m
+[33m## [0m[1;33m2[0m[33m. PyTorch Basics[0m
+[33m        [0m[33mUnderstand PyTorch tensors      [0m[1;33m213[0m[33m     [0m[33mIn this video, learn about the basic concepts of PyTorch tensors. Explore basic constructs that you are using for the rest of the [0m
+[33muse case implementation in PyTorch.[0m
+[33m        [0m[33mUnderstand PyTorch basic operations     [0m[1;33m173[0m[33m     [0m[33mIn this video, learn about the basic concepts of PyTorch operators. Explore basic constructs that you are using for the [0m
+[33mrest of the use case implementation in PyTorch.[0m
+[33m        [0m[33mUnderstand PyTorch NumPy Bridge [0m[1;33m213[0m[33m     [0m[33mIn this video, learn how to convert NumPy arrays to PyTorch tensors and vice versa. Explore the basic constructs that you are using[0m
+[33mfor the rest of the use case implementation in PyTorch.[0m
+[33m        [0m[33mUnderstand PyTorch autograd     [0m[1;33m170[0m[33m     [0m[33mIn this video, learn how to use autograd to automate the computation of backward passes in neural networks. Explore the basic [0m
+[33mcomponent within PyTorch and the important-to-implement neural networks for the rest of the use cases.[0m
+[33m        [0m[33mAdvanced PyTorch autograd       [0m[1;33m122[0m[33m     [0m[33mIn this video, learn how to use autograd to automate the computation of backward passes in neural networks. Explore an advanced [0m
+[33mcomponent within PyTorch an important-to-implement neural network for the rest of the use cases.[0m
+[33m## [0m[1;33m3[0m[33m. Torchvision[0m
+[33m        [0m[33mTorchvision introduction        [0m[1;33m521[0m[33m     [0m[33mIn this video, learn how to install Torchvision and understand the basic usage and implementation of the package. Understanding the[0m
+[33mbasics of Torchvision helps you to further implement the use case in future sections.[0m
+[33m        [0m[33mTorchvision for video and image understanding   [0m[1;33m82[0m[33m      [0m[33mIn this video, learn how to use Torchvision to extract entities from various training and learning videos. [0m
+[33mTorchvision is a very powerful package to accomplish various computer vision tasks for object detection, entity extraction, and classification so similar training videos can be [0m
+[33mrecommended.[0m
+[33m## [0m[1;33m4[0m[33m. Torchaudio[0m
+[33m        [0m[33mTorchaudio introduction [0m[1;33m205[0m[33m     [0m[33mIn this video, learn how to set up the environment and implement a basic model for audio processing using Torchaudio. Understanding the [0m
+[33mbasics of Torchaudio helps you further implement the use case in the next section.[0m
+[33m        [0m[33mTorchaudio for audio understanding      [0m[1;33m243[0m[33m     [0m[33mIn this video, learn how to implement audio characteristics of the training tutorials in this use case. Knowing how to [0m
+[33mextract language, intonation, and other audio characteristics of the video files can be a useful technique to generate more metadata for training material recommendations.[0m
+[33m## [0m[1;33m5[0m[33m. Torchtext[0m
+[33m        [0m[33mTorchtext introduction  [0m[1;33m219[0m[33m     [0m[33mIn this video, learn how to set up the environment and implement a basic model for text processing using Torchtext. Understanding the [0m
+[33mbasics of Torchtext helps you to further implement the use case in the next section.[0m
+[33m        [0m[33mTorchtext for translation       [0m[1;33m248[0m[33m     [0m[33mIn this video, learn how to implement text transcription and translation from the video files. You need to understand how to use [0m
+[33mTorchtext for translation to make more learning content available to users.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mContinuing your PyTorch learning process        [0m[1;33m73[0m[33m      [0m[33mIn this video, get a summary of the key concepts covered in this training and get ready to select the next set of [0m
+[33mlearning from the available resources. This is a very elementary introduction to PyTorch. There are greater details that you need to delve into in order to be more proficient with[0m
+[33mthe framework.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m───────────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficient Python programming [0m[1;34m([0m[34msyntax, control structures, functions, and module usage[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with NumPy array operations and conversions  [0m
+[34m• Ability to install and configure Python libraries [0m[1;34m([0m[34me.g., using pip or conda[0m[1;34m)[0m
+
+[1;32m───────────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mNatural Language Processing with PyTorch[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mLearn about natural language processing with PyTorch, the popular deep learning tool used by tech giants like OpenAI and Microsoft. In this course, Zhongyu Pan guides you through [0m
+[33mthe basics of using PyTorch in natural language processing [0m[1;33m([0m[33mNLP[0m[1;33m)[0m[33m. She explains how to transform text into datasets that you can feed into deep learning models. Zhongyu walks you [0m
+[33mthrough a text classification project with two frequently used deep learning models for NLP: RNN and CNN. She also shows you how to tune hyperparameters and construct model layers[0m
+[33mto get more robust and accurate results, as well as the differences between the two models for NLP tasks.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Natural Language Processing with PyTorch[0m
+[33m## Introduction[0m
+[33m        [0m[33mNatural language processing     [0m[1;33m77[0m[33m      [0m[33mIn this video, explore the course overview and learn the prerequisites for the course.[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m84[0m[33m      [0m[33mIn this video, learn about the benefits of PyTorch and whether it is the best fit for you.[0m
+[33m## [0m[1;33m1[0m[33m. NLP with Deep Learning Introduction[0m
+[33m        [0m[33mPopular topics in NLP   [0m[1;33m134[0m[33m     [0m[33mIn this video, learn the basic definition of NPL, its popular fields, and why you should learn it.[0m
+[33m        [0m[33mIntroducing deep learning       [0m[1;33m219[0m[33m     [0m[33mIn this video, learn how to describe deep learning at a high level and intuitively explain how deep learning works under NLP [0m
+[33mconcepts.[0m
+[33m## [0m[1;33m2[0m[33m. PyTorch Basics[0m
+[33m        [0m[33mWhy PyTorch?    [0m[1;33m102[0m[33m     [0m[33mIn this video, explore which tech giants are using PyTorch for NLP and its most popular uses and functionalities within the tech sector.[0m
+[33m        [0m[33mPyTorch tensor  [0m[1;33m288[0m[33m     [0m[33mIn this video, learn what a PyTorch tensor is and how to implement the basic calculations and functions of PyTorch Tensor.[0m
+[33m## [0m[1;33m3[0m[33m. Guided Project: CNN Text Classification with PyTorch[0m
+[33m        [0m[33mPreprocessing text dataset      [0m[1;33m557[0m[33m     [0m[33mIn this video, learn how to preprocess text data by learning how to load and transform text into a format that can be fed into a DL[0m
+[33mmodel. Explore different ways of preprocessing and learn the difference between them.[0m
+[33m        [0m[33mBuilding a simple CNN model     [0m[1;33m386[0m[33m     [0m[33mIn this video, learn how to build a basic deep learning model using PyTorch, as well as how to fine-tune model parameters and make [0m
+[33mthe model more solid.[0m
+[33m        [0m[33mTrain and evaluate functions    [0m[1;33m226[0m[33m     [0m[33mIn this video, learn about CNN at a high level, how CNN works in text classification, and how CNN and RNN perform different text [0m
+[33mclassification tasks.[0m
+[33m        [0m[33mChallenge: Training process     [0m[1;33m108[0m[33m     [0m[33mIn this video, learn how to clean text data as the first essential step in building a model.[0m
+[33m        [0m[33mSolution: Training process      [0m[1;33m236[0m[33m     [0m[33mIn this video, explore the solution to Challenge: Training process.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mKeep learning and connect       [0m[1;33m47[0m[33m      [0m[33mThis video celebrates you for completing the course and encourages you to keep learning through more advanced courses on NLP using [0m
+[33mPyTorch.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m───────────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficiency in Python programming, including familiarity with basic syntax, data types, control structures, and functions  [0m
+[34m• Basic experience setting up and using Python libraries and environments [0m[1;34m([0m[34me.g., installing packages with pip or conda[0m[1;34m)[0m[34m  [0m
+[34m• Foundational understanding of deep learning concepts [0m[1;34m([0m[34me.g., what neural networks are and how they operate[0m[1;34m)[0m[34m  [0m
+[34m• Basic skills in handling and manipulating text data in Python [0m[1;34m([0m[34me.g., string operations and simple data processing[0m[1;34m)[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mPyTorch Essential Training: Deep Learning[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;PyTorch is the most flexible and expressive library for deep learning, and offers simple Python API, GPU support, and flexibility. Itâ€™s [0m
+[33mdesigned to load data, apply transforms, and build deep learning models with just a few lines of code. Many machine learning developers and researchers [0m
+[33muse PyTorch to accelerate deep learning research, experimentation, and prototyping. In this course, software developer Terezija Semenski teaches you the [0m
+[33mimportant features of PyTorch with a hands-on approach to help you develop the skills you need to dive into your deep learning [0m
+[33mprojects.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course includes Code Challenges powered by CoderPad. Code Challenges are interactive coding exercises with real-time [0m
+[33mfeedback, so you can get hands-on coding practice alongside the course content to advance your programming skills.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# PyTorch Essential Training: Deep Learning[0m
+[33m## Introduction[0m
+[33m        [0m[33mDeep learning with PyTorch      [0m[1;33m31[0m[33m      [0m[33mTake a closer look at the advantages of PyTorch and explore the goals of this course.[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m77[0m[33m      [0m[33mBefore starting this course, explore what skills and knowledge you need to have to be successful in this course. [0m
+[33mThis video also lists all installation requirements you need to set up before you proceed.[0m
+[33m        [0m[33mTour of CoderPad        [0m[1;33m188[0m
+[33m## [0m[1;33m1[0m[33m. PyTorch Overview and Introduction to Google Colaboratory[0m
+[33m        [0m[33mIntroduction to deep learning   [0m[1;33m260[0m[33m     [0m[33mLearn what deep learning is, and how it is different from ML and AI, and explore examples of its [0m
+[33mapplications in real-life scenarios.[0m
+[33m        [0m[33mWhy should you use PyTorch      [0m[1;33m121[0m[33m     [0m[33mPyTorch provides Python with easily run array-based calculations, allows the building of dynamic neural [0m
+[33mnetworks, and performs auto differentiation with strong graphics processing unit [0m[1;33m([0m[33mGPU[0m[1;33m)[0m[33m acceleration. All the above are the most important features [0m
+[33mrequired for deep learning development.[0m
+[33m        [0m[33mGoogle Colaboratory basics      [0m[1;33m207[0m[33m     [0m[33mIn this video, explore Google Colab which allows you to write and execute Python and PyTorch code in your[0m
+[33mbrowser.[0m
+[33m## [0m[1;33m2[0m[33m. Tensors[0m
+[33m        [0m[33mIntroduction to tensors [0m[1;33m204[0m[33m     [0m[33mIn this video, learn the fundamental data structure used in PyTorch called the tensors. It allows you to [0m
+[33munderstand how PyTorch handles and stores the data.[0m
+[33m        [0m[33mCreating a tensor CPU example   [0m[1;33m108[0m[33m     [0m[33mLearn a CPU example of how to create a tensor and perform a tensor operation so you can use a built-in [0m
+[33mmethod on the tensor itself.[0m
+[33m        [0m[33mCreating a tensor GPU example   [0m[1;33m106[0m[33m     [0m[33mLearn a GPU example of how to create a tensor and perform a tensor operation so you can use a built-in [0m
+[33mmethod on the tensor itself.[0m
+[33m        [0m[33mMoving tensors between CPUs and GPUs    [0m[1;33m130[0m[33m     [0m[33mExplore the [0m[1;33mtorch.to[0m[1;33m([0m[1;33m)[0m[33m method that allows you to move an existing tensor from CPU to GPU device.[0m
+[33m## [0m[1;33m3[0m[33m. Creating Tensors[0m
+[33m        [0m[33mDifferent ways to create tensors        [0m[1;33m219[0m[33m     [0m[33mSometimes you may want to construct tensors from preexisting data stored in array-like structures[0m
+[33msuch as lists, tuples, scalars, serialized data files, or NumPy arrays. Learn how to achieve that.[0m
+[33m        [0m[33mTensor attributes       [0m[1;33m131[0m[33m     [0m[33mLearn how to effortlessly find information about tensors by accessing their attributes.[0m
+[33m        [0m[33mTensor data types       [0m[1;33m196[0m[33m     [0m[33mWhen creating tensors, you can specify the data type. It is also possible to cast a tensor to a new data type. In[0m
+[33mthis video, explore how to achieve that.[0m
+[33m        [0m[33mCreating tensors from random samples    [0m[1;33m161[0m[33m     [0m[33mOften, you need to initialize weights to random values or create random inputs with specified [0m
+[33mdistributions. Learn functions that you can apply to create tensors from random data.[0m
+[33m        [0m[33mCreating tensors like other tensors     [0m[1;33m125[0m[33m     [0m[33mLearn similarity functions so you can create and initialize a tensor that has similar properties [0m
+[33mto the existing tensor.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Create tensors      [0m[1;33m600[0m
+[33m        [0m[33mSolution: Create tensors        [0m[1;33m109[0m[33m     [0m[33mIn this video, learn a solution for creating tensors from different data structures.[0m
+[33m## [0m[1;33m4[0m[33m. Manipulate Tensors[0m
+[33m        [0m[33mTensor operations       [0m[1;33m275[0m[33m     [0m[33mIn this video explore a set of tensor operations that allow you to access and transform your tensor data.[0m
+[33m        [0m[33mMathematical functions  [0m[1;33m216[0m[33m     [0m[33mLearn a set of built-in math functions. It is extremely important to know them as deep learning is based on [0m
+[33mmathematical computations.[0m
+[33m        [0m[33mLinear algebra operations       [0m[1;33m236[0m[33m     [0m[33mMany computations, including optimization algorithms and gradient descent, use linear algebra to [0m
+[33mimplement the calculations. Explore the most important built-in linear algebra operations which you can use.[0m
+[33m        [0m[33mAutomatic differentiation [0m[1;33m([0m[33mAutograd[0m[1;33m)[0m[33m    [0m[1;33m365[0m[33m     [0m[33mLearn the [0m[1;33mbackward[0m[1;33m([0m[1;33m)[0m[33m function. It is important because it is used to differentiate and compute [0m
+[33mgradients of tensors based on the Chain rule.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Split tensors to form new tensors   [0m[1;33m600[0m
+[33m        [0m[33mSolution: Split tensors to form new tensors     [0m[1;33m113[0m[33m     [0m[33mIn this video, learn one solution for splitting tensors to form new tensors.[0m
+[33m## [0m[1;33m5[0m[33m. Developing a Deep Learning Model[0m
+[33m        [0m[33mIntroduction to the DL training process [0m[1;33m151[0m[33m     [0m[33mIn this video, explore the basic pipeline used to train, test, and deploy your deep learning [0m
+[33mmodels.[0m
+[33m        [0m[33mData preparation        [0m[1;33m97[0m[33m      [0m[33mLearn the steps of data preparations and why they are important.[0m
+[33m        [0m[33mData loading    [0m[1;33m157[0m[33m     [0m[33mExplore built-in classes and utilities for loading various types of data and learn how to apply them to pull the data [0m
+[33mfrom its source and create dataset objects.[0m
+[33m        [0m[33mData transforms [0m[1;33m160[0m[33m     [0m[33mData often needs to be adjusted before it is passed into the model for training and testing. Learn different ways to [0m
+[33madjust the data by applying transforms.[0m
+[33m        [0m[33mData batching   [0m[1;33m175[0m[33m     [0m[33mIn the process of model training data is passed in small batches at each iteration. That way training is more efficient [0m
+[33mtraining and accelerated.[0m
+[33m        [0m[33mModel development and training  [0m[1;33m286[0m[33m     [0m[33mLearn different steps of model development and importance of the each step. Explore fundamental processes[0m
+[33mused for training models.[0m
+[33m        [0m[33mValidation and testing  [0m[1;33m250[0m[33m     [0m[33mValidation and testing are important parts of model development as they take care that overfitting does not occur[0m
+[33mand that the model performs well against unseen data. Learn the key steps of each of them.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m48[0m[33m      [0m[33mThis video explains where to go from here.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely [0m
+[33mnecessary for the course.[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficient Python programming [0m[1;34m([0m[34msyntax, functions, and control structures[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with numerical computing in Python [0m[1;34m([0m[34me.g., working with arrays such as using NumPy[0m[1;34m)[0m[34m  [0m
+[34m• Basic understanding of linear algebra [0m[1;34m([0m[34mvector and matrix operations[0m[1;34m)[0m[34m  [0m
+[34m• Experience with interactive coding environments [0m[1;34m([0m[34msuch as Jupyter notebooks or Google Colaboratory[0m[1;34m)[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mHands-On PyTorch Machine Learning[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mMany of the worldâ€™s most exciting and innovative new tech projects leverage the power of machine learning. But if you want to set yourself apart as a [0m
+[33mdata scientist or machine learning engineer, you need to stay up to date with the current tools and best practices for creating effective, predictable [0m
+[33mmodels.&lt;br&gt;&lt;br&gt;In this course, instructor Helen Sun shows you how to get up and running with PyTorch, the open-source machine learning [0m
+[33mframework known for its simplicity, performance, and APIs. Explore the basic concepts of PyTorch, including tensors, operators, and conversion to and [0m
+[33mfrom NumPy, as well as how to utilize autograd, which tracks the history of every computation recorded by the framework. By the end of this course, [0m
+[33myouâ€™ll also be equipped with a new set of skills to get the most out of Torchvision, Torchaudio, and Torchtext.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Hands-On PyTorch Machine Learning[0m
+[33m## Introduction[0m
+[33m        [0m[33mExplore the capabilities of PyTorch     [0m[1;33m51[0m
+[33m## [0m[1;33m1[0m[33m. Preparation[0m
+[33m        [0m[33mPyTorch overview        [0m[1;33m253[0m[33m     [0m[33mIn this video, learn about PyTorch’s tensor library and neural networks at a high level. This is a [0m
+[33mcontext-setting video and an overview of key concepts for the remainder of the videos.[0m
+[33m        [0m[33mPyTorch environment setup       [0m[1;33m230[0m[33m     [0m[33mIn this video, learn how to install PyTorch and configure the environment. Get the environment set up so [0m
+[33mthat you can start to work on the use cases.[0m
+[33m        [0m[33mPyTorch use case description    [0m[1;33m143[0m[33m     [0m[33mIn this video, learn about the use case, objectives, and problem space. This is an important context for [0m
+[33mmodel development and learning.[0m
+[33m        [0m[33mPyTorch data exploration        [0m[1;33m253[0m[33m     [0m[33mIn this video, learn about the dataset for this use case. Understanding the dimensionality, categories, [0m
+[33mand distributions of the data is fundamental to developing ML algorithms.[0m
+[33m## [0m[1;33m2[0m[33m. PyTorch Basics[0m
+[33m        [0m[33mUnderstand PyTorch tensors      [0m[1;33m213[0m[33m     [0m[33mIn this video, learn about the basic concepts of PyTorch tensors. Explore basic constructs that you are [0m
+[33musing for the rest of the use case implementation in PyTorch.[0m
+[33m        [0m[33mUnderstand PyTorch basic operations     [0m[1;33m173[0m[33m     [0m[33mIn this video, learn about the basic concepts of PyTorch operators. Explore basic constructs that[0m
+[33myou are using for the rest of the use case implementation in PyTorch.[0m
+[33m        [0m[33mUnderstand PyTorch NumPy Bridge [0m[1;33m213[0m[33m     [0m[33mIn this video, learn how to convert NumPy arrays to PyTorch tensors and vice versa. Explore the basic [0m
+[33mconstructs that you are using for the rest of the use case implementation in PyTorch.[0m
+[33m        [0m[33mUnderstand PyTorch autograd     [0m[1;33m170[0m[33m     [0m[33mIn this video, learn how to use autograd to automate the computation of backward passes in neural [0m
+[33mnetworks. Explore the basic component within PyTorch and the important-to-implement neural networks for the rest of the use cases.[0m
+[33m        [0m[33mAdvanced PyTorch autograd       [0m[1;33m122[0m[33m     [0m[33mIn this video, learn how to use autograd to automate the computation of backward passes in neural [0m
+[33mnetworks. Explore an advanced component within PyTorch an important-to-implement neural network for the rest of the use cases.[0m
+[33m## [0m[1;33m3[0m[33m. Torchvision[0m
+[33m        [0m[33mTorchvision introduction        [0m[1;33m521[0m[33m     [0m[33mIn this video, learn how to install Torchvision and understand the basic usage and implementation of the [0m
+[33mpackage. Understanding the basics of Torchvision helps you to further implement the use case in future sections.[0m
+[33m        [0m[33mTorchvision for video and image understanding   [0m[1;33m82[0m[33m      [0m[33mIn this video, learn how to use Torchvision to extract entities from various training and[0m
+[33mlearning videos. Torchvision is a very powerful package to accomplish various computer vision tasks for object detection, entity extraction, and [0m
+[33mclassification so similar training videos can be recommended.[0m
+[33m## [0m[1;33m4[0m[33m. Torchaudio[0m
+[33m        [0m[33mTorchaudio introduction [0m[1;33m205[0m[33m     [0m[33mIn this video, learn how to set up the environment and implement a basic model for audio processing using [0m
+[33mTorchaudio. Understanding the basics of Torchaudio helps you further implement the use case in the next section.[0m
+[33m        [0m[33mTorchaudio for audio understanding      [0m[1;33m243[0m[33m     [0m[33mIn this video, learn how to implement audio characteristics of the training tutorials in this use[0m
+[33mcase. Knowing how to extract language, intonation, and other audio characteristics of the video files can be a useful technique to generate more metadata[0m
+[33mfor training material recommendations.[0m
+[33m## [0m[1;33m5[0m[33m. Torchtext[0m
+[33m        [0m[33mTorchtext introduction  [0m[1;33m219[0m[33m     [0m[33mIn this video, learn how to set up the environment and implement a basic model for text processing using [0m
+[33mTorchtext. Understanding the basics of Torchtext helps you to further implement the use case in the next section.[0m
+[33m        [0m[33mTorchtext for translation       [0m[1;33m248[0m[33m     [0m[33mIn this video, learn how to implement text transcription and translation from the video files. You need [0m
+[33mto understand how to use Torchtext for translation to make more learning content available to users.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mContinuing your PyTorch learning process        [0m[1;33m73[0m[33m      [0m[33mIn this video, get a summary of the key concepts covered in this training and get ready [0m
+[33mto select the next set of learning from the available resources. This is a very elementary introduction to PyTorch. There are greater details that you [0m
+[33mneed to delve into in order to be more proficient with the framework.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely [0m
+[33mnecessary for the course.[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficient Python programming [0m[1;34m([0m[34msyntax, control structures, functions, and module usage[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with NumPy array operations and conversions  [0m
+[34m• Ability to install and configure Python libraries [0m[1;34m([0m[34me.g., using pip or conda[0m[1;34m)[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mAI Workshop: Build a Neural Network with PyTorch Lightning[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;If youâ€™re looking for hands-on AI practice, this workshop-style coding course was designed for you. Join instructor Janani Ravi as she shows [0m
+[33myou how to build a neural network with PyTorch Lightning, the open-source library from Python that provides an interface for the popular deep learning [0m
+[33mframework PyTorch. Explore the core components of building a neural network with PyTorch, including setting up the virtual environment, loading and [0m
+[33mexploring data, preprocessing data for training, creating and training a simple neural network, setting up the Dataset and DataLoader, visualizing [0m
+[33mlosses, and much more. Along the way, Janani covers the basics of using modules in PyTorch Lightning to build, train, and evaluate both regression and [0m
+[33mclassification models.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course was created by Loonycorn. We are pleased to host this content in our library.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# AI Workshop: Build a Neural Network with PyTorch Lightning[0m
+[33m## Introduction[0m
+[33m        [0m[33mAI workshop: Build a neural network with PyTorch Lightning      [0m[1;33m339[0m[33m     [0m[33mAfter watching this video, you will be familiar with the features of [0m
+[33mPyTorch and PyTorch Lightning.[0m
+[33m        [0m[33mPrerequisites   [0m[1;33m51[0m[33m      [0m[33mAfter watching this video, you will be familiar with the prerequisites to working with PyTorch.[0m
+[33m        [0m[33mQuick overview of neural networks       [0m[1;33m329[0m[33m     [0m[33mAfter watching this video, you will be familiar with how neural networks work.[0m
+[33m## [0m[1;33m1[0m[33m. Building a Neural Network with PyTorch[0m
+[33m        [0m[33mSetting up the virtual environment      [0m[1;33m264[0m[33m     [0m[33mAfter watching this video, you will be able to set up a virtual environment.[0m
+[33m        [0m[33mLoading and exploring regression data   [0m[1;33m320[0m[33m     [0m[33mAfter watching this video, you will be able to load data for regression.[0m
+[33m        [0m[33mPreprocessing data for training [0m[1;33m383[0m[33m     [0m[33mAfter watching this video, you will be able to preprocess data for model training.[0m
+[33m        [0m[33mCreating a simple neural network        [0m[1;33m343[0m[33m     [0m[33mAfter watching this video, you will be able to create a simple neural network in PyTorch.[0m
+[33m        [0m[33mSetting up the dataset and DataLoader   [0m[1;33m146[0m[33m     [0m[33mAfter watching this video, you will be able to create a PyTorch dataset and dataloader.[0m
+[33m        [0m[33mTraining a neural network using PyTorch [0m[1;33m465[0m[33m     [0m[33mAfter watching this video, you will be able to train a neural network in PyTorch.[0m
+[33m        [0m[33mVisualizing losses and evaluating models        [0m[1;33m167[0m[33m     [0m[33mAfter watching this video, you will be able to evaluate a regression model using PyTorch [0m
+[33mmetric libraries.[0m
+[33m        [0m[33mBuilding and training a more complex neural network     [0m[1;33m374[0m[33m     [0m[33mAfter watching this video, you will be able to build a complex neural network in [0m
+[33mPyTorch.[0m
+[33m## [0m[1;33m2[0m[33m. Using PyTorch Lightning to Build a Regression Model[0m
+[33m        [0m[33mEncapsulating data using a LightningDataModule  [0m[1;33m412[0m[33m     [0m[33mAfter watching this video, you will be able to encapsulate data with a [0m
+[33mLightningDataModule.[0m
+[33m        [0m[33mEncapsulating a model using a LightningModule   [0m[1;33m347[0m[33m     [0m[33mAfter watching this video, you will be able to encapsulate a model with a [0m
+[33mLightningModule.[0m
+[33m        [0m[33mTraining the model using the PyTorch Lightning Trainer  [0m[1;33m362[0m[33m     [0m[33mAfter watching this video, you will be able to train a model with the PyTorch [0m
+[33mLightning trainer.[0m
+[33m## [0m[1;33m3[0m[33m. Using PyTorch Lightning to Build a Classification Model[0m
+[33m        [0m[33mLoading and exploring classification data       [0m[1;33m252[0m[33m     [0m[33mAfter watching this video, you will be able to load data for classification.[0m
+[33m        [0m[33mCreating a LightningDataModule  [0m[1;33m268[0m[33m     [0m[33mAfter watching this video, you will be able to create a LightningDataModule for data preparation.[0m
+[33m        [0m[33mCreating a LightningModule      [0m[1;33m301[0m[33m     [0m[33mAfter watching this video, you will be able to create a model with a LightningModule.[0m
+[33m        [0m[33mTraining a classification model and evaluating metrics  [0m[1;33m248[0m[33m     [0m[33mAfter watching this video, you will be able to evaluate a classification model [0m
+[33musing PyTorch metric libraries.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mSummary and next steps  [0m[1;33m78[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely [0m
+[33mnecessary for the course.[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m- Proficiency in Python programming [0m[1;34m([0m[34msyntax, control flow, and functions[0m[1;34m)[0m
+[34m- Basic familiarity with command-line tools and setting up Python virtual environments[0m
+[34m- Foundational understanding of neural network concepts and machine learning basics[0m
+[34m- Basic knowledge of PyTorch fundamentals [0m[1;34m([0m[34me.g., tensor operations and automatic differentiation[0m[1;34m)[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mNatural Language Processing with PyTorch[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mLearn about natural language processing with PyTorch, the popular deep learning tool used by tech giants like OpenAI and Microsoft. In this course, [0m
+[33mZhongyu Pan guides you through the basics of using PyTorch in natural language processing [0m[1;33m([0m[33mNLP[0m[1;33m)[0m[33m. She explains how to transform text into datasets that [0m
+[33myou can feed into deep learning models. Zhongyu walks you through a text classification project with two frequently used deep learning models for NLP: [0m
+[33mRNN and CNN. She also shows you how to tune hyperparameters and construct model layers to get more robust and accurate results, as well as the [0m
+[33mdifferences between the two models for NLP tasks.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Natural Language Processing with PyTorch[0m
+[33m## Introduction[0m
+[33m        [0m[33mNatural language processing     [0m[1;33m77[0m[33m      [0m[33mIn this video, explore the course overview and learn the prerequisites for the course.[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m84[0m[33m      [0m[33mIn this video, learn about the benefits of PyTorch and whether it is the best fit for you.[0m
+[33m## [0m[1;33m1[0m[33m. NLP with Deep Learning Introduction[0m
+[33m        [0m[33mPopular topics in NLP   [0m[1;33m134[0m[33m     [0m[33mIn this video, learn the basic definition of NPL, its popular fields, and why you should learn it.[0m
+[33m        [0m[33mIntroducing deep learning       [0m[1;33m219[0m[33m     [0m[33mIn this video, learn how to describe deep learning at a high level and intuitively explain how deep [0m
+[33mlearning works under NLP concepts.[0m
+[33m## [0m[1;33m2[0m[33m. PyTorch Basics[0m
+[33m        [0m[33mWhy PyTorch?    [0m[1;33m102[0m[33m     [0m[33mIn this video, explore which tech giants are using PyTorch for NLP and its most popular uses and functionalities within [0m
+[33mthe tech sector.[0m
+[33m        [0m[33mPyTorch tensor  [0m[1;33m288[0m[33m     [0m[33mIn this video, learn what a PyTorch tensor is and how to implement the basic calculations and functions of PyTorch [0m
+[33mTensor.[0m
+[33m## [0m[1;33m3[0m[33m. Guided Project: CNN Text Classification with PyTorch[0m
+[33m        [0m[33mPreprocessing text dataset      [0m[1;33m557[0m[33m     [0m[33mIn this video, learn how to preprocess text data by learning how to load and transform text into a format[0m
+[33mthat can be fed into a DL model. Explore different ways of preprocessing and learn the difference between them.[0m
+[33m        [0m[33mBuilding a simple CNN model     [0m[1;33m386[0m[33m     [0m[33mIn this video, learn how to build a basic deep learning model using PyTorch, as well as how to fine-tune [0m
+[33mmodel parameters and make the model more solid.[0m
+[33m        [0m[33mTrain and evaluate functions    [0m[1;33m226[0m[33m     [0m[33mIn this video, learn about CNN at a high level, how CNN works in text classification, and how CNN and RNN[0m
+[33mperform different text classification tasks.[0m
+[33m        [0m[33mChallenge: Training process     [0m[1;33m108[0m[33m     [0m[33mIn this video, learn how to clean text data as the first essential step in building a model.[0m
+[33m        [0m[33mSolution: Training process      [0m[1;33m236[0m[33m     [0m[33mIn this video, explore the solution to Challenge: Training process.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mKeep learning and connect       [0m[1;33m47[0m[33m      [0m[33mThis video celebrates you for completing the course and encourages you to keep learning through more [0m
+[33madvanced courses on NLP using PyTorch.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely [0m
+[33mnecessary for the course.[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficiency in Python programming, including familiarity with basic syntax, data types, control structures, and functions  [0m
+[34m• Basic experience setting up and using Python libraries and environments [0m[1;34m([0m[34me.g., installing packages with pip or conda[0m[1;34m)[0m[34m  [0m
+[34m• Foundational understanding of deep learning concepts [0m[1;34m([0m[34me.g., what neural networks are and how they operate[0m[1;34m)[0m[34m  [0m
+[34m• Basic skills in handling and manipulating text data in Python [0m[1;34m([0m[34me.g., string operations and simple data processing[0m[1;34m)[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mDeep Learning: Model Optimization and Tuning[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mDeep Learning as a technology has grown leaps and bounds in the last few years. More and more AI solutions use Deep Learning as their foundational [0m
+[33mtechnology. Studying this technology, however, presents several challenges. IT professionals from varying backgrounds need a simplified resource to learn[0m
+[33mthe concepts and build models quickly. In this course, instructor Kumaran Ponnambalam provides a simplified path to understand various optimization and [0m
+[33mtuning options available for deep learning models and shows you how to use these options to improve models. He begins by reviewing Deep Learning, [0m
+[33mincluding artificial neural networks and architectures. Next, Kumaran discusses the process of hyper parameter tuning. He examines the building blocks of[0m
+[33mneural networks and the levers available to tune them. Kumaran offers recommendations and best practices. Then he concludes with an end-to-end tuning [0m
+[33mexample.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Deep Learning: Model Optimization and Tuning[0m
+[33m## Introduction[0m
+[33m        [0m[33mOptimizing neural networks      [0m[1;33m49[0m[33m      [0m[33mNeural network models need to be fine-tuned to improve accuracy and decrease costs. In this video, learn [0m
+[33mhow this course can help you gain an understanding of tuning neural networks.[0m
+[33m        [0m[33mPrerequisites for the course    [0m[1;33m136[0m[33m     [0m[33mThis course requires prior familiarity with concepts around machine learning and Python programming. In [0m
+[33mthis video, explore the list of prerequisites for effective learning for this course.[0m
+[33m        [0m[33mSetting up exercise files       [0m[1;33m141[0m[33m     [0m[33mThe course requires an environment and exercise files to be set up before they can be used. In this [0m
+[33mvideo, explore the course setup.[0m
+[33m## [0m[1;33m1[0m[33m. Introduction to Deep Learning Optimization[0m
+[33m        [0m[33mWhat is deep learning?  [0m[1;33m100[0m[33m     [0m[33mDeep learning is becoming a popular subset of machine learning. In this video, learn the unique characteristics [0m
+[33mof deep learning and how it helps in understanding complex behavior.[0m
+[33m        [0m[33mReview of artificial neural networks    [0m[1;33m150[0m[33m     [0m[33mNeural networks are the key foundation for deep learning. In this video, learn the definition of [0m
+[33mand structure of a neural network.[0m
+[33m        [0m[33mAn ANN model    [0m[1;33m94[0m[33m      [0m[33mIn this video, learn the components of an ANN model, parameters, and hyperparameters that are used in building models.[0m
+[33m        [0m[33mModel optimization and tuning   [0m[1;33m90[0m[33m      [0m[33mHyperparameter tuning is a critical step in deep learning to build effective models. In this video, learn[0m
+[33mthe goals for tuning for both training and inference[0m
+[33m        [0m[33mThe deep learning tuning process        [0m[1;33m174[0m[33m     [0m[33mA disciplined process is required for making steady progress in tuning models. In this video, [0m
+[33mlearn the process and best practices for tuning deep learning models.[0m
+[33m        [0m[33mExperiment setups for the course        [0m[1;33m123[0m[33m     [0m[33mA set of common methods are used across experiments in this course. In this video, learn about [0m
+[33mthe common functions and how they help in running experiments.[0m
+[33m## [0m[1;33m2[0m[33m. Tuning the Deep Learning Network[0m
+[33m        [0m[33mEpoch and batch size tuning     [0m[1;33m117[0m[33m     [0m[33mChoosing the right batch size and number of epochs is essential to maintain a balance between model [0m
+[33maccuracy and performance. In this video, learn best practices for choosing the batch sizes and the number of epochs.[0m
+[33m        [0m[33mEpoch and batch size experiment [0m[1;33m181[0m[33m     [0m[33mIn this video, learn how to run an experiment to compare various values for epochs and batch sizes and [0m
+[33manalyze how they impact the accuracy of the models.[0m
+[33m        [0m[33mHidden layers tuning    [0m[1;33m117[0m[33m     [0m[33mThe number of layers in an ANN influence both the performance and accuracy characteristics of a model. In this [0m
+[33mvideo, learn how to choose the optimal number of layers in a network.[0m
+[33m        [0m[33mDetermining nodes in a layer    [0m[1;33m119[0m[33m     [0m[33mThe number of nodes in an ANN layer impacts the outcomes of a model. In this video, learn about [0m
+[33mcharacteristics and best practices for choosing the number of nodes in the layer.[0m
+[33m        [0m[33mChoosing activation functions   [0m[1;33m118[0m[33m     [0m[33mActivation functions determine how the output of a neuron is taken forward in a network. In this video, [0m
+[33mlearn about different activation functions.[0m
+[33m        [0m[33mInitializing weights    [0m[1;33m103[0m[33m     [0m[33mWeights initialization plays a key role in the efficiency and effectiveness of the model building. In this video,[0m
+[33mlearn various options for weights initialization.[0m
+[33m## [0m[1;33m3[0m[33m. Tuning Back Propagation[0m
+[33m        [0m[33mVanishing and exploding gradients       [0m[1;33m143[0m[33m     [0m[33mVanishing and exploding gradients impact the learning process during backpropagation. In this [0m
+[33mvideo, learn how to control these effects for efficient gradient descent.[0m
+[33m        [0m[33mBatch normalization     [0m[1;33m109[0m[33m     [0m[33mNormalization helps to normalize the contribution of each input feature and reduces bias. In this video, learn [0m
+[33mhow normalization works and how it helps in deep learning.[0m
+[33m        [0m[33mOptimizers      [0m[1;33m85[0m[33m      [0m[33mOptimizers update the weights in an ANN in order to minimize loss and lead it towards accurate predictions. In this [0m
+[33mvideo, learn about the role of optimizers in deep learning.[0m
+[33m        [0m[33mOptimizer experiment    [0m[1;33m73[0m[33m      [0m[33mIn this video, learn how to run an experiment with various optimizers to understand how they impact learning in [0m
+[33man ANN, as well as plot results and compare the outcomes.[0m
+[33m        [0m[33mLearning rate   [0m[1;33m71[0m[33m      [0m[33mLearning rate impacts the speed of learning in a neural network as well as helps control vanishing and exploding [0m
+[33mgradients. In this video, learn how the learning rate works with optimizers during backpropagation.[0m
+[33m        [0m[33mLearning rate experiment        [0m[1;33m73[0m[33m      [0m[33mIn this video, learn how to run an experiment to try various values for learning rates and compare how [0m
+[33mincreasing learning rates impact the overall learning process.[0m
+[33m## [0m[1;33m4[0m[33m. Overfitting Management[0m
+[33m        [0m[33mOverfitting in ANNs     [0m[1;33m109[0m[33m     [0m[33mOverfitting is a common problem in machine learning that needs to be addressed to build stable models. In this [0m
+[33mvideo, learn solutions for avoiding overfitting in neural networks.[0m
+[33m        [0m[33mRegularization  [0m[1;33m51[0m[33m      [0m[33mRegularization helps avoid overfitting in deep learning models. In this video, learn its properties and applications in [0m
+[33mdeep learning.[0m
+[33m        [0m[33mRegularization experiment       [0m[1;33m51[0m[33m      [0m[33mIn this video, learn how to run an experiment to try various regularizers and compare how these choices [0m
+[33mhelp in avoiding the overfitting of the model.[0m
+[33m        [0m[33mDropouts        [0m[1;33m59[0m[33m      [0m[33mDropouts are an interesting technique that helps manage overfitting during training. In this video, learn the principles [0m
+[33mbehind dropouts during training.[0m
+[33m        [0m[33mDropout experiment      [0m[1;33m57[0m[33m      [0m[33mIn this video, learn how to run an experiment to try various values for dropouts and about their impact on model [0m
+[33maccuracy and overfitting.[0m
+[33m## [0m[1;33m5[0m[33m. Model Tuning Exercise[0m
+[33m        [0m[33mTuning exercise: Problem statement      [0m[1;33m235[0m[33m     [0m[33mIn this video, explore an end-to-end use case for deep learning optimization example and review [0m
+[33mthe input data and desired outcomes.[0m
+[33m        [0m[33mAcquire and process data        [0m[1;33m51[0m[33m      [0m[33mIn this video, learn how to prepare input data required for the exercise use case and create a reusable [0m
+[33mmethod that can be used for multiple experiments in the exercise.[0m
+[33m        [0m[33mTuning the network      [0m[1;33m62[0m[33m      [0m[33mIn this video, learn how to tune the network architecture iteratively to improve outcomes and review results and [0m
+[33mtheir implications.[0m
+[33m        [0m[33mTuning backpropagation  [0m[1;33m50[0m[33m      [0m[33mIn this video, learn how to tune the backpropagation process by trying different optimizers, reviewing results, [0m
+[33mand choosing the best option.[0m
+[33m        [0m[33mAvoiding overfitting    [0m[1;33m50[0m[33m      [0m[33mIn this video, learn techniques to avoid overfitting in the model and how to choose the best options for the [0m
+[33mspecific use case.[0m
+[33m        [0m[33mBuilding the final model        [0m[1;33m81[0m[33m      [0m[33mIn this video, learn how to consolidate all the results of tuning, create a final model, and compare the [0m
+[33mtuned model's performance with the baseline model.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mContinuing your deep learning journey   [0m[1;33m40[0m[33m      [0m[33mIn this video, explore the next steps to take after completing this course.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely [0m
+[33mnecessary for the course.[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Fundamental understanding of machine learning concepts  [0m
+[34m• Proficiency in Python programming[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mFull-Stack Deep Learning with Python[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mIf you seek a more in-depth understanding of deep learning and Python, this hands-on course can help you. In this course, certified Google cloud [0m
+[33marchitect and data engineer Janani Ravi guides you through the intricacies of full-stack deep learning with Python. After a review of full stack deep [0m
+[33mlearning, MLOps, and MLflow, dive into setting up your environment on Google Colab and running MLflow. Learn how to load and explore a dataset, as well [0m
+[33mas how to log metrics, parameters, and artifacts. Explore model training, evaluation, and hyperparameter tuning. Plus, go over model deployment and [0m
+[33mpredictions.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Full-Stack Deep Learning with Python[0m
+[33m## Introduction[0m
+[33m        [0m[33mFull-stack deep learning, MLOps, and MLflow     [0m[1;33m405[0m[33m     [0m[33mIn this video, discover the steps involved in full-stack deep learning and how MLOps and [0m
+[33man integral part of this workflow.[0m
+[33m        [0m[33mPrerequisites   [0m[1;33m38[0m[33m      [0m[33mIn this video, discover the prerequisites that you need for this course.[0m
+[33m## [0m[1;33m1[0m[33m. An Overview of Full-Stack Deep Learning[0m
+[33m        [0m[33mIntroducing full-stack deep learning    [0m[1;33m365[0m[33m     [0m[33mIn this video, gain a big-picture understanding of the full-stack deep learning workflow.[0m
+[33m        [0m[33mIntroducing MLOps       [0m[1;33m268[0m[33m     [0m[33mIn this video, learn how MLOps is crucial to helping automate the ML workflow.[0m
+[33m        [0m[33mIntroducing MLflow      [0m[1;33m261[0m[33m     [0m[33mIn this video, discover how MLflow helps simplify the machine learning lifecycle.[0m
+[33m        [0m[33mSetting up the environment on Google Colab      [0m[1;33m322[0m[33m     [0m[33mIn this video, learn how to set up the Google Colab environment to run code.[0m
+[33m        [0m[33mRunning MLflow and using ngrok to access the MLflow UI  [0m[1;33m322[0m[33m     [0m[33mIn this video, discover how to use ngrok to expose local development servers to [0m
+[33mthe internet.[0m
+[33m## [0m[1;33m2[0m[33m. Model Training and Evaluation Using MLflow[0m
+[33m        [0m[33mLoading and exploring the EMNIST dataset        [0m[1;33m293[0m[33m     [0m[33mIn this video, learn how to access and load the EMNIST dataset for model training.[0m
+[33m        [0m[33mLogging metrics, parameters, and artifacts in MLflow    [0m[1;33m366[0m[33m     [0m[33mIn this video, discover how you can create MLflow runs for tracking.[0m
+[33m        [0m[33mSet up the dataset and data loader      [0m[1;33m227[0m[33m     [0m[33mIn this video, learn how to create a PyTorch dataset and dataloader to work with training, [0m
+[33mvalidation, and test data.[0m
+[33m        [0m[33mConfiguring the image classification DNN model  [0m[1;33m296[0m[33m     [0m[33mIn this video, learn how to configure a simple DNN for image classification.[0m
+[33m        [0m[33mTraining a model within an MLflow run   [0m[1;33m246[0m[33m     [0m[33mIn this video, learn how to track model training parameters automatically with MLflow.[0m
+[33m        [0m[33mExploring parameters and metrics in MLflow      [0m[1;33m259[0m[33m     [0m[33mIn this video, learn how to understand and interpret results displayed in the MLflow UI.[0m
+[33m        [0m[33mMaking predictions using MLflow artifacts       [0m[1;33m321[0m[33m     [0m[33mIn this video, learn how to load model artifacts and make predictions using Python code.[0m
+[33m## [0m[1;33m3[0m[33m. Model Training and Hyperparameter Tuning[0m
+[33m        [0m[33mPreparing data for image classification using CNN       [0m[1;33m242[0m[33m     [0m[33mIn this video, learn how to prepare data for image classification using CNNs.[0m
+[33m        [0m[33mConfiguring and training the model using MLflow runs    [0m[1;33m379[0m[33m     [0m[33mIn this video, learn how to track model runs using MLflow auto logging.[0m
+[33m        [0m[33mVisualizing charts, metrics, and parameters on MLflow   [0m[1;33m412[0m[33m     [0m[33mIn this video, learn how to view and interpret charts generated by MLflow.[0m
+[33m        [0m[33mSetting up the objective function for hyperparameter tuning     [0m[1;33m335[0m[33m     [0m[33mIn this video, learn how to implement an objective function for [0m
+[33mhyperparameter training with Hyperopt.[0m
+[33m        [0m[33mHyperparameter optimization with Hyperopt and MLflow    [0m[1;33m381[0m[33m     [0m[33mIn this video, learn how to perform hyperparameter optimization with Hyperopt and[0m
+[33mMLflow.[0m
+[33m        [0m[33mIdentifying the best model      [0m[1;33m219[0m[33m     [0m[33mIn this video, learn how to identify the best model parameters found using hyperparameter optimization.[0m
+[33m        [0m[33mRegistering a model with the MLflow registry    [0m[1;33m192[0m[33m     [0m[33mIn this video, learn how to register your model with the MLflow model registry and manage[0m
+[33mthe model's environment.[0m
+[33m## [0m[1;33m4[0m[33m. Model Deployment and Predictions[0m
+[33m        [0m[33mSetting up MLflow on the local machine  [0m[1;33m296[0m[33m     [0m[33mIn this video, learn how to install and set up MLflow on your local machine.[0m
+[33m        [0m[33mWorkaround to get model artifacts on the local machine  [0m[1;33m139[0m[33m     [0m[33mIn this video, discover how to download MLflow artifacts.[0m
+[33m        [0m[33mDeploying and serving the model locally [0m[1;33m393[0m[33m     [0m[33mIn this video, discover how to use MLflow serving to deploy your model on your local machine.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mSummary and next steps  [0m[1;33m104[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely [0m
+[33mnecessary for the course.[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficiency in Python programming and scripting  [0m
+[34m• Basic understanding of deep learning concepts [0m[1;34m([0m[34me.g., neural network architectures, DNNs, CNNs[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with PyTorch, including creating datasets and data loaders  [0m
+[34m• Experience using cloud-based Python environments like Google Colab[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mPython Essential Training[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mPython is one of the most commonly used dynamic languages for many large organizations, including Google, Yahoo, and IBM. Supported on all major [0m
+[33moperating systems, it comes pre-installed on Macs, as well as most Linux and Unix-based systems. In this course, senior software engineer Ryan Mitchell [0m
+[33mguides you through all the essentials of learning and using Python. Learn how computers think, as well as how to install Python, pip, and Jupyter [0m
+[33mNotebook and the basics of writing a program. Explore variables and types, operators, functions, classes, objects, and more. Go over basic data types [0m
+[33mlike ints and floats, Booleans, and strings. Deep dive into basic data structures, control flow, functions, classes, and objects. Find out how to handle [0m
+[33merrors and exceptions, as well as threads and processes. Plus, discover how to work with different types of files in Python, pass command-line arguments [0m
+[33mto your Python script, and create modules and packages.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Python Essential Training[0m
+[33m## Introduction[0m
+[33m        [0m[33mGetting started with Python     [0m[1;33m50[0m
+[33m        [0m[33mWho this course is for  [0m[1;33m175[0m[33m     [0m[33mThis course is for anyone who wants to learn programming. Basic computer skills are required.[0m
+[33m        [0m[33mResources for this course       [0m[1;33m75[0m[33m      [0m[33mIn this video, learn about the resources needed for this course so you can follow along.[0m
+[33m## [0m[1;33m1[0m[33m. Gearing Up for Python[0m
+[33m        [0m[33mHow computers think     [0m[1;33m250[0m
+[33m        [0m[33mInstalling Python, Pip, and Jupyter Notebooks   [0m[1;33m413[0m[33m     [0m[33mThis video gives you a walkthrough of how to install Python, Pip, and Jupyter Notebooks [0m
+[33mon both Windows and Mac.[0m
+[33m        [0m[33mThe Zen of Python       [0m[1;33m121[0m
+[33m        [0m[33mWriting a program       [0m[1;33m167[0m
+[33m        [0m[33mJupyter notebooks       [0m[1;33m308[0m[33m     [0m[33mThis video shows you how to use Jupyter notebooks for this course.[0m
+[33m        [0m[33mUsing Coderpad  [0m[1;33m130[0m
+[33m## [0m[1;33m2[0m[33m. Quickstart[0m
+[33m        [0m[33mVariables and types     [0m[1;33m386[0m
+[33m        [0m[33mData structures [0m[1;33m438[0m
+[33m        [0m[33mOperators       [0m[1;33m331[0m
+[33m        [0m[33mControl flow    [0m[1;33m267[0m
+[33m        [0m[33mFunctions       [0m[1;33m265[0m
+[33m        [0m[33mClasses and objects     [0m[1;33m352[0m
+[33m        [0m[33mAbout the challenges    [0m[1;33m220[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Factorials  [0m[1;33m1800[0m
+[33m        [0m[33mSolution: Factorials    [0m[1;33m282[0m
+[33m## [0m[1;33m3[0m[33m. Basic Data Types[0m
+[33m        [0m[33mInts and floats [0m[1;33m233[0m[33m     [0m[33mPython represents whole numbers and integers very differently. This video explains operations with both, how and when to [0m
+[33mconvert, and about the limitations of each.[0m
+[33m        [0m[33mOther types of numbers  [0m[1;33m269[0m[33m     [0m[33mThis video explores other ways to represent numbers in Python: decimals, hexadecimal, and octal.[0m
+[33m        [0m[33mBooleans        [0m[1;33m395[0m[33m     [0m[33mAs the most fundamental data type, Booleans are used in code often without realizing it. This video discusses truthy and [0m
+[33mfalsy values.[0m
+[33m        [0m[33mStrings [0m[1;33m373[0m[33m     [0m[33mThis video goes over strings as variables representing text and lists of chars. Learn how arithmetic operators can be used with [0m
+[33mstrings, as well as common string manipulation functions.[0m
+[33m        [0m[33mBytes   [0m[1;33m248[0m[33m     [0m[33mThis video covers the Python bytes object and where it's found.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Converting hex to decimal   [0m[1;33m1800[0m
+[33m        [0m[33mSolution: Converting hex to decimal     [0m[1;33m240[0m
+[33m## [0m[1;33m4[0m[33m. Basic Data Structures[0m
+[33m        [0m[33mLists   [0m[1;33m321[0m[33m     [0m[33mThis video shows you how to instantiate, modify, and manipulate lists. Learn about basic list functions: min, max, sum, and join.[0m
+[33m        [0m[33mTuples and sets [0m[1;33m464[0m[33m     [0m[33mThis video discusses sets and tuples, how they differ from lists, and when they should be used.[0m
+[33m        [0m[33mDictionaries    [0m[1;33m375[0m[33m     [0m[33mThis video goes over how to use list comprehensions to modify or filter lists.[0m
+[33m        [0m[33mList comprehensions     [0m[1;33m322[0m[33m     [0m[33mThis video explains how to use list comprehensions to modify or filter lists.[0m
+[33m        [0m[33mDictionary comprehensions       [0m[1;33m212[0m[33m     [0m[33mThis video helps you to explore this new feature and learn how to generate dictionaries from iterables.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: Encoding ASCII art  [0m[1;33m1800[0m
+[33m        [0m[33mSolution: Encoding ASCII art    [0m[1;33m156[0m
+[33m## [0m[1;33m5[0m[33m. Control Flow[0m
+[33m        [0m[33mIf and else     [0m[1;33m315[0m[33m     [0m[33mThis video shows you how to use if, else, and elif statements to make decisions and use conditional assignments with [0m
+[33msingle line if/else statements.[0m
+[33m        [0m[33mWhile   [0m[1;33m418[0m[33m     [0m[33mThis video shows you how to create a basic while loop and use break, pass, and continue for more advanced control.[0m
+[33m        [0m[33mFor     [0m[1;33m396[0m[33m     [0m[33mThis video shows you how to create a basic for loop, introduces the range function, and goes over how to use else for more [0m
+[33madvanced control.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Finding primes faster       [0m[1;33m1800[0m
+[33m        [0m[33mSolution: Finding primes faster [0m[1;33m133[0m
+[33m## [0m[1;33m6[0m[33m. Functions[0m
+[33m        [0m[33mThe anatomy of a function       [0m[1;33m418[0m[33m     [0m[33mThis video goes over function declarations and return values, args, and kwargs.[0m
+[33m        [0m[33mVariables and scope     [0m[1;33m390[0m[33m     [0m[33mThis video explains how variables are referenced by functions, as well as how to avoid common pitfalls and write [0m
+[33mclearer code.[0m
+[33m        [0m[33mFunctions as variables  [0m[1;33m301[0m[33m     [0m[33mThis video shows you how to use lambda functions to sort lists and pass functions around as variables.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Sum of triangles    [0m[1;33m1800[0m
+[33m        [0m[33mSolution: Sum of triangles      [0m[1;33m103[0m
+[33m## [0m[1;33m7[0m[33m. Classes and Objects[0m
+[33m        [0m[33mThe anatomy of a class  [0m[1;33m318[0m[33m     [0m[33mThis video shows you how to create a simple class and use the __init__ method, self, and static methods.[0m
+[33m        [0m[33mStatic and instance methods     [0m[1;33m449[0m[33m     [0m[33mThis video goes over how to create several instances of a class, use type to show the class name, and [0m
+[33mcall both static and instance methods.[0m
+[33m        [0m[33mInheritance     [0m[1;33m353[0m[33m     [0m[33mThis video explains class extension and inheritance.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Drawing shapes      [0m[1;33m1800[0m
+[33m        [0m[33mSolution: Drawing shapes        [0m[1;33m235[0m
+[33m## [0m[1;33m8[0m[33m. Errors[0m
+[33m        [0m[33mErrors and exceptions   [0m[1;33m232[0m
+[33m        [0m[33mHandling exceptions     [0m[1;33m459[0m
+[33m        [0m[33mCustom exceptions       [0m[1;33m249[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Bad arguments       [0m[1;33m1800[0m
+[33m        [0m[33mSolution: Bad arguments [0m[1;33m72[0m
+[33m## [0m[1;33m9[0m[33m. Threads and Processes[0m
+[33m        [0m[33mIntro to threads and processes  [0m[1;33m161[0m[33m     [0m[33mThis video discusses computational operations, threads, and processes.[0m
+[33m        [0m[33mMultithreading  [0m[1;33m266[0m[33m     [0m[33mThis video covers when and where to use multithreading.[0m
+[33m        [0m[33mMultiprocessing [0m[1;33m327[0m[33m     [0m[33mThis video explains how to use multiprocessing in Python to manage programs.[0m
+[33m## [0m[1;33m10[0m[33m. Working with Files[0m
+[33m        [0m[33mOpening, reading, and writing   [0m[1;33m407[0m[33m     [0m[33mThis video shows you how to open a text file on disk, read data, overwrite the file, append to it, and [0m
+[33mclose the file to flush the buffer.[0m
+[33m        [0m[33mCSV     [0m[1;33m362[0m[33m     [0m[33mThis video goes over how to use the CSV module to read and write CSV files.[0m
+[33m        [0m[33mJSON    [0m[1;33m349[0m[33m     [0m[33mThis video explains how to load and parse JSON from files, as well as write it back to the file.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Compressing ASCII art       [0m[1;33m1800[0m
+[33m        [0m[33mSolution: Compressing ASCII art [0m[1;33m224[0m
+[33m## [0m[1;33m11[0m[33m. Packaging Python[0m
+[33m        [0m[33mCommand-line arguments  [0m[1;33m340[0m[33m     [0m[33mThis video explains how to pass command-line arguments to your Python script using argparse to add flags and [0m
+[33minclude help text.[0m
+[33m        [0m[33mCreating modules and packages   [0m[1;33m499[0m[33m     [0m[33mThis video covers how to package a simple Python module, use __init__.py for organization, create a [0m
+[33msetup.py file, and install a package.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mWrap up [0m[1;33m112[0m
+[33m        [0m[33mPython challenge project        [0m[1;33m47[0m[33m      [0m[33mThis video presents a Python challenge project course that you can take that utilizes the concepts taught[0m
+[33min this course to expand and practice your new skills.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely [0m
+[33mnecessary for the course.[0m
+
+[1;32m──────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficient computer literacy, including file navigation and software installation  [0m
+[34m• Basic familiarity with operating systems [0m[1;34m([0m[34mWindows, Mac, or Linux[0m[1;34m)[0m[34m and using web browsers[0m
+
