@@ -360,6 +360,7 @@ class MentorChat(Chat):
                         "Visible Duration",
                         "Internal Library",
                         "Internal Subject",
+                        "LI Level",
                     ]
                 }
                 # Convert duration to a human-readable format
@@ -383,6 +384,7 @@ class MentorChat(Chat):
                     f"{metadata['Internal Library']} - {metadata['Internal Subject']}"
                 )
                 metadata.pop("Internal Subject")
+                metadata["LI Level"] = f"{metadata['LI Level']}"
                 formatted = [
                     f"[green]{k}[/green]: [yellow]{v}[/yellow]"
                     for k, v in metadata.items()
@@ -449,7 +451,7 @@ class MentorChat(Chat):
         if not self.curation:
             self.console.print("[red]No curation.[/red]")
             return
-        snapshot_text = self.curation.snapshot
+        snapshot_text = self.curation.get_snapshot("markdown")
         snapshot_text = Markdown(snapshot_text)
         self.console.print(snapshot_text)
 
