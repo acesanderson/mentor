@@ -23,6 +23,8 @@ from Kramer import (
     instructor_courses,
     get_course_prerequisites,
     get_curation_prerequisites,
+    analyze_course_for_orgs_and_tools,
+    analyze_curation_for_orgs_and_tools,
 )
 from Kramer.courses.FirstCourse import first_course, pretty_curriculum
 from Kramer.certs.GetCert import GetCert
@@ -906,6 +908,28 @@ class MentorChat(Chat):
             self.console.print("Course not found.")
             return
         self.console.print(Markdown(pretty_curriculum(first_course_curriculum)))
+
+    def command_consult_tools(self, param):
+        """
+        Go through a course (or curation) to identify orgs and tools mentioned.
+        Useful for identifying / crossing out potential partners.
+        """
+        # If user inputs "curation", get prerequisites for all courses in the curation.
+        if param == "curation":
+            if len(self.curation) > 0:
+                org_counter, tool_counter = analyze_curation_for_orgs_and_tools(
+                    self.curation
+                )
+                print(org_counter, tool_counter)
+            else:
+                raise ValueError("Curation is empty.")
+        # Or if we have a param, do a single course
+        course = self.parse_course_request(param)
+        if isinstance(course, Course):
+            org_counter, tool_counter = analyze_course_for_orgs_and_tools(course)
+            print(org_counter, tool_counter)
+        else:
+            raise ValueError("Course not found.")
 
     def command_consult_sequence(self):
         """
