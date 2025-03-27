@@ -14,7 +14,7 @@ Programming Generative AI: From Variational Autoencoders to Stable Diffusion wit
 Rough draft of a chatbot for building curations.
 TODO:
 - [ ] implement lazy loading
-- [ ] suppress logging
+- [ ] suppress logging from Curator
 - [ ] get queries to work
 - [x] allow multiple params for query commands
 - [x] fix encoding issues
@@ -23,40 +23,26 @@ TODO:
 - [x] query_model middleware parsing templates
 """
 
-from Chain import Chat, Model, Prompt, Chain, Message, MessageStore, ChainCache
-from Curator import Curate
-from Kramer import (
-    Course,
-    Get,
-    Curation,
-    LearningPath,
-    build_LearningPath_from_Curation,
-    Lens,
-    Laser,
-    instructor_courses,
-    get_course_prerequisites,
-    get_curation_prerequisites,
-    analyze_course_for_orgs_and_tools,
-    analyze_curation_for_orgs_and_tools,
-)
-from Kramer.courses.FirstCourse import first_course, pretty_curriculum
-from Kramer.certs.GetCert import GetCert
-from Mentor import (
-    Mentor,
-    review_curriculum,
-    classify_audience,
-    learner_progression,
-    Curriculum,
-)
-import readline  # This silently enables input history for `input`
 from rich.console import Console
-from rich.markdown import Markdown
-from datetime import timedelta
-import json
-from typing import TypeVar, Generic, Optional
-from enum import Enum
-from pathlib import Path
-import re
+
+# our imports
+# -----------------------------------------------------------------
+console = Console(width=120)  # for spinner
+
+with console.status("[green]Loading...", spinner="dots"):
+    from Chain import Chat, Model, Prompt, Chain, Message, MessageStore
+    from Kramer import (
+        Course,
+        Curation,
+    )
+    import readline  # This silently enables input history for `input`
+    from rich.markdown import Markdown
+    from datetime import timedelta
+    import json
+    from typing import TypeVar, Generic
+    from enum import Enum
+    from pathlib import Path
+    import re
 
 # Configs
 dir_path = Path(__file__).parent
@@ -89,7 +75,7 @@ class MentorChat(Chat):
     def __init__(self, model):
         super().__init__(model)
         self.welcome_message = "[green]Hello! Let's build a Curation together.[/green]"
-        self.console = Console(width=120)
+        self.console = console
         # The Curation we're building in the chat
         self.curation = self.load_curation()
         # Workspace = a bucket for all courses that have come up in the chat, either from user input, curate, mentor, etc.
@@ -101,7 +87,7 @@ class MentorChat(Chat):
         # We want a log file for this one.
         self.log_file = log_file
         # Save curriculum if it's generated.
-        self.curriculum: Optional[Curriculum] = None
+        self.curriculum = None
 
     # Functions
     def query_model(self, input: list[Message]) -> str | None:
@@ -168,6 +154,8 @@ class MentorChat(Chat):
         Numbering: starts in curation, then workspace.
         If course request is a string, return the course with that ID. (Get already parses course IDs v. titles)
         """
+        from Kramer import Get
+
         if (
             " " in course_request and course_request.replace(" ", "").isdigit()
         ):  # Multiple numbers
@@ -200,6 +188,8 @@ class MentorChat(Chat):
         """
         Add a course or courses to workspace, if not already there.
         """
+        from Kramer import Get
+
         course_titles = [course.course_title for course in self.workspace]
         if isinstance(payload, Course):
             if payload.course_title not in course_titles:
@@ -530,6 +520,8 @@ class MentorChat(Chat):
         """
         Get a list of courses by instructor name.
         """
+        from Kramer import instructor_courses
+
         instructor = param
         hits = instructor_courses(instructor)
         if hits:
@@ -543,6 +535,9 @@ class MentorChat(Chat):
         Similarity search courses by a query string.
         Logic is custom since Curator returns course name and score (not Course objects).
         """
+        from Curator import Curate
+        from Kramer import Get
+
         query = param
         results = Curate(query, n_results=100, k=10)
         results = [(Get(course), score) for course, score in results]
@@ -572,6 +567,8 @@ class MentorChat(Chat):
         """
         Have a Mentor generate a Curation.
         """
+        from Mentor import Mentor
+
         query = param
         curriculum, mentor_curation = Mentor(query, return_curriculum=True)
         self.curriculum = curriculum  # type: ignore
@@ -586,6 +583,8 @@ class MentorChat(Chat):
         """
         Get a cert for comparison purposes.
         """
+        from Kramer.certs.GetCert import GetCert
+
         cert_title = param
         cert = GetCert(cert_title, print_suggestions=False)
         # If not a complete match, just print out the top fuzzy match.
@@ -632,6 +631,8 @@ class MentorChat(Chat):
         """
         View the course cache.
         """
+        from Kramer import Get
+
         indices = sorted(list(self.course_cache.keys()))
         courses = []
         for index in indices:
@@ -642,6 +643,8 @@ class MentorChat(Chat):
         """
         View a curriculum if created.
         """
+        from Mentor import Curriculum
+
         if self.curriculum:
             for module in self.curriculum.modules:
                 border = "-" * 120
@@ -787,6 +790,8 @@ class MentorChat(Chat):
         """
         Build a Learning Path from the current curation.
         """
+        from Kramer import LearningPath, build_LearningPath_from_Curation
+
         if self.curation.title == "":
             self.console.print(
                 f"[red]Curation has no title. Set one with /name curation[/red]"
@@ -854,6 +859,8 @@ class MentorChat(Chat):
         """
         "Lens" performs text search across all transcript, returns course titles that contain the query string.
         """
+        from Kramer import Lens
+
         query = param
         hits = Lens(query)
         self.print_course_list(hits)
@@ -863,6 +870,8 @@ class MentorChat(Chat):
         """
         "Laser" searches for a query string in all course titles.
         """
+        from Kramer import Laser
+
         query = param
         hits = Laser(query)
         self.print_course_list(hits)
@@ -872,6 +881,8 @@ class MentorChat(Chat):
         """
         Have an L&D expert critique the curation. Need to pass an audience param.
         """
+        from Mentor import review_curriculum
+
         audience = param
         if not self.curation:
             self.console.print("No curation.")
@@ -885,6 +896,8 @@ class MentorChat(Chat):
         """
         Have a learner provide feedback on the curation. Need to pass an audience param.
         """
+        from Mentor import learner_progression
+
         audience = param
         if not self.curation:
             self.console.print("No curation.")
@@ -898,6 +911,8 @@ class MentorChat(Chat):
         """
         Classify the audience for the curation.
         """
+        from Mentor import classify_audience
+
         if not self.curation:
             self.console.print("No curation.")
             return
@@ -908,6 +923,8 @@ class MentorChat(Chat):
         """
         Get prerequisites for a course. (or entire curation -- input "curation")
         """
+        from Kramer import get_course_prerequisites, get_curation_prerequisites
+
         # If user inputs "curation", get prerequisites for all courses in the curation.
         if param == "curation":
             prereqs_dicts: list[dict] = get_curation_prerequisites(self.curation)
@@ -936,6 +953,8 @@ class MentorChat(Chat):
         """
         Consult for a curation based on the first, foundational course.
         """
+        from Kramer.courses.FirstCourse import first_course, pretty_curriculum
+
         course = self.parse_course_request(param)
         try:
             first_course_curriculum = first_course(course.course_title)
@@ -949,6 +968,11 @@ class MentorChat(Chat):
         Go through a course (or curation) to identify orgs and tools mentioned.
         Useful for identifying / crossing out potential partners.
         """
+        from Kramer import (
+            analyze_course_for_orgs_and_tools,
+            analyze_curation_for_orgs_and_tools,
+        )
+
         # If user inputs "curation", get prerequisites for all courses in the curation.
         if param == "curation":
             if len(self.curation) > 0:
