@@ -1,8 +1,21 @@
 """
+1. Programming Generative AI: From Variational Autoencoders to Stable Diffusion with PyTorch and Hugging Face
+>> /consult prereqs 1
+Model: o3-mini   Query: [Message(role='system', content='You are an expert curriculu...
+Cache hit!
+---------------------------------------------------------------------
+Programming Generative AI: From Variational Autoencoders to Stable Diffusion with PyTorch and Hugging Face
+---------------------------------------------------------------------
+• Proficient Python programming skills
+• Fundamental understanding of deep learning concepts (e.g., neural networks, gradient descent, and backpropagation)
+• Basic knowledge of linear algebra and tensor/matrix operations
+• Familiarity with interactive coding environments (e.g., Jupyter Notebook or Google Colab)
+
 Rough draft of a chatbot for building curations.
 TODO:
 - [ ] implement lazy loading
 - [ ] suppress logging
+- [ ] get queries to work
 - [x] allow multiple params for query commands
 - [x] fix encoding issues
 - [x] implement numbering for courses, and referencing by number
@@ -33,13 +46,14 @@ from Mentor import (
     review_curriculum,
     classify_audience,
     learner_progression,
+    Curriculum,
 )
 import readline  # This silently enables input history for `input`
 from rich.console import Console
 from rich.markdown import Markdown
 from datetime import timedelta
 import json
-from typing import TypeVar, Generic
+from typing import TypeVar, Generic, Optional
 from enum import Enum
 from pathlib import Path
 import re
@@ -86,6 +100,8 @@ class MentorChat(Chat):
         self.course_cache: dict[int, str] = {}
         # We want a log file for this one.
         self.log_file = log_file
+        # Save curriculum if it's generated.
+        self.curriculum: Optional[Curriculum] = None
 
     # Functions
     def query_model(self, input: list[Message]) -> str | None:
@@ -557,10 +573,11 @@ class MentorChat(Chat):
         Have a Mentor generate a Curation.
         """
         query = param
-        mentor = Mentor(query)
-        if mentor:
-            self.print_course_list(mentor.courses)
-            self.add_to_workspace(mentor.courses)
+        curriculum, mentor_curation = Mentor(query, return_curriculum=True)
+        self.curriculum = curriculum  # type: ignore
+        if mentor_curation:
+            self.print_course_list(mentor_curation.courses)  # type: ignore
+            self.add_to_workspace(mentor_curation.courses)  # type: ignore
         else:
             raise ValueError("Mentor returned None.")
 
@@ -620,6 +637,24 @@ class MentorChat(Chat):
         for index in indices:
             courses.append(Get(self.course_cache[index]))
         self.print_course_list(courses)
+
+    def command_view_curriculum(self):
+        """
+        View a curriculum if created.
+        """
+        if self.curriculum:
+            for module in self.curriculum.modules:
+                border = "-" * 120
+                self.console.print(border)
+                self.console.print(f"[green]{module.title}[/green]")
+                self.console.print(border)
+                self.console.print(f"[yellow]{module.description}[/yellow]")
+                self.console.print(
+                    f"[cyan]\t{"\n\t".join(module.learning_objectives)}[/cyan]"
+                )
+        else:
+            self.console.print("[red]No curriculum created.[/red]")
+            return
 
     def command_add_course(self, param):
         """
@@ -920,14 +955,33 @@ class MentorChat(Chat):
                 org_counter, tool_counter = analyze_curation_for_orgs_and_tools(
                     self.curation
                 )
-                print(org_counter, tool_counter)
+                combined_counter = org_counter + tool_counter
+                combined_counter = list(combined_counter.items())
+                combined_counter = sorted(
+                    combined_counter, key=lambda x: x[1], reverse=True
+                )
+                output = ""
+                for item in combined_counter:
+                    output += f"[green]{str(item[0])}[/green]: [yellow]{str(item[1])}[/yellow]\n"
+                self.console.print(output)
             else:
                 raise ValueError("Curation is empty.")
         # Or if we have a param, do a single course
         course = self.parse_course_request(param)
         if isinstance(course, Course):
             org_counter, tool_counter = analyze_course_for_orgs_and_tools(course)
-            print(org_counter, tool_counter)
+            # Combine org_counter and tool_counter into a combined_counter
+            combined_counter = org_counter + tool_counter
+            combined_counter = list(combined_counter.items())
+            combined_counter = sorted(
+                combined_counter, key=lambda x: x[1], reverse=True
+            )
+            output = ""
+            for item in combined_counter:
+                output += (
+                    f"[green]{str(item[0])}[/green]: [yellow]{str(item[1])}[/yellow]\n"
+                )
+            self.console.print(output)
         else:
             raise ValueError("Course not found.")
 

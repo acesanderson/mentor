@@ -27,6 +27,7 @@ import argparse
 Chain._message_store = MessageStore(log_file=".log.json")
 Model._chain_cache = ChainCache()
 preferred_model = "o3-mini"
+# preferred_model = "gemini2.5"
 
 
 # Persona prompts
@@ -270,14 +271,19 @@ def identify_courses(curriculum: Curriculum, cache=True) -> Curation:
     return curation_result
 
 
-def Mentor(topic: str, cache=True) -> Curation:
+def Mentor(
+    topic: str, cache=True, return_curriculum=False
+) -> Curation | tuple[Curriculum, Curation]:
     """
     Runs the entire Mentor pipeline.
     """
     ideal_curriculum = lnd_curriculum(topic, cache=cache)
     curriculum = curriculum_specialist_curriculum(ideal_curriculum, topic, cache=cache)
     curation = identify_courses(curriculum, cache=cache)
-    return curation
+    if return_curriculum:
+        return curriculum, curation
+    else:
+        return curation
 
 
 if __name__ == "__main__":
