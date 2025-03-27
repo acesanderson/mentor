@@ -88,6 +88,8 @@ class MentorChat(Chat):
         self.log_file = log_file
         # Save curriculum if it's generated.
         self.curriculum = None
+        # Last cert you viewed -- saved in case you want to look at it again or promote it to curation
+        self.last_cert = None
 
     # Functions
     def query_model(self, input: list[Message]) -> str | None:
@@ -579,20 +581,31 @@ class MentorChat(Chat):
             raise ValueError("Mentor returned None.")
 
     ## Get certs!
-    def command_view_cert(self, param):
+    def command_get_cert(self, param):
         """
         Get a cert for comparison purposes.
         """
         from Kramer.certs.GetCert import GetCert
 
-        cert_title = param
-        cert = GetCert(cert_title, print_suggestions=False)
+        if param == "last":
+            cert = self.last_cert
+        else:
+            cert_title = param
+            cert = GetCert(cert_title, print_suggestions=False)
         # If not a complete match, just print out the top fuzzy match.
         if isinstance(cert, list):
             cert = cert[0]
         self.console.print(f"[bold green]{cert.title}[/bold green]")  # type: ignore
         self.print_course_list(cert.courses)  # type: ignore
+        self.last_cert = cert
         self.add_to_workspace(cert.courses)  # type: ignore
+
+    def command_add_cert(self):
+        """
+        This takes the last cert viewed (through /get cert) and makes it the active curation.
+        """
+        self.curation = self.last_cert
+        self.console.print("[green]Curation replaced with last cert viewed.[/green]")
 
     ## Our functions for building / editing curations
     def command_name_curation(self, param):
@@ -601,6 +614,7 @@ class MentorChat(Chat):
         """
         name = param
         self.curation.title = name
+        self.save_curation()
         self.console.print(f"[green]Curation title changed: {name}[/green]")
 
     def command_view_duration(self):
@@ -620,11 +634,11 @@ class MentorChat(Chat):
         if self.curation == None or self.curation.courses == UniqueList():
             if self.curation.title:
                 self.console.print(
-                    f"[bold yellow]{self.curation.title}[/bold yellow]\n[red]No courses (yet).[/red]"
+                    f"[bold cyan]{self.curation.title}[/bold cyan]\n[red]No courses (yet).[/red]"
                 )
             self.console.print("[red]No curation (yet).[/red]")
         else:
-            self.console.print(f"[bold yellow]{self.curation.title}[/bold yellow]")
+            self.console.print(f"[bold cyan]{self.curation.title}[/bold cyan]")
             self.print_course_list(self.curation.courses)
 
     def command_view_cache(self):
@@ -754,21 +768,33 @@ class MentorChat(Chat):
             self.console.print("[red]Invalid input.[/red]")
 
     def command_move_up(self, param):
+        """
+        Move a course up in the curation.
+        """
         course = self.parse_course_request(param)
         if isinstance(course, Course):
             self.move_course(course, MoveDirection.UP)
 
     def command_move_down(self, param):
+        """
+        Move a course down in the curation.
+        """
         course = self.parse_course_request(param)
         if isinstance(course, Course):
             self.move_course(course, MoveDirection.DOWN)
 
     def command_move_bottom(self, param):
+        """
+        Move a course to the bottom of the curation."
+        """
         course = self.parse_course_request(param)
         if isinstance(course, Course):
             self.move_course(course, MoveDirection.BOTTOM)
 
     def command_move_top(self, param):
+        """
+        Move a course to the top of the curation.
+        """
         course = self.parse_course_request(param)
         if isinstance(course, Course):
             self.move_course(course, MoveDirection.TOP)
