@@ -605,6 +605,7 @@ class MentorChat(Chat):
         This takes the last cert viewed (through /get cert) and makes it the active curation.
         """
         self.curation = self.last_cert
+        self.save_curation()
         self.console.print("[green]Curation replaced with last cert viewed.[/green]")
 
     ## Our functions for building / editing curations
