@@ -10325,3 +10325,2027 @@
 [34mbuilding tools that power modern work makes them the perfect partner to guide professionals through [0m
 [34mimplementing effective agile practices.[0m
 
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create curricula for various[0m
+[33mprofessional audiences. [0m
+
+[33mHere are some examples of how you map out the audience for a given curriculum:[0m
+
+[33m================================[0m
+[33mEXAMPLE: Customer Success curriculum[0m
+[1;33m1[0m[33m. Early career people considering a Customer Success career path.[0m
+[1;33m2[0m[33m. People currently in customer service roles and who are looking to leverage their skills to move into [0m
+[33mmore specialized customer success positions.[0m
+[1;33m3[0m[33m. People in adjacent roles who want/need to embrace a service mindset[0m
+
+[33mEXAMPLE: Javascript curriculum[0m
+[33mBeginning web developers or programmers without experience in Javascript[0m
+
+[33mEXAMPLE: Docker curriculum[0m
+[33mSofware developers and DevOps Engineers[0m
+
+[33mEXAMPLE: DevOps curriculum[0m
+[33mDevOps Engineers, and developer [0m[33m/[0m[33m IT needing a basic understanding of DevOps practices[0m
+
+[33mEXAMPLE: Microservices curriculum[0m
+[33mDevelopers and architects who need to skill up on designing, building, and migrating systems to a [0m
+[33mmicroservices architecture.[0m
+
+[33mEXAMPLE: C++ curriculum[0m
+[33mThis audience is a little different from the Python certificate audience. While Python is a [0m[33m"gateway drug"[0m[33m [0m
+[33mto programming for a very wide audience, people who are interested in C++ are likely higher intent to be [0m
+[33msoftware developers. As such, this certificate presumes some basic conversational knowledge with [0m
+[33mprogramming, and ramps up more quickly from beginner to advanced topics.[0m
+[33mThree personas:[0m
+[33m* Beginners who want to start learning C++ programming from scratch and quickly progress to writing their [0m
+[33mown programs and applications.[0m
+[33m* Existing C++ programmers who want to take their skills to the next level by mastering more advanced [0m
+[33mconcepts, techniques, and best practices.[0m
+[33m* Developers coming from other programming languages who need to get up to speed with C++ syntax, [0m
+[33mfundamentals, and common design patterns.[0m
+
+[33mEXAMPLE: Business Skills for Nurses curriculum[0m
+[33mNurses who are keen to grow into mgmt positions[0m
+[33m================================[0m
+
+[33mLook at this list of course titles and descriptions for a new curriculum:[0m
+
+[33m================================[0m
+[33m**Agile Foundations**: Learn the foundational concepts you need to know to start thinking like an agile [0m
+[33mteam.[0m
+[33m**Scrum: The Basics**: Learn what scrum is and how you can start implementing it in your project management[0m
+[33mworkflow.[0m
+[33m**Agile Project Management with Jira Cloud: [0m[1;33m1[0m[33m Projects, Boards, and Issues**: Get an overview of agile [0m
+[33mmethodology and Jira, and learn how to use project boards, make logged issues more useful, and leverage the[0m
+[33mkanban method.[0m
+[33m**Agile Project Management with Jira Cloud: [0m[1;33m2[0m[33m Lean and Agile Processes**: Learn about lean and agile [0m
+[33mprinciples, scrum roles, Jira Query Language [0m[1;33m([0m[33mJQL[0m[1;33m)[0m[33m, and more.[0m
+[33m**Agile Project Management with Jira Cloud: [0m[1;33m3[0m[33m Advanced Topics**: Learn how to use filters, identify and [0m
+[33mclassify epics, and work with dashboards in Jira. Review lessons from all three courses in this series.[0m
+[33m**Mistakes to Avoid in Agile Project Management**: Learn how you can avoid common pitfalls of working in [0m
+[33magile project management.[0m
+
+[33m================================[0m
+
+[33mHow would you describe the audience for this learning path? Your answer should not be longer than [0m[1;33m100[0m[33m [0m
+[33mwords.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m# Agile Project Management Curriculum Audience[0m
+
+[34mThis curriculum targets three key groups:[0m
+
+[1;34m1[0m[34m. Project managers transitioning from traditional to agile methodologies who need practical implementation[0m
+[34mskills.[0m
+
+[1;34m2[0m[34m. Team members new to agile practices seeking to understand the mindset, principles, and common frameworks[0m
+[1;34m([0m[34mespecially Scrum[0m[1;34m)[0m[34m.[0m
+
+[1;34m3[0m[34m. Professionals in any role looking to effectively use Jira Cloud for agile project management, from basic[0m
+[34msetup through advanced features.[0m
+
+[34mThe content assumes minimal prior agile knowledge while providing sufficient depth for practical [0m
+[34mapplication in real work environments.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training programs for[0m
+[33mvarious professional audiences.[0m
+
+[33mHere are some examples of how you create descriptions of your learning programs:[0m
+
+[33m================================[0m
+[33mNursing professionals are expected to have both clinical and business skills to succeed in management [0m
+[33mroles. This learning path teaches the skills needed to excel in healthcare management: business basics, [0m
+[33mproject management, financial literacy, and how to use AI tools to enhance productivity. Tune in, pass the [0m
+[33mfinal exam, and earn your certificate.[0m
+
+[33mWant to learn what microservices are all about? This architecture pattern helps developers work faster and [0m
+[33mbuild more resilient systems. These courses cover everything from beginner foundations to advanced patterns[0m
+[33mand refactoring codebases. Tune in, pass the final exam, and earn your professional certificate.[0m
+
+[33mDevOps is not a framework or a workflow. DevOps ensures collaboration and communication between software [0m
+[33mengineers [0m[1;33m([0m[33mDev[0m[1;33m)[0m[33m and IT operations [0m[1;33m([0m[33mOps[0m[1;33m)[0m[33m. Whether you are new to DevOps or looking to review the [0m
+[33mfundamentals, these courses can help. Tune in, pass the final exam, and earn your certificate.[0m
+
+[33mC++ is renowned for its performance, control, and versatility. Ready to get started? Begin by mastering the[0m
+[33mfundamentals and then progress to proven techniques for writing well-organized, efficient code. By the end,[0m
+[33myou'll have the knowledge you need to create your own C++ programs and applications. Tune in, pass the [0m
+[33mfinal exam, and earn your professional certificate.[0m
+
+[33mContainers help developers pack up their applications, ensuring they run smoothly anywhere. Software [0m
+[33mdevelopers need to understand these technologies to deliver software as a team. Whether you are new to [0m
+[33mDocker or looking to review the fundamentals, these courses can help. Tune in, pass the final exam, and [0m
+[33mearn your certificate.[0m
+
+[33mJavaScript is the key to a career in front-end development. These courses equip you with essential skills [0m
+[33mto master the language, from fundamental concepts like variables and functions to advanced topics such as [0m
+[33masynchronous tasks and DOM scripting. With hands-on practice and real-time feedback, you'll gain the [0m
+[33mexpertise needed to excel in web development. Tune in, pass the final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mYour team is going to publish a certtificate program titled:[0m
+[33mAtlassian Agile Project Management Professional Certificate[0m
+
+[33mNow look at this list of course titles and descriptions for a curriculum:[0m
+
+[33m================================[0m
+[33m**Agile Foundations**: Learn the foundational concepts you need to know to start thinking like an agile [0m
+[33mteam.[0m
+[33m**Scrum: The Basics**: Learn what scrum is and how you can start implementing it in your project management[0m
+[33mworkflow.[0m
+[33m**Agile Project Management with Jira Cloud: [0m[1;33m1[0m[33m Projects, Boards, and Issues**: Get an overview of agile [0m
+[33mmethodology and Jira, and learn how to use project boards, make logged issues more useful, and leverage the[0m
+[33mkanban method.[0m
+[33m**Agile Project Management with Jira Cloud: [0m[1;33m2[0m[33m Lean and Agile Processes**: Learn about lean and agile [0m
+[33mprinciples, scrum roles, Jira Query Language [0m[1;33m([0m[33mJQL[0m[1;33m)[0m[33m, and more.[0m
+[33m**Agile Project Management with Jira Cloud: [0m[1;33m3[0m[33m Advanced Topics**: Learn how to use filters, identify and [0m
+[33mclassify epics, and work with dashboards in Jira. Review lessons from all three courses in this series.[0m
+[33m**Mistakes to Avoid in Agile Project Management**: Learn how you can avoid common pitfalls of working in [0m
+[33magile project management.[0m
+
+[33m================================[0m
+
+[33mHow would you describe this learning path? Structure your answer like the examples given above, and use [0m
+[33mthis overall pattern:[0m
+
+[1;33m1[0m[33m. **Introduction**: Introduce the topic or subject matter.[0m
+[1;33m2[0m[33m. **Value Proposition**: Highlight the benefits or outcomes of engaging with the content.[0m
+[1;33m3[0m[33m. **Course Overview**: Provide a brief overview of what the courses cover or what skills will be learned.[0m
+[1;33m4[0m[33m. **Call to Action**: The final sentence should always be [0m[33m"Tune in, pass the final exam, and earn your [0m
+[33mcertificate."[0m
+
+[33mThe length of your answer should be between [0m[1;33m40[0m[33m and [0m[1;33m60[0m[33m words.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mAgile project management is revolutionizing how teams deliver value. This certificate program teaches you [0m
+[34mAtlassian's approach to agile methodology using Jira Cloud, covering everything from foundational concepts [0m
+[34mto advanced implementation techniques. You'll learn scrum principles, kanban methods, and practical [0m
+[34mstrategies to avoid common agile pitfalls. Tune in, pass the final exam, and earn your certificate.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training programs for[0m
+[33mvarious professional audiences.[0m
+
+[33mYou are going to generate [0m[1;33m3[0m[33m-[0m[1;33m4[0m[33m learning objectives for a new curriculum. [0m
+
+[33mThe learning goals should be expressed as short sentences, with up to [0m[1;33m60[0m[33m characters each. Each sentence [0m
+[33mshould start with one of these verbs:[0m
+
+[33mPlan Analyze Identify Practice Create Discover Compare Explore Describe Research[0m
+
+[33mThe learning goals should address what the courses cover in sequence, to the extent that you can understand[0m
+[33mthat from the course descriptions.[0m
+
+[33mHere is the list of courses and descriptions for the curriculum.[0m
+
+[33m================================[0m
+[33m**Agile Foundations**: Learn the foundational concepts you need to know to start thinking like an agile [0m
+[33mteam.[0m
+[33m**Scrum: The Basics**: Learn what scrum is and how you can start implementing it in your project management[0m
+[33mworkflow.[0m
+[33m**Agile Project Management with Jira Cloud: [0m[1;33m1[0m[33m Projects, Boards, and Issues**: Get an overview of agile [0m
+[33mmethodology and Jira, and learn how to use project boards, make logged issues more useful, and leverage the[0m
+[33mkanban method.[0m
+[33m**Agile Project Management with Jira Cloud: [0m[1;33m2[0m[33m Lean and Agile Processes**: Learn about lean and agile [0m
+[33mprinciples, scrum roles, Jira Query Language [0m[1;33m([0m[33mJQL[0m[1;33m)[0m[33m, and more.[0m
+[33m**Agile Project Management with Jira Cloud: [0m[1;33m3[0m[33m Advanced Topics**: Learn how to use filters, identify and [0m
+[33mclassify epics, and work with dashboards in Jira. Review lessons from all three courses in this series.[0m
+[33m**Mistakes to Avoid in Agile Project Management**: Learn how you can avoid common pitfalls of working in [0m
+[33magile project management.[0m
+
+[33m================================[0m
+
+[33mYour answer should only be the learning objectives, in a numbered liss; no other text.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m1[0m[34m. Identify fundamental agile principles and mindset.[0m
+[1;34m2[0m[34m. Analyze scrum methodology for project workflow.[0m
+[1;34m3[0m[34m. Practice using Jira tools for agile project management.[0m
+[1;34m4[0m[34m. Compare lean principles and scrum roles in agile processes.[0m
+[1;34m5[0m[34m. Create effective Jira dashboards and manage epics.[0m
+[1;34m6[0m[34m. Discover common agile implementation pitfalls to avoid.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mThe following is a description of a professional certificate program that my company is going to publish:[0m
+
+[33m================================[0m
+[33mAgile project management is revolutionizing how teams deliver value. This certificate program teaches you [0m
+[33mAtlassian's approach to agile methodology using Jira Cloud, covering everything from foundational concepts [0m
+[33mto advanced implementation techniques. You'll learn scrum principles, kanban methods, and practical [0m
+[33mstrategies to avoid common agile pitfalls. Tune in, pass the final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mThis is the title of the program: Atlassian Agile Project Management Professional Certificate[0m
+
+[33mWrite a short congratulatory message that I can send to my colleagues to announce this partnership. [0m
+
+[33mStart with: [0m[33m"[0m[33m[[0m[33mPartner[0m[33m][0m[33m has signed for a [0m[33m!"[0m
+[33mThen a description of why the topic is important.[0m
+[33mThen a description of why the Partner is such a good fit for this topic.[0m
+[33mAnnouncement should be one paragraph, [0m[1;33m40[0m[33m-[0m[1;33m70[0m[33m words long.[0m
+
+[33mUse the following example announcements as context for this task.[0m
+
+[33m================================[0m
+[33mArista Networks has signed for a Network Automation Professional Certificate! Arista is the industry leader[0m
+[33min cloud networking for large data center, campus and routing environments [0m[1;33m([0m[33m$90bn market cap[0m[1;33m)[0m[33m and is the [0m
+[33mprimary networking services provider for big tech companies like Microsoft and Meta. [0m
+
+[33mThe American Nurses Association has signed on for a Business Skills for Nurses certificate! With over [0m[1;33m4[0m[33m [0m
+[33mmillion members, the ANA is the largest nursing industry association in the United States, with workforce [0m
+[33mdevelopment a critical part of its mission. This is part of a broader initiative across LinkedIn to get [0m
+[33mmore nurses on the platform. Per discussion with the ANA, the certificate will be unlocked for six months. [0m
+
+[33mMozilla has signed on for a Javascript Foundations Professional Certificate! As an early leader in open [0m
+[33msource software for the internet, Mozilla advocates for open web standards, net neutrality, and user [0m
+[33mprivacy. Their Developer Network [0m[1;33m([0m[33mMDN[0m[1;33m)[0m[33m is the go-to resource for web development documentation with over [0m
+[33m17M monthly users. As the third-most in-demand programming language for our users [0m[1;33m([0m[33mafter Python and Java[0m[1;33m)[0m[33m, [0m
+[33mthis certificate on Javascript fills an important gap in our library. We plan to follow this with [0m
+[33mcertificates on HTML and CSS.[0m
+
+[33mC++ Institute has signed for a C++ Programming Professional Certificate, for publication in FYQ1. C++ is [0m
+[33mthe third-most popular programming language after Python and C. The C++ Institute [0m[1;33m([0m[33ma subsidiary of OpenEDG[0m[1;33m)[0m
+[33mis the market leader in C++ training and certification.[0m
+
+[33mKong has signed for a Microservices Professional Certificate, for publication in FYQ1. Microservices is the[0m
+[33mmost popular architecture pattern for developers, and this certificate will complement our certificates on [0m
+[33mDocker and devops. Kong is a recognized leader in the field of microservices and API management.[0m
+[33m================================[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mAtlassian has signed for a Atlassian Agile Project Management Professional Certificate! In today's [0m
+[34mfast-paced business environment, agile methodologies have become essential for teams to deliver value [0m
+[34mquickly and adapt to changing requirements. Atlassian, with its industry-leading Jira platform used by over[0m
+[1;34m180[0m[34m,[0m[1;34m000[0m[34m companies worldwide, is uniquely positioned to teach these critical skills. Their expertise in [0m
+[34mbuilding tools that power modern work makes them the perfect partner to guide professionals through [0m
+[34mimplementing effective agile practices.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create curricula for various[0m
+[33mprofessional audiences. [0m
+
+[33mHere are some examples of how you map out the audience for a given curriculum:[0m
+
+[33m================================[0m
+[33mEXAMPLE: Customer Success curriculum[0m
+[1;33m1[0m[33m. Early career people considering a Customer Success career path.[0m
+[1;33m2[0m[33m. People currently in customer service roles and who are looking to leverage their skills to move into [0m
+[33mmore specialized customer success positions.[0m
+[1;33m3[0m[33m. People in adjacent roles who want/need to embrace a service mindset[0m
+
+[33mEXAMPLE: Javascript curriculum[0m
+[33mBeginning web developers or programmers without experience in Javascript[0m
+
+[33mEXAMPLE: Docker curriculum[0m
+[33mSofware developers and DevOps Engineers[0m
+
+[33mEXAMPLE: DevOps curriculum[0m
+[33mDevOps Engineers, and developer [0m[33m/[0m[33m IT needing a basic understanding of DevOps practices[0m
+
+[33mEXAMPLE: Microservices curriculum[0m
+[33mDevelopers and architects who need to skill up on designing, building, and migrating systems to a [0m
+[33mmicroservices architecture.[0m
+
+[33mEXAMPLE: C++ curriculum[0m
+[33mThis audience is a little different from the Python certificate audience. While Python is a [0m[33m"gateway drug"[0m[33m [0m
+[33mto programming for a very wide audience, people who are interested in C++ are likely higher intent to be [0m
+[33msoftware developers. As such, this certificate presumes some basic conversational knowledge with [0m
+[33mprogramming, and ramps up more quickly from beginner to advanced topics.[0m
+[33mThree personas:[0m
+[33m* Beginners who want to start learning C++ programming from scratch and quickly progress to writing their [0m
+[33mown programs and applications.[0m
+[33m* Existing C++ programmers who want to take their skills to the next level by mastering more advanced [0m
+[33mconcepts, techniques, and best practices.[0m
+[33m* Developers coming from other programming languages who need to get up to speed with C++ syntax, [0m
+[33mfundamentals, and common design patterns.[0m
+
+[33mEXAMPLE: Business Skills for Nurses curriculum[0m
+[33mNurses who are keen to grow into mgmt positions[0m
+[33m================================[0m
+
+[33mLook at this list of course titles and descriptions for a new curriculum:[0m
+
+[33m================================[0m
+[33m**Introduction to Data Science**: Get to know the exciting world of data science in this beginner-friendly [0m
+[33mcourse.[0m
+[33m**Statistics Foundations [0m[1;33m1[0m[33m: The Basics**: Learn to understand your data using basics of statistics, such as[0m
+[33mdefining the middle, mean, and median of your data set; measuring the standard deviation; and finding [0m
+[33moutliers.[0m
+[33m**Statistics Foundations [0m[1;33m3[0m[33m: Using Data Sets**: Go beyond the basics of statistics with practical, [0m
+[33mexample-based lessons to learn how data sets and statistics are used in the real world.[0m
+[33m**Learning Python**: Get started with Python, the popular and highly-readable object-oriented language.[0m
+[33m**Python Data Analysis**: Interested in using Python for data analysis? Learn how to use Python, NumPy, and[0m
+[33mpandas together to analyze data sets large and small.[0m
+
+[33m================================[0m
+
+[33mHow would you describe the audience for this learning path? Your answer should not be longer than [0m[1;33m100[0m[33m [0m
+[33mwords.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m# Audience for Data Science Learning Path[0m
+
+[34mEarly-career professionals or career changers interested in entering the data science field. This path [0m
+[34mtargets individuals with little to no prior experience who want to:[0m
+[1;34m1[0m[34m. Understand data science fundamentals[0m
+[1;34m2[0m[34m. Build a foundation in statistics[0m
+[1;34m3[0m[34m. Learn Python programming specifically for data analysis[0m
+
+[34mThe curriculum is designed for beginners who are methodically building skills to analyze data sets using [0m
+[34mindustry-standard tools and approaches.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training programs for[0m
+[33mvarious professional audiences.[0m
+
+[33mHere are some examples of how you create descriptions of your learning programs:[0m
+
+[33m================================[0m
+[33mNursing professionals are expected to have both clinical and business skills to succeed in management [0m
+[33mroles. This learning path teaches the skills needed to excel in healthcare management: business basics, [0m
+[33mproject management, financial literacy, and how to use AI tools to enhance productivity. Tune in, pass the [0m
+[33mfinal exam, and earn your certificate.[0m
+
+[33mWant to learn what microservices are all about? This architecture pattern helps developers work faster and [0m
+[33mbuild more resilient systems. These courses cover everything from beginner foundations to advanced patterns[0m
+[33mand refactoring codebases. Tune in, pass the final exam, and earn your professional certificate.[0m
+
+[33mDevOps is not a framework or a workflow. DevOps ensures collaboration and communication between software [0m
+[33mengineers [0m[1;33m([0m[33mDev[0m[1;33m)[0m[33m and IT operations [0m[1;33m([0m[33mOps[0m[1;33m)[0m[33m. Whether you are new to DevOps or looking to review the [0m
+[33mfundamentals, these courses can help. Tune in, pass the final exam, and earn your certificate.[0m
+
+[33mC++ is renowned for its performance, control, and versatility. Ready to get started? Begin by mastering the[0m
+[33mfundamentals and then progress to proven techniques for writing well-organized, efficient code. By the end,[0m
+[33myou'll have the knowledge you need to create your own C++ programs and applications. Tune in, pass the [0m
+[33mfinal exam, and earn your professional certificate.[0m
+
+[33mContainers help developers pack up their applications, ensuring they run smoothly anywhere. Software [0m
+[33mdevelopers need to understand these technologies to deliver software as a team. Whether you are new to [0m
+[33mDocker or looking to review the fundamentals, these courses can help. Tune in, pass the final exam, and [0m
+[33mearn your certificate.[0m
+
+[33mJavaScript is the key to a career in front-end development. These courses equip you with essential skills [0m
+[33mto master the language, from fundamental concepts like variables and functions to advanced topics such as [0m
+[33masynchronous tasks and DOM scripting. With hands-on practice and real-time feedback, you'll gain the [0m
+[33mexpertise needed to excel in web development. Tune in, pass the final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mYour team is going to publish a certtificate program titled:[0m
+[33mAnaconda Python for Data Science Professional Certificate[0m
+
+[33mNow look at this list of course titles and descriptions for a curriculum:[0m
+
+[33m================================[0m
+[33m**Introduction to Data Science**: Get to know the exciting world of data science in this beginner-friendly [0m
+[33mcourse.[0m
+[33m**Statistics Foundations [0m[1;33m1[0m[33m: The Basics**: Learn to understand your data using basics of statistics, such as[0m
+[33mdefining the middle, mean, and median of your data set; measuring the standard deviation; and finding [0m
+[33moutliers.[0m
+[33m**Statistics Foundations [0m[1;33m3[0m[33m: Using Data Sets**: Go beyond the basics of statistics with practical, [0m
+[33mexample-based lessons to learn how data sets and statistics are used in the real world.[0m
+[33m**Learning Python**: Get started with Python, the popular and highly-readable object-oriented language.[0m
+[33m**Python Data Analysis**: Interested in using Python for data analysis? Learn how to use Python, NumPy, and[0m
+[33mpandas together to analyze data sets large and small.[0m
+
+[33m================================[0m
+
+[33mHow would you describe this learning path? Structure your answer like the examples given above, and use [0m
+[33mthis overall pattern:[0m
+
+[1;33m1[0m[33m. **Introduction**: Introduce the topic or subject matter.[0m
+[1;33m2[0m[33m. **Value Proposition**: Highlight the benefits or outcomes of engaging with the content.[0m
+[1;33m3[0m[33m. **Course Overview**: Provide a brief overview of what the courses cover or what skills will be learned.[0m
+[1;33m4[0m[33m. **Call to Action**: The final sentence should always be [0m[33m"Tune in, pass the final exam, and earn your [0m
+[33mcertificate."[0m
+
+[33mThe length of your answer should be between [0m[1;33m40[0m[33m and [0m[1;33m60[0m[33m words.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mPython is the preferred language for data science professionals. This learning path teaches you how to [0m
+[34manalyze data with Python and Anaconda, covering both Python programming fundamentals and essential [0m
+[34mstatistical concepts. You'll master practical skills for handling real-world datasets using NumPy and [0m
+[34mpandas. Tune in, pass the final exam, and earn your certificate.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training programs for[0m
+[33mvarious professional audiences.[0m
+
+[33mYou are going to generate [0m[1;33m3[0m[33m-[0m[1;33m4[0m[33m learning objectives for a new curriculum. [0m
+
+[33mThe learning goals should be expressed as short sentences, with up to [0m[1;33m60[0m[33m characters each. Each sentence [0m
+[33mshould start with one of these verbs:[0m
+
+[33mPlan Analyze Identify Practice Create Discover Compare Explore Describe Research[0m
+
+[33mThe learning goals should address what the courses cover in sequence, to the extent that you can understand[0m
+[33mthat from the course descriptions.[0m
+
+[33mHere is the list of courses and descriptions for the curriculum.[0m
+
+[33m================================[0m
+[33m**Introduction to Data Science**: Get to know the exciting world of data science in this beginner-friendly [0m
+[33mcourse.[0m
+[33m**Statistics Foundations [0m[1;33m1[0m[33m: The Basics**: Learn to understand your data using basics of statistics, such as[0m
+[33mdefining the middle, mean, and median of your data set; measuring the standard deviation; and finding [0m
+[33moutliers.[0m
+[33m**Statistics Foundations [0m[1;33m3[0m[33m: Using Data Sets**: Go beyond the basics of statistics with practical, [0m
+[33mexample-based lessons to learn how data sets and statistics are used in the real world.[0m
+[33m**Learning Python**: Get started with Python, the popular and highly-readable object-oriented language.[0m
+[33m**Python Data Analysis**: Interested in using Python for data analysis? Learn how to use Python, NumPy, and[0m
+[33mpandas together to analyze data sets large and small.[0m
+
+[33m================================[0m
+
+[33mYour answer should only be the learning objectives, in a numbered liss; no other text.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m1[0m[34m. Identify basic data science concepts and terminology.[0m
+[1;34m2[0m[34m. Compare statistical measures and their applications.[0m
+[1;34m3[0m[34m. Analyze real-world data sets using statistical methods.[0m
+[1;34m4[0m[34m. Create data analysis solutions using Python programming.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mThe following is a description of a professional certificate program that my company is going to publish:[0m
+
+[33m================================[0m
+[33mPython is the preferred language for data science professionals. This learning path teaches you how to [0m
+[33manalyze data with Python and Anaconda, covering both Python programming fundamentals and essential [0m
+[33mstatistical concepts. You'll master practical skills for handling real-world datasets using NumPy and [0m
+[33mpandas. Tune in, pass the final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mThis is the title of the program: Anaconda Python for Data Science Professional Certificate[0m
+
+[33mWrite a short congratulatory message that I can send to my colleagues to announce this partnership. [0m
+
+[33mStart with: [0m[33m"[0m[33m[[0m[33mPartner[0m[33m][0m[33m has signed for a [0m[33m!"[0m
+[33mThen a description of why the topic is important.[0m
+[33mThen a description of why the Partner is such a good fit for this topic.[0m
+[33mAnnouncement should be one paragraph, [0m[1;33m40[0m[33m-[0m[1;33m70[0m[33m words long.[0m
+
+[33mUse the following example announcements as context for this task.[0m
+
+[33m================================[0m
+[33mArista Networks has signed for a Network Automation Professional Certificate! Arista is the industry leader[0m
+[33min cloud networking for large data center, campus and routing environments [0m[1;33m([0m[33m$90bn market cap[0m[1;33m)[0m[33m and is the [0m
+[33mprimary networking services provider for big tech companies like Microsoft and Meta. [0m
+
+[33mThe American Nurses Association has signed on for a Business Skills for Nurses certificate! With over [0m[1;33m4[0m[33m [0m
+[33mmillion members, the ANA is the largest nursing industry association in the United States, with workforce [0m
+[33mdevelopment a critical part of its mission. This is part of a broader initiative across LinkedIn to get [0m
+[33mmore nurses on the platform. Per discussion with the ANA, the certificate will be unlocked for six months. [0m
+
+[33mMozilla has signed on for a Javascript Foundations Professional Certificate! As an early leader in open [0m
+[33msource software for the internet, Mozilla advocates for open web standards, net neutrality, and user [0m
+[33mprivacy. Their Developer Network [0m[1;33m([0m[33mMDN[0m[1;33m)[0m[33m is the go-to resource for web development documentation with over [0m
+[33m17M monthly users. As the third-most in-demand programming language for our users [0m[1;33m([0m[33mafter Python and Java[0m[1;33m)[0m[33m, [0m
+[33mthis certificate on Javascript fills an important gap in our library. We plan to follow this with [0m
+[33mcertificates on HTML and CSS.[0m
+
+[33mC++ Institute has signed for a C++ Programming Professional Certificate, for publication in FYQ1. C++ is [0m
+[33mthe third-most popular programming language after Python and C. The C++ Institute [0m[1;33m([0m[33ma subsidiary of OpenEDG[0m[1;33m)[0m
+[33mis the market leader in C++ training and certification.[0m
+
+[33mKong has signed for a Microservices Professional Certificate, for publication in FYQ1. Microservices is the[0m
+[33mmost popular architecture pattern for developers, and this certificate will complement our certificates on [0m
+[33mDocker and devops. Kong is a recognized leader in the field of microservices and API management.[0m
+[33m================================[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mAnaconda has signed for a Anaconda Python for Data Science Professional Certificate! Python is the most [0m
+[34min-demand programming language for data science professionals, making this certificate essential for [0m
+[34mlearners entering the field. Anaconda, the creator of the industry-standard Python data science platform [0m
+[34mused by over [0m[1;34m30[0m[34m million people worldwide, brings unparalleled expertise to this collaboration. Their [0m
+[34mdistribution includes key packages like NumPy and pandas that are essential for real-world data analysis.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create curricula for various[0m
+[33mprofessional audiences. [0m
+
+[33mHere are some examples of how you map out the audience for a given curriculum:[0m
+
+[33m================================[0m
+[33mEXAMPLE: Customer Success curriculum[0m
+[1;33m1[0m[33m. Early career people considering a Customer Success career path.[0m
+[1;33m2[0m[33m. People currently in customer service roles and who are looking to leverage their skills to move into [0m
+[33mmore specialized customer success positions.[0m
+[1;33m3[0m[33m. People in adjacent roles who want/need to embrace a service mindset[0m
+
+[33mEXAMPLE: Javascript curriculum[0m
+[33mBeginning web developers or programmers without experience in Javascript[0m
+
+[33mEXAMPLE: Docker curriculum[0m
+[33mSofware developers and DevOps Engineers[0m
+
+[33mEXAMPLE: DevOps curriculum[0m
+[33mDevOps Engineers, and developer [0m[33m/[0m[33m IT needing a basic understanding of DevOps practices[0m
+
+[33mEXAMPLE: Microservices curriculum[0m
+[33mDevelopers and architects who need to skill up on designing, building, and migrating systems to a [0m
+[33mmicroservices architecture.[0m
+
+[33mEXAMPLE: C++ curriculum[0m
+[33mThis audience is a little different from the Python certificate audience. While Python is a [0m[33m"gateway drug"[0m[33m [0m
+[33mto programming for a very wide audience, people who are interested in C++ are likely higher intent to be [0m
+[33msoftware developers. As such, this certificate presumes some basic conversational knowledge with [0m
+[33mprogramming, and ramps up more quickly from beginner to advanced topics.[0m
+[33mThree personas:[0m
+[33m* Beginners who want to start learning C++ programming from scratch and quickly progress to writing their [0m
+[33mown programs and applications.[0m
+[33m* Existing C++ programmers who want to take their skills to the next level by mastering more advanced [0m
+[33mconcepts, techniques, and best practices.[0m
+[33m* Developers coming from other programming languages who need to get up to speed with C++ syntax, [0m
+[33mfundamentals, and common design patterns.[0m
+
+[33mEXAMPLE: Business Skills for Nurses curriculum[0m
+[33mNurses who are keen to grow into mgmt positions[0m
+[33m================================[0m
+
+[33mLook at this list of course titles and descriptions for a new curriculum:[0m
+
+[33m================================[0m
+[33m**Learning the JavaScript Language**: Gain a conversant understanding of JavaScript, including variables, [0m
+[33mtypes, objects, arrays, operators, control structures, loops, and functions.[0m
+[33m**JavaScript Essential Training**: Get hands-on experience scripting in JavaScript. Learn how to work with [0m
+[33mobjects, variables, data types, conditionals, functions, loops, the DOM, and more.[0m
+
+[33m================================[0m
+
+[33mHow would you describe the audience for this learning path? Your answer should not be longer than [0m[1;33m100[0m[33m [0m
+[33mwords.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m# Audience for JavaScript Learning Path[0m
+
+[34mThis learning path is designed for:[0m
+
+[1;34m1[0m[34m. Complete beginners with no prior JavaScript experience who want to learn the fundamentals of the [0m
+[34mlanguage from scratch.[0m
+
+[1;34m2[0m[34m. Web development enthusiasts looking to add basic JavaScript skills to their toolkit.[0m
+
+[1;34m3[0m[34m. Professionals in adjacent technical fields [0m[1;34m([0m[34msuch as HTML/CSS developers, designers, or IT staff[0m[1;34m)[0m[34m who [0m
+[34mneed to understand JavaScript basics for their roles.[0m
+
+[34mThe curriculum builds from foundational concepts to hands-on practice, making it suitable for those seeking[0m
+[34mto establish core JavaScript competency without advanced programming knowledge.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training programs for[0m
+[33mvarious professional audiences.[0m
+
+[33mHere are some examples of how you create descriptions of your learning programs:[0m
+
+[33m================================[0m
+[33mNursing professionals are expected to have both clinical and business skills to succeed in management [0m
+[33mroles. This learning path teaches the skills needed to excel in healthcare management: business basics, [0m
+[33mproject management, financial literacy, and how to use AI tools to enhance productivity. Tune in, pass the [0m
+[33mfinal exam, and earn your certificate.[0m
+
+[33mWant to learn what microservices are all about? This architecture pattern helps developers work faster and [0m
+[33mbuild more resilient systems. These courses cover everything from beginner foundations to advanced patterns[0m
+[33mand refactoring codebases. Tune in, pass the final exam, and earn your professional certificate.[0m
+
+[33mDevOps is not a framework or a workflow. DevOps ensures collaboration and communication between software [0m
+[33mengineers [0m[1;33m([0m[33mDev[0m[1;33m)[0m[33m and IT operations [0m[1;33m([0m[33mOps[0m[1;33m)[0m[33m. Whether you are new to DevOps or looking to review the [0m
+[33mfundamentals, these courses can help. Tune in, pass the final exam, and earn your certificate.[0m
+
+[33mC++ is renowned for its performance, control, and versatility. Ready to get started? Begin by mastering the[0m
+[33mfundamentals and then progress to proven techniques for writing well-organized, efficient code. By the end,[0m
+[33myou'll have the knowledge you need to create your own C++ programs and applications. Tune in, pass the [0m
+[33mfinal exam, and earn your professional certificate.[0m
+
+[33mContainers help developers pack up their applications, ensuring they run smoothly anywhere. Software [0m
+[33mdevelopers need to understand these technologies to deliver software as a team. Whether you are new to [0m
+[33mDocker or looking to review the fundamentals, these courses can help. Tune in, pass the final exam, and [0m
+[33mearn your certificate.[0m
+
+[33mJavaScript is the key to a career in front-end development. These courses equip you with essential skills [0m
+[33mto master the language, from fundamental concepts like variables and functions to advanced topics such as [0m
+[33masynchronous tasks and DOM scripting. With hands-on practice and real-time feedback, you'll gain the [0m
+[33mexpertise needed to excel in web development. Tune in, pass the final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mYour team is going to publish a certtificate program titled:[0m
+[33mJavaScript Foundations Professional Certificate by Mozilla[0m
+
+[33mNow look at this list of course titles and descriptions for a curriculum:[0m
+
+[33m================================[0m
+[33m**Learning the JavaScript Language**: Gain a conversant understanding of JavaScript, including variables, [0m
+[33mtypes, objects, arrays, operators, control structures, loops, and functions.[0m
+[33m**JavaScript Essential Training**: Get hands-on experience scripting in JavaScript. Learn how to work with [0m
+[33mobjects, variables, data types, conditionals, functions, loops, the DOM, and more.[0m
+
+[33m================================[0m
+
+[33mHow would you describe this learning path? Structure your answer like the examples given above, and use [0m
+[33mthis overall pattern:[0m
+
+[1;33m1[0m[33m. **Introduction**: Introduce the topic or subject matter.[0m
+[1;33m2[0m[33m. **Value Proposition**: Highlight the benefits or outcomes of engaging with the content.[0m
+[1;33m3[0m[33m. **Course Overview**: Provide a brief overview of what the courses cover or what skills will be learned.[0m
+[1;33m4[0m[33m. **Call to Action**: The final sentence should always be [0m[33m"Tune in, pass the final exam, and earn your [0m
+[33mcertificate."[0m
+
+[33mThe length of your answer should be between [0m[1;33m40[0m[33m and [0m[1;33m60[0m[33m words.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mJavaScript is the foundation of modern web development. This learning path teaches you the core language [0m
+[34mconcepts that every front-end developer needs to master. You'll learn everything from basic syntax to DOM [0m
+[34mmanipulation through hands-on practice with real-world examples. Tune in, pass the final exam, and earn [0m
+[34myour certificate.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training programs for[0m
+[33mvarious professional audiences.[0m
+
+[33mYou are going to generate [0m[1;33m3[0m[33m-[0m[1;33m4[0m[33m learning objectives for a new curriculum. [0m
+
+[33mThe learning goals should be expressed as short sentences, with up to [0m[1;33m60[0m[33m characters each. Each sentence [0m
+[33mshould start with one of these verbs:[0m
+
+[33mPlan Analyze Identify Practice Create Discover Compare Explore Describe Research[0m
+
+[33mThe learning goals should address what the courses cover in sequence, to the extent that you can understand[0m
+[33mthat from the course descriptions.[0m
+
+[33mHere is the list of courses and descriptions for the curriculum.[0m
+
+[33m================================[0m
+[33m**Learning the JavaScript Language**: Gain a conversant understanding of JavaScript, including variables, [0m
+[33mtypes, objects, arrays, operators, control structures, loops, and functions.[0m
+[33m**JavaScript Essential Training**: Get hands-on experience scripting in JavaScript. Learn how to work with [0m
+[33mobjects, variables, data types, conditionals, functions, loops, the DOM, and more.[0m
+
+[33m================================[0m
+
+[33mYour answer should only be the learning objectives, in a numbered liss; no other text.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m1[0m[34m. Identify JavaScript fundamentals and syntax.[0m
+[1;34m2[0m[34m. Explore objects, arrays, and control structures in JS.[0m
+[1;34m3[0m[34m. Practice manipulating the DOM with JavaScript functions.[0m
+[1;34m4[0m[34m. Create scripts using JavaScript programming techniques.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mThe following is a description of a professional certificate program that my company is going to publish:[0m
+
+[33m================================[0m
+[33mJavaScript is the foundation of modern web development. This learning path teaches you the core language [0m
+[33mconcepts that every front-end developer needs to master. You'll learn everything from basic syntax to DOM [0m
+[33mmanipulation through hands-on practice with real-world examples. Tune in, pass the final exam, and earn [0m
+[33myour certificate.[0m
+[33m================================[0m
+
+[33mThis is the title of the program: JavaScript Foundations Professional Certificate by Mozilla[0m
+
+[33mWrite a short congratulatory message that I can send to my colleagues to announce this partnership. [0m
+
+[33mStart with: [0m[33m"[0m[33m[[0m[33mPartner[0m[33m][0m[33m has signed for a [0m[33m!"[0m
+[33mThen a description of why the topic is important.[0m
+[33mThen a description of why the Partner is such a good fit for this topic.[0m
+[33mAnnouncement should be one paragraph, [0m[1;33m40[0m[33m-[0m[1;33m70[0m[33m words long.[0m
+
+[33mUse the following example announcements as context for this task.[0m
+
+[33m================================[0m
+[33mArista Networks has signed for a Network Automation Professional Certificate! Arista is the industry leader[0m
+[33min cloud networking for large data center, campus and routing environments [0m[1;33m([0m[33m$90bn market cap[0m[1;33m)[0m[33m and is the [0m
+[33mprimary networking services provider for big tech companies like Microsoft and Meta. [0m
+
+[33mThe American Nurses Association has signed on for a Business Skills for Nurses certificate! With over [0m[1;33m4[0m[33m [0m
+[33mmillion members, the ANA is the largest nursing industry association in the United States, with workforce [0m
+[33mdevelopment a critical part of its mission. This is part of a broader initiative across LinkedIn to get [0m
+[33mmore nurses on the platform. Per discussion with the ANA, the certificate will be unlocked for six months. [0m
+
+[33mMozilla has signed on for a Javascript Foundations Professional Certificate! As an early leader in open [0m
+[33msource software for the internet, Mozilla advocates for open web standards, net neutrality, and user [0m
+[33mprivacy. Their Developer Network [0m[1;33m([0m[33mMDN[0m[1;33m)[0m[33m is the go-to resource for web development documentation with over [0m
+[33m17M monthly users. As the third-most in-demand programming language for our users [0m[1;33m([0m[33mafter Python and Java[0m[1;33m)[0m[33m, [0m
+[33mthis certificate on Javascript fills an important gap in our library. We plan to follow this with [0m
+[33mcertificates on HTML and CSS.[0m
+
+[33mC++ Institute has signed for a C++ Programming Professional Certificate, for publication in FYQ1. C++ is [0m
+[33mthe third-most popular programming language after Python and C. The C++ Institute [0m[1;33m([0m[33ma subsidiary of OpenEDG[0m[1;33m)[0m
+[33mis the market leader in C++ training and certification.[0m
+
+[33mKong has signed for a Microservices Professional Certificate, for publication in FYQ1. Microservices is the[0m
+[33mmost popular architecture pattern for developers, and this certificate will complement our certificates on [0m
+[33mDocker and devops. Kong is a recognized leader in the field of microservices and API management.[0m
+[33m================================[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mMozilla has signed for a JavaScript Foundations Professional Certificate by Mozilla! JavaScript is the [0m
+[34mbackbone of modern web development, essential for creating interactive and dynamic websites. Mozilla is the[0m
+[34mperfect partner for this certificate, as their Mozilla Developer Network [0m[1;34m([0m[34mMDN[0m[1;34m)[0m[34m has long been the [0m
+[34mindustry-standard reference for web developers, and their commitment to open web standards ensures content [0m
+[34mthat aligns with best practices in the field.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create curricula for various[0m
+[33mprofessional audiences. [0m
+
+[33mHere are some examples of how you map out the audience for a given curriculum:[0m
+
+[33m================================[0m
+[33mEXAMPLE: Customer Success curriculum[0m
+[1;33m1[0m[33m. Early career people considering a Customer Success career path.[0m
+[1;33m2[0m[33m. People currently in customer service roles and who are looking to leverage their skills to move into [0m
+[33mmore specialized customer success positions.[0m
+[1;33m3[0m[33m. People in adjacent roles who want/need to embrace a service mindset[0m
+
+[33mEXAMPLE: Javascript curriculum[0m
+[33mBeginning web developers or programmers without experience in Javascript[0m
+
+[33mEXAMPLE: Docker curriculum[0m
+[33mSofware developers and DevOps Engineers[0m
+
+[33mEXAMPLE: DevOps curriculum[0m
+[33mDevOps Engineers, and developer [0m[33m/[0m[33m IT needing a basic understanding of DevOps practices[0m
+
+[33mEXAMPLE: Microservices curriculum[0m
+[33mDevelopers and architects who need to skill up on designing, building, and migrating systems to a [0m
+[33mmicroservices architecture.[0m
+
+[33mEXAMPLE: C++ curriculum[0m
+[33mThis audience is a little different from the Python certificate audience. While Python is a [0m[33m"gateway drug"[0m[33m [0m
+[33mto programming for a very wide audience, people who are interested in C++ are likely higher intent to be [0m
+[33msoftware developers. As such, this certificate presumes some basic conversational knowledge with [0m
+[33mprogramming, and ramps up more quickly from beginner to advanced topics.[0m
+[33mThree personas:[0m
+[33m* Beginners who want to start learning C++ programming from scratch and quickly progress to writing their [0m
+[33mown programs and applications.[0m
+[33m* Existing C++ programmers who want to take their skills to the next level by mastering more advanced [0m
+[33mconcepts, techniques, and best practices.[0m
+[33m* Developers coming from other programming languages who need to get up to speed with C++ syntax, [0m
+[33mfundamentals, and common design patterns.[0m
+
+[33mEXAMPLE: Business Skills for Nurses curriculum[0m
+[33mNurses who are keen to grow into mgmt positions[0m
+[33m================================[0m
+
+[33mLook at this list of course titles and descriptions for a new curriculum:[0m
+
+[33m================================[0m
+[33m**Java Essential Training: Syntax and Structure**: This course provides a foundation for learning how to [0m
+[33mprogram with the most recent Long-Term Support [0m[1;33m([0m[33mLTS[0m[1;33m)[0m[33m release, Java [0m[1;33m17[0m[33m.[0m
+[33m**Java Essential Training: Objects and APIs**: Learn the essentials of functional programming with objects [0m
+[33mand APIs in the most recent long-term support release, Java [0m[1;33m17[0m[33m.[0m
+[33m**Java Object-Oriented Programming**: Learn how to use the object-oriented programming model to write code [0m
+[33mthat's secure, scalable, and easier to troubleshoot.[0m
+[33m**Java: Data Structures**: Find out what data structures are, what things to consider when choosing which [0m
+[33mdata structure to use, and which data structures are the most common in Java.[0m
+[33m**Learning JDBC**: Learn the skills to effectively integrate and manage data from relational databases like[0m
+[33mPostgreSQL, Oracle, MySQL, and SQL Server into Java applications using the JDBC API.[0m
+
+[33m================================[0m
+
+[33mHow would you describe the audience for this learning path? Your answer should not be longer than [0m[1;33m100[0m[33m [0m
+[33mwords.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m# Java Programming Curriculum Audience[0m
+
+[34mThis curriculum targets both new and experienced programmers looking to develop Java programming skills:[0m
+
+[1;34m1[0m[34m. Beginning programmers wanting to learn Java as a first or second language[0m
+[1;34m2[0m[34m. Experienced developers from other languages transitioning to Java[0m
+[1;34m3[0m[34m. Existing Java programmers looking to strengthen their foundation in Java [0m[1;34m17[0m[34m [0m[1;34m([0m[34mLTS[0m[1;34m)[0m
+[1;34m4[0m[34m. Software developers seeking to improve their understanding of Java OOP principles, data structures, and [0m
+[34mdatabase integration[0m
+[1;34m5[0m[34m. Students or professionals aiming to build enterprise applications using Java's ecosystem[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training programs for[0m
+[33mvarious professional audiences.[0m
+
+[33mHere are some examples of how you create descriptions of your learning programs:[0m
+
+[33m================================[0m
+[33mNursing professionals are expected to have both clinical and business skills to succeed in management [0m
+[33mroles. This learning path teaches the skills needed to excel in healthcare management: business basics, [0m
+[33mproject management, financial literacy, and how to use AI tools to enhance productivity. Tune in, pass the [0m
+[33mfinal exam, and earn your certificate.[0m
+
+[33mWant to learn what microservices are all about? This architecture pattern helps developers work faster and [0m
+[33mbuild more resilient systems. These courses cover everything from beginner foundations to advanced patterns[0m
+[33mand refactoring codebases. Tune in, pass the final exam, and earn your professional certificate.[0m
+
+[33mDevOps is not a framework or a workflow. DevOps ensures collaboration and communication between software [0m
+[33mengineers [0m[1;33m([0m[33mDev[0m[1;33m)[0m[33m and IT operations [0m[1;33m([0m[33mOps[0m[1;33m)[0m[33m. Whether you are new to DevOps or looking to review the [0m
+[33mfundamentals, these courses can help. Tune in, pass the final exam, and earn your certificate.[0m
+
+[33mC++ is renowned for its performance, control, and versatility. Ready to get started? Begin by mastering the[0m
+[33mfundamentals and then progress to proven techniques for writing well-organized, efficient code. By the end,[0m
+[33myou'll have the knowledge you need to create your own C++ programs and applications. Tune in, pass the [0m
+[33mfinal exam, and earn your professional certificate.[0m
+
+[33mContainers help developers pack up their applications, ensuring they run smoothly anywhere. Software [0m
+[33mdevelopers need to understand these technologies to deliver software as a team. Whether you are new to [0m
+[33mDocker or looking to review the fundamentals, these courses can help. Tune in, pass the final exam, and [0m
+[33mearn your certificate.[0m
+
+[33mJavaScript is the key to a career in front-end development. These courses equip you with essential skills [0m
+[33mto master the language, from fundamental concepts like variables and functions to advanced topics such as [0m
+[33masynchronous tasks and DOM scripting. With hands-on practice and real-time feedback, you'll gain the [0m
+[33mexpertise needed to excel in web development. Tune in, pass the final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mYour team is going to publish a certtificate program titled:[0m
+[33mJava Foundations Professional Certificate by JetBrains[0m
+
+[33mNow look at this list of course titles and descriptions for a curriculum:[0m
+
+[33m================================[0m
+[33m**Java Essential Training: Syntax and Structure**: This course provides a foundation for learning how to [0m
+[33mprogram with the most recent Long-Term Support [0m[1;33m([0m[33mLTS[0m[1;33m)[0m[33m release, Java [0m[1;33m17[0m[33m.[0m
+[33m**Java Essential Training: Objects and APIs**: Learn the essentials of functional programming with objects [0m
+[33mand APIs in the most recent long-term support release, Java [0m[1;33m17[0m[33m.[0m
+[33m**Java Object-Oriented Programming**: Learn how to use the object-oriented programming model to write code [0m
+[33mthat's secure, scalable, and easier to troubleshoot.[0m
+[33m**Java: Data Structures**: Find out what data structures are, what things to consider when choosing which [0m
+[33mdata structure to use, and which data structures are the most common in Java.[0m
+[33m**Learning JDBC**: Learn the skills to effectively integrate and manage data from relational databases like[0m
+[33mPostgreSQL, Oracle, MySQL, and SQL Server into Java applications using the JDBC API.[0m
+
+[33m================================[0m
+
+[33mHow would you describe this learning path? Structure your answer like the examples given above, and use [0m
+[33mthis overall pattern:[0m
+
+[1;33m1[0m[33m. **Introduction**: Introduce the topic or subject matter.[0m
+[1;33m2[0m[33m. **Value Proposition**: Highlight the benefits or outcomes of engaging with the content.[0m
+[1;33m3[0m[33m. **Course Overview**: Provide a brief overview of what the courses cover or what skills will be learned.[0m
+[1;33m4[0m[33m. **Call to Action**: The final sentence should always be [0m[33m"Tune in, pass the final exam, and earn your [0m
+[33mcertificate."[0m
+
+[33mThe length of your answer should be between [0m[1;33m40[0m[33m and [0m[1;33m60[0m[33m words.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mJava is the versatile language powering enterprise applications worldwide. This learning path takes you [0m
+[34mfrom basic syntax to advanced concepts like object-oriented programming and data structures. You'll master [0m
+[34messential skills for building robust applications and effectively managing database interactions with JDBC.[0m
+[34mTune in, pass the final exam, and earn your certificate.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training programs for[0m
+[33mvarious professional audiences.[0m
+
+[33mYou are going to generate [0m[1;33m3[0m[33m-[0m[1;33m4[0m[33m learning objectives for a new curriculum. [0m
+
+[33mThe learning goals should be expressed as short sentences, with up to [0m[1;33m60[0m[33m characters each. Each sentence [0m
+[33mshould start with one of these verbs:[0m
+
+[33mPlan Analyze Identify Practice Create Discover Compare Explore Describe Research[0m
+
+[33mThe learning goals should address what the courses cover in sequence, to the extent that you can understand[0m
+[33mthat from the course descriptions.[0m
+
+[33mHere is the list of courses and descriptions for the curriculum.[0m
+
+[33m================================[0m
+[33m**Java Essential Training: Syntax and Structure**: This course provides a foundation for learning how to [0m
+[33mprogram with the most recent Long-Term Support [0m[1;33m([0m[33mLTS[0m[1;33m)[0m[33m release, Java [0m[1;33m17[0m[33m.[0m
+[33m**Java Essential Training: Objects and APIs**: Learn the essentials of functional programming with objects [0m
+[33mand APIs in the most recent long-term support release, Java [0m[1;33m17[0m[33m.[0m
+[33m**Java Object-Oriented Programming**: Learn how to use the object-oriented programming model to write code [0m
+[33mthat's secure, scalable, and easier to troubleshoot.[0m
+[33m**Java: Data Structures**: Find out what data structures are, what things to consider when choosing which [0m
+[33mdata structure to use, and which data structures are the most common in Java.[0m
+[33m**Learning JDBC**: Learn the skills to effectively integrate and manage data from relational databases like[0m
+[33mPostgreSQL, Oracle, MySQL, and SQL Server into Java applications using the JDBC API.[0m
+
+[33m================================[0m
+
+[33mYour answer should only be the learning objectives, in a numbered liss; no other text.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m1[0m[34m. Identify Java [0m[1;34m17[0m[34m syntax and structure fundamentals.[0m
+[1;34m2[0m[34m. Analyze objects and APIs in functional programming.[0m
+[1;34m3[0m[34m. Create secure, scalable code with OOP principles.[0m
+[1;34m4[0m[34m. Compare data structures for effective Java programming.[0m
+[1;34m5[0m[34m. Plan database integration using JDBC API.[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mThe following is a description of a professional certificate program that my company is going to publish:[0m
+
+[33m================================[0m
+[33mJava is the versatile language powering enterprise applications worldwide. This learning path takes you [0m
+[33mfrom basic syntax to advanced concepts like object-oriented programming and data structures. You'll master [0m
+[33messential skills for building robust applications and effectively managing database interactions with JDBC.[0m
+[33mTune in, pass the final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mThis is the title of the program: Java Foundations Professional Certificate by JetBrains[0m
+
+[33mWrite a short congratulatory message that I can send to my colleagues to announce this partnership. [0m
+
+[33mStart with: [0m[33m"[0m[33m[[0m[33mPartner[0m[33m][0m[33m has signed for a [0m[33m!"[0m
+[33mThen a description of why the topic is important.[0m
+[33mThen a description of why the Partner is such a good fit for this topic.[0m
+[33mAnnouncement should be one paragraph, [0m[1;33m40[0m[33m-[0m[1;33m70[0m[33m words long.[0m
+
+[33mUse the following example announcements as context for this task.[0m
+
+[33m================================[0m
+[33mArista Networks has signed for a Network Automation Professional Certificate! Arista is the industry leader[0m
+[33min cloud networking for large data center, campus and routing environments [0m[1;33m([0m[33m$90bn market cap[0m[1;33m)[0m[33m and is the [0m
+[33mprimary networking services provider for big tech companies like Microsoft and Meta. [0m
+
+[33mThe American Nurses Association has signed on for a Business Skills for Nurses certificate! With over [0m[1;33m4[0m[33m [0m
+[33mmillion members, the ANA is the largest nursing industry association in the United States, with workforce [0m
+[33mdevelopment a critical part of its mission. This is part of a broader initiative across LinkedIn to get [0m
+[33mmore nurses on the platform. Per discussion with the ANA, the certificate will be unlocked for six months. [0m
+
+[33mMozilla has signed on for a Javascript Foundations Professional Certificate! As an early leader in open [0m
+[33msource software for the internet, Mozilla advocates for open web standards, net neutrality, and user [0m
+[33mprivacy. Their Developer Network [0m[1;33m([0m[33mMDN[0m[1;33m)[0m[33m is the go-to resource for web development documentation with over [0m
+[33m17M monthly users. As the third-most in-demand programming language for our users [0m[1;33m([0m[33mafter Python and Java[0m[1;33m)[0m[33m, [0m
+[33mthis certificate on Javascript fills an important gap in our library. We plan to follow this with [0m
+[33mcertificates on HTML and CSS.[0m
+
+[33mC++ Institute has signed for a C++ Programming Professional Certificate, for publication in FYQ1. C++ is [0m
+[33mthe third-most popular programming language after Python and C. The C++ Institute [0m[1;33m([0m[33ma subsidiary of OpenEDG[0m[1;33m)[0m
+[33mis the market leader in C++ training and certification.[0m
+
+[33mKong has signed for a Microservices Professional Certificate, for publication in FYQ1. Microservices is the[0m
+[33mmost popular architecture pattern for developers, and this certificate will complement our certificates on [0m
+[33mDocker and devops. Kong is a recognized leader in the field of microservices and API management.[0m
+[33m================================[0m
+
+[1;32m───────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mJetBrains has signed for a Java Foundations Professional Certificate! Java remains one of the most [0m
+[34min-demand programming languages globally, powering enterprise applications, Android development, and cloud [0m
+[34mservices across industries. JetBrains, creator of IntelliJ IDEA [0m[1;34m([0m[34mthe leading Java IDE[0m[1;34m)[0m[34m and trusted by over [0m
+[1;34m15[0m[34m million developers worldwide, brings unmatched expertise to this partnership. Their deep understanding [0m
+[34mof Java ecosystems and developer workflows makes them the perfect collaborator to help professionals master[0m
+[34mthis essential language.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create curricula [0m
+[33mfor various professional audiences. [0m
+
+[33mHere are some examples of how you map out the audience for a given curriculum:[0m
+
+[33m================================[0m
+[1;33m1[0m[33m. Early career people considering a Customer Success career path.[0m
+[1;33m2[0m[33m. People currently in customer service roles and who are looking to leverage their skills to [0m
+[33mmove into more specialized customer success positions.[0m
+[1;33m3[0m[33m. People in adjacent roles who want/need to embrace a service mindset[0m
+
+[33mBeginning web developers or programmers without experience in Javascript[0m
+
+[33mSofware developers and DevOps Engineers[0m
+
+[33mDevOps Engineers, and developer [0m[33m/[0m[33m IT needing a basic understanding of DevOps practices[0m
+
+[33mDevelopers and architects who need to skill up on designing, building, and migrating systems to a[0m
+[33mmicroservices architecture.[0m
+
+[33mThis audience is a little different from the Python certificate audience. While Python is a [0m
+[33m"gateway drug"[0m[33m to programming for a very wide audience, people who are interested in C++ are [0m
+[33mlikely higher intent to be software developers. As such, this certificate presumes some basic [0m
+[33mconversational knowledge with programming, and ramps up more quickly from beginner to advanced [0m
+[33mtopics.[0m
+[33mThree personas:[0m
+[33m* Beginners who want to start learning C++ programming from scratch and quickly progress to [0m
+[33mwriting their own programs and applications.[0m
+[33m* Existing C++ programmers who want to take their skills to the next level by mastering more [0m
+[33madvanced concepts, techniques, and best practices.[0m
+[33m* Developers coming from other programming languages who need to get up to speed with C++ syntax,[0m
+[33mfundamentals, and common design patterns.[0m
+
+[33mNurses who are keen to grow into mgmt positions[0m
+[33m================================[0m
+
+[33mLook at this list of course titles and descriptions for a new curriculum:[0m
+
+[33m================================[0m
+[33m**Transitioning to Management for Salespeople**: Learn how to coach others, effectively [0m
+[33mcommunicate your expectations, and anticipate market changes so you can set up your salespeople [0m
+[33mfor success.[0m
+[33m**Sales Management Foundations**: Get the skills you need to become an outstanding sales manager.[0m
+[33mLearn how to recruit, select, retain, and manage salespeople and meet your organization's sales [0m
+[33mrevenue goals.[0m
+[33m**Building and Managing a High-Performing Sales Team**: Discover changes you can make to your [0m
+[33mhiring, coaching, and management strategies to cultivate an ultra-high performing sales team.[0m
+[33m**Sales Coaching**: From when to coach, how to coach, and even whom to coach, this course helps [0m
+[33myou harness the power of sales coaching to drive differentiation, engagement, and ultimately [0m
+[33mrevenue.[0m
+[33m**How to Motivate Your Sales Teams**: Discover proven strategies to motivate your sales team, [0m
+[33mconnect with your customers, and produce better results.[0m
+[33m**Sales Performance Measurement and Reporting**: Learn to effectively measure and manage the [0m
+[33mperformance of individual salespeople and entire sales teams.[0m
+[33m**Sales Strategy: How to Effectively Sell Your Product or Service**: Learn how to develop and [0m
+[33mexecute a more effective sales strategy in this course for sales leaders, executives, and [0m
+[33mprofessionals.[0m
+[33m**Sales Operations**: Join Brian Frank as he dives into the sales operations function and how it [0m
+[33mcan help you achieve greater sales success.[0m
+
+[33m================================[0m
+
+[33mHow would you describe the audience for this learning path? Your answer should not be longer than[0m
+[1;33m100[0m[33m words. Only return the audience description, no titles or headers.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mSales professionals moving into management or leadership roles who need to develop skills in [0m
+[34mcoaching, team building, and performance management. This includes experienced sales [0m
+[34mrepresentatives ready for advancement, current sales managers seeking to enhance their leadership[0m
+[34mabilities, and sales executives looking to drive better team results through strategic planning [0m
+[34mand operational excellence.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training [0m
+[33mprograms for various professional audiences.[0m
+
+[33mHere are some examples of how you create descriptions of your learning programs:[0m
+
+[33m================================[0m
+[33mNursing professionals are expected to have both clinical and business skills to succeed in [0m
+[33mmanagement roles. This learning path teaches the skills needed to excel in healthcare management:[0m
+[33mbusiness basics, project management, financial literacy, and how to use AI tools to enhance [0m
+[33mproductivity. Tune in, pass the final exam, and earn your certificate.[0m
+
+[33mWant to learn what microservices are all about? This architecture pattern helps developers work [0m
+[33mfaster and build more resilient systems. These courses cover everything from beginner foundations[0m
+[33mto advanced patterns and refactoring codebases. Tune in, pass the final exam, and earn your [0m
+[33mprofessional certificate.[0m
+
+[33mDevOps is not a framework or a workflow. DevOps ensures collaboration and communication between [0m
+[33msoftware engineers [0m[1;33m([0m[33mDev[0m[1;33m)[0m[33m and IT operations [0m[1;33m([0m[33mOps[0m[1;33m)[0m[33m. Whether you are new to DevOps or looking to [0m
+[33mreview the fundamentals, these courses can help. Tune in, pass the final exam, and earn your [0m
+[33mcertificate.[0m
+
+[33mC++ is renowned for its performance, control, and versatility. Ready to get started? Begin by [0m
+[33mmastering the fundamentals and then progress to proven techniques for writing well-organized, [0m
+[33mefficient code. By the end, you'll have the knowledge you need to create your own C++ programs [0m
+[33mand applications. Tune in, pass the final exam, and earn your professional certificate.[0m
+
+[33mContainers help developers pack up their applications, ensuring they run smoothly anywhere. [0m
+[33mSoftware developers need to understand these technologies to deliver software as a team. Whether [0m
+[33myou are new to Docker or looking to review the fundamentals, these courses can help. Tune in, [0m
+[33mpass the final exam, and earn your certificate.[0m
+
+[33mJavaScript is the key to a career in front-end development. These courses equip you with [0m
+[33messential skills to master the language, from fundamental concepts like variables and functions [0m
+[33mto advanced topics such as asynchronous tasks and DOM scripting. With hands-on practice and [0m
+[33mreal-time feedback, you'll gain the expertise needed to excel in web development. Tune in, pass [0m
+[33mthe final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mYour team is going to publish a certtificate program titled:[0m
+[33mSales Management Professional Certificate by the Sales Management Association[0m
+
+[33mNow look at this list of course titles and descriptions for a curriculum:[0m
+
+[33m================================[0m
+[33m**Transitioning to Management for Salespeople**: Learn how to coach others, effectively [0m
+[33mcommunicate your expectations, and anticipate market changes so you can set up your salespeople [0m
+[33mfor success.[0m
+[33m**Sales Management Foundations**: Get the skills you need to become an outstanding sales manager.[0m
+[33mLearn how to recruit, select, retain, and manage salespeople and meet your organization's sales [0m
+[33mrevenue goals.[0m
+[33m**Building and Managing a High-Performing Sales Team**: Discover changes you can make to your [0m
+[33mhiring, coaching, and management strategies to cultivate an ultra-high performing sales team.[0m
+[33m**Sales Coaching**: From when to coach, how to coach, and even whom to coach, this course helps [0m
+[33myou harness the power of sales coaching to drive differentiation, engagement, and ultimately [0m
+[33mrevenue.[0m
+[33m**How to Motivate Your Sales Teams**: Discover proven strategies to motivate your sales team, [0m
+[33mconnect with your customers, and produce better results.[0m
+[33m**Sales Performance Measurement and Reporting**: Learn to effectively measure and manage the [0m
+[33mperformance of individual salespeople and entire sales teams.[0m
+[33m**Sales Strategy: How to Effectively Sell Your Product or Service**: Learn how to develop and [0m
+[33mexecute a more effective sales strategy in this course for sales leaders, executives, and [0m
+[33mprofessionals.[0m
+[33m**Sales Operations**: Join Brian Frank as he dives into the sales operations function and how it [0m
+[33mcan help you achieve greater sales success.[0m
+
+[33m================================[0m
+
+[33mHow would you describe this learning path? Structure your answer like the examples given above, [0m
+[33mand use this overall pattern:[0m
+
+[1;33m1[0m[33m. **Introduction**: Introduce the topic or subject matter.[0m
+[1;33m2[0m[33m. **Value Proposition**: Highlight the benefits or outcomes of engaging with the content.[0m
+[1;33m3[0m[33m. **Course Overview**: Provide a brief overview of what the courses cover or what skills will be[0m
+[33mlearned.[0m
+[1;33m4[0m[33m. **Call to Action**: The final sentence should always be [0m[33m"Tune in, pass the final exam, and [0m
+[33mearn your certificate."[0m
+
+[33mThe length of your answer should be between [0m[1;33m40[0m[33m and [0m[1;33m60[0m[33m words.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mSales management requires unique skills beyond individual selling. This certificate program [0m
+[34mprepares you to excel as a sales leader by mastering team building, coaching, motivation, [0m
+[34mperformance measurement, and strategic planning. Learn how to recruit top talent, develop your [0m
+[34mteam, and drive revenue growth. Tune in, pass the final exam, and earn your certificate.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training [0m
+[33mprograms for various professional audiences.[0m
+
+[33mYou are going to generate [0m[1;33m3[0m[33m-[0m[1;33m4[0m[33m learning objectives for a new curriculum. [0m
+
+[33mThe learning goals should be expressed as short sentences, with up to [0m[1;33m60[0m[33m characters each. Each [0m
+[33msentence should start with one of these verbs:[0m
+
+[33mPlan Analyze Identify Practice Create Discover Compare Explore Describe Research[0m
+
+[33mThe learning goals should address what the courses cover in sequence, to the extent that you can [0m
+[33munderstand that from the course descriptions.[0m
+
+[33mHere is the list of courses and descriptions for the curriculum.[0m
+
+[33m================================[0m
+[33m**Transitioning to Management for Salespeople**: Learn how to coach others, effectively [0m
+[33mcommunicate your expectations, and anticipate market changes so you can set up your salespeople [0m
+[33mfor success.[0m
+[33m**Sales Management Foundations**: Get the skills you need to become an outstanding sales manager.[0m
+[33mLearn how to recruit, select, retain, and manage salespeople and meet your organization's sales [0m
+[33mrevenue goals.[0m
+[33m**Building and Managing a High-Performing Sales Team**: Discover changes you can make to your [0m
+[33mhiring, coaching, and management strategies to cultivate an ultra-high performing sales team.[0m
+[33m**Sales Coaching**: From when to coach, how to coach, and even whom to coach, this course helps [0m
+[33myou harness the power of sales coaching to drive differentiation, engagement, and ultimately [0m
+[33mrevenue.[0m
+[33m**How to Motivate Your Sales Teams**: Discover proven strategies to motivate your sales team, [0m
+[33mconnect with your customers, and produce better results.[0m
+[33m**Sales Performance Measurement and Reporting**: Learn to effectively measure and manage the [0m
+[33mperformance of individual salespeople and entire sales teams.[0m
+[33m**Sales Strategy: How to Effectively Sell Your Product or Service**: Learn how to develop and [0m
+[33mexecute a more effective sales strategy in this course for sales leaders, executives, and [0m
+[33mprofessionals.[0m
+[33m**Sales Operations**: Join Brian Frank as he dives into the sales operations function and how it [0m
+[33mcan help you achieve greater sales success.[0m
+
+[33m================================[0m
+
+[33mYour answer should only be the learning objectives, in a numbered liss; no other text.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m1[0m[34m. Identify effective coaching techniques for new sales managers.[0m
+[1;34m2[0m[34m. Analyze strategies for recruiting and retaining top sales talent.[0m
+[1;34m3[0m[34m. Discover methods to build high-performing sales teams.[0m
+[1;34m4[0m[34m. Explore performance measurement for sales effectiveness.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mThe following is a description of a professional certificate program that my company is going to [0m
+[33mpublish:[0m
+
+[33m================================[0m
+[33mSales management requires unique skills beyond individual selling. This certificate program [0m
+[33mprepares you to excel as a sales leader by mastering team building, coaching, motivation, [0m
+[33mperformance measurement, and strategic planning. Learn how to recruit top talent, develop your [0m
+[33mteam, and drive revenue growth. Tune in, pass the final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mThis is the title of the program: Sales Management Professional Certificate by the Sales [0m
+[33mManagement Association[0m
+
+[33mWrite a short congratulatory message that I can send to my colleagues to announce this [0m
+[33mpartnership. [0m
+
+[33mStart with: [0m[33m"[0m[33m[[0m[33mPartner[0m[33m][0m[33m has signed for a [0m[33m!"[0m
+[33mThen a description of why the topic is important.[0m
+[33mThen a description of why the Partner is such a good fit for this topic.[0m
+[33mAnnouncement should be one paragraph, [0m[1;33m40[0m[33m-[0m[1;33m70[0m[33m words long.[0m
+
+[33mUse the following example announcements as context for this task.[0m
+
+[33m================================[0m
+[33mArista Networks has signed for a Network Automation Professional Certificate! Arista is the [0m
+[33mindustry leader in cloud networking for large data center, campus and routing environments [0m[1;33m([0m[33m$90bn[0m
+[33mmarket cap[0m[1;33m)[0m[33m and is the primary networking services provider for big tech companies like Microsoft[0m
+[33mand Meta. [0m
+
+[33mThe American Nurses Association has signed on for a Business Skills for Nurses certificate! With [0m
+[33mover [0m[1;33m4[0m[33m million members, the ANA is the largest nursing industry association in the United States,[0m
+[33mwith workforce development a critical part of its mission. This is part of a broader initiative [0m
+[33macross LinkedIn to get more nurses on the platform. Per discussion with the ANA, the certificate [0m
+[33mwill be unlocked for six months. [0m
+
+[33mMozilla has signed on for a Javascript Foundations Professional Certificate! As an early leader [0m
+[33min open source software for the internet, Mozilla advocates for open web standards, net [0m
+[33mneutrality, and user privacy. Their Developer Network [0m[1;33m([0m[33mMDN[0m[1;33m)[0m[33m is the go-to resource for web [0m
+[33mdevelopment documentation with over 17M monthly users. As the third-most in-demand programming [0m
+[33mlanguage for our users [0m[1;33m([0m[33mafter Python and Java[0m[1;33m)[0m[33m, this certificate on Javascript fills an important[0m
+[33mgap in our library. We plan to follow this with certificates on HTML and CSS.[0m
+
+[33mC++ Institute has signed for a C++ Programming Professional Certificate, for publication in FYQ1.[0m
+[33mC++ is the third-most popular programming language after Python and C. The C++ Institute [0m[1;33m([0m[33ma [0m
+[33msubsidiary of OpenEDG[0m[1;33m)[0m[33m is the market leader in C++ training and certification.[0m
+
+[33mKong has signed for a Microservices Professional Certificate, for publication in FYQ1. [0m
+[33mMicroservices is the most popular architecture pattern for developers, and this certificate will [0m
+[33mcomplement our certificates on Docker and devops. Kong is a recognized leader in the field of [0m
+[33mmicroservices and API management.[0m
+[33m================================[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m**The Sales Management Association has signed for a Sales Management Professional Certificate by [0m
+[34mthe Sales Management Association!** Effective sales leadership is critical for business growth, [0m
+[34mrequiring specialized skills beyond individual selling abilities. The Sales Management [0m
+[34mAssociation is the perfect partner for this certification, as they are the premier organization [0m
+[34mdedicated to advancing the practice of sales management through research, training, and [0m
+[34mprofessional development. Their industry expertise and established credibility make them uniquely[0m
+[34mqualified to deliver this essential professional credential.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create curricula [0m
+[33mfor various professional audiences. [0m
+
+[33mHere are some examples of how you map out the audience for a given curriculum:[0m
+
+[33m================================[0m
+[1;33m1[0m[33m. Early career people considering a Customer Success career path.[0m
+[1;33m2[0m[33m. People currently in customer service roles and who are looking to leverage their skills to [0m
+[33mmove into more specialized customer success positions.[0m
+[1;33m3[0m[33m. People in adjacent roles who want/need to embrace a service mindset[0m
+
+[33mBeginning web developers or programmers without experience in Javascript[0m
+
+[33mSofware developers and DevOps Engineers[0m
+
+[33mDevOps Engineers, and developer [0m[33m/[0m[33m IT needing a basic understanding of DevOps practices[0m
+
+[33mDevelopers and architects who need to skill up on designing, building, and migrating systems to a[0m
+[33mmicroservices architecture.[0m
+
+[33mThis audience is a little different from the Python certificate audience. While Python is a [0m
+[33m"gateway drug"[0m[33m to programming for a very wide audience, people who are interested in C++ are [0m
+[33mlikely higher intent to be software developers. As such, this certificate presumes some basic [0m
+[33mconversational knowledge with programming, and ramps up more quickly from beginner to advanced [0m
+[33mtopics.[0m
+[33mThree personas:[0m
+[33m* Beginners who want to start learning C++ programming from scratch and quickly progress to [0m
+[33mwriting their own programs and applications.[0m
+[33m* Existing C++ programmers who want to take their skills to the next level by mastering more [0m
+[33madvanced concepts, techniques, and best practices.[0m
+[33m* Developers coming from other programming languages who need to get up to speed with C++ syntax,[0m
+[33mfundamentals, and common design patterns.[0m
+
+[33mNurses who are keen to grow into mgmt positions[0m
+[33m================================[0m
+
+[33mLook at this list of course titles and descriptions for a new curriculum:[0m
+
+[33m================================[0m
+[33m**Prepare Yourself for a Career in Sales**: Prepare for a successful career in sales. Learn how [0m
+[33mto develop yourself professionally and build more effective relationships with both your [0m
+[33mteammates and your customers.[0m
+[33m**Sales Foundations**: Find out what makes salespeople effective, and learn specific strategies [0m
+[33mfor prospecting and product positioning and developing a sales process.[0m
+[33m**Soft Skills for Sales Professionals**: Learn about soft skills, and the strategies that can [0m
+[33mhelp you bolster your emotional intelligence and communicate more effectively with sales [0m
+[33mprospects.[0m
+[33m**Sales Prospecting: How to Connect with Todayâ€™s Busy Buyers**: Gain a practical understanding [0m
+[33mof how to build an effective prospecting strategy.[0m
+[33m**Cold Calling: Overcoming Sales Objections**: Learn about the eight most common objections cold [0m
+[33mcallers face and how to overcome them.[0m
+[33m**Sales Negotiation**: Best-selling author and sales coach Lisa Earle McLeod explains what makes [0m
+[33msales negotiations different and how to negotiate deals that stick.[0m
+[33m**Persuasive Selling**: Learn the eight psychological concepts that play an integral role in the [0m
+[33msales process, and how you can use these concepts to refine your sales approach.[0m
+[33m**Sales Time Management**: Learn practical techniques, as a salesperson, to increase sales, hit [0m
+[33mtargets, and decrease stress through better time management.[0m
+
+[33m================================[0m
+
+[33mHow would you describe the audience for this learning path? Your answer should not be longer than[0m
+[1;33m100[0m[33m words. Only return the audience description, no titles or headers.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mSales professionals at various stages of their careers, including those new to sales looking to [0m
+[34mbuild foundational skills, experienced salespeople seeking to refine their approach, and [0m
+[34mprofessionals transitioning into sales roles. The audience likely includes individuals who want [0m
+[34mto improve specific sales competencies such as prospecting, negotiation, overcoming objections, [0m
+[34mand time management, as well as those looking to develop their overall professional presence and [0m
+[34mrelationship-building abilities.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training [0m
+[33mprograms for various professional audiences.[0m
+
+[33mHere are some examples of how you create descriptions of your learning programs:[0m
+
+[33m================================[0m
+[33mNursing professionals are expected to have both clinical and business skills to succeed in [0m
+[33mmanagement roles. This learning path teaches the skills needed to excel in healthcare management:[0m
+[33mbusiness basics, project management, financial literacy, and how to use AI tools to enhance [0m
+[33mproductivity. Tune in, pass the final exam, and earn your certificate.[0m
+
+[33mWant to learn what microservices are all about? This architecture pattern helps developers work [0m
+[33mfaster and build more resilient systems. These courses cover everything from beginner foundations[0m
+[33mto advanced patterns and refactoring codebases. Tune in, pass the final exam, and earn your [0m
+[33mprofessional certificate.[0m
+
+[33mDevOps is not a framework or a workflow. DevOps ensures collaboration and communication between [0m
+[33msoftware engineers [0m[1;33m([0m[33mDev[0m[1;33m)[0m[33m and IT operations [0m[1;33m([0m[33mOps[0m[1;33m)[0m[33m. Whether you are new to DevOps or looking to [0m
+[33mreview the fundamentals, these courses can help. Tune in, pass the final exam, and earn your [0m
+[33mcertificate.[0m
+
+[33mC++ is renowned for its performance, control, and versatility. Ready to get started? Begin by [0m
+[33mmastering the fundamentals and then progress to proven techniques for writing well-organized, [0m
+[33mefficient code. By the end, you'll have the knowledge you need to create your own C++ programs [0m
+[33mand applications. Tune in, pass the final exam, and earn your professional certificate.[0m
+
+[33mContainers help developers pack up their applications, ensuring they run smoothly anywhere. [0m
+[33mSoftware developers need to understand these technologies to deliver software as a team. Whether [0m
+[33myou are new to Docker or looking to review the fundamentals, these courses can help. Tune in, [0m
+[33mpass the final exam, and earn your certificate.[0m
+
+[33mJavaScript is the key to a career in front-end development. These courses equip you with [0m
+[33messential skills to master the language, from fundamental concepts like variables and functions [0m
+[33mto advanced topics such as asynchronous tasks and DOM scripting. With hands-on practice and [0m
+[33mreal-time feedback, you'll gain the expertise needed to excel in web development. Tune in, pass [0m
+[33mthe final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mYour team is going to publish a certtificate program titled:[0m
+[33mSales Foundations Professional Certificate by the Sales Management Association[0m
+
+[33mNow look at this list of course titles and descriptions for a curriculum:[0m
+
+[33m================================[0m
+[33m**Prepare Yourself for a Career in Sales**: Prepare for a successful career in sales. Learn how [0m
+[33mto develop yourself professionally and build more effective relationships with both your [0m
+[33mteammates and your customers.[0m
+[33m**Sales Foundations**: Find out what makes salespeople effective, and learn specific strategies [0m
+[33mfor prospecting and product positioning and developing a sales process.[0m
+[33m**Soft Skills for Sales Professionals**: Learn about soft skills, and the strategies that can [0m
+[33mhelp you bolster your emotional intelligence and communicate more effectively with sales [0m
+[33mprospects.[0m
+[33m**Sales Prospecting: How to Connect with Todayâ€™s Busy Buyers**: Gain a practical understanding [0m
+[33mof how to build an effective prospecting strategy.[0m
+[33m**Cold Calling: Overcoming Sales Objections**: Learn about the eight most common objections cold [0m
+[33mcallers face and how to overcome them.[0m
+[33m**Sales Negotiation**: Best-selling author and sales coach Lisa Earle McLeod explains what makes [0m
+[33msales negotiations different and how to negotiate deals that stick.[0m
+[33m**Persuasive Selling**: Learn the eight psychological concepts that play an integral role in the [0m
+[33msales process, and how you can use these concepts to refine your sales approach.[0m
+[33m**Sales Time Management**: Learn practical techniques, as a salesperson, to increase sales, hit [0m
+[33mtargets, and decrease stress through better time management.[0m
+
+[33m================================[0m
+
+[33mHow would you describe this learning path? Structure your answer like the examples given above, [0m
+[33mand use this overall pattern:[0m
+
+[1;33m1[0m[33m. **Introduction**: Introduce the topic or subject matter.[0m
+[1;33m2[0m[33m. **Value Proposition**: Highlight the benefits or outcomes of engaging with the content.[0m
+[1;33m3[0m[33m. **Course Overview**: Provide a brief overview of what the courses cover or what skills will be[0m
+[33mlearned.[0m
+[1;33m4[0m[33m. **Call to Action**: The final sentence should always be [0m[33m"Tune in, pass the final exam, and [0m
+[33mearn your certificate."[0m
+
+[33mThe length of your answer should be between [0m[1;33m40[0m[33m and [0m[1;33m60[0m[33m words.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mA successful sales career requires both technical knowledge and interpersonal skills. This [0m
+[34mlearning path teaches essential sales foundations: prospecting strategies, negotiation [0m
+[34mtechniques, handling objections, time management, and developing emotional intelligence for [0m
+[34mcustomer relationships. Master these skills to boost your sales performance and advance your [0m
+[34mcareer. Tune in, pass the final exam, and earn your certificate.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training [0m
+[33mprograms for various professional audiences.[0m
+
+[33mYou are going to generate [0m[1;33m3[0m[33m-[0m[1;33m4[0m[33m learning objectives for a new curriculum. [0m
+
+[33mThe learning goals should be expressed as short sentences, with up to [0m[1;33m60[0m[33m characters each. Each [0m
+[33msentence should start with one of these verbs:[0m
+
+[33mPlan Analyze Identify Practice Create Discover Compare Explore Describe Research[0m
+
+[33mThe learning goals should address what the courses cover in sequence, to the extent that you can [0m
+[33munderstand that from the course descriptions.[0m
+
+[33mHere is the list of courses and descriptions for the curriculum.[0m
+
+[33m================================[0m
+[33m**Prepare Yourself for a Career in Sales**: Prepare for a successful career in sales. Learn how [0m
+[33mto develop yourself professionally and build more effective relationships with both your [0m
+[33mteammates and your customers.[0m
+[33m**Sales Foundations**: Find out what makes salespeople effective, and learn specific strategies [0m
+[33mfor prospecting and product positioning and developing a sales process.[0m
+[33m**Soft Skills for Sales Professionals**: Learn about soft skills, and the strategies that can [0m
+[33mhelp you bolster your emotional intelligence and communicate more effectively with sales [0m
+[33mprospects.[0m
+[33m**Sales Prospecting: How to Connect with Todayâ€™s Busy Buyers**: Gain a practical understanding [0m
+[33mof how to build an effective prospecting strategy.[0m
+[33m**Cold Calling: Overcoming Sales Objections**: Learn about the eight most common objections cold [0m
+[33mcallers face and how to overcome them.[0m
+[33m**Sales Negotiation**: Best-selling author and sales coach Lisa Earle McLeod explains what makes [0m
+[33msales negotiations different and how to negotiate deals that stick.[0m
+[33m**Persuasive Selling**: Learn the eight psychological concepts that play an integral role in the [0m
+[33msales process, and how you can use these concepts to refine your sales approach.[0m
+[33m**Sales Time Management**: Learn practical techniques, as a salesperson, to increase sales, hit [0m
+[33mtargets, and decrease stress through better time management.[0m
+
+[33m================================[0m
+
+[33mYour answer should only be the learning objectives, in a numbered liss; no other text.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m1[0m[34m. Identify essential strategies for a successful sales career[0m
+[1;34m2[0m[34m. Analyze proven techniques for effective prospecting  [0m
+[1;34m3[0m[34m. Describe methods to overcome common buyer objections[0m
+[1;34m4[0m[34m. Create persuasive approaches using psychological concepts[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mThe following is a description of a professional certificate program that my company is going to [0m
+[33mpublish:[0m
+
+[33m================================[0m
+[33mA successful sales career requires both technical knowledge and interpersonal skills. This [0m
+[33mlearning path teaches essential sales foundations: prospecting strategies, negotiation [0m
+[33mtechniques, handling objections, time management, and developing emotional intelligence for [0m
+[33mcustomer relationships. Master these skills to boost your sales performance and advance your [0m
+[33mcareer. Tune in, pass the final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mThis is the title of the program: Sales Foundations Professional Certificate by the Sales [0m
+[33mManagement Association[0m
+
+[33mWrite a short congratulatory message that I can send to my colleagues to announce this [0m
+[33mpartnership. [0m
+
+[33mStart with: [0m[33m"[0m[33m[[0m[33mPartner[0m[33m][0m[33m has signed for a [0m[33m!"[0m
+[33mThen a description of why the topic is important.[0m
+[33mThen a description of why the Partner is such a good fit for this topic.[0m
+[33mAnnouncement should be one paragraph, [0m[1;33m40[0m[33m-[0m[1;33m70[0m[33m words long.[0m
+
+[33mUse the following example announcements as context for this task.[0m
+
+[33m================================[0m
+[33mArista Networks has signed for a Network Automation Professional Certificate! Arista is the [0m
+[33mindustry leader in cloud networking for large data center, campus and routing environments [0m[1;33m([0m[33m$90bn[0m
+[33mmarket cap[0m[1;33m)[0m[33m and is the primary networking services provider for big tech companies like Microsoft[0m
+[33mand Meta. [0m
+
+[33mThe American Nurses Association has signed on for a Business Skills for Nurses certificate! With [0m
+[33mover [0m[1;33m4[0m[33m million members, the ANA is the largest nursing industry association in the United States,[0m
+[33mwith workforce development a critical part of its mission. This is part of a broader initiative [0m
+[33macross LinkedIn to get more nurses on the platform. Per discussion with the ANA, the certificate [0m
+[33mwill be unlocked for six months. [0m
+
+[33mMozilla has signed on for a Javascript Foundations Professional Certificate! As an early leader [0m
+[33min open source software for the internet, Mozilla advocates for open web standards, net [0m
+[33mneutrality, and user privacy. Their Developer Network [0m[1;33m([0m[33mMDN[0m[1;33m)[0m[33m is the go-to resource for web [0m
+[33mdevelopment documentation with over 17M monthly users. As the third-most in-demand programming [0m
+[33mlanguage for our users [0m[1;33m([0m[33mafter Python and Java[0m[1;33m)[0m[33m, this certificate on Javascript fills an important[0m
+[33mgap in our library. We plan to follow this with certificates on HTML and CSS.[0m
+
+[33mC++ Institute has signed for a C++ Programming Professional Certificate, for publication in FYQ1.[0m
+[33mC++ is the third-most popular programming language after Python and C. The C++ Institute [0m[1;33m([0m[33ma [0m
+[33msubsidiary of OpenEDG[0m[1;33m)[0m[33m is the market leader in C++ training and certification.[0m
+
+[33mKong has signed for a Microservices Professional Certificate, for publication in FYQ1. [0m
+[33mMicroservices is the most popular architecture pattern for developers, and this certificate will [0m
+[33mcomplement our certificates on Docker and devops. Kong is a recognized leader in the field of [0m
+[33mmicroservices and API management.[0m
+[33m================================[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m"The Sales Management Association has signed for a Sales Foundations Professional Certificate! [0m
+[34mEffective sales skills are crucial for business growth and revenue generation in today's [0m
+[34mcompetitive market. As the premier professional organization dedicated to sales leadership, the [0m
+[34mSales Management Association brings unparalleled expertise and credibility to this certificate. [0m
+[34mTheir industry knowledge and extensive network of sales professionals make them the perfect [0m
+[34mpartner to deliver practical, results-driven sales training."[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create curricula [0m
+[33mfor various professional audiences. [0m
+
+[33mHere are some examples of how you map out the audience for a given curriculum:[0m
+
+[33m================================[0m
+[1;33m1[0m[33m. Early career people considering a Customer Success career path.[0m
+[1;33m2[0m[33m. People currently in customer service roles and who are looking to leverage their skills to [0m
+[33mmove into more specialized customer success positions.[0m
+[1;33m3[0m[33m. People in adjacent roles who want/need to embrace a service mindset[0m
+
+[33mBeginning web developers or programmers without experience in Javascript[0m
+
+[33mSofware developers and DevOps Engineers[0m
+
+[33mDevOps Engineers, and developer [0m[33m/[0m[33m IT needing a basic understanding of DevOps practices[0m
+
+[33mDevelopers and architects who need to skill up on designing, building, and migrating systems to a[0m
+[33mmicroservices architecture.[0m
+
+[33mThis audience is a little different from the Python certificate audience. While Python is a [0m
+[33m"gateway drug"[0m[33m to programming for a very wide audience, people who are interested in C++ are [0m
+[33mlikely higher intent to be software developers. As such, this certificate presumes some basic [0m
+[33mconversational knowledge with programming, and ramps up more quickly from beginner to advanced [0m
+[33mtopics.[0m
+[33mThree personas:[0m
+[33m* Beginners who want to start learning C++ programming from scratch and quickly progress to [0m
+[33mwriting their own programs and applications.[0m
+[33m* Existing C++ programmers who want to take their skills to the next level by mastering more [0m
+[33madvanced concepts, techniques, and best practices.[0m
+[33m* Developers coming from other programming languages who need to get up to speed with C++ syntax,[0m
+[33mfundamentals, and common design patterns.[0m
+
+[33mNurses who are keen to grow into mgmt positions[0m
+[33m================================[0m
+
+[33mLook at this list of course titles and descriptions for a new curriculum:[0m
+
+[33m================================[0m
+[33m**Artificial Intelligence Foundations: Neural Networks**: Learn the fundamental techniques and [0m
+[33mprinciples behind artificial neural networks.[0m
+[33m**Deep Learning with Python: Foundations**: Discover the fundamental concepts and techniques [0m
+[33mrequired to implement basic deep learning models using Python.[0m
+[33m**Deep Learning with Python: Optimizing Deep Learning Models**: Leverage techniques for [0m
+[33moptimizing deep learning models and implementing them using Python.[0m
+[33m**Deep Learning with Python and Keras: Build a Model For Sentiment Analysis**: Learn how to [0m
+[33measily build, train, and validate a Recurrent Neural Network [0m[1;33m([0m[33mRNN[0m[1;33m)[0m[33m to do sentiment analysis.[0m
+
+[33m================================[0m
+
+[33mHow would you describe the audience for this learning path? Your answer should not be longer than[0m
+[1;33m100[0m[33m words. Only return the audience description, no titles or headers.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mData scientists, machine learning engineers, or software developers with a basic understanding of[0m
+[34mPython who want to learn deep learning fundamentals and practical implementation. This learning [0m
+[34mpath is ideal for professionals looking to add AI capabilities to their technical skillset, [0m
+[34mmoving from theoretical neural network concepts to building practical applications using Keras [0m
+[34mand Python. While beginners with Python knowledge can benefit, some familiarity with programming [0m
+[34mand basic machine learning concepts would be advantageous.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training [0m
+[33mprograms for various professional audiences.[0m
+
+[33mHere are some examples of how you create descriptions of your learning programs:[0m
+
+[33m================================[0m
+[33mNursing professionals are expected to have both clinical and business skills to succeed in [0m
+[33mmanagement roles. This learning path teaches the skills needed to excel in healthcare management:[0m
+[33mbusiness basics, project management, financial literacy, and how to use AI tools to enhance [0m
+[33mproductivity. Tune in, pass the final exam, and earn your certificate.[0m
+
+[33mWant to learn what microservices are all about? This architecture pattern helps developers work [0m
+[33mfaster and build more resilient systems. These courses cover everything from beginner foundations[0m
+[33mto advanced patterns and refactoring codebases. Tune in, pass the final exam, and earn your [0m
+[33mprofessional certificate.[0m
+
+[33mDevOps is not a framework or a workflow. DevOps ensures collaboration and communication between [0m
+[33msoftware engineers [0m[1;33m([0m[33mDev[0m[1;33m)[0m[33m and IT operations [0m[1;33m([0m[33mOps[0m[1;33m)[0m[33m. Whether you are new to DevOps or looking to [0m
+[33mreview the fundamentals, these courses can help. Tune in, pass the final exam, and earn your [0m
+[33mcertificate.[0m
+
+[33mC++ is renowned for its performance, control, and versatility. Ready to get started? Begin by [0m
+[33mmastering the fundamentals and then progress to proven techniques for writing well-organized, [0m
+[33mefficient code. By the end, you'll have the knowledge you need to create your own C++ programs [0m
+[33mand applications. Tune in, pass the final exam, and earn your professional certificate.[0m
+
+[33mContainers help developers pack up their applications, ensuring they run smoothly anywhere. [0m
+[33mSoftware developers need to understand these technologies to deliver software as a team. Whether [0m
+[33myou are new to Docker or looking to review the fundamentals, these courses can help. Tune in, [0m
+[33mpass the final exam, and earn your certificate.[0m
+
+[33mJavaScript is the key to a career in front-end development. These courses equip you with [0m
+[33messential skills to master the language, from fundamental concepts like variables and functions [0m
+[33mto advanced topics such as asynchronous tasks and DOM scripting. With hands-on practice and [0m
+[33mreal-time feedback, you'll gain the expertise needed to excel in web development. Tune in, pass [0m
+[33mthe final exam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mYour team is going to publish a certtificate program titled:[0m
+[33mDeep Learning with Python Professional Certificate by Anaconda[0m
+
+[33mNow look at this list of course titles and descriptions for a curriculum:[0m
+
+[33m================================[0m
+[33m**Artificial Intelligence Foundations: Neural Networks**: Learn the fundamental techniques and [0m
+[33mprinciples behind artificial neural networks.[0m
+[33m**Deep Learning with Python: Foundations**: Discover the fundamental concepts and techniques [0m
+[33mrequired to implement basic deep learning models using Python.[0m
+[33m**Deep Learning with Python: Optimizing Deep Learning Models**: Leverage techniques for [0m
+[33moptimizing deep learning models and implementing them using Python.[0m
+[33m**Deep Learning with Python and Keras: Build a Model For Sentiment Analysis**: Learn how to [0m
+[33measily build, train, and validate a Recurrent Neural Network [0m[1;33m([0m[33mRNN[0m[1;33m)[0m[33m to do sentiment analysis.[0m
+
+[33m================================[0m
+
+[33mHow would you describe this learning path? Structure your answer like the examples given above, [0m
+[33mand use this overall pattern:[0m
+
+[1;33m1[0m[33m. **Introduction**: Introduce the topic or subject matter.[0m
+[1;33m2[0m[33m. **Value Proposition**: Highlight the benefits or outcomes of engaging with the content.[0m
+[1;33m3[0m[33m. **Course Overview**: Provide a brief overview of what the courses cover or what skills will be[0m
+[33mlearned.[0m
+[1;33m4[0m[33m. **Call to Action**: The final sentence should always be [0m[33m"Tune in, pass the final exam, and [0m
+[33mearn your certificate."[0m
+
+[33mThe length of your answer should be between [0m[1;33m40[0m[33m and [0m[1;33m60[0m[33m words.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mDeep learning powers advanced AI applications from image recognition to natural language [0m
+[34mprocessing. This certificate program teaches you to build neural networks using Python and Keras,[0m
+[34mcovering fundamentals through advanced optimization techniques. You'll gain hands-on experience [0m
+[34mcreating models for real-world applications like sentiment analysis. Tune in, pass the final [0m
+[34mexam, and earn your certificate.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training [0m
+[33mprograms for various professional audiences.[0m
+
+[33mYou are going to generate [0m[1;33m3[0m[33m-[0m[1;33m4[0m[33m learning objectives for a new curriculum. [0m
+
+[33mThe learning goals should be expressed as short sentences, with up to [0m[1;33m60[0m[33m characters each. Each [0m
+[33msentence should start with one of these verbs:[0m
+
+[33mPlan Analyze Identify Practice Create Discover Compare Explore Describe Research[0m
+
+[33mThe learning goals should address what the courses cover in sequence, to the extent that you can [0m
+[33munderstand that from the course descriptions.[0m
+
+[33mHere is the list of courses and descriptions for the curriculum.[0m
+
+[33m================================[0m
+[33m**Artificial Intelligence Foundations: Neural Networks**: Learn the fundamental techniques and [0m
+[33mprinciples behind artificial neural networks.[0m
+[33m**Deep Learning with Python: Foundations**: Discover the fundamental concepts and techniques [0m
+[33mrequired to implement basic deep learning models using Python.[0m
+[33m**Deep Learning with Python: Optimizing Deep Learning Models**: Leverage techniques for [0m
+[33moptimizing deep learning models and implementing them using Python.[0m
+[33m**Deep Learning with Python and Keras: Build a Model For Sentiment Analysis**: Learn how to [0m
+[33measily build, train, and validate a Recurrent Neural Network [0m[1;33m([0m[33mRNN[0m[1;33m)[0m[33m to do sentiment analysis.[0m
+
+[33m================================[0m
+
+[33mYour answer should only be the learning objectives, in a numbered liss; no other text.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m1[0m[34m. Describe fundamental neural network techniques and principles.[0m
+[1;34m2[0m[34m. Create basic deep learning models using Python.[0m
+[1;34m3[0m[34m. Analyze optimization techniques for deep learning models.[0m
+[1;34m4[0m[34m. Build a Recurrent Neural Network for sentiment analysis.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mThe following is a description of a professional certificate program that my company is going to [0m
+[33mpublish:[0m
+
+[33m================================[0m
+[33mDeep learning powers advanced AI applications from image recognition to natural language [0m
+[33mprocessing. This certificate program teaches you to build neural networks using Python and Keras,[0m
+[33mcovering fundamentals through advanced optimization techniques. You'll gain hands-on experience [0m
+[33mcreating models for real-world applications like sentiment analysis. Tune in, pass the final [0m
+[33mexam, and earn your certificate.[0m
+[33m================================[0m
+
+[33mThis is the title of the program: Deep Learning with Python Professional Certificate by Anaconda[0m
+
+[33mWrite a short congratulatory message that I can send to my colleagues to announce this [0m
+[33mpartnership. [0m
+
+[33mStart with: [0m[33m"[0m[33m[[0m[33mPartner[0m[33m][0m[33m has signed for a [0m[33m!"[0m
+[33mThen a description of why the topic is important.[0m
+[33mThen a description of why the Partner is such a good fit for this topic.[0m
+[33mAnnouncement should be one paragraph, [0m[1;33m40[0m[33m-[0m[1;33m70[0m[33m words long.[0m
+
+[33mUse the following example announcements as context for this task.[0m
+
+[33m================================[0m
+[33mArista Networks has signed for a Network Automation Professional Certificate! Arista is the [0m
+[33mindustry leader in cloud networking for large data center, campus and routing environments [0m[1;33m([0m[33m$90bn[0m
+[33mmarket cap[0m[1;33m)[0m[33m and is the primary networking services provider for big tech companies like Microsoft[0m
+[33mand Meta. [0m
+
+[33mThe American Nurses Association has signed on for a Business Skills for Nurses certificate! With [0m
+[33mover [0m[1;33m4[0m[33m million members, the ANA is the largest nursing industry association in the United States,[0m
+[33mwith workforce development a critical part of its mission. This is part of a broader initiative [0m
+[33macross LinkedIn to get more nurses on the platform. Per discussion with the ANA, the certificate [0m
+[33mwill be unlocked for six months. [0m
+
+[33mMozilla has signed on for a Javascript Foundations Professional Certificate! As an early leader [0m
+[33min open source software for the internet, Mozilla advocates for open web standards, net [0m
+[33mneutrality, and user privacy. Their Developer Network [0m[1;33m([0m[33mMDN[0m[1;33m)[0m[33m is the go-to resource for web [0m
+[33mdevelopment documentation with over 17M monthly users. As the third-most in-demand programming [0m
+[33mlanguage for our users [0m[1;33m([0m[33mafter Python and Java[0m[1;33m)[0m[33m, this certificate on Javascript fills an important[0m
+[33mgap in our library. We plan to follow this with certificates on HTML and CSS.[0m
+
+[33mC++ Institute has signed for a C++ Programming Professional Certificate, for publication in FYQ1.[0m
+[33mC++ is the third-most popular programming language after Python and C. The C++ Institute [0m[1;33m([0m[33ma [0m
+[33msubsidiary of OpenEDG[0m[1;33m)[0m[33m is the market leader in C++ training and certification.[0m
+
+[33mKong has signed for a Microservices Professional Certificate, for publication in FYQ1. [0m
+[33mMicroservices is the most popular architecture pattern for developers, and this certificate will [0m
+[33mcomplement our certificates on Docker and devops. Kong is a recognized leader in the field of [0m
+[33mmicroservices and API management.[0m
+[33m================================[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m"Anaconda has signed for a Deep Learning with Python Professional Certificate! Deep learning is [0m
+[34mrevolutionizing industries through powerful AI applications, from computer vision to natural [0m
+[34mlanguage processing. As the creator of the world's most popular Python data science platform with[0m
+[34mover 30 million users, Anaconda brings unparalleled expertise in Python tools and libraries that [0m
+[34mpower modern AI development. Their leadership in the data science ecosystem makes them the ideal [0m
+[34mpartner for teaching these essential skills."[0m
+
+[1;32m──────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mconsult tools [0m[1;33m1[0m
+
+[1;32m──────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create curricula for various professional audiences. [0m
+
+[33mHere are some examples of how you map out the audience for a given curriculum:[0m
+
+[33m================================[0m
+[1;33m1[0m[33m. Early career people considering a Customer Success career path.[0m
+[1;33m2[0m[33m. People currently in customer service roles and who are looking to leverage their skills to move into more specialized customer success[0m
+[33mpositions.[0m
+[1;33m3[0m[33m. People in adjacent roles who want/need to embrace a service mindset[0m
+
+[33mBeginning web developers or programmers without experience in Javascript[0m
+
+[33mSofware developers and DevOps Engineers[0m
+
+[33mDevOps Engineers, and developer [0m[33m/[0m[33m IT needing a basic understanding of DevOps practices[0m
+
+[33mDevelopers and architects who need to skill up on designing, building, and migrating systems to a microservices architecture.[0m
+
+[33mThis audience is a little different from the Python certificate audience. While Python is a [0m[33m"gateway drug"[0m[33m to programming for a very wide[0m
+[33maudience, people who are interested in C++ are likely higher intent to be software developers. As such, this certificate presumes some [0m
+[33mbasic conversational knowledge with programming, and ramps up more quickly from beginner to advanced topics.[0m
+[33mThree personas:[0m
+[33m* Beginners who want to start learning C++ programming from scratch and quickly progress to writing their own programs and applications.[0m
+[33m* Existing C++ programmers who want to take their skills to the next level by mastering more advanced concepts, techniques, and best [0m
+[33mpractices.[0m
+[33m* Developers coming from other programming languages who need to get up to speed with C++ syntax, fundamentals, and common design [0m
+[33mpatterns.[0m
+
+[33mNurses who are keen to grow into mgmt positions[0m
+[33m================================[0m
+
+[33mLook at this list of course titles and descriptions for a new curriculum:[0m
+
+[33m================================[0m
+[33m**Strategic Planning Foundations**: Learn how to conduct an effective strategic planning process that results in a clear, compelling [0m
+[33mstrategic plan for your organization.[0m
+[33m**Use Generative AI for SWOT Analysis**: Discover AI-powered SWOT analysis to transform strategic planning and gain deeper business [0m
+[33minsights.[0m
+[33m**Developing a Competitive Strategy**: Global strategy expert and author Anil Gupta provides a primer on competitive strategy: being [0m
+[33mfaster, better, and cheaper than the competitors in your market.[0m
+[33m**A Modern Guide to Strategy Implementation**: Learn the fundamentals of strategy implementation through a modern framework developed by [0m
+[33mthe Strategy Implementation Institute.[0m
+[33m**Balanced Scorecard and Key Performance Indicators**: Tie your company's mission directly to real metrics. Find out how to use key [0m
+[33mperformance indicators and a balanced scorecard to quantify business performance over time.[0m
+[33m**Leading with Innovation in the Age of AI**: Learn how to lead with innovation in the age of AI.[0m
+[33m**Leading Strategically**: Learn how to lead strategically and reach your goals, using tools that help you create lasting organizational [0m
+[33mchange and set you and your team on a course for success.[0m
+
+[33m================================[0m
+
+[33mHow would you describe the audience for this learning path? Your answer should not be longer than [0m[1;33m100[0m[33m words. Only return the audience [0m
+[33mdescription, no titles or headers.[0m
+
+[1;32m──────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mMid-level to senior managers or executives responsible for organizational strategy and implementation. This could include department [0m
+[34mheads, directors, or emerging leaders transitioning into strategic roles. Also suitable for business strategy professionals looking to [0m
+[34menhance their planning skills and incorporate modern tools like AI. The audience should have basic business management experience and [0m
+[34mseek to develop their ability to create, implement, and measure strategic initiatives that drive competitive advantage and organizational[0m
+[34msuccess.[0m
+
+[1;32m──────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training programs for various professional [0m
+[33maudiences.[0m
+
+[33mHere are some examples of how you create descriptions of your learning programs:[0m
+
+[33m================================[0m
+[33mNursing professionals are expected to have both clinical and business skills to succeed in management roles. This learning path teaches [0m
+[33mthe skills needed to excel in healthcare management: business basics, project management, financial literacy, and how to use AI tools to [0m
+[33menhance productivity. Tune in, pass the final exam, and earn your certificate.[0m
+
+[33mWant to learn what microservices are all about? This architecture pattern helps developers work faster and build more resilient systems. [0m
+[33mThese courses cover everything from beginner foundations to advanced patterns and refactoring codebases. Tune in, pass the final exam, [0m
+[33mand earn your professional certificate.[0m
+
+[33mDevOps is not a framework or a workflow. DevOps ensures collaboration and communication between software engineers [0m[1;33m([0m[33mDev[0m[1;33m)[0m[33m and IT [0m
+[33moperations [0m[1;33m([0m[33mOps[0m[1;33m)[0m[33m. Whether you are new to DevOps or looking to review the fundamentals, these courses can help. Tune in, pass the final [0m
+[33mexam, and earn your certificate.[0m
+
+[33mC++ is renowned for its performance, control, and versatility. Ready to get started? Begin by mastering the fundamentals and then [0m
+[33mprogress to proven techniques for writing well-organized, efficient code. By the end, you'll have the knowledge you need to create your [0m
+[33mown C++ programs and applications. Tune in, pass the final exam, and earn your professional certificate.[0m
+
+[33mContainers help developers pack up their applications, ensuring they run smoothly anywhere. Software developers need to understand these [0m
+[33mtechnologies to deliver software as a team. Whether you are new to Docker or looking to review the fundamentals, these courses can help. [0m
+[33mTune in, pass the final exam, and earn your certificate.[0m
+
+[33mJavaScript is the key to a career in front-end development. These courses equip you with essential skills to master the language, from [0m
+[33mfundamental concepts like variables and functions to advanced topics such as asynchronous tasks and DOM scripting. With hands-on practice[0m
+[33mand real-time feedback, you'll gain the expertise needed to excel in web development. Tune in, pass the final exam, and earn your [0m
+[33mcertificate.[0m
+[33m================================[0m
+
+[33mYour team is going to publish a certtificate program titled:[0m
+[33mStrategic Planning Professional Certificate[0m
+
+[33mNow look at this list of course titles and descriptions for a curriculum:[0m
+
+[33m================================[0m
+[33m**Strategic Planning Foundations**: Learn how to conduct an effective strategic planning process that results in a clear, compelling [0m
+[33mstrategic plan for your organization.[0m
+[33m**Use Generative AI for SWOT Analysis**: Discover AI-powered SWOT analysis to transform strategic planning and gain deeper business [0m
+[33minsights.[0m
+[33m**Developing a Competitive Strategy**: Global strategy expert and author Anil Gupta provides a primer on competitive strategy: being [0m
+[33mfaster, better, and cheaper than the competitors in your market.[0m
+[33m**A Modern Guide to Strategy Implementation**: Learn the fundamentals of strategy implementation through a modern framework developed by [0m
+[33mthe Strategy Implementation Institute.[0m
+[33m**Balanced Scorecard and Key Performance Indicators**: Tie your company's mission directly to real metrics. Find out how to use key [0m
+[33mperformance indicators and a balanced scorecard to quantify business performance over time.[0m
+[33m**Leading with Innovation in the Age of AI**: Learn how to lead with innovation in the age of AI.[0m
+[33m**Leading Strategically**: Learn how to lead strategically and reach your goals, using tools that help you create lasting organizational [0m
+[33mchange and set you and your team on a course for success.[0m
+
+[33m================================[0m
+
+[33mHow would you describe this learning path? Structure your answer like the examples given above, and use this overall pattern:[0m
+
+[1;33m1[0m[33m. **Introduction**: Introduce the topic or subject matter.[0m
+[1;33m2[0m[33m. **Value Proposition**: Highlight the benefits or outcomes of engaging with the content.[0m
+[1;33m3[0m[33m. **Course Overview**: Provide a brief overview of what the courses cover or what skills will be learned.[0m
+[1;33m4[0m[33m. **Call to Action**: The final sentence should always be [0m[33m"Tune in, pass the final exam, and earn your certificate."[0m
+
+[33mThe length of your answer should be between [0m[1;33m40[0m[33m and [0m[1;33m60[0m[33m words.[0m
+
+[1;32m──────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mStrategic planning is crucial for organizational success in today's competitive landscape. This learning path equips you with essential [0m
+[34mskills for effective planning, from AI-powered SWOT analysis to balanced scorecards and implementation frameworks. You'll learn to [0m
+[34mdevelop competitive strategies, lead innovation, and drive measurable results through strategic leadership. Tune in, pass the final exam,[0m
+[34mand earn your certificate.[0m
+
+[1;32m──────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+
+[33mYou are an L&D administrator at a large enterprise organization, and regularly create training programs for various professional [0m
+[33maudiences.[0m
+
+[33mYou are going to generate [0m[1;33m3[0m[33m-[0m[1;33m4[0m[33m learning objectives for a new curriculum. [0m
+
+[33mThe learning goals should be expressed as short sentences, with up to [0m[1;33m60[0m[33m characters each. Each sentence should start with one of these [0m
+[33mverbs:[0m
+
+[33mPlan Analyze Identify Practice Create Discover Compare Explore Describe Research[0m
+
+[33mThe learning goals should address what the courses cover in sequence, to the extent that you can understand that from the course [0m
+[33mdescriptions.[0m
+
+[33mHere is the list of courses and descriptions for the curriculum.[0m
+
+[33m================================[0m
+[33m**Strategic Planning Foundations**: Learn how to conduct an effective strategic planning process that results in a clear, compelling [0m
+[33mstrategic plan for your organization.[0m
+[33m**Use Generative AI for SWOT Analysis**: Discover AI-powered SWOT analysis to transform strategic planning and gain deeper business [0m
+[33minsights.[0m
+[33m**Developing a Competitive Strategy**: Global strategy expert and author Anil Gupta provides a primer on competitive strategy: being [0m
+[33mfaster, better, and cheaper than the competitors in your market.[0m
+[33m**A Modern Guide to Strategy Implementation**: Learn the fundamentals of strategy implementation through a modern framework developed by [0m
+[33mthe Strategy Implementation Institute.[0m
+[33m**Balanced Scorecard and Key Performance Indicators**: Tie your company's mission directly to real metrics. Find out how to use key [0m
+[33mperformance indicators and a balanced scorecard to quantify business performance over time.[0m
+[33m**Leading with Innovation in the Age of AI**: Learn how to lead with innovation in the age of AI.[0m
+[33m**Leading Strategically**: Learn how to lead strategically and reach your goals, using tools that help you create lasting organizational [0m
+[33mchange and set you and your team on a course for success.[0m
+
+[33m================================[0m
+
+[33mYour answer should only be the learning objectives, in a numbered liss; no other text.[0m
+
+[1;32m──────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m1[0m[34m. Identify effective strategic planning processes[0m
+[1;34m2[0m[34m. Analyze competitive strategies using AI-powered tools[0m
+[1;34m3[0m[34m. Describe frameworks for implementing strategic goals[0m
+[1;34m4[0m[34m. Create innovation-focused leadership approaches[0m
+
+[1;32m──────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mThe following is a description of a professional certificate program that my company is going to publish:[0m
+
+[33m================================[0m
+[33mStrategic planning is crucial for organizational success in today's competitive landscape. This learning path equips you with essential [0m
+[33mskills for effective planning, from AI-powered SWOT analysis to balanced scorecards and implementation frameworks. You'll learn to [0m
+[33mdevelop competitive strategies, lead innovation, and drive measurable results through strategic leadership. Tune in, pass the final exam,[0m
+[33mand earn your certificate.[0m
+[33m================================[0m
+
+[33mThis is the title of the program: Strategic Planning Professional Certificate[0m
+
+[33mWrite a short congratulatory message that I can send to my colleagues to announce this partnership. [0m
+
+[33mStart with: [0m[33m"[0m[33m[[0m[33mPartner[0m[33m][0m[33m has signed for a [0m[33m!"[0m
+[33mThen a description of why the topic is important.[0m
+[33mThen a description of why the Partner is such a good fit for this topic.[0m
+[33mAnnouncement should be one paragraph, [0m[1;33m40[0m[33m-[0m[1;33m70[0m[33m words long.[0m
+
+[33mUse the following example announcements as context for this task.[0m
+
+[33m================================[0m
+[33mArista Networks has signed for a Network Automation Professional Certificate! Arista is the industry leader in cloud networking for large[0m
+[33mdata center, campus and routing environments [0m[1;33m([0m[33m$90bn market cap[0m[1;33m)[0m[33m and is the primary networking services provider for big tech companies [0m
+[33mlike Microsoft and Meta. [0m
+
+[33mThe American Nurses Association has signed on for a Business Skills for Nurses certificate! With over [0m[1;33m4[0m[33m million members, the ANA is the [0m
+[33mlargest nursing industry association in the United States, with workforce development a critical part of its mission. This is part of a [0m
+[33mbroader initiative across LinkedIn to get more nurses on the platform. Per discussion with the ANA, the certificate will be unlocked for [0m
+[33msix months. [0m
+
+[33mMozilla has signed on for a Javascript Foundations Professional Certificate! As an early leader in open source software for the internet,[0m
+[33mMozilla advocates for open web standards, net neutrality, and user privacy. Their Developer Network [0m[1;33m([0m[33mMDN[0m[1;33m)[0m[33m is the go-to resource for web [0m
+[33mdevelopment documentation with over 17M monthly users. As the third-most in-demand programming language for our users [0m[1;33m([0m[33mafter Python and [0m
+[33mJava[0m[1;33m)[0m[33m, this certificate on Javascript fills an important gap in our library. We plan to follow this with certificates on HTML and CSS.[0m
+
+[33mC++ Institute has signed for a C++ Programming Professional Certificate, for publication in FYQ1. C++ is the third-most popular [0m
+[33mprogramming language after Python and C. The C++ Institute [0m[1;33m([0m[33ma subsidiary of OpenEDG[0m[1;33m)[0m[33m is the market leader in C++ training and [0m
+[33mcertification.[0m
+
+[33mKong has signed for a Microservices Professional Certificate, for publication in FYQ1. Microservices is the most popular architecture [0m
+[33mpattern for developers, and this certificate will complement our certificates on Docker and devops. Kong is a recognized leader in the [0m
+[33mfield of microservices and API management.[0m
+[33m================================[0m
+
+[1;32m──────────────────────────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m"Strategic Planning Professional Certificate has signed for a Strategic Planning Professional Certificate! In today's volatile business [0m
+[34menvironment, strategic planning is essential for organizations to navigate challenges and capitalize on opportunities. This partner [0m
+[34mbrings deep expertise in helping companies develop effective strategies, implement balanced scorecards, and leverage AI for competitive [0m
+[34manalysis—making them the perfect collaborator to develop this critical professional skillset for our members."[0m
+
