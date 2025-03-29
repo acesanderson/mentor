@@ -77,7 +77,7 @@ class MentorChat(Chat):
         self.welcome_message = "[green]Hello! Let's build a Curation together.[/green]"
         self.console = console
         # The Curation we're building in the chat
-        self.curation = self.load_curation()
+        self.curation: Curation = self.load_curation()
         # Workspace = a bucket for all courses that have come up in the chat, either from user input, curate, mentor, etc.
         self.workspace: UniqueList[Course] = UniqueList()
         # A blacklist
@@ -480,8 +480,32 @@ class MentorChat(Chat):
         Get the difficulty (LI Level) for each course.
         """
         output = ""
+        if len(self.curation.courses) == 0:
+            self.console.print("[red]No courses in Curation.[/red]")
+            return
         for course in self.curation.courses:
             output += f"[yellow]{course.course_title}[/yellow]: [cyan]{course.metadata["LI Level"]}[/cyan]\n"
+        self.console.print(output)
+
+    def command_view_feedback(self):
+        """
+        Get learner feedback for a course.
+        """
+        from Kramer import get_feedback_by_course_id
+
+        output = ""
+        if len(self.curation.courses) == 0:
+            self.console.print("[red]No courses in Curation.[/red]")
+            return
+        for course in self.curation.courses:
+            course_id = course.course_admin_id
+            feedback = get_feedback_by_course_id(course_id)
+            if feedback:
+                course_rating = feedback[1]
+                no_of_ratings = feedback[2]
+                output += f"[yellow]{course.course_title}[/yellow]: [cyan]{course_rating}[/cyan] ({no_of_ratings})\n"
+            else:
+                output += f"[yellow]{course.course_title}[/yellow]: [red]No feedback available.[/red]\n"
         self.console.print(output)
 
     def command_head(self, param):
