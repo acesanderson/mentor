@@ -257,7 +257,7 @@ class MentorChat(Chat):
             except (KeyError, TypeError):
                 course_release_date = ""
             self.console.print(
-                f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow]\t[cyan]{course_release_date}[/cyan]"
+                f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_release_date}[/cyan]"
             )
         self.update_course_cache(courselist)
 
@@ -479,12 +479,14 @@ class MentorChat(Chat):
         """
         Get the difficulty (LI Level) for each course.
         """
-        output = ""
         if len(self.curation.courses) == 0:
             self.console.print("[red]No courses in Curation.[/red]")
             return
-        for course in self.curation.courses:
-            output += f"[yellow]{course.course_title}[/yellow]: [cyan]{course.metadata["LI Level"]}[/cyan]\n"
+        output = ""
+        if self.curation.title:
+            output += f"[bold cyan]{self.curation.title}[/bold cyan]\n"
+        for index, course in enumerate(self.curation.courses):
+            output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course.metadata["LI Level"]}[/cyan]\n"
         self.console.print(output)
 
     def command_view_feedback(self):
@@ -493,19 +495,29 @@ class MentorChat(Chat):
         """
         from Kramer import get_feedback_by_course_id
 
-        output = ""
         if len(self.curation.courses) == 0:
             self.console.print("[red]No courses in Curation.[/red]")
             return
-        for course in self.curation.courses:
+        output = ""
+        ratings = []
+        if self.curation.title:
+            output += f"[bold cyan]{self.curation.title}[/bold cyan]\n"
+        for index, course in enumerate(self.curation.courses):
             course_id = course.course_admin_id
             feedback = get_feedback_by_course_id(course_id)
             if feedback:
                 course_rating = feedback[1]
                 no_of_ratings = feedback[2]
-                output += f"[yellow]{course.course_title}[/yellow]: [cyan]{course_rating}[/cyan] ({no_of_ratings})\n"
+                ratings.append(course_rating)
+                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_rating:.2f}[/cyan] from [green]{no_of_ratings} ratings.[/green]\n"
             else:
-                output += f"[yellow]{course.course_title}[/yellow]: [red]No feedback available.[/red]\n"
+                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][red]No feedback available.[/red]\n"
+        # Calculate the overall score of the curation
+        if ratings:
+            overall_score = sum(ratings) / len(ratings)
+            output += f"\n[bold green]Overall score: {overall_score:.2f}[/bold green]\n"
+        else:
+            output += "[red]No feedback available for any courses.[/red]\n"
         self.console.print(output)
 
     def command_head(self, param):
