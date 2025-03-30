@@ -51,6 +51,7 @@ log_file = dir_path / ".chat_log.txt"
 Chain._message_store = MessageStore(log_file=log_file)
 _ = readline.get_current_history_length()
 T = TypeVar("T")  # This is part of the dance to make UniqueList work as a type hint.
+system_prompt_file = dir_path / "system_prompt.jinja"
 
 
 class UniqueList(list, Generic[T]):  # Note the use of our TypeVar T here.
@@ -75,6 +76,9 @@ class MentorChat(Chat):
     def __init__(self, model):
         super().__init__(model)
         self.welcome_message = "[green]Hello! Let's build a Curation together.[/green]"
+        # Our simple system prompt
+        self.system_prompt = system_prompt_file.read_text()
+        # The console for printing
         self.console = console
         # The Curation we're building in the chat
         self.curation: Curation = self.load_curation()
@@ -508,8 +512,11 @@ class MentorChat(Chat):
             if feedback:
                 course_rating = feedback[1]
                 no_of_ratings = feedback[2]
+                normalized = (
+                    2.5 * course_rating - 7.5
+                )  # The data is actually 3-5, so we want to normalize it to 0-5
                 ratings.append(course_rating)
-                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_rating:.2f}[/cyan] from [green]{no_of_ratings} ratings.[/green]\n"
+                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_rating:.2f}[/cyan] from [green]{no_of_ratings} ratings.[/green] ({normalized:.2f})\n"
             else:
                 output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][red]No feedback available.[/red]\n"
         # Calculate the overall score of the curation
@@ -1071,6 +1078,28 @@ class MentorChat(Chat):
             self.console.print(output)
         else:
             raise ValueError("Course not found.")
+
+    def command_consult_score(self):
+        """
+        Uses a three dimensional rubric to evaluate curation quality.
+        """
+        from Winnow.evaluation.curation_rubric.curation_rubric import (
+            evaluate_curation_async,
+        )
+
+        course_rubrics, final_score = evaluate_curation_async(
+            self.curation, verbose=False
+        )
+        output = ""
+        for course_rubric in course_rubrics:
+            output += "\n"
+            dimension = course_rubric.dimension
+            score = course_rubric.score
+            rationale = course_rubric.rationale
+            output += f"[green]{dimension}[/green]: [cyan]{score:.2f}[/cyan]\n"
+            output += f"[green]Rationale:[/green] {rationale}\n"
+        output += f"\n[bold green]Final score:[/bold green] [bold yellow]{final_score:.2f}[/bold yellow]\n"
+        self.console.print(output)
 
     def command_consult_sequence(self):
         """
