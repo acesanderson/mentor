@@ -12353,3 +12353,939 @@
 [1;36muser:[0m
 [33m:w[0m
 
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mPython Data Analysis[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;Data science has transformed the way that government and industry leaders look at both [0m
+[33mspecific problems and the world at large. Curious about how data analysis works in practice? In [0m
+[33mthis course, instructor Michele Vallisneri explains what it takes to get started with data [0m
+[33mscience using Python.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Michele demonstrates how to set up your analysis [0m
+[33menvironment and provides a refresher on the basics of working with data structures in Python. [0m
+[33mThen, he jumps into the big stuff: the power of arrays, indexing, and tables in NumPy and pandas.[0m
+[33mHe also guides you through two sample big-data projects: using NumPy to identify and visualize [0m
+[33mweather patterns and using pandas to analyze the popularity of baby names over the last century. [0m
+[33mChallenges issued along the way help you practice what you've learned. Plus, learn about the [0m
+[33mskills in the basic tasks of data analysis: importing and wrangling, summarizing and visualizing,[0m
+[33mmodeling, and reasoning. &lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course is integrated with GitHub Codespaces, an [0m
+[33minstant cloud developer environment that offers all the functionality of your favorite IDE [0m
+[33mwithout the need for any local machine setup. With GitHub Codespaces, you can get hands-on [0m
+[33mpractice from any machine, at any timeâ€”all while using a tool that youâ€™ll likely encounter in[0m
+[33mthe workplace. Check out the â€œSet up: Using Codespacesâ€ video to learn how to get [0m
+[33mstarted.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Python Data Analysis[0m
+[33m## Introduction[0m
+[33m        [0m[33mFrom data to insight with Python        [0m[1;33m55[0m[33m      [0m[33mUsing Python, you can analyze data [0m
+[33mrapidly using powerful tools adopted by a large and helpful community. This video shows you how [0m
+[33mto load a weather dataset and create an impressive visualization using just a few lines of code, [0m
+[33mwhich the instructor works through in detail in chapter four of this course.[0m
+[33m        [0m[33mWhat you need to know   [0m[1;33m82[0m[33m      [0m[33mTo learn the most from this course, you need an [0m
+[33melementary knowledge of the Python language, which you can obtain from other LinkedIn Learning [0m
+[33mcourses. However Python's data structures—which are crucial to data analysis—are reviewed in this[0m
+[33mcourse.[0m
+[33m        [0m[33mWhat is new in this update      [0m[1;33m43[0m[33m      [0m[33mLike the original version, this course covers the[0m
+[33mfoundations of data analysis with Python—data structures, NumPy, pandas, and Matplotlib—using [0m
+[33mpractical real-world examples. The course is updated to reflect recent changes and new features [0m
+[33min the interfaces of those modules and in the Python language. GitHub Codespaces and CoderPad [0m
+[33mchallenges have been added to the course so you can learn interactively and explore on your own.[0m
+[33m        [0m[33mSet up: Using Codespaces        [0m[1;33m241[0m
+[33m        [0m[33mCoderPad challenges     [0m[1;33m127[0m
+[33m## [0m[1;33m1[0m[33m. Python Data Structures[0m
+[33m        [0m[33mWarmup with Python loops        [0m[1;33m328[0m[33m     [0m[33mThere are many use cases in data analysis where [0m
+[33myou need to operate on data in a sequential fashion. In Python, you do so with looping [0m
+[33mconstructs. This video provides a refresher on the Python loop syntax by solving a simple [0m
+[33mproblem—finding all the ways in which you can break a dollar into a set of coins.[0m
+[33m        [0m[33mTuples, lists, and the slicing syntax   [0m[1;33m406[0m[33m     [0m[33mThe built-in sequence types—tuples, [0m
+[33mlists, ranges, strings, and buffers—in which data elements are associated with indices, set the [0m
+[33mbasic framework for accessing sequential data in Python and transfer directly to NumPy. This [0m
+[33mvideo provides a refresher on the creation and indexing of sequences, reviews the important [0m
+[33mdistinction between mutable and immutable types, and highlights the slicing interface.[0m
+[33m        [0m[33mDictionaries and sets   [0m[1;33m272[0m[33m     [0m[33mPython dicts associate unique keys with values, while [0m
+[33msets express collections of data items without duplication. These data types complement sequences[0m
+[33min many common data-analysis tasks, and provide a basis for pandas DataFrames. This video [0m
+[33mprovides a review of the creation, updating, and indexing of Python dicts and sets.[0m
+[33m        [0m[33mComprehensions  [0m[1;33m228[0m[33m     [0m[33mPython comprehensions provide a readable and expedient way to [0m
+[33mcreate, transform, and filter sequences, dicts, and sets; they are used extensively in the next [0m
+[33mchapter. This video provides a review of the comprehension syntax—including multilevel [0m
+[33mcomprehensions—and draws analogies to Python loops.[0m
+[33m        [0m[33mData classes    [0m[1;33m270[0m[33m     [0m[33mData classes are the best way to encode and process structured, [0m
+[33mheterogeneous data in Python. This video provides a review of their creation and use as well as [0m
+[33mtheir validation using Pydantic.[0m
+[33m## [0m[1;33m2[0m[33m. Project: Finding Anagrams[0m
+[33m        [0m[33mOverview: Finding anagrams      [0m[1;33m63[0m[33m      [0m[33mIn this chapter, you can practice Python data [0m
+[33mstructures with a simple example on textual data—listing and analyzing anagrams in English and [0m
+[33mFrench dictionaries. This video discusses the basic technique [0m[1;33m([0m[33msignature[0m[1;33m)[0m[33m that is used to find [0m
+[33managrams and outlines the general strategy to map the technique to data structures.[0m
+[33m        [0m[33mLoading dictionaries from text files    [0m[1;33m183[0m[33m     [0m[33mIn many cases, parsing a text file [0m
+[33mmanually is the fastest way to complete a simple data analysis task. This video shows how to load[0m
+[33ma list of words from a file, and briefly discusses how Unicode allow you to handle international [0m
+[33mcharacter sets transparently.[0m
+[33m        [0m[33mFinding anagrams        [0m[1;33m257[0m[33m     [0m[33mSee how to use Python comprehensions to create Python [0m
+[33mdicts that let you list anagrams and sort them in various way. These examples show the [0m
+[33mflexibility and legibility of Python comprehensions.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Find palindromes    [0m[1;33m600[0m
+[33m        [0m[33mSolution: Find palindromes      [0m[1;33m66[0m
+[33m## [0m[1;33m3[0m[33m. NumPy[0m
+[33m        [0m[33mNumPy overview  [0m[1;33m246[0m[33m     [0m[33mWhenever you need to manage large one-dimensional or [0m
+[33mmulti-dimensional collections of homogeneous data—such as numerical arrays—you can turn to the [0m
+[33mNumPy library, which provides speed and memory savings. NumPy is also a basic building block to [0m
+[33minterface with C or Fortran code. This video introduces the basic structure of NumPy arrays and [0m
+[33mthe notion of dtype.[0m
+[33m        [0m[33mCreating NumPy arrays   [0m[1;33m315[0m[33m     [0m[33mThere are various ways to create NumPy arrays, depending [0m
+[33mon your needs. Learn how to make empty arrays, transform Python data structures into arrays, and [0m
+[33mload arrays from files in various formats.[0m
+[33m        [0m[33mIndexing NumPy arrays   [0m[1;33m386[0m[33m     [0m[33mIn the analysis of large data collections, you often need[0m
+[33mto focus on subsets of data or restructure its storage. Learn how to select subarrays by [0m
+[33mspecifying boundaries and strides [0m[1;33m([0m[33mslicing[0m[1;33m)[0m[33m, or by applying conditions to the data [0m[1;33m([0m[33mfancy [0m
+[33mindexing[0m[1;33m)[0m[33m. This video also discusses restructuring data—for example, adding or removing axes—and [0m
+[33mthe distinction between views and copies.[0m
+[33m        [0m[33mDoing math with NumPy arrays    [0m[1;33m345[0m[33m     [0m[33mWith NumPy, speed and agility arise from the [0m
+[33mability to operate on entire arrays at once. Learn how to perform mathematical operations that [0m
+[33mtransform arrays or combine them together, while preserving or modifying their structure.[0m
+[33m        [0m[33mSpecial arrays: Records and dates       [0m[1;33m286[0m[33m     [0m[33mNumPy offers very convenient facilities [0m
+[33mfor managing data of different types together using record arrays, and handling dates with the [0m
+[33mdatetime64 dtype. Learn how to create and use record arrays as well as datetime64 data.[0m
+[33m## [0m[1;33m4[0m[33m. Project: Weather Data[0m
+[33m        [0m[33mOverview: Analyzing weather     [0m[1;33m54[0m[33m      [0m[33mIn this chapter, you can practice using NumPy by [0m
+[33mloading, modifying, and plotting weather data from the National Oceanic and Atmospheric [0m
+[33mAdministration. This video examines the files that are going to be analyzed and outlines the [0m
+[33manalysis goals.[0m
+[33m        [0m[33mLoading station and temperature data    [0m[1;33m290[0m[33m     [0m[33mNumPy allows you to load data in many [0m
+[33mdifferent formats without writing custom code. Learn how to use Python to download files from the[0m
+[33mweb and use NumPy to load a fixed-width table.[0m
+[33m        [0m[33mCleaning weather data   [0m[1;33m260[0m[33m     [0m[33mData often needs to be cleaned or otherwise edited before[0m
+[33manalyzing it. Learn how to integrate missing data in the weather files you have loaded using a [0m
+[33msimple interpolation technique.[0m
+[33m        [0m[33mSmoothing and plotting time series      [0m[1;33m299[0m[33m     [0m[33mMany interesting datasets are organized [0m
+[33mas a time series—numerical sequences sorted by date and time. Learn how to use NumPy to perform [0m
+[33mbasic time series analysis tasks—computing means and standard deviations, and smoothing time [0m
+[33mseries.[0m
+[33m        [0m[33mWeather charts  [0m[1;33m280[0m[33m     [0m[33mUsing NumPy and Matplotlib together, you can create insightful [0m
+[33mvisualizations with little effort. Learn how to compute daily temperature records and plot [0m
+[33mweather charts in the style of the New York Times.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Temperature anomaly [0m[1;33m600[0m
+[33m        [0m[33mSolution: Temperature anomaly   [0m[1;33m74[0m
+[33m## [0m[1;33m5[0m[33m. pandas[0m
+[33m        [0m[33mpandas overview [0m[1;33m98[0m[33m      [0m[33mpandas' powerful table objects [0m[1;33m([0m[33mDataFrames[0m[1;33m)[0m[33m are extremely useful [0m
+[33min the analysis of structured data that associates textual, date, and numerical information. This[0m
+[33mvideo introduces the basic structure of pandas Series and DataFrames, and compares them with [0m
+[33mNumPy arrays. It also highlights recent performance improvements made possible by Apache Arrow.[0m
+[33m        [0m[33mpandas DataFrames and Series    [0m[1;33m443[0m[33m     [0m[33mTo be efficient in data analysis, you often need [0m
+[33mto reorganize tables and to select subsets of their rows or columns. Learn how to create [0m
+[33mDataFrames from Python data structures or from files, inspect DataFrames, extract and modify [0m
+[33mtheir columns, and select data based on conditions—pandas' version of fancy indexing and the [0m
+[33mquery method.[0m
+[33m        [0m[33mIndexing in pandas      [0m[1;33m252[0m[33m     [0m[33mOnce you have your data organized, you may need to find [0m
+[33mthe specific records you want. Learn how to index DataFrames with NumPy-like indexing, or by [0m
+[33mcreating indexes. This video also discusses pandas' powerful but confusing MultiIndexes.[0m
+[33m        [0m[33mMath and plotting in pandas     [0m[1;33m389[0m[33m     [0m[33mIn data analysis, you often need to transform [0m
+[33mtables by applying operations to one or more columns. Visualizing the transformed datasets is [0m
+[33malso crucial to understanding them. Learn about the basics of performing mathematical operations [0m
+[33mand plotting with pandas.[0m
+[33m        [0m[33mDatabase operations in pandas   [0m[1;33m418[0m[33m     [0m[33mWhile pandas is not a database, you can use it to[0m
+[33mcombine, merge, and compare tables just as you would with a relational database. Learn about the [0m
+[33mbasics of concatenating, joining, and comparing pandas DataFrames.[0m
+[33m## [0m[1;33m6[0m[33m. Project: Baby Names[0m
+[33m        [0m[33mOverview: Analyzing baby names  [0m[1;33m38[0m[33m      [0m[33mIn this chapter, you can practice using pandas by[0m
+[33manalyzing the popularity of baby names in the US as recorded by the Social Security [0m
+[33mAdministration. This video examines the files that are going to be analyzed and outlines the [0m
+[33manalysis goals.[0m
+[33m        [0m[33mLoading name datasets   [0m[1;33m169[0m[33m     [0m[33mUsing Python and its libraries, you can gather and [0m
+[33morganize data very efficiently. See how to download compressed archives from the web, use Python [0m
+[33mto open them, load their contents, concatenate them into DataFrames, and save the resulting [0m
+[33mcleaned data.[0m
+[33m        [0m[33mComparing name popularity       [0m[1;33m312[0m[33m     [0m[33mOrganizing pandas DataFrames with the appropriate[0m
+[33mindex is important to gain easy access to the records you seek. Learn how to create a MultiIndex [0m
+[33mfor your dataset, sort it by index value, and compare the popularity of common and similar names [0m
+[33mby plotting the corresponding time series together. Parallel and stacked plots of timelines are [0m
+[33moften insightful visualizations.[0m
+[33m        [0m[33mCompiling top tens      [0m[1;33m186[0m[33m     [0m[33mIn many cases, you need to sort and subset DataFrames [0m
+[33mbased on values rather than indices. Learn how to find the top ten names over a range of years, [0m
+[33mwhich involves sorting the data, dropping columns and rows, and joining DataFrames together. [0m
+[33mThese are examples of pandas operations that are broadly useful.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Unisex names        [0m[1;33m600[0m
+[33m        [0m[33mSolution: Unisex names  [0m[1;33m114[0m
+[33m## [0m[1;33m7[0m[33m. Importing and Wrangling Data with pandas[0m
+[33m        [0m[33mOverview: The structure of data [0m[1;33m112[0m[33m     [0m[33mThe best way to organize data is the [0m
+[33mcase/variable structure, which is implemented directly with rows and columns in pandas [0m
+[33mDataFrames. It is also important to identify quantitative and categorical variables to encode [0m
+[33mthem correctly. This video discusses how to include important metadata and data descriptors in a [0m
+[33mdata dictionary.[0m
+[33m        [0m[33mImporting data with pandas      [0m[1;33m234[0m[33m     [0m[33mIn the real world, data comes from many sources [0m
+[33min many formats. pandas excels at importing many different file types—including comma-separated [0m
+[33mvalues [0m[1;33m([0m[33mCSV[0m[1;33m)[0m[33m, Excel, HDF, Apache Arrow, and more. This video demonstrates data importing in [0m
+[33mpandas.[0m
+[33m        [0m[33mCleaning data   [0m[1;33m348[0m[33m     [0m[33mNewly acquired data is seldom uniform and entirely well-formed. [0m
+[33mThis video exemplifies how data may be cleaned with string operations, date transformations, [0m
+[33mduplicate removal, and proper encoding of categorical variables.[0m
+[33m        [0m[33mFiltering, reshaping, and tidying data  [0m[1;33m403[0m[33m     [0m[33mAfter cleaning data, you need to identify[0m
+[33mthe records that are important to analysis and cast them in structures that emphasize relevant [0m
+[33minformation. This video also introduces the tidy data arrangement and demonstrates melting and [0m
+[33munmelting operations to obtain it.[0m
+[33m        [0m[33mSimulating data [0m[1;33m330[0m[33m     [0m[33mGenerating synthetic data is an important tool to test an [0m
+[33manalysis or a newly built tool. This video demonstrates data simulation using the Python package [0m
+[33mfaker.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Country rankings    [0m[1;33m600[0m
+[33m        [0m[33mSolution: Country rankings      [0m[1;33m94[0m
+[33m## [0m[1;33m8[0m[33m. Summarizing and Visualizing Data[0m
+[33m        [0m[33mOverview: Exploring data        [0m[1;33m80[0m[33m      [0m[33mData summaries and visualizations are the [0m
+[33mfundamental tools of exploratory data analysis—where you seek to understand a dataset—and [0m
+[33mstorytelling with data—where you share the insights effectively and memorably. This chapter uses [0m
+[33mdatasets from the Gapminder project, which reveals surprising truths about world-wide trends with[0m
+[33mcarefully curated data.[0m
+[33m        [0m[33mSummarizing quantitative data   [0m[1;33m257[0m[33m     [0m[33mDescriptive statistics are indispensable to [0m
+[33munderstand quantitative data by distilling typical values and their variation to observables such[0m
+[33mas mean, median, variance, and quantiles. This video demonstrates the computation of descriptive [0m
+[33mstatistics in pandas.[0m
+[33m        [0m[33mVisualizing distributions       [0m[1;33m354[0m[33m     [0m[33mVisualizations such as box plots, histograms, and[0m
+[33mdensity plots provide immediate insight into the variation of variables in populations and their [0m
+[33msubgroups. Learn how to visualize distributions with pandas, Matplotlib, and Seaborn.[0m
+[33m        [0m[33mComparing quantitative variables        [0m[1;33m325[0m[33m     [0m[33mCorrelation statistics and multivariable [0m
+[33mplots help you understand how data variables change together. Learn how to create multivariate [0m
+[33mplots with pandas, Matplotlib, and Seaborn, and see how to use all encoding channels—position, [0m
+[33mcolor, size, and texture—to plot more than two variables together.[0m
+[33m        [0m[33mSummarizing and visualizing categorical data    [0m[1;33m298[0m[33m     [0m[33mDescriptive statistics for [0m
+[33mcategorical data include counts and proportions, which can be organized in pivot and stratified [0m
+[33mtables and visualized in a variety of bar and pie plots. Learn how to use pandas to create [0m
+[33msummaries and visualizations.[0m
+[33m## [0m[1;33m9[0m[33m. Introduction to Data Modeling[0m
+[33m        [0m[33mOverview: Understanding data    [0m[1;33m152[0m[33m     [0m[33mStatistics is the science of learning from data, [0m
+[33mand statistical modeling helps you to identify relationships between variables and make [0m
+[33mpredictions about the future. This chapter returns to the Gapminder data and develops simple [0m
+[33mmodels to quantify trends and make hypotheses.[0m
+[33m        [0m[33mFitting models to data  [0m[1;33m355[0m[33m     [0m[33mLinear regression is the simplest form of statistical [0m
+[33mmodeling, which quantifies the effect of predictor variables on output variables. This video [0m
+[33mdemonstrates simple and multiple linear regression with the user-friendly but sophisticated [0m
+[33mPython package statsmodels, using the standard tilde formula notation.[0m
+[33m        [0m[33mModel evaluation and selection  [0m[1;33m308[0m[33m     [0m[33mAfter fitting a model, it's important to [0m
+[33munderstand if it does a good job of representing your data. This video demonstrates model [0m
+[33mevaluation using plotting and simple statistics such as mean square error and R squared. It also [0m
+[33mdiscusses strategies to select among competing models and refine partially successful models.[0m
+[33m        [0m[33mTesting hypotheses with Monte Carlo     [0m[1;33m308[0m[33m     [0m[33mThe possibility of quickly performing a [0m
+[33mlarge number of simulations on a computer has revolutionized statistics, replacing complicated [0m
+[33mmathematics with simple, pragmatic approaches. This video demonstrates the idea of testing a [0m
+[33mhypothesis about data by computing statistics on a population of simulated data replications.[0m
+[33m        [0m[33mA taste of machine learning     [0m[1;33m362[0m[33m     [0m[33mMachine learning goes beyond data analysis by [0m
+[33mteaching machines how to learn from data, usually in large quantities. This video demonstrates a [0m
+[33msimple classification analysis using the Python package scikit-learn.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Gapminder model fit [0m[1;33m600[0m
+[33m        [0m[33mSolution: Gapminder model fit   [0m[1;33m67[0m
+[33m## [0m[1;33m10[0m[33m. Project: COVID-[0m[1;33m19[0m[33m Data[0m
+[33m        [0m[33mOverview: COVID-[0m[1;33m19[0m[33m data [0m[1;33m132[0m
+[33m        [0m[33mSummarizing COVID-[0m[1;33m19[0m[33m data       [0m[1;33m260[0m
+[33m        [0m[33mVisualizing COVID-[0m[1;33m19[0m[33m data       [0m[1;33m359[0m
+[33m        [0m[33mModeling COVID-[0m[1;33m19[0m[33m data  [0m[1;33m285[0m
+[33m## Conclusion[0m
+[33m        [0m[33mExtending your Python data analysis skills      [0m[1;33m101[0m[33m     [0m[33mThere are many resources on the [0m
+[33mweb that can help you master data analysis with Python and explore more advanced topics. This [0m
+[33mvideo suggests a few.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a [0m
+[33mspecific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Basic Python syntax and control flow [0m[1;34m([0m[34me.g., variables, loops, conditionals, functions[0m[1;34m)[0m[34m  [0m
+[34m• Fundamental operations on Python data structures [0m[1;34m([0m[34mlists, dictionaries, tuples, sets, along with[0m
+[34mindexing and slicing[0m[1;34m)[0m[34m  [0m
+[34m• Ability to run Python code in a development environment [0m[1;34m([0m[34me.g., setting up and executing [0m
+[34mscripts[0m[1;34m)[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mBuilt-in Machine Learning in the Wolfram Language[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mYou can apply machine learning to diverse subject areas without expert-level knowledge with the [0m
+[33mhelp of Wolfram Language. While you can build complicated models from scratch, you can also use [0m
+[33many of the existing, pre-trained models on different inputs like text, numbers, and images. This [0m
+[33mcourse provides an introduction to the many machine learning functions available for such [0m
+[33mwide-ranging tasks as image identification, text recognition, sentiment classification and [0m
+[33mothers. Explore the automated machine learning capabilities of Wolfram Language through examples,[0m
+[33mand learn to execute simple machine learning tasks on different types of inputs, use both named [0m
+[33mand custom-trained models to perform classification tasks, and apply machine learning to computer[0m
+[33mvision, text, and natural language processing tasks.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Built-in Machine Learning in the Wolfram Language[0m
+[33m## [0m[1;33m1[0m[33m. Built-in Machine Learning in the Wolfram Language[0m
+[33m        [0m[33mBuilt-in machine learning in the Wolfram language       [0m[1;33m672[0m
+[33m## [0m[1;33m2[0m[33m. Dedicated Functions: Natural Language Processing[0m
+[33m        [0m[33mDedicated functions: Natural language processing        [0m[1;33m516[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a [0m
+[33mspecific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Basic proficiency with the Wolfram Language [0m[1;34m([0m[34mincluding its syntax, function calls, and [0m
+[34minteractive environment[0m[1;34m)[0m[34m  [0m
+[34m• Ability to run and interpret Wolfram Language code within a notebook or Wolfram Cloud [0m
+[34menvironment  [0m
+[34m• Familiarity with basic programming and data manipulation concepts as applied in the Wolfram [0m
+[34mLanguage system[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mMachine Learning Foundations: Probability[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;If you work with machine learning models, you probably already know that your models are[0m
+[33mbased on estimation and approximation. Probability is everything and moreâ€”but how do you [0m
+[33mleverage it to your advantage?&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;In this course, the third part of the Machine [0m
+[33mLearning Foundations series, join instructor Terezija Semenski for an in-depth exploration of [0m
+[33mprobability, its core concepts and functionalities, and how to use it to design, implement, and [0m
+[33mmanage more reliable machine learning algorithms. Along the way, discover some of the most [0m
+[33messential tools and techniques you need to know for successful probabilistic modeling, pulling [0m
+[33mfrom the rules of probability, joint and marginal probability, discrete probability [0m
+[33mdistributions, continuous probability distributions, Bayes' theorem, and more.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Machine Learning Foundations: Probability[0m
+[33m## Introduction[0m
+[33m        [0m[33mProbability for machine learning        [0m[1;33m39[0m[33m      [0m[33mTake a closer look at the importance of [0m
+[33mprobability for machine learning and explore the goals of this course.[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m62[0m[33m      [0m[33mBefore starting this course, explore what skills and [0m
+[33mknowledge you will need to have to be successful in this course. Additionally, explore all [0m
+[33minstallation requirements you need to set up before you proceed.[0m
+[33m## [0m[1;33m1[0m[33m. Introduction to Probability[0m
+[33m        [0m[33mDefining probability    [0m[1;33m175[0m[33m     [0m[33mUnderstand what probability is and get familiar with [0m
+[33mbasic concepts of probability. You'll also explore reasons why its knowledge is a prerequisite [0m
+[33mfor machine learning practitioners. [0m
+[33m        [0m[33mApplications of probability in ML       [0m[1;33m179[0m[33m     [0m[33mIn this video, you will explore [0m
+[33mapplications of probability in machine learning. It is used when working with neural networks and[0m
+[33mits concepts and methods are present in many fields of ML, for example when solving problems of [0m
+[33moptimizing the ML model.[0m
+[33m        [0m[33mSample space and events [0m[1;33m235[0m[33m     [0m[33mIn this video, you will learn what sample space and [0m
+[33mevents are and explore them on different real-world examples in order to understand the [0m
+[33mprobability of those events.[0m
+[33m        [0m[33mRandom variables        [0m[1;33m173[0m[33m     [0m[33mIn this video, you will explore what a random variable [0m
+[33mis, how to calculate one, and the importance of a continuous random variable.[0m
+[33m        [0m[33mExamples of probability [0m[1;33m298[0m[33m     [0m[33mIn this video, you'll explore more advanced examples of [0m
+[33mprobability in order to understand it.[0m
+[33m## [0m[1;33m2[0m[33m. The Rules of Probability[0m
+[33m        [0m[33mProbability of an event [0m[1;33m213[0m[33m     [0m[33mIn this video, you'll learn what the probability of an [0m
+[33mevent is, how to calculate one, and apply it by coding examples in NumPy.[0m
+[33m        [0m[33mThe sum rule    [0m[1;33m114[0m[33m     [0m[33mIn this video, you'll learn what mutually exclusive events are [0m
+[33mand explore how and when to apply the formula for the sum rule. It tells you about the [0m
+[33mprobability of two events A or B happening. [0m
+[33m        [0m[33mThe product rule        [0m[1;33m148[0m[33m     [0m[33mIn this video, you'll learn how and when to apply the [0m
+[33mformula for the product rule.[0m
+[33m        [0m[33mThe sum rule extended   [0m[1;33m143[0m[33m     [0m[33mIn this video, you will explore how to apply the sum rule[0m
+[33min a case when you have events that aren't mutually exclusive.[0m
+[33m        [0m[33mConditional probability [0m[1;33m193[0m[33m     [0m[33mIn this video, you will learn the difference between [0m
+[33mindependent and dependent events so you can explore conditional probability which is one of the [0m
+[33mmost important concepts in ML.[0m
+[33m        [0m[33mTotal probability       [0m[1;33m259[0m[33m     [0m[33mIn this video, you will learn what total probability is, [0m
+[33mwhen it is used, and how to calculate the total probability.[0m
+[33m## [0m[1;33m3[0m[33m. The Joint and Marginal Probability[0m
+[33m        [0m[33mJoint and marginal probability  [0m[1;33m131[0m[33m     [0m[33mIn this video, you will be introduced to joint [0m
+[33mand marginal probability and discover the difference between them and when and why they are used.[0m
+[33m        [0m[33mJoint probability tables        [0m[1;33m194[0m[33m     [0m[33mIn this video, you'll explore joint probabilities[0m
+[33musing simple tables.[0m
+[33m        [0m[33mThe chain rule for probability  [0m[1;33m211[0m[33m     [0m[33mIn this video, you'll learn about the chain rule [0m
+[33mfor probability. This rule lets you break down a joint probability into the product of smaller [0m
+[33mjoint probabilities and conditional probabilities.[0m
+[33m## [0m[1;33m4[0m[33m. Discrete Probability Distributions[0m
+[33m        [0m[33mProbability distributions       [0m[1;33m165[0m[33m     [0m[33mIn this video, you'll learn what probability [0m
+[33mdistribution is and its importance in ML. The primary reason for sampling from a probability [0m
+[33mdistribution is to initialize the network before training.[0m
+[33m        [0m[33mHistograms and probability      [0m[1;33m205[0m[33m     [0m[33mIn this video, you'll learn what histograms are [0m
+[33mand their importance as discrete representations of a probability distribution.[0m
+[33m        [0m[33mDiscrete probability distribution       [0m[1;33m136[0m[33m     [0m[33mIn this video, you'll learn what is a [0m
+[33mdiscrete probability distribution and its most important types.[0m
+[33m        [0m[33mThe binomial distribution       [0m[1;33m282[0m[33m     [0m[33mIn this video, you'll explore what binomial [0m
+[33mdistribution is and learn a formula that can be applied to calculate it.[0m
+[33m        [0m[33mThe Bernoulli distribution      [0m[1;33m151[0m[33m     [0m[33mIn this video, you'll explore the special case of[0m
+[33mbinomial distribution called Bernoulli distribution and how to calculate it.[0m
+[33m        [0m[33mThe Poisson distribution        [0m[1;33m159[0m[33m     [0m[33mIn a case when you know only the average number [0m
+[33mof events that happen over some interval but don't know the probability of an event for a [0m
+[33mparticular trial, you can use the Poisson distribution. You'll also learn the formula used to [0m
+[33mcalculate it.[0m
+[33m## [0m[1;33m5[0m[33m. Continuous Probability Distributions[0m
+[33m        [0m[33mThe continuous probability distribution [0m[1;33m235[0m[33m     [0m[33mIn this video, you'll explore what [0m
+[33mcontinuous probability distribution is and the difference between a discrete distribution and [0m
+[33mcontinuous probability distribution.[0m
+[33m        [0m[33mCentral limit theorem   [0m[1;33m202[0m[33m     [0m[33mIn this video, you'll learn how and when the central [0m
+[33mlimit theorem should be applied. [0m
+[33m        [0m[33mThe law of large numbers        [0m[1;33m96[0m[33m      [0m[33mIn this video, you'll learn the concept related [0m
+[33mto the central limit theorem, why it is important, and when to use it.[0m
+[33m## [0m[1;33m6[0m[33m. The Bayes' Theorem[0m
+[33m        [0m[33mIntroduction to Bayes' theorem  [0m[1;33m258[0m[33m     [0m[33mIn this video, you'll define Bayes’ theorem, [0m
+[33mwhich will show you the correct way to compare conditional probabilities.[0m
+[33m        [0m[33mExample of Bayes' theorem in practice   [0m[1;33m199[0m[33m     [0m[33mIn this video, you'll explore Bayes' [0m
+[33mtheorem on a simple example in order to understand its relation to the marginal probability.[0m
+[33m        [0m[33mNaive Bayes' clasifier  [0m[1;33m141[0m[33m     [0m[33mThe Naive Bayes' classifier is one of the most important [0m
+[33mapplications of Bayes' theorem in ML that provides for each class, the probability that a given [0m
+[33mfeature vector belongs to that class.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m46[0m[33m      [0m[33mIn this video, you'll learn where to go from here.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a [0m
+[33mspecific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficiency in basic Python programming [0m[1;34m([0m[34mwriting, running scripts, and using libraries[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with the NumPy library for numerical computations and array operations  [0m
+[34m• Solid understanding of fundamental algebra and arithmetic operations  [0m
+[34m• Basic knowledge of machine learning concepts and terminology[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mMachine Learning Foundations: Statistics[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mMachine learning models have revolutionized how we work, across a multitude of industries. But [0m
+[33mgoing deeper with ML models and actually understanding how they work will allow you to optimize [0m
+[33mperformance, innovate, troubleshoot issues, and create new and more efficient ML models. In this [0m
+[33mcourse,  the fourth part of the &lt;i&gt;Machine Learning Foundations&lt;[0m[33m/[0m[33mi[0m[33m&gt; series, Terezija [0m
+[33mSemenski explains how a deep understanding of statistics can help you excel when it comes to [0m
+[33mmachine learning projects. Terezija shows how statistics plays a large role in machine learning [0m
+[33mâ€”beyond just crunching numbersâ€”and shows you how to use statistics to gain insights into the [0m
+[33mdata, understand the uncertainties associated with predictions, and make data-driven decisions [0m
+[33mwith confidence.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Machine Learning Foundations: Statistics[0m
+[33m## Introduction[0m
+[33m        [0m[33mFoundations of statistics for machine learning  [0m[1;33m46[0m[33m      [0m[33mTake a closer look at the [0m
+[33mimportance of statistics for machine learning and explore the goals of this course.[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m65[0m[33m      [0m[33mBefore starting this course, explore what skills and [0m
+[33mknowledge you need to have to be successful in this course. Discover the installation [0m
+[33mrequirements you need to set up before you proceed.[0m
+[33m## [0m[1;33m1[0m[33m. Introduction to Statistics[0m
+[33m        [0m[33mDefining statistics     [0m[1;33m157[0m[33m     [0m[33mUnderstand what statistics is and get familiar with basic[0m
+[33mconcepts of statistics. Explore reasons why its knowledge is a prerequisite for machine learning [0m
+[33mpractitioners. Picking data properly is extremely important because it means a difference between[0m
+[33man ML system that learns from your data and provides useful results and a system that fails.[0m
+[33m        [0m[33mApplications of statistics in ML        [0m[1;33m178[0m[33m     [0m[33mExplore applications of statistics in [0m
+[33mmachine learning. It is used in every applied ML project from exploratory data analysis and data [0m
+[33mmining, data cleaning, and preparation to evaluation of an ML model.[0m
+[33m        [0m[33mTypes of data   [0m[1;33m213[0m[33m     [0m[33mLearn four different data types, which are nominal, ordinal, [0m
+[33minterval, and ratio data, and their examples, differences, and importance in ML.[0m
+[33m## [0m[1;33m2[0m[33m. The Summary Statistics[0m
+[33m        [0m[33mThe mean        [0m[1;33m216[0m[33m     [0m[33mLearn what a mean is, why it is important, and how to calculate [0m
+[33mone using the formula provided.[0m
+[33m        [0m[33mThe median      [0m[1;33m163[0m[33m     [0m[33mLearn what median is and explore how and when to apply the [0m
+[33mformula.[0m
+[33m        [0m[33mThe mode        [0m[1;33m139[0m[33m     [0m[33mIn this video, learn what mode is, and how and when to apply the [0m
+[33mformula for the mode. Also, learn to apply the mean, the median, and the mode by coding examples [0m
+[33min NumPy.[0m
+[33m        [0m[33mThe percentile  [0m[1;33m168[0m[33m     [0m[33mExplore what percentile is, how it differs from median, and when [0m
+[33myou should use it.[0m
+[33m        [0m[33mThe percentage change   [0m[1;33m123[0m[33m     [0m[33mLearn the concept of percentage change, how it works, and[0m
+[33mwhen it should be used.[0m
+[33m        [0m[33mThe range       [0m[1;33m153[0m[33m     [0m[33mIn this video, discover what range is and how it is different [0m
+[33mfrom the mean, median, and mode.[0m
+[33m        [0m[33mThe variance and the standard deviation [0m[1;33m246[0m[33m     [0m[33mThe variance and the standard deviation [0m
+[33mquantify a data set's variety. Learn the difference between them and how to calculate them.  [0m
+[33m        [0m[33mThe standard error of the mean vs. the standard deviation       [0m[1;33m158[0m[33m     [0m[33mDiscover what [0m
+[33mstandard error is, when to use it, and when to use the standard deviation.[0m
+[33m## [0m[1;33m3[0m[33m. From Quantiles to Correlation[0m
+[33m        [0m[33mThe quantiles and box plots     [0m[1;33m181[0m[33m     [0m[33mLearn what quantiles are by connecting them with [0m
+[33mmedian and explore them on simple examples. Learn about the importance of box plots that show you[0m
+[33ma visual summary of data.[0m
+[33m        [0m[33mMissing data    [0m[1;33m214[0m[33m     [0m[33mLearn what missing data is, how to detect missing data, and most [0m
+[33mimportantly how to handle it.[0m
+[33m        [0m[33mThe correlation [0m[1;33m148[0m[33m     [0m[33mLearn what is a correlation, when it should be used, and its [0m
+[33mconnection to covariance.[0m
+[33m        [0m[33mThe covariance  [0m[1;33m163[0m[33m     [0m[33mVariables are often related to one another. In ML, it is valuable[0m
+[33mto be able to find those relations and measure their strength. Explore what a measurement called [0m
+[33mcovariance is that helps you determine the strengths of these relationships.[0m
+[33m        [0m[33mThe correlation coefficient     [0m[1;33m163[0m[33m     [0m[33mLearn what the Pearson correlation coefficient [0m
+[33mis, what it indicates, and how to calculate it using a formula.[0m
+[33m        [0m[33mThe correlation vs. causation   [0m[1;33m136[0m[33m     [0m[33mLearn that a correlation between two or more [0m
+[33mvariables doesn't necessarily mean that one causes the other.[0m
+[33m## [0m[1;33m4[0m[33m. Random Variables and Probability Distribution[0m
+[33m        [0m[33mIntroduction to probability distribution        [0m[1;33m135[0m[33m     [0m[33mLearn what probability [0m
+[33mdistribution is and its importance in ML. The primary reason for sampling from a probability [0m
+[33mdistribution is to initialize the network before training.[0m
+[33m        [0m[33mThe uniform distribution        [0m[1;33m139[0m[33m     [0m[33mExplore the uniform distribution and learn about [0m
+[33mits two key features.[0m
+[33m        [0m[33mThe normal distribution [0m[1;33m180[0m[33m     [0m[33mLearn one of the most frequently used distributions [0m
+[33mcalled normal distribution as well as Gaussian distribution or the bell curve. Explore its [0m
+[33mconnection with the mean and the standard deviation.[0m
+[33m        [0m[33mThe Bernoulli distribution      [0m[1;33m126[0m[33m     [0m[33mExplore the special case of binomial distribution[0m
+[33mcalled Bernoulli distribution and how to calculate it.[0m
+[33m        [0m[33mThe Multinoulli distribution    [0m[1;33m133[0m[33m     [0m[33mIn the case when you have training classifiers [0m
+[33mwith more than two possible classes, you can use the Multinoulli distribution, which is a [0m
+[33mgeneralization of the Bernoulli distribution.[0m
+[33m## [0m[1;33m5[0m[33m. Sampling and Replacement[0m
+[33m        [0m[33mSelection with replacement      [0m[1;33m144[0m[33m     [0m[33mIn ML, it is valuable to build a new dataset from[0m
+[33mthe existing one by randomly selecting some of the elements of the existing set. Discover the [0m
+[33mfirst algorithm for creating a list of selections, chosen from a starting pool of objects.[0m
+[33m        [0m[33mSelection without replacement   [0m[1;33m139[0m[33m     [0m[33mLearn the second algorithm for creating a list of[0m
+[33mselections and explore and compare the implication of selection with replacement and selection [0m
+[33mwithout replacement. [0m
+[33m        [0m[33mBootstrapping   [0m[1;33m162[0m[33m     [0m[33mExplore the application of two algorithms for creating that has [0m
+[33mbeen covered in the previous two videos. It is useful when you want to calculate some statistics [0m
+[33mabout a dataset that is too large for you to work with in practice.[0m
+[33m## [0m[1;33m6[0m[33m. Linear Regression[0m
+[33m        [0m[33mIndependent and dependent variables     [0m[1;33m125[0m[33m     [0m[33mLearn how to define independent and [0m
+[33mdependent variables and understand the difference between them.[0m
+[33m        [0m[33mLinear regression for continuous values [0m[1;33m153[0m[33m     [0m[33mExplore the regression model, which is a [0m
+[33mpowerful way of modeling the impact of one or more independent variables on the outcome.[0m
+[33m        [0m[33mFitting a line  [0m[1;33m133[0m[33m     [0m[33mExplore an example of a linear regression model with real [0m
+[33mnumbers.[0m
+[33m        [0m[33mLinear least squares    [0m[1;33m183[0m[33m     [0m[33mLearn the least square method on the simple example.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m43[0m[33m      [0m[33mDiscover where to go from here.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a [0m
+[33mspecific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficiency in basic arithmetic and algebra [0m[1;34m([0m[34me.g., performing computations with averages, [0m
+[34mvariances, and ratios[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with basic probability concepts [0m[1;34m([0m[34mincluding understanding of distributions and [0m
+[34msimple probability calculations[0m[1;34m)[0m[34m  [0m
+[34m• Fundamental Python programming skills, with experience using NumPy for numerical and [0m
+[34mstatistical computations[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mMLOps Tools: MLflow and Hugging Face[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;In this course, learn how to master MLflow and Hugging Face, two powerful open-source platforms for MLOps. [0m
+[33mStarting with MLflow, learn how to streamline the machine learning lifecycle, manage projects and models, use the [0m
+[33mtracking UI system, and interact with registered models. Then, get an introduction to Hugging Face, starting with an [0m
+[33moverview of the Hugging Face Hub, repositories, and Hugging Face Spaces. Learn how to collaborate and deploy models, [0m
+[33mstore datasets and models, create live interactive demos, and leverage community repositories.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;P&gt;Note: [0m
+[33mThis course was created by Pragmatic AI Labs. We are pleased to host this training in our library[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# MLOps Tools: MLflow and Hugging Face[0m
+[33m## Introduction[0m
+[33m        [0m[33mMLOps platforms introduction    [0m[1;33m175[0m
+[33m## [0m[1;33m1[0m[33m. Introduction to MLflow[0m
+[33m        [0m[33mOverview of MLflow      [0m[1;33m252[0m
+[33m        [0m[33mInstalling and using MLflow     [0m[1;33m352[0m
+[33m        [0m[33mIntroduction to the tracking UI [0m[1;33m512[0m
+[33m        [0m[33mParameters, version, artifacts, and metrics     [0m[1;33m611[0m
+[33m## [0m[1;33m2[0m[33m. MLflow Projects[0m
+[33m        [0m[33mWorking with MLflow projects    [0m[1;33m288[0m
+[33m        [0m[33mCreate an MLflow project        [0m[1;33m467[0m
+[33m        [0m[33mRun projects from remote Git repositories       [0m[1;33m217[0m
+[33m        [0m[33mConnecting MLflow to Databricks [0m[1;33m318[0m
+[33m## [0m[1;33m3[0m[33m. MLflow Models[0m
+[33m        [0m[33mComponents of the MLflow package        [0m[1;33m357[0m
+[33m        [0m[33mUse a registry with an MLflow model     [0m[1;33m305[0m
+[33m        [0m[33mReferencing artifacts with the API      [0m[1;33m477[0m
+[33m        [0m[33mSaving and serving MLflow models        [0m[1;33m479[0m
+[33m## [0m[1;33m4[0m[33m. Introduction to Hugging Face[0m
+[33m        [0m[33mWhat is Hugging Face?   [0m[1;33m332[0m
+[33m        [0m[33mOverview of the Hugging Face Hub        [0m[1;33m297[0m
+[33m        [0m[33mIntroduction to the Hugging Face Hub    [0m[1;33m309[0m
+[33m        [0m[33mUsing Hugging Face repositories [0m[1;33m464[0m
+[33m        [0m[33mUsing Hugging Face Spaces       [0m[1;33m752[0m
+[33m## [0m[1;33m5[0m[33m. Introduction to Applied Hugging Face[0m
+[33m        [0m[33mIntroduction to applied Hugging Face    [0m[1;33m96[0m
+[33m        [0m[33mUsing GPU-enabled Codespaces    [0m[1;33m494[0m
+[33m        [0m[33mUsing the Hugging Face CLI      [0m[1;33m139[0m
+[33m## [0m[1;33m6[0m[33m. Using Hugging Face[0m
+[33m        [0m[33mUsing the Model Hub     [0m[1;33m430[0m
+[33m        [0m[33mDownloading models      [0m[1;33m462[0m
+[33m        [0m[33mWorking with models     [0m[1;33m574[0m
+[33m        [0m[33mAdding datasets [0m[1;33m398[0m
+[33m        [0m[33mUsing datasets  [0m[1;33m646[0m
+[33m        [0m[33mWorking with datasets   [0m[1;33m404[0m
+[33m## [0m[1;33m7[0m[33m. Packaging Hugging Face[0m
+[33m        [0m[33mHugging Face and FastAPI        [0m[1;33m249[0m
+[33m        [0m[33mContainerizing Hugging Face     [0m[1;33m223[0m
+[33m        [0m[33mRunning FastAPI with Hugging Face       [0m[1;33m450[0m
+[33m        [0m[33mCI/CD packaging with GitHub Actions     [0m[1;33m575[0m
+[33m## [0m[1;33m8[0m[33m. Hugging Face and Azure ML Studio[0m
+[33m        [0m[33mHugging Face and Azure ML Studio        [0m[1;33m275[0m
+[33m        [0m[33mRegistering a Hugging Face dataset on Azure     [0m[1;33m455[0m
+[33m        [0m[33mRegistering a Hugging Face model on Azure       [0m[1;33m338[0m
+[33m        [0m[33mInspecting a Hugging Face dataset on Azure      [0m[1;33m167[0m
+[33m        [0m[33mAzure ML Python SDK     [0m[1;33m326[0m
+[33m## [0m[1;33m9[0m[33m. Hugging Face Automation[0m
+[33m        [0m[33mUsing GitHub Actions for model deployments      [0m[1;33m346[0m
+[33m        [0m[33mUsing Azure Container Registry  [0m[1;33m213[0m
+[33m        [0m[33mAutomating packaging with Azure Container Registry      [0m[1;33m425[0m
+[33m        [0m[33mAutomating packaging Docker Hub [0m[1;33m353[0m
+[33m## [0m[1;33m10[0m[33m. Hugging Face with Azure Containers[0m
+[33m        [0m[33mCreate an Azure container application   [0m[1;33m303[0m
+[33m        [0m[33mConfigure an Azure container application        [0m[1;33m296[0m
+[33m        [0m[33mDeploy Hugging Face to Azure    [0m[1;33m725[0m
+[33m        [0m[33mTroubleshooting container deployment    [0m[1;33m241[0m
+[33m## [0m[1;33m11[0m[33m. Fine-Tuning and ONNX Exporting[0m
+[33m        [0m[33mIntroduction to fine-tuning theory      [0m[1;33m174[0m
+[33m        [0m[33mPerforming fine-tuning  [0m[1;33m489[0m
+[33m        [0m[33mIntroduction to ONNX and Hugging Face   [0m[1;33m530[0m
+[33m        [0m[33mExporting Hugging Face models to ONNX   [0m[1;33m238[0m
+[33m## [0m[1;33m12[0m[33m. Hugging Face Spaces[0m
+[33m        [0m[33mIntroduction to Hugging Face Spaces     [0m[1;33m286[0m
+[33m        [0m[33mHugging Face Spaces walkthrough [0m[1;33m364[0m
+[33m        [0m[33mDeploying to Hugging Face Spaces        [0m[1;33m194[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m
+[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficiency in Python programming  [0m
+[34m• Familiarity with command‐line [0m[1;34m([0m[34mCLI[0m[1;34m)[0m[34m usage  [0m
+[34m• Experience with Git version control and repository management  [0m
+[34m• Basic understanding of machine learning model development and deployment workflows  [0m
+[34m• Knowledge of containerization fundamentals [0m[1;34m([0m[34me.g., Docker[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with cloud platform basics [0m[1;34m([0m[34me.g., Azure[0m[1;34m)[0m[34m for deployment operations[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mUsing Rust with Python[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;In this course, MLOps expert Noah Gift presents a practical guide on how to use Rust with Python. After a [0m
+[33mshort introduction to Rust and Python, learn how to install PyO3 and use the basic Rust library. Find out how to go [0m
+[33mfrom Rust to Python and explore the Rust ownership model. Examine a diagram of a PyO3 project and learn how to use the [0m
+[33mPython calculator CLI, PyO3 features, and PyO3 exceptions. Go over how to call Python from Rust, run Python with [0m
+[33membedded Rust, and embed a Rust CLI diagram, Rust CLI, or Rust CLI test. Explore several Rust-built Python tools, the [0m
+[33mPolars CLI in Rust, and more. This course prepares you to integrate Rust with Python into your own [0m
+[33mworkflows.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course was created by Noah Gift. We are pleased to host this training in our [0m
+[33mlibrary.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Using Rust with Python[0m
+[33m## [0m[1;33m1[0m[33m. Using Rust with Python[0m
+[33m        [0m[33mIntroduction: Instructor        [0m[1;33m45[0m
+[33m        [0m[33mIntroduction: Rust and Python   [0m[1;33m300[0m
+[33m        [0m[33mPyO3 installation       [0m[1;33m255[0m
+[33m        [0m[33mBasic Rust library      [0m[1;33m286[0m
+[33m        [0m[33mRust to Python  [0m[1;33m213[0m
+[33m        [0m[33mRust ownership model    [0m[1;33m299[0m
+[33m        [0m[33mDiagram of a PyO3 project       [0m[1;33m220[0m
+[33m        [0m[33mPython calculator CLI   [0m[1;33m234[0m
+[33m        [0m[33mPyO3 features   [0m[1;33m158[0m
+[33m        [0m[33mPyO3 exceptions [0m[1;33m261[0m
+[33m        [0m[33mCall Python from Rust   [0m[1;33m353[0m
+[33m        [0m[33mRun Python with embedded Rust   [0m[1;33m287[0m
+[33m        [0m[33mEmbedded Rust CLI diagram       [0m[1;33m214[0m
+[33m        [0m[33mEmbedded Rust CLI       [0m[1;33m271[0m
+[33m        [0m[33mEmbedded Rust CLI test  [0m[1;33m299[0m
+[33m        [0m[33mRust-built Python tools [0m[1;33m232[0m
+[33m        [0m[33mUsing the Rust Ruff linter      [0m[1;33m315[0m
+[33m        [0m[33mUsing Polars in Python with Rust        [0m[1;33m249[0m
+[33m        [0m[33mPolars CLI in Rust      [0m[1;33m240[0m
+[33m        [0m[33mPolars CLI test in Rust [0m[1;33m261[0m
+[33m        [0m[33mPolars CLI integration test     [0m[1;33m209[0m
+[33m        [0m[33mPolars criterion benchmarking   [0m[1;33m339[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m
+[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that is absolutely necessary for the course.[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Basic proficiency in Python programming, including running scripts and using the command-line interface  [0m
+[34m• Basic proficiency in Rust programming, including code compilation using Cargo  [0m
+[34m• Familiarity with installing and managing packages and libraries in both Python and Rust[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mget data [0m[1;33m1[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mget data [0m[1;33m1[0m
+
+[1;32m─────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mcritique this curriculum: [0m[1;33m<[0m[1;33mcourse_descriptions[0m[33m>[0m
+[33m<cert_title>Machine Learning Statistical Foundations Professional Certificate by Wolfram Research<[0m[33m/[0m[33mcert_title[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Artificial Intelligence Foundations: Machine Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Machine learning is the most exciting branch of artificial intelligence. It allows systems to learn from data by identifying patterns and making decisions[0m
+[33mwith little to no human intervention. In this course, you'll navigate the machine learning lifecycle by getting hands-on practice training your first machine learning [0m
+[33mmodel. Join instructor Kesha Williams as she explores widely adopted machine learning methods: supervised, unsupervised, and reinforcement. There's a focus on sourcing[0m
+[33mand preparing data and selecting the best learning algorithm for your project. After training a model, learn to evaluate model performance using standard metrics. [0m
+[33mFinally, Kesha shows you how to streamline the process by building a machine learning pipeline. If you're looking to understand the machine learning lifecycle and the [0m
+[33msteps required to build systems, check out this course.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Machine Learning Foundations: Linear Algebra<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Ever wondered what's really going on underneath a machine learning algorithm? The answer is linear algebra. Without it, machine learning can't exist. [0m
+[33mLinear algebra is a prerequisite for understanding and creating nearly all machine learning algorithms, especially those that prop up neural networks, natural language[0m
+[33mprocessing tools, and deep learning models.Join instructor Terezija Semenski for an in-depth exploration of the core concepts of linear algebra alongside the [0m
+[33mtechniques needed to design and implement a successful machine learning algorithm. Discover the basics of vector arithmetic, vector norms, matrix properties, advanced [0m
+[33moperations, matrix transformation, and algorithms like Google PageRank. By the end of this course, you'll be ready to take the principles of linear algebra and apply [0m
+[33mthem to your next big machine learning project.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Machine Learning Foundations: Calculus<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Studying artificial intelligence and machine learning can be difficult enough, but what if you threw some calculus into the mix? It may sound daunting, [0m
+[33mbut understanding the foundations of calculus can help you design and implement machine learning algorithms, and without a solid foundation in calculus your work in [0m
+[33mmachine learning can quickly become overwhelming.  In this course, Terezija Semenski teaches you functions, derivatives, integrals, and the foundations of multivariate[0m
+[33mcalculus. If you struggle with calculus concepts and techniques used to design and implement ML algorithms, check out this course with Terezija for the knowledge to [0m
+[33movercome those challenges.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Machine Learning Foundations: Probability<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description> If you work with machine learning models, you probably already know that your models are based on estimation and approximation. Probability is everything[0m
+[33mand moreâ€”but how do you leverage it to your advantage?  In this course, the third part of the Machine Learning Foundations series, join instructor Terezija Semenski [0m
+[33mfor an in-depth exploration of probability, its core concepts and functionalities, and how to use it to design, implement, and manage more reliable machine learning [0m
+[33malgorithms. Along the way, discover some of the most essential tools and techniques you need to know for successful probabilistic modeling, pulling from the rules of [0m
+[33mprobability, joint and marginal probability, discrete probability distributions, continuous probability distributions, Bayes' theorem, and more. <[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Machine Learning Foundations: Statistics<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Machine learning models have revolutionized how we work, across a multitude of industries. But going deeper with ML models and actually understanding how [0m
+[33mthey work will allow you to optimize performance, innovate, troubleshoot issues, and create new and more efficient ML models. In this course,  the fourth part of the [0m
+[33m&lt;i&gt;Machine Learning Foundations&lt;[0m[33m/[0m[33mi[0m[33m&gt; series, Terezija Semenski explains how a deep understanding of statistics can help you excel when it comes to machine [0m
+[33mlearning projects. Terezija shows how statistics plays a large role in machine learning â€”beyond just crunching numbersâ€”and shows you how to use statistics to gain [0m
+[33minsights into the data, understand the uncertainties associated with predictions, and make data-driven decisions with confidence.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Built-in Machine Learning in the Wolfram Language<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>You can apply machine learning to diverse subject areas without expert-level knowledge with the help of Wolfram Language. While you can build complicated [0m
+[33mmodels from scratch, you can also use any of the existing, pre-trained models on different inputs like text, numbers, and images. This course provides an introduction [0m
+[33mto the many machine learning functions available for such wide-ranging tasks as image identification, text recognition, sentiment classification and others. Explore [0m
+[33mthe automated machine learning capabilities of Wolfram Language through examples, and learn to execute simple machine learning tasks on different types of inputs, use [0m
+[33mboth named and custom-trained models to perform classification tasks, and apply machine learning to computer vision, text, and natural language processing [0m
+[33mtasks.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+
+[33m<[0m[33m/[0m[33mcourse_descriptions[0m[1;33m>[0m
+
+[1;32m─────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m# Curriculum Critique: Machine Learning Statistical Foundations Professional Certificate by Wolfram Research[0m
+
+[34m## Overall Assessment[0m
+
+[34mThis curriculum provides a structured approach to machine learning foundations with a focus on the mathematical underpinnings required for ML. The progression from [0m
+[34mintroductory concepts to specialized mathematical domains [0m[1;34m([0m[34mlinear algebra, calculus, probability, and statistics[0m[1;34m)[0m[34m and finally to Wolfram-specific implementations is [0m
+[34mlogical. However, there are several areas for improvement.[0m
+
+[34m## Strengths[0m
+
+[1;34m1[0m[34m. **Comprehensive Mathematical Foundation**: The curriculum properly emphasizes the critical mathematical disciplines that underpin machine learning.[0m
+
+[1;34m2[0m[34m. **Clear Progression**: The sequence moves appropriately from general concepts to specific mathematical foundations before concluding with practical application in [0m
+[34mWolfram.[0m
+
+[1;34m3[0m[34m. **Instructor Consistency**: Having the same instructor [0m[1;34m([0m[34mTerezija Semenski[0m[1;34m)[0m[34m for the mathematical foundations courses likely provides consistency in teaching style [0m
+[34mand approach.[0m
+
+[1;34m4[0m[34m. **Theory-to-Application Connection**: The final course demonstrates how to apply theoretical knowledge using Wolfram Language.[0m
+
+[34m## Areas for Improvement[0m
+
+[1;34m1[0m[34m. **Lack of Practical Implementation in Foundation Courses**: The mathematical foundation courses appear to be heavily theoretical with insufficient information about[0m
+[34mhow to implement these concepts in actual ML algorithms.[0m
+
+[1;34m2[0m[34m. **Missing Intermediate Application**: There's a gap between the mathematical foundations and the final Wolfram-specific course. An intermediate course demonstrating[0m
+[34mhow to apply these mathematical concepts in common ML algorithms would be beneficial.[0m
+
+[1;34m3[0m[34m. **Limited Programming Context**: Beyond the final Wolfram course, there's little mention of programming skills or how mathematical concepts translate to code [0m
+[34mimplementation.[0m
+
+[1;34m4[0m[34m. **Minimal Coverage of Advanced ML Topics**: The curriculum lacks coverage of advanced topics like neural networks architecture, deep learning theory, or current [0m
+[34mstate-of-the-art techniques.[0m
+
+[1;34m5[0m[34m. **Software Dependency**: The curriculum seems heavily tied to Wolfram Language, which may limit students who wish to work with more broadly adopted frameworks like [0m
+[34mPyTorch, TensorFlow, or scikit-learn.[0m
+
+[1;34m6[0m[34m. **Limited Project-Based Learning**: There's insufficient emphasis on practical projects or capstone work that would allow students to integrate all concepts [0m
+[34mlearned.[0m
+
+[34m## Recommendations[0m
+
+[1;34m1[0m[34m. **Add Implementation Components**: Include practical programming exercises in each mathematical foundation course that show how concepts directly apply to ML [0m
+[34malgorithms.[0m
+
+[1;34m2[0m[34m. **Introduce Framework-Agnostic ML Course**: Add a course between the foundations and Wolfram-specific course that teaches implementation using industry-standard [0m
+[34mtools.[0m
+
+[1;34m3[0m[34m. **Include Project-Based Learning**: Add a capstone project component that requires students to solve a real-world problem using the concepts learned.[0m
+
+[1;34m4[0m[34m. **Expand Advanced Topics**: Consider adding a course on deep learning, reinforcement learning, or other advanced ML paradigms.[0m
+
+[1;34m5[0m[34m. **Add Ethical Considerations**: Include content on ethics, bias, and responsible AI development throughout the curriculum.[0m
+
+[1;34m6[0m[34m. **Practical Assessment Methods**: Clarify how students will be evaluated on their ability to apply these concepts, not just understand them theoretically.[0m
+
+[34mThis curriculum provides a solid theoretical foundation but would benefit from stronger connections to practical implementation and industry-standard tools beyond the [0m
+[34mWolfram ecosystem.[0m
+
+[1;32m─────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mprovided a detailed description for the audience of this curriculum: [0m[1;33m{[0m[1;33m{[0m[33msnapshot[0m[1;33m}[0m[1;33m}[0m
+
+[1;32m─────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mprovided a detailed description for the audience of this curriculum: [0m[1;33m<[0m[1;33mcourse_descriptions[0m[33m>[0m
+[33m<cert_title>Machine Learning Statistical Foundations Professional Certificate by Wolfram Research<[0m[33m/[0m[33mcert_title[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Artificial Intelligence Foundations: Machine Learning<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Machine learning is the most exciting branch of artificial intelligence. It allows systems to learn from data by identifying patterns and making decisions[0m
+[33mwith little to no human intervention. In this course, you'll navigate the machine learning lifecycle by getting hands-on practice training your first machine learning [0m
+[33mmodel. Join instructor Kesha Williams as she explores widely adopted machine learning methods: supervised, unsupervised, and reinforcement. There's a focus on sourcing[0m
+[33mand preparing data and selecting the best learning algorithm for your project. After training a model, learn to evaluate model performance using standard metrics. [0m
+[33mFinally, Kesha shows you how to streamline the process by building a machine learning pipeline. If you're looking to understand the machine learning lifecycle and the [0m
+[33msteps required to build systems, check out this course.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Machine Learning Foundations: Linear Algebra<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Ever wondered what's really going on underneath a machine learning algorithm? The answer is linear algebra. Without it, machine learning can't exist. [0m
+[33mLinear algebra is a prerequisite for understanding and creating nearly all machine learning algorithms, especially those that prop up neural networks, natural language[0m
+[33mprocessing tools, and deep learning models.Join instructor Terezija Semenski for an in-depth exploration of the core concepts of linear algebra alongside the [0m
+[33mtechniques needed to design and implement a successful machine learning algorithm. Discover the basics of vector arithmetic, vector norms, matrix properties, advanced [0m
+[33moperations, matrix transformation, and algorithms like Google PageRank. By the end of this course, you'll be ready to take the principles of linear algebra and apply [0m
+[33mthem to your next big machine learning project.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Machine Learning Foundations: Calculus<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Studying artificial intelligence and machine learning can be difficult enough, but what if you threw some calculus into the mix? It may sound daunting, [0m
+[33mbut understanding the foundations of calculus can help you design and implement machine learning algorithms, and without a solid foundation in calculus your work in [0m
+[33mmachine learning can quickly become overwhelming.  In this course, Terezija Semenski teaches you functions, derivatives, integrals, and the foundations of multivariate[0m
+[33mcalculus. If you struggle with calculus concepts and techniques used to design and implement ML algorithms, check out this course with Terezija for the knowledge to [0m
+[33movercome those challenges.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Machine Learning Foundations: Probability<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description> If you work with machine learning models, you probably already know that your models are based on estimation and approximation. Probability is everything[0m
+[33mand moreâ€”but how do you leverage it to your advantage?  In this course, the third part of the Machine Learning Foundations series, join instructor Terezija Semenski [0m
+[33mfor an in-depth exploration of probability, its core concepts and functionalities, and how to use it to design, implement, and manage more reliable machine learning [0m
+[33malgorithms. Along the way, discover some of the most essential tools and techniques you need to know for successful probabilistic modeling, pulling from the rules of [0m
+[33mprobability, joint and marginal probability, discrete probability distributions, continuous probability distributions, Bayes' theorem, and more. <[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Machine Learning Foundations: Statistics<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Machine learning models have revolutionized how we work, across a multitude of industries. But going deeper with ML models and actually understanding how [0m
+[33mthey work will allow you to optimize performance, innovate, troubleshoot issues, and create new and more efficient ML models. In this course,  the fourth part of the [0m
+[33m&lt;i&gt;Machine Learning Foundations&lt;[0m[33m/[0m[33mi[0m[33m&gt; series, Terezija Semenski explains how a deep understanding of statistics can help you excel when it comes to machine [0m
+[33mlearning projects. Terezija shows how statistics plays a large role in machine learning â€”beyond just crunching numbersâ€”and shows you how to use statistics to gain [0m
+[33minsights into the data, understand the uncertainties associated with predictions, and make data-driven decisions with confidence.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Built-in Machine Learning in the Wolfram Language<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>You can apply machine learning to diverse subject areas without expert-level knowledge with the help of Wolfram Language. While you can build complicated [0m
+[33mmodels from scratch, you can also use any of the existing, pre-trained models on different inputs like text, numbers, and images. This course provides an introduction [0m
+[33mto the many machine learning functions available for such wide-ranging tasks as image identification, text recognition, sentiment classification and others. Explore [0m
+[33mthe automated machine learning capabilities of Wolfram Language through examples, and learn to execute simple machine learning tasks on different types of inputs, use [0m
+[33mboth named and custom-trained models to perform classification tasks, and apply machine learning to computer vision, text, and natural language processing [0m
+[33mtasks.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+
+[33m<[0m[33m/[0m[33mcourse_descriptions[0m[1;33m>[0m
+
+[1;32m─────────────────────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m# Audience Description: Machine Learning Statistical Foundations Professional Certificate by Wolfram Research[0m
+
+[34m## Primary Target Audience[0m
+
+[34mThis curriculum is designed for individuals who want to understand the mathematical and statistical foundations of machine learning, with a specific focus on [0m
+[34mimplementation using Wolfram Language. The ideal candidates include:[0m
+
+[34m### [0m[1;34m1[0m[34m. Technical Professionals Looking to Transition into ML[0m
+
+[34mProfessionals with technical backgrounds in engineering, computer science, or related fields who want to develop expertise in machine learning but need to strengthen [0m
+[34mtheir mathematical foundations before diving into advanced implementations.[0m
+
+[34m### [0m[1;34m2[0m[34m. Data Analysts Seeking Advanced Skills[0m
+
+[34mCurrent data analysts who have experience working with data but want to enhance their skills to build and optimize machine learning models rather than just using [0m
+[34mpre-built tools.[0m
+
+[34m### [0m[1;34m3[0m[34m. STEM Students and Academics[0m
+
+[34mGraduate or advanced undergraduate students in STEM fields who are interested in machine learning from a theoretical perspective before applying concepts to practical [0m
+[34mapplications.[0m
+
+[34m### [0m[1;34m4[0m[34m. Wolfram Language Users[0m
+
+[34mCurrent Wolfram Language users who want to leverage the platform's machine learning capabilities but need a stronger theoretical foundation to effectively implement [0m
+[34mand optimize models.[0m
+
+[34m## Prerequisites and Background Knowledge[0m
+
+[34mThe ideal participant should have:[0m
+
+[34m- Basic programming experience [0m[1;34m([0m[34mnot necessarily in Wolfram Language[0m[1;34m)[0m
+[34m- Undergraduate-level mathematics exposure [0m[1;34m([0m[34mthough the courses aim to rebuild and strengthen these foundations[0m[1;34m)[0m
+[34m- Basic understanding of data analysis concepts[0m
+[34m- Interest in the theoretical underpinnings of machine learning, not just application[0m
+
+[34m## What This Audience Seeks[0m
+
+[34mThis audience is looking for:[0m
+
+[1;34m1[0m[34m. **Deep Understanding**: They want to know not just how to implement machine learning algorithms but why they work and how to optimize them based on mathematical [0m
+[34mprinciples.[0m
+
+[1;34m2[0m[34m. **Mathematical Rigor**: They value rigorous mathematical explanations that will enable them to read and understand academic papers and advanced ML techniques.[0m
+
+[1;34m3[0m[34m. **Practical Application**: While they appreciate theory, they want to see how these concepts translate to practical implementation, particularly in the Wolfram [0m
+[34mecosystem.[0m
+
+[1;34m4[0m[34m. **Career Advancement**: Many are seeking to advance or pivot their careers by developing specialized expertise in machine learning that goes beyond surface-level [0m
+[34mimplementation.[0m
+
+[34m## Not Ideal For[0m
+
+[34mThis curriculum is likely not well-suited for:[0m
+
+[34m- Complete beginners with no mathematical background[0m
+[34m- Those seeking quick, practical implementation without theoretical understanding[0m
+[34m- Individuals exclusively focused on Python-based ML frameworks who have no interest in the Wolfram ecosystem[0m
+[34m- Those seeking advanced, specialized ML topics without first establishing strong foundations[0m
+
+[34mThe curriculum appeals to learners who value understanding the [0m[34m"why"[0m[34m behind machine learning algorithms and are willing to invest time in building strong mathematical [0m
+[34mfoundations to become more effective ML practitioners, particularly within the Wolfram Language environment.[0m
+

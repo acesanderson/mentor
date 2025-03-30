@@ -272,7 +272,7 @@ def identify_courses(curriculum: Curriculum, cache=True) -> Curation:
 
 
 def Mentor(
-    topic: str, cache=True, return_curriculum=False
+    topic: str, cache: bool = True, return_curriculum: bool = False
 ) -> Curation | tuple[Curriculum, Curation]:
     """
     Runs the entire Mentor pipeline.

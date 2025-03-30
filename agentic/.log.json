@@ -1224,3 +1224,517 @@
 [34mbrings deep expertise in helping companies develop effective strategies, implement balanced scorecards, and leverage AI for competitive [0m
 [34manalysis—making them the perfect collaborator to develop this critical professional skillset for our members."[0m
 
+[1;32m───────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mA colleague has asked you to create a learning path on the following topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mFinancial Analysis[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mPlease design a learning path. Put your answer between XML tags.[0m
+
+[33m<curriculum_description>[0m
+[1;33m[[0m[33mYour description of the learning path curriculum here[0m[1;33m][0m
+[33m<[0m[33m/[0m[33mcurriculum_description[0m[1;33m>[0m
+
+[1;32m───────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum_description[0m[34m>[0m
+[34m  <course [0m[34mid[0m[34m=[0m[34m"1"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Fundamentals[0m[34m of Financial Analysis"[0m[34m>[0m
+[34m    This introductory course defines the core concepts of financial analysis, including the roles of income statements, balance [0m
+[34msheets, and cash flow statements. It lays the groundwork by explaining the importance of financial data in making informed business[0m
+[34mdecisions and serves as a foundation for more specialized topics.[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m  <course [0m[34mid[0m[34m=[0m[34m"2"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Financial[0m[34m Statement & Ratio Analysis"[0m[34m>[0m
+[34m    Focusing on the detailed examination of financial statements, this course teaches learners how to interpret key financial [0m
+[34mratios, trends, and industry benchmarks. Understanding these tools is critical for evaluating a company's performance and [0m
+[34mviability, making it a vital step in the learning path.[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m  <course [0m[34mid[0m[34m=[0m[34m"3"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Cash[0m[34m Flow Analysis & Working Capital Management"[0m[34m>[0m
+[34m    This course delves into the dynamics of cash flow management, emphasizing techniques to assess liquidity and manage working [0m
+[34mcapital effectively. The course helps learners understand the operational implications of cash flow patterns and how they impact [0m
+[34moverall financial health.[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m  <course [0m[34mid[0m[34m=[0m[34m"4"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Forecasting[0m[34m & Budgeting Techniques"[0m[34m>[0m
+[34m    Advanced financial planning is the focus here. Participants learn various forecasting methods and budgeting practices, [0m
+[34mincorporating economic indicators and scenario analysis. This course is designed to enhance skills in projecting future financial [0m
+[34mperformance, essential for strategic planning.[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m  <course [0m[34mid[0m[34m=[0m[34m"5"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Advanced[0m[34m Valuation Methods & Discounted Cash Flow [0m[34m([0m[34mDCF[0m[34m)[0m[34m Analysis"[0m[34m>[0m
+[34m    This in-depth course explores valuation techniques used to determine the intrinsic value of companies and projects. It covers [0m
+[34mvarious approaches, with a strong emphasis on Discounted Cash Flow [0m[1;34m([0m[34mDCF[0m[1;34m)[0m[34m analysis. This course equips professionals with the skills[0m
+[34mneeded to support investment decisions and strategic initiatives.[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m  <course [0m[34mid[0m[34m=[0m[34m"6"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Financial[0m[34m Modelling & Excel Best Practices"[0m[34m>[0m
+[34m    Leveraging practical applications, this course specializes in building and managing robust financial models using Excel. It [0m
+[34mcovers best practices in model design, scenario analysis, and sensitivity testing, ensuring that learners can translate theoretical[0m
+[34mknowledge into practical, actionable models.[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m<[0m[34m/[0m[34mcurriculum_description[0m[1;34m>[0m
+
+[1;32m───────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou have been provided with a detailed curriculum description.[0m
+
+[33mThe description is for this topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mFinancial Analysis[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mHere is the description:[0m
+[33m<ideal_curriculum>[0m
+
+[33m  <course [0m[33mid[0m[33m=[0m[33m"1"[0m[33m [0m[33mtitle[0m[33m=[0m[33m"Fundamentals[0m[33m of Financial Analysis"[0m[33m>[0m
+[33m    This introductory course defines the core concepts of financial analysis, including the roles of income statements, balance [0m
+[33msheets, and cash flow statements. It lays the groundwork by explaining the importance of financial data in making informed business[0m
+[33mdecisions and serves as a foundation for more specialized topics.[0m
+[33m  <[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m  <course [0m[33mid[0m[33m=[0m[33m"2"[0m[33m [0m[33mtitle[0m[33m=[0m[33m"Financial[0m[33m Statement & Ratio Analysis"[0m[33m>[0m
+[33m    Focusing on the detailed examination of financial statements, this course teaches learners how to interpret key financial [0m
+[33mratios, trends, and industry benchmarks. Understanding these tools is critical for evaluating a company's performance and [0m
+[33mviability, making it a vital step in the learning path.[0m
+[33m  <[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m  <course [0m[33mid[0m[33m=[0m[33m"3"[0m[33m [0m[33mtitle[0m[33m=[0m[33m"Cash[0m[33m Flow Analysis & Working Capital Management"[0m[33m>[0m
+[33m    This course delves into the dynamics of cash flow management, emphasizing techniques to assess liquidity and manage working [0m
+[33mcapital effectively. The course helps learners understand the operational implications of cash flow patterns and how they impact [0m
+[33moverall financial health.[0m
+[33m  <[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m  <course [0m[33mid[0m[33m=[0m[33m"4"[0m[33m [0m[33mtitle[0m[33m=[0m[33m"Forecasting[0m[33m & Budgeting Techniques"[0m[33m>[0m
+[33m    Advanced financial planning is the focus here. Participants learn various forecasting methods and budgeting practices, [0m
+[33mincorporating economic indicators and scenario analysis. This course is designed to enhance skills in projecting future financial [0m
+[33mperformance, essential for strategic planning.[0m
+[33m  <[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m  <course [0m[33mid[0m[33m=[0m[33m"5"[0m[33m [0m[33mtitle[0m[33m=[0m[33m"Advanced[0m[33m Valuation Methods & Discounted Cash Flow [0m[33m([0m[33mDCF[0m[33m)[0m[33m Analysis"[0m[33m>[0m
+[33m    This in-depth course explores valuation techniques used to determine the intrinsic value of companies and projects. It covers [0m
+[33mvarious approaches, with a strong emphasis on Discounted Cash Flow [0m[1;33m([0m[33mDCF[0m[1;33m)[0m[33m analysis. This course equips professionals with the skills[0m
+[33mneeded to support investment decisions and strategic initiatives.[0m
+[33m  <[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m  <course [0m[33mid[0m[33m=[0m[33m"6"[0m[33m [0m[33mtitle[0m[33m=[0m[33m"Financial[0m[33m Modelling & Excel Best Practices"[0m[33m>[0m
+[33m    Leveraging practical applications, this course specializes in building and managing robust financial models using Excel. It [0m
+[33mcovers best practices in model design, scenario analysis, and sensitivity testing, ensuring that learners can translate theoretical[0m
+[33mknowledge into practical, actionable models.[0m
+[33m  <[0m[33m/[0m[33mcourse[0m[33m>[0m
+
+[33m<[0m[33m/[0m[33mideal_curriculum[0m[1;33m>[0m
+
+[33mPlease convert this into a structured JSON representation of the curriculum.[0m
+[33mYour answer should include the topic, description, audience, and a list of modules.[0m
+[33mYOU SHOULD ALWAYS RETURN AT LEAST SIX MODULES, AND NO MORE THAN TWELVE.[0m
+
+[1;32m───────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum[0m[34m>[0m
+[34m        [0m[34m<topic>Financial Analysis<[0m[34m/[0m[34mtopic[0m[34m>[0m
+[34m        [0m[34m<description>This curriculum covers a comprehensive journey in financial analysis, starting from the basics of financial [0m
+[34mstatements to advanced techniques in valuation and financial modeling. It is designed to equip learners with both theoretical [0m
+[34mknowledge and practical skills necessary to analyze and interpret financial data for informed decision-making.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m<audience>Finance professionals, business analysts, and students interested in developing deep insights into financial [0m
+[34manalysis and planning.<[0m[34m/[0m[34maudience[0m[34m>[0m
+[34m        [0m[34m<modules>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Fundamentals of Financial Analysis<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>An introductory module that defines core financial analysis concepts including income [0m
+[34mstatements, balance sheets, and cash flow statements. It lays the groundwork for understanding the importance of financial data in [0m
+[34mbusiness decision-making.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand the role of financial statements in analysis.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Comprehend the interrelation between income statements, balance sheets, and cash flow [0m
+[34mstatements.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Recognize the importance of financial data for strategic decisions.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Financial Statement & Ratio Analysis<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>This module focuses on the detailed examination of financial statements and teaches how to [0m
+[34minterpret key financial ratios, trends, and industry benchmarks.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Interpret key financial ratios and trends.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Analyze financial statements for performance evaluation.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Benchmark industry standards for comparative analysis.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Cash Flow Analysis & Working Capital Management<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Diving into cash flow dynamics, this module emphasizes techniques to assess liquidity and [0m
+[34mmanage working capital effectively, highlighting the operational implications of cash flow patterns.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Assess liquidity through detailed cash flow analysis.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand the impact of cash flow patterns on business operations.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Apply strategies for effective working capital management.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Forecasting & Budgeting Techniques<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>An advanced module in financial planning, focusing on forecasting methods and budgeting [0m
+[34mpractices, incorporating economic indicators and scenario analysis for strategic planning.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Learn various forecasting methods.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Develop budgeting techniques aligned with economic indicators.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Apply scenario analysis to project future financial performance.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Advanced Valuation Methods & Discounted Cash Flow [0m[1;34m([0m[34mDCF[0m[1;34m)[0m[34m Analysis<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>This in-depth module explores techniques to determine the intrinsic value of companies and [0m
+[34mprojects with a strong emphasis on Discounted Cash Flow [0m[1;34m([0m[34mDCF[0m[1;34m)[0m[34m analysis.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand advanced valuation approaches.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Perform Discounted Cash Flow [0m[1;34m([0m[34mDCF[0m[1;34m)[0m[34m analysis effectively.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Support investment decisions with robust valuation techniques.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Financial Modelling & Excel Best Practices<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>A practical module that covers building and managing robust financial models using Excel. It [0m
+[34memphasizes best practices in model design, scenario analysis, and sensitivity testing.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Develop robust financial models in Excel.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Implement best practices in model design and analysis.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Conduct scenario and sensitivity analyses to enhance decision-making.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m<[0m[34m/[0m[34mmodules[0m[34m>[0m
+[34m<[0m[34m/[0m[34mcurriculum[0m[1;34m>[0m
+
+[1;32m───────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou have a received a curriculum object on the topic of:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mFinancial Modelling & Excel Best Practices[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mHere is the curriculum object:[0m
+[33m<curriculum>[0m
+[33m<curriculum>[0m
+[33m        [0m[33m<topic>Financial Analysis<[0m[33m/[0m[33mtopic[0m[33m>[0m
+[33m        [0m[33m<description>This curriculum covers a comprehensive journey in financial analysis, starting from the basics of financial [0m
+[33mstatements to advanced techniques in valuation and financial modeling. It is designed to equip learners with both theoretical [0m
+[33mknowledge and practical skills necessary to analyze and interpret financial data for informed decision-making.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m<audience>Finance professionals, business analysts, and students interested in developing deep insights into financial [0m
+[33manalysis and planning.<[0m[33m/[0m[33maudience[0m[33m>[0m
+[33m        [0m[33m<modules>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Fundamentals of Financial Analysis<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>An introductory module that defines core financial analysis concepts including income [0m
+[33mstatements, balance sheets, and cash flow statements. It lays the groundwork for understanding the importance of financial data in [0m
+[33mbusiness decision-making.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand the role of financial statements in analysis.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Comprehend the interrelation between income statements, balance sheets, and cash flow [0m
+[33mstatements.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Recognize the importance of financial data for strategic decisions.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Financial Statement & Ratio Analysis<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>This module focuses on the detailed examination of financial statements and teaches how to [0m
+[33minterpret key financial ratios, trends, and industry benchmarks.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Interpret key financial ratios and trends.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Analyze financial statements for performance evaluation.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Benchmark industry standards for comparative analysis.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Cash Flow Analysis & Working Capital Management<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Diving into cash flow dynamics, this module emphasizes techniques to assess liquidity and [0m
+[33mmanage working capital effectively, highlighting the operational implications of cash flow patterns.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Assess liquidity through detailed cash flow analysis.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand the impact of cash flow patterns on business operations.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Apply strategies for effective working capital management.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Forecasting & Budgeting Techniques<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>An advanced module in financial planning, focusing on forecasting methods and budgeting [0m
+[33mpractices, incorporating economic indicators and scenario analysis for strategic planning.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Learn various forecasting methods.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Develop budgeting techniques aligned with economic indicators.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Apply scenario analysis to project future financial performance.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Advanced Valuation Methods & Discounted Cash Flow [0m[1;33m([0m[33mDCF[0m[1;33m)[0m[33m Analysis<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>This in-depth module explores techniques to determine the intrinsic value of companies and [0m
+[33mprojects with a strong emphasis on Discounted Cash Flow [0m[1;33m([0m[33mDCF[0m[1;33m)[0m[33m analysis.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand advanced valuation approaches.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Perform Discounted Cash Flow [0m[1;33m([0m[33mDCF[0m[1;33m)[0m[33m analysis effectively.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Support investment decisions with robust valuation techniques.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Financial Modelling & Excel Best Practices<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>A practical module that covers building and managing robust financial models using Excel. It [0m
+[33memphasizes best practices in model design, scenario analysis, and sensitivity testing.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Develop robust financial models in Excel.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Implement best practices in model design and analysis.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Conduct scenario and sensitivity analyses to enhance decision-making.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m<[0m[33m/[0m[33mmodules[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcurriculum[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcurriculum[0m[33m>[0m
+
+[33mAnd here are the courses that you have to choose from:[0m
+[33m<courses>[0m
+[33m<course_title>A Guide to Understanding Financial Statements<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Financial Statements are something everyone should understand how to read, as they teach you how to analyze the[0m
+[33mhealth of a business. This course covers the fundamentals of financial statements, helping you make more informed business [0m
+[33mdecisions and grow in your career. Instructor Josh Aharonoff helps you master the fundamentals of how to read and understand [0m
+[33mfinancial statements. He does a deep dive into the three most common financial statements: profit and loss, balance sheet, and [0m
+[33mstatement of cash flows. Josh dissects each section of these statements, explaining how they are connected and how to build a [0m
+[33mstatement of cash flows.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Corporate Financial Statement Analysis<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Financial reports contain a trove of information about your company's past, present, and future. With [0m
+[33mthe basic tenants of financial analysis in your tool kit, you can use these reports to gain valuable insights into your [0m
+[33morganization's strengths and shortcomings. In this course, Jim and Kay Stice dive into the subject of financial statements, [0m
+[33mexplaining how to work with and analyze them. They start off with some general knowledge about the structure and layout of a [0m
+[33mfinancial statement, and then go deeper by looking at the various ratios most commonly found in these statements. Plus, they detail[0m
+[33mthe various limitations of financial statement analysis. By the end of this course, you'll be able to analyze financial statements [0m
+[33mto spot concerning trends and make smarter calls going forward.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Note: Supplemental materials for this course can [0m
+[33mbe found in the exercise files.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Business Analysis Foundations<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>One of the main reasons given for unsuccessful project results is the lack of clear understanding of [0m
+[33mstakeholder requirements. Business analysis helps to prevent project failure by identifying and validating those requirements early[0m
+[33mon. Of course, business analysis doesnâ€™t stop with requirementsâ€”business analysts also recommend solutions and facilitate their[0m
+[33mexecution. This course provides an introduction to the foundations of business analysis. It helps demystify the role of the [0m
+[33mbusiness analyst [0m[1;33m([0m[33mBA[0m[1;33m)[0m[33m, and outlines the knowledge and skills required to build a successful BA career. Instructor Greta Blash also [0m
+[33mprovides an in-depth review of the business analysis process, from conducting a needs assessment and identifying stakeholders to [0m
+[33mtesting, validation, and release. Each lesson demonstrates why business analysis worksâ€”and how you can use it to improve your [0m
+[33morganization.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Mastering Key Financial Ratios for Career Growth<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Take your financial skills to the next level in this comprehensive course that offers a deep dive into[0m
+[33mthe world of financial ratios, equipping you with the essential knowledge to analyze and interpret financial statements [0m
+[33meffectively. Explore five key types of ratios: profitability, liquidity, leverage, activity, and coverage.By mastering these [0m
+[33mratios, you'll gain invaluable insights into a company's financial health, performance, and potential for growth. Learn how to [0m
+[33massess profitability and efficiency, evaluate a company's ability to meet short-term obligations, understand its debt levels and [0m
+[33mfinancial leverage, measure asset utilization, and gauge its ability to cover interest payments.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This knowledge [0m
+[33mwill be valuable for career advancement and making informed financial decisions. Whether you're a financial analyst, investor, or [0m
+[33maspiring business professional, this course will provide you with the tools and skills to excel in your [0m
+[33mfield.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Accounting Foundations: Understanding the Accounting Cycle and Accrual-Basis Accounting<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>How can you make sure your financial statements accurately reflect the economic activities of your company? Put[0m
+[33ma great process in place and follow the accounting rules. Fortunately, we already have a process, the accounting cycleâ€”we just [0m
+[33mneed to learn it and implement it. And, the accounting rules already exist, too. In this course, youâ€™ll master the accounting [0m
+[33mcycle and learn the rules of accrual-based accounting and how they differ from those of cash-based accounting, which is what [0m
+[33myouâ€™re probably familiar with now.&lt;br&gt;&lt;br&gt;By the end of this course, you'll know exactly how the financial statements[0m
+[33mcame to be as well as how nearly every transaction your business makes will impact those financial statements. This course will set[0m
+[33myou apart and give your accounting and business acumen the boost it needs.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Mastering Key Financial Ratios for Career Growth<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Take your financial skills to the next level in this comprehensive course that offers a deep dive into[0m
+[33mthe world of financial ratios, equipping you with the essential knowledge to analyze and interpret financial statements [0m
+[33meffectively. Explore five key types of ratios: profitability, liquidity, leverage, activity, and coverage.By mastering these [0m
+[33mratios, you'll gain invaluable insights into a company's financial health, performance, and potential for growth. Learn how to [0m
+[33massess profitability and efficiency, evaluate a company's ability to meet short-term obligations, understand its debt levels and [0m
+[33mfinancial leverage, measure asset utilization, and gauge its ability to cover interest payments.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This knowledge [0m
+[33mwill be valuable for career advancement and making informed financial decisions. Whether you're a financial analyst, investor, or [0m
+[33maspiring business professional, this course will provide you with the tools and skills to excel in your [0m
+[33mfield.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Corporate Financial Statement Analysis<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Financial reports contain a trove of information about your company's past, present, and future. With [0m
+[33mthe basic tenants of financial analysis in your tool kit, you can use these reports to gain valuable insights into your [0m
+[33morganization's strengths and shortcomings. In this course, Jim and Kay Stice dive into the subject of financial statements, [0m
+[33mexplaining how to work with and analyze them. They start off with some general knowledge about the structure and layout of a [0m
+[33mfinancial statement, and then go deeper by looking at the various ratios most commonly found in these statements. Plus, they detail[0m
+[33mthe various limitations of financial statement analysis. By the end of this course, you'll be able to analyze financial statements [0m
+[33mto spot concerning trends and make smarter calls going forward.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Note: Supplemental materials for this course can [0m
+[33mbe found in the exercise files.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Running a Profitable Business: Understanding Financial Ratios<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Financial ratiosâ€”such as ROI [0m[1;33m([0m[33mreturn on investment[0m[1;33m)[0m[33m or ROA [0m[1;33m([0m[33mreturn on assets[0m[1;33m)[0m[33mâ€” are a valuable tool for [0m
+[33mmeasuring a company's progress against a financial goal, a certain competitor, or the overall industry. In this course, professors [0m
+[33mJim and Kay Stice explain the financial ratios found on balance sheets, income statements, and cash-flow statements and provide [0m
+[33mexamples from real-world companies such as Walmart, Nordstrom, and McDonald's. They help you understand how to use financial ratios[0m
+[33mto analyze or benchmark your company against other companies.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Accounting Foundations: Understanding the Accounting Cycle and Accrual-Basis Accounting<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>How can you make sure your financial statements accurately reflect the economic activities of your company? Put[0m
+[33ma great process in place and follow the accounting rules. Fortunately, we already have a process, the accounting cycleâ€”we just [0m
+[33mneed to learn it and implement it. And, the accounting rules already exist, too. In this course, youâ€™ll master the accounting [0m
+[33mcycle and learn the rules of accrual-based accounting and how they differ from those of cash-based accounting, which is what [0m
+[33myouâ€™re probably familiar with now.&lt;br&gt;&lt;br&gt;By the end of this course, you'll know exactly how the financial statements[0m
+[33mcame to be as well as how nearly every transaction your business makes will impact those financial statements. This course will set[0m
+[33myou apart and give your accounting and business acumen the boost it needs.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>A Guide to Understanding Financial Statements<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Financial Statements are something everyone should understand how to read, as they teach you how to analyze the[0m
+[33mhealth of a business. This course covers the fundamentals of financial statements, helping you make more informed business [0m
+[33mdecisions and grow in your career. Instructor Josh Aharonoff helps you master the fundamentals of how to read and understand [0m
+[33mfinancial statements. He does a deep dive into the three most common financial statements: profit and loss, balance sheet, and [0m
+[33mstatement of cash flows. Josh dissects each section of these statements, explaining how they are connected and how to build a [0m
+[33mstatement of cash flows.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Excel: Building a [0m[1;33m13[0m[33m-Week Cash Flow<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>In this practical course, learn how to create a robust and dynamic cash flow forecast using Microsoft Excel. [0m
+[33mInstructor Christopher Reilly shows you how to clean up your source data, build a cash flow forecast from scratch, summarize your [0m
+[33mfindings, and refresh the forecast with new data. You'll also discover how to perform variance analysis to compare actual results [0m
+[33magainst your projections. By the end of this course, you'll have a powerful tool to help you manage your business's cash flow and [0m
+[33mmake informed financial decisions.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Understanding the Cash Conversion Cycle for Business<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;The cash conversion cycle isnâ€™t just another accounting metric, itâ€™s a crystal ball into a [0m
+[33mcompanyâ€™s financial health and risk profile. A successful business professional who understands the cash conversion cycle will [0m
+[33mmake better decisions, mitigate risk, and provide strategic recommendations to their organization.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;In this [0m
+[33mcourse, Hailey Margetta provides an overview of how to calculate the cash conversion cycle, interpret its meaning, identify risks [0m
+[33mthat can impact a businesses cash conversion cycle and shares the best questions to ask when completing your [0m
+[33manalysis.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Because a companyâ€™s cash conversion cycle impacts everything from meeting its financial obligations [0m
+[33mto future growth, itâ€™s a concept all driven business professionals need to understand.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Running a Profitable Business: Understanding Cash Flow<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>The cash flow statement is one of the three primary financial statements, but because it has only been around [0m
+[33msince [0m[1;33m1988[0m[33m, many traditional business analysis models don't include it. And improper cash flow can mean the death of a business. [0m
+[33mThis course reviews all the important topics you need to know for proper cash flow management and analysis. Professors Jim and Kay [0m
+[33mStice review the difference between net income and operating cash flow, show how to interpret a cash flow statement, introduce the [0m
+[33mJim Stice operating cash flow matrix, and describe some real cash flow catastrophes and triumphs at companies such as General [0m
+[33mMotors and Home Depot.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Cash Flow Cycles and Analysis<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Learn how companies manage their cash flow in this course that explores both the operating cash flow [0m
+[33mcycle and the investing cash flow cycle, using real-world examples to calculate a companyâ€™s working capital funding gap. Explore [0m
+[33mthe important strategies companies can use to optimize their working capital accounts, examine the longer-term investments such as [0m
+[33msustaining or expansionary capital expenditures, and find out how to assess the payback time on a project and look at the return on[0m
+[33minvestment. Finally, combine what you learned and produce a cash flow statement to compare key metrics such as net income, EBITDA, [0m
+[33mcash flow from operations, and free cash flow. The course looks at things from both the lender's perspective and the borrower's [0m
+[33mperspective, so you'll have a full picture as a complete credit analyst of how to forecast and optimize cash flow for a business. [0m
+[33m&lt;[0m[33m/[0m[33mp[0m[33m&gt; &lt;p&gt;This course was created by &lt;a [0m
+[33mhref[0m[33m=[0m[4;33mhttps[0m[4;33m://corporatefinanceinstitute.com/?[0m[4;33mutm_source[0m[4;33m=[0m[4;33mLinkedIn[0m[4;33m&quot;[0m[4;33mutm_medium[0m[4;33m=[0m[4;33morganic[0m[4;33m&quot;[0m[4;33mutm_campaign[0m[4;33m=[0m[4;33mli_learning[0m[33m [0m
+[33mtarget[0m[33m=[0m[33m_blank[0m[33m&gt;CFI&lt;[0m[33m/[0m[33ma[0m[33m&gt;. We are pleased to host this content in our library.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Accounting Foundations: Understanding the Accounting Cycle and Accrual-Basis Accounting<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>How can you make sure your financial statements accurately reflect the economic activities of your company? Put[0m
+[33ma great process in place and follow the accounting rules. Fortunately, we already have a process, the accounting cycleâ€”we just [0m
+[33mneed to learn it and implement it. And, the accounting rules already exist, too. In this course, youâ€™ll master the accounting [0m
+[33mcycle and learn the rules of accrual-based accounting and how they differ from those of cash-based accounting, which is what [0m
+[33myouâ€™re probably familiar with now.&lt;br&gt;&lt;br&gt;By the end of this course, you'll know exactly how the financial statements[0m
+[33mcame to be as well as how nearly every transaction your business makes will impact those financial statements. This course will set[0m
+[33myou apart and give your accounting and business acumen the boost it needs.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Excel for Corporate Finance Professionals<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Learn how to use Excel for the bread-and-butter tasks required by corporate finance and financial planning and [0m
+[33manalysis [0m[1;33m([0m[33mFP&quot;A[0m[1;33m)[0m[33m professionals. In this hands-on course, Professor Michael McDonald steps through how to leverage this powerful[0m
+[33mtool for capital budgeting and corporate investment selection at your firm, determine your firm's cost of capital, and perform [0m
+[33moperational budgeting. Michael explains how to estimate weighted average cost of capital [0m[1;33m([0m[33mWACC[0m[1;33m)[0m[33m, build a budget, perform stress [0m
+[33mtesting and scenario analysis, and more. Throughout the course, Michael includes exercises and downloadable exercise files that can[0m
+[33mgive you a practical understanding of these key topics.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Business Analysis Foundations: Strategy Analysis<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Strategy analysis is one of the six major knowledge areas of business analysis, and practitioners must be able [0m
+[33mto incorporate strategy analysis practices into their work activities. In this course, instructor Laura Paton begins with the [0m
+[33mbasics of strategy analysis, including the value and concepts. Next, Laura shows you how to start performing Strategy Analysis with[0m
+[33mfour key tasks, starting with analyzing the current state environment. She covers strategies to elicit information from [0m
+[33mstakeholders, conduct a gap analysis, and identify risk. Laura also explains the solution options and financial measures that you [0m
+[33mcan use to assess the viability of a proposed solution. Plus, she discusses techniques such as creating a business case to present [0m
+[33myour analysis to decision makers.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Financial Modeling and Forecasting Financial Statements<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Financial reports are not just summaries of the pastâ€”they also include predictions for the future. In fact, [0m
+[33mmost financial institutions are more interested in future performance than historical trends. Banks want to know your future cash [0m
+[33mflow; investors want to know future profits. In this course, Jim and Kay Stice explains how to create forecasted financial [0m
+[33mstatements for your company. Learn how to use past data such as cost of goods sold, depreciation expenses, and levels of inventory,[0m
+[33mand understand what caused those numbers to fluctuate over time. Then you can learn how to use the information as the basis for [0m
+[33mforecasting, applying a simple but powerful equation: assets = liability + equity. You get hands-on practice building three [0m
+[33mdifferent documents: a forecasted income statement, a forecasted balance sheet, and a forecasted statement of cash flow. Throughout[0m
+[33mthe course, Jim and Kay use famous business casesâ€”like Home Depotâ€™s [0m[1;33m1985[0m[33m cash-flow crisisâ€”to illustrate the importance of [0m
+[33maccurate financial forecasts and their impact on business decisions.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Excel: Creating Business Budgets<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>A sound business budget can help you effectively manage resources as your organization changes and grows. [0m
+[33mMicrosoft Excel is uniquely suited to the task of business budgeting, as it boasts a slew of features that make it easy to create [0m
+[33mbudget models, as well as apply ongoing updates as your business evolves. In this course, Joshua Rischin shows business owners, [0m
+[33mmanagers, and their staff how to use Excel to design, create, and maintain robust business budgets. Joshua demonstrates how to use [0m
+[33man Excel model to build business budgets in a logical and structured manner, as well as how to forecast income and expenses based [0m
+[33mon various scenarios. He also shows how to collate inputs from various sources to create structured Excel input sheets, visualize [0m
+[33myour projected results, prepare summary reports, and more.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Using Data in Financial Analysis<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Big data has transformed the world of business. Yet many people don't understand what big data and business [0m
+[33mintelligence are, or how to apply the techniques to their day-to-day jobs. This course addresses that knowledge gap, giving [0m
+[33mbusinesspeople practical methods to create quick and relevant business forecasts using big data. Join Professor Michael McDonald [0m
+[33mand discover how to use predictive analytics to forecast key performance indicators of interest, such as quarterly sales, projected[0m
+[33mcash flow, or even optimized product pricing. Learn how to gather, compute, and use basic financial ratios, and then how to apply [0m
+[33mthose ratios for forecasting purposes looking at key outcomes for the firm. All you need is Microsoft Excel. Michael uses the [0m
+[33mbuilt-in formulas, functions, and calculations to perform regression analysis, calculate confidence intervals, and stress test your[0m
+[33mresults. You'll walk away from the course able to immediately begin creating forecasts for your own business [0m
+[33mneeds.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introduction to Business Valuation<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Valuation is probably the most fundamental concept in finance and is a necessary skill to become a world-class [0m
+[33mfinancial analyst. Valuation is the art and science of attributing value to an asset, investment or company. In this course, learn [0m
+[33mabout the three most common valuation methodologies: comparable company valuation, precedent transaction valuation and discounted [0m
+[33mcash flow valuation.&lt;p&gt;This course was created by &lt;a [0m
+[33mhref[0m[33m=[0m[4;33mhttps[0m[4;33m://corporatefinanceinstitute.com/?[0m[4;33mutm_source[0m[4;33m=[0m[4;33mLinkedIn[0m[4;33m&quot;[0m[4;33mutm_medium[0m[4;33m=[0m[4;33morganic[0m[4;33m&quot;[0m[4;33mutm_campaign[0m[4;33m=[0m[4;33mli_learning[0m[33m [0m
+[33mtarget[0m[33m=[0m[33m_blank[0m[33m&gt;CFI&lt;[0m[33m/[0m[33ma[0m[33m&gt;. We are pleased to host this content in our library.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Internal Rate of Return for Business Leaders<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Business leaders need to know the value of investment decisions. Measuring IRR helps leaders make sound [0m
+[33mbusiness investment decisions and helps them be effective stewards of company finances. In this course, Jason Schenkerâ€”an [0m
+[33meconomist, finance expert, futurist, speaker, and authorâ€”covers internal rate of return [0m[1;33m([0m[33mIRR[0m[1;33m)[0m[33m, net present value [0m[1;33m([0m[33mNPV[0m[1;33m)[0m[33m, return on[0m
+[33minvestment [0m[1;33m([0m[33mROI[0m[1;33m)[0m[33m, cash flow, discounted cash flow models [0m[1;33m([0m[33mDCF[0m[1;33m)[0m[33m, and the time value of money. Build and deepen your understanding of[0m
+[33mthese topics, and learn how you can apply formulas to specific investment opportunities to make informed, high-value [0m
+[33mdecisions.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Accounting Foundations: Asset Impairment<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Goodwill, accounts receivable, and other long-term assets often have a market value that is less than the book [0m
+[33mvalue, or cost, of the asset. In this course, you can learn how to account for this on the balance sheet through asset impairment. [0m
+[33mWorking with impaired assets also requires understanding how to value those assets from year to year and audit the reported value. [0m
+[33mThis course covers all the aspects of identifying, reporting, and auditing the acquisition, depreciation, and impairment of [0m
+[33mtangible and intangible assets. Plus, learn about the option for upward revaluationâ€”write-upâ€”available under the International [0m
+[33mFinancial Reporting Standards rules.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Financial Modeling Foundations<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>By distilling key information regarding cash flow levels and risks, financial modeling helps decision-makers [0m
+[33mmake informed choices based on data analytics that move their firms forward. In this course, learn how to build financial models [0m
+[33mthat can be used in corporate finance, investment banking, commercial banking, and portfolio management. Professor Michael McDonald[0m
+[33mcovers financial statement models, investment banking models, M&quot;A models, buyout models, and DCF modelsâ€”all using Microsoft [0m
+[33mExcel. Throughout the course, Michael includes exercisesâ€”together with downloadable exercise filesâ€”that can provide you with a [0m
+[33mpractical understanding of these key topics.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Market Research Pricing Surveys: Van Westendorp and Gabor Granger Techniques<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Dive into the world of pricing surveys and discover the strategic value they bring to understanding [0m
+[33mconsumer price perceptions and behaviors. This course kicks off with an overview of pricing surveys, followed by a deep dive into [0m
+[33mthe benefits of the Van Westendorp and Gabor Granger methods. Gain insights into how these methods can enhance your pricing [0m
+[33mstrategies. &lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;In the second section, learn to design and conduct pricing surveys. Whether it's crafting a Van [0m
+[33mWestendorp survey, setting up a Gabor Granger survey, or utilizing advanced software tools, get hands-on experience in creating and[0m
+[33mexecuting effective pricing surveys. &lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;The final segment of the course focuses on analyzing and applying survey [0m
+[33minsights. Learn to interpret Van Westendorp data to identify optimal price points, analyze Gabor Granger data to maximize revenue, [0m
+[33mand leverage these pricing insights to inform and refine your overall business strategy. &lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Excel Modeling Tips and Tricks<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Excel is a great tool for building financial and operational models, allowing users to understand what may [0m
+[33mhappen in the future and how a business can position itself. In this course, learn to build effective and useful financial models [0m
+[33min Excel to forecast sales and costs, profits, operational KPIs, business assets and liabilities, and much more. Instructor Michael[0m
+[33mMcDonald covers rules and best practices for financial modeling and then shows how to set up single-sheet and multi-sheet financial[0m
+[33mmodels and add inputs and assumptions, external data, projections, and more. Michael introduces Microsoft Copilot and explains how [0m
+[33mits AI features can enhance the process of building models in Excel. Check out this course to gain the tools and tricks to become a[0m
+[33mmaster of Excel modeling.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Copilot in Excel: Supercharge Your Financial Modeling<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Master financial modeling with Copilot in Excel. Follow along with Joshua Rischin as he demonstrates how to use[0m
+[33mthe new advanced analysis capabilities built into Copilot in Excel to revolutionize financial models. Learn how to enable [0m
+[33mautomation, intelligent insights, and advanced data handling with natural language prompts. From setting up and importing data to [0m
+[33mcreating advanced formulas and designing interactive dashboards, check out this course to find out how to maximize the capabilities[0m
+[33mof Excel for accurate and efficient financial models.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Excel for Finance: Building a Three-Statement Operating Model<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>A three-statement operating model incorporates your companyâ€™s income statement, balance sheet, and cash flow [0m
+[33mstatement to provide an integrated and complete view of your organizationâ€™s financial health. Follow along with Chris Reilly, [0m
+[33mfinancial modeling expert and experienced Excel trainer, as he shows you how to build a three-statement model in Excel. Chris [0m
+[33mexplains how to clean up source data, build the cash flow statement, build EBITDA, and forecast the income statement, balance [0m
+[33msheet, debt schedule, and more.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Financial Modeling Foundations<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>By distilling key information regarding cash flow levels and risks, financial modeling helps decision-makers [0m
+[33mmake informed choices based on data analytics that move their firms forward. In this course, learn how to build financial models [0m
+[33mthat can be used in corporate finance, investment banking, commercial banking, and portfolio management. Professor Michael McDonald[0m
+[33mcovers financial statement models, investment banking models, M&quot;A models, buyout models, and DCF modelsâ€”all using Microsoft [0m
+[33mExcel. Throughout the course, Michael includes exercisesâ€”together with downloadable exercise filesâ€”that can provide you with a [0m
+[33mpractical understanding of these key topics.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Excel: Financial Functions in Depth<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Analyzing financial data can seem intimidating, but Microsoft Excel has a wide range of functions to perform [0m
+[33mthese calculations quickly and easily. In this course, Microsoft  MVP Danielle Stein Fairhurst shows you how and when to use each [0m
+[33mof the financial functions available in Excel. Danielle covers evaluating loans, payments, and interest; calculating depreciation; [0m
+[33mdetermining rates of return; calculating prices and yields as well as applying some of the new features of Excel for Microsoft [0m[1;33m365[0m[33m [0m
+[33mto financial data. Plus, she guides you through combining these functions to perform financial analysis.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+
+[33m<[0m[33m/[0m[33mcourses[0m[1;33m>[0m
+
+[33mPlease select the most appropriate courses to fulfill the objectives of this curriculum.[0m
+[33mREMEMBER TO PICK [0m[1;33m6[0m[33m-[0m[1;33m12[0m[33m COURSES TOTAL; NO LESS THAN SIX, NO MORE THAN TWELVE.[0m
+[33mYOU SHOULD MAKE SURE YOU ARE PROVIDING THE COURSE TITLE VERBATIM AS IT APPEARS IN THE COURSE DATABASE.[0m
+
+[33mProvide a structured Curation object that includes the topic of the curriculum and the course titles of the selected video courses.[0m
+[33m"Topic"[0m[33m should be the verbatim topic of the curriculum provided to you above.[0m
+
+[1;32m───────────────────────────────────────────────────────────── [0mMessage[1;32m ─────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mFinancial Modelling & Excel Best Practices[0m
+[34m-------------------------------------[0m
+[34mFinancial Modeling Foundations[0m
+[34mExcel Modeling Tips and Tricks[0m
+[34mCopilot in Excel: Supercharge Your Financial Modeling[0m
+[34mExcel for Finance: Building a Three-Statement Operating Model[0m
+[34mExcel: Financial Functions in Depth[0m
+[34mExcel for Corporate Finance Professionals[0m
+
