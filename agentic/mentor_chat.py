@@ -250,11 +250,24 @@ class MentorChat(Chat):
         for index, course in enumerate(courselist):
             self.course_cache[index + 1] = course.course_title
 
-    def print_course_list(self, courselist: list[Course]):
+    def print_course_list(self, courselist: list[Course], sort: bool = True):
         """
         Formats courselist (with numbers) and prints to console.
         Invoked whenever we want to present a course list to a user.
+        Sort is True by default, meaning we sort by course release date.
+        We want False for lists that need to retain their sequence (i.e. curation)
         """
+        # sort the courselist by course.metadata["Course Release Date"], descending
+        if sort:
+            sorted_list = []
+            for course in courselist:
+                try:
+                    course_release_date = course.metadata["Course Release Date"][:4]
+                except (KeyError, TypeError):
+                    course_release_date = ""
+                sorted_list.append((course, course_release_date))
+            sorted_list.sort(key=lambda x: x[1], reverse=True)
+            courselist = [x[0] for x in sorted_list]
         for index, course in enumerate(courselist):
             try:
                 course_release_date = course.metadata["Course Release Date"][:4]
@@ -683,7 +696,7 @@ class MentorChat(Chat):
             self.console.print("[red]No curation (yet).[/red]")
         else:
             self.console.print(f"[bold cyan]{self.curation.title}[/bold cyan]")
-            self.print_course_list(self.curation.courses)
+            self.print_course_list(self.curation.courses, sort=False)
 
     def command_view_cache(self):
         """
