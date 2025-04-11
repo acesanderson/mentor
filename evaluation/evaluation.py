@@ -22,7 +22,7 @@ with open(dir_path / prompts / "title_prompt.jinja", "r") as f:
 with open(dir_path / prompts / "query_prompt.jinja", "r") as f:
     query_prompt_string = f.read()
 # Blacklist
-with open(dir_path / "blacklist.conf", "r") as f:
+with open(dir_path / prompts / "blacklist.txt", "r") as f:
     blacklist = ",".join(f.read().split("\n"))
 
 
@@ -73,6 +73,6 @@ def title_certificate(curation: Curation, model=Model("llama3.1:latest")) -> str
     prompt = Prompt(title_prompt_string)
     chain = Chain(prompt=prompt, model=model)
     response = chain.run(
-        input_variables={"curriculum": curation.snapshot, "blacklist": blacklist}
+        input_variables={"curation": curation.snapshot, "blacklist": blacklist}
     )
     return response.content

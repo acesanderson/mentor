@@ -1089,6 +1089,17 @@ class MentorChat(Chat):
             return
         self.console.print(Markdown(pretty_curriculum(first_course_curriculum)))
 
+    def command_consult_title(self):
+        """
+        Generate a potential title for the curation.
+        Good for double checking you have curated effectively.
+        """
+        from Mentor.evaluation.evaluation import title_certificate
+
+        title = title_certificate(self.curation)
+        markdown = Markdown(title)
+        self.console.print(markdown)
+
     def command_consult_tools(self, param):
         """
         Go through a course (or curation) to identify orgs and tools mentioned.
