@@ -751,6 +751,48 @@ class MentorChat(Chat):
             self.add_to_workspace(course)
             self.save_curation()
 
+    def command_multi(self):
+        """
+        Temporarily enter multiline input mode to paste in a list of courses.
+        Hit Enter twice to submit.
+        """
+        self.console.print(
+            "Multiline mode activated. Paste course titles below:", style="yellow"
+        )
+        self.console.print(
+            "Press Enter twice on an empty line when finished.", style="yellow"
+        )
+        lines = []
+        empty_line_count = 0
+        while empty_line_count < 2:
+            try:
+                line = input()
+                if not line.strip():
+                    empty_line_count += 1
+                else:
+                    empty_line_count = 0
+
+                lines.append(line)
+            except KeyboardInterrupt:
+                self.console.print("\nMultiline input canceled.", style="green")
+                return
+        if lines:
+            # Join the lines into a single string
+            text = "\n".join(lines).strip()
+            # Split the text into a list of courses
+            courses = text.split("\n")
+            # Add each course to the curation
+            for course in courses:
+                course_obj = self.parse_course_request(course)
+                if isinstance(course_obj, Course):
+                    self.curation.courses.append(course_obj)
+                    self.add_to_workspace(course)
+                elif isinstance(course_obj, list):
+                    self.console.print(
+                        f"[bold red]Not found:[/bold red] [red]{course}[/red]"
+                    )
+        self.console.print("Courses added to curation.", style="yellow")
+
     def command_remove_course(self, param):
         """
         Remove a course from the curation.
