@@ -1061,6 +1061,7 @@ class MentorChat(Chat):
                 output += "---------------------------------------------------------------------\n"
                 output += f'[yellow]{prereq_dict["prerequisites"]}[/yellow]\n'
                 self.console.print(output)
+            return
         # Or if we have a param, do a single course
         course = self.parse_course_request(param)
         if isinstance(course, Course):
