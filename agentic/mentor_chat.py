@@ -1157,6 +1157,16 @@ class MentorChat(Chat):
         output += f"\n[bold green]Final score:[/bold green] [bold yellow]{final_score:.2f}[/bold yellow]\n"
         self.console.print(output)
 
+    def command_consult_capstone(self):
+        """
+        Suggest a capstone project for a curation.
+        """
+        from Kramer import generate_capstone_project
+
+        capstone = generate_capstone_project(self.curation)
+        markdown = Markdown(capstone)
+        self.console.print(markdown)
+
     def command_consult_sequence(self):
         """
         For the courses in the Curation, provide a detailed recommendation for course order.
