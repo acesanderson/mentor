@@ -16349,3 +16349,1106 @@
 [1;36muser:[0m
 [33m.[0m[33m/[0m[33mmul[0m
 
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mSkill Up with Python: Hands-On Data Science and Machine Learning Projects[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mPython has risen to popularity as one of the most versatile and beginner-friendly programming languages in the world. Its simplicity, [0m
+[33mreadability, and extensive libraries make it a powerful language in a wide variety of different domains, including web development, [0m
+[33mdata analysis, scientific computing, artificial intelligence, and automation. If youâ€™re looking to kickstart your Python programming[0m
+[33mjourney, this hands-on course was designed for you. Join instructor Shaun Wassell as he offers an interactive approach to building [0m
+[33myour Python skills through a series of practical projects, all written from scratch. Test out your new know-how along the way in areas[0m
+[33msuch as data analysis, machine learning, web scraping, and more.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Skill Up with Python: Hands-On Data Science and Machine Learning Projects[0m
+[33m## Introduction[0m
+[33m        [0m[33mSkill up with Python: Introduction      [0m[1;33m173[0m
+[33m## [0m[1;33m1[0m[33m. Manipulate and Visualize Data in Jupyter[0m
+[33m        [0m[33mLearning objectives     [0m[1;33m50[0m
+[33m        [0m[33mGet started with Jupyter Notebooks      [0m[1;33m748[0m
+[33m        [0m[33mLoad data into Jupyter  [0m[1;33m675[0m
+[33m        [0m[33mManipulate data with pandas     [0m[1;33m628[0m
+[33m        [0m[33mVisualize data  [0m[1;33m800[0m
+[33m## [0m[1;33m2[0m[33m. Perform Sentiment Analysis[0m
+[33m        [0m[33mLearning objectives     [0m[1;33m53[0m
+[33m        [0m[33mLearn about sentiment analysis tools in Python  [0m[1;33m210[0m
+[33m        [0m[33mLearn the basics of NLTK        [0m[1;33m550[0m
+[33m        [0m[33mIncorporate sentiment analysis into an application      [0m[1;33m719[0m
+[33m        [0m[33mAnalyze with real-world data    [0m[1;33m899[0m
+[33m## [0m[1;33m3[0m[33m. Work with Image Recognition[0m
+[33m        [0m[33mLearning objectives     [0m[1;33m56[0m
+[33m        [0m[33mLearn about image recognition tools in Python   [0m[1;33m120[0m
+[33m        [0m[33mLearn the basics of OpenCV      [0m[1;33m514[0m
+[33m        [0m[33mIncorporate image recognition into an application       [0m[1;33m465[0m
+[33m## [0m[1;33m4[0m[33m. Scrape Data from the Internet[0m
+[33m        [0m[33mLearning objectives     [0m[1;33m56[0m
+[33m        [0m[33mLearn about web-scraping tools in Python        [0m[1;33m296[0m
+[33m        [0m[33mLearn the basics of the Beautiful Soup library  [0m[1;33m397[0m
+[33m        [0m[33mFormat and use scraped data     [0m[1;33m467[0m
+[33m        [0m[33mModify web-scraping logic for other websites    [0m[1;33m533[0m
+[33m## Conclusion[0m
+[33m        [0m[33mSkill up with Python: Summary   [0m[1;33m72[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that [0m
+[33mis absolutely necessary for the course.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Basic Python programming fundamentals [0m[1;34m([0m[34msyntax, variables, loops, conditionals, and functions[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with fundamental Python data types and structures [0m[1;34m([0m[34msuch as lists and dictionaries[0m[1;34m)[0m[34m  [0m
+[34m• Ability to write, run, and troubleshoot Python code in an interactive environment [0m[1;34m([0m[34me.g., using Jupyter Notebooks[0m[1;34m)[0m[34m  [0m
+[34m• Basic skills in importing and using Python libraries/modules[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mComplete Guide to Python for Data Engineering: From Beginner to Advanced[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mGet up and running with the basics of Python before progressing to more advanced topics specific to data engineering. In this [0m
+[33mhands-on, interactive course, join instructor Deepak Goyal to practice performing a wide range of data engineering tasks in Python to [0m
+[33mboost your technical know-how, prepare for an interview, or land a new role. This course includes Code Challenges powered by CoderPad.[0m
+[33mCode Challenges are interactive coding exercises with real-time feedback, so you can get hands-on coding practice to advance your [0m
+[33mcoding skills. Deepak helps you boost your skills as a Python programmer with six specific coding challenges. Explore language basics,[0m
+[33mPython collections, file handling, Pandas, NumPy, OOP, and advanced data engineering tools that use Python. The course ends with a [0m
+[33mcapstone project focused on retail sales analysis.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Complete Guide to Python for Data Engineering: From Beginner to Advanced[0m
+[33m## Introduction[0m
+[33m        [0m[33mWelcome to the course   [0m[1;33m34[0m[33m      [0m[33mLearn about the course and the overall learning goals.[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m82[0m[33m      [0m[33mYou do not need to have prior Python knowledge, but knowledge of coding in another programming[0m
+[33mlanguage would be helpful. The first chapter reviews the basics but does not go into great depth.[0m
+[33m        [0m[33mCoderPad tour   [0m[1;33m122[0m[33m     [0m[33mLearn about how to navigate the CoderPad environment.[0m
+[33m## [0m[1;33m1[0m[33m. Python Basics[0m
+[33m        [0m[33mIntroduction to Python and data engineering     [0m[1;33m186[0m[33m     [0m[33mExplore the basics of using Python for data engineering.[0m
+[33m        [0m[33mSetting up your Python environment      [0m[1;33m189[0m[33m     [0m[33mLearn how to set up your Python environment.[0m
+[33m        [0m[33mExplore the Google Colab worksheet      [0m[1;33m266[0m[33m     [0m[33mThis video explores the Google Colab worksheet.[0m
+[33m        [0m[33mVariables and data types        [0m[1;33m319[0m[33m     [0m[33mLearn about Python data types and variables.[0m
+[33m        [0m[33mOperators and expressions       [0m[1;33m427[0m[33m     [0m[33mLearn about operator expressions in Python.[0m
+[33m        [0m[33mControl structures      [0m[1;33m418[0m[33m     [0m[33mLearn about control structures in Python.[0m
+[33m        [0m[33mFunctions       [0m[1;33m405[0m[33m     [0m[33mLearn about functions in Python.[0m
+[33m        [0m[33mModules and packages    [0m[1;33m309[0m[33m     [0m[33mLearn about Python modules and packages.[0m
+[33m        [0m[33mString manipulation     [0m[1;33m492[0m[33m     [0m[33mLearn about string manipulation in Python.[0m
+[33m        [0m[33mError handling  [0m[1;33m325[0m[33m     [0m[33mLearn about error handling in pynb.[0m
+[33m        [0m[33mCode challenge: String manipulation     [0m[1;33m300[0m
+[33m        [0m[33mSolution: Conditions    [0m[1;33m78[0m[33m      [0m[33mThis video presents the instructor's solution to the CoderPad challenge.[0m
+[33m## [0m[1;33m2[0m[33m. Python Collections[0m
+[33m        [0m[33mCollection overview     [0m[1;33m141[0m[33m     [0m[33mLearn about the different collection types in Python. Collections are crucial for storing and [0m
+[33mmanipulating data.[0m
+[33m        [0m[33mPython collections: Tuples      [0m[1;33m365[0m[33m     [0m[33mLearn about the Python collections known as tuples. The tuple collection type is [0m
+[33mimportant from a data engineering perspective.[0m
+[33m        [0m[33mPython collections: Lists       [0m[1;33m328[0m[33m     [0m[33mLearn about the specific Python collection type known as lists.[0m
+[33m        [0m[33mPython collections: Sets        [0m[1;33m280[0m[33m     [0m[33mLearn about the specific Python collection type known as sets. The set collection type[0m
+[33mis important from a data engineering perspective.[0m
+[33m        [0m[33mPython collections: Dictionaries        [0m[1;33m462[0m[33m     [0m[33mLearn about the specific Python collection type known as dictionaries. The [0m
+[33mdictionary collection type is important from a data engineering perspective.[0m
+[33m        [0m[33mCode challenge: Analyze list    [0m[1;33m300[0m
+[33m        [0m[33mSolution: Collections   [0m[1;33m64[0m[33m      [0m[33mCompare your challenge solution to that of the instructor.[0m
+[33m## [0m[1;33m3[0m[33m. Python File Handling[0m
+[33m        [0m[33mFile I/O overview       [0m[1;33m141[0m[33m     [0m[33mLearn about the basics of file input and output in Python. File I/O is crucial for reading and[0m
+[33mwriting data.[0m
+[33m        [0m[33mWorking with CSV files  [0m[1;33m360[0m[33m     [0m[33mLearn how to read from and write to CSV file formats. CSV data sources are one of the common [0m
+[33mfile formats in the data engineering world.[0m
+[33m        [0m[33mWorking with JSON files [0m[1;33m306[0m[33m     [0m[33mLearn how to read from and write to JSON file formats. JSON data sources are one of the common[0m
+[33mfile formats in the data engineering world.[0m
+[33m        [0m[33mCode challenge: Read and write text to file     [0m[1;33m300[0m
+[33m        [0m[33mSolution: File handling [0m[1;33m164[0m[33m     [0m[33mCompare your challenge solution to that of the instructor.[0m
+[33m## [0m[1;33m4[0m[33m. pandas DataFrame API[0m
+[33m        [0m[33mIntroduction to pandas  [0m[1;33m202[0m[33m     [0m[33mLearn about the pandas library.[0m
+[33m        [0m[33mRead files as DataFrames        [0m[1;33m345[0m[33m     [0m[33mLearn how to read a file in as a DataFrame.[0m
+[33m        [0m[33mData cleaning and preprocessing [0m[1;33m435[0m[33m     [0m[33mLearn about data cleaning and preprocessing.[0m
+[33m        [0m[33mData manipulation and aggregation       [0m[1;33m406[0m[33m     [0m[33mLearn about data manipulation and aggregation.[0m
+[33m        [0m[33mData visualization      [0m[1;33m373[0m[33m     [0m[33mLearn about data visualization.[0m
+[33m        [0m[33mWrite a DataFrame to a file     [0m[1;33m266[0m[33m     [0m[33mLearn how to write a DataFrame to a file.[0m
+[33m        [0m[33mCode challenge: Play with pandas        [0m[1;33m300[0m
+[33m        [0m[33mSolution: pandas        [0m[1;33m96[0m[33m      [0m[33mCompare your challenge solution to that of the instructor.[0m
+[33m## [0m[1;33m5[0m[33m. NumPy[0m
+[33m        [0m[33mIntroduction to NumPy   [0m[1;33m191[0m[33m     [0m[33mLearn about the basics of the NumPy library. NumPy is a fundamental library for numerical [0m
+[33mcomputation in Python.[0m
+[33m        [0m[33mArray creation and attributes   [0m[1;33m398[0m[33m     [0m[33mLearn how to create and inspect NumPy arrays. Arrays are a fundamental data structure [0m
+[33min NumPy.[0m
+[33m        [0m[33mArray operations        [0m[1;33m426[0m[33m     [0m[33mLearn about the different operations that can be performed on NumPy arrays. Array operations [0m
+[33mare key for numerical computation.[0m
+[33m        [0m[33mIndexing and slicing    [0m[1;33m501[0m[33m     [0m[33mLearn how to index and slice NumPy arrays. Indexing and slicing are important for accessing [0m
+[33marray elements.[0m
+[33m        [0m[33mLinear algebra and statistics   [0m[1;33m348[0m[33m     [0m[33mLearn how to perform linear algebra and statistics operations in NumPy. These are key [0m
+[33mmathematical operations in data analysis.[0m
+[33m        [0m[33mWrite a NumPy array to a file   [0m[1;33m277[0m[33m     [0m[33mLearn how to write NumPy arrays to files. This allows for data to be saved and shared.[0m
+[33m        [0m[33mCode challenge: NumPy array operation   [0m[1;33m300[0m
+[33m        [0m[33mSolution: NumPy [0m[1;33m98[0m[33m      [0m[33mCompare your challenge solution to that of the instructor.[0m
+[33m## [0m[1;33m6[0m[33m. OOP with Python[0m
+[33m        [0m[33mUnderstanding classes and objects       [0m[1;33m108[0m[33m     [0m[33mLearn about the concept of classes and objects. Many real-world problems can [0m
+[33mbe break down into the classes and objects.[0m
+[33m        [0m[33mImplementation: Classes and objects in Python   [0m[1;33m225[0m[33m     [0m[33mLearn how to implement classes and objects in Python. This allows for [0m
+[33mthe implementation of the solution to many real-world problems in the programming world.[0m
+[33m        [0m[33mUnderstand OOP features: Abstraction, inheritance, and more     [0m[1;33m182[0m[33m     [0m[33mLearn about OOP principles. OOP features are [0m
+[33mfrequently used while writing the code.[0m
+[33m        [0m[33mCode challenge: Accessing object attributes     [0m[1;33m300[0m
+[33m        [0m[33mSolution: OOP   [0m[1;33m151[0m[33m     [0m[33mCompare your challenge solution to that of the instructor.[0m
+[33m## [0m[1;33m7[0m[33m. Advanced Data Engineering[0m
+[33m        [0m[33mTips to write efficient Python code     [0m[1;33m205[0m[33m     [0m[33mLearn how to write Python code efficiently. Efficient code can run the code [0m
+[33mfaster and save execution time.[0m
+[33m        [0m[33mWhat is ETL in the data engineering world?      [0m[1;33m207[0m[33m     [0m[33mLearn about the ETL process. ETL is one of the most popular processes [0m
+[33min the data engineering world.[0m
+[33m        [0m[33mUnderstand PySpark for data engineering [0m[1;33m241[0m[33m     [0m[33mLearn about PySpark. PySpark is one of the most popular data analytics [0m
+[33mframeworks.[0m
+[33m        [0m[33mWhat is Hadoop  [0m[1;33m170[0m[33m     [0m[33mLearn about Hadoop in the big data world. Hadoop is the base for all big data solutions.[0m
+[33m        [0m[33mImportance of visualization tools in data engineering   [0m[1;33m219[0m[33m     [0m[33mLearn about the importance of data visualization in data [0m
+[33mengineering. This will be a high-level theoretical overview featuring Power BI.[0m
+[33m        [0m[33mOn-premises vs. cloud data engineering  [0m[1;33m212[0m[33m     [0m[33mExplore the comparison between on-premises and cloud data engineering. Many [0m
+[33morganizations are moving to the cloud from on-premises environments.[0m
+[33m## [0m[1;33m8[0m[33m. Web Scraping with Python[0m
+[33m        [0m[33mHTML basics     [0m[1;33m420[0m[33m     [0m[33mLearn the fundamental concepts of HTML for web scraping. This is essential for understanding page [0m
+[33mstructure.[0m
+[33m        [0m[33mHTML parents, children, and descendants [0m[1;33m376[0m[33m     [0m[33mLearn about HTML element relationships for targeted web scraping. This [0m
+[33mfacilitates accurate data extraction.[0m
+[33m        [0m[33mUnderstand web scraping [0m[1;33m492[0m[33m     [0m[33mGrasp the importance and applications of web scraping for data collection and analysis.[0m
+[33m        [0m[33mBeautifulSoup basics    [0m[1;33m417[0m[33m     [0m[33mLearn the basics of the BeautifulSoup library for HTML parsing. This is crucial for web [0m
+[33mscraping tasks.[0m
+[33m        [0m[33mInstalling BeautifulSoup        [0m[1;33m251[0m[33m     [0m[33mInstall the BeautifulSoup library for Python. This enables the utilization of its [0m
+[33mpowerful features.[0m
+[33m        [0m[33mGet HTML from a web page        [0m[1;33m329[0m[33m     [0m[33mRetrieve HTML content from web pages for scraping. This forms the basis of the web [0m
+[33mscraping process.[0m
+[33m        [0m[33mScrape the web page     [0m[1;33m450[0m[33m     [0m[33mImplement web scraping using BeautifulSoup. Extract valuable data from web pages.[0m
+[33m        [0m[33mExport data as a TXT file       [0m[1;33m277[0m[33m     [0m[33mLearn how to export scraped data to a TXT file. This enables further analysis and [0m
+[33mmanipulation of data.[0m
+[33m## [0m[1;33m9[0m[33m. Advanced Built-in Functions[0m
+[33m        [0m[33mGenerators in Python    [0m[1;33m240[0m[33m     [0m[33mUnderstand generators and their benefits for memory-efficient iteration. This improves code [0m
+[33mperformance.[0m
+[33m        [0m[33mPython generator classes and iterators  [0m[1;33m683[0m[33m     [0m[33mLearn how to create custom generator classes and iterators in Python. This [0m
+[33menables efficient data processing.[0m
+[33m        [0m[33mIterables in Python     [0m[1;33m375[0m[33m     [0m[33mUnderstand iterables and their role in Python programming. This facilitates looping over data [0m
+[33mstructures.[0m
+[33m        [0m[1;33mfilter[0m[1;33m([0m[1;33m)[0m[33m and [0m[1;33mmap[0m[1;33m([0m[1;33m)[0m[33m functions    [0m[1;33m348[0m[33m     [0m[33mExplore the [0m[1;33mfilter[0m[1;33m([0m[1;33m)[0m[33m and [0m[1;33mmap[0m[1;33m([0m[1;33m)[0m[33m functions for data manipulation. This enhances [0m
+[33mefficiency in processing data.[0m
+[33m        [0m[1;33many[0m[1;33m([0m[1;33m)[0m[33m and [0m[1;33mall[0m[1;33m([0m[1;33m)[0m[33m functions in Python     [0m[1;33m234[0m[33m     [0m[33mLearn how to use the [0m[1;33many[0m[1;33m([0m[1;33m)[0m[33m and [0m[1;33mall[0m[1;33m([0m[1;33m)[0m[33m functions for boolean evaluation. This is[0m
+[33museful for logical operations in code.[0m
+[33m## [0m[1;33m10[0m[33m. Logging in Python[0m
+[33m        [0m[33mWhat is logging?        [0m[1;33m279[0m[33m     [0m[33mGrasp the concept of logging for capturing runtime information. This is important for [0m
+[33mdebugging and monitoring.[0m
+[33m        [0m[33mCustom logging  [0m[1;33m289[0m[33m     [0m[33mLearn how to customize logging behavior for specific requirements. This enhances flexibility in [0m
+[33mlogging setup.[0m
+[33m        [0m[33mLogging best practices  [0m[1;33m275[0m[33m     [0m[33mExplore best practices for effective logging implementation. This improves code readability [0m
+[33mand maintainability.[0m
+[33m## [0m[1;33m11[0m[33m. Capstone Project[0m
+[33m        [0m[33mCapstone Project: Retail sales analysis [0m[1;33m203[0m[33m     [0m[33mLearn about the course capstone project challenge.[0m
+[33m        [0m[33mSolution: Capstone project      [0m[1;33m1047[0m[33m    [0m[33mCompare your challenge solution to that of the instructor.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m51[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that [0m
+[33mis absolutely necessary for the course.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Basic programming concepts [0m[1;34m([0m[34me.g., understanding variables, control structures, functions[0m[1;34m)[0m[34m from prior coding experience in any [0m
+[34mlanguage  [0m
+[34m• Fundamental computer literacy, including the ability to use and navigate code execution environments [0m[1;34m([0m[34me.g., online IDEs like Google [0m
+[34mColab or similar[0m[1;34m)[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mData Science Foundations: Python Scientific Stack[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mJoin instructor Miki Tebeka as he dives into the Python scientific stack and shows you how to use it to solve problems. Miki covers [0m
+[33mthe major packages used throughout the data science process: numpy, pandas, matplotlib, scikit-learn, and others. He also guides you [0m
+[33mthrough how to load data, analyze data, run models, and display results.&lt;br&gt;&lt;br&gt;This course is integrated with GitHub [0m
+[33mCodespaces, an instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any [0m
+[33mlocal machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any timeâ€”all while using a tool that[0m
+[33myouâ€™ll likely encounter in the workplace. Check out the â€œUsing GitHub Codespaces with this courseâ€ video to learn how to get [0m
+[33mstarted.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Data Science Foundations: Python Scientific Stack[0m
+[33m## Introduction[0m
+[33m        [0m[33mThe Python scientific stack     [0m[1;33m50[0m[33m      [0m[33mThe Python scientific stack is widely used in data science. In this video, learn why [0m
+[33mit's very popular and what its main components are.[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m20[0m[33m      [0m[33mThis course assumes some prior knowledge. This video explains the skills and knowledge you [0m
+[33mneed in order to succeed in this course.[0m
+[33m        [0m[33mUsing GitHub Codespaces with this course        [0m[1;33m361[0m
+[33m        [0m[33mSetup   [0m[1;33m75[0m[33m      [0m[33mThere are several tools and packages used throughout the course. In this video, learn about the tools used and[0m
+[33mhow to install them.[0m
+[33m## [0m[1;33m1[0m[33m. Visual Studio Code[0m
+[33m        [0m[33mUse code cells  [0m[1;33m143[0m[33m     [0m[33mCode cells allow you to write code and run it in parts. In this video, learn how to write code cells [0m
+[33mand how to use them for efficient development.[0m
+[33m        [0m[33mExtensions to the Python language       [0m[1;33m96[0m[33m      [0m[33mThe Python scientific stack adds some extensions to the Python language. In [0m
+[33mthis video, learn about these extensions and how to use them.[0m
+[33m        [0m[33mUnderstand markdown cells       [0m[1;33m71[0m[33m      [0m[33mMarkdown cells allow you to write markdown, as opposed to code. Learn how to use [0m
+[33mmarkdown cells to write effective documentation.[0m
+[33m## [0m[1;33m2[0m[33m. NumPy Basics[0m
+[33m        [0m[33mNumPy overview  [0m[1;33m116[0m[33m     [0m[33mNumPy is a fundamental package. In this video, learn the main features it offers.[0m
+[33m        [0m[33mNumPy arrays    [0m[1;33m202[0m[33m     [0m[33mNumPy arrays are super fast, multidimensional arrays. In this video, learn about its capabilities.[0m
+[33m        [0m[33mSlicing [0m[1;33m109[0m[33m     [0m[33mSlicing is a way to get parts of an array. In this video, learn how to slice an array and use the parts of the[0m
+[33mdata you need.[0m
+[33m        [0m[33mLearn boolean indexing  [0m[1;33m168[0m[33m     [0m[33mBoolean indexing lets you select parts of an array based on a condition. In this video, learn [0m
+[33mto effectively use boolean indexing.[0m
+[33m        [0m[33mUnderstand broadcasting [0m[1;33m79[0m[33m      [0m[33mBroadcasting allows operations between unequal shaped arrays. In this video, learn how to use [0m
+[33mbroadcasting for effective computation.[0m
+[33m        [0m[33mUnderstand array operations     [0m[1;33m142[0m[33m     [0m[33mNumPy arrays offer a wide variety of operations. Learn about these operations and how [0m
+[33mto use them.[0m
+[33m        [0m[33mUnderstand ufuncs       [0m[1;33m159[0m[33m     [0m[33mufuncs are functions that work both on arrays and scalars. In this video, learn about the [0m
+[33madvantages of ufuncs and how you can write your own.[0m
+[33m        [0m[33mChallenge: Working with an image        [0m[1;33m58[0m
+[33m        [0m[33mSolution: Working with an image [0m[1;33m82[0m
+[33m## [0m[1;33m3[0m[33m. pandas[0m
+[33m        [0m[33mpandas overview [0m[1;33m79[0m[33m      [0m[33mpandas is the most used library in data science. In this video, discover why it is popular and some of[0m
+[33mits capabilities.[0m
+[33m        [0m[33mLoading CSV files       [0m[1;33m192[0m[33m     [0m[33mCSV is a very common data format. In this video, learn how to load data from CSV files.[0m
+[33m        [0m[33mParse time      [0m[1;33m107[0m[33m     [0m[33mTime needs special treatment in CSV files. In this video, learn how to parse time from a CSV file.[0m
+[33m        [0m[33mAccess rows and columns [0m[1;33m254[0m[33m     [0m[33mThe main data type in pandas is a two dimensional DataFrame. In this video, learn how to [0m
+[33maccess rows and columns.[0m
+[33m        [0m[33mCalculate distance      [0m[1;33m200[0m[33m     [0m[33mYou calculate speed from latitude and longitude. Learn how to move data and write functions.[0m
+[33m        [0m[33mDisplay speed box plot  [0m[1;33m128[0m[33m     [0m[33mThe pandas Timestamp class allows for math arithmetics. In this video, learn how to calculate [0m
+[33mspeed and create a box plot to display it.[0m
+[33m        [0m[33mChallenge: Taxi data mean speed [0m[1;33m22[0m
+[33m        [0m[33mSolution: Taxi data mean speed  [0m[1;33m58[0m
+[33m## [0m[1;33m4[0m[33m. Folium and Geospatial Data[0m
+[33m        [0m[33mCreate an initial map   [0m[1;33m89[0m[33m      [0m[33mMaps are great for showing geospatial data. In this video, learn how to create an initial map.[0m
+[33m        [0m[33mDraw a track on map     [0m[1;33m176[0m[33m     [0m[33mAdding your own data to maps is great story telling. In this video, learn how to draw a [0m
+[33mjogging track on a map.[0m
+[33m        [0m[33mUsing geospatial data with shapely      [0m[1;33m284[0m[33m     [0m[33mManipulating and selecting geospatial data is an important tool. In this [0m
+[33mvideo, learn how to use shapely to run calculations on geospatial data.[0m
+[33m        [0m[33mChallenge: Draw the running track       [0m[1;33m17[0m
+[33m        [0m[33mSolution: Draw the running track        [0m[1;33m62[0m
+[33m## [0m[1;33m5[0m[33m. NYC Taxi Data[0m
+[33m        [0m[33mExamine data    [0m[1;33m77[0m[33m      [0m[33mLooking at raw data can give you insights about the data. In this video, learn how to look at the raw [0m
+[33mdata.[0m
+[33m        [0m[33mLoad data from CSV files        [0m[1;33m91[0m[33m      [0m[33mLoading data from a CSV file can be tricky. In this video, learn how to load [0m
+[33mcomplicated data from a CSV file.[0m
+[33m        [0m[33mWorking with categorical data   [0m[1;33m168[0m[33m     [0m[33mCategorical data is found in many data sets. In this video, learn how to work with [0m
+[33mcategorical data types and save memory.[0m
+[33m        [0m[33mWork with data: Hourly trip rides       [0m[1;33m231[0m[33m     [0m[33mpandas offers many ways to reshape data. In this video, learn how to group [0m
+[33mdata.[0m
+[33m        [0m[33mWork with data: Rides per hour  [0m[1;33m204[0m[33m     [0m[33mYou can group data by more than one column. In this video, learn how to group data by [0m
+[33mseveral columns and run calculations.[0m
+[33m        [0m[33mWork with data: Weather data    [0m[1;33m240[0m[33m     [0m[33mpandas lets you join several DataFrames together. In this video, discover how to join [0m
+[33mDataFrames.[0m
+[33m        [0m[33mChallenge: Graphing taxi data   [0m[1;33m30[0m
+[33m        [0m[33mSolution: Graphing taxi data    [0m[1;33m157[0m
+[33m## [0m[1;33m6[0m[33m. scikit-learn[0m
+[33m        [0m[33mscikit-learn introduction       [0m[1;33m73[0m[33m      [0m[33mscikit-learn is a library that contains many machine learning algorithms. In this [0m
+[33mvideo, learn about scikit-learn and what it offers.[0m
+[33m        [0m[33mLinear regression       [0m[1;33m412[0m[33m     [0m[33mLinear regression is a simple and effective way to predict the value of a variable. In this [0m
+[33mvideo, learn how to use linear regression and the basics of working with scikit-learn models.[0m
+[33m        [0m[33mUnderstand train/test split     [0m[1;33m131[0m[33m     [0m[33mIn order to validate a model, you need to split your data into test and train sets. In[0m
+[33mthis video, learn how to use facilities from scikit-learn to split data for testing.[0m
+[33m        [0m[33mPreprocess data [0m[1;33m195[0m[33m     [0m[33mMost of the time, data needs to be preprocessed before you use it. In this video, learn how to use [0m
+[33mscikit-learn's preprocessing facilities.[0m
+[33m        [0m[33mCompose pipelines       [0m[1;33m143[0m[33m     [0m[33mMost machine learning flows are composed from more than a single step. In this video, learn [0m
+[33mhow to use scikit-learn pipelines to compose complex flows.[0m
+[33m        [0m[33mSave and load models    [0m[1;33m113[0m[33m     [0m[33mOnce a mode is trained, you need to save it and then load it to use it for predictions. In [0m
+[33mthis video, learn how to save and load scikit-learn models.[0m
+[33m        [0m[33mChallenge: Handwritten digits   [0m[1;33m89[0m
+[33m        [0m[33mSolution: Handwritten digits    [0m[1;33m69[0m
+[33m## [0m[1;33m7[0m[33m. Plotting[0m
+[33m        [0m[33mOverview of matplotlib  [0m[1;33m58[0m[33m      [0m[33mPlotting is a very important part of the data story telling process. In this video, discover [0m
+[33mthe most common plotting library.[0m
+[33m        [0m[33mUse styles      [0m[1;33m100[0m[33m     [0m[33mStyles help make your plots look nicer. In this video, learn how to use styles to make your plots [0m
+[33mbetter looking.[0m
+[33m        [0m[33mCustomize pandas output [0m[1;33m196[0m[33m     [0m[33mpandas DataFrames have support for styling. In this video, learn how to use styles for better [0m
+[33mvisualization.[0m
+[33m        [0m[33mPlotting with pandas    [0m[1;33m138[0m[33m     [0m[33mpandas offers higher level plotting out of the box. In this video, learn how to use the [0m
+[33mbuilt-in plotting facilities of pandas to generate charts.[0m
+[33m        [0m[33mUse Matplotlib with pandas      [0m[1;33m135[0m[33m     [0m[33mpandas uses matplotlib under the hood. In this video, learn how to alter the charts [0m
+[33mgenerated by pandas.[0m
+[33m        [0m[33mTips and tricks [0m[1;33m110[0m[33m     [0m[33mMatplotlib is very powerful and packed with features. In this video, learn some tips and tricks for [0m
+[33meffective charts.[0m
+[33m        [0m[33mOther plotting packages [0m[1;33m163[0m[33m     [0m[33mThere are several other plotting libraries out there, each one with its own offering. In this [0m
+[33mvideo, learn about some other plotting packages and their capabilities.[0m
+[33m        [0m[33mChallenge: Stock data bar charts        [0m[1;33m28[0m
+[33m        [0m[33mSolution: Stock data bar charts [0m[1;33m80[0m
+[33m## [0m[1;33m8[0m[33m. Other Packages[0m
+[33m        [0m[33mOther packages overview [0m[1;33m67[0m[33m      [0m[33mThe Python scientific stack offers many packages. In this video, learn about of some the [0m
+[33minteresting packages and what you can use them for.[0m
+[33m        [0m[33mGo faster with Numba    [0m[1;33m161[0m[33m     [0m[33mNumba is a JIT compiler for Python that can significantly speed up your code. In this video, [0m
+[33mlearn how to use Numba to speed up code.[0m
+[33m        [0m[33mUnderstand deep learning        [0m[1;33m296[0m[33m     [0m[33mDeep learning has revolutionized machine learning. In this video, learn how to use [0m
+[33mKeras to create and use deep learning models.[0m
+[33m        [0m[33mWork with image processing      [0m[1;33m154[0m[33m     [0m[33mImages are a unique kind of data. In this video, learn how to do image processing with[0m
+[33mOpenCV.[0m
+[33m        [0m[33mUnderstand NLP: NLTK    [0m[1;33m182[0m[33m     [0m[33mText is a very common data format. In this video, learn how to use NLTK to do natural language[0m
+[33mprocessing on text.[0m
+[33m        [0m[33mWorking with bigger data        [0m[1;33m303[0m[33m     [0m[33mNLP has seen some novel advances in recent years. In this video, learn how to use [0m
+[33mspaCy to analyze text.[0m
+[33m## [0m[1;33m9[0m[33m. Development Process[0m
+[33m        [0m[33mDevelopment process overview    [0m[1;33m45[0m
+[33m        [0m[33mUnderstand source control       [0m[1;33m72[0m[33m      [0m[33mSource control helps with keeping history and parallel work. In this video, explore [0m
+[33mhow to use Git to track your work.[0m
+[33m        [0m[33mLearn code review       [0m[1;33m131[0m[33m     [0m[33mCode review is used to flush out design flaws and bugs. In this video, learn how to do [0m
+[33meffective code reviews.[0m
+[33m        [0m[33mTesting overview        [0m[1;33m153[0m[33m     [0m[33mTesting makes sure your code is correct. In this video, learn about pytest and how to use it [0m
+[33mto test your code.[0m
+[33m        [0m[33mTesting example [0m[1;33m121[0m[33m     [0m[33mWriting effective tests saves you time in the future. In this video, explore an example of how to test[0m
+[33ma scientific application.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m23[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that [0m
+[33mis absolutely necessary for the course.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficiency in fundamental Python programming [0m[1;34m([0m[34msyntax, control flow, functions, and basic data types[0m[1;34m)[0m[34m  [0m
+[34m• Ability to import and use Python libraries/packages in scripts  [0m
+[34m• Basic experience with file input/output in Python [0m[1;34m([0m[34me.g., reading CSV files[0m[1;34m)[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mPython Statistics Essential Training[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mThe field of statistics has become increasingly dependent on data analysis and interpretation using Python. With the rise of big data [0m
+[33mand data science, the demand for professionals who can effectively analyze and interpret data using Python has skyrocketed. In this [0m
+[33mcourse, Matt Harrison teaches you how to collect, clean, analyze, and visualize data using the powerful tools of the Python [0m
+[33mprogramming language. Join Matt as he gives into the various techniques that form the backbone of statistics and helps you understand [0m
+[33mthe data with summary statistics and visualizations. He explains how to create predictive models using both linear regression [0m
+[33mandXGBoost, and wraps up the course with a look at hypothesis testing.If youâ€™re interested in exploring statistics using a [0m
+[33mcode-first approach, join Matt in this course as he shows you how to use Python to unlock the power of data.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Python Statistics Essential Training[0m
+[33m## Introduction[0m
+[33m        [0m[33mBeing a Python statistics MVP   [0m[1;33m50[0m[33m      [0m[33mIn this video, explore a compelling example of the topic in action and learn how to [0m
+[33muse this space to grab the browsing learner. The TOC and course description exist on the course's home page to communicate what's in [0m
+[33mthe course and who it's for.[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m41[0m[33m      [0m[33mIn this video, discover any use of GitHub or other project tools employed in the course.[0m
+[33m        [0m[33mUsing GitHub Codespaces with this course        [0m[1;33m186[0m[33m     [0m[33mIn this video, learn how to use Codespaces with the course.[0m
+[33m## [0m[1;33m1[0m[33m. Loading and Cleaning Data[0m
+[33m        [0m[33mLoading data    [0m[1;33m328[0m[33m     [0m[33mWith the skill of loading data with Pandas, you can easily read data from various file formats such as[0m
+[33mCSV, Excel, SQL databases, and more, manipulate and clean data using Pandas' powerful tools, perform data analysis and exploration, [0m
+[33mand prepare data for modeling and visualization. Pandas is widely used in the data science community, making it a valuable skill for [0m
+[33manyone working with data.[0m
+[33m        [0m[33mStrings and categories  [0m[1;33m959[0m[33m     [0m[33mWith the skill of cleaning categorical data, you can ensure that the data is accurate and [0m
+[33mconsistent, which is critical for making meaningful analyses and predictions. You can also effectively handle missing values, [0m
+[33moutliers, and other anomalies in the data, which can improve the accuracy of your models and prevent biased results.[0m
+[33m        [0m[33mCleaning numbers        [0m[1;33m957[0m[33m     [0m[33mThe goal of this video is to learn how to clean numbers by handling missing values, handling [0m
+[33moutliers, and addressing inconsistencies in the data.[0m
+[33m        [0m[33mShrinking numbers       [0m[1;33m350[0m[33m     [0m[33mWith the skill of cleaning integer data, you can ensure that the data is accurate and [0m
+[33mconsistent, which is critical for making meaningful analyses and predictions. Also, learn how to lower the memory requirements if [0m
+[33mpossible.[0m
+[33m        [0m[33mChallenge: Clean Ames   [0m[1;33m97[0m
+[33m        [0m[33mSolution: Clean Ames    [0m[1;33m263[0m
+[33m## [0m[1;33m2[0m[33m. Exploring and Visualizing[0m
+[33m        [0m[33mCategorical exploration [0m[1;33m242[0m[33m     [0m[33mWith the skill of calculating and interpreting summary statistics, you can gain valuable [0m
+[33minsights into the central tendency, variability, and distribution of your data.[0m
+[33m        [0m[33mHistograms and distributions    [0m[1;33m262[0m[33m     [0m[33mThe goal of this video is to learn how to create and interpret histograms, which are [0m
+[33mgraphical representations of the distribution of numerical data.[0m
+[33m        [0m[33mOutliers and Z-scores   [0m[1;33m412[0m[33m     [0m[33mDiscover how you can objectively identify data points that are significantly different from [0m
+[33mthe majority of the data.[0m
+[33m        [0m[33mCorrelations    [0m[1;33m422[0m[33m     [0m[33mLearn how to identify relationships between variables, determine the strength and direction of those [0m
+[33mrelationships, and make informed decisions based on the data.[0m
+[33m        [0m[33mScatter plots   [0m[1;33m457[0m[33m     [0m[33mLearn how to create and interpret scatter plots, which are graphical representations of the [0m
+[33mrelationship between two variables.[0m
+[33m        [0m[33mVisualizing categorical and numerical values    [0m[1;33m642[0m[33m     [0m[33mLearn how to calculate and interpret numerical summaries of data based[0m
+[33mon categorical variables, such as means or medians of groups.[0m
+[33m        [0m[33mComparing two categoricals      [0m[1;33m362[0m
+[33m        [0m[33mChallenge: Explore Ames [0m[1;33m27[0m
+[33m        [0m[33mSolution: Explore Ames  [0m[1;33m208[0m
+[33m## [0m[1;33m3[0m[33m. Linear Regressions[0m
+[33m        [0m[33mLinear regression       [0m[1;33m441[0m[33m     [0m[33mLinear regression is commonly used in data analysis and can help you identify significant [0m
+[33mpredictors of a target variable, as well as their effect size and direction.[0m
+[33m        [0m[33mInterpreting linear regression models   [0m[1;33m260[0m[33m     [0m[33mBy interpreting the coefficients, you can understand the magnitude and [0m
+[33mdirection of the effect of each independent variable on the dependent variable.[0m
+[33m        [0m[33mStandardizing values    [0m[1;33m382[0m[33m     [0m[33mThe goal of this video is to learn how to standardize variables, which involves transforming [0m
+[33mvariables to have a mean of zero and a standard deviation of one.[0m
+[33m        [0m[33mRegression with XGBoost [0m[1;33m522[0m[33m     [0m[33mThe goal of this video is to learn how to build and interpret a regression model using [0m
+[33mXGBoost, which is a popular algorithm for gradient boosting.[0m
+[33m        [0m[33mChallenge: Predict Ames [0m[1;33m40[0m
+[33m        [0m[33mSolution: Predict Ames  [0m[1;33m235[0m
+[33m## [0m[1;33m4[0m[33m. Hypothesis Tests[0m
+[33m        [0m[33mExploring data  [0m[1;33m160[0m[33m     [0m[33mThe goal of this video is to understand the data to perform statistical tests.[0m
+[33m        [0m[33mVisualizing distributions       [0m[1;33m363[0m[33m     [0m[33mThe goal of this video is to visualize distributions of data before performing a [0m
+[33mstatistical test.[0m
+[33m        [0m[33mRunning statistical tests       [0m[1;33m264[0m[33m     [0m[33mBy performing statistical tests, you can understand if two data sets have the same [0m
+[33mdistribution.[0m
+[33m        [0m[33mTesting for normality   [0m[1;33m268[0m[33m     [0m[33mThe goal of this video is to test whether a set of values has a normal distribution.[0m
+[33m        [0m[33mChallenge: Checking square footage distributions        [0m[1;33m20[0m
+[33m        [0m[33mSolution: Checking square footage distributions [0m[1;33m267[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m78[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that [0m
+[33mis absolutely necessary for the course.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Fundamental Python programming skills [0m[1;34m([0m[34msyntax, control flow, functions, and basic data types[0m[1;34m)[0m[34m  [0m
+[34m• Basic Pandas operations [0m[1;34m([0m[34mloading data, DataFrame manipulation, and data cleaning[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with common data file formats [0m[1;34m([0m[34me.g., CSV and Excel[0m[1;34m)[0m[34m  [0m
+[34m• Basic competency with GitHub Codespaces for accessing and managing course materials[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mAdvanced Python: Working With Data[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;Data science is one of the fastest-growing areas of technology today. And whether you work with large data sets or just need [0m
+[33mto process spread sheet files, Python is a great language to use when working with data-intensive applications. In this course, Joe [0m
+[33mMarini gets you started on working with data in Python, highlighting some of the most useful built-in features of the language. Using [0m
+[33ma real data set from the United States Geological Survey that tracks earthquake information, Joe shows you how to perform data [0m
+[33moperations like sorting and filtering, determining basic information like minimum and maximum values, and reading and writing data to [0m
+[33mand from other formats like CSV and JSON. Practice what you learn with hands-on challenges. Check out this course with Joe to see how [0m
+[33mPython can help you make sense of your data.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course is integrated with GitHub Codespaces, an instant cloud [0m
+[33mdeveloper environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub[0m
+[33mCodespaces, you can get hands-on practice from any machine, at any timeâ€”all while using a tool that youâ€™ll likely encounter in the[0m
+[33mworkplace.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Advanced Python: Working With Data[0m
+[33m## Introduction[0m
+[33m        [0m[33mPython and Data: Made for each other    [0m[1;33m49[0m
+[33m        [0m[33mGetting Set Up  [0m[1;33m208[0m
+[33m        [0m[33mThe sample data set     [0m[1;33m209[0m
+[33m        [0m[33mTour of CoderPad        [0m[1;33m211[0m
+[33m## [0m[1;33m1[0m[33m. Built-In Data Functions[0m
+[33m        [0m[33mUsing built-in functions        [0m[1;33m80[0m[33m      [0m[33mAfter watching this video, you will be able to articulate the basic Python functions [0m
+[33mused for working with data.[0m
+[33m        [0m[33mFinding min and max values      [0m[1;33m483[0m[33m     [0m[33mAfter watching this video, you will be able to use Python functions for determining [0m
+[33mminimum and maximum values in a data set.[0m
+[33m        [0m[33mData utility functions  [0m[1;33m446[0m[33m     [0m[33mAfter watching this video, you will be able to apply several Python functions to perform a [0m
+[33mvariety of operations on data sets.[0m
+[33m        [0m[33mSorting data    [0m[1;33m309[0m[33m     [0m[33mAfter watching this video, the learner will be able to implement sorting of data values using Python.[0m
+[33m        [0m[33mData filtering  [0m[1;33m409[0m[33m     [0m[33mAfter watching this video, you will understand how to filter data values using Python.[0m
+[33m        [0m[33mData transformation     [0m[1;33m530[0m[33m     [0m[33mAfter watching this video, you will know how to use various transform functions to take sets [0m
+[33mof data and perform calculations that produce new, derived data sets.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: Build a data summary        [0m[1;33m900[0m
+[33m        [0m[33mSolution: Build a data summary  [0m[1;33m188[0m
+[33m## [0m[1;33m2[0m[33m. Collection Classes[0m
+[33m        [0m[33mOverview of collection classes  [0m[1;33m96[0m[33m      [0m[33mAfter watching this video, you will have a broader understanding of the kinds of data [0m
+[33mcollection classes in Python.[0m
+[33m        [0m[33mNamed tuples    [0m[1;33m289[0m[33m     [0m[33mAfter watching this video, you will be able to use the list and set data types to represent different [0m
+[33mkinds of data.[0m
+[33m        [0m[33mDefault dictionaries    [0m[1;33m279[0m[33m     [0m[33mAfter watching this video, you will understand how to use dictionaries to map keys to data [0m
+[33mvalues.[0m
+[33m        [0m[33mCounters        [0m[1;33m382[0m[33m     [0m[33mAfter watching this video, you will understand how the Python counter class can be used to count [0m
+[33munique data values.[0m
+[33m        [0m[33mThe deque class [0m[1;33m281[0m[33m     [0m[33mAfter watching this video, you will know how to apply the deque class, which is a queue that operates [0m
+[33mon both ends of a given sequence of data.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: Classify event types        [0m[1;33m1200[0m
+[33m        [0m[33mSolution: Classify event types  [0m[1;33m144[0m
+[33m## [0m[1;33m3[0m[33m. Serializing Data in Python[0m
+[33m        [0m[33mOverview of serialization       [0m[1;33m84[0m[33m      [0m[33mAfter watching this video, you will understand how to use data serialization to save [0m
+[33mand load Python objects from persistent storage.[0m
+[33m        [0m[33mSerializing data as CSV [0m[1;33m455[0m[33m     [0m[33mAfter watching this video, you will be able to discuss the various features of the pickle [0m
+[33mmodule and what it can be used for.[0m
+[33m        [0m[33mSerializing data as JSON        [0m[1;33m430[0m[33m     [0m[33mAfter watching this video, you will be able to use the pickle module to save data from[0m
+[33mmemory to a persistent state.[0m
+[33m        [0m[33mDeserialization of data [0m[1;33m404[0m[33m     [0m[33mAfter watching this video, you will be able to use the pickle module to load data from a [0m
+[33mpersistent state into memory.[0m
+[33m        [0m[33mChallenge: Create a CSV file    [0m[1;33m205[0m
+[33m        [0m[33mSolution: Create a CSV file     [0m[1;33m228[0m
+[33m## [0m[1;33m4[0m[33m. Python Logging[0m
+[33m        [0m[33mOverview of logging     [0m[1;33m111[0m[33m     [0m[33mAfter watching this video, you will be able to understand the importance of Python logging and[0m
+[33mhow it helps to diagnose problems in your code.[0m
+[33m        [0m[33mBasic logging   [0m[1;33m445[0m[33m     [0m[33mAfter watching this video, you will be able to implement basic logging features within your own [0m
+[33mapplications.[0m
+[33m        [0m[33mCustom logging  [0m[1;33m542[0m[33m     [0m[33mAfter watching this video, you will be able to make use of the more advanced logging features of [0m
+[33mPython.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m30[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that [0m
+[33mis absolutely necessary for the course.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Basic Python syntax and programming constructs [0m[1;34m([0m[34mvariables, functions, control flow[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with Python’s built-in data types [0m[1;34m([0m[34mlists, dictionaries, tuples, and sets[0m[1;34m)[0m[34m  [0m
+[34m• Experience with file input/output operations in Python  [0m
+[34m• Understanding of CSV and JSON file formats and basic file handling  [0m
+[34m• Ability to use Python’s built-in functions for data manipulation [0m[1;34m([0m[34me.g., sorting, filtering, min/max[0m[1;34m)[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mPython Code Challenges for Object-Oriented Programming[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mIn this course, instructor Jonathan Fernandes guides you through a series of challenges designed to boost your skills in data analysis[0m
+[33musing Python. Learn how to utilize CoderPad for seamless code testing and debugging, within an integrated online learning environment.[0m
+[33mDiscover how to create and employ Python data classes to simplify your code while maintaining robust functionality. Engage with [0m
+[33mvarious algorithmic problems, implementing Pythonic solutions and leveraging standard library functions. Extend your class [0m
+[33mcapabilities by learning to use special methods. When you complete this course, you will have gained practical experience in solving [0m
+[33mcomplex problems and debugging code effectively. Whether you're a student, a professional, or someone passionate about data science, [0m
+[33mthis course provides the tools and knowledge to elevate your Python programming abilities.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Python Code Challenges for Object-Oriented Programming[0m
+[33m## Introduction[0m
+[33m        [0m[33mPractice object-oriented programming with Python        [0m[1;33m38[0m
+[33m        [0m[33mHow to practice with CoderPad   [0m[1;33m217[0m
+[33m## [0m[1;33m1[0m[33m. Python Code Challenges for OOP[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: The month class     [0m[1;33m600[0m
+[33m        [0m[33mSolution: The month class       [0m[1;33m207[0m[33m     [0m[33mChoose the right data structure to store the information.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: First and last day  [0m[1;33m600[0m
+[33m        [0m[33mSolution: First and last day    [0m[1;33m242[0m[33m     [0m[33mCompare and update the Python class to achieve the required result.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: Month delta [0m[1;33m900[0m
+[33m        [0m[33mSolution: Month delta   [0m[1;33m542[0m[33m     [0m[33mCombine previous results and get the correct result by creating new classes and methods.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: Subtracting months  [0m[1;33m600[0m
+[33m        [0m[33mSolution: Subtracting months    [0m[1;33m229[0m[33m     [0m[33mCreate new methods and classes to capture intermediate results.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: Negation and multiple months        [0m[1;33m300[0m
+[33m        [0m[33mSolution: Negation and multiple months  [0m[1;33m182[0m[33m     [0m[33mCombine the results from previous solutions to solve additional requirements.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that [0m
+[33mis absolutely necessary for the course.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficiency in basic Python syntax and control structures  [0m
+[34m• Experience defining and using Python classes and methods  [0m
+[34m• Understanding of object-oriented programming concepts [0m[1;34m([0m[34me.g., encapsulation, inheritance[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with Python data classes  [0m
+[34m• Knowledge of implementing special [0m[1;34m([0m[34m“dunder”[0m[1;34m)[0m[34m methods in Python  [0m
+[34m• Basic Python debugging and testing skills[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mPython for Data Science and Machine Learning Essential Training Part [0m[1;33m1[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;&lt;i&gt;Python for Data Science and Machine Learning Essential Training&lt;[0m[33m/[0m[33mi[0m[33m&gt; is one of the most popular data science [0m
+[33mcourses at LinkedIn Learning. It has now been updated and expanded to two parts-giving you even more hands-on, real-world Python [0m
+[33mexperience. In part one, instructor Lillian Pierson takes you step by step through a data science and machine learning project: a web [0m
+[33mscraper that downloads and analyzes data from the web. Along the way, she introduces techniques to clean, reformat, transform, and [0m
+[33mdescribe raw data; generate visualizations; remove outliers; perform simple data analysis; and generate web-based graphs using [0m
+[33mStreamlit. By the end of this course, you'll have acquired basic coding experience that you can take to your organization and quickly [0m
+[33mapply to your own custom data science and machine learning projects.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course is integrated with GitHub [0m
+[33mCodespaces, an instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any [0m
+[33mlocal machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time-all while using a tool that [0m
+[33myou'll likely encounter in the workplace. Check out the Using GitHub Codespaces with this course video to learn how to get [0m
+[33mstarted.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Python for Data Science and Machine Learning Essential Training Part [0m[1;33m1[0m
+[33m## Introduction[0m
+[33m        [0m[33mData science life hacks [0m[1;33m41[0m
+[33m        [0m[33mWhat you should know    [0m[1;33m59[0m
+[33m        [0m[33mHow to use Codespaces with this course  [0m[1;33m185[0m
+[33m## [0m[1;33m1[0m[33m. Introduction to the Data Professions[0m
+[33m        [0m[33mIntroduction to the data professions    [0m[1;33m823[0m[33m     [0m[33mLearn how to orient yourself in the data world. This video covers the [0m
+[33mdefinition of data science, data engineering, and data analytics.[0m
+[33m        [0m[33mData science careers: Identifying where and how you'll thrive   [0m[1;33m297[0m[33m     [0m[33mLearn about three main types of data science careers, [0m
+[33mas well as info on how data science is creating remarkable changes in all industries, especially the software industry.[0m
+[33m        [0m[33mWhy to use Python for analytics [0m[1;33m384[0m[33m     [0m[33mLearn how to justify your choice in using Python for data science. This video covers [0m
+[33man intro to Python, Python for analytics, and Python in big data.[0m
+[33m        [0m[33mHigh-level course road map      [0m[1;33m94[0m[33m      [0m[33mGet oriented with this course. This video covers a roadmap for data preparation, data [0m
+[33mvisualization, and the math requirements for analytics.[0m
+[33m## [0m[1;33m2[0m[33m. Data Preparation Basics[0m
+[33m        [0m[33mIntro to data preparation       [0m[1;33m200[0m[33m     [0m[33mLearn about what role data preparation plays in the data science project lifecycle and[0m
+[33mits significance.[0m
+[33m        [0m[33mNumpy and pandas basics [0m[1;33m243[0m[33m     [0m[33mGet introduced to the two most fundamental Python libraries for data science: numpy and [0m
+[33mpandas. Learn the numpy basics of arrays, vectorized operations, indexing, types and efficient ufuncs. Learn the pandas basics on [0m
+[33mseries, dataframe, data reading, and saving.[0m
+[33m        [0m[33mFiltering and selecting [0m[1;33m813[0m[33m     [0m[33mLearn how to filter and select data by using indexes of series objects and DataFrame objects.[0m
+[33m        [0m[33mTreating missing values [0m[1;33m1084[0m[33m    [0m[33mLearn how to treat missing values. This video covers dropping values, approximation, and [0m
+[33mfiltering.[0m
+[33m        [0m[33mRemoving duplicates     [0m[1;33m470[0m[33m     [0m[33mLearn how to remove duplicates. This video covers dropping records with pandas.[0m
+[33m        [0m[33mConcatenating and transforming  [0m[1;33m795[0m[33m     [0m[33mLearn how to concatenate and transform. This video covers combining data, converting [0m
+[33mdata, and reformatting data.[0m
+[33m        [0m[33mGrouping and aggregation        [0m[1;33m348[0m[33m     [0m[33mLearn how to group and aggregate. This video covers subgrouping, describing subgroups,[0m
+[33mand data aggregation.[0m
+[33m## [0m[1;33m3[0m[33m. Data Visualization [0m[1;33m101[0m
+[33m        [0m[33mImportance of visualization in data science     [0m[1;33m223[0m[33m     [0m[33mLearn why visualization is a key aspect of data science. Learn how [0m
+[33mdata scientists effectively communicate data, insights, and predictions.[0m
+[33m        [0m[33mThe three types of data visualization   [0m[1;33m522[0m[33m     [0m[33mLearn how to identify three types of data visualization. This video covers [0m
+[33mdata storytelling, data showcasing, and data art.[0m
+[33m        [0m[33mSelecting optimal data graphics [0m[1;33m417[0m[33m     [0m[33mLearn how to select optimal data graphics. This video covers graphics for [0m
+[33mstorytelling, graphics for showcasing, and graphics for data art.[0m
+[33m        [0m[33mCommunicating with color and context    [0m[1;33m408[0m[33m     [0m[33mLearn how to communicate with color and context. This video covers color [0m
+[33mschemes, annotation, and visual context.[0m
+[33m## [0m[1;33m4[0m[33m. Practical Data Visualization[0m
+[33m        [0m[33mIntroduction to the matplotlib and Seaborn libraries    [0m[1;33m1069[0m[33m    [0m[33mGet a practical introduction to Python's matplotlib and [0m
+[33mSeaborn libraries. Learn how to set up an environment for creating data visualizations.[0m
+[33m        [0m[33mCreating standard data graphics [0m[1;33m625[0m[33m     [0m[33mLearn how to create standard data graphics. This video covers line charts, pie charts,[0m
+[33mand bar charts.[0m
+[33m        [0m[33mDefining elements of a plot     [0m[1;33m748[0m[33m     [0m[33mLearn how to define elements of a plot. This video covers object-oriented plotting, [0m
+[33msub-plots, and axis labels.[0m
+[33m        [0m[33mPlot formatting [0m[1;33m901[0m[33m     [0m[33mLearn how to format plots. This video covers custom plot colors, line styles, and marker styles.[0m
+[33m        [0m[33mCreating labels and annotations [0m[1;33m1129[0m[33m    [0m[33mLearn how to create labels and annotations. This video covers labeling pot features, [0m
+[33mlegends, and annotating plot features.[0m
+[33m        [0m[33mVisualizing time series [0m[1;33m503[0m[33m     [0m[33mLearn how to visualize time series. This video covers handling time series and plotting time [0m
+[33mseries.[0m
+[33m        [0m[33mCreating statistical data graphics in Seaborn   [0m[1;33m891[0m[33m     [0m[33mLearn how to create statistical data graphics. This video covers [0m
+[33mhistograms, box plots, and scatter plots.[0m
+[33m## [0m[1;33m5[0m[33m. Exploratory Data Analysis[0m
+[33m        [0m[33mSimple arithmetic       [0m[1;33m494[0m[33m     [0m[33mLearn how to perform simple arithmetic. This video covers standard arithmetic, arithmetic [0m
+[33mmultiplication, and matrix multiplication.[0m
+[33m        [0m[33mGenerating summary statistics   [0m[1;33m579[0m[33m     [0m[33mLearn how to create standard data graphics. This video covers line charts, pie charts,[0m
+[33mand bar charts.[0m
+[33m        [0m[33mSummarizing categorical data    [0m[1;33m619[0m[33m     [0m[33mLearn how to define elements of a plot. This video covers object-oriented plotting, [0m
+[33msub-plots, and axis labels.[0m
+[33m        [0m[33mPearson correlation analysis    [0m[1;33m893[0m[33m     [0m[33mLearn how to conduct parametic correlation analysis via Pearson correlation. This [0m
+[33mvideo covers linear correlation and causation.[0m
+[33m        [0m[33mSpearman rank correlation and Chi-square        [0m[1;33m888[0m[33m     [0m[33mLearn how to conduct non-parametric correlation analysis. This video [0m
+[33mcovers categorical variables, Spearman rank correlation, and Chi-square tables.[0m
+[33m        [0m[33mExtreme value analysis for outliers     [0m[1;33m839[0m[33m     [0m[33mLearn how to conduct extreme value analysis for outliers. This video covers [0m
+[33mpoint outliers, contextual outliers, and collective outliers.[0m
+[33m        [0m[33mMultivariate analysis for outliers      [0m[1;33m467[0m[33m     [0m[33mLearn how to conduct multivariate analysis for outliers. This video covers box[0m
+[33mplots and scatter plot matrices.[0m
+[33m## [0m[1;33m6[0m[33m. Getting Started with Machine Learning[0m
+[33m        [0m[33mCleaning and treating categorical variables     [0m[1;33m648[0m[33m     [0m[33mLearn about categorical encoding including one-hot, binary, and [0m
+[33mvectorizations.[0m
+[33m        [0m[33mTransforming data set distributions     [0m[1;33m415[0m[33m     [0m[33mLearn how to transform data set distributions. This video covers preparing [0m
+[33mdata for machine learning, normalization, and standardization.[0m
+[33m        [0m[33mApplied machine learning: Starter problem       [0m[1;33m532[0m[33m     [0m[33mLearn how to use the data in a ML problem by formatting predictors and[0m
+[33mlabels, and then passing them to a simple ML algorithm.[0m
+[33m## [0m[1;33m7[0m[33m. Data Sourcing via Web Scraping[0m
+[33m        [0m[33mIntroduction of web scraping    [0m[1;33m145[0m[33m     [0m[33mLearn about data scraping from web sources to obtain data from multiple online [0m
+[33msources. Learn why web scraping is needed in data science.[0m
+[33m        [0m[33mPython requests for automating data collection  [0m[1;33m577[0m[33m     [0m[33mLearn about the basics of the requests library, how connections are [0m
+[33mestablished, response headers, body, content-types, and metadata extraction.[0m
+[33m        [0m[33mBeautifulSoup object    [0m[1;33m1144[0m[33m    [0m[33mLearn how to work with objects. This video covers the Beautiful Soup library and BeautifulSoup[0m
+[33mobjects.[0m
+[33m        [0m[33mNavigableString objects [0m[1;33m660[0m[33m     [0m[33mLearn how to work with objects. This video covers the NavigableString objects.[0m
+[33m        [0m[33mData parsing    [0m[1;33m837[0m[33m     [0m[33mLearn how to parse data. This video covers parsing data, getting data from a parse tree, and searching[0m
+[33mand retrieving data from a parse tree.[0m
+[33m        [0m[33mWeb scraping in practice        [0m[1;33m792[0m[33m     [0m[33mLearn how to scrape web data. This video covers reading and writing data from the [0m
+[33minternet.[0m
+[33m        [0m[33mAsynchronous scraping   [0m[1;33m1236[0m[33m    [0m[33mLearn about writing parallelized scrapers with asyncio.[0m
+[33m## [0m[1;33m8[0m[33m. Collaborative Analytics with Streamlit[0m
+[33m        [0m[33mIntroduction to Streamlit       [0m[1;33m314[0m[33m     [0m[33mGet introduced to the spectrum of dashboarding utilities for Python, including [0m
+[33mStreamlit, Voila, Panel, and Dash. Learn why Streamlit is preferable.[0m
+[33m        [0m[33mEnvironment setup       [0m[1;33m168[0m[33m     [0m[33mGet a basic introduction to Streamlit and how to import the required packages.[0m
+[33m        [0m[33mCreate basic charts     [0m[1;33m546[0m[33m     [0m[33mLearn how to create basic charts in Streamlit, including a simple line chart, bar chart, and [0m
+[33mpie chart.[0m
+[33m        [0m[33mLine charts in Streamlit        [0m[1;33m522[0m[33m     [0m[33mExplore various options for displaying line charts in Streamlit.[0m
+[33m        [0m[33mBar charts and pie charts in Streamlit  [0m[1;33m691[0m[33m     [0m[33mExplore various options for displaying pie charts and bar charts in Streamlit.[0m
+[33m        [0m[33mCreate statistical charts       [0m[1;33m515[0m[33m     [0m[33mLearn how to create statistical charts in Streamlit. This video covers histograms, [0m
+[33mboxplots, and scatter plots.[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m70[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that [0m
+[33mis absolutely necessary for the course.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Basic Python programming skills [0m[1;34m([0m[34msyntax, variables, control flow, functions, and data types[0m[1;34m)[0m[34m  [0m
+[34m• Ability to run Python code and work with development environments [0m[1;34m([0m[34me.g., executing scripts, using an IDE or similar tool[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with importing and using Python libraries and packages[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mIntroduction to Data Science[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;The world of data science is reshaping every business, regardless of industry, location, or role. And thereâ€™s never been a [0m
+[33mbetter time to get up to speed and learn the basics of this booming field. In this course, designed specifically for beginners, [0m
+[33mexplore the world of data science, its opportunities and innovations, and the fundamental skills required for [0m
+[33msuccess.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Join Python trainer and data science expert Lavanya Vijayan as she shares what data science is and how it [0m
+[33mdiffers from other common data-related careers. Discover some of the most important tools used in the trade to develop your [0m
+[33munderstanding of data libraries and data manipulation. Along the way, get an introduction to exploratory data analysis, data cleaning,[0m
+[33mdata visualization, sampling, testing, estimating, and more. By the end of this course, youâ€™ll know how to use inference and [0m
+[33mstatistical analysis to make more reliable predictions for your business.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course was created by &lt;a [0m
+[33mhref[0m[33m=[0m[4;33mhttps[0m[4;33m://www.onlymadecraft.com[0m[33m [0m[33mtarget[0m[33m=[0m[33m_blank[0m[33m&gt;Madecraft&lt;[0m[33m/[0m[33ma[0m[33m&gt;. We are pleased to host this training in our [0m
+[33mlibrary.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;img [0m[33msrc[0m[33m=[0m[4;33mhttps[0m[4;33m://media.licdn.com/media/AAYAAgCwAAoAAQAAAAAAAHppnBQxgeyWS2CsU3aDDPcMgw.jpg[0m[33m [0m[33malt[0m[33m=[0m[33mCompany[0m[33m logo for [0m
+[33mMadecraft; the letter M configured as part of a printing press [0m[33mwidth[0m[33m=[0m[1;33m20[0m[33m% [0m[33mheight[0m[33m=[0m[1;33m20[0m[33m% [0m[33m/[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Introduction to Data Science[0m
+[33m## Introduction[0m
+[33m        [0m[33mBeginning your data science exploration [0m[1;33m55[0m[33m      [0m[33mData science is a vast field, with plenty of opportunities and exciting [0m
+[33minnovations happening. After this course, you'll be able to define data science, recognize the data science lifecycle, and utilize [0m
+[33mfundamental skills in data science. [0m
+[33m## [0m[1;33m1[0m[33m. Defining Data Science[0m
+[33m        [0m[33mDemystifying data science       [0m[1;33m235[0m[33m     [0m[33mData science is rapidly increasing in popularity and demand and is a valuable skill as[0m
+[33mboth a career or a skill within an existing role. After watching this video, you'll be able to define data science and its core [0m
+[33mprinciples.[0m
+[33m        [0m[33mThe value of data science       [0m[1;33m112[0m[33m     [0m[33mData science can be used across numerous fields and offers important benefits to the [0m
+[33mworld around you. After watching this video, you'll be able to explain the value of data science.[0m
+[33m        [0m[33mDefining the data science life cycle    [0m[1;33m54[0m[33m      [0m[33mData scientists follow a specific workflow. After watching this video, you'll [0m
+[33mbe able to describe the data science lifecycle and the main goal of each stage.[0m
+[33m## [0m[1;33m2[0m[33m. Starting with Data Design[0m
+[33m        [0m[33mReducing bias with probability sampling [0m[1;33m240[0m[33m     [0m[33mData design, the process of data collection, is important in data science. [0m
+[33mAfter watching this video, you'll be able to use data design to reduce sampling biases.[0m
+[33m        [0m[33mUsing non-probability sampling  [0m[1;33m152[0m[33m     [0m[33mYou can also collect data with non-probability sampling techniques. After this lesson,[0m
+[33myou'll be able to recognize what these techniques are and the scenarios in which using them can be beneficial. [0m
+[33m## [0m[1;33m3[0m[33m. Utilizing Computational Tools[0m
+[33m        [0m[33mComparing Python and R  [0m[1;33m136[0m[33m     [0m[33mYou'll want to set up your data science projects to be successful, and using Jupyter Notebook [0m
+[33mis a great way to do so. After this lesson, you'll be able to set up Jupyter on your computer and familiarize yourself with the [0m
+[33mJupyter environment.[0m
+[33m        [0m[33mSetting up your Jupyter environment     [0m[1;33m212[0m
+[33m## [0m[1;33m4[0m[33m. Structuring Your Tabular Data[0m
+[33m        [0m[33mDefining tabular data   [0m[1;33m161[0m[33m     [0m[33mOnce you have access to a dataset, you will need to interact with it and read the data most [0m
+[33mquickly and efficiently. After watching this video, you'll be able to read tabular data with Python.[0m
+[33m        [0m[33mReading tabular data    [0m[1;33m373[0m[33m     [0m[33mBeing able to read data effectively is only half the battle, you also want to be able to [0m
+[33manalyze the data for insights. After this lesson, you'll be able to use what you're reading within the tabular data to formulate [0m
+[33mpreliminary interpretations of your data. [0m
+[33m        [0m[33mInterpreting tabular data       [0m[1;33m149[0m[33m     [0m[33mTabular data manipulation and drawing conclusions from data is a crucial component of [0m
+[33mdata science. After watching this video, you'll be able to start gathering insights from your dataset. [0m
+[33m        [0m[33mGathering insights      [0m[1;33m353[0m[33m     [0m[33mThe goal of data science is to identify and answer specific questions. After watching this [0m
+[33mlesson, you'll be able to evaluate what questions you want to answer and what types of questions are ideal for your scenario.[0m
+[33m        [0m[33mAnswering specific questions    [0m[1;33m165[0m
+[33m## [0m[1;33m5[0m[33m. Using Exploratory Data Analysis[0m
+[33m        [0m[33mDefining exploratory data analysis      [0m[1;33m51[0m[33m      [0m[33mStatistical data types, including numerical and categorical data, are at the [0m
+[33mcore of most data science operations. After watching this video, you'll be able to recognize the differences between these data types [0m
+[33mand why each of them is significant. [0m
+[33m        [0m[33mRecognizing statistical data types      [0m[1;33m202[0m[33m     [0m[33mEDA involves determining the key properties of the data you have. After [0m
+[33mwatching this video, you'll be able to hone in on what the key properties of data are and how you can identify these properties within[0m
+[33myour dataset.[0m
+[33m        [0m[33mDistinguishing properties of data       [0m[1;33m308[0m
+[33m## [0m[1;33m6[0m[33m. Cleaning Your Data[0m
+[33m        [0m[33mExplaining data cleaning        [0m[1;33m82[0m[33m      [0m[33mBefore you dive in and start cleaning your data, you'll want to gain some baseline [0m
+[33minformation to help you navigate this process. After this lesson, you'll be able to ask questions to help better understand your data [0m
+[33mand how it was generated so you can most effectively clean it. [0m
+[33m        [0m[33mQuestions to guide data cleaning        [0m[1;33m247[0m
+[33m## [0m[1;33m7[0m[33m. Using Data Visualization[0m
+[33m        [0m[33mDemystifying data visualization [0m[1;33m62[0m[33m      [0m[33mDifferent types of visualization correspond to different types of data. After watching[0m
+[33mthis video, you'll be able to recognize how data visualization is best completed when you're working with qualitative datasets. [0m
+[33m        [0m[33mVisualizing your qualitative data       [0m[1;33m317[0m[33m     [0m[33mDifferent types of visualization correspond to different types of data. After [0m
+[33mwatching this video, you'll be able to recognize how data visualization is best completed when you're working with quantitative [0m
+[33mdatasets. [0m
+[33m        [0m[33mVisualizing your quantitative data      [0m[1;33m488[0m
+[33m## [0m[1;33m8[0m[33m. Using Inference and Statistical Analysis[0m
+[33m        [0m[33mDefining inference      [0m[1;33m43[0m[33m      [0m[33mHypothesis testing is a helpful method you can use to identify if the results you're seeing in[0m
+[33mthe data are meaningful. After watching this video, you'll be able to define a hypothesis test, recognize how they're used, and the [0m
+[33mcore aspects of setting up a hypothesis test.[0m
+[33m        [0m[33mDesigning a hypothesis test     [0m[1;33m313[0m[33m     [0m[33mHypothesis testing allows data scientists to make informed conclusions based on the [0m
+[33mdata that they observe. After watching this video, you'll be able to create a permutation test for a hypothesis.[0m
+[33m        [0m[33mCreating a permutation  [0m[1;33m253[0m[33m     [0m[33mIf you have two or more samples of data, you'll find that using a permutation test will be [0m
+[33mhelpful for you to prove your hypothesis. After this lesson, you'll be able to identify the core elements of setting up and executing [0m
+[33ma permutation test. [0m
+[33m        [0m[33mConducting a permutation test   [0m[1;33m395[0m[33m     [0m[33mYou can use a confidence interval to test your hypothesis or estimate. After this [0m
+[33mlesson, you'll be able to solve complex equations by bootstrapping your confidence interval.[0m
+[33m        [0m[33mBootstrapping a confidence interval     [0m[1;33m476[0m
+[33m## [0m[1;33m9[0m[33m. Using Prediction in Data Science[0m
+[33m        [0m[33mDefining prediction for data science    [0m[1;33m106[0m[33m     [0m[33mClassification is an important machine learning technique you can use when [0m
+[33mworking with data. After watching this video, you'll be able to describe classification and explain how it is used.[0m
+[33m        [0m[33mNavigating classification       [0m[1;33m127[0m[33m     [0m[33mk-NN or k-Nearest Neighbor is a common data science algorithm. After watching this [0m
+[33mvideo, you'll be able to define the k-Nearest Neighbor algorithm and how to use it to classify data.[0m
+[33m        [0m[33mRecognizing the k-NN algorithm  [0m[1;33m193[0m[33m     [0m[33mk-Nearest Neighbors is a great algorithm to use, but navigating it with an example can[0m
+[33mbe helpful to fully grasp the concept. After this lesson, you'll be able to apply the k-Nearest Neighbors algorithm and use it to [0m
+[33mperform classification within a dataset. [0m
+[33m        [0m[33mImplementing k-Nearest Neighbors        [0m[1;33m449[0m[33m     [0m[33mRegression is all about exploring relationships, which is often what [0m
+[33mevaluating data involves. After this lesson, you'll be able to define regression as a task of prediction in data science. [0m
+[33m        [0m[33mNavigating regression   [0m[1;33m172[0m[33m     [0m[33mYou can use linear regression to help you predict the value of one variable using the value of[0m
+[33manother. After this lesson, you'll be able to recognize the value of linear regression and articulate how it functions. [0m
+[33m        [0m[33mChecking assumptions of regression      [0m[1;33m140[0m[33m     [0m[33mLinear regression uses a dependent and independent variable to help you test [0m
+[33mand form the relationships within your data. After this lesson, you'll be able to use linear regression to make predictions for your [0m
+[33mdataset. [0m
+[33m        [0m[33mImplementing linear regression  [0m[1;33m369[0m
+[33m## Conclusion[0m
+[33m        [0m[33mNext steps      [0m[1;33m65[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that [0m
+[33mis absolutely necessary for the course.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Basic computer literacy [0m[1;34m([0m[34mnavigating operating systems, using web browsers, and managing files[0m[1;34m)[0m[34m  [0m
+[34m• Familiarity with installing and running software applications [0m[1;34m([0m[34mto set up Jupyter Notebook[0m[1;34m)[0m[34m  [0m
+[34m• Fundamental mathematical skills [0m[1;34m([0m[34mperforming basic arithmetic and understanding numerical data[0m[1;34m)[0m[34m  [0m
+[34m• Ability to read and interpret tabular data [0m[1;34m([0m[34msimilar to working with spreadsheets[0m[1;34m)[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mPython Code Challenges for Data Analysis[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33mIn this course, Jonathan Fernandesâ€”an expert in Generative AI and Large Language Modelsâ€”explores the essentials of data analysis [0m
+[33musing Python. Learn how to load data, filter it by specific criteria, and manipulate data structures to achieve the desired results. [0m
+[33mDiscover the use of CoderPad to effectively compare and evaluate different Python data structures. Dive deep into hands-on challenges [0m
+[33mlike sorting data by various metrics and finding elements with the most nominations. By the end of this course, you will be proficient[0m
+[33min using Python for data analysis tasks and capable of tackling complex data problems. This course is ideal for aspiring data [0m
+[33manalysts, Python programmers, and anyone interested in data science.[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Python Code Challenges for Data Analysis[0m
+[33m## Introduction[0m
+[33m        [0m[33mData analysis using Python      [0m[1;33m33[0m[33m      [0m[33mLearn how to perform data analysis using Python.[0m
+[33m        [0m[33mHow to use CoderPad     [0m[1;33m228[0m[33m     [0m[33mLearn how to use CoderPad.[0m
+[33m## [0m[1;33m1[0m[33m. Python Code Challenges for Data Analysis[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: Load JSONL data     [0m[1;33m900[0m
+[33m        [0m[33mSolution: Load JSONL data       [0m[1;33m410[0m[33m     [0m[33mGet the solution to the code challenge.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: Filter by year      [0m[1;33m300[0m
+[33m        [0m[33mSolution: Filter by year        [0m[1;33m155[0m[33m     [0m[33mCompare different Python data structures to evaluate the required result.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code Challenge: Released by year    [0m[1;33m300[0m
+[33m        [0m[33mSolution: Released by year      [0m[1;33m123[0m[33m     [0m[33mCalculate the correct result by selecting the appropriate element from the data [0m
+[33mstructure.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Advanced Code Challenge: Sort by runtime    [0m[1;33m900[0m
+[33m        [0m[33mSolution: Sort by runtime       [0m[1;33m517[0m[33m     [0m[33mCreate new Python containers to capture intermediate results.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Advanced Code Challenge: Find the most nominations  [0m[1;33m1200[0m
+[33m        [0m[33mSolution: Find the most nominations     [0m[1;33m597[0m[33m     [0m[33mCombine the results from previous solutions to solve additional requirements.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that [0m
+[33mis absolutely necessary for the course.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Proficiency in Python programming [0m[1;34m([0m[34msyntax, control flow, and functions[0m[1;34m)[0m[34m  [0m
+[34m• Ability to work with and manipulate Python data structures [0m[1;34m([0m[34mlists, dictionaries[0m[1;34m)[0m[34m  [0m
+[34m• Experience with basic file operations, including reading and parsing JSON/JSONL data  [0m
+[34m• Familiarity with data filtering and sorting techniques in Python  [0m
+[34m• Basic understanding of using interactive coding tools [0m[1;34m([0m[34me.g., CoderPad[0m[1;34m)[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mHere's a curriculum to analyze:[0m
+
+[1;33m<[0m[1;33mcourse[0m[33m>[0m
+[33m<course_title>[0m
+[33mPython Data Analysis[0m
+[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>[0m
+[33m&lt;p&gt;Data science has transformed the way that government and industry leaders look at both specific problems and the world at [0m
+[33mlarge. Curious about how data analysis works in practice? In this course, instructor Michele Vallisneri explains what it takes to get [0m
+[33mstarted with data science using Python.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Michele demonstrates how to set up your analysis environment and provides a [0m
+[33mrefresher on the basics of working with data structures in Python. Then, he jumps into the big stuff: the power of arrays, indexing, [0m
+[33mand tables in NumPy and pandas. He also guides you through two sample big-data projects: using NumPy to identify and visualize weather[0m
+[33mpatterns and using pandas to analyze the popularity of baby names over the last century. Challenges issued along the way help you [0m
+[33mpractice what you've learned. Plus, learn about the skills in the basic tasks of data analysis: importing and wrangling, summarizing [0m
+[33mand visualizing, modeling, and reasoning. &lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course is integrated with GitHub Codespaces, an instant cloud [0m
+[33mdeveloper environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub[0m
+[33mCodespaces, you can get hands-on practice from any machine, at any timeâ€”all while using a tool that youâ€™ll likely encounter in the[0m
+[33mworkplace. Check out the â€œSet up: Using Codespacesâ€ video to learn how to get started.&lt;[0m[33m/[0m[33mp[0m[33m&gt;[0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<toc>[0m
+[33m# Python Data Analysis[0m
+[33m## Introduction[0m
+[33m        [0m[33mFrom data to insight with Python        [0m[1;33m55[0m[33m      [0m[33mUsing Python, you can analyze data rapidly using powerful tools adopted by a [0m
+[33mlarge and helpful community. This video shows you how to load a weather dataset and create an impressive visualization using just a [0m
+[33mfew lines of code, which the instructor works through in detail in chapter four of this course.[0m
+[33m        [0m[33mWhat you need to know   [0m[1;33m82[0m[33m      [0m[33mTo learn the most from this course, you need an elementary knowledge of the Python language, [0m
+[33mwhich you can obtain from other LinkedIn Learning courses. However Python's data structures—which are crucial to data analysis—are [0m
+[33mreviewed in this course.[0m
+[33m        [0m[33mWhat is new in this update      [0m[1;33m43[0m[33m      [0m[33mLike the original version, this course covers the foundations of data analysis with [0m
+[33mPython—data structures, NumPy, pandas, and Matplotlib—using practical real-world examples. The course is updated to reflect recent [0m
+[33mchanges and new features in the interfaces of those modules and in the Python language. GitHub Codespaces and CoderPad challenges have[0m
+[33mbeen added to the course so you can learn interactively and explore on your own.[0m
+[33m        [0m[33mSet up: Using Codespaces        [0m[1;33m241[0m
+[33m        [0m[33mCoderPad challenges     [0m[1;33m127[0m
+[33m## [0m[1;33m1[0m[33m. Python Data Structures[0m
+[33m        [0m[33mWarmup with Python loops        [0m[1;33m328[0m[33m     [0m[33mThere are many use cases in data analysis where you need to operate on data in a [0m
+[33msequential fashion. In Python, you do so with looping constructs. This video provides a refresher on the Python loop syntax by solving[0m
+[33ma simple problem—finding all the ways in which you can break a dollar into a set of coins.[0m
+[33m        [0m[33mTuples, lists, and the slicing syntax   [0m[1;33m406[0m[33m     [0m[33mThe built-in sequence types—tuples, lists, ranges, strings, and buffers—in [0m
+[33mwhich data elements are associated with indices, set the basic framework for accessing sequential data in Python and transfer directly[0m
+[33mto NumPy. This video provides a refresher on the creation and indexing of sequences, reviews the important distinction between mutable[0m
+[33mand immutable types, and highlights the slicing interface.[0m
+[33m        [0m[33mDictionaries and sets   [0m[1;33m272[0m[33m     [0m[33mPython dicts associate unique keys with values, while sets express collections of data items [0m
+[33mwithout duplication. These data types complement sequences in many common data-analysis tasks, and provide a basis for pandas [0m
+[33mDataFrames. This video provides a review of the creation, updating, and indexing of Python dicts and sets.[0m
+[33m        [0m[33mComprehensions  [0m[1;33m228[0m[33m     [0m[33mPython comprehensions provide a readable and expedient way to create, transform, and filter sequences,[0m
+[33mdicts, and sets; they are used extensively in the next chapter. This video provides a review of the comprehension syntax—including [0m
+[33mmultilevel comprehensions—and draws analogies to Python loops.[0m
+[33m        [0m[33mData classes    [0m[1;33m270[0m[33m     [0m[33mData classes are the best way to encode and process structured, heterogeneous data in Python. This [0m
+[33mvideo provides a review of their creation and use as well as their validation using Pydantic.[0m
+[33m## [0m[1;33m2[0m[33m. Project: Finding Anagrams[0m
+[33m        [0m[33mOverview: Finding anagrams      [0m[1;33m63[0m[33m      [0m[33mIn this chapter, you can practice Python data structures with a simple example on [0m
+[33mtextual data—listing and analyzing anagrams in English and French dictionaries. This video discusses the basic technique [0m[1;33m([0m[33msignature[0m[1;33m)[0m[33m [0m
+[33mthat is used to find anagrams and outlines the general strategy to map the technique to data structures.[0m
+[33m        [0m[33mLoading dictionaries from text files    [0m[1;33m183[0m[33m     [0m[33mIn many cases, parsing a text file manually is the fastest way to complete a [0m
+[33msimple data analysis task. This video shows how to load a list of words from a file, and briefly discusses how Unicode allow you to [0m
+[33mhandle international character sets transparently.[0m
+[33m        [0m[33mFinding anagrams        [0m[1;33m257[0m[33m     [0m[33mSee how to use Python comprehensions to create Python dicts that let you list anagrams and [0m
+[33msort them in various way. These examples show the flexibility and legibility of Python comprehensions.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Find palindromes    [0m[1;33m600[0m
+[33m        [0m[33mSolution: Find palindromes      [0m[1;33m66[0m
+[33m## [0m[1;33m3[0m[33m. NumPy[0m
+[33m        [0m[33mNumPy overview  [0m[1;33m246[0m[33m     [0m[33mWhenever you need to manage large one-dimensional or multi-dimensional collections of homogeneous [0m
+[33mdata—such as numerical arrays—you can turn to the NumPy library, which provides speed and memory savings. NumPy is also a basic [0m
+[33mbuilding block to interface with C or Fortran code. This video introduces the basic structure of NumPy arrays and the notion of dtype.[0m
+[33m        [0m[33mCreating NumPy arrays   [0m[1;33m315[0m[33m     [0m[33mThere are various ways to create NumPy arrays, depending on your needs. Learn how to make [0m
+[33mempty arrays, transform Python data structures into arrays, and load arrays from files in various formats.[0m
+[33m        [0m[33mIndexing NumPy arrays   [0m[1;33m386[0m[33m     [0m[33mIn the analysis of large data collections, you often need to focus on subsets of data or [0m
+[33mrestructure its storage. Learn how to select subarrays by specifying boundaries and strides [0m[1;33m([0m[33mslicing[0m[1;33m)[0m[33m, or by applying conditions to [0m
+[33mthe data [0m[1;33m([0m[33mfancy indexing[0m[1;33m)[0m[33m. This video also discusses restructuring data—for example, adding or removing axes—and the distinction [0m
+[33mbetween views and copies.[0m
+[33m        [0m[33mDoing math with NumPy arrays    [0m[1;33m345[0m[33m     [0m[33mWith NumPy, speed and agility arise from the ability to operate on entire arrays at [0m
+[33monce. Learn how to perform mathematical operations that transform arrays or combine them together, while preserving or modifying their[0m
+[33mstructure.[0m
+[33m        [0m[33mSpecial arrays: Records and dates       [0m[1;33m286[0m[33m     [0m[33mNumPy offers very convenient facilities for managing data of different types [0m
+[33mtogether using record arrays, and handling dates with the datetime64 dtype. Learn how to create and use record arrays as well as [0m
+[33mdatetime64 data.[0m
+[33m## [0m[1;33m4[0m[33m. Project: Weather Data[0m
+[33m        [0m[33mOverview: Analyzing weather     [0m[1;33m54[0m[33m      [0m[33mIn this chapter, you can practice using NumPy by loading, modifying, and plotting [0m
+[33mweather data from the National Oceanic and Atmospheric Administration. This video examines the files that are going to be analyzed and[0m
+[33moutlines the analysis goals.[0m
+[33m        [0m[33mLoading station and temperature data    [0m[1;33m290[0m[33m     [0m[33mNumPy allows you to load data in many different formats without writing custom[0m
+[33mcode. Learn how to use Python to download files from the web and use NumPy to load a fixed-width table.[0m
+[33m        [0m[33mCleaning weather data   [0m[1;33m260[0m[33m     [0m[33mData often needs to be cleaned or otherwise edited before analyzing it. Learn how to integrate[0m
+[33mmissing data in the weather files you have loaded using a simple interpolation technique.[0m
+[33m        [0m[33mSmoothing and plotting time series      [0m[1;33m299[0m[33m     [0m[33mMany interesting datasets are organized as a time series—numerical sequences [0m
+[33msorted by date and time. Learn how to use NumPy to perform basic time series analysis tasks—computing means and standard deviations, [0m
+[33mand smoothing time series.[0m
+[33m        [0m[33mWeather charts  [0m[1;33m280[0m[33m     [0m[33mUsing NumPy and Matplotlib together, you can create insightful visualizations with little effort. [0m
+[33mLearn how to compute daily temperature records and plot weather charts in the style of the New York Times.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Temperature anomaly [0m[1;33m600[0m
+[33m        [0m[33mSolution: Temperature anomaly   [0m[1;33m74[0m
+[33m## [0m[1;33m5[0m[33m. pandas[0m
+[33m        [0m[33mpandas overview [0m[1;33m98[0m[33m      [0m[33mpandas' powerful table objects [0m[1;33m([0m[33mDataFrames[0m[1;33m)[0m[33m are extremely useful in the analysis of structured data [0m
+[33mthat associates textual, date, and numerical information. This video introduces the basic structure of pandas Series and DataFrames, [0m
+[33mand compares them with NumPy arrays. It also highlights recent performance improvements made possible by Apache Arrow.[0m
+[33m        [0m[33mpandas DataFrames and Series    [0m[1;33m443[0m[33m     [0m[33mTo be efficient in data analysis, you often need to reorganize tables and to select [0m
+[33msubsets of their rows or columns. Learn how to create DataFrames from Python data structures or from files, inspect DataFrames, [0m
+[33mextract and modify their columns, and select data based on conditions—pandas' version of fancy indexing and the query method.[0m
+[33m        [0m[33mIndexing in pandas      [0m[1;33m252[0m[33m     [0m[33mOnce you have your data organized, you may need to find the specific records you want. Learn [0m
+[33mhow to index DataFrames with NumPy-like indexing, or by creating indexes. This video also discusses pandas' powerful but confusing [0m
+[33mMultiIndexes.[0m
+[33m        [0m[33mMath and plotting in pandas     [0m[1;33m389[0m[33m     [0m[33mIn data analysis, you often need to transform tables by applying operations to one or [0m
+[33mmore columns. Visualizing the transformed datasets is also crucial to understanding them. Learn about the basics of performing [0m
+[33mmathematical operations and plotting with pandas.[0m
+[33m        [0m[33mDatabase operations in pandas   [0m[1;33m418[0m[33m     [0m[33mWhile pandas is not a database, you can use it to combine, merge, and compare tables [0m
+[33mjust as you would with a relational database. Learn about the basics of concatenating, joining, and comparing pandas DataFrames.[0m
+[33m## [0m[1;33m6[0m[33m. Project: Baby Names[0m
+[33m        [0m[33mOverview: Analyzing baby names  [0m[1;33m38[0m[33m      [0m[33mIn this chapter, you can practice using pandas by analyzing the popularity of baby [0m
+[33mnames in the US as recorded by the Social Security Administration. This video examines the files that are going to be analyzed and [0m
+[33moutlines the analysis goals.[0m
+[33m        [0m[33mLoading name datasets   [0m[1;33m169[0m[33m     [0m[33mUsing Python and its libraries, you can gather and organize data very efficiently. See how to [0m
+[33mdownload compressed archives from the web, use Python to open them, load their contents, concatenate them into DataFrames, and save [0m
+[33mthe resulting cleaned data.[0m
+[33m        [0m[33mComparing name popularity       [0m[1;33m312[0m[33m     [0m[33mOrganizing pandas DataFrames with the appropriate index is important to gain easy [0m
+[33maccess to the records you seek. Learn how to create a MultiIndex for your dataset, sort it by index value, and compare the popularity [0m
+[33mof common and similar names by plotting the corresponding time series together. Parallel and stacked plots of timelines are often [0m
+[33minsightful visualizations.[0m
+[33m        [0m[33mCompiling top tens      [0m[1;33m186[0m[33m     [0m[33mIn many cases, you need to sort and subset DataFrames based on values rather than indices. [0m
+[33mLearn how to find the top ten names over a range of years, which involves sorting the data, dropping columns and rows, and joining [0m
+[33mDataFrames together. These are examples of pandas operations that are broadly useful.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Unisex names        [0m[1;33m600[0m
+[33m        [0m[33mSolution: Unisex names  [0m[1;33m114[0m
+[33m## [0m[1;33m7[0m[33m. Importing and Wrangling Data with pandas[0m
+[33m        [0m[33mOverview: The structure of data [0m[1;33m112[0m[33m     [0m[33mThe best way to organize data is the case/variable structure, which is implemented [0m
+[33mdirectly with rows and columns in pandas DataFrames. It is also important to identify quantitative and categorical variables to encode[0m
+[33mthem correctly. This video discusses how to include important metadata and data descriptors in a data dictionary.[0m
+[33m        [0m[33mImporting data with pandas      [0m[1;33m234[0m[33m     [0m[33mIn the real world, data comes from many sources in many formats. pandas excels at [0m
+[33mimporting many different file types—including comma-separated values [0m[1;33m([0m[33mCSV[0m[1;33m)[0m[33m, Excel, HDF, Apache Arrow, and more. This video [0m
+[33mdemonstrates data importing in pandas.[0m
+[33m        [0m[33mCleaning data   [0m[1;33m348[0m[33m     [0m[33mNewly acquired data is seldom uniform and entirely well-formed. This video exemplifies how data may be[0m
+[33mcleaned with string operations, date transformations, duplicate removal, and proper encoding of categorical variables.[0m
+[33m        [0m[33mFiltering, reshaping, and tidying data  [0m[1;33m403[0m[33m     [0m[33mAfter cleaning data, you need to identify the records that are important to [0m
+[33manalysis and cast them in structures that emphasize relevant information. This video also introduces the tidy data arrangement and [0m
+[33mdemonstrates melting and unmelting operations to obtain it.[0m
+[33m        [0m[33mSimulating data [0m[1;33m330[0m[33m     [0m[33mGenerating synthetic data is an important tool to test an analysis or a newly built tool. This video [0m
+[33mdemonstrates data simulation using the Python package faker.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Country rankings    [0m[1;33m600[0m
+[33m        [0m[33mSolution: Country rankings      [0m[1;33m94[0m
+[33m## [0m[1;33m8[0m[33m. Summarizing and Visualizing Data[0m
+[33m        [0m[33mOverview: Exploring data        [0m[1;33m80[0m[33m      [0m[33mData summaries and visualizations are the fundamental tools of exploratory data [0m
+[33manalysis—where you seek to understand a dataset—and storytelling with data—where you share the insights effectively and memorably. [0m
+[33mThis chapter uses datasets from the Gapminder project, which reveals surprising truths about world-wide trends with carefully curated [0m
+[33mdata.[0m
+[33m        [0m[33mSummarizing quantitative data   [0m[1;33m257[0m[33m     [0m[33mDescriptive statistics are indispensable to understand quantitative data by distilling[0m
+[33mtypical values and their variation to observables such as mean, median, variance, and quantiles. This video demonstrates the [0m
+[33mcomputation of descriptive statistics in pandas.[0m
+[33m        [0m[33mVisualizing distributions       [0m[1;33m354[0m[33m     [0m[33mVisualizations such as box plots, histograms, and density plots provide immediate [0m
+[33minsight into the variation of variables in populations and their subgroups. Learn how to visualize distributions with pandas, [0m
+[33mMatplotlib, and Seaborn.[0m
+[33m        [0m[33mComparing quantitative variables        [0m[1;33m325[0m[33m     [0m[33mCorrelation statistics and multivariable plots help you understand how data [0m
+[33mvariables change together. Learn how to create multivariate plots with pandas, Matplotlib, and Seaborn, and see how to use all [0m
+[33mencoding channels—position, color, size, and texture—to plot more than two variables together.[0m
+[33m        [0m[33mSummarizing and visualizing categorical data    [0m[1;33m298[0m[33m     [0m[33mDescriptive statistics for categorical data include counts and [0m
+[33mproportions, which can be organized in pivot and stratified tables and visualized in a variety of bar and pie plots. Learn how to use [0m
+[33mpandas to create summaries and visualizations.[0m
+[33m## [0m[1;33m9[0m[33m. Introduction to Data Modeling[0m
+[33m        [0m[33mOverview: Understanding data    [0m[1;33m152[0m[33m     [0m[33mStatistics is the science of learning from data, and statistical modeling helps you to[0m
+[33midentify relationships between variables and make predictions about the future. This chapter returns to the Gapminder data and [0m
+[33mdevelops simple models to quantify trends and make hypotheses.[0m
+[33m        [0m[33mFitting models to data  [0m[1;33m355[0m[33m     [0m[33mLinear regression is the simplest form of statistical modeling, which quantifies the effect of[0m
+[33mpredictor variables on output variables. This video demonstrates simple and multiple linear regression with the user-friendly but [0m
+[33msophisticated Python package statsmodels, using the standard tilde formula notation.[0m
+[33m        [0m[33mModel evaluation and selection  [0m[1;33m308[0m[33m     [0m[33mAfter fitting a model, it's important to understand if it does a good job of [0m
+[33mrepresenting your data. This video demonstrates model evaluation using plotting and simple statistics such as mean square error and R [0m
+[33msquared. It also discusses strategies to select among competing models and refine partially successful models.[0m
+[33m        [0m[33mTesting hypotheses with Monte Carlo     [0m[1;33m308[0m[33m     [0m[33mThe possibility of quickly performing a large number of simulations on a [0m
+[33mcomputer has revolutionized statistics, replacing complicated mathematics with simple, pragmatic approaches. This video demonstrates [0m
+[33mthe idea of testing a hypothesis about data by computing statistics on a population of simulated data replications.[0m
+[33m        [0m[33mA taste of machine learning     [0m[1;33m362[0m[33m     [0m[33mMachine learning goes beyond data analysis by teaching machines how to learn from [0m
+[33mdata, usually in large quantities. This video demonstrates a simple classification analysis using the Python package scikit-learn.[0m
+[33m        [0m[33m<[0m[33m/[0m[33m> Code challenge: Gapminder model fit [0m[1;33m600[0m
+[33m        [0m[33mSolution: Gapminder model fit   [0m[1;33m67[0m
+[33m## [0m[1;33m10[0m[33m. Project: COVID-[0m[1;33m19[0m[33m Data[0m
+[33m        [0m[33mOverview: COVID-[0m[1;33m19[0m[33m data [0m[1;33m132[0m
+[33m        [0m[33mSummarizing COVID-[0m[1;33m19[0m[33m data       [0m[1;33m260[0m
+[33m        [0m[33mVisualizing COVID-[0m[1;33m19[0m[33m data       [0m[1;33m359[0m
+[33m        [0m[33mModeling COVID-[0m[1;33m19[0m[33m data  [0m[1;33m285[0m
+[33m## Conclusion[0m
+[33m        [0m[33mExtending your Python data analysis skills      [0m[1;33m101[0m[33m     [0m[33mThere are many resources on the web that can help you master data [0m
+[33manalysis with Python and explore more advanced topics. This video suggests a few.[0m
+
+[33m<[0m[33m/[0m[33mtoc[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[1;33m>[0m
+
+[33mOUTPUT REQUIREMENTS:[0m
+[33mProvide ONLY a bulleted list of essential prerequisite skills. Each prerequisite should be a specific, discrete skill [0m[1;33m([0m[33mor tool[0m[1;33m)[0m[33m that [0m
+[33mis absolutely necessary for the course.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34m• Basic Python syntax and control flow [0m[1;34m([0m[34me.g., variables, loops, conditionals, functions[0m[1;34m)[0m[34m  [0m
+[34m• Fundamental operations on Python data structures [0m[1;34m([0m[34mlists, dictionaries, tuples, sets, along with indexing and slicing[0m[1;34m)[0m[34m  [0m
+[34m• Ability to run Python code in a development environment [0m[1;34m([0m[34me.g., setting up and executing scripts[0m[1;34m)[0m
+
