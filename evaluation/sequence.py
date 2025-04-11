@@ -33,7 +33,7 @@ def recommend_sequence(curation: Curation, preferred_model="claude") -> Sequence
     model = Model(preferred_model)
     parser = Parser(Sequence)  # type: ignore
     chain = Chain(prompt=prompt, model=model, parser=parser)
-    response = chain.run(input_variables={"snapshot": curation.snapshot}, cache=False)
+    response = chain.run(input_variables={"snapshot": curation.snapshot})
     return response.content
 
 

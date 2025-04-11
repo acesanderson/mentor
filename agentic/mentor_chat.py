@@ -13,9 +13,9 @@ Programming Generative AI: From Variational Autoencoders to Stable Diffusion wit
 
 Rough draft of a chatbot for building curations.
 TODO:
-- [ ] implement lazy loading
-- [ ] suppress logging from Curator
-- [ ] get queries to work
+- [x] implement lazy loading
+- [x] suppress logging from Curator
+- [x] get queries to work
 - [x] allow multiple params for query commands
 - [x] fix encoding issues
 - [x] implement numbering for courses, and referencing by number
@@ -32,6 +32,7 @@ console = Console(width=120)  # for spinner
 with console.status("[green]Loading...", spinner="dots"):
     from Chain import Chat, Model, Prompt, Chain, Message, MessageStore
     from Kramer import (
+        Get,
         Course,
         Curation,
     )
@@ -94,6 +95,8 @@ class MentorChat(Chat):
         self.curriculum = None
         # Last cert you viewed -- saved in case you want to look at it again or promote it to curation
         self.last_cert = None
+        # Last sequence you received from consult_sequence
+        self.last_sequence = None
 
     # Functions
     def query_model(self, input: list[Message]) -> str | None:
@@ -263,19 +266,24 @@ class MentorChat(Chat):
             for course in courselist:
                 try:
                     course_release_date = course.metadata["Course Release Date"][:4]
-                except (KeyError, TypeError):
+                except (KeyError, TypeError, AttributeError):
                     course_release_date = ""
                 sorted_list.append((course, course_release_date))
             sorted_list.sort(key=lambda x: x[1], reverse=True)
             courselist = [x[0] for x in sorted_list]
         for index, course in enumerate(courselist):
-            try:
-                course_release_date = course.metadata["Course Release Date"][:4]
-            except (KeyError, TypeError):
-                course_release_date = ""
-            self.console.print(
-                f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_release_date}[/cyan]"
-            )
+            if course:
+                try:
+                    course_release_date = course.metadata["Course Release Date"][:4]
+                except (KeyError, TypeError, AttributeError):
+                    course_release_date = ""
+                self.console.print(
+                    f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_release_date}[/cyan]"
+                )
+            else:
+                self.console.print(
+                    f"[red]Course not found: this suggests an error in code.[/red]"
+                )
         self.update_course_cache(courselist)
 
     def number_courses(self) -> dict:
@@ -1017,6 +1025,51 @@ class MentorChat(Chat):
         )
         self.console.print(review)
 
+    def command_consult_sequence(self):
+        """
+        Get a recommended sequence of courses.
+        """
+        from Mentor import recommend_sequence
+
+        if not self.curation:
+            self.console.print("No curation.")
+            return
+        sequence = recommend_sequence(curation=self.curation)
+        recommended_sequence: list[tuple[int, str]] = sequence.recommended_sequence
+        rationale: str = sequence.rationale
+        output = "-" * 80 + "\n"
+        output += f"[green]Recommended sequence:[/green]\n"
+        for recommendation in recommended_sequence:
+            output += f"[yellow]{recommendation[0]}[/yellow]. [cyan]{recommendation[1]}[/cyan]\n"
+        output += "-" * 80 + "\n"
+        output += f"[green]Rationale:[/green]\n"
+        output += f"[yellow]{rationale}[/yellow]\n"
+        output += "-" * 80 + "\n"
+        self.console.print(output)
+        self.last_sequence = recommended_sequence
+
+    def command_add_sequence(self):
+        """
+        Add the recommended sequence to the curation.
+        """
+        from Kramer import Get
+
+        if not self.last_sequence:
+            self.console.print("No sequence to add.")
+            return
+        last_sequence = self.last_sequence
+        self.command_clear()
+        for _, course in last_sequence:
+            try:
+                course_obj = Get(course)
+                if isinstance(course_obj, Course):
+                    self.curation.courses.append(course_obj)
+                    self.add_to_workspace(course_obj)
+                else:
+                    self.console.print(f"[red]Course not found: {course}[/red]")
+            except Exception as e:
+                self.console.print(f"[red]Error: {e}[/red]")
+
     def command_consult_learner(self, param):
         """
         Have a learner provide feedback on the curation. Need to pass an audience param.
@@ -1200,12 +1253,6 @@ class MentorChat(Chat):
         capstone = generate_capstone_project(self.curation)
         markdown = Markdown(capstone)
         self.console.print(markdown)
-
-    def command_consult_sequence(self):
-        """
-        For the courses in the Curation, provide a detailed recommendation for course order.
-        """
-        pass
 
     def command_situate_course(self, param):
         """
