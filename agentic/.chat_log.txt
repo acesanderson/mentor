@@ -18501,3 +18501,532 @@
 [34mRemember that the goal is to demonstrate your ability to apply multiple data science skills in a cohesive project that showcases your [0m
 [34mcapabilities to potential employers or collaborators.[0m
 
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are a market researcher with both a deep understanding of various diverse audiences, industries, and fields of study.[0m
+[33mYou are also very adept at quickly doing deep research into new areas to identify the most important themes, organizations, thought [0m
+[33mleaders, etc.[0m
+
+[33mYour job is to identify ideal partners for endorsing particular learning programs.[0m
+[33mThe partners should add credibility and authority to the program, and should be able to help promote the program to their audience.[0m
+
+[33mHere are examples:[0m
+
+[1;33m<[0m[1;33mcorpus[0m[33m>[0m
+[33mFinancial Analysis Professional Certificate by Corporate Finance Institute[0m
+[33mCustomer Service Professional Certificate by Zendesk[0m
+[33mProduct Management Professional Certificate by Reforge[0m
+[33mBusiness Strategy Professional Certificate by Boston Consulting Group[0m
+[33mRecruiting Professional Certificate by American Staffing Association[0m
+[33mGraphic Design Professional Certificate by Adobe[0m
+[33mGenerative AI Professional Certificate by Microsoft[0m
+[33mData Science Professional Certificate by IBM[0m
+[33mDigital Marketing Professional Certificate by Google[0m
+[33mProject Management Professional Certificate by Project Management Institute [0m[1;33m([0m[33mPMI[0m[1;33m)[0m
+[33mCybersecurity Professional Certificate by Cisco[0m
+[33mHuman Resources Professional Certificate by Society for Human Resource Management [0m[1;33m([0m[33mSHRM[0m[1;33m)[0m
+[33mSupply Chain Management Professional Certificate by Association for Supply Chain Management [0m[1;33m([0m[33mASCM[0m[1;33m)[0m
+[33mUser Experience [0m[1;33m([0m[33mUX[0m[1;33m)[0m[33m Design Professional Certificate by Nielsen Norman Group[0m
+[33mCloud Computing Professional Certificate by Amazon Web Services [0m[1;33m([0m[33mAWS[0m[1;33m)[0m
+[33mSustainability Management Professional Certificate by World Business Council for Sustainable Development [0m[1;33m([0m[33mWBCSD[0m[1;33m)[0m
+[33mBlockchain Technology Professional Certificate by IBM[0m
+[33mContent Marketing Professional Certificate by HubSpot[0m
+[33mAgile Leadership Professional Certificate by Scrum Alliance[0m
+[33mInvestment Banking Professional Certificate by J.P. Morgan[0m
+[33mMachine Learning Professional Certificate by Stanford University[0m
+[33m<[0m[33m/[0m[33mcorpus[0m[33m>[0m
+
+[33mPlease come up with a top [0m[1;33m10[0m[33m list of organizations that would be ideal partners for endorsing the following curriculum:[0m
+[33m<topic>[0m
+[33m<certificate>[0m
+[33m<course>[0m
+[33m<course_title>Skill Up with Python: Hands-On Data Science and Machine Learning Projects<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Python has risen to popularity as one of the most versatile and beginner-friendly programming languages in the world. Its[0m
+[33msimplicity, readability, and extensive libraries make it a powerful language in a wide variety of different domains, including web [0m
+[33mdevelopment, data analysis, scientific computing, artificial intelligence, and automation. If you're looking to kickstart your Python [0m
+[33mprogramming journey, this hands-on course was designed for you. Join instructor Shaun Wassell as he offers an interactive approach to [0m
+[33mbuilding your Python skills through a series of practical projects, all written from scratch. Test out your new know-how along the way[0m
+[33min areas such as data analysis, machine learning, web scraping, and more.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Complete Guide to Python for Data Engineering: From Beginner to Advanced<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Get up and running with the basics of Python before progressing to more advanced topics specific to data engineering. In [0m
+[33mthis hands-on, interactive course, join instructor Deepak Goyal to practice performing a wide range of data engineering tasks in [0m
+[33mPython to boost your technical know-how, prepare for an interview, or land a new role. This course includes Code Challenges powered by[0m
+[33mCoderPad. Code Challenges are interactive coding exercises with real-time feedback, so you can get hands-on coding practice to advance[0m
+[33myour coding skills. Deepak helps you boost your skills as a Python programmer with six specific coding challenges. Explore language [0m
+[33mbasics, Python collections, file handling, Pandas, NumPy, OOP, and advanced data engineering tools that use Python. The course ends [0m
+[33mwith a capstone project focused on retail sales analysis.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Data Science Foundations: Python Scientific Stack<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Join instructor Miki Tebeka as he dives into the Python scientific stack and shows you how to use it to solve problems. [0m
+[33mMiki covers the major packages used throughout the data science process: numpy, pandas, matplotlib, scikit-learn, and others. He also [0m
+[33mguides you through how to load data, analyze data, run models, and display results.This course is integrated with GitHub Codespaces, [0m
+[33man instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine [0m
+[33msetup. With GitHub Codespaces, you can get hands-on practice from any machine, at any timeâ€”all while using a tool that you'll likely[0m
+[33mencounter in the workplace. Check out the â€œUsing GitHub Codespaces with this courseâ€ video to learn how to get [0m
+[33mstarted.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Python Statistics Essential Training<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>The field of statistics has become increasingly dependent on data analysis and interpretation using Python. With the rise[0m
+[33mof big data and data science, the demand for professionals who can effectively analyze and interpret data using Python has [0m
+[33mskyrocketed. In this course, Matt Harrison teaches you how to collect, clean, analyze, and visualize data using the powerful tools of [0m
+[33mthe Python programming language. Join Matt as he gives into the various techniques that form the backbone of statistics and helps you [0m
+[33munderstand the data with summary statistics and visualizations. He explains how to create predictive models using both linear [0m
+[33mregression andXGBoost, and wraps up the course with a look at hypothesis testing.If you're interested in exploring statistics using a [0m
+[33mcode-first approach, join Matt in this course as he shows you how to use Python to unlock the power of data.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Advanced Python: Working With Data<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description> Data science is one of the fastest-growing areas of technology today. And whether you work with large data sets or just [0m
+[33mneed to process spread sheet files, Python is a great language to use when working with data-intensive applications. In this course, [0m
+[33mJoe Marini gets you started on working with data in Python, highlighting some of the most useful built-in features of the language. [0m
+[33mUsing a real data set from the United States Geological Survey that tracks earthquake information, Joe shows you how to perform data [0m
+[33moperations like sorting and filtering, determining basic information like minimum and maximum values, and reading and writing data to [0m
+[33mand from other formats like CSV and JSON. Practice what you learn with hands-on challenges. Check out this course with Joe to see how [0m
+[33mPython can help you make sense of your data.  This course is integrated with GitHub Codespaces, an instant cloud developer environment[0m
+[33mthat offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can [0m
+[33mget hands-on practice from any machine, at any timeâ€”all while using a tool that you'll likely encounter in the workplace. [0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Python Code Challenges for Object-Oriented Programming<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>In this course, instructor Jonathan Fernandes guides you through a series of challenges designed to boost your skills in [0m
+[33mdata analysis using Python. Learn how to utilize CoderPad for seamless code testing and debugging, within an integrated online [0m
+[33mlearning environment. Discover how to create and employ Python data classes to simplify your code while maintaining robust [0m
+[33mfunctionality. Engage with various algorithmic problems, implementing Pythonic solutions and leveraging standard library functions. [0m
+[33mExtend your class capabilities by learning to use special methods. When you complete this course, you will have gained practical [0m
+[33mexperience in solving complex problems and debugging code effectively. Whether you're a student, a professional, or someone passionate[0m
+[33mabout data science, this course provides the tools and knowledge to elevate your Python programming abilities.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Python for Data Science and Machine Learning Essential Training Part [0m[1;33m1[0m[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description> &lt;i&gt;Python for Data Science and Machine Learning Essential Training&lt;[0m[33m/[0m[33mi[0m[33m&gt; is one of the most popular data [0m
+[33mscience courses at LinkedIn Learning. It has now been updated and expanded to two parts-giving you even more hands-on, real-world [0m
+[33mPython experience. In part one, instructor Lillian Pierson takes you step by step through a data science and machine learning project:[0m
+[33ma web scraper that downloads and analyzes data from the web. Along the way, she introduces techniques to clean, reformat, transform, [0m
+[33mand describe raw data; generate visualizations; remove outliers; perform simple data analysis; and generate web-based graphs using [0m
+[33mStreamlit. By the end of this course, you'll have acquired basic coding experience that you can take to your organization and quickly [0m
+[33mapply to your own custom data science and machine learning projects.  This course is integrated with GitHub Codespaces, an instant [0m
+[33mcloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With [0m
+[33mGitHub Codespaces, you can get hands-on practice from any machine, at any time-all while using a tool that you'll likely encounter in [0m
+[33mthe workplace. Check out the Using GitHub Codespaces with this course video to learn how to get started. <[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Introduction to Data Science<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description> The world of data science is reshaping every business, regardless of industry, location, or role. And there's never been[0m
+[33ma better time to get up to speed and learn the basics of this booming field. In this course, designed specifically for beginners, [0m
+[33mexplore the world of data science, its opportunities and innovations, and the fundamental skills required for success.  Join Python [0m
+[33mtrainer and data science expert Lavanya Vijayan as she shares what data science is and how it differs from other common data-related [0m
+[33mcareers. Discover some of the most important tools used in the trade to develop your understanding of data libraries and data [0m
+[33mmanipulation. Along the way, get an introduction to exploratory data analysis, data cleaning, data visualization, sampling, testing, [0m
+[33mestimating, and more. By the end of this course, you'll know how to use inference and statistical analysis to make more reliable [0m
+[33mpredictions for your business.  This course was created by &lt;a [0m[33mhref[0m[33m=[0m[4;33mhttps[0m[4;33m://www.onlymadecraft.com[0m[33m [0m
+[33mtarget[0m[33m=[0m[33m_blank[0m[33m&gt;Madecraft&lt;[0m[33m/[0m[33ma[0m[33m&gt;. We are pleased to host this training in our library. &lt;img [0m
+[33msrc[0m[33m=[0m[4;33mhttps[0m[4;33m://media.licdn.com/media/AAYAAgCwAAoAAQAAAAAAAHppnBQxgeyWS2CsU3aDDPcMgw.jpg[0m[33m [0m[33malt[0m[33m=[0m[33mCompany[0m[33m logo for Madecraft; the letter M [0m
+[33mconfigured as part of a printing press [0m[33mwidth[0m[33m=[0m[1;33m20[0m[33m% [0m[33mheight[0m[33m=[0m[1;33m20[0m[33m% [0m[33m/[0m[33m&gt;<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Python Code Challenges for Data Analysis<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>In this course, Jonathan Fernandesâ€”an expert in Generative AI and Large Language Modelsâ€”explores the essentials of [0m
+[33mdata analysis using Python. Learn how to load data, filter it by specific criteria, and manipulate data structures to achieve the [0m
+[33mdesired results. Discover the use of CoderPad to effectively compare and evaluate different Python data structures. Dive deep into [0m
+[33mhands-on challenges like sorting data by various metrics and finding elements with the most nominations. By the end of this course, [0m
+[33myou will be proficient in using Python for data analysis tasks and capable of tackling complex data problems. This course is ideal for[0m
+[33maspiring data analysts, Python programmers, and anyone interested in data science.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Python Data Analysis<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description> Data science has transformed the way that government and industry leaders look at both specific problems and the world [0m
+[33mat large. Curious about how data analysis works in practice? In this course, instructor Michele Vallisneri explains what it takes to [0m
+[33mget started with data science using Python.  Michele demonstrates how to set up your analysis environment and provides a refresher on [0m
+[33mthe basics of working with data structures in Python. Then, he jumps into the big stuff: the power of arrays, indexing, and tables in [0m
+[33mNumPy and pandas. He also guides you through two sample big-data projects: using NumPy to identify and visualize weather patterns and [0m
+[33musing pandas to analyze the popularity of baby names over the last century. Challenges issued along the way help you practice what [0m
+[33myou've learned. Plus, learn about the skills in the basic tasks of data analysis: importing and wrangling, summarizing and [0m
+[33mvisualizing, modeling, and reasoning.   This course is integrated with GitHub Codespaces, an instant cloud developer environment that [0m
+[33moffers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can get [0m
+[33mhands-on practice from any machine, at any timeâ€”all while using a tool that you'll likely encounter in the workplace. Check out the [0m
+[33mâ€œSet up: Using Codespacesâ€ video to learn how to get started. <[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcertificate[0m[33m>[0m
+[33m<[0m[33m/[0m[33mtopic[0m[1;33m>[0m
+
+[33mYour answer should take the form of the following:[0m
+[33m- a list of organizations that would be ideal partners for endorsing a learning program on the given topic[0m
+[33m- you should provide [0m[1;33m10[0m[33m organizations, in decreasing order of how valuable the endorsement would be.[0m
+[33m- you should NOT suggest the following partners: Coursera, Udemy, LinkedIn Learning, edX, Khan Academy, Udacity, Codecademy, [0m
+[33mPluralsight, Skillshare, General Assembly, or any other online learning platform.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mpartners[0m[34m=[0m[1;34m[[0m[34m'Python Software Foundation'[0m[34m, [0m[34m'Anaconda, Inc.'[0m[34m, [0m[34m'Kaggle'[0m[34m, [0m[34m'NumFOCUS'[0m[34m, [0m[34m'DataCamp'[0m[34m, [0m[34m'IEEE Computer Society'[0m[34m, [0m[34m'Association for [0m
+[34mComputing Machinery [0m[34m([0m[34mACM[0m[34m)[0m[34m'[0m[34m, [0m[34m'International Association for Data Science [0m[34m([0m[34mIADS[0m[34m)[0m[34m'[0m[34m, [0m[34m"O'Reilly Media"[0m[34m, [0m[34m'NVIDIA'[0m[1;34m][0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are a market researcher with both a deep understanding of various diverse audiences, industries, and fields of study.[0m
+[33mYou are also very adept at quickly doing deep research into new areas to identify the most important themes, organizations, thought [0m
+[33mleaders, etc.[0m
+
+[33mYour job is to identify ideal partners for endorsing particular learning programs.[0m
+[33mThe partners should add credibility and authority to the program, and should be able to help promote the program to their audience.[0m
+
+[33mHere are examples:[0m
+
+[1;33m<[0m[1;33mcorpus[0m[33m>[0m
+[33mFinancial Analysis Professional Certificate by Corporate Finance Institute[0m
+[33mCustomer Service Professional Certificate by Zendesk[0m
+[33mProduct Management Professional Certificate by Reforge[0m
+[33mBusiness Strategy Professional Certificate by Boston Consulting Group[0m
+[33mRecruiting Professional Certificate by American Staffing Association[0m
+[33mGraphic Design Professional Certificate by Adobe[0m
+[33mGenerative AI Professional Certificate by Microsoft[0m
+[33mData Science Professional Certificate by IBM[0m
+[33mDigital Marketing Professional Certificate by Google[0m
+[33mProject Management Professional Certificate by Project Management Institute [0m[1;33m([0m[33mPMI[0m[1;33m)[0m
+[33mCybersecurity Professional Certificate by Cisco[0m
+[33mHuman Resources Professional Certificate by Society for Human Resource Management [0m[1;33m([0m[33mSHRM[0m[1;33m)[0m
+[33mSupply Chain Management Professional Certificate by Association for Supply Chain Management [0m[1;33m([0m[33mASCM[0m[1;33m)[0m
+[33mUser Experience [0m[1;33m([0m[33mUX[0m[1;33m)[0m[33m Design Professional Certificate by Nielsen Norman Group[0m
+[33mCloud Computing Professional Certificate by Amazon Web Services [0m[1;33m([0m[33mAWS[0m[1;33m)[0m
+[33mSustainability Management Professional Certificate by World Business Council for Sustainable Development [0m[1;33m([0m[33mWBCSD[0m[1;33m)[0m
+[33mBlockchain Technology Professional Certificate by IBM[0m
+[33mContent Marketing Professional Certificate by HubSpot[0m
+[33mAgile Leadership Professional Certificate by Scrum Alliance[0m
+[33mInvestment Banking Professional Certificate by J.P. Morgan[0m
+[33mMachine Learning Professional Certificate by Stanford University[0m
+[33m<[0m[33m/[0m[33mcorpus[0m[33m>[0m
+
+[33mPlease come up with a top [0m[1;33m10[0m[33m list of organizations that would be ideal partners for endorsing the following curriculum:[0m
+[33m<topic>[0m
+[33m<certificate>[0m
+[33m<course>[0m
+[33m<course_title>Skill Up with Python: Hands-On Data Science and Machine Learning Projects<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Python has risen to popularity as one of the most versatile and beginner-friendly programming languages in the world. Its[0m
+[33msimplicity, readability, and extensive libraries make it a powerful language in a wide variety of different domains, including web [0m
+[33mdevelopment, data analysis, scientific computing, artificial intelligence, and automation. If you're looking to kickstart your Python [0m
+[33mprogramming journey, this hands-on course was designed for you. Join instructor Shaun Wassell as he offers an interactive approach to [0m
+[33mbuilding your Python skills through a series of practical projects, all written from scratch. Test out your new know-how along the way[0m
+[33min areas such as data analysis, machine learning, web scraping, and more.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Complete Guide to Python for Data Engineering: From Beginner to Advanced<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Get up and running with the basics of Python before progressing to more advanced topics specific to data engineering. In [0m
+[33mthis hands-on, interactive course, join instructor Deepak Goyal to practice performing a wide range of data engineering tasks in [0m
+[33mPython to boost your technical know-how, prepare for an interview, or land a new role. This course includes Code Challenges powered by[0m
+[33mCoderPad. Code Challenges are interactive coding exercises with real-time feedback, so you can get hands-on coding practice to advance[0m
+[33myour coding skills. Deepak helps you boost your skills as a Python programmer with six specific coding challenges. Explore language [0m
+[33mbasics, Python collections, file handling, Pandas, NumPy, OOP, and advanced data engineering tools that use Python. The course ends [0m
+[33mwith a capstone project focused on retail sales analysis.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Data Science Foundations: Python Scientific Stack<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>Join instructor Miki Tebeka as he dives into the Python scientific stack and shows you how to use it to solve problems. [0m
+[33mMiki covers the major packages used throughout the data science process: numpy, pandas, matplotlib, scikit-learn, and others. He also [0m
+[33mguides you through how to load data, analyze data, run models, and display results.This course is integrated with GitHub Codespaces, [0m
+[33man instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine [0m
+[33msetup. With GitHub Codespaces, you can get hands-on practice from any machine, at any timeâ€”all while using a tool that you'll likely[0m
+[33mencounter in the workplace. Check out the â€œUsing GitHub Codespaces with this courseâ€ video to learn how to get [0m
+[33mstarted.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Python Statistics Essential Training<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>The field of statistics has become increasingly dependent on data analysis and interpretation using Python. With the rise[0m
+[33mof big data and data science, the demand for professionals who can effectively analyze and interpret data using Python has [0m
+[33mskyrocketed. In this course, Matt Harrison teaches you how to collect, clean, analyze, and visualize data using the powerful tools of [0m
+[33mthe Python programming language. Join Matt as he gives into the various techniques that form the backbone of statistics and helps you [0m
+[33munderstand the data with summary statistics and visualizations. He explains how to create predictive models using both linear [0m
+[33mregression andXGBoost, and wraps up the course with a look at hypothesis testing.If you're interested in exploring statistics using a [0m
+[33mcode-first approach, join Matt in this course as he shows you how to use Python to unlock the power of data.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Advanced Python: Working With Data<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description> Data science is one of the fastest-growing areas of technology today. And whether you work with large data sets or just [0m
+[33mneed to process spread sheet files, Python is a great language to use when working with data-intensive applications. In this course, [0m
+[33mJoe Marini gets you started on working with data in Python, highlighting some of the most useful built-in features of the language. [0m
+[33mUsing a real data set from the United States Geological Survey that tracks earthquake information, Joe shows you how to perform data [0m
+[33moperations like sorting and filtering, determining basic information like minimum and maximum values, and reading and writing data to [0m
+[33mand from other formats like CSV and JSON. Practice what you learn with hands-on challenges. Check out this course with Joe to see how [0m
+[33mPython can help you make sense of your data.  This course is integrated with GitHub Codespaces, an instant cloud developer environment[0m
+[33mthat offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can [0m
+[33mget hands-on practice from any machine, at any timeâ€”all while using a tool that you'll likely encounter in the workplace. [0m
+[33m<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Python Code Challenges for Object-Oriented Programming<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>In this course, instructor Jonathan Fernandes guides you through a series of challenges designed to boost your skills in [0m
+[33mdata analysis using Python. Learn how to utilize CoderPad for seamless code testing and debugging, within an integrated online [0m
+[33mlearning environment. Discover how to create and employ Python data classes to simplify your code while maintaining robust [0m
+[33mfunctionality. Engage with various algorithmic problems, implementing Pythonic solutions and leveraging standard library functions. [0m
+[33mExtend your class capabilities by learning to use special methods. When you complete this course, you will have gained practical [0m
+[33mexperience in solving complex problems and debugging code effectively. Whether you're a student, a professional, or someone passionate[0m
+[33mabout data science, this course provides the tools and knowledge to elevate your Python programming abilities.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Python for Data Science and Machine Learning Essential Training Part [0m[1;33m1[0m[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description> &lt;i&gt;Python for Data Science and Machine Learning Essential Training&lt;[0m[33m/[0m[33mi[0m[33m&gt; is one of the most popular data [0m
+[33mscience courses at LinkedIn Learning. It has now been updated and expanded to two parts-giving you even more hands-on, real-world [0m
+[33mPython experience. In part one, instructor Lillian Pierson takes you step by step through a data science and machine learning project:[0m
+[33ma web scraper that downloads and analyzes data from the web. Along the way, she introduces techniques to clean, reformat, transform, [0m
+[33mand describe raw data; generate visualizations; remove outliers; perform simple data analysis; and generate web-based graphs using [0m
+[33mStreamlit. By the end of this course, you'll have acquired basic coding experience that you can take to your organization and quickly [0m
+[33mapply to your own custom data science and machine learning projects.  This course is integrated with GitHub Codespaces, an instant [0m
+[33mcloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With [0m
+[33mGitHub Codespaces, you can get hands-on practice from any machine, at any time-all while using a tool that you'll likely encounter in [0m
+[33mthe workplace. Check out the Using GitHub Codespaces with this course video to learn how to get started. <[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Introduction to Data Science<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description> The world of data science is reshaping every business, regardless of industry, location, or role. And there's never been[0m
+[33ma better time to get up to speed and learn the basics of this booming field. In this course, designed specifically for beginners, [0m
+[33mexplore the world of data science, its opportunities and innovations, and the fundamental skills required for success.  Join Python [0m
+[33mtrainer and data science expert Lavanya Vijayan as she shares what data science is and how it differs from other common data-related [0m
+[33mcareers. Discover some of the most important tools used in the trade to develop your understanding of data libraries and data [0m
+[33mmanipulation. Along the way, get an introduction to exploratory data analysis, data cleaning, data visualization, sampling, testing, [0m
+[33mestimating, and more. By the end of this course, you'll know how to use inference and statistical analysis to make more reliable [0m
+[33mpredictions for your business.  This course was created by &lt;a [0m[33mhref[0m[33m=[0m[4;33mhttps[0m[4;33m://www.onlymadecraft.com[0m[33m [0m
+[33mtarget[0m[33m=[0m[33m_blank[0m[33m&gt;Madecraft&lt;[0m[33m/[0m[33ma[0m[33m&gt;. We are pleased to host this training in our library. &lt;img [0m
+[33msrc[0m[33m=[0m[4;33mhttps[0m[4;33m://media.licdn.com/media/AAYAAgCwAAoAAQAAAAAAAHppnBQxgeyWS2CsU3aDDPcMgw.jpg[0m[33m [0m[33malt[0m[33m=[0m[33mCompany[0m[33m logo for Madecraft; the letter M [0m
+[33mconfigured as part of a printing press [0m[33mwidth[0m[33m=[0m[1;33m20[0m[33m% [0m[33mheight[0m[33m=[0m[1;33m20[0m[33m% [0m[33m/[0m[33m&gt;<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Python Code Challenges for Data Analysis<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description>In this course, Jonathan Fernandesâ€”an expert in Generative AI and Large Language Modelsâ€”explores the essentials of [0m
+[33mdata analysis using Python. Learn how to load data, filter it by specific criteria, and manipulate data structures to achieve the [0m
+[33mdesired results. Discover the use of CoderPad to effectively compare and evaluate different Python data structures. Dive deep into [0m
+[33mhands-on challenges like sorting data by various metrics and finding elements with the most nominations. By the end of this course, [0m
+[33myou will be proficient in using Python for data analysis tasks and capable of tackling complex data problems. This course is ideal for[0m
+[33maspiring data analysts, Python programmers, and anyone interested in data science.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<course>[0m
+[33m<course_title>Python Data Analysis<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<description> Data science has transformed the way that government and industry leaders look at both specific problems and the world [0m
+[33mat large. Curious about how data analysis works in practice? In this course, instructor Michele Vallisneri explains what it takes to [0m
+[33mget started with data science using Python.  Michele demonstrates how to set up your analysis environment and provides a refresher on [0m
+[33mthe basics of working with data structures in Python. Then, he jumps into the big stuff: the power of arrays, indexing, and tables in [0m
+[33mNumPy and pandas. He also guides you through two sample big-data projects: using NumPy to identify and visualize weather patterns and [0m
+[33musing pandas to analyze the popularity of baby names over the last century. Challenges issued along the way help you practice what [0m
+[33myou've learned. Plus, learn about the skills in the basic tasks of data analysis: importing and wrangling, summarizing and [0m
+[33mvisualizing, modeling, and reasoning.   This course is integrated with GitHub Codespaces, an instant cloud developer environment that [0m
+[33moffers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can get [0m
+[33mhands-on practice from any machine, at any timeâ€”all while using a tool that you'll likely encounter in the workplace. Check out the [0m
+[33mâ€œSet up: Using Codespacesâ€ video to learn how to get started. <[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcourse[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcertificate[0m[33m>[0m
+[33m<[0m[33m/[0m[33mtopic[0m[1;33m>[0m
+
+[33mYour answer should take the form of the following:[0m
+[33m- a list of organizations that would be ideal partners for endorsing a learning program on the given topic[0m
+[33m- you should provide [0m[1;33m10[0m[33m organizations, in decreasing order of how valuable the endorsement would be.[0m
+[33m- you should NOT suggest the following partners: Coursera, Udemy, LinkedIn Learning, edX, Khan Academy, Udacity, Codecademy, [0m
+[33mPluralsight, Skillshare, General Assembly, or any other online learning platform.[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mpartners[0m[34m=[0m[1;34m[[0m[34m'Python Software Foundation'[0m[34m, [0m[34m'Anaconda, Inc.'[0m[34m, [0m[34m'Kaggle'[0m[34m, [0m[34m'NumFOCUS'[0m[34m, [0m[34m'DataCamp'[0m[34m, [0m[34m'IEEE Computer Society'[0m[34m, [0m[34m'Association for [0m
+[34mComputing Machinery [0m[34m([0m[34mACM[0m[34m)[0m[34m'[0m[34m, [0m[34m'International Association for Data Science [0m[34m([0m[34mIADS[0m[34m)[0m[34m'[0m[34m, [0m[34m"O'Reilly Media"[0m[34m, [0m[34m'NVIDIA'[0m[1;34m][0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are a market researcher with both a deep understanding of various diverse audiences, industries, and fields of study.[0m
+[33mYou are also very adept at quickly doing deep research into new areas to identify the most important themes, organizations, thought [0m
+[33mleaders, etc.[0m
+
+[33mYour job is to identify ideal topics for a partner to endorse.[0m
+[33mThe topics should be foundational and useful for a wide audience.[0m
+
+[33mHere are examples:[0m
+
+[1;33m<[0m[1;33mcorpus[0m[33m>[0m
+[33mFinancial Analysis Professional Certificate by Corporate Finance Institute[0m
+[33mCustomer Service Professional Certificate by Zendesk[0m
+[33mProduct Management Professional Certificate by Reforge[0m
+[33mBusiness Strategy Professional Certificate by Boston Consulting Group[0m
+[33mRecruiting Professional Certificate by American Staffing Association[0m
+[33mGraphic Design Professional Certificate by Adobe[0m
+[33mGenerative AI Professional Certificate by Microsoft[0m
+[33mData Science Professional Certificate by IBM[0m
+[33mDigital Marketing Professional Certificate by Google[0m
+[33mProject Management Professional Certificate by Project Management Institute [0m[1;33m([0m[33mPMI[0m[1;33m)[0m
+[33mCybersecurity Professional Certificate by Cisco[0m
+[33mHuman Resources Professional Certificate by Society for Human Resource Management [0m[1;33m([0m[33mSHRM[0m[1;33m)[0m
+[33mSupply Chain Management Professional Certificate by Association for Supply Chain Management [0m[1;33m([0m[33mASCM[0m[1;33m)[0m
+[33mUser Experience [0m[1;33m([0m[33mUX[0m[1;33m)[0m[33m Design Professional Certificate by Nielsen Norman Group[0m
+[33mCloud Computing Professional Certificate by Amazon Web Services [0m[1;33m([0m[33mAWS[0m[1;33m)[0m
+[33mSustainability Management Professional Certificate by World Business Council for Sustainable Development [0m[1;33m([0m[33mWBCSD[0m[1;33m)[0m
+[33mBlockchain Technology Professional Certificate by IBM[0m
+[33mContent Marketing Professional Certificate by HubSpot[0m
+[33mAgile Leadership Professional Certificate by Scrum Alliance[0m
+[33mInvestment Banking Professional Certificate by J.P. Morgan[0m
+[33mMachine Learning Professional Certificate by Stanford University[0m
+[33m<[0m[33m/[0m[33mcorpus[0m[33m>[0m
+
+[33mPlease come up with a top [0m[1;33m10[0m[33m list of topics that this partner would be ideal for:[0m
+[33m<partner>[0m
+[33mNVIDIA[0m
+[33m<[0m[33m/[0m[33mpartner[0m[1;33m>[0m
+
+[33mYour answer should take the form of the following:[0m
+[33m- a list of topics that would be an ideal fit for the given partner[0m
+[33m- you should provide [0m[1;33m10[0m[33m topics, in decreasing order of how well the topic fits the partner's brand[0m
+[33m- do not include [0m[33m"Professional Certificate"[0m[33m in your answer, just say the topic, like [0m[33m"Marketing"[0m[33m or [0m[33m"Data Science"[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mtopics[0m[34m=[0m[1;34m[[0m[34m"'Artificial Intelligence'"[0m[34m, [0m[34m"'Deep Learning'"[0m[34m, [0m[34m"'GPU Acceleration'"[0m[34m, [0m[34m"'Machine Learning'"[0m[34m, [0m[34m"'Data Science'"[0m[34m, [0m[34m"'Computer [0m
+[34mVision'"[0m[34m, [0m[34m"'NVIDIA DLBS'"[0m[34m, [0m[34m"'Cloud Computing'"[0m[34m, [0m[34m"'High-Performance Computing'"[0m[34m, [0m[34m"'Data Analytics'"[0m[1;34m][0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are a market researcher with both a deep understanding of various diverse audiences, industries, and fields of study.[0m
+[33mYou are also very adept at quickly doing deep research into new areas to identify the most important themes, organizations, thought [0m
+[33mleaders, etc.[0m
+
+[33mYour job is to identify ideal topics for a partner to endorse.[0m
+[33mThe topics should be foundational and useful for a wide audience.[0m
+
+[33mHere are examples:[0m
+
+[1;33m<[0m[1;33mcorpus[0m[33m>[0m
+[33mFinancial Analysis Professional Certificate by Corporate Finance Institute[0m
+[33mCustomer Service Professional Certificate by Zendesk[0m
+[33mProduct Management Professional Certificate by Reforge[0m
+[33mBusiness Strategy Professional Certificate by Boston Consulting Group[0m
+[33mRecruiting Professional Certificate by American Staffing Association[0m
+[33mGraphic Design Professional Certificate by Adobe[0m
+[33mGenerative AI Professional Certificate by Microsoft[0m
+[33mData Science Professional Certificate by IBM[0m
+[33mDigital Marketing Professional Certificate by Google[0m
+[33mProject Management Professional Certificate by Project Management Institute [0m[1;33m([0m[33mPMI[0m[1;33m)[0m
+[33mCybersecurity Professional Certificate by Cisco[0m
+[33mHuman Resources Professional Certificate by Society for Human Resource Management [0m[1;33m([0m[33mSHRM[0m[1;33m)[0m
+[33mSupply Chain Management Professional Certificate by Association for Supply Chain Management [0m[1;33m([0m[33mASCM[0m[1;33m)[0m
+[33mUser Experience [0m[1;33m([0m[33mUX[0m[1;33m)[0m[33m Design Professional Certificate by Nielsen Norman Group[0m
+[33mCloud Computing Professional Certificate by Amazon Web Services [0m[1;33m([0m[33mAWS[0m[1;33m)[0m
+[33mSustainability Management Professional Certificate by World Business Council for Sustainable Development [0m[1;33m([0m[33mWBCSD[0m[1;33m)[0m
+[33mBlockchain Technology Professional Certificate by IBM[0m
+[33mContent Marketing Professional Certificate by HubSpot[0m
+[33mAgile Leadership Professional Certificate by Scrum Alliance[0m
+[33mInvestment Banking Professional Certificate by J.P. Morgan[0m
+[33mMachine Learning Professional Certificate by Stanford University[0m
+[33m<[0m[33m/[0m[33mcorpus[0m[33m>[0m
+
+[33mPlease come up with a top [0m[1;33m10[0m[33m list of topics that this partner would be ideal for:[0m
+[33m<partner>[0m
+[33mNVIDIA[0m
+[33m<[0m[33m/[0m[33mpartner[0m[1;33m>[0m
+
+[33mYour answer should take the form of the following:[0m
+[33m- a list of topics that would be an ideal fit for the given partner[0m
+[33m- you should provide [0m[1;33m10[0m[33m topics, in decreasing order of how well the topic fits the partner's brand[0m
+[33m- do not include [0m[33m"Professional Certificate"[0m[33m in your answer, just say the topic, like [0m[33m"Marketing"[0m[33m or [0m[33m"Data Science"[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mtopics[0m[34m=[0m[1;34m[[0m[34m"'Artificial Intelligence'"[0m[34m, [0m[34m"'Deep Learning'"[0m[34m, [0m[34m"'GPU Acceleration'"[0m[34m, [0m[34m"'Machine Learning'"[0m[34m, [0m[34m"'Data Science'"[0m[34m, [0m[34m"'Computer [0m
+[34mVision'"[0m[34m, [0m[34m"'NVIDIA DLBS'"[0m[34m, [0m[34m"'Cloud Computing'"[0m[34m, [0m[34m"'High-Performance Computing'"[0m[34m, [0m[34m"'Data Analytics'"[0m[1;34m][0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are a market researcher with both a deep understanding of various diverse audiences, industries, and fields of study.[0m
+[33mYou are also very adept at quickly doing deep research into new areas to identify the most important themes, organizations, thought [0m
+[33mleaders, etc.[0m
+
+[33mYour job is to identify ideal topics for a partner to endorse.[0m
+[33mThe topics should be foundational and useful for a wide audience.[0m
+
+[33mHere are examples:[0m
+
+[1;33m<[0m[1;33mcorpus[0m[33m>[0m
+[33mFinancial Analysis Professional Certificate by Corporate Finance Institute[0m
+[33mCustomer Service Professional Certificate by Zendesk[0m
+[33mProduct Management Professional Certificate by Reforge[0m
+[33mBusiness Strategy Professional Certificate by Boston Consulting Group[0m
+[33mRecruiting Professional Certificate by American Staffing Association[0m
+[33mGraphic Design Professional Certificate by Adobe[0m
+[33mGenerative AI Professional Certificate by Microsoft[0m
+[33mData Science Professional Certificate by IBM[0m
+[33mDigital Marketing Professional Certificate by Google[0m
+[33mProject Management Professional Certificate by Project Management Institute [0m[1;33m([0m[33mPMI[0m[1;33m)[0m
+[33mCybersecurity Professional Certificate by Cisco[0m
+[33mHuman Resources Professional Certificate by Society for Human Resource Management [0m[1;33m([0m[33mSHRM[0m[1;33m)[0m
+[33mSupply Chain Management Professional Certificate by Association for Supply Chain Management [0m[1;33m([0m[33mASCM[0m[1;33m)[0m
+[33mUser Experience [0m[1;33m([0m[33mUX[0m[1;33m)[0m[33m Design Professional Certificate by Nielsen Norman Group[0m
+[33mCloud Computing Professional Certificate by Amazon Web Services [0m[1;33m([0m[33mAWS[0m[1;33m)[0m
+[33mSustainability Management Professional Certificate by World Business Council for Sustainable Development [0m[1;33m([0m[33mWBCSD[0m[1;33m)[0m
+[33mBlockchain Technology Professional Certificate by IBM[0m
+[33mContent Marketing Professional Certificate by HubSpot[0m
+[33mAgile Leadership Professional Certificate by Scrum Alliance[0m
+[33mInvestment Banking Professional Certificate by J.P. Morgan[0m
+[33mMachine Learning Professional Certificate by Stanford University[0m
+[33m<[0m[33m/[0m[33mcorpus[0m[33m>[0m
+
+[33mPlease come up with a top [0m[1;33m10[0m[33m list of topics that this partner would be ideal for:[0m
+[33m<partner>[0m
+[33mPython Software Foundation[0m
+[33m<[0m[33m/[0m[33mpartner[0m[1;33m>[0m
+
+[33mYour answer should take the form of the following:[0m
+[33m- a list of topics that would be an ideal fit for the given partner[0m
+[33m- you should provide [0m[1;33m10[0m[33m topics, in decreasing order of how well the topic fits the partner's brand[0m
+[33m- do not include [0m[33m"Professional Certificate"[0m[33m in your answer, just say the topic, like [0m[33m"Marketing"[0m[33m or [0m[33m"Data Science"[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mtopics[0m[34m=[0m[1;34m[[0m[34m'Python Development'[0m[34m, [0m[34m'Machine Learning'[0m[34m, [0m[34m'Data Science'[0m[34m, [0m[34m'Cloud Computing'[0m[34m, [0m[34m'Blockchain Technology'[0m[34m, [0m[34m'DevOps'[0m[34m, [0m[34m'AI and ML [0m
+[34mEngineering'[0m[34m, [0m[34m'Cybersecurity'[0m[34m, [0m[34m'Web Development'[0m[34m, [0m[34m'Software Engineering'[0m[1;34m][0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou are a market researcher with both a deep understanding of various diverse audiences, industries, and fields of study.[0m
+[33mYou are also very adept at quickly doing deep research into new areas to identify the most important themes, organizations, thought [0m
+[33mleaders, etc.[0m
+
+[33mYour job is to identify ideal topics for a partner to endorse.[0m
+[33mThe topics should be foundational and useful for a wide audience.[0m
+
+[33mHere are examples:[0m
+
+[1;33m<[0m[1;33mcorpus[0m[33m>[0m
+[33mFinancial Analysis Professional Certificate by Corporate Finance Institute[0m
+[33mCustomer Service Professional Certificate by Zendesk[0m
+[33mProduct Management Professional Certificate by Reforge[0m
+[33mBusiness Strategy Professional Certificate by Boston Consulting Group[0m
+[33mRecruiting Professional Certificate by American Staffing Association[0m
+[33mGraphic Design Professional Certificate by Adobe[0m
+[33mGenerative AI Professional Certificate by Microsoft[0m
+[33mData Science Professional Certificate by IBM[0m
+[33mDigital Marketing Professional Certificate by Google[0m
+[33mProject Management Professional Certificate by Project Management Institute [0m[1;33m([0m[33mPMI[0m[1;33m)[0m
+[33mCybersecurity Professional Certificate by Cisco[0m
+[33mHuman Resources Professional Certificate by Society for Human Resource Management [0m[1;33m([0m[33mSHRM[0m[1;33m)[0m
+[33mSupply Chain Management Professional Certificate by Association for Supply Chain Management [0m[1;33m([0m[33mASCM[0m[1;33m)[0m
+[33mUser Experience [0m[1;33m([0m[33mUX[0m[1;33m)[0m[33m Design Professional Certificate by Nielsen Norman Group[0m
+[33mCloud Computing Professional Certificate by Amazon Web Services [0m[1;33m([0m[33mAWS[0m[1;33m)[0m
+[33mSustainability Management Professional Certificate by World Business Council for Sustainable Development [0m[1;33m([0m[33mWBCSD[0m[1;33m)[0m
+[33mBlockchain Technology Professional Certificate by IBM[0m
+[33mContent Marketing Professional Certificate by HubSpot[0m
+[33mAgile Leadership Professional Certificate by Scrum Alliance[0m
+[33mInvestment Banking Professional Certificate by J.P. Morgan[0m
+[33mMachine Learning Professional Certificate by Stanford University[0m
+[33m<[0m[33m/[0m[33mcorpus[0m[33m>[0m
+
+[33mPlease come up with a top [0m[1;33m10[0m[33m list of topics that this partner would be ideal for:[0m
+[33m<partner>[0m
+[33mNVIDIA[0m
+[33m<[0m[33m/[0m[33mpartner[0m[1;33m>[0m
+
+[33mYour answer should take the form of the following:[0m
+[33m- a list of topics that would be an ideal fit for the given partner[0m
+[33m- you should provide [0m[1;33m10[0m[33m topics, in decreasing order of how well the topic fits the partner's brand[0m
+[33m- do not include [0m[33m"Professional Certificate"[0m[33m in your answer, just say the topic, like [0m[33m"Marketing"[0m[33m or [0m[33m"Data Science"[0m
+
+[1;32m────────────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mtopics[0m[34m=[0m[1;34m[[0m[34m'GPU Computing and Parallel Processing'[0m[34m, [0m[34m'Artificial Intelligence and Deep Learning'[0m[34m, [0m[34m'Computer Graphics and Visualization'[0m[34m, [0m
+[34m'High-Performance Computing'[0m[34m, [0m[34m'Generative AI and Diffusion Models'[0m[34m, [0m[34m'Autonomous Systems and Robotics'[0m[34m, [0m[34m'Computer Vision'[0m[34m, [0m[34m'Game [0m
+[34mDevelopment and Real-Time Rendering'[0m[34m, [0m[34m'Data Center Architecture and Acceleration'[0m[34m, [0m[34m'Quantum Computing'[0m[1;34m][0m
+

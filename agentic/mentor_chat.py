@@ -1100,6 +1100,29 @@ class MentorChat(Chat):
         markdown = Markdown(title)
         self.console.print(markdown)
 
+    def command_consult_partner(self):
+        """
+        Suggest 10 possible partners for the given topic.
+        """
+        from Kramer import suggest_partner
+
+        partner_suggestions = suggest_partner(self.curation, number=10)
+        partners = partner_suggestions.partners
+        for index, partner in enumerate(partners):
+            self.console.print(f"[green]{index+1}[/green]. [yellow]{partner}[/yellow]")
+
+    def command_consult_topics(self, param):
+        """
+        Get topics for a suggested partner (param).
+        """
+        from Kramer import suggest_topics
+
+        partner = param
+        topic_suggestions = suggest_topics(partner, number=10)
+        topics = topic_suggestions.content.topics
+        for index, topic in enumerate(topics):
+            self.console.print(f"[green]{index+1}[/green]. [yellow]{topic}[/yellow]")
+
     def command_consult_tools(self, param):
         """
         Go through a course (or curation) to identify orgs and tools mentioned.
