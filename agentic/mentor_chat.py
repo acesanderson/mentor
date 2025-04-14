@@ -40,14 +40,16 @@ with console.status("[green]Loading...", spinner="dots"):
     from rich.markdown import Markdown
     from datetime import timedelta
     import json
-    from typing import TypeVar, Generic
+    from typing import TypeVar, Generic, Callable
     from enum import Enum
     from pathlib import Path
     import re
+    from functools import partial
 
 # Configs
 dir_path = Path(__file__).parent
 curation_save_file = dir_path / ".curation.json"
+aliases_file = dir_path / "aliases.json"
 log_file = dir_path / ".chat_log.txt"
 Chain._message_store = MessageStore(log_file=log_file)
 _ = readline.get_current_history_length()
@@ -97,8 +99,27 @@ class MentorChat(Chat):
         self.last_cert = None
         # Last sequence you received from consult_sequence
         self.last_sequence = None
+        # Load the aliases file
+        if aliases_file.exists():
+            with open(aliases_file, "r") as f:
+                self.aliases = json.load(f)
+        else:
+            print("[red]No aliases file found.[/red]")
+            self.aliases = {}
 
-    # Functions
+    # Override functions
+    def parse_input(self, input: str) -> Callable | partial | None:
+        """
+        Intercept input parsing to insert aliases.
+        """
+        _parse_input = super().parse_input
+        if self.aliases:
+            for alias, command in self.aliases.items():
+                input = input.replace(alias, command)
+        else:
+            print("[red]No aliases file found.[/red]")
+        return _parse_input(input)
+
     def query_model(self, input: list[Message]) -> str | None:
         """
         Middleware that intercepts the query to parse user templates.
@@ -108,6 +129,8 @@ class MentorChat(Chat):
         {{course.transcript}} = a course (retrieved with parse_course_request)
         {{course.description}} = description of a course (retrieved with parse_course_request)
         {{course.toc}} = toc of a course (retrieved with parse_course_request)
+
+        This also intercepts any alias defined in aliases.json.
         """
         # Load the original function
         _query_model = super().query_model

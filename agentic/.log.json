@@ -11131,3 +11131,1504 @@
 [34mdiscussions, understand company performance metrics, evaluate investment opportunities, and make data-driven business decisions that [0m
 [34mimpact their departments or organizations.[0m
 
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mA colleague has asked you to create a learning path on the following topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mZapier for Business Productivity[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mPlease design a learning path. Put your answer between XML tags.[0m
+
+[33m<curriculum_description>[0m
+[1;33m[[0m[33mYour description of the learning path curriculum here[0m[1;33m][0m
+[33m<[0m[33m/[0m[33mcurriculum_description[0m[1;33m>[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mA colleague has asked you to create a learning path on the following topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mZapier[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mPlease design a learning path. Put your answer between XML tags.[0m
+
+[33m<curriculum_description>[0m
+[1;33m[[0m[33mYour description of the learning path curriculum here[0m[1;33m][0m
+[33m<[0m[33m/[0m[33mcurriculum_description[0m[1;33m>[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mA colleague has asked you to create a learning path on the following topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mzapier[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mPlease design a learning path. Put your answer between XML tags.[0m
+
+[33m<curriculum_description>[0m
+[1;33m[[0m[33mYour description of the learning path curriculum here[0m[1;33m][0m
+[33m<[0m[33m/[0m[33mcurriculum_description[0m[1;33m>[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum_description[0m[34m>[0m
+[34m  <course [0m[34mnumber[0m[34m=[0m[34m"1"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Introduction[0m[34m to Zapier and Workflow Automation"[0m[34m>[0m
+[34m    <description>[0m
+[34m      This course introduces Zapier and the core concepts of workflow automation. Learners will [0m
+[34mexplore basic automation principles, understand the role Zapier plays in connecting various [0m
+[34msoftware applications, and witness real-world use cases in both corporate and individual [0m
+[34msettings. This foundational understanding sets the stage for more complex automations in [0m
+[34msubsequent modules.[0m
+[34m    <[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m  <course [0m[34mnumber[0m[34m=[0m[34m"2"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Building[0m[34m Basic Zaps: Automation Fundamentals"[0m[34m>[0m
+[34m    <description>[0m
+[34m      In this module, participants dive into the practical aspects of creating simple Zaps. The [0m
+[34mcourse covers setting up triggers and actions, configuring task settings, and troubleshooting [0m
+[34mcommon issues. By mastering the creation of basic automated workflows, learners will gain [0m
+[34mconfidence in leveraging Zapier to streamline everyday processes.[0m
+[34m    <[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m  <course [0m[34mnumber[0m[34m=[0m[34m"3"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Integrating[0m[34m Applications with Zapier"[0m[34m>[0m
+[34m    <description>[0m
+[34m      This course expands on the fundamentals by focusing on integration. It explains how to [0m
+[34mconnect multiple applications via Zapier, manage authentication and permissions, and use existing[0m
+[34mtemplates effectively. Learners are guided through integrating commonly used business [0m
+[34mapplications, enhancing efficiency and reducing manual work.[0m
+[34m    <[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m  <course [0m[34mnumber[0m[34m=[0m[34m"4"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Advanced[0m[34m Zapier Techniques: Multi-Step Workflows and Conditional [0m
+[34mLogic"[0m[34m>[0m
+[34m    <description>[0m
+[34m      Here, the curriculum tackles more complex automation scenarios. Participants learn to build[0m
+[34mmulti-step Zaps, incorporate conditional logic through paths and filters, and optimize workflows [0m
+[34mfor scalability. This module is designed to empower learners to design sophisticated automations [0m
+[34mthat can adapt to varied business requirements.[0m
+[34m    <[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m  <course [0m[34mnumber[0m[34m=[0m[34m"5"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Customization[0m[34m with Webhooks and Code by Zapier"[0m[34m>[0m
+[34m    <description>[0m
+[34m      Focusing on advanced customization, this course introduces the use of Webhooks and custom [0m
+[34mcode within Zapier automations. Learners will understand how to extend Zapier’s functionality, [0m
+[34mintegrate with less common or proprietary systems, and tailor automations to meet unique process [0m
+[34mrequirements. This knowledge is essential for overcoming integration challenges that standard [0m
+[34mtemplates may not address.[0m
+[34m    <[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m  <course [0m[34mnumber[0m[34m=[0m[34m"6"[0m[34m [0m[34mtitle[0m[34m=[0m[34m"Best[0m[34m Practices for Automation Maintenance and Optimization"[0m[34m>[0m
+[34m    <description>[0m
+[34m      The final module consolidates learning by focusing on the practical aspects of maintaining [0m
+[34mand optimizing Zapier workflows. Topics include monitoring performance, managing errors, [0m
+[34mdocumenting workflows, and implementing continuous improvement strategies. This course ensures [0m
+[34mthat learners are equipped to not only build but also sustain and expand their automation [0m
+[34minfrastructure over time.[0m
+[34m    <[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m  <[0m[34m/[0m[34mcourse[0m[34m>[0m
+[34m<[0m[34m/[0m[34mcurriculum_description[0m[1;34m>[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mA colleague has asked you to create a learning path on the following topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mZapier[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mPlease design a learning path. Put your answer between XML tags.[0m
+
+[33m<curriculum_description>[0m
+[1;33m[[0m[33mYour description of the learning path curriculum here[0m[1;33m][0m
+[33m<[0m[33m/[0m[33mcurriculum_description[0m[1;33m>[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum_description[0m[34m>[0m
+[34mThis learning path, [0m[34m"Mastering Zapier: From Fundamentals to Advanced Automation,"[0m[34m is designed to [0m
+[34mequip learners with a comprehensive understanding of Zapier and its role in automating workflows.[0m
+[34mSpanning seven courses at two hours each, the curriculum starts with foundational concepts and [0m
+[34mgradually builds up to advanced techniques, ensuring that learners not only grasp how to create [0m
+[34msimple automations but also master enterprise-level integrations and troubleshooting strategies. [0m
+[34mThe practical focus of these video courses, accompanied by chapter quizzes to reinforce learning,[0m
+[34mtargets both individuals aiming to streamline their daily tasks and businesses looking to enhance[0m
+[34mproductivity across departments.[0m
+
+[1;34m1[0m[34m. Introduction to Zapier and Workflow Automation[0m
+[34m   - Course Description: This course provides an overview of Zapier’s role in automation and the [0m
+[34mcore concepts behind triggers, actions, and Zaps. It explains what automation is, why businesses [0m
+[34mimplement it, and how Zapier fits into the broader automation landscape.[0m
+[34m   - Relevance: Laying the foundation is essential for understanding subsequent, more complex [0m
+[34mtopics. Learners begin by grasping the value of process automation and the potential impact on [0m
+[34mproductivity.[0m
+
+[1;34m2[0m[34m. Navigating the Zapier Platform and Setting Up Your Account[0m
+[34m   - Course Description: Learners will be guided through the process of creating and configuring [0m
+[34ma Zapier account, exploring the intuitive dashboard, and understanding the basic navigation and [0m
+[34msettings. The session includes an introduction to app directories and integration options.[0m
+[34m   - Relevance: Familiarity with the platform’s interface and setup is key for efficient workflow[0m
+[34mbuilding. This practical session ensures users feel comfortable and confident navigating the [0m
+[34mtools available.[0m
+
+[1;34m3[0m[34m. Building Your First Zaps: Basic Workflow Automation[0m
+[34m   - Course Description: This course introduces the step-by-step process of creating a simple [0m
+[34mZap, connecting a trigger to an action, and testing functionality. Participants will learn how to[0m
+[34mselect apps, set up triggers, and make initial configurations for basic automations.[0m
+[34m   - Relevance: A hands-on approach to build the first automation builds confidence while [0m
+[34mdemonstrating the immediate benefits of Zapier’s power, reinforcing the practical applications [0m
+[34mdiscussed in the introductory course.[0m
+
+[1;34m4[0m[34m. Creating Multi-Step Zaps and Managing Conditional Logic[0m
+[34m   - Course Description: Advancing from basic automations, this course covers multi-step Zaps, [0m
+[34mincorporating filters, delays, and conditional queries to create more sophisticated workflows. [0m
+[34mThe course also touches on using built-in tools such as formatting and scheduling.[0m
+[34m   - Relevance: Mastery of multi-step workflows is crucial for handling complex business [0m
+[34mprocesses. This course enables learners to design Zaps that reflect real-world, multi-faceted [0m
+[34moperations while addressing common process requirements.[0m
+
+[1;34m5[0m[34m. Integrating Zapier with Popular Business Applications[0m
+[34m   - Course Description: Focused on real-world applications, this course explores integrating [0m
+[34mZapier with ubiquitous business tools like Gmail, Google Workspace, Slack, CRMs, and more. It [0m
+[34mdemonstrates scenarios, such as automating email responses, managing calendar events, and syncing[0m
+[34mdata between platforms.[0m
+[34m   - Relevance: By understanding integration with everyday business applications, learners can [0m
+[34mimmediately see how automation can enhance productivity and improve operational efficiency in a [0m
+[34mbusiness environment.[0m
+
+[1;34m6[0m[34m. Optimizing Zaps: Troubleshooting, Best Practices, and Error Handling [0m
+[34m   - Course Description: This course delves into strategies for refining and optimizing existing [0m
+[34mZaps. It covers error handling, monitoring performance, making adjustments based on system [0m
+[34mfeedback, and establishing best practices for long-term automation management.[0m
+[34m   - Relevance: Maintaining and optimizing automated processes is essential for sustainable [0m
+[34msuccess. Learners acquire the skills to manage, troubleshoot, and improve their automations, [0m
+[34mensuring these tools continue to add value over time.[0m
+
+[1;34m7[0m[34m. Scaling Automation in the Enterprise Environment with Zapier [0m
+[34m   - Course Description: Targeting larger organizations, this final course focuses on leveraging [0m
+[34mZapier for enterprise-level automation. Topics include collaborative workflow design, account [0m
+[34mmanagement at scale, role-based access control, and integrating Zapier into complex IT [0m
+[34mecosystems.[0m
+[34m   - Relevance: When scaling automation, understanding both the technical and administrative [0m
+[34maspects becomes necessary. This course prepares learners to implement and manage automation [0m
+[34mstrategies that align with organizational objectives and compliance requirements.[0m
+
+[34mEach course is designed to be engaged, video-centric, and supported by chapter quizzes to test [0m
+[34mand reinforce comprehension, making it ideal for asynchronous learning in a corporate or [0m
+[34mindividual setup.[0m
+[34m<[0m[34m/[0m[34mcurriculum_description[0m[1;34m>[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou have been provided with a detailed curriculum description.[0m
+
+[33mThe description is for this topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mZapier[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mHere is the description:[0m
+[33m<ideal_curriculum>[0m
+
+[33mThis learning path, [0m[33m"Mastering Zapier: From Fundamentals to Advanced Automation,"[0m[33m is designed to [0m
+[33mequip learners with a comprehensive understanding of Zapier and its role in automating workflows.[0m
+[33mSpanning seven courses at two hours each, the curriculum starts with foundational concepts and [0m
+[33mgradually builds up to advanced techniques, ensuring that learners not only grasp how to create [0m
+[33msimple automations but also master enterprise-level integrations and troubleshooting strategies. [0m
+[33mThe practical focus of these video courses, accompanied by chapter quizzes to reinforce learning,[0m
+[33mtargets both individuals aiming to streamline their daily tasks and businesses looking to enhance[0m
+[33mproductivity across departments.[0m
+
+[1;33m1[0m[33m. Introduction to Zapier and Workflow Automation[0m
+[33m   - Course Description: This course provides an overview of Zapier’s role in automation and the [0m
+[33mcore concepts behind triggers, actions, and Zaps. It explains what automation is, why businesses [0m
+[33mimplement it, and how Zapier fits into the broader automation landscape.[0m
+[33m   - Relevance: Laying the foundation is essential for understanding subsequent, more complex [0m
+[33mtopics. Learners begin by grasping the value of process automation and the potential impact on [0m
+[33mproductivity.[0m
+
+[1;33m2[0m[33m. Navigating the Zapier Platform and Setting Up Your Account[0m
+[33m   - Course Description: Learners will be guided through the process of creating and configuring [0m
+[33ma Zapier account, exploring the intuitive dashboard, and understanding the basic navigation and [0m
+[33msettings. The session includes an introduction to app directories and integration options.[0m
+[33m   - Relevance: Familiarity with the platform’s interface and setup is key for efficient workflow[0m
+[33mbuilding. This practical session ensures users feel comfortable and confident navigating the [0m
+[33mtools available.[0m
+
+[1;33m3[0m[33m. Building Your First Zaps: Basic Workflow Automation[0m
+[33m   - Course Description: This course introduces the step-by-step process of creating a simple [0m
+[33mZap, connecting a trigger to an action, and testing functionality. Participants will learn how to[0m
+[33mselect apps, set up triggers, and make initial configurations for basic automations.[0m
+[33m   - Relevance: A hands-on approach to build the first automation builds confidence while [0m
+[33mdemonstrating the immediate benefits of Zapier’s power, reinforcing the practical applications [0m
+[33mdiscussed in the introductory course.[0m
+
+[1;33m4[0m[33m. Creating Multi-Step Zaps and Managing Conditional Logic[0m
+[33m   - Course Description: Advancing from basic automations, this course covers multi-step Zaps, [0m
+[33mincorporating filters, delays, and conditional queries to create more sophisticated workflows. [0m
+[33mThe course also touches on using built-in tools such as formatting and scheduling.[0m
+[33m   - Relevance: Mastery of multi-step workflows is crucial for handling complex business [0m
+[33mprocesses. This course enables learners to design Zaps that reflect real-world, multi-faceted [0m
+[33moperations while addressing common process requirements.[0m
+
+[1;33m5[0m[33m. Integrating Zapier with Popular Business Applications[0m
+[33m   - Course Description: Focused on real-world applications, this course explores integrating [0m
+[33mZapier with ubiquitous business tools like Gmail, Google Workspace, Slack, CRMs, and more. It [0m
+[33mdemonstrates scenarios, such as automating email responses, managing calendar events, and syncing[0m
+[33mdata between platforms.[0m
+[33m   - Relevance: By understanding integration with everyday business applications, learners can [0m
+[33mimmediately see how automation can enhance productivity and improve operational efficiency in a [0m
+[33mbusiness environment.[0m
+
+[1;33m6[0m[33m. Optimizing Zaps: Troubleshooting, Best Practices, and Error Handling [0m
+[33m   - Course Description: This course delves into strategies for refining and optimizing existing [0m
+[33mZaps. It covers error handling, monitoring performance, making adjustments based on system [0m
+[33mfeedback, and establishing best practices for long-term automation management.[0m
+[33m   - Relevance: Maintaining and optimizing automated processes is essential for sustainable [0m
+[33msuccess. Learners acquire the skills to manage, troubleshoot, and improve their automations, [0m
+[33mensuring these tools continue to add value over time.[0m
+
+[1;33m7[0m[33m. Scaling Automation in the Enterprise Environment with Zapier [0m
+[33m   - Course Description: Targeting larger organizations, this final course focuses on leveraging [0m
+[33mZapier for enterprise-level automation. Topics include collaborative workflow design, account [0m
+[33mmanagement at scale, role-based access control, and integrating Zapier into complex IT [0m
+[33mecosystems.[0m
+[33m   - Relevance: When scaling automation, understanding both the technical and administrative [0m
+[33maspects becomes necessary. This course prepares learners to implement and manage automation [0m
+[33mstrategies that align with organizational objectives and compliance requirements.[0m
+
+[33mEach course is designed to be engaged, video-centric, and supported by chapter quizzes to test [0m
+[33mand reinforce comprehension, making it ideal for asynchronous learning in a corporate or [0m
+[33mindividual setup.[0m
+
+[33m<[0m[33m/[0m[33mideal_curriculum[0m[1;33m>[0m
+
+[33mPlease convert this into a structured JSON representation of the curriculum.[0m
+[33mYour answer should include the topic, description, audience, and a list of modules.[0m
+[33mYOU SHOULD ALWAYS RETURN AT LEAST SIX MODULES, AND NO MORE THAN TWELVE.[0m
+
+[1;32m──────────────────────────────────────────── [0mMessage[1;32m ────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum[0m[34m>[0m
+[34m        [0m[34m<topic>Zapier<[0m[34m/[0m[34mtopic[0m[34m>[0m
+[34m        [0m[34m<description>Mastering Zapier: From Fundamentals to Advanced Automation is a [0m
+[34mcomprehensive learning path designed to equip learners with an in-depth understanding of Zapier's[0m
+[34mrole in automating workflows. The curriculum spans seven courses, each approximately two hours [0m
+[34mlong, and gradually builds skills from basic automation concepts to enterprise-level integrations[0m
+[34mand troubleshooting. This video-centric, asynchronous course, enriched with chapter quizzes, is [0m
+[34mideal for both individuals aiming to streamline daily tasks and businesses looking to enhance [0m
+[34mproductivity across departments.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m<audience>Individuals seeking to automate routine tasks and businesses aiming to improve [0m
+[34moperational efficiency.<[0m[34m/[0m[34maudience[0m[34m>[0m
+[34m        [0m[34m<modules>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Introduction to Zapier and Workflow Automation<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>An overview of Zapier’s role in automation, including core [0m
+[34mconcepts such as triggers, actions, and Zaps. Establishes the foundational understanding of [0m
+[34mprocess automation and its impact on productivity.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand the basics of automation and the importance[0m
+[34mof workflow automation.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Learn the key components of Zapier including triggers,[0m
+[34mactions, and Zaps.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Recognize the role of Zapier in the broader landscape [0m
+[34mof business automation.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Navigating the Zapier Platform and Setting Up Your Account<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Guided walkthrough of creating and configuring a Zapier [0m
+[34maccount. Explores the intuitive dashboard, basic navigation, settings, and the app [0m
+[34mdirectory.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Create and configure a Zapier account.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Navigate the Zapier dashboard and understand basic [0m
+[34msettings.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Explore integration options and the app directory for [0m
+[34menhanced functionality.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Building Your First Zaps: Basic Workflow Automation<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Step-by-step process for creating a simple Zap, including [0m
+[34mconnecting a trigger to an action and testing its functionality.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Develop the ability to create a basic Zap.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Connect triggers with actions in a streamlined [0m
+[34mworkflow.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Test and troubleshoot initial automation [0m
+[34msetups.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Creating Multi-Step Zaps and Managing Conditional Logic<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Advanced course covering multi-step Zaps, filters, delays, [0m
+[34mand conditional queries. Introduces built-in tools like formatting and scheduling to handle [0m
+[34msophisticated workflows.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Design multi-step workflows using Zapier.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Implement filters, delays, and conditional logic in [0m
+[34mautomations.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Utilize built-in tools for formatting and scheduling [0m
+[34mactions.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Integrating Zapier with Popular Business Applications<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Explores integration of Zapier with essential business tools[0m
+[34msuch as Gmail, Google Workspace, Slack, and CRMs. Demonstrates practical scenarios like [0m
+[34mautomating email responses and syncing data across platforms.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand how to integrate Zapier with common [0m
+[34mbusiness applications.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Implement automations to manage emails, calendars, and[0m
+[34mdata syncing.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Recognize real-world scenarios where integration [0m
+[34menhances productivity.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Optimizing Zaps: Troubleshooting, Best Practices, and Error [0m
+[34mHandling<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Focuses on strategies for refining and optimizing existing [0m
+[34mZaps through error handling, performance monitoring, and adjustments based on system feedback. [0m
+[34mEmphasizes best practices for long-term automation management.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Learn strategies for error handling and [0m
+[34mtroubleshooting in Zapier.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Monitor and optimize the performance of automated [0m
+[34mworkflows.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Apply best practices to maintain and refine automation[0m
+[34mprocesses.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Scaling Automation in the Enterprise Environment with [0m
+[34mZapier<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Covers the use of Zapier for enterprise-level automation [0m
+[34mincluding collaborative workflow design, role-based access control, and integration into complex [0m
+[34mIT ecosystems.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand the challenges and strategies for scaling [0m
+[34mautomation in larger organizations.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Manage collaborative workflow design and role-based [0m
+[34maccess control.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Integrate Zapier effectively into complex enterprise [0m
+[34mIT systems.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m<[0m[34m/[0m[34mmodules[0m[34m>[0m
+[34m<[0m[34m/[0m[34mcurriculum[0m[1;34m>[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou have a received a curriculum object on the topic of:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mScaling Automation in the Enterprise Environment with Zapier[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mHere is the curriculum object:[0m
+[33m<curriculum>[0m
+[33m<curriculum>[0m
+[33m        [0m[33m<topic>Zapier<[0m[33m/[0m[33mtopic[0m[33m>[0m
+[33m        [0m[33m<description>Mastering Zapier: From Fundamentals to Advanced Automation is a comprehensive learning path [0m
+[33mdesigned to equip learners with an in-depth understanding of Zapier's role in automating workflows. The curriculum [0m
+[33mspans seven courses, each approximately two hours long, and gradually builds skills from basic automation concepts to [0m
+[33menterprise-level integrations and troubleshooting. This video-centric, asynchronous course, enriched with chapter [0m
+[33mquizzes, is ideal for both individuals aiming to streamline daily tasks and businesses looking to enhance productivity [0m
+[33macross departments.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m<audience>Individuals seeking to automate routine tasks and businesses aiming to improve operational [0m
+[33mefficiency.<[0m[33m/[0m[33maudience[0m[33m>[0m
+[33m        [0m[33m<modules>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Introduction to Zapier and Workflow Automation<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>An overview of Zapier’s role in automation, including core concepts such as [0m
+[33mtriggers, actions, and Zaps. Establishes the foundational understanding of process automation and its impact on [0m
+[33mproductivity.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand the basics of automation and the importance of workflow [0m
+[33mautomation.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Learn the key components of Zapier including triggers, actions, and [0m
+[33mZaps.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Recognize the role of Zapier in the broader landscape of business [0m
+[33mautomation.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Navigating the Zapier Platform and Setting Up Your Account<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Guided walkthrough of creating and configuring a Zapier account. Explores the [0m
+[33mintuitive dashboard, basic navigation, settings, and the app directory.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Create and configure a Zapier account.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Navigate the Zapier dashboard and understand basic settings.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Explore integration options and the app directory for enhanced [0m
+[33mfunctionality.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Building Your First Zaps: Basic Workflow Automation<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Step-by-step process for creating a simple Zap, including connecting a trigger to [0m
+[33man action and testing its functionality.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Develop the ability to create a basic Zap.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Connect triggers with actions in a streamlined workflow.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Test and troubleshoot initial automation setups.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Creating Multi-Step Zaps and Managing Conditional Logic<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Advanced course covering multi-step Zaps, filters, delays, and conditional [0m
+[33mqueries. Introduces built-in tools like formatting and scheduling to handle sophisticated workflows.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Design multi-step workflows using Zapier.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Implement filters, delays, and conditional logic in automations.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Utilize built-in tools for formatting and scheduling actions.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Integrating Zapier with Popular Business Applications<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Explores integration of Zapier with essential business tools such as Gmail, Google[0m
+[33mWorkspace, Slack, and CRMs. Demonstrates practical scenarios like automating email responses and syncing data across [0m
+[33mplatforms.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand how to integrate Zapier with common business [0m
+[33mapplications.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Implement automations to manage emails, calendars, and data [0m
+[33msyncing.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Recognize real-world scenarios where integration enhances [0m
+[33mproductivity.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Optimizing Zaps: Troubleshooting, Best Practices, and Error Handling<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Focuses on strategies for refining and optimizing existing Zaps through error [0m
+[33mhandling, performance monitoring, and adjustments based on system feedback. Emphasizes best practices for long-term [0m
+[33mautomation management.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Learn strategies for error handling and troubleshooting in [0m
+[33mZapier.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Monitor and optimize the performance of automated workflows.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Apply best practices to maintain and refine automation [0m
+[33mprocesses.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Scaling Automation in the Enterprise Environment with Zapier<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Covers the use of Zapier for enterprise-level automation including collaborative [0m
+[33mworkflow design, role-based access control, and integration into complex IT ecosystems.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand the challenges and strategies for scaling automation in larger [0m
+[33morganizations.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Manage collaborative workflow design and role-based access [0m
+[33mcontrol.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Integrate Zapier effectively into complex enterprise IT systems.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m<[0m[33m/[0m[33mmodules[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcurriculum[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcurriculum[0m[33m>[0m
+
+[33mAnd here are the courses that you have to choose from:[0m
+[33m<courses>[0m
+[33m<course_title>Automate and Innovate with Chat GPT AI Agents and Zapier<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Explore the future of work productivity: leveraging AI agents in tandem with Zapier. In this [0m
+[33mcourse, instructor Jules White shows you how to use ChatGPT, AI agents, and Zapier to build automation tools that can [0m
+[33mhandle complex tasks, boost your efficiency, and help you get more done faster with less stress. Along the way, gather [0m
+[33minsights on how to harness these tools to streamline your workflow and focus on what matters most. Upon completing this[0m
+[33mcourse, youâ€™ll be prepared to automate and innovate, transforming the way you work to achieve your [0m
+[33mgoals.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Programming No-Code Integrations with Zapier<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If you ever find yourself doing the same kinds of tasks over and over, youâ€™ve probably wished [0m
+[33mthat you could send out notifications via Slack or text message automatically when these tasks are done, instead of [0m
+[33malways relying on email. If that sounds familiar, then Zapier may be just the thing you need. Zapier allows you to [0m
+[33mconnect different web technologies, without knowing a single line of code.&lt;br&gt;&lt;br&gt;Join instructor and web [0m
+[33mdesign expert Jen Kramer as she shows you how to integrate and automate your workflowâ€”so you can save time you [0m
+[33mdidnâ€™t even know you were losing. Get started with a basic understanding of Zapier before you explore templates and [0m
+[33mset out making connections of your own. By the end of this course, youâ€™ll have the skills you need to integrate Gmail[0m
+[33mwith Google Drive, Twitter with Google Sheets, Webflow with Airtable, and more, planning your own automations with [0m
+[33mconfidence for better time management today.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Enhance Custom GPTs with Zapier Actions<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Zapier is an online platform that seamlessly integrates and automates workflows across thousands of[0m
+[33mpopular applications. By incorporating Zapier actions into your custom GPTs, you can significantly enhance their [0m
+[33mcapabilities, and boost your efficiency.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introducing Blue Prism<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>With robotic process automation [0m[1;33m([0m[33mRPA[0m[1;33m)[0m[33m, businesses can use software-based robotics to automate a [0m
+[33mspectrum of processes, from routine administrative tasks to more complex, decision-based core and high-value [0m
+[33mtransactions. This, in turn, saves companies countless hours, enabling them to grant their employees more time to [0m
+[33mchallenge themselves with more complex assignments. In this course, learn how to leverage the power of automation in [0m
+[33myour organization with Blue Prism, an industry-leading RPA tool. Marchela Bozhilova acquaints you with the toolâ€™s key[0m
+[33mcomponents, explaining why theyâ€™re essential to the construction of an automated process. She also discusses how to [0m
+[33mbuild process layers using interactions with web apps, Excel, and email; apply exception handling; and create and [0m
+[33mmonitor a queue.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Industrial Automation<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Industrial automation is the use of computers and robots to control industrial processes, [0m
+[33mlike manufacturing, without significant human intervention. Used correctly, automation can increase the quality, [0m
+[33msafety, and accuracy of these processes. It's the job of the &lt;em&gt;people&lt;[0m[33m/[0m[33mem[0m[33m&gt; in industrial automation to [0m
+[33mdesign the systems, configure the controllers, and monitor the processes. This course provides an overview of the [0m
+[33mtopic, designed to help anyone hoping to enter the field in a role such as electrical or mechanical engineer, [0m
+[33mautomation technician, or design manager.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Learn about the components and networks involved at each [0m
+[33mlevel of automation: field level, control level, and management level. Explore the different devices involved, from the[0m
+[33mprogrammable logic controllers [0m[1;33m([0m[33mPLCs[0m[1;33m)[0m[33m on the factory floor, to OPC software that give technicians insights into [0m
+[33moperations. Instructor Zara Khalil, an engineer and educator, also provides an overview of SCADA [0m[1;33m([0m[33msupervisory control [0m
+[33mand data acquisition[0m[1;33m)[0m[33m, an industrial control system architecture that enables supervision over large distances and [0m
+[33mmultiple sites.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Adobe: Customer Journey Analytics<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>This course delivers a detailed review of the Adobe Customer Journey Analytics platform. Eric [0m
+[33mMatisoff explains the unique aspects of Customer Journey Analytics compared to Adobe Analytics, as well as how to apply[0m
+[33mfeatures for your omnichannel and digital analytics needs. Plus, Eric guides you on how to analyze data using a guided [0m
+[33manalysis. Finally, learn several administrative capabilities that are key differentiators of Customer Journey [0m
+[33mAnalytics.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Microsoft Dynamics [0m[1;33m365[0m[33m Sales Essential Training<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Microsoft Dynamics [0m[1;33m365[0m[33m empowers users to manage leads, contacts, and data to create streamlined [0m
+[33mworkflows for sales, customer service, and client management. In this course, instructor Dian Taylor explores how to [0m
+[33muse the Microsoft Dynamics CRM platform to manage contact information, leads, and actions. Dian goes over the Dynamics [0m
+[1;33m365[0m[33m interface, then dives into specific functions through the lens of both sales and customer service tracking. She [0m
+[33mcovers basics like accessing and sorting records and views, creating a new record, building queries, and more. Dian [0m
+[33mshows you techniques and tools to boost your sales efficiency with Dynamics [0m[1;33m365[0m[33m, then explains how Dynamics [0m[1;33m365[0m[33m can [0m
+[33mhelp you generate, track, and manage opportunities. She shows you how to work with quotes and work in the field, [0m
+[33mincluding detailed how-tos on using the Mobile Application app. Plus, Dian demonstrates how to use charts and [0m
+[33mdashboards, access Excel templates, and review forecasts.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Microsoft Power Apps<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Power Apps continue to grow in popularity. In this course, Gini von Courter explores how to [0m
+[33mleverage Power Apps to create template-based mobile applications that integrate data from Excel, SharePoint, Access, [0m
+[33mand other Microsoft products. Gini shows you what tools are included in Microsoft Power Apps and how you can get [0m
+[33mstarted using them. She goes over data sources and how to upload data sources to OneDrive. Gini explains how to check [0m
+[33myour environment and, if necessary, change environments before creating an app. She walks you through creating, [0m
+[33mpreviewing, and saving your app, then goes into the details of choosing layouts for galleries and forms, adding and [0m
+[33mediting labels, publishing your app, and more. After stepping through how to share your app, open and use it, and add [0m
+[33mit to Microsoft Teams, Gini shows you how to manage your apps and recommends some related courses to help you keep [0m
+[33mlearning.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Microsoft Power Apps Essential Training: The Basics<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Microsoft Power Apps helps you create custom business applications for mobile devices and web [0m
+[33mbrowsers. You can replace manual forms and processes with digital experiences that can be accessed from [0m
+[33manywhereâ€”without writing a single line of code. In this course, Gini von Courter provides the foundational knowledge [0m
+[33myou need to use Power Apps to create web-based and mobile applications. Explore the structure of a Power App and learn [0m
+[33mto create apps from built-in templates, from scratch, or using Microsoft Copilot. Find out how to connect to a variety [0m
+[33mof data sources, including SharePoint and Excel, and how to customize layouts and themes. Along the way, Gini shows you[0m
+[33mhow to use and share an app on the go, build a model-driven app with Dataverse, and create websites for external users [0m
+[33mwith Power Apps portals.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Advanced Laravel<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>As an open-source web application framework, Laravel offers you expressive, elegant syntax and an [0m
+[33menjoyable creative experience. But how can you make the most of its features? In this course, full-stack web developer [0m
+[33mand tech educator Shruti Balasa guides you through advanced concepts in Laravel. Go over how to establish project [0m
+[33mrequirements and set up your project. Learn how to create user roles, write your own middleware, use gates, and more. [0m
+[33mDive into advanced eloquent features, including many-to-many relationships, eager loading, attaching and detaching [0m
+[33mrelationships, and writing complex queries and query scopes. Find out how to do more with custom commands, events, [0m
+[33mlisteners, and logs. Explore the intricacies of notifications, queueing, and scheduling, then step through the process [0m
+[33mof testing in Laravel. Plus, gain an understanding of how Laravel works, including the role of service containers and [0m
+[33mservice providers, as well as how Facades work.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Programming No-Code Integrations with Zapier<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If you ever find yourself doing the same kinds of tasks over and over, youâ€™ve probably wished [0m
+[33mthat you could send out notifications via Slack or text message automatically when these tasks are done, instead of [0m
+[33malways relying on email. If that sounds familiar, then Zapier may be just the thing you need. Zapier allows you to [0m
+[33mconnect different web technologies, without knowing a single line of code.&lt;br&gt;&lt;br&gt;Join instructor and web [0m
+[33mdesign expert Jen Kramer as she shows you how to integrate and automate your workflowâ€”so you can save time you [0m
+[33mdidnâ€™t even know you were losing. Get started with a basic understanding of Zapier before you explore templates and [0m
+[33mset out making connections of your own. By the end of this course, youâ€™ll have the skills you need to integrate Gmail[0m
+[33mwith Google Drive, Twitter with Google Sheets, Webflow with Airtable, and more, planning your own automations with [0m
+[33mconfidence for better time management today.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>AWS for Developers: Step Functions<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Using Step Functionsâ€”a fully managed service from AWSâ€”developers can design visual workflows [0m
+[33mand run them to coordinate their AWS services. In this course, instructor Carlos Rivas takes a deep dive into Step [0m
+[33mFunctions, sharing what you need to know to use the service to  enhance and automate your cloud applications without [0m
+[33mneeding to write additional code. Carlos begins by highlighting use cases for Step Functions. He then identifies the [0m
+[33melements that make up state machines [0m[1;33m([0m[33mthe workflows you can build with Step Functions[0m[1;33m)[0m[33m. He shows how to manipulate data[0m
+[33mwhen it goes from one function to another; demonstrates how to capture and handle errors; and provides design ideas [0m
+[33mthat can help you avoid common pitfalls. Along the way, Carlos shares challenges that help you practice your new [0m
+[33mskills.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introduction to Alteryx<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Automation and big data are in high demand, but how do you get your skill set where it [0m
+[33mneeds to go? The most commonly used programs and tools can be intimidating, especially for brand-new users. This course[0m
+[33mis designed to help you get started building automation solutions with Alteryx Designer, even if you donâ€™t have a [0m
+[33mprogramming background.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Join instructor Aaron Harter as he shows you the fundamentals of creating a [0m
+[33msuccessful end-to-end workflow with Alteryx. Learn the basics of the user environment, the wide variety of data types, [0m
+[33mand how to evaluate and leverage resources to develop effective automation solutions. From summarizing to filtering and[0m
+[33mdocumenting, Aaron gives you the skills you need to know to pivot your data and start sharing it with colleagues and [0m
+[33mstakeholders.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>SharePoint Workflow Automation: Nintex<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Make more of your repeat processes run automatically by leveraging the workflow capabilities of [0m
+[33mSharePoint. Admins and power users can readily learn and adopt the Nintex plugin as a solution for creating workflows, [0m
+[33mwithout having to write code. This course explores how to use Nintex, including how to automate an approval workflow, [0m
+[33madd workflow actions, monitor workflows, and design drag-and-drop forms.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Microsoft Power Automate Essential Training<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If you are looking to streamline repetitive tasks and processes, you can use Microsoft Power [0m
+[33mAutomate to automate actions across email, Microsoft Office, Google Drive, and a variety of other  productivity and [0m
+[33msocial media platforms. In this course, Bill Kulterman teaches you what you need to know to start using Power Automate [0m
+[33mand implement either existing or new processes.  He shows you a variety of flows you can create to work smarter, [0m
+[33mincluding automatically adding and removing files from SharePoint based on emails sent, converting Word docs to PDFs, [0m
+[33mtracking working hours using the Power Automate mobile app, and more. After this course, you'll be ready to start [0m
+[33mautomating business processes in your own workflow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introduction to PLC and Industrial Automation<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Learning about Industrial automation and PLC controllers can help in providing new [0m
+[33mopportunities for engineering students, new grads, and people who already work in the field or have interest in a [0m
+[33mcareer shift to the industrial field. With the fast merging of automated factories, robotics, and Industry [0m[1;33m4.0[0m[33m, [0m
+[33mlearning new skills in this area means more opportunities.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;In this short course, instructor Zara [0m
+[33mKhalil introduces you to PLC controllers and programming, and industrial automation, sharing insights and points of [0m
+[33minterest, without overwhelming you with specialized topics. Zara first covers industrial automation and its main [0m
+[33mlevels. Then, she gets into the basics of PLC ladder logic programming. Finally, she demonstrates two practical demos [0m
+[33mto see how the program works.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning PLC Ladder Logic: [0m[1;33m1[0m[33m The Basics<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Industrial automation technologies have made manufacturing processes increasingly more efficient. [0m
+[33mProgrammable logic controllers [0m[1;33m([0m[33mPLCs[0m[1;33m)[0m[33m are commonly used in industrial automation, and many of these industrial computer[0m
+[33mcontrol systems use ladder logic as their main programming language. In this course, engineer and educator Zara Khalil [0m
+[33mcovers the basics of PLC ladder logic programming. Explore fundamental concepts such as rung operation, timer and [0m
+[33mcounter instruction, and the main types of input and output instructions used in ladder logic programming. Along the [0m
+[33mway, Zara shares case studies that can help you grasp the real-world application of these [0m
+[33mconcepts.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Hands-On SAP Business Rule Framework [0m[1;33m([0m[33mBRF+[0m[1;33m)[0m[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If youâ€™re looking to get up and running with BRF+ quickly, hands-on experienceâ€”in programming [0m
+[33mor any other skillâ€”is a great way to learn. This course shows you how to create a BRF+ deliverable, covering [0m
+[33meverything from the requisite jargon and project preparation, to creating formulas, decision tables, functions, and [0m
+[33mrulesets. Throughout the course, the integration between ABAP code and BRF+ is detailed, providing you with a clearer [0m
+[33munderstanding of how this tool can be applied. Completing the project in this hands-on course will help you learn how [0m
+[33mto translate business rules into visual documentation, discover how to maintain documentation within BRF+, and increase[0m
+[33myour confidence in doing more complex BRF+ projects going forward.&lt;br&gt;&lt;br&gt;Note: This course was created by [0m
+[33mMichael Management. We are pleased to host this training in our library<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>PLC Simulation Software: Factory I/O with Connected Component Workbench<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Thereâ€™s a strong demand for people who can program Programmable Logic Controllers [0m[1;33m([0m[33mPLCs[0m[1;33m)[0m[33m. [0m
+[33mHowever, new learners might not have access to an actual PLC to learn. Simulation software helps fill that gap. In this[0m
+[33mcourse, instructor Zara Khalil covers two simulation softwares by going through projects that grow progressively more [0m
+[33mcomplicated. Zara goes over the interface and programming methodologies for Connected Components Workbench [0m[1;33m([0m[33mCCW[0m[1;33m)[0m[33m [0m
+[33msoftware, then introduces you to the CCW Micro800 PLC simulator. After a software demonstration using the CCW [0m
+[33msimulator, she gives you an overview of Factory I/O software and shows you how to download and use Factory I/O. Once [0m
+[33myou have both softwares installed and ready to go, Zara dives into the actual projects: a control panel, a conveyor [0m
+[33mbelt, a filling tank with timer, and a PLC program to sort cardboard boxes by height. After completing the projects, [0m
+[33mshe presents some useful troubleshooting tips for CCW software and Factory I/O.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Complete Guide to Ruby<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Ruby, the popular object-oriented open-source programming language, is a great place to [0m
+[33mstart learning programming or web development. You can use it to write interactive programs or to build scripts to [0m
+[33mspeed up workflows and common tasks. In this course, instructor Kevin Skoglund covers everything new and experienced [0m
+[33mdevelopers need to know to code with Ruby, from core object types and control structures to object-oriented programming[0m
+[33mwith classes and modules. Along the way, Kevin outlines best practices and practical examples through a series of fun [0m
+[33mcoding challenges. By the end of this course, youâ€™ll be prepared to start coding in Ruby to define your own custom [0m
+[33mmethods with loops and conditional logic.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course is integrated with GitHub Codespaces, an [0m
+[33minstant cloud developer environment that offers all the functionality of your favorite IDE without the need for any [0m
+[33mlocal machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time-all while [0m
+[33musing a tool that you'll likely encounter in the workplace. Check out the Using GitHub Codespaces with this course [0m
+[33mvideo to learn how to get started.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Programming No-Code Integrations with Zapier<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If you ever find yourself doing the same kinds of tasks over and over, youâ€™ve probably wished [0m
+[33mthat you could send out notifications via Slack or text message automatically when these tasks are done, instead of [0m
+[33malways relying on email. If that sounds familiar, then Zapier may be just the thing you need. Zapier allows you to [0m
+[33mconnect different web technologies, without knowing a single line of code.&lt;br&gt;&lt;br&gt;Join instructor and web [0m
+[33mdesign expert Jen Kramer as she shows you how to integrate and automate your workflowâ€”so you can save time you [0m
+[33mdidnâ€™t even know you were losing. Get started with a basic understanding of Zapier before you explore templates and [0m
+[33mset out making connections of your own. By the end of this course, youâ€™ll have the skills you need to integrate Gmail[0m
+[33mwith Google Drive, Twitter with Google Sheets, Webflow with Airtable, and more, planning your own automations with [0m
+[33mconfidence for better time management today.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Enhance Custom GPTs with Zapier Actions<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Zapier is an online platform that seamlessly integrates and automates workflows across thousands of[0m
+[33mpopular applications. By incorporating Zapier actions into your custom GPTs, you can significantly enhance their [0m
+[33mcapabilities, and boost your efficiency.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Claris Connect<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>In the digital transformation era, software integration is one of the biggest unsolved challenges. [0m
+[33mClaris Connect is the solution: a cloud-based integration platform that allows you to automate tasks and create highly [0m
+[33mefficient, streamlined workflows. Businesses can create their own custom application networks, greatly reducing the [0m
+[33mtime it takes to connect systems and orchestrate tasks. This course introduces Claris Connect and shows how you can [0m
+[33mleverage this tool for automating tasks that integrate applications such as FileMaker Pro, Eventbrite, Shopify, Slack, [0m
+[33mBox, Mailchimp, and more. Instructor Cris Ippolite walks you through the basics of creating new Claris Connect flows, [0m
+[33mcreating actions and triggers, using utilities, and even adding schedules or approvals to your flows. He also provides [0m
+[33mreal-world examples that help you visualize the uses of Claris Connect for your business.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Dynamics [0m[1;33m365[0m[33m for Sales Teams<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Learn how to leverage the CRM side of Dynamics [0m[1;33m365[0m[33m. Find out why entire sales teamsâ€”managers and [0m
+[33massociatesâ€”are using this intelligent business app to transform their pipelines. In this course, senior business [0m
+[33manalyst Tiffany Songvilay explores how to create sales workflows in Dynamics [0m[1;33m365[0m[33m. She covers tracking customers and [0m
+[33mleads, monitoring the sales flow, marketing to leads, and reporting. Discover how to stay on top of changes to existing[0m
+[33mcustomers, follow up on opportunities, stay in touch with contacts using personalized email templates, and track all [0m
+[33mthis data in customizable Dynamics [0m[1;33m365[0m[33m dashboards. Plus, learn how to create a hierarchy of accounts to concentrate on [0m
+[33mthe most important deals.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Microsoft Power Automate Essential Training<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If you are looking to streamline repetitive tasks and processes, you can use Microsoft Power [0m
+[33mAutomate to automate actions across email, Microsoft Office, Google Drive, and a variety of other  productivity and [0m
+[33msocial media platforms. In this course, Bill Kulterman teaches you what you need to know to start using Power Automate [0m
+[33mand implement either existing or new processes.  He shows you a variety of flows you can create to work smarter, [0m
+[33mincluding automatically adding and removing files from SharePoint based on emails sent, converting Word docs to PDFs, [0m
+[33mtracking working hours using the Power Automate mobile app, and more. After this course, you'll be ready to start [0m
+[33mautomating business processes in your own workflow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Industrial Automation<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Industrial automation is the use of computers and robots to control industrial processes, [0m
+[33mlike manufacturing, without significant human intervention. Used correctly, automation can increase the quality, [0m
+[33msafety, and accuracy of these processes. It's the job of the &lt;em&gt;people&lt;[0m[33m/[0m[33mem[0m[33m&gt; in industrial automation to [0m
+[33mdesign the systems, configure the controllers, and monitor the processes. This course provides an overview of the [0m
+[33mtopic, designed to help anyone hoping to enter the field in a role such as electrical or mechanical engineer, [0m
+[33mautomation technician, or design manager.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Learn about the components and networks involved at each [0m
+[33mlevel of automation: field level, control level, and management level. Explore the different devices involved, from the[0m
+[33mprogrammable logic controllers [0m[1;33m([0m[33mPLCs[0m[1;33m)[0m[33m on the factory floor, to OPC software that give technicians insights into [0m
+[33moperations. Instructor Zara Khalil, an engineer and educator, also provides an overview of SCADA [0m[1;33m([0m[33msupervisory control [0m
+[33mand data acquisition[0m[1;33m)[0m[33m, an industrial control system architecture that enables supervision over large distances and [0m
+[33mmultiple sites.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introduction to PLC and Industrial Automation<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Learning about Industrial automation and PLC controllers can help in providing new [0m
+[33mopportunities for engineering students, new grads, and people who already work in the field or have interest in a [0m
+[33mcareer shift to the industrial field. With the fast merging of automated factories, robotics, and Industry [0m[1;33m4.0[0m[33m, [0m
+[33mlearning new skills in this area means more opportunities.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;In this short course, instructor Zara [0m
+[33mKhalil introduces you to PLC controllers and programming, and industrial automation, sharing insights and points of [0m
+[33minterest, without overwhelming you with specialized topics. Zara first covers industrial automation and its main [0m
+[33mlevels. Then, she gets into the basics of PLC ladder logic programming. Finally, she demonstrates two practical demos [0m
+[33mto see how the program works.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introducing Blue Prism<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>With robotic process automation [0m[1;33m([0m[33mRPA[0m[1;33m)[0m[33m, businesses can use software-based robotics to automate a [0m
+[33mspectrum of processes, from routine administrative tasks to more complex, decision-based core and high-value [0m
+[33mtransactions. This, in turn, saves companies countless hours, enabling them to grant their employees more time to [0m
+[33mchallenge themselves with more complex assignments. In this course, learn how to leverage the power of automation in [0m
+[33myour organization with Blue Prism, an industry-leading RPA tool. Marchela Bozhilova acquaints you with the toolâ€™s key[0m
+[33mcomponents, explaining why theyâ€™re essential to the construction of an automated process. She also discusses how to [0m
+[33mbuild process layers using interactions with web apps, Excel, and email; apply exception handling; and create and [0m
+[33mmonitor a queue.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Power Automate Desktop: Beyond the Basics<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Automating complex workflows and integrating with other systems can help businesses achieve new [0m
+[33mlevels of efficiency, productivity, and innovation. In this course, Gregor Maric uses a variety of automation examples [0m
+[33mto teach you how to go beyond basic automationâ€”and stay ahead of the curveâ€”for working with Power Automate for [0m
+[33mdesktop. This low-code solution can be leveraged to automate common and repetitive business tasks, saving time and [0m
+[33mspeeding up certain business processes. Learn how to use scripting, custom selectors, and other advanced features to [0m
+[33mautomate a wide range of business processes like data extraction and transformation, process mining and optimization, [0m
+[33mmachine learning integration, and more.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Enhance Custom GPTs with Zapier Actions<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Zapier is an online platform that seamlessly integrates and automates workflows across thousands of[0m
+[33mpopular applications. By incorporating Zapier actions into your custom GPTs, you can significantly enhance their [0m
+[33mcapabilities, and boost your efficiency.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>SharePoint: Migrating from Designer to Power Automate<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Explore how to use Power Automate, formerly Microsoft Flow, the cloud-based software for creating [0m
+[33mand automating workflows and tasks. As Power Automate becomes the default tool for creating business-based automation [0m
+[33min SharePoint, learn about how to migrate SharePoint Designer workflows to accomplish the same tasks. Instructor April [0m
+[33mDunnam walks through the features of Power Automate while pointing out notable differences from and improvements to [0m
+[33mSharePoint Designer features and methods including the recurrence trigger, calling an API using a flow, and project [0m
+[33mapproval templates.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Microsoft Dynamics [0m[1;33m365[0m[33m and the Power Platform<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Microsoft Flow, Power BI, and PowerApps make up the Power Platform, and are designed to integrate [0m
+[33mwith the cloud-based functions of Dynamics [0m[1;33m365[0m[33m. In this course, learn how to leverage the power of Dynamics [0m[1;33m365[0m[33m as a [0m
+[33mcloud-based enterprise resource planning [0m[1;33m([0m[33mERP[0m[1;33m)[0m[33m solution, along with the business automation and data analysis [0m
+[33mcapabilities of the Power Platform. Instructor Gini von Courter covers how to build complete business solutions that [0m
+[33muse data to make business decisions. Discover how to create apps using PowerApps and the Common Data Service, automate [0m
+[33mtasks with Microsoft Flow, and visualize data with Power BIâ€”all from Dynamics [0m[1;33m365[0m[33m.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introducing Blue Prism<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>With robotic process automation [0m[1;33m([0m[33mRPA[0m[1;33m)[0m[33m, businesses can use software-based robotics to automate a [0m
+[33mspectrum of processes, from routine administrative tasks to more complex, decision-based core and high-value [0m
+[33mtransactions. This, in turn, saves companies countless hours, enabling them to grant their employees more time to [0m
+[33mchallenge themselves with more complex assignments. In this course, learn how to leverage the power of automation in [0m
+[33myour organization with Blue Prism, an industry-leading RPA tool. Marchela Bozhilova acquaints you with the toolâ€™s key[0m
+[33mcomponents, explaining why theyâ€™re essential to the construction of an automated process. She also discusses how to [0m
+[33mbuild process layers using interactions with web apps, Excel, and email; apply exception handling; and create and [0m
+[33mmonitor a queue.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>AWS Auto Scaling Projects: Dynamic Resource Management, Application Performance Optimization, and [0m
+[33mResilient Cloud Architecture<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Develop your AWS Auto Scaling skills in this hands-on interactive course designed for AWS beginners[0m
+[33mand intermediates as well as solutions architects and SysOps administrators. Instructor Rick Crisci demonstrates the [0m
+[33messentials of optimizing application performance, availability, and cost effectiveness in cloud environments. Find out [0m
+[33mhow AWS Auto Scaling enables the automatic adjustment of compute resources based on demand, ensuring that your [0m
+[33mapplications can efficiently handle a wide variety of workloads. Along the way, test out your new skills in the lab [0m
+[33mexercises to get practical experience configuring, testing, and fine-tuning Auto Scaling policies.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Automate and Innovate with Chat GPT AI Agents and Zapier<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Explore the future of work productivity: leveraging AI agents in tandem with Zapier. In this [0m
+[33mcourse, instructor Jules White shows you how to use ChatGPT, AI agents, and Zapier to build automation tools that can [0m
+[33mhandle complex tasks, boost your efficiency, and help you get more done faster with less stress. Along the way, gather [0m
+[33minsights on how to harness these tools to streamline your workflow and focus on what matters most. Upon completing this[0m
+[33mcourse, youâ€™ll be prepared to automate and innovate, transforming the way you work to achieve your [0m
+[33mgoals.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+
+[33m<[0m[33m/[0m[33mcourses[0m[1;33m>[0m
+
+[33mPlease select the most appropriate courses to fulfill the objectives of this curriculum.[0m
+[33mREMEMBER TO PICK [0m[1;33m6[0m[33m-[0m[1;33m12[0m[33m COURSES TOTAL; NO LESS THAN SIX, NO MORE THAN TWELVE.[0m
+[33mYOU SHOULD MAKE SURE YOU ARE PROVIDING THE COURSE TITLE VERBATIM AS IT APPEARS IN THE COURSE DATABASE.[0m
+
+[33mProvide a structured Curation object that includes the topic of the curriculum and the course titles of the selected [0m
+[33mvideo courses.[0m
+[33m"Topic"[0m[33m should be the verbatim topic of the curriculum provided to you above.[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mScaling Automation in the Enterprise Environment with Zapier[0m
+[34m-------------------------------------[0m
+[34mAutomate and Innovate with Chat GPT AI Agents and Zapier[0m
+[34mProgramming No-Code Integrations with Zapier[0m
+[34mEnhance Custom GPTs with Zapier Actions[0m
+[34mMicrosoft Dynamics [0m[1;34m365[0m[34m and the Power Platform[0m
+[34mMicrosoft Power Automate Essential Training[0m
+[34mAWS Auto Scaling Projects: Dynamic Resource Management, Application Performance Optimization, and Resilient Cloud [0m
+[34mArchitecture[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mA colleague has asked you to create a learning path on the following topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mZapier[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mPlease design a learning path. Put your answer between XML tags.[0m
+
+[33m<curriculum_description>[0m
+[1;33m[[0m[33mYour description of the learning path curriculum here[0m[1;33m][0m
+[33m<[0m[33m/[0m[33mcurriculum_description[0m[1;33m>[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum_description[0m[34m>[0m
+[34mThis learning path, [0m[34m"Mastering Zapier: From Fundamentals to Advanced Automation,"[0m[34m is designed to equip learners with a [0m
+[34mcomprehensive understanding of Zapier and its role in automating workflows. Spanning seven courses at two hours each, [0m
+[34mthe curriculum starts with foundational concepts and gradually builds up to advanced techniques, ensuring that learners[0m
+[34mnot only grasp how to create simple automations but also master enterprise-level integrations and troubleshooting [0m
+[34mstrategies. The practical focus of these video courses, accompanied by chapter quizzes to reinforce learning, targets [0m
+[34mboth individuals aiming to streamline their daily tasks and businesses looking to enhance productivity across [0m
+[34mdepartments.[0m
+
+[1;34m1[0m[34m. Introduction to Zapier and Workflow Automation[0m
+[34m   - Course Description: This course provides an overview of Zapier’s role in automation and the core concepts behind [0m
+[34mtriggers, actions, and Zaps. It explains what automation is, why businesses implement it, and how Zapier fits into the [0m
+[34mbroader automation landscape.[0m
+[34m   - Relevance: Laying the foundation is essential for understanding subsequent, more complex topics. Learners begin by[0m
+[34mgrasping the value of process automation and the potential impact on productivity.[0m
+
+[1;34m2[0m[34m. Navigating the Zapier Platform and Setting Up Your Account[0m
+[34m   - Course Description: Learners will be guided through the process of creating and configuring a Zapier account, [0m
+[34mexploring the intuitive dashboard, and understanding the basic navigation and settings. The session includes an [0m
+[34mintroduction to app directories and integration options.[0m
+[34m   - Relevance: Familiarity with the platform’s interface and setup is key for efficient workflow building. This [0m
+[34mpractical session ensures users feel comfortable and confident navigating the tools available.[0m
+
+[1;34m3[0m[34m. Building Your First Zaps: Basic Workflow Automation[0m
+[34m   - Course Description: This course introduces the step-by-step process of creating a simple Zap, connecting a trigger[0m
+[34mto an action, and testing functionality. Participants will learn how to select apps, set up triggers, and make initial [0m
+[34mconfigurations for basic automations.[0m
+[34m   - Relevance: A hands-on approach to build the first automation builds confidence while demonstrating the immediate [0m
+[34mbenefits of Zapier’s power, reinforcing the practical applications discussed in the introductory course.[0m
+
+[1;34m4[0m[34m. Creating Multi-Step Zaps and Managing Conditional Logic[0m
+[34m   - Course Description: Advancing from basic automations, this course covers multi-step Zaps, incorporating filters, [0m
+[34mdelays, and conditional queries to create more sophisticated workflows. The course also touches on using built-in tools[0m
+[34msuch as formatting and scheduling.[0m
+[34m   - Relevance: Mastery of multi-step workflows is crucial for handling complex business processes. This course enables[0m
+[34mlearners to design Zaps that reflect real-world, multi-faceted operations while addressing common process requirements.[0m
+
+[1;34m5[0m[34m. Integrating Zapier with Popular Business Applications[0m
+[34m   - Course Description: Focused on real-world applications, this course explores integrating Zapier with ubiquitous [0m
+[34mbusiness tools like Gmail, Google Workspace, Slack, CRMs, and more. It demonstrates scenarios, such as automating email[0m
+[34mresponses, managing calendar events, and syncing data between platforms.[0m
+[34m   - Relevance: By understanding integration with everyday business applications, learners can immediately see how [0m
+[34mautomation can enhance productivity and improve operational efficiency in a business environment.[0m
+
+[1;34m6[0m[34m. Optimizing Zaps: Troubleshooting, Best Practices, and Error Handling [0m
+[34m   - Course Description: This course delves into strategies for refining and optimizing existing Zaps. It covers error [0m
+[34mhandling, monitoring performance, making adjustments based on system feedback, and establishing best practices for [0m
+[34mlong-term automation management.[0m
+[34m   - Relevance: Maintaining and optimizing automated processes is essential for sustainable success. Learners acquire [0m
+[34mthe skills to manage, troubleshoot, and improve their automations, ensuring these tools continue to add value over [0m
+[34mtime.[0m
+
+[1;34m7[0m[34m. Scaling Automation in the Enterprise Environment with Zapier [0m
+[34m   - Course Description: Targeting larger organizations, this final course focuses on leveraging Zapier for [0m
+[34menterprise-level automation. Topics include collaborative workflow design, account management at scale, role-based [0m
+[34maccess control, and integrating Zapier into complex IT ecosystems.[0m
+[34m   - Relevance: When scaling automation, understanding both the technical and administrative aspects becomes necessary.[0m
+[34mThis course prepares learners to implement and manage automation strategies that align with organizational objectives [0m
+[34mand compliance requirements.[0m
+
+[34mEach course is designed to be engaged, video-centric, and supported by chapter quizzes to test and reinforce [0m
+[34mcomprehension, making it ideal for asynchronous learning in a corporate or individual setup.[0m
+[34m<[0m[34m/[0m[34mcurriculum_description[0m[1;34m>[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou have been provided with a detailed curriculum description.[0m
+
+[33mThe description is for this topic:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mZapier[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mHere is the description:[0m
+[33m<ideal_curriculum>[0m
+
+[33mThis learning path, [0m[33m"Mastering Zapier: From Fundamentals to Advanced Automation,"[0m[33m is designed to equip learners with a [0m
+[33mcomprehensive understanding of Zapier and its role in automating workflows. Spanning seven courses at two hours each, [0m
+[33mthe curriculum starts with foundational concepts and gradually builds up to advanced techniques, ensuring that learners[0m
+[33mnot only grasp how to create simple automations but also master enterprise-level integrations and troubleshooting [0m
+[33mstrategies. The practical focus of these video courses, accompanied by chapter quizzes to reinforce learning, targets [0m
+[33mboth individuals aiming to streamline their daily tasks and businesses looking to enhance productivity across [0m
+[33mdepartments.[0m
+
+[1;33m1[0m[33m. Introduction to Zapier and Workflow Automation[0m
+[33m   - Course Description: This course provides an overview of Zapier’s role in automation and the core concepts behind [0m
+[33mtriggers, actions, and Zaps. It explains what automation is, why businesses implement it, and how Zapier fits into the [0m
+[33mbroader automation landscape.[0m
+[33m   - Relevance: Laying the foundation is essential for understanding subsequent, more complex topics. Learners begin by[0m
+[33mgrasping the value of process automation and the potential impact on productivity.[0m
+
+[1;33m2[0m[33m. Navigating the Zapier Platform and Setting Up Your Account[0m
+[33m   - Course Description: Learners will be guided through the process of creating and configuring a Zapier account, [0m
+[33mexploring the intuitive dashboard, and understanding the basic navigation and settings. The session includes an [0m
+[33mintroduction to app directories and integration options.[0m
+[33m   - Relevance: Familiarity with the platform’s interface and setup is key for efficient workflow building. This [0m
+[33mpractical session ensures users feel comfortable and confident navigating the tools available.[0m
+
+[1;33m3[0m[33m. Building Your First Zaps: Basic Workflow Automation[0m
+[33m   - Course Description: This course introduces the step-by-step process of creating a simple Zap, connecting a trigger[0m
+[33mto an action, and testing functionality. Participants will learn how to select apps, set up triggers, and make initial [0m
+[33mconfigurations for basic automations.[0m
+[33m   - Relevance: A hands-on approach to build the first automation builds confidence while demonstrating the immediate [0m
+[33mbenefits of Zapier’s power, reinforcing the practical applications discussed in the introductory course.[0m
+
+[1;33m4[0m[33m. Creating Multi-Step Zaps and Managing Conditional Logic[0m
+[33m   - Course Description: Advancing from basic automations, this course covers multi-step Zaps, incorporating filters, [0m
+[33mdelays, and conditional queries to create more sophisticated workflows. The course also touches on using built-in tools[0m
+[33msuch as formatting and scheduling.[0m
+[33m   - Relevance: Mastery of multi-step workflows is crucial for handling complex business processes. This course enables[0m
+[33mlearners to design Zaps that reflect real-world, multi-faceted operations while addressing common process requirements.[0m
+
+[1;33m5[0m[33m. Integrating Zapier with Popular Business Applications[0m
+[33m   - Course Description: Focused on real-world applications, this course explores integrating Zapier with ubiquitous [0m
+[33mbusiness tools like Gmail, Google Workspace, Slack, CRMs, and more. It demonstrates scenarios, such as automating email[0m
+[33mresponses, managing calendar events, and syncing data between platforms.[0m
+[33m   - Relevance: By understanding integration with everyday business applications, learners can immediately see how [0m
+[33mautomation can enhance productivity and improve operational efficiency in a business environment.[0m
+
+[1;33m6[0m[33m. Optimizing Zaps: Troubleshooting, Best Practices, and Error Handling [0m
+[33m   - Course Description: This course delves into strategies for refining and optimizing existing Zaps. It covers error [0m
+[33mhandling, monitoring performance, making adjustments based on system feedback, and establishing best practices for [0m
+[33mlong-term automation management.[0m
+[33m   - Relevance: Maintaining and optimizing automated processes is essential for sustainable success. Learners acquire [0m
+[33mthe skills to manage, troubleshoot, and improve their automations, ensuring these tools continue to add value over [0m
+[33mtime.[0m
+
+[1;33m7[0m[33m. Scaling Automation in the Enterprise Environment with Zapier [0m
+[33m   - Course Description: Targeting larger organizations, this final course focuses on leveraging Zapier for [0m
+[33menterprise-level automation. Topics include collaborative workflow design, account management at scale, role-based [0m
+[33maccess control, and integrating Zapier into complex IT ecosystems.[0m
+[33m   - Relevance: When scaling automation, understanding both the technical and administrative aspects becomes necessary.[0m
+[33mThis course prepares learners to implement and manage automation strategies that align with organizational objectives [0m
+[33mand compliance requirements.[0m
+
+[33mEach course is designed to be engaged, video-centric, and supported by chapter quizzes to test and reinforce [0m
+[33mcomprehension, making it ideal for asynchronous learning in a corporate or individual setup.[0m
+
+[33m<[0m[33m/[0m[33mideal_curriculum[0m[1;33m>[0m
+
+[33mPlease convert this into a structured JSON representation of the curriculum.[0m
+[33mYour answer should include the topic, description, audience, and a list of modules.[0m
+[33mYOU SHOULD ALWAYS RETURN AT LEAST SIX MODULES, AND NO MORE THAN TWELVE.[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[1;34m<[0m[1;34mcurriculum[0m[34m>[0m
+[34m        [0m[34m<topic>Zapier<[0m[34m/[0m[34mtopic[0m[34m>[0m
+[34m        [0m[34m<description>Mastering Zapier: From Fundamentals to Advanced Automation is a comprehensive learning path [0m
+[34mdesigned to equip learners with an in-depth understanding of Zapier's role in automating workflows. The curriculum [0m
+[34mspans seven courses, each approximately two hours long, and gradually builds skills from basic automation concepts to [0m
+[34menterprise-level integrations and troubleshooting. This video-centric, asynchronous course, enriched with chapter [0m
+[34mquizzes, is ideal for both individuals aiming to streamline daily tasks and businesses looking to enhance productivity [0m
+[34macross departments.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m<audience>Individuals seeking to automate routine tasks and businesses aiming to improve operational [0m
+[34mefficiency.<[0m[34m/[0m[34maudience[0m[34m>[0m
+[34m        [0m[34m<modules>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Introduction to Zapier and Workflow Automation<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>An overview of Zapier’s role in automation, including core concepts such as [0m
+[34mtriggers, actions, and Zaps. Establishes the foundational understanding of process automation and its impact on [0m
+[34mproductivity.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand the basics of automation and the importance of workflow [0m
+[34mautomation.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Learn the key components of Zapier including triggers, actions, and [0m
+[34mZaps.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Recognize the role of Zapier in the broader landscape of business [0m
+[34mautomation.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Navigating the Zapier Platform and Setting Up Your Account<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Guided walkthrough of creating and configuring a Zapier account. Explores the [0m
+[34mintuitive dashboard, basic navigation, settings, and the app directory.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Create and configure a Zapier account.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Navigate the Zapier dashboard and understand basic settings.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Explore integration options and the app directory for enhanced [0m
+[34mfunctionality.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Building Your First Zaps: Basic Workflow Automation<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Step-by-step process for creating a simple Zap, including connecting a trigger to [0m
+[34man action and testing its functionality.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Develop the ability to create a basic Zap.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Connect triggers with actions in a streamlined workflow.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Test and troubleshoot initial automation setups.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Creating Multi-Step Zaps and Managing Conditional Logic<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Advanced course covering multi-step Zaps, filters, delays, and conditional [0m
+[34mqueries. Introduces built-in tools like formatting and scheduling to handle sophisticated workflows.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Design multi-step workflows using Zapier.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Implement filters, delays, and conditional logic in automations.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Utilize built-in tools for formatting and scheduling actions.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Integrating Zapier with Popular Business Applications<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Explores integration of Zapier with essential business tools such as Gmail, Google[0m
+[34mWorkspace, Slack, and CRMs. Demonstrates practical scenarios like automating email responses and syncing data across [0m
+[34mplatforms.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand how to integrate Zapier with common business [0m
+[34mapplications.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Implement automations to manage emails, calendars, and data [0m
+[34msyncing.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Recognize real-world scenarios where integration enhances [0m
+[34mproductivity.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Optimizing Zaps: Troubleshooting, Best Practices, and Error Handling<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Focuses on strategies for refining and optimizing existing Zaps through error [0m
+[34mhandling, performance monitoring, and adjustments based on system feedback. Emphasizes best practices for long-term [0m
+[34mautomation management.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Learn strategies for error handling and troubleshooting in [0m
+[34mZapier.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Monitor and optimize the performance of automated workflows.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Apply best practices to maintain and refine automation [0m
+[34mprocesses.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<module>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<title>Scaling Automation in the Enterprise Environment with Zapier<[0m[34m/[0m[34mtitle[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<description>Covers the use of Zapier for enterprise-level automation including collaborative [0m
+[34mworkflow design, role-based access control, and integration into complex IT ecosystems.<[0m[34m/[0m[34mdescription[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m<learning_objectives>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Understand the challenges and strategies for scaling automation in larger [0m
+[34morganizations.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Manage collaborative workflow design and role-based access [0m
+[34mcontrol.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m        [0m[34m        [0m[34m<objective>Integrate Zapier effectively into complex enterprise IT systems.<[0m[34m/[0m[34mobjective[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mlearning_objectives[0m[34m>[0m
+[34m        [0m[34m        [0m[34m<[0m[34m/[0m[34mmodule[0m[34m>[0m
+[34m        [0m[34m<[0m[34m/[0m[34mmodules[0m[34m>[0m
+[34m<[0m[34m/[0m[34mcurriculum[0m[1;34m>[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36muser:[0m
+[33mYou have a received a curriculum object on the topic of:[0m
+[1;33m<[0m[1;33mtopic[0m[33m>[0m
+[33mScaling Automation in the Enterprise Environment with Zapier[0m
+[33m<[0m[33m/[0m[33mtopic[0m[33m>[0m
+
+[33mHere is the curriculum object:[0m
+[33m<curriculum>[0m
+[33m<curriculum>[0m
+[33m        [0m[33m<topic>Zapier<[0m[33m/[0m[33mtopic[0m[33m>[0m
+[33m        [0m[33m<description>Mastering Zapier: From Fundamentals to Advanced Automation is a comprehensive learning path [0m
+[33mdesigned to equip learners with an in-depth understanding of Zapier's role in automating workflows. The curriculum [0m
+[33mspans seven courses, each approximately two hours long, and gradually builds skills from basic automation concepts to [0m
+[33menterprise-level integrations and troubleshooting. This video-centric, asynchronous course, enriched with chapter [0m
+[33mquizzes, is ideal for both individuals aiming to streamline daily tasks and businesses looking to enhance productivity [0m
+[33macross departments.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m<audience>Individuals seeking to automate routine tasks and businesses aiming to improve operational [0m
+[33mefficiency.<[0m[33m/[0m[33maudience[0m[33m>[0m
+[33m        [0m[33m<modules>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Introduction to Zapier and Workflow Automation<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>An overview of Zapier’s role in automation, including core concepts such as [0m
+[33mtriggers, actions, and Zaps. Establishes the foundational understanding of process automation and its impact on [0m
+[33mproductivity.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand the basics of automation and the importance of workflow [0m
+[33mautomation.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Learn the key components of Zapier including triggers, actions, and [0m
+[33mZaps.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Recognize the role of Zapier in the broader landscape of business [0m
+[33mautomation.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Navigating the Zapier Platform and Setting Up Your Account<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Guided walkthrough of creating and configuring a Zapier account. Explores the [0m
+[33mintuitive dashboard, basic navigation, settings, and the app directory.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Create and configure a Zapier account.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Navigate the Zapier dashboard and understand basic settings.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Explore integration options and the app directory for enhanced [0m
+[33mfunctionality.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Building Your First Zaps: Basic Workflow Automation<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Step-by-step process for creating a simple Zap, including connecting a trigger to [0m
+[33man action and testing its functionality.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Develop the ability to create a basic Zap.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Connect triggers with actions in a streamlined workflow.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Test and troubleshoot initial automation setups.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Creating Multi-Step Zaps and Managing Conditional Logic<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Advanced course covering multi-step Zaps, filters, delays, and conditional [0m
+[33mqueries. Introduces built-in tools like formatting and scheduling to handle sophisticated workflows.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Design multi-step workflows using Zapier.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Implement filters, delays, and conditional logic in automations.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Utilize built-in tools for formatting and scheduling actions.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Integrating Zapier with Popular Business Applications<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Explores integration of Zapier with essential business tools such as Gmail, Google[0m
+[33mWorkspace, Slack, and CRMs. Demonstrates practical scenarios like automating email responses and syncing data across [0m
+[33mplatforms.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand how to integrate Zapier with common business [0m
+[33mapplications.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Implement automations to manage emails, calendars, and data [0m
+[33msyncing.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Recognize real-world scenarios where integration enhances [0m
+[33mproductivity.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Optimizing Zaps: Troubleshooting, Best Practices, and Error Handling<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Focuses on strategies for refining and optimizing existing Zaps through error [0m
+[33mhandling, performance monitoring, and adjustments based on system feedback. Emphasizes best practices for long-term [0m
+[33mautomation management.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Learn strategies for error handling and troubleshooting in [0m
+[33mZapier.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Monitor and optimize the performance of automated workflows.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Apply best practices to maintain and refine automation [0m
+[33mprocesses.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<module>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<title>Scaling Automation in the Enterprise Environment with Zapier<[0m[33m/[0m[33mtitle[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<description>Covers the use of Zapier for enterprise-level automation including collaborative [0m
+[33mworkflow design, role-based access control, and integration into complex IT ecosystems.<[0m[33m/[0m[33mdescription[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m<learning_objectives>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Understand the challenges and strategies for scaling automation in larger [0m
+[33morganizations.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Manage collaborative workflow design and role-based access [0m
+[33mcontrol.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m        [0m[33m        [0m[33m<objective>Integrate Zapier effectively into complex enterprise IT systems.<[0m[33m/[0m[33mobjective[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mlearning_objectives[0m[33m>[0m
+[33m        [0m[33m        [0m[33m<[0m[33m/[0m[33mmodule[0m[33m>[0m
+[33m        [0m[33m<[0m[33m/[0m[33mmodules[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcurriculum[0m[33m>[0m
+[33m<[0m[33m/[0m[33mcurriculum[0m[33m>[0m
+
+[33mAnd here are the courses that you have to choose from:[0m
+[33m<courses>[0m
+[33m<course_title>Automate and Innovate with Chat GPT AI Agents and Zapier<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Explore the future of work productivity: leveraging AI agents in tandem with Zapier. In this [0m
+[33mcourse, instructor Jules White shows you how to use ChatGPT, AI agents, and Zapier to build automation tools that can [0m
+[33mhandle complex tasks, boost your efficiency, and help you get more done faster with less stress. Along the way, gather [0m
+[33minsights on how to harness these tools to streamline your workflow and focus on what matters most. Upon completing this[0m
+[33mcourse, youâ€™ll be prepared to automate and innovate, transforming the way you work to achieve your [0m
+[33mgoals.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Programming No-Code Integrations with Zapier<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If you ever find yourself doing the same kinds of tasks over and over, youâ€™ve probably wished [0m
+[33mthat you could send out notifications via Slack or text message automatically when these tasks are done, instead of [0m
+[33malways relying on email. If that sounds familiar, then Zapier may be just the thing you need. Zapier allows you to [0m
+[33mconnect different web technologies, without knowing a single line of code.&lt;br&gt;&lt;br&gt;Join instructor and web [0m
+[33mdesign expert Jen Kramer as she shows you how to integrate and automate your workflowâ€”so you can save time you [0m
+[33mdidnâ€™t even know you were losing. Get started with a basic understanding of Zapier before you explore templates and [0m
+[33mset out making connections of your own. By the end of this course, youâ€™ll have the skills you need to integrate Gmail[0m
+[33mwith Google Drive, Twitter with Google Sheets, Webflow with Airtable, and more, planning your own automations with [0m
+[33mconfidence for better time management today.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Enhance Custom GPTs with Zapier Actions<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Zapier is an online platform that seamlessly integrates and automates workflows across thousands of[0m
+[33mpopular applications. By incorporating Zapier actions into your custom GPTs, you can significantly enhance their [0m
+[33mcapabilities, and boost your efficiency.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introducing Blue Prism<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>With robotic process automation [0m[1;33m([0m[33mRPA[0m[1;33m)[0m[33m, businesses can use software-based robotics to automate a [0m
+[33mspectrum of processes, from routine administrative tasks to more complex, decision-based core and high-value [0m
+[33mtransactions. This, in turn, saves companies countless hours, enabling them to grant their employees more time to [0m
+[33mchallenge themselves with more complex assignments. In this course, learn how to leverage the power of automation in [0m
+[33myour organization with Blue Prism, an industry-leading RPA tool. Marchela Bozhilova acquaints you with the toolâ€™s key[0m
+[33mcomponents, explaining why theyâ€™re essential to the construction of an automated process. She also discusses how to [0m
+[33mbuild process layers using interactions with web apps, Excel, and email; apply exception handling; and create and [0m
+[33mmonitor a queue.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Industrial Automation<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Industrial automation is the use of computers and robots to control industrial processes, [0m
+[33mlike manufacturing, without significant human intervention. Used correctly, automation can increase the quality, [0m
+[33msafety, and accuracy of these processes. It's the job of the &lt;em&gt;people&lt;[0m[33m/[0m[33mem[0m[33m&gt; in industrial automation to [0m
+[33mdesign the systems, configure the controllers, and monitor the processes. This course provides an overview of the [0m
+[33mtopic, designed to help anyone hoping to enter the field in a role such as electrical or mechanical engineer, [0m
+[33mautomation technician, or design manager.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Learn about the components and networks involved at each [0m
+[33mlevel of automation: field level, control level, and management level. Explore the different devices involved, from the[0m
+[33mprogrammable logic controllers [0m[1;33m([0m[33mPLCs[0m[1;33m)[0m[33m on the factory floor, to OPC software that give technicians insights into [0m
+[33moperations. Instructor Zara Khalil, an engineer and educator, also provides an overview of SCADA [0m[1;33m([0m[33msupervisory control [0m
+[33mand data acquisition[0m[1;33m)[0m[33m, an industrial control system architecture that enables supervision over large distances and [0m
+[33mmultiple sites.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Adobe: Customer Journey Analytics<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>This course delivers a detailed review of the Adobe Customer Journey Analytics platform. Eric [0m
+[33mMatisoff explains the unique aspects of Customer Journey Analytics compared to Adobe Analytics, as well as how to apply[0m
+[33mfeatures for your omnichannel and digital analytics needs. Plus, Eric guides you on how to analyze data using a guided [0m
+[33manalysis. Finally, learn several administrative capabilities that are key differentiators of Customer Journey [0m
+[33mAnalytics.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Microsoft Dynamics [0m[1;33m365[0m[33m Sales Essential Training<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Microsoft Dynamics [0m[1;33m365[0m[33m empowers users to manage leads, contacts, and data to create streamlined [0m
+[33mworkflows for sales, customer service, and client management. In this course, instructor Dian Taylor explores how to [0m
+[33muse the Microsoft Dynamics CRM platform to manage contact information, leads, and actions. Dian goes over the Dynamics [0m
+[1;33m365[0m[33m interface, then dives into specific functions through the lens of both sales and customer service tracking. She [0m
+[33mcovers basics like accessing and sorting records and views, creating a new record, building queries, and more. Dian [0m
+[33mshows you techniques and tools to boost your sales efficiency with Dynamics [0m[1;33m365[0m[33m, then explains how Dynamics [0m[1;33m365[0m[33m can [0m
+[33mhelp you generate, track, and manage opportunities. She shows you how to work with quotes and work in the field, [0m
+[33mincluding detailed how-tos on using the Mobile Application app. Plus, Dian demonstrates how to use charts and [0m
+[33mdashboards, access Excel templates, and review forecasts.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Microsoft Power Apps<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Power Apps continue to grow in popularity. In this course, Gini von Courter explores how to [0m
+[33mleverage Power Apps to create template-based mobile applications that integrate data from Excel, SharePoint, Access, [0m
+[33mand other Microsoft products. Gini shows you what tools are included in Microsoft Power Apps and how you can get [0m
+[33mstarted using them. She goes over data sources and how to upload data sources to OneDrive. Gini explains how to check [0m
+[33myour environment and, if necessary, change environments before creating an app. She walks you through creating, [0m
+[33mpreviewing, and saving your app, then goes into the details of choosing layouts for galleries and forms, adding and [0m
+[33mediting labels, publishing your app, and more. After stepping through how to share your app, open and use it, and add [0m
+[33mit to Microsoft Teams, Gini shows you how to manage your apps and recommends some related courses to help you keep [0m
+[33mlearning.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Microsoft Power Apps Essential Training: The Basics<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Microsoft Power Apps helps you create custom business applications for mobile devices and web [0m
+[33mbrowsers. You can replace manual forms and processes with digital experiences that can be accessed from [0m
+[33manywhereâ€”without writing a single line of code. In this course, Gini von Courter provides the foundational knowledge [0m
+[33myou need to use Power Apps to create web-based and mobile applications. Explore the structure of a Power App and learn [0m
+[33mto create apps from built-in templates, from scratch, or using Microsoft Copilot. Find out how to connect to a variety [0m
+[33mof data sources, including SharePoint and Excel, and how to customize layouts and themes. Along the way, Gini shows you[0m
+[33mhow to use and share an app on the go, build a model-driven app with Dataverse, and create websites for external users [0m
+[33mwith Power Apps portals.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Advanced Laravel<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>As an open-source web application framework, Laravel offers you expressive, elegant syntax and an [0m
+[33menjoyable creative experience. But how can you make the most of its features? In this course, full-stack web developer [0m
+[33mand tech educator Shruti Balasa guides you through advanced concepts in Laravel. Go over how to establish project [0m
+[33mrequirements and set up your project. Learn how to create user roles, write your own middleware, use gates, and more. [0m
+[33mDive into advanced eloquent features, including many-to-many relationships, eager loading, attaching and detaching [0m
+[33mrelationships, and writing complex queries and query scopes. Find out how to do more with custom commands, events, [0m
+[33mlisteners, and logs. Explore the intricacies of notifications, queueing, and scheduling, then step through the process [0m
+[33mof testing in Laravel. Plus, gain an understanding of how Laravel works, including the role of service containers and [0m
+[33mservice providers, as well as how Facades work.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Programming No-Code Integrations with Zapier<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If you ever find yourself doing the same kinds of tasks over and over, youâ€™ve probably wished [0m
+[33mthat you could send out notifications via Slack or text message automatically when these tasks are done, instead of [0m
+[33malways relying on email. If that sounds familiar, then Zapier may be just the thing you need. Zapier allows you to [0m
+[33mconnect different web technologies, without knowing a single line of code.&lt;br&gt;&lt;br&gt;Join instructor and web [0m
+[33mdesign expert Jen Kramer as she shows you how to integrate and automate your workflowâ€”so you can save time you [0m
+[33mdidnâ€™t even know you were losing. Get started with a basic understanding of Zapier before you explore templates and [0m
+[33mset out making connections of your own. By the end of this course, youâ€™ll have the skills you need to integrate Gmail[0m
+[33mwith Google Drive, Twitter with Google Sheets, Webflow with Airtable, and more, planning your own automations with [0m
+[33mconfidence for better time management today.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>AWS for Developers: Step Functions<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Using Step Functionsâ€”a fully managed service from AWSâ€”developers can design visual workflows [0m
+[33mand run them to coordinate their AWS services. In this course, instructor Carlos Rivas takes a deep dive into Step [0m
+[33mFunctions, sharing what you need to know to use the service to  enhance and automate your cloud applications without [0m
+[33mneeding to write additional code. Carlos begins by highlighting use cases for Step Functions. He then identifies the [0m
+[33melements that make up state machines [0m[1;33m([0m[33mthe workflows you can build with Step Functions[0m[1;33m)[0m[33m. He shows how to manipulate data[0m
+[33mwhen it goes from one function to another; demonstrates how to capture and handle errors; and provides design ideas [0m
+[33mthat can help you avoid common pitfalls. Along the way, Carlos shares challenges that help you practice your new [0m
+[33mskills.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introduction to Alteryx<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Automation and big data are in high demand, but how do you get your skill set where it [0m
+[33mneeds to go? The most commonly used programs and tools can be intimidating, especially for brand-new users. This course[0m
+[33mis designed to help you get started building automation solutions with Alteryx Designer, even if you donâ€™t have a [0m
+[33mprogramming background.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Join instructor Aaron Harter as he shows you the fundamentals of creating a [0m
+[33msuccessful end-to-end workflow with Alteryx. Learn the basics of the user environment, the wide variety of data types, [0m
+[33mand how to evaluate and leverage resources to develop effective automation solutions. From summarizing to filtering and[0m
+[33mdocumenting, Aaron gives you the skills you need to know to pivot your data and start sharing it with colleagues and [0m
+[33mstakeholders.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>SharePoint Workflow Automation: Nintex<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Make more of your repeat processes run automatically by leveraging the workflow capabilities of [0m
+[33mSharePoint. Admins and power users can readily learn and adopt the Nintex plugin as a solution for creating workflows, [0m
+[33mwithout having to write code. This course explores how to use Nintex, including how to automate an approval workflow, [0m
+[33madd workflow actions, monitor workflows, and design drag-and-drop forms.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Microsoft Power Automate Essential Training<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If you are looking to streamline repetitive tasks and processes, you can use Microsoft Power [0m
+[33mAutomate to automate actions across email, Microsoft Office, Google Drive, and a variety of other  productivity and [0m
+[33msocial media platforms. In this course, Bill Kulterman teaches you what you need to know to start using Power Automate [0m
+[33mand implement either existing or new processes.  He shows you a variety of flows you can create to work smarter, [0m
+[33mincluding automatically adding and removing files from SharePoint based on emails sent, converting Word docs to PDFs, [0m
+[33mtracking working hours using the Power Automate mobile app, and more. After this course, you'll be ready to start [0m
+[33mautomating business processes in your own workflow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introduction to PLC and Industrial Automation<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Learning about Industrial automation and PLC controllers can help in providing new [0m
+[33mopportunities for engineering students, new grads, and people who already work in the field or have interest in a [0m
+[33mcareer shift to the industrial field. With the fast merging of automated factories, robotics, and Industry [0m[1;33m4.0[0m[33m, [0m
+[33mlearning new skills in this area means more opportunities.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;In this short course, instructor Zara [0m
+[33mKhalil introduces you to PLC controllers and programming, and industrial automation, sharing insights and points of [0m
+[33minterest, without overwhelming you with specialized topics. Zara first covers industrial automation and its main [0m
+[33mlevels. Then, she gets into the basics of PLC ladder logic programming. Finally, she demonstrates two practical demos [0m
+[33mto see how the program works.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning PLC Ladder Logic: [0m[1;33m1[0m[33m The Basics<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Industrial automation technologies have made manufacturing processes increasingly more efficient. [0m
+[33mProgrammable logic controllers [0m[1;33m([0m[33mPLCs[0m[1;33m)[0m[33m are commonly used in industrial automation, and many of these industrial computer[0m
+[33mcontrol systems use ladder logic as their main programming language. In this course, engineer and educator Zara Khalil [0m
+[33mcovers the basics of PLC ladder logic programming. Explore fundamental concepts such as rung operation, timer and [0m
+[33mcounter instruction, and the main types of input and output instructions used in ladder logic programming. Along the [0m
+[33mway, Zara shares case studies that can help you grasp the real-world application of these [0m
+[33mconcepts.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Hands-On SAP Business Rule Framework [0m[1;33m([0m[33mBRF+[0m[1;33m)[0m[33m<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If youâ€™re looking to get up and running with BRF+ quickly, hands-on experienceâ€”in programming [0m
+[33mor any other skillâ€”is a great way to learn. This course shows you how to create a BRF+ deliverable, covering [0m
+[33meverything from the requisite jargon and project preparation, to creating formulas, decision tables, functions, and [0m
+[33mrulesets. Throughout the course, the integration between ABAP code and BRF+ is detailed, providing you with a clearer [0m
+[33munderstanding of how this tool can be applied. Completing the project in this hands-on course will help you learn how [0m
+[33mto translate business rules into visual documentation, discover how to maintain documentation within BRF+, and increase[0m
+[33myour confidence in doing more complex BRF+ projects going forward.&lt;br&gt;&lt;br&gt;Note: This course was created by [0m
+[33mMichael Management. We are pleased to host this training in our library<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>PLC Simulation Software: Factory I/O with Connected Component Workbench<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Thereâ€™s a strong demand for people who can program Programmable Logic Controllers [0m[1;33m([0m[33mPLCs[0m[1;33m)[0m[33m. [0m
+[33mHowever, new learners might not have access to an actual PLC to learn. Simulation software helps fill that gap. In this[0m
+[33mcourse, instructor Zara Khalil covers two simulation softwares by going through projects that grow progressively more [0m
+[33mcomplicated. Zara goes over the interface and programming methodologies for Connected Components Workbench [0m[1;33m([0m[33mCCW[0m[1;33m)[0m[33m [0m
+[33msoftware, then introduces you to the CCW Micro800 PLC simulator. After a software demonstration using the CCW [0m
+[33msimulator, she gives you an overview of Factory I/O software and shows you how to download and use Factory I/O. Once [0m
+[33myou have both softwares installed and ready to go, Zara dives into the actual projects: a control panel, a conveyor [0m
+[33mbelt, a filling tank with timer, and a PLC program to sort cardboard boxes by height. After completing the projects, [0m
+[33mshe presents some useful troubleshooting tips for CCW software and Factory I/O.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Complete Guide to Ruby<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Ruby, the popular object-oriented open-source programming language, is a great place to [0m
+[33mstart learning programming or web development. You can use it to write interactive programs or to build scripts to [0m
+[33mspeed up workflows and common tasks. In this course, instructor Kevin Skoglund covers everything new and experienced [0m
+[33mdevelopers need to know to code with Ruby, from core object types and control structures to object-oriented programming[0m
+[33mwith classes and modules. Along the way, Kevin outlines best practices and practical examples through a series of fun [0m
+[33mcoding challenges. By the end of this course, youâ€™ll be prepared to start coding in Ruby to define your own custom [0m
+[33mmethods with loops and conditional logic.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;This course is integrated with GitHub Codespaces, an [0m
+[33minstant cloud developer environment that offers all the functionality of your favorite IDE without the need for any [0m
+[33mlocal machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time-all while [0m
+[33musing a tool that you'll likely encounter in the workplace. Check out the Using GitHub Codespaces with this course [0m
+[33mvideo to learn how to get started.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Programming No-Code Integrations with Zapier<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If you ever find yourself doing the same kinds of tasks over and over, youâ€™ve probably wished [0m
+[33mthat you could send out notifications via Slack or text message automatically when these tasks are done, instead of [0m
+[33malways relying on email. If that sounds familiar, then Zapier may be just the thing you need. Zapier allows you to [0m
+[33mconnect different web technologies, without knowing a single line of code.&lt;br&gt;&lt;br&gt;Join instructor and web [0m
+[33mdesign expert Jen Kramer as she shows you how to integrate and automate your workflowâ€”so you can save time you [0m
+[33mdidnâ€™t even know you were losing. Get started with a basic understanding of Zapier before you explore templates and [0m
+[33mset out making connections of your own. By the end of this course, youâ€™ll have the skills you need to integrate Gmail[0m
+[33mwith Google Drive, Twitter with Google Sheets, Webflow with Airtable, and more, planning your own automations with [0m
+[33mconfidence for better time management today.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Enhance Custom GPTs with Zapier Actions<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Zapier is an online platform that seamlessly integrates and automates workflows across thousands of[0m
+[33mpopular applications. By incorporating Zapier actions into your custom GPTs, you can significantly enhance their [0m
+[33mcapabilities, and boost your efficiency.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Claris Connect<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>In the digital transformation era, software integration is one of the biggest unsolved challenges. [0m
+[33mClaris Connect is the solution: a cloud-based integration platform that allows you to automate tasks and create highly [0m
+[33mefficient, streamlined workflows. Businesses can create their own custom application networks, greatly reducing the [0m
+[33mtime it takes to connect systems and orchestrate tasks. This course introduces Claris Connect and shows how you can [0m
+[33mleverage this tool for automating tasks that integrate applications such as FileMaker Pro, Eventbrite, Shopify, Slack, [0m
+[33mBox, Mailchimp, and more. Instructor Cris Ippolite walks you through the basics of creating new Claris Connect flows, [0m
+[33mcreating actions and triggers, using utilities, and even adding schedules or approvals to your flows. He also provides [0m
+[33mreal-world examples that help you visualize the uses of Claris Connect for your business.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Dynamics [0m[1;33m365[0m[33m for Sales Teams<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Learn how to leverage the CRM side of Dynamics [0m[1;33m365[0m[33m. Find out why entire sales teamsâ€”managers and [0m
+[33massociatesâ€”are using this intelligent business app to transform their pipelines. In this course, senior business [0m
+[33manalyst Tiffany Songvilay explores how to create sales workflows in Dynamics [0m[1;33m365[0m[33m. She covers tracking customers and [0m
+[33mleads, monitoring the sales flow, marketing to leads, and reporting. Discover how to stay on top of changes to existing[0m
+[33mcustomers, follow up on opportunities, stay in touch with contacts using personalized email templates, and track all [0m
+[33mthis data in customizable Dynamics [0m[1;33m365[0m[33m dashboards. Plus, learn how to create a hierarchy of accounts to concentrate on [0m
+[33mthe most important deals.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Microsoft Power Automate Essential Training<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>If you are looking to streamline repetitive tasks and processes, you can use Microsoft Power [0m
+[33mAutomate to automate actions across email, Microsoft Office, Google Drive, and a variety of other  productivity and [0m
+[33msocial media platforms. In this course, Bill Kulterman teaches you what you need to know to start using Power Automate [0m
+[33mand implement either existing or new processes.  He shows you a variety of flows you can create to work smarter, [0m
+[33mincluding automatically adding and removing files from SharePoint based on emails sent, converting Word docs to PDFs, [0m
+[33mtracking working hours using the Power Automate mobile app, and more. After this course, you'll be ready to start [0m
+[33mautomating business processes in your own workflow.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Learning Industrial Automation<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Industrial automation is the use of computers and robots to control industrial processes, [0m
+[33mlike manufacturing, without significant human intervention. Used correctly, automation can increase the quality, [0m
+[33msafety, and accuracy of these processes. It's the job of the &lt;em&gt;people&lt;[0m[33m/[0m[33mem[0m[33m&gt; in industrial automation to [0m
+[33mdesign the systems, configure the controllers, and monitor the processes. This course provides an overview of the [0m
+[33mtopic, designed to help anyone hoping to enter the field in a role such as electrical or mechanical engineer, [0m
+[33mautomation technician, or design manager.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;Learn about the components and networks involved at each [0m
+[33mlevel of automation: field level, control level, and management level. Explore the different devices involved, from the[0m
+[33mprogrammable logic controllers [0m[1;33m([0m[33mPLCs[0m[1;33m)[0m[33m on the factory floor, to OPC software that give technicians insights into [0m
+[33moperations. Instructor Zara Khalil, an engineer and educator, also provides an overview of SCADA [0m[1;33m([0m[33msupervisory control [0m
+[33mand data acquisition[0m[1;33m)[0m[33m, an industrial control system architecture that enables supervision over large distances and [0m
+[33mmultiple sites.&lt;[0m[33m/[0m[33mp[0m[33m&gt;<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introduction to PLC and Industrial Automation<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>&lt;p&gt;Learning about Industrial automation and PLC controllers can help in providing new [0m
+[33mopportunities for engineering students, new grads, and people who already work in the field or have interest in a [0m
+[33mcareer shift to the industrial field. With the fast merging of automated factories, robotics, and Industry [0m[1;33m4.0[0m[33m, [0m
+[33mlearning new skills in this area means more opportunities.&lt;[0m[33m/[0m[33mp[0m[33m&gt;&lt;p&gt;In this short course, instructor Zara [0m
+[33mKhalil introduces you to PLC controllers and programming, and industrial automation, sharing insights and points of [0m
+[33minterest, without overwhelming you with specialized topics. Zara first covers industrial automation and its main [0m
+[33mlevels. Then, she gets into the basics of PLC ladder logic programming. Finally, she demonstrates two practical demos [0m
+[33mto see how the program works.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introducing Blue Prism<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>With robotic process automation [0m[1;33m([0m[33mRPA[0m[1;33m)[0m[33m, businesses can use software-based robotics to automate a [0m
+[33mspectrum of processes, from routine administrative tasks to more complex, decision-based core and high-value [0m
+[33mtransactions. This, in turn, saves companies countless hours, enabling them to grant their employees more time to [0m
+[33mchallenge themselves with more complex assignments. In this course, learn how to leverage the power of automation in [0m
+[33myour organization with Blue Prism, an industry-leading RPA tool. Marchela Bozhilova acquaints you with the toolâ€™s key[0m
+[33mcomponents, explaining why theyâ€™re essential to the construction of an automated process. She also discusses how to [0m
+[33mbuild process layers using interactions with web apps, Excel, and email; apply exception handling; and create and [0m
+[33mmonitor a queue.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Power Automate Desktop: Beyond the Basics<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Automating complex workflows and integrating with other systems can help businesses achieve new [0m
+[33mlevels of efficiency, productivity, and innovation. In this course, Gregor Maric uses a variety of automation examples [0m
+[33mto teach you how to go beyond basic automationâ€”and stay ahead of the curveâ€”for working with Power Automate for [0m
+[33mdesktop. This low-code solution can be leveraged to automate common and repetitive business tasks, saving time and [0m
+[33mspeeding up certain business processes. Learn how to use scripting, custom selectors, and other advanced features to [0m
+[33mautomate a wide range of business processes like data extraction and transformation, process mining and optimization, [0m
+[33mmachine learning integration, and more.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Enhance Custom GPTs with Zapier Actions<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Zapier is an online platform that seamlessly integrates and automates workflows across thousands of[0m
+[33mpopular applications. By incorporating Zapier actions into your custom GPTs, you can significantly enhance their [0m
+[33mcapabilities, and boost your efficiency.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>SharePoint: Migrating from Designer to Power Automate<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Explore how to use Power Automate, formerly Microsoft Flow, the cloud-based software for creating [0m
+[33mand automating workflows and tasks. As Power Automate becomes the default tool for creating business-based automation [0m
+[33min SharePoint, learn about how to migrate SharePoint Designer workflows to accomplish the same tasks. Instructor April [0m
+[33mDunnam walks through the features of Power Automate while pointing out notable differences from and improvements to [0m
+[33mSharePoint Designer features and methods including the recurrence trigger, calling an API using a flow, and project [0m
+[33mapproval templates.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Microsoft Dynamics [0m[1;33m365[0m[33m and the Power Platform<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Microsoft Flow, Power BI, and PowerApps make up the Power Platform, and are designed to integrate [0m
+[33mwith the cloud-based functions of Dynamics [0m[1;33m365[0m[33m. In this course, learn how to leverage the power of Dynamics [0m[1;33m365[0m[33m as a [0m
+[33mcloud-based enterprise resource planning [0m[1;33m([0m[33mERP[0m[1;33m)[0m[33m solution, along with the business automation and data analysis [0m
+[33mcapabilities of the Power Platform. Instructor Gini von Courter covers how to build complete business solutions that [0m
+[33muse data to make business decisions. Discover how to create apps using PowerApps and the Common Data Service, automate [0m
+[33mtasks with Microsoft Flow, and visualize data with Power BIâ€”all from Dynamics [0m[1;33m365[0m[33m.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Introducing Blue Prism<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>With robotic process automation [0m[1;33m([0m[33mRPA[0m[1;33m)[0m[33m, businesses can use software-based robotics to automate a [0m
+[33mspectrum of processes, from routine administrative tasks to more complex, decision-based core and high-value [0m
+[33mtransactions. This, in turn, saves companies countless hours, enabling them to grant their employees more time to [0m
+[33mchallenge themselves with more complex assignments. In this course, learn how to leverage the power of automation in [0m
+[33myour organization with Blue Prism, an industry-leading RPA tool. Marchela Bozhilova acquaints you with the toolâ€™s key[0m
+[33mcomponents, explaining why theyâ€™re essential to the construction of an automated process. She also discusses how to [0m
+[33mbuild process layers using interactions with web apps, Excel, and email; apply exception handling; and create and [0m
+[33mmonitor a queue.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>AWS Auto Scaling Projects: Dynamic Resource Management, Application Performance Optimization, and [0m
+[33mResilient Cloud Architecture<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Develop your AWS Auto Scaling skills in this hands-on interactive course designed for AWS beginners[0m
+[33mand intermediates as well as solutions architects and SysOps administrators. Instructor Rick Crisci demonstrates the [0m
+[33messentials of optimizing application performance, availability, and cost effectiveness in cloud environments. Find out [0m
+[33mhow AWS Auto Scaling enables the automatic adjustment of compute resources based on demand, ensuring that your [0m
+[33mapplications can efficiently handle a wide variety of workloads. Along the way, test out your new skills in the lab [0m
+[33mexercises to get practical experience configuring, testing, and fine-tuning Auto Scaling policies.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+[33m<course_title>Automate and Innovate with Chat GPT AI Agents and Zapier<[0m[33m/[0m[33mcourse_title[0m[33m>[0m
+[33m<course_description>Explore the future of work productivity: leveraging AI agents in tandem with Zapier. In this [0m
+[33mcourse, instructor Jules White shows you how to use ChatGPT, AI agents, and Zapier to build automation tools that can [0m
+[33mhandle complex tasks, boost your efficiency, and help you get more done faster with less stress. Along the way, gather [0m
+[33minsights on how to harness these tools to streamline your workflow and focus on what matters most. Upon completing this[0m
+[33mcourse, youâ€™ll be prepared to automate and innovate, transforming the way you work to achieve your [0m
+[33mgoals.<[0m[33m/[0m[33mcourse_description[0m[33m>[0m
+
+[33m<[0m[33m/[0m[33mcourses[0m[1;33m>[0m
+
+[33mPlease select the most appropriate courses to fulfill the objectives of this curriculum.[0m
+[33mREMEMBER TO PICK [0m[1;33m6[0m[33m-[0m[1;33m12[0m[33m COURSES TOTAL; NO LESS THAN SIX, NO MORE THAN TWELVE.[0m
+[33mYOU SHOULD MAKE SURE YOU ARE PROVIDING THE COURSE TITLE VERBATIM AS IT APPEARS IN THE COURSE DATABASE.[0m
+
+[33mProvide a structured Curation object that includes the topic of the curriculum and the course titles of the selected [0m
+[33mvideo courses.[0m
+[33m"Topic"[0m[33m should be the verbatim topic of the curriculum provided to you above.[0m
+
+[1;32m─────────────────────────────────────────────────────── [0mMessage[1;32m ───────────────────────────────────────────────────────[0m
+[1;36massistant:[0m
+[34mScaling Automation in the Enterprise Environment with Zapier[0m
+[34m-------------------------------------[0m
+[34mAutomate and Innovate with Chat GPT AI Agents and Zapier[0m
+[34mProgramming No-Code Integrations with Zapier[0m
+[34mEnhance Custom GPTs with Zapier Actions[0m
+[34mMicrosoft Dynamics [0m[1;34m365[0m[34m and the Power Platform[0m
+[34mMicrosoft Power Automate Essential Training[0m
+[34mAWS Auto Scaling Projects: Dynamic Resource Management, Application Performance Optimization, and Resilient Cloud [0m
+[34mArchitecture[0m
+
