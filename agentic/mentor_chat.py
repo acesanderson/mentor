@@ -78,7 +78,6 @@ class MoveDirection(Enum):
 class MentorChat(Chat):
     def __init__(self, model):
         super().__init__(model)
-        self.welcome_message = "[green]Hello! Let's build a Curation together.[/green]"
         # Our simple system prompt
         self.system_prompt = system_prompt_file.read_text()
         # The console for printing
@@ -106,6 +105,24 @@ class MentorChat(Chat):
         else:
             print("[red]No aliases file found.[/red]")
             self.aliases = {}
+        if self.curation:
+            output = f"\n\n[bold cyan]{self.curation.title}[/bold cyan]\n"
+            for index, course in enumerate(self.curation.courses):
+                if course:
+                    try:
+                        course_release_date = course.metadata["Course Release Date"][:4]
+                    except (KeyError, TypeError, AttributeError):
+                        course_release_date = ""
+                    output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_release_date}[/cyan]\n"
+                else:
+                    self.console.print(
+                        f"[red]Course not found: this suggests an error in code.[/red]"
+                    )
+        else:
+            output = ""
+        self.welcome_message = (
+            "[green]Hello! Let's build a Curation together.[/green]" + output
+        )
 
     # Override functions
     def parse_input(self, input: str) -> Callable | partial | None:
