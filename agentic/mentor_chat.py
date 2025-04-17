@@ -13,9 +13,9 @@ Programming Generative AI: From Variational Autoencoders to Stable Diffusion wit
 
 Rough draft of a chatbot for building curations.
 TODO:
-- [ ] implement lazy loading
-- [ ] suppress logging from Curator
-- [ ] get queries to work
+- [x] implement lazy loading
+- [x] suppress logging from Curator
+- [x] get queries to work
 - [x] allow multiple params for query commands
 - [x] fix encoding issues
 - [x] implement numbering for courses, and referencing by number
@@ -32,6 +32,7 @@ console = Console(width=120)  # for spinner
 with console.status("[green]Loading...", spinner="dots"):
     from Chain import Chat, Model, Prompt, Chain, Message, MessageStore
     from Kramer import (
+        Get,
         Course,
         Curation,
     )
@@ -39,18 +40,21 @@ with console.status("[green]Loading...", spinner="dots"):
     from rich.markdown import Markdown
     from datetime import timedelta
     import json
-    from typing import TypeVar, Generic
+    from typing import TypeVar, Generic, Callable
     from enum import Enum
     from pathlib import Path
     import re
+    from functools import partial
 
 # Configs
 dir_path = Path(__file__).parent
 curation_save_file = dir_path / ".curation.json"
+aliases_file = dir_path / "aliases.json"
 log_file = dir_path / ".chat_log.txt"
 Chain._message_store = MessageStore(log_file=log_file)
 _ = readline.get_current_history_length()
 T = TypeVar("T")  # This is part of the dance to make UniqueList work as a type hint.
+system_prompt_file = dir_path / "system_prompt.jinja"
 
 
 class UniqueList(list, Generic[T]):  # Note the use of our TypeVar T here.
@@ -75,6 +79,9 @@ class MentorChat(Chat):
     def __init__(self, model):
         super().__init__(model)
         self.welcome_message = "[green]Hello! Let's build a Curation together.[/green]"
+        # Our simple system prompt
+        self.system_prompt = system_prompt_file.read_text()
+        # The console for printing
         self.console = console
         # The Curation we're building in the chat
         self.curation: Curation = self.load_curation()
@@ -90,8 +97,29 @@ class MentorChat(Chat):
         self.curriculum = None
         # Last cert you viewed -- saved in case you want to look at it again or promote it to curation
         self.last_cert = None
+        # Last sequence you received from consult_sequence
+        self.last_sequence = None
+        # Load the aliases file
+        if aliases_file.exists():
+            with open(aliases_file, "r") as f:
+                self.aliases = json.load(f)
+        else:
+            print("[red]No aliases file found.[/red]")
+            self.aliases = {}
 
-    # Functions
+    # Override functions
+    def parse_input(self, input: str) -> Callable | partial | None:
+        """
+        Intercept input parsing to insert aliases.
+        """
+        _parse_input = super().parse_input
+        if self.aliases:
+            for alias, command in self.aliases.items():
+                input = input.replace(alias, command)
+        else:
+            print("[red]No aliases file found.[/red]")
+        return _parse_input(input)
+
     def query_model(self, input: list[Message]) -> str | None:
         """
         Middleware that intercepts the query to parse user templates.
@@ -101,6 +129,8 @@ class MentorChat(Chat):
         {{course.transcript}} = a course (retrieved with parse_course_request)
         {{course.description}} = description of a course (retrieved with parse_course_request)
         {{course.toc}} = toc of a course (retrieved with parse_course_request)
+
+        This also intercepts any alias defined in aliases.json.
         """
         # Load the original function
         _query_model = super().query_model
@@ -246,19 +276,37 @@ class MentorChat(Chat):
         for index, course in enumerate(courselist):
             self.course_cache[index + 1] = course.course_title
 
-    def print_course_list(self, courselist: list[Course]):
+    def print_course_list(self, courselist: list[Course], sort: bool = True):
         """
         Formats courselist (with numbers) and prints to console.
         Invoked whenever we want to present a course list to a user.
+        Sort is True by default, meaning we sort by course release date.
+        We want False for lists that need to retain their sequence (i.e. curation)
         """
+        # sort the courselist by course.metadata["Course Release Date"], descending
+        if sort:
+            sorted_list = []
+            for course in courselist:
+                try:
+                    course_release_date = course.metadata["Course Release Date"][:4]
+                except (KeyError, TypeError, AttributeError):
+                    course_release_date = ""
+                sorted_list.append((course, course_release_date))
+            sorted_list.sort(key=lambda x: x[1], reverse=True)
+            courselist = [x[0] for x in sorted_list]
         for index, course in enumerate(courselist):
-            try:
-                course_release_date = course.metadata["Course Release Date"][:4]
-            except (KeyError, TypeError):
-                course_release_date = ""
-            self.console.print(
-                f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_release_date}[/cyan]"
-            )
+            if course:
+                try:
+                    course_release_date = course.metadata["Course Release Date"][:4]
+                except (KeyError, TypeError, AttributeError):
+                    course_release_date = ""
+                self.console.print(
+                    f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_release_date}[/cyan]"
+                )
+            else:
+                self.console.print(
+                    f"[red]Course not found: this suggests an error in code.[/red]"
+                )
         self.update_course_cache(courselist)
 
     def number_courses(self) -> dict:
@@ -508,8 +556,11 @@ class MentorChat(Chat):
             if feedback:
                 course_rating = feedback[1]
                 no_of_ratings = feedback[2]
+                normalized = (
+                    2.5 * course_rating - 7.5
+                )  # The data is actually 3-5, so we want to normalize it to 0-5
                 ratings.append(course_rating)
-                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_rating:.2f}[/cyan] from [green]{no_of_ratings} ratings.[/green]\n"
+                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_rating:.2f}[/cyan] from [green]{no_of_ratings} ratings.[/green] ({normalized:.2f})\n"
             else:
                 output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][red]No feedback available.[/red]\n"
         # Calculate the overall score of the curation
@@ -676,7 +727,7 @@ class MentorChat(Chat):
             self.console.print("[red]No curation (yet).[/red]")
         else:
             self.console.print(f"[bold cyan]{self.curation.title}[/bold cyan]")
-            self.print_course_list(self.curation.courses)
+            self.print_course_list(self.curation.courses, sort=False)
 
     def command_view_cache(self):
         """
@@ -730,6 +781,48 @@ class MentorChat(Chat):
             self.curation.courses.append(course)
             self.add_to_workspace(course)
             self.save_curation()
+
+    def command_multi(self):
+        """
+        Temporarily enter multiline input mode to paste in a list of courses.
+        Hit Enter twice to submit.
+        """
+        self.console.print(
+            "Multiline mode activated. Paste course titles below:", style="yellow"
+        )
+        self.console.print(
+            "Press Enter twice on an empty line when finished.", style="yellow"
+        )
+        lines = []
+        empty_line_count = 0
+        while empty_line_count < 2:
+            try:
+                line = input()
+                if not line.strip():
+                    empty_line_count += 1
+                else:
+                    empty_line_count = 0
+
+                lines.append(line)
+            except KeyboardInterrupt:
+                self.console.print("\nMultiline input canceled.", style="green")
+                return
+        if lines:
+            # Join the lines into a single string
+            text = "\n".join(lines).strip()
+            # Split the text into a list of courses
+            courses = text.split("\n")
+            # Add each course to the curation
+            for course in courses:
+                course_obj = self.parse_course_request(course)
+                if isinstance(course_obj, Course):
+                    self.curation.courses.append(course_obj)
+                    self.add_to_workspace(course)
+                elif isinstance(course_obj, list):
+                    self.console.print(
+                        f"[bold red]Not found:[/bold red] [red]{course}[/red]"
+                    )
+        self.console.print("Courses added to curation.", style="yellow")
 
     def command_remove_course(self, param):
         """
@@ -955,6 +1048,51 @@ class MentorChat(Chat):
         )
         self.console.print(review)
 
+    def command_consult_sequence(self):
+        """
+        Get a recommended sequence of courses.
+        """
+        from Mentor import recommend_sequence
+
+        if not self.curation:
+            self.console.print("No curation.")
+            return
+        sequence = recommend_sequence(curation=self.curation)
+        recommended_sequence: list[tuple[int, str]] = sequence.recommended_sequence
+        rationale: str = sequence.rationale
+        output = "-" * 80 + "\n"
+        output += f"[green]Recommended sequence:[/green]\n"
+        for recommendation in recommended_sequence:
+            output += f"[yellow]{recommendation[0]}[/yellow]. [cyan]{recommendation[1]}[/cyan]\n"
+        output += "-" * 80 + "\n"
+        output += f"[green]Rationale:[/green]\n"
+        output += f"[yellow]{rationale}[/yellow]\n"
+        output += "-" * 80 + "\n"
+        self.console.print(output)
+        self.last_sequence = recommended_sequence
+
+    def command_add_sequence(self):
+        """
+        Add the recommended sequence to the curation.
+        """
+        from Kramer import Get
+
+        if not self.last_sequence:
+            self.console.print("No sequence to add.")
+            return
+        last_sequence = self.last_sequence
+        self.command_clear()
+        for _, course in last_sequence:
+            try:
+                course_obj = Get(course)
+                if isinstance(course_obj, Course):
+                    self.curation.courses.append(course_obj)
+                    self.add_to_workspace(course_obj)
+                else:
+                    self.console.print(f"[red]Course not found: {course}[/red]")
+            except Exception as e:
+                self.console.print(f"[red]Error: {e}[/red]")
+
     def command_consult_learner(self, param):
         """
         Have a learner provide feedback on the curation. Need to pass an audience param.
@@ -999,6 +1137,7 @@ class MentorChat(Chat):
                 output += "---------------------------------------------------------------------\n"
                 output += f'[yellow]{prereq_dict["prerequisites"]}[/yellow]\n'
                 self.console.print(output)
+            return
         # Or if we have a param, do a single course
         course = self.parse_course_request(param)
         if isinstance(course, Course):
@@ -1025,6 +1164,40 @@ class MentorChat(Chat):
             self.console.print("Course not found.")
             return
         self.console.print(Markdown(pretty_curriculum(first_course_curriculum)))
+
+    def command_consult_title(self):
+        """
+        Generate a potential title for the curation.
+        Good for double checking you have curated effectively.
+        """
+        from Mentor.evaluation.evaluation import title_certificate
+
+        title = title_certificate(self.curation)
+        markdown = Markdown(title)
+        self.console.print(markdown)
+
+    def command_consult_partner(self):
+        """
+        Suggest 10 possible partners for the given topic.
+        """
+        from Kramer import suggest_partner
+
+        partner_suggestions = suggest_partner(self.curation, number=10)
+        partners = partner_suggestions.partners
+        for index, partner in enumerate(partners):
+            self.console.print(f"[green]{index+1}[/green]. [yellow]{partner}[/yellow]")
+
+    def command_consult_topics(self, param):
+        """
+        Get topics for a suggested partner (param).
+        """
+        from Kramer import suggest_topics
+
+        partner = param
+        topic_suggestions = suggest_topics(partner, number=10)
+        topics = topic_suggestions.content.topics
+        for index, topic in enumerate(topics):
+            self.console.print(f"[green]{index+1}[/green]. [yellow]{topic}[/yellow]")
 
     def command_consult_tools(self, param):
         """
@@ -1072,11 +1245,37 @@ class MentorChat(Chat):
         else:
             raise ValueError("Course not found.")
 
-    def command_consult_sequence(self):
+    def command_consult_score(self):
         """
-        For the courses in the Curation, provide a detailed recommendation for course order.
+        Uses a three dimensional rubric to evaluate curation quality.
         """
-        pass
+        from Winnow.evaluation.curation_rubric.curation_rubric import (
+            evaluate_curation_async,
+        )
+
+        course_rubrics, final_score = evaluate_curation_async(
+            self.curation, verbose=False
+        )
+        output = ""
+        for course_rubric in course_rubrics:
+            output += "\n"
+            dimension = course_rubric.dimension
+            score = course_rubric.score
+            rationale = course_rubric.rationale
+            output += f"[green]{dimension}[/green]: [cyan]{score:.2f}[/cyan]\n"
+            output += f"[green]Rationale:[/green] {rationale}\n"
+        output += f"\n[bold green]Final score:[/bold green] [bold yellow]{final_score:.2f}[/bold yellow]\n"
+        self.console.print(output)
+
+    def command_consult_capstone(self):
+        """
+        Suggest a capstone project for a curation.
+        """
+        from Kramer import generate_capstone_project
+
+        capstone = generate_capstone_project(self.curation)
+        markdown = Markdown(capstone)
+        self.console.print(markdown)
 
     def command_situate_course(self, param):
         """

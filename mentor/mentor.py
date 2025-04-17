@@ -183,7 +183,7 @@ def lnd_curriculum(topic: str, cache=True) -> str:
     model = Model(preferred_model)
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_lnd)
-    messages = [create_system_message(persona_lnd)]
+    messages = create_system_message(persona_lnd)
     chain = Chain(prompt=prompt, model=model)
     response = chain.run(
         messages=messages, input_variables={"topic": topic}, cache=cache
@@ -207,7 +207,7 @@ def curriculum_specialist_curriculum(
     model = Model(preferred_model)
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_curriculum_specialist)
-    messages = [create_system_message(persona_curriculum_specialist)]
+    messages = create_system_message(persona_curriculum_specialist)
     parser = Parser(Curriculum)
     chain = Chain(prompt=prompt, model=model, parser=parser)
     response = chain.run(
@@ -248,7 +248,7 @@ def identify_courses(curriculum: Curriculum, cache=True) -> Curation:
     # model = Model("llama3.1:latest")
     model = Model(preferred_model)
     prompt = Prompt(prompt_video_course_librarian)
-    messages = [create_system_message(video_course_librarian)]
+    messages = create_system_message(video_course_librarian)
     parser = Parser(Curation)  # Librarian returns a neutered Curation object
     chain = Chain(prompt=prompt, model=model, parser=parser)
     response = chain.run(
@@ -272,7 +272,7 @@ def identify_courses(curriculum: Curriculum, cache=True) -> Curation:
 
 
 def Mentor(
-    topic: str, cache=True, return_curriculum=False
+    topic: str, cache: bool = True, return_curriculum: bool = False
 ) -> Curation | tuple[Curriculum, Curation]:
     """
     Runs the entire Mentor pipeline.

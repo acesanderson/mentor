@@ -6,6 +6,8 @@ from Mentor.evaluation.evaluation import (
     classify_audience,
     title_certificate,
 )
+from Mentor.evaluation.sequence import recommend_sequence
+
 
 __all__ = [
     "Mentor",
@@ -14,4 +16,5 @@ __all__ = [
     "learner_progression",
     "classify_audience",
     "title_certificate",
+    "recommend_sequence",
 ]
