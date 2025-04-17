@@ -946,7 +946,10 @@ class MentorChat(Chat):
         """
         Build a Learning Path from the current curation.
         """
-        from Kramer import LearningPath, build_LearningPath_from_Curation
+        from Kramer import (
+            LearningPath,
+            build_LearningPath_from_Curation,
+        )
 
         if self.curation.title == "":
             self.console.print(
@@ -965,7 +968,37 @@ class MentorChat(Chat):
                 )
                 learning_path.print_markdown()
                 learning_path.save_to_google_doc()
-        self.console.print(f"LP saved to {self.curation.title}.md.", style="green")
+
+    def command_save(self, param):
+        """
+        Save as a ProfCert in the database.
+        If param = "pro", product is "Pro Cert"
+        If param = "lil", product is "LIL Pro Cert"
+        """
+        from Kramer import ProfCert, insert_cert_into_mongodb
+
+        # Save ProfCert to mongodb
+        match param:
+            case "pro":
+                product = "Pro Cert"
+            case "lil":
+                product = "LIL Pro Cert"
+            case _:
+                self.console.print("[red]Invalid product: choose `pro` or `lil`.[/red]")
+                return
+        if not self.curation:
+            self.console.print("[red]No curation.[/red]")
+            return
+        if self.curation.title == "":
+            self.console.print(
+                "[red]Curation has no title. Set one with /name curation[/red]"
+            )
+            return
+        profcert = ProfCert(
+            **self.curation.model_dump(), id=None, status="Curation", product=product
+        )
+        insert_cert_into_mongodb(profcert)
+        self.console.print(f"ProfCert saved to database.", style="green")
 
     ## LLMs! Our special prompt functions
     def command_query_curation(self, param):
