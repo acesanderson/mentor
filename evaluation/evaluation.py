@@ -2,7 +2,7 @@
 Adapted from the original review_certificates script from old Course project.
 """
 
-from Kramer import Curation
+from Kramer import Curation, Course
 from Chain import Prompt, Model, Chain
 from pathlib import Path
 
@@ -55,13 +55,20 @@ def learner_progression(
     return response.content
 
 
-def classify_audience(curation: Curation, model=Model("llama3.1:latest")) -> str:
+def classify_audience(
+    curation: Curation | Course, model=Model("llama3.1:latest")
+) -> str:
     """
     Takes a curation object and returns a classification of the audience.
     """
     prompt = Prompt(audience_prompt_string)
     chain = Chain(prompt=prompt, model=model)
-    response = chain.run(input_variables={"curriculum": curation.snapshot})
+    if isinstance(curation, Curation):
+        response = chain.run(input_variables={"curriculum": curation.snapshot})
+    elif isinstance(curation, Course):
+        response = chain.run(
+            input_variables={"curriculum": curation.course_TOC_verbose}
+        )
     return response.content
 
 
