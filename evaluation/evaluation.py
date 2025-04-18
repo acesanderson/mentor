@@ -56,14 +56,16 @@ def learner_progression(
 
 
 def classify_audience(
-    curation: Curation | Course, model=Model("llama3.1:latest")
+    curation: Curation | Course | str, model=Model("llama3.1:latest")
 ) -> str:
     """
     Takes a curation object and returns a classification of the audience.
     """
     prompt = Prompt(audience_prompt_string)
     chain = Chain(prompt=prompt, model=model)
-    if isinstance(curation, Curation):
+    if isinstance(curation, str):
+        response = chain.run(input_variables={"curriculum": curation})
+    elif isinstance(curation, Curation):
         response = chain.run(input_variables={"curriculum": curation.snapshot})
     elif isinstance(curation, Course):
         response = chain.run(
