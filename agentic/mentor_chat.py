@@ -1,28 +1,3 @@
-"""
-1. Programming Generative AI: From Variational Autoencoders to Stable Diffusion with PyTorch and Hugging Face
->> /consult prereqs 1
-Model: o3-mini   Query: [Message(role='system', content='You are an expert curriculu...
-Cache hit!
----------------------------------------------------------------------
-Programming Generative AI: From Variational Autoencoders to Stable Diffusion with PyTorch and Hugging Face
----------------------------------------------------------------------
-• Proficient Python programming skills
-• Fundamental understanding of deep learning concepts (e.g., neural networks, gradient descent, and backpropagation)
-• Basic knowledge of linear algebra and tensor/matrix operations
-• Familiarity with interactive coding environments (e.g., Jupyter Notebook or Google Colab)
-
-Rough draft of a chatbot for building curations.
-TODO:
-- [x] implement lazy loading
-- [x] suppress logging from Curator
-- [x] get queries to work
-- [x] allow multiple params for query commands
-- [x] fix encoding issues
-- [x] implement numbering for courses, and referencing by number
-- [x] implement a workspace for courses
-- [x] query_model middleware parsing templates
-"""
-
 from rich.console import Console
 
 # our imports
@@ -118,6 +93,7 @@ class MentorChat(Chat):
                     self.console.print(
                         f"[red]Course not found: this suggests an error in code.[/red]"
                     )
+                self.update_course_cache(self.curation.courses)
         else:
             output = ""
         self.welcome_message = (
@@ -712,6 +688,16 @@ class MentorChat(Chat):
         self.save_curation()
         self.console.print("[green]Curation replaced with last cert viewed.[/green]")
 
+    def command_get_tocs(self):
+        """
+        Print out tocs for the curation -- good for quickly getting entire transcripts for partner review.
+        Use /multi to populate the curation from a list of course, then invoke this command.
+        """
+        if not self.curation.courses:
+            self.console.print("[red]No courses in Curation.[/red]")
+            return
+        print(self.curation.TOCs)
+
     ## Our functions for building / editing curations
     def command_name_curation(self, param):
         """
@@ -1158,17 +1144,26 @@ class MentorChat(Chat):
         )
         self.console.print(feedback)
 
-    def command_consult_audience(self):
+    def command_consult_audience(self, param):
         """
         Classify the audience for the curation.
         """
         from Mentor import classify_audience
 
-        if not self.curation:
-            self.console.print("No curation.")
+        if param == "curation":
+            if not self.curation:
+                self.console.print("No curation.")
+                return
+            audience = classify_audience(curation=self.curation, model=self.model)
+            self.console.print(audience)
             return
-        audience = classify_audience(curation=self.curation, model=self.model)
-        self.console.print(audience)
+        # Or if we have a param, do a single course
+        course = self.parse_course_request(param)
+        if isinstance(course, Course):
+            audience = classify_audience(curation=course, model=self.model)
+            self.console.print(audience)
+        else:
+            raise ValueError("Course not found.")
 
     def command_consult_prereqs(self, param):
         """
