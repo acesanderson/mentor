@@ -342,32 +342,28 @@ class MentorChat(Chat):
                         self.curation.courses[index - 1],
                         self.curation.courses[index],
                     )
-                    # Print the new curation for user
-                    self.print_course_list(self.curation.courses)
                     # Refresh the course_cache
                     self.update_course_cache(self.curation.courses)
                     # Save the curation
                     self.save_curation()
                 else:
                     self.console.print("[red]Already at top.[/red]")
+                    return
             elif direction == MoveDirection.DOWN:
                 if index < len(self.curation.courses) - 1:
                     self.curation.courses[index], self.curation.courses[index + 1] = (
                         self.curation.courses[index + 1],
                         self.curation.courses[index],
                     )
-                    # Print the new curation for user
-                    self.print_course_list(self.curation.courses)
                     # Refresh the course_cache
                     self.update_course_cache(self.curation.courses)
                     # Save the curation
                     self.save_curation()
                 else:
                     self.console.print("[red]Already at bottom.[/red]")
+                    return
             elif direction == MoveDirection.TOP and index > 0:
                 self.curation.courses.insert(0, self.curation.courses.pop(index))
-                # Print the new curation for user
-                self.print_course_list(self.curation.courses)
                 # Refresh the course_cache
                 self.update_course_cache(self.curation.courses)
                 # Save the curation
@@ -376,8 +372,6 @@ class MentorChat(Chat):
                 direction == MoveDirection.BOTTOM
                 and index < len(self.curation.courses) - 1
             ):
-                # Print the new curation for user
-                self.print_course_list(self.curation.courses)
                 # Refresh the course_cache
                 self.update_course_cache(self.curation.courses)
                 self.curation.courses.append(self.curation.courses.pop(index))
@@ -385,6 +379,11 @@ class MentorChat(Chat):
                 self.save_curation()
         else:
             print("[red]Course not in curation.[/red]")
+            return
+
+        # Print the amended courselist.
+        # self.print_course_list(self.curation.courses)
+        self.command_view_curation()
 
     # Commands
     ## Our research functions
