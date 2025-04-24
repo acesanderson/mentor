@@ -15,9 +15,9 @@ class Sequence(BaseModel):
     The recommendations from our curriculum developer on the ideal sequence of courses.
     """
 
-    thinking: str = Field(
-        description="Your thinking as you develop your recommendation."
-    )
+    # thinking: str = Field(
+    #     description="Your thinking as you develop your recommendation."
+    # )
     recommended_sequence: list[tuple[int, str]] = Field(
         description="The recommended sequence of courses, with the number of the course in sequence and the course title."
     )
