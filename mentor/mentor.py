@@ -24,7 +24,8 @@ import argparse
 # Configs
 # ------------------------------------------------
 
-Chain._message_store = MessageStore(log_file=".log.json")
+if not Chain._message_store:
+    Chain._message_store = MessageStore(log_file=".log.json")
 Model._chain_cache = ChainCache()
 preferred_model = "o3-mini"
 # preferred_model = "gemini2.5"

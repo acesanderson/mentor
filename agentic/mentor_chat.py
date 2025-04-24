@@ -7,7 +7,6 @@ console = Console(width=120)  # for spinner
 with console.status("[green]Loading...", spinner="dots"):
     from Chain import Chat, Model, Prompt, Chain, Message, MessageStore
     from Kramer import (
-        Get,
         Course,
         Curation,
     )
@@ -26,7 +25,8 @@ dir_path = Path(__file__).parent
 curation_save_file = dir_path / ".curation.json"
 aliases_file = dir_path / "aliases.json"
 log_file = dir_path / ".chat_log.txt"
-Chain._message_store = MessageStore(log_file=log_file)
+if not Chain._message_store:
+    Chain._message_store = MessageStore(log_file=log_file)
 _ = readline.get_current_history_length()
 T = TypeVar("T")  # This is part of the dance to make UniqueList work as a type hint.
 system_prompt_file = dir_path / "system_prompt.jinja"
@@ -748,8 +748,6 @@ class MentorChat(Chat):
         """
         View a curriculum if created.
         """
-        from Mentor import Curriculum
-
         if self.curriculum:
             for module in self.curriculum.modules:
                 border = "-" * 120
@@ -1093,7 +1091,9 @@ class MentorChat(Chat):
         if not self.curation:
             self.console.print("No curation.")
             return
-        sequence = recommend_sequence(curation=self.curation)
+        sequence = recommend_sequence(
+            curation=self.curation, preferred_model=self.model.model
+        )
         recommended_sequence: list[tuple[int, str]] = sequence.recommended_sequence
         rationale: str = sequence.rationale
         output = "-" * 80 + "\n"
