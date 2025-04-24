@@ -119,6 +119,7 @@ class MentorChat(Chat):
         User templates:
         {{snapshot}} = curation snapshot (i.e. descriptions)
         {{tocs}} = curation tocs
+        {{transcripts}} = all the transcripts in a sequence
         {{course.transcript}} = a course (retrieved with parse_course_request)
         {{course.description}} = description of a course (retrieved with parse_course_request)
         {{course.toc}} = toc of a course (retrieved with parse_course_request)
@@ -130,6 +131,12 @@ class MentorChat(Chat):
         # Extract the prompt string from input
         new_prompt = str(input[-1].content)
         # Parse user queries. First, the easy substitutions.
+        if "{{transcripts}}" in new_prompt:
+            course_transcripts = ""
+            new_prompt = new_prompt.replace(
+                "{{transcripts}}",
+                f"<course_transcripts>\n{self.curation.transcript}\n</course_transcripts>",
+            )
         if "{{snapshot}}" in new_prompt:
             new_prompt = new_prompt.replace(
                 "{{snapshot}}",
@@ -845,7 +852,7 @@ class MentorChat(Chat):
             self.add_to_workspace(course)
             self.save_curation()
 
-    def command_clear(self):
+    def command_wipe(self):
         """
         Clear the current curation.
         """
