@@ -1062,6 +1062,15 @@ class MentorChat(Chat):
         self.print_course_list(hits)
         self.add_to_workspace(hits)
 
+    def command_grep(self, param):
+        """
+        "Grep" searches for a query string across all transcripts, printing surrounding context.
+        Limited to 3-4 results per course.
+        """
+        from Kramer import Grep
+
+        Grep(param, verbose=True)
+
     def command_laser(self, param):
         """
         "Laser" searches for a query string in all course titles.
