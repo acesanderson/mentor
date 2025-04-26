@@ -3,3 +3,4 @@ __pycache__/
 mentor_evaluation.json
 *.db
 .log.json
+*.txt
