@@ -718,11 +718,20 @@ class MentorChat(Chat):
         """
         View the duration of the current curation.
         """
-        if not self.curation.courses:
+        if len(self.curation.courses) == 0:
             self.console.print("[red]No courses in Curation.[/red]")
             return
-        duration = self.curation.duration
-        self.console.print(duration)
+        output = ""
+
+        for index, course in enumerate(self.curation.courses):
+            try:
+                duration_in_seconds = course.duration
+                time_str = str(timedelta(seconds=duration_in_seconds))
+                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{time_str}[/cyan]\n"
+            except:
+                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow]"
+        output += f"[bold green]Total: [/bold green]{' ' * 76}[bold cyan]{self.curation.duration}[/bold cyan]\n"
+        self.console.print(output)
 
     def command_view_curation(self):
         """
@@ -1081,6 +1090,22 @@ class MentorChat(Chat):
         hits = Laser(query)
         self.print_course_list(hits)
         self.add_to_workspace(hits)
+
+    def command_consult_summary(self, param):
+        """
+        Get a summary of a course or curation.
+        """
+        from Kramer import Summarize
+
+        if param == "curation":
+            output = Summarize(self.curation)
+            self.console.print(output)
+            return
+        # Or if we have a param, do a single course
+        course = self.parse_course_request(param)
+        if isinstance(course, Course):
+            output = Summarize(course)
+            self.console.print(output)
 
     def command_consult_lnd(self, param):
         """
