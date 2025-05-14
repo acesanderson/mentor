@@ -4,3 +4,4 @@ mentor_evaluation.json
 *.db
 .log.json
 *.txt
+*.log
