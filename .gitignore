@@ -5,3 +5,5 @@ mentor_evaluation.json
 .log.json
 *.txt
 *.log
+*.cloudpickle
+.DS_Store
