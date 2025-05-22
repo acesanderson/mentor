@@ -1289,46 +1289,29 @@ class MentorChat(Chat):
         Go through a course (or curation) to identify orgs and tools mentioned.
         Useful for identifying / crossing out potential partners.
         """
-        from Kramer import (
-            analyze_course_for_orgs_and_tools,
-            analyze_curation_for_orgs_and_tools,
-        )
+        from Kramer import GetTools
+        from collections import Counter
 
         # If user inputs "curation", get prerequisites for all courses in the curation.
         if param == "curation":
+            tool_counter = Counter()
             if len(self.curation) > 0:
-                org_counter, tool_counter = analyze_curation_for_orgs_and_tools(
-                    self.curation
-                )
-                combined_counter = org_counter + tool_counter
-                combined_counter = list(combined_counter.items())
-                combined_counter = sorted(
-                    combined_counter, key=lambda x: x[1], reverse=True
-                )
-                output = ""
-                for item in combined_counter:
-                    output += f"[green]{str(item[0])}[/green]: [yellow]{str(item[1])}[/yellow]\n"
-                self.console.print(output)
-            else:
-                raise ValueError("Curation is empty.")
+                for course in self.curation.courses:
+                    tools = GetTools(course)
+                    tool_counter += tools
         # Or if we have a param, do a single course
-        course = self.parse_course_request(param)
-        if isinstance(course, Course):
-            org_counter, tool_counter = analyze_course_for_orgs_and_tools(course)
-            # Combine org_counter and tool_counter into a combined_counter
-            combined_counter = org_counter + tool_counter
-            combined_counter = list(combined_counter.items())
-            combined_counter = sorted(
-                combined_counter, key=lambda x: x[1], reverse=True
-            )
-            output = ""
-            for item in combined_counter:
-                output += (
-                    f"[green]{str(item[0])}[/green]: [yellow]{str(item[1])}[/yellow]\n"
-                )
-            self.console.print(output)
         else:
-            raise ValueError("Course not found.")
+            course = self.parse_course_request(param)
+            if isinstance(course, Course):
+                tool_counter = GetTools(course)
+            else:
+                raise ValueError("Course not found.")
+        # Print our tool counter
+        if tool_counter:
+            output = ""
+            for tool, count in tool_counter.most_common():
+                output += f"[green]{tool}[/green]: [yellow]{count}[/yellow]\n"
+            self.console.print(output)
 
     def command_consult_score(self):
         """
