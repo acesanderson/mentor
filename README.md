@@ -1,89 +1,129 @@
-# Mentor: Learning Path Generation
+# Mentor
 
-## Overview
+**AI-powered curriculum generation for corporate learning programs**
 
-Welcome to the **Mentor: Learning Path Generation** project! This project is designed to facilitate the creation of tailored learning paths using advanced AI-driven models. Whether you're involved in corporate training or personal career development, this tool helps you design effective, structured curricula from a vast library of video courses.
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Key Features
+Mentor automatically generates structured learning curricula from topic descriptions, curates relevant courses from your video library, and provides comprehensive evaluation tools for corporate training programs.
 
-- **AI-Powered Curation**: Uses language models to design and structure comprehensive learning paths.
-- **Custom Learning Paths**: Generates curricula based on specified topics, complete with organized modules and objectives.
-- **Video Course Integration**: Selects appropriate video courses aligned with outlined learning objectives.
-- **Structured Output**: Provides well-organized JSON representations of curricula for easy integration into Learning Management Systems (LMS).
+## Quick Start
 
-## How It Works
-
-1. **Define a Topic**: Start by specifying the topic of interest for the learning path.
-2. **Generate Curriculum**: An experienced L&D model provides an ideal curriculum outline.
-3. **Structure Curriculum**: A Curriculum Structuring Specialist model converts the outline into a machine-readable format.
-4. **Course Curation**: Video Course Librarian model selects the best-fitting courses to match the curriculum objectives.
-
-## Caveats
-- LLM models are non-deterministic, and you will get different results on each run of the script.
-- The RAG pipeline (from [Curator](https://github.com/acesanderson/Curator)) does its best to find the most relevant courses, but will struggle if there isn't a clear match. 
-
-## Dependencies
-- See requirements.txt for pip packages
-
-## User Guide
-
-### Prerequisites
-
-- Python 3.x
-- Install required Python packages using: 
-  ```bash
-  pip install -r requirements.txt
-  ```
-- You need to install the following additional packages:
- - [Curator](https://github.com/acesanderson/Curator): for the Librarian to be able to access course data
- - [Chain](https://github.com/acesanderson/Chain): for our LLM calls
-
-### Running the Program
-
-1. **Clone the Repository**: Download the project files.
-   ```bash
-   git clone <repository-url>
-   cd Mentor-Learning-Path-Generation
-   ```
-
-2. **Access Command-Line**: Navigate to the project directory.
-
-3. **Execute Script**: Run the Mentor program with a specified topic.
-   ```bash
-   python Mentor.py "<Your-Topic-Here>"
-   ```
-   Replace `<Your-Topic-Here>` with your desired topic, e.g., "Data Science Basics".
-
-4. **View Results**: The console will display:
-   - An ideal curriculum plan for the topic.
-   - A JSON representation of the structured curriculum.
-   - A selection of suitable video courses (Curation object).
-
-### Example
-
-For generating a learning path on "Data Science Basics":
 ```bash
-python Mentor.py "Data Science Basics"
+# Install Mentor
+pip install .
 
-{
-  "topic": "Data Science Basics",
-  "course_titles": [
-    "Introduction to Data Science",
-    "Probability Foundations for Data Science",
-    "pandas Essential Training",
-    "Data Visualization with Matplotlib and Seaborn",
-    "Artificial Intelligence Foundations: Machine Learning",
-    "Intermediate SQL for Data Scientists",
-    "Foundations of Responsible AI",
-    "Ethics and Law in Data Analytics"
-  ]
-}
+# Generate a curriculum
+from Mentor import Mentor
+curriculum = Mentor("Data Science for Business Analysts")
+print(curriculum)
 ```
 
-### Upcoming Features
-- LP copy generation for resulting Curation object
-- Agentic workflows that send reviews back to Librarian
+**Output:**
+```
+Curation: Data Science Fundamentals for Business Analysis
+Courses:
+1. Excel for Data Analysis
+2. Introduction to Python for Data Science
+3. Statistical Analysis Fundamentals
+4. Data Visualization with Power BI
+5. Business Intelligence Reporting
+6. Predictive Analytics for Business
+```
 
+## Core Features
 
+### 🤖 **AI Curriculum Generation**
+- **Topic-to-Curriculum**: Transform any learning topic into a structured curriculum using multi-agent AI workflow
+- **Course Curation**: Automatically select and sequence courses from your video library
+- **Smart Evaluation**: Built-in quality assessment and learner progression analysis
 
+### 💬 **Interactive Chat Interface**
+- **Natural Language Commands**: Research courses, build curricula, and get expert feedback through chat
+- **Template System**: Use `{{course.transcript}}`, `{{snapshot}}`, `{{tocs}}` for dynamic content queries
+- **Workspace Management**: Organize and manipulate course collections with numbered references
 
+### 📊 **Evaluation & Analytics**
+- **Multi-perspective Review**: Get feedback from L&D specialists and simulated learners
+- **Sequence Optimization**: AI-recommended course ordering for optimal learning progression
+- **Quality Scoring**: Comprehensive rubric-based assessment of curriculum quality
+
+## Installation
+
+```bash
+git clone https://github.com/yourusername/Mentor.git
+cd Mentor
+pip install -e .
+```
+
+## Usage Examples
+
+### Programmatic API
+
+```python
+from Mentor import Mentor, review_curriculum, recommend_sequence
+
+# Generate a complete curriculum
+curriculum = Mentor("Python for Business Analysts")
+
+# Get expert review
+review = review_curriculum(curriculum, audience="Business Analysts")
+
+# Optimize course sequence
+sequence = recommend_sequence(curriculum)
+```
+
+### Interactive Chat Mode
+
+```python
+from Mentor.agentic import MentorChat
+from Chain import Model
+
+chat = MentorChat(Model("claude"))
+chat.chat()
+```
+
+**Chat Commands:**
+```bash
+/mentor "Machine Learning for Marketing"  # Generate curriculum
+/curate "data visualization"              # Search similar courses  
+/add course 1 2 3                        # Add courses to curation
+/consult sequence                         # Get recommended ordering
+/view curation                            # Show current curriculum
+```
+
+## Architecture
+
+Mentor uses a three-agent workflow:
+
+1. **L&D Specialist**: Designs ideal curriculum structure from topic description
+2. **Curriculum Specialist**: Converts designs into structured learning modules  
+3. **Course Librarian**: Maps modules to actual courses using RAG (Retrieval-Augmented Generation)
+
+Each agent has specialized prompts and expertise areas, ensuring high-quality, pedagogically sound curricula.
+
+## Key Components
+
+| Component | Purpose |
+|-----------|---------|
+| `Mentor()` | Main curriculum generation function |
+| `MentorChat` | Interactive curriculum building interface |
+| `review_curriculum()` | Expert evaluation of learning paths |
+| `recommend_sequence()` | AI-optimized course ordering |
+| `Curriculum` | Structured curriculum data model |
+
+## Configuration
+
+Mentor integrates with your existing course library through the `Curator` and `Kramer` modules (course search and retrieval). Configure your course database connection in the respective modules.
+
+## Contributing
+
+Mentor is designed for corporate learning teams building at scale. See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup and contribution guidelines.
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+---
+
+**Need help?** Mentor is optimized for corporate training environments with large video course libraries. For support with integration or customization, please open an issue.
