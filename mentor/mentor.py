@@ -9,24 +9,25 @@ Three personas are leveraged:
 
 from Mentor.mentor.CurriculumModule import Curriculum
 from Curator import Curate
-from Chain import (
+from conduit.sync import (
     Prompt,
     Model,
-    Chain,
-    ChainCache,
-    Parser,
-    MessageStore,
-    create_system_message,
+    Conduit,
+    ConduitCache,
 )
-from Kramer import Get, Curation
+from conduit.parser.parser import Parser
+from conduit.message.messagestore import MessageStore
+from conduit.message.textmessage import create_system_message
+from conduit.message.textmessage import TextMessage
+from kramer import Get, Curation
 import argparse
 
 # Configs
 # ------------------------------------------------
 
-if not Chain._message_store:
-    Chain._message_store = MessageStore(log_file=".log.json")
-Model._chain_cache = ChainCache()
+if not Conduit._message_store:
+    Conduit._message_store = MessageStore(log_file=".log.json")
+Model._conduit_cache = ConduitCache()
 preferred_model = "gpt"
 # preferred_model = "gemini2.5"
 
@@ -172,7 +173,7 @@ Provide a structured Curation object that includes the topic of the curriculum a
 "Topic" should be the verbatim topic of the curriculum provided to you above.
 """.strip()
 
-# Our chains
+# Our conduits
 # ------------------------------------------------
 
 
@@ -185,10 +186,11 @@ def lnd_curriculum(topic: str, cache=True) -> str:
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_lnd)
     messages = create_system_message(persona_lnd)
-    chain = Chain(prompt=prompt, model=model)
-    response = chain.run(
-        messages=messages, input_variables={"topic": topic}, cache=cache
-    )
+    assert len(messages) == 1
+    assert Conduit._message_store is not None
+    Conduit._message_store.append(messages[0])
+    conduit = Conduit(prompt=prompt, model=model)
+    response = conduit.run(input_variables={"topic": topic}, cache=cache)
     # Extract the answer from between the XML tags
     response_content = response.content
     start = response_content.find("<curriculum_description>") + len(
@@ -209,10 +211,17 @@ def curriculum_specialist_curriculum(
     # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_curriculum_specialist)
     messages = create_system_message(persona_curriculum_specialist)
+    assert len(messages) == 1
+    assert Conduit._message_store is not None
+    # We only allow one system message so this has to be a user message followed by an assistant ack.
+    user_message = messages[0]
+    user_message.role = "user"
+    assistant_message = TextMessage(role="assistant", content="Acknowledged.")
+    Conduit._message_store.append(user_message)
+    Conduit._message_store.append(assistant_message)
     parser = Parser(Curriculum)
-    chain = Chain(prompt=prompt, model=model, parser=parser)
-    response = chain.run(
-        messages=messages,
+    conduit = Conduit(prompt=prompt, model=model, parser=parser)
+    response = conduit.run(
         input_variables={"ideal_curriculum": ideal_curriculum, "topic": topic},
         cache=cache,
     )
@@ -241,7 +250,7 @@ def identify_courses(curriculum: Curriculum, cache=True) -> Curation:
     for course in recommended_courses:
         try:
             course_context += f"<course_title>{course.course_title}</course_title>\n"
-            course_context += f"<course_description>{course.metadata["Course Description"]}</course_description>\n"
+            course_context += f"<course_description>{course.metadata['Course Description']}</course_description>\n"
         except Exception as e:
             print(f"Error retrieving course: {e}")
             continue
@@ -250,12 +259,19 @@ def identify_courses(curriculum: Curriculum, cache=True) -> Curation:
     model = Model(preferred_model)
     prompt = Prompt(prompt_video_course_librarian)
     messages = create_system_message(video_course_librarian)
+    assert len(messages) == 1
+    assert Conduit._message_store is not None
+    # We only allow one system message so this has to be a user message followed by an assistant ack.
+    user_message = messages[0]
+    user_message.role = "user"
+    assistant_message = TextMessage(role="assistant", content="Acknowledged.")
+    Conduit._message_store.append(user_message)
+    Conduit._message_store.append(assistant_message)
     parser = Parser(Curation)  # Librarian returns a neutered Curation object
-    chain = Chain(prompt=prompt, model=model, parser=parser)
-    response = chain.run(
-        messages=messages,
+    conduit = Conduit(prompt=prompt, model=model, parser=parser)
+    response = conduit.run(
         input_variables={
-            "topic": module.title,
+            "topic": curriculum.topic,
             "curriculum": curriculum,
             "courses": course_context,
         },
@@ -279,6 +295,7 @@ def Mentor(
     Runs the entire Mentor pipeline.
     """
     ideal_curriculum = lnd_curriculum(topic, cache=cache)
+    print(ideal_curriculum)
     curriculum = curriculum_specialist_curriculum(ideal_curriculum, topic, cache=cache)
     curation = identify_courses(curriculum, cache=cache)
     if return_curriculum:

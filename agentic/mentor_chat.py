@@ -5,11 +5,11 @@ from rich.console import Console
 console = Console(width=120)  # for spinner
 
 with console.status("[green]Loading...", spinner="dots"):
-    from Chain import Chat, Model, Prompt, Chain, Message, MessageStore
-    from Kramer import (
-        Course,
-        Curation,
-    )
+    from conduit.sync import Model, Prompt, Conduit, Message
+    from conduit.chat.chat import Chat
+    from conduit.message.messagestore import MessageStore
+    from kramer.courses.Course import Course
+    from kramer.courses.Curation import Curation
     import readline  # This silently enables input history for `input`
     from rich.markdown import Markdown
     from datetime import timedelta
@@ -25,8 +25,8 @@ dir_path = Path(__file__).parent
 curation_save_file = dir_path / ".curation.json"
 aliases_file = dir_path / "aliases.json"
 log_file = dir_path / ".chat_log.txt"
-if not Chain._message_store:
-    Chain._message_store = MessageStore(log_file=log_file)
+if not Conduit._message_store:
+    Conduit._message_store = MessageStore(log_file=log_file)
 _ = readline.get_current_history_length()
 T = TypeVar("T")  # This is part of the dance to make UniqueList work as a type hint.
 system_prompt_file = dir_path / "system_prompt.jinja"
@@ -88,7 +88,7 @@ class MentorChat(Chat):
                         course_release_date = course.metadata["Course Release Date"][:4]
                     except (KeyError, TypeError, AttributeError):
                         course_release_date = ""
-                    output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_release_date}[/cyan]\n"
+                    output += f"[green]{index + 1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_release_date}[/cyan]\n"
                 else:
                     self.console.print(
                         f"[red]Course not found: this suggests an error in code.[/red]"
@@ -186,7 +186,7 @@ class MentorChat(Chat):
         Numbering: starts in curation, then workspace.
         If course request is a string, return the course with that ID. (Get already parses course IDs v. titles)
         """
-        from Kramer import Get
+        from kramer.courses.Get import Get
 
         if (
             " " in course_request and course_request.replace(" ", "").isdigit()
@@ -220,7 +220,7 @@ class MentorChat(Chat):
         """
         Add a course or courses to workspace, if not already there.
         """
-        from Kramer import Get
+        from kramer.courses.Get import Get
 
         course_titles = [course.course_title for course in self.workspace]
         if isinstance(payload, Course):
@@ -301,7 +301,7 @@ class MentorChat(Chat):
                 except (KeyError, TypeError, AttributeError):
                     course_release_date = ""
                 self.console.print(
-                    f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_release_date}[/cyan]"
+                    f"[green]{index + 1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_release_date}[/cyan]"
                 )
             else:
                 self.console.print(
@@ -533,14 +533,14 @@ class MentorChat(Chat):
         if self.curation.title:
             output += f"[bold cyan]{self.curation.title}[/bold cyan]\n"
         for index, course in enumerate(self.curation.courses):
-            output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course.metadata["LI Level"]}[/cyan]\n"
+            output += f"[green]{index + 1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course.metadata['LI Level']}[/cyan]\n"
         self.console.print(output)
 
     def command_view_feedback(self):
         """
         Get learner feedback for a course.
         """
-        from Kramer import get_feedback_by_course_id
+        from kramer.analyses.feedback.PGRES_feedback import get_feedback_by_course_id
 
         if len(self.curation.courses) == 0:
             self.console.print("[red]No courses in Curation.[/red]")
@@ -559,9 +559,9 @@ class MentorChat(Chat):
                     2.5 * course_rating - 7.5
                 )  # The data is actually 3-5, so we want to normalize it to 0-5
                 ratings.append(course_rating)
-                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_rating:.2f}[/cyan] from [green]{no_of_ratings} ratings.[/green] ({normalized:.2f})\n"
+                output += f"[green]{index + 1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{course_rating:.2f}[/cyan] from [green]{no_of_ratings} ratings.[/green] ({normalized:.2f})\n"
             else:
-                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][red]No feedback available.[/red]\n"
+                output += f"[green]{index + 1}[/green]. [yellow]{course.course_title:<80}[/yellow][red]No feedback available.[/red]\n"
         # Calculate the overall score of the curation
         if ratings:
             overall_score = sum(ratings) / len(ratings)
@@ -608,7 +608,7 @@ class MentorChat(Chat):
         """
         Get a list of courses by instructor name.
         """
-        from Kramer import instructor_courses
+        from kramer.courses.InstructorData import instructor_courses
 
         instructor = param
         hits = instructor_courses(instructor)
@@ -624,7 +624,7 @@ class MentorChat(Chat):
         Logic is custom since Curator returns course name and score (not Course objects).
         """
         from Curator import Curate
-        from Kramer import Get
+        from kramer.courses.Get import Get
 
         query = param
         results = Curate(query, n_results=100, k=10)
@@ -644,7 +644,7 @@ class MentorChat(Chat):
                 except (KeyError, TypeError):
                     course_release_date = ""
                 self.console.print(
-                    f"[green]{index+1}[/green]. [yellow]{course_title: <80}[/yellow]\t[magenta]{score}[/magenta]\t[cyan]{course_release_date}[/cyan]"
+                    f"[green]{index + 1}[/green]. [yellow]{course_title: <80}[/yellow]\t[magenta]{score}[/magenta]\t[cyan]{course_release_date}[/cyan]"
                 )
         self.course_cache = {
             index + 1: course.course_title for index, (course, _) in enumerate(results)
@@ -671,7 +671,7 @@ class MentorChat(Chat):
         """
         Get a cert for comparison purposes.
         """
-        from Kramer.certs.GetCert import GetCert
+        from kramer.certs.GetCert import GetCert
 
         if param == "last":
             cert = self.last_cert
@@ -727,9 +727,9 @@ class MentorChat(Chat):
             try:
                 duration_in_seconds = course.duration
                 time_str = str(timedelta(seconds=duration_in_seconds))
-                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{time_str}[/cyan]\n"
+                output += f"[green]{index + 1}[/green]. [yellow]{course.course_title:<80}[/yellow][cyan]{time_str}[/cyan]\n"
             except:
-                output += f"[green]{index+1}[/green]. [yellow]{course.course_title:<80}[/yellow]"
+                output += f"[green]{index + 1}[/green]. [yellow]{course.course_title:<80}[/yellow]"
         output += f"[bold green]Total: [/bold green]{' ' * 76}[bold cyan]{self.curation.duration}[/bold cyan]\n"
         self.console.print(output)
 
@@ -751,7 +751,7 @@ class MentorChat(Chat):
         """
         View the course cache.
         """
-        from Kramer import Get
+        from kramer.courses.Get import Get
 
         indices = sorted(list(self.course_cache.keys()))
         courses = []
@@ -771,7 +771,7 @@ class MentorChat(Chat):
                 self.console.print(border)
                 self.console.print(f"[yellow]{module.description}[/yellow]")
                 self.console.print(
-                    f"[cyan]\t{"\n\t".join(module.learning_objectives)}[/cyan]"
+                    f"[cyan]\t{'\n\t'.join(module.learning_objectives)}[/cyan]"
                 )
         else:
             self.console.print("[red]No curriculum created.[/red]")
@@ -784,9 +784,9 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if isinstance(course, list):
-            if param.replace(
-                " ", ""
-            ).isdigit():  # If it's a list and the param reduces to digits, it was a bulk request
+            if (
+                param.replace(" ", "").isdigit()
+            ):  # If it's a list and the param reduces to digits, it was a bulk request
                 for item in course:
                     self.curation.courses.append(item)
                     self.add_to_workspace(item)
@@ -847,9 +847,9 @@ class MentorChat(Chat):
         """
         course = self.parse_course_request(param)
         if isinstance(course, list):
-            if param.replace(
-                " ", ""
-            ).isdigit():  # If it's a list and the param reduces to digits, it was a bulk request
+            if (
+                param.replace(" ", "").isdigit()
+            ):  # If it's a list and the param reduces to digits, it was a bulk request
                 for item in course:
                     self.curation.courses.remove(item)
                     self.add_to_workspace(item)
@@ -962,7 +962,7 @@ class MentorChat(Chat):
         """
         Build a Learning Path from the current curation.
         """
-        from Kramer import (
+        from kramer.courses.LearningPath import (
             LearningPath,
             build_LearningPath_from_Curation,
         )
@@ -991,7 +991,7 @@ class MentorChat(Chat):
         If param = "pro", product is "Pro Cert"
         If param = "lil", product is "LIL Pro Cert"
         """
-        from Kramer import ProfCert, insert_cert_into_mongodb
+        from kramer.database.MongoDB_certs import ProfCert, insert_cert_into_mongodb
 
         # Save ProfCert to mongodb
         match param:
@@ -1027,8 +1027,8 @@ class MentorChat(Chat):
         query = f"Look at this description of a curriculum for an online learning program and then answer the question:\n<curriculum>{self.curation.snapshot}</curriculum>"
         query += f"\n\n<question>{param}</question>"
         prompt = Prompt(query)
-        chain = Chain(model=self.model, prompt=prompt)
-        response = chain.run()
+        conduit = Conduit(model=self.model, prompt=prompt)
+        response = conduit.run()
         self.console.print(response)
 
     def command_query_TOCs(self, param):
@@ -1041,8 +1041,8 @@ class MentorChat(Chat):
         query = f"Look at this description of a curriculum for an online learning program and then answer the question:\n<curriculum>{self.curation.TOCs}</curriculum>"
         query += f"\n\n<question>{param}</question>"
         prompt = Prompt(query)
-        chain = Chain(model=self.model, prompt=prompt)
-        response = chain.run()
+        conduit = Conduit(model=self.model, prompt=prompt)
+        response = conduit.run()
         self.console.print(response)
 
     def command_query_transcript(self, param):
@@ -1056,15 +1056,15 @@ class MentorChat(Chat):
             query += f"\n\n<question>{param}</question>"
             prompt = Prompt(query)
             model = Model("llama3.1:latest")
-            chain = Chain(model=model, prompt=prompt)
-            response = chain.run()
+            conduit = Conduit(model=model, prompt=prompt)
+            response = conduit.run()
             self.console.print(response)
 
     def command_lens(self, param):
         """
         "Lens" performs text search across all transcript, returns course titles that contain the query string.
         """
-        from Kramer import Lens
+        from kramer.courses.Lens import Lens
 
         query = param
         hits = Lens(query)
@@ -1076,7 +1076,7 @@ class MentorChat(Chat):
         "Grep" searches for a query string across all transcripts, printing surrounding context.
         Limited to 3-4 results per course.
         """
-        from Kramer import Grep
+        from kramer.courses.Lens import Grep
 
         Grep(param, verbose=True)
 
@@ -1084,7 +1084,7 @@ class MentorChat(Chat):
         """
         "Laser" searches for a query string in all course titles.
         """
-        from Kramer import Laser
+        from kramer.courses.Laser import Laser
 
         query = param
         hits = Laser(query)
@@ -1095,7 +1095,7 @@ class MentorChat(Chat):
         """
         Get a summary of a course or curation.
         """
-        from Kramer import Summarize
+        from kramer.transcripts.Summarize import Summarize
 
         if param == "curation":
             output = Summarize(self.curation)
@@ -1151,7 +1151,7 @@ class MentorChat(Chat):
         """
         Add the recommended sequence to the curation.
         """
-        from Kramer import Get
+        from kramer.courses.Get import Get
 
         if not self.last_sequence:
             self.console.print("No sequence to add.")
@@ -1209,7 +1209,10 @@ class MentorChat(Chat):
         """
         Get prerequisites for a course. (or entire curation -- input "curation")
         """
-        from Kramer import get_course_prerequisites, get_curation_prerequisites
+        from kramer.courses.Prerequisites import (
+            get_course_prerequisites,
+            get_curation_prerequisites,
+        )
 
         # If user inputs "curation", get prerequisites for all courses in the curation.
         if param == "curation":
@@ -1218,9 +1221,9 @@ class MentorChat(Chat):
             for prereq_dict in prereqs_dicts:
                 output = ""
                 output += "---------------------------------------------------------------------\n"
-                output += f'[green]{prereq_dict["course_title"]}[/green]\n'
+                output += f"[green]{prereq_dict['course_title']}[/green]\n"
                 output += "---------------------------------------------------------------------\n"
-                output += f'[yellow]{prereq_dict["prerequisites"]}[/yellow]\n'
+                output += f"[yellow]{prereq_dict['prerequisites']}[/yellow]\n"
                 self.console.print(output)
             return
         # Or if we have a param, do a single course
@@ -1240,7 +1243,7 @@ class MentorChat(Chat):
         """
         Consult for a curation based on the first, foundational course.
         """
-        from Kramer.courses.FirstCourse import first_course, pretty_curriculum
+        from kramer.courses.FirstCourse import first_course, pretty_curriculum
 
         course = self.parse_course_request(param)
         try:
@@ -1265,31 +1268,33 @@ class MentorChat(Chat):
         """
         Suggest 10 possible partners for the given topic.
         """
-        from Kramer import suggest_partner
+        from kramer.courses.Partner import suggest_partner
 
         partner_suggestions = suggest_partner(self.curation, number=10)
         partners = partner_suggestions.partners
         for index, partner in enumerate(partners):
-            self.console.print(f"[green]{index+1}[/green]. [yellow]{partner}[/yellow]")
+            self.console.print(
+                f"[green]{index + 1}[/green]. [yellow]{partner}[/yellow]"
+            )
 
     def command_consult_topics(self, param):
         """
         Get topics for a suggested partner (param).
         """
-        from Kramer import suggest_topics
+        from kramer.courses.Topic import suggest_topics
 
         partner = param
         topic_suggestions = suggest_topics(partner, number=10)
         topics = topic_suggestions.content.topics
         for index, topic in enumerate(topics):
-            self.console.print(f"[green]{index+1}[/green]. [yellow]{topic}[/yellow]")
+            self.console.print(f"[green]{index + 1}[/green]. [yellow]{topic}[/yellow]")
 
     def command_consult_tools(self, param):
         """
         Go through a course (or curation) to identify orgs and tools mentioned.
         Useful for identifying / crossing out potential partners.
         """
-        from Kramer import GetTools
+        from kramer.transcripts.Tools import GetTools
         from collections import Counter
 
         # If user inputs "curation", get prerequisites for all courses in the curation.
@@ -1339,7 +1344,7 @@ class MentorChat(Chat):
         """
         Suggest a capstone project for a curation.
         """
-        from Kramer import generate_capstone_project
+        from kramer.courses.Capstone import generate_capstone_project
 
         capstone = generate_capstone_project(self.curation)
         markdown = Markdown(capstone)
