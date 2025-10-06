@@ -88,7 +88,7 @@ def generate_score(curation: Curation, certs: list[Curation], n: int = 10) -> fl
     return score
 
 
-def mentor_evaluation_chain(
+def mentor_evaluation_conduit(
     topic: str, certs: list[Curation]
 ) -> tuple[Curation, float]:
     """
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     for i in range(n_iterations):
         console.print(f"[green]Evaluating {i+1}/{n_iterations}...[/green]")
         try:
-            curation, score = mentor_evaluation_chain(test_topic, certs)
+            curation, score = mentor_evaluation_conduit(test_topic, certs)
             console.print("[yellow]----------------------------[/yellow]")
             console.print("[cyan]" + curation + "[/cyan]")
             console.print("[yellow]----------------------------[/yellow]")

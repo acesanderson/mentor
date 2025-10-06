@@ -1,4 +1,4 @@
-from Chain import ReACT, Model, Parser
+from conduit import ReACT, Model, Parser
 from Curator import Curate
 from Mentor import (
     review_curriculum,
