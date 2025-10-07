@@ -3,9 +3,9 @@ all-MiniLM-L6-v2 is a lightweight model that does NOT use prompting.
 Later, try the bge family of models (fex. BAAI/bge-small-en-v1.5) then pass prompt_name in the .encode function.
 """
 
-from Kramer import Curation
+from kramer.courses.Curation import Curation
 from sentence_transformers import SentenceTransformer
-from Kramer.certs.CertsCRUD import get_all_cert_titles, get_cert_by_name
+from kramer.database.MongoDB_certs import get_all_cert_titles, get_cert_by_title
 from torch import Tensor
 from mentor import Mentor
 from statistics import mean
@@ -27,7 +27,7 @@ def get_certs() -> list[Curation]:
     cert_titles = get_all_cert_titles()
     certs = []
     for cert_title in cert_titles:
-        cert = get_cert_by_name(cert_title)
+        cert = get_cert_by_title(cert_title)
         try:
             certs.append(cert)
         except Exception as e:
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     test_results = []
     n_iterations = 100
     for i in range(n_iterations):
-        console.print(f"[green]Evaluating {i+1}/{n_iterations}...[/green]")
+        console.print(f"[green]Evaluating {i + 1}/{n_iterations}...[/green]")
         try:
             curation, score = mentor_evaluation_conduit(test_topic, certs)
             console.print("[yellow]----------------------------[/yellow]")

@@ -2,8 +2,9 @@
 Adapted from the original review_certificates script from old Course project.
 """
 
-from Kramer import Curation, Course
-from conduit import Prompt, Model, Conduit
+from kramer.courses.Curation import Curation
+from kramer.courses.Course import Course
+from conduit.sync import Prompt, Model, Conduit, Response
 from pathlib import Path
 
 
@@ -34,10 +35,12 @@ def review_curriculum(curation: Curation, audience: str, model=Model("claude")) 
     """
     prompt = Prompt(curriculum_review_prompt_string)
     conduit = Conduit(prompt=prompt, model=model)
+    breakpoint()
     response = conduit.run(
         input_variables={"curriculum": curation.snapshot, "audience": audience}
     )
-    return response.content
+    assert isinstance(response, Response), "Response is not of type Response"
+    return str(response.content)
 
 
 def learner_progression(
@@ -52,7 +55,8 @@ def learner_progression(
     response = conduit.run(
         input_variables={"curriculum": curation.TOCs, "audience": audience}
     )
-    return response.content
+    assert isinstance(response, Response), "Response is not of type Response"
+    return str(response.content)
 
 
 def classify_audience(
@@ -71,7 +75,8 @@ def classify_audience(
         response = conduit.run(
             input_variables={"curriculum": curation.course_TOC_verbose}
         )
-    return response.content
+    assert isinstance(response, Response), "Response is not of type Response"
+    return str(response.content)
 
 
 def title_certificate(curation: Curation, model=Model("llama3.1:latest")) -> str:
@@ -84,4 +89,5 @@ def title_certificate(curation: Curation, model=Model("llama3.1:latest")) -> str
     response = conduit.run(
         input_variables={"curation": curation.snapshot, "blacklist": blacklist}
     )
-    return response.content
+    assert isinstance(response, Response), "Response is not of type Response"
+    return str(response.content)
