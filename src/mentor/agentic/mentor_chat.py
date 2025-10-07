@@ -25,8 +25,8 @@ dir_path = Path(__file__).parent
 curation_save_file = dir_path / ".curation.json"
 aliases_file = dir_path / "aliases.json"
 log_file = dir_path / ".chat_log.txt"
-if not Conduit._message_store:
-    Conduit._message_store = MessageStore(log_file=log_file)
+if not Conduit.message_store:
+    Conduit.message_store = MessageStore(log_file=log_file)
 _ = readline.get_current_history_length()
 T = TypeVar("T")  # This is part of the dance to make UniqueList work as a type hint.
 system_prompt_file = dir_path / "system_prompt.jinja"
@@ -655,7 +655,7 @@ class MentorChat(Chat):
         """
         Have a Mentor generate a Curation.
         """
-        from mentor import Mentor
+        from mentor.mentor.mentor import Mentor
 
         query = param
         curriculum, mentor_curation = Mentor(query, return_curriculum=True)
@@ -1111,7 +1111,7 @@ class MentorChat(Chat):
         """
         Have an L&D expert critique the curation. Need to pass an audience param.
         """
-        from mentor import review_curriculum
+        from mentor.evaluation.evaluation import review_curriculum
 
         audience = param
         if not self.curation:
@@ -1126,7 +1126,7 @@ class MentorChat(Chat):
         """
         Get a recommended sequence of courses.
         """
-        from mentor import recommend_sequence
+        from mentor.evaluation.evaluation import recommend_sequence
 
         if not self.curation:
             self.console.print("No curation.")
