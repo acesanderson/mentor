@@ -22,9 +22,6 @@ with open(dir_path / prompts / "title_prompt.jinja", "r") as f:
     title_prompt_string = f.read()
 with open(dir_path / prompts / "query_prompt.jinja", "r") as f:
     query_prompt_string = f.read()
-# Blacklist
-with open(dir_path / prompts / "blacklist.txt", "r") as f:
-    blacklist = ",".join(f.read().split("\n"))
 
 
 # Our conduits
@@ -86,8 +83,6 @@ def title_certificate(curation: Curation, model=Model("llama3.1:latest")) -> str
     """
     prompt = Prompt(title_prompt_string)
     conduit = Conduit(prompt=prompt, model=model)
-    response = conduit.run(
-        input_variables={"curation": curation.snapshot, "blacklist": blacklist}
-    )
+    response = conduit.run(input_variables={"curation": curation.snapshot})
     assert isinstance(response, Response), "Response is not of type Response"
     return str(response.content)
