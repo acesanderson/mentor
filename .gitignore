@@ -8,3 +8,4 @@ mentor_evaluation.json
 *.cloudpickle
 .DS_Store
 agentic/.curation.json
+!blacklist.txt
