@@ -1,6 +1,6 @@
 from pathlib import Path
 import json
-from Kramer import Curation
+from kramer.courses.Curation import Curation
 import Levenshtein
 
 dir_path = Path(__file__).resolve().parent

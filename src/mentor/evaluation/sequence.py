@@ -1,5 +1,6 @@
-from conduit import Conduit, Prompt, Model, Parser
-from Kramer import Curation
+from conduit.sync import Conduit, Prompt, Model, Response
+from conduit.parser.parser import Parser
+from kramer.courses.Curation import Curation
 from pydantic import BaseModel, Field
 from pathlib import Path
 
@@ -34,11 +35,12 @@ def recommend_sequence(curation: Curation, preferred_model="claude") -> Sequence
     parser = Parser(Sequence)  # type: ignore
     conduit = Conduit(prompt=prompt, model=model, parser=parser)
     response = conduit.run(input_variables={"snapshot": curation.snapshot})
+    assert isinstance(response, Response)
     return response.content
 
 
 if __name__ == "__main__":
-    from Kramer import get_sample_curation
+    from kramer.courses.Curation import get_sample_curation
 
     curation = get_sample_curation()
     sequence = recommend_sequence(curation)

@@ -8,7 +8,7 @@ Three personas are leveraged:
 """
 
 from mentor.mentor.CurriculumModule import Curriculum
-from Curator import Curate
+from curator.curate import Curate
 from conduit.sync import (
     Prompt,
     Model,
@@ -19,7 +19,8 @@ from conduit.parser.parser import Parser
 from conduit.message.messagestore import MessageStore
 from conduit.message.textmessage import create_system_message
 from conduit.message.textmessage import TextMessage
-from kramer import Get, Curation
+from kramer.courses.Get import Get
+from kramer.courses.Curation import Curation
 import argparse
 
 # Configs
