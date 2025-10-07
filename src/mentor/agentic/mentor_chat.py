@@ -655,7 +655,7 @@ class MentorChat(Chat):
         """
         Have a Mentor generate a Curation.
         """
-        from Mentor import Mentor
+        from mentor import Mentor
 
         query = param
         curriculum, mentor_curation = Mentor(query, return_curriculum=True)
@@ -1111,7 +1111,7 @@ class MentorChat(Chat):
         """
         Have an L&D expert critique the curation. Need to pass an audience param.
         """
-        from Mentor import review_curriculum
+        from mentor import review_curriculum
 
         audience = param
         if not self.curation:
@@ -1126,7 +1126,7 @@ class MentorChat(Chat):
         """
         Get a recommended sequence of courses.
         """
-        from Mentor import recommend_sequence
+        from mentor import recommend_sequence
 
         if not self.curation:
             self.console.print("No curation.")
@@ -1173,7 +1173,7 @@ class MentorChat(Chat):
         """
         Have a learner provide feedback on the curation. Need to pass an audience param.
         """
-        from Mentor import learner_progression
+        from mentor import learner_progression
 
         audience = param
         if not self.curation:
@@ -1188,7 +1188,7 @@ class MentorChat(Chat):
         """
         Classify the audience for the curation.
         """
-        from Mentor import classify_audience
+        from mentor import classify_audience
 
         if param == "curation":
             if not self.curation:
@@ -1258,7 +1258,7 @@ class MentorChat(Chat):
         Generate a potential title for the curation.
         Good for double checking you have curated effectively.
         """
-        from Mentor.evaluation.evaluation import title_certificate
+        from mentor.evaluation.evaluation import title_certificate
 
         title = title_certificate(self.curation)
         markdown = Markdown(title)
