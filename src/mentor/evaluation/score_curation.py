@@ -7,7 +7,7 @@ from Kramer import Curation
 from sentence_transformers import SentenceTransformer
 from Kramer.certs.CertsCRUD import get_all_cert_titles, get_cert_by_name
 from torch import Tensor
-from Mentor import Mentor
+from mentor import Mentor
 from statistics import mean
 import json
 from pathlib import Path

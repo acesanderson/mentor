@@ -1,5 +1,5 @@
 from review_certificates import review_curriculum, learner_progression 
-from Mentor import Mentor
+from mentor import Mentor
 from conduit import Prompt, Model, Conduit
 
 if __name__ == "__main__":

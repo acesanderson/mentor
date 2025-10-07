@@ -4,35 +4,9 @@ from review_certificates import (
     learner_progression,
     create_curriculum_text_for_review,
 )
-from Mentor import Mentor
-import pickle
+from mentor import Mentor
 
 Conduit.message_store = MessageStore(log_file="log.json")
-
-example_topics = """
-Leadership Pipeline for Enterprise Growth
-Process Management for Operational Excellence
-Data Analytics for Strategic Decision Making
-Management Excellence in Global Organizations
-Design Thinking for Product Innovation
-Project Management for Complex Initiatives
-Executive Development for Digital Age Leaders
-Strategic Communication for Stakeholder Engagement
-Cross-Cultural Business for Global Markets
-Digital Transformation for Traditional Industries
-Change Management for Technology Adoption
-IT Infrastructure for Cloud Migration
-Compliance Management for Financial Services
-Revenue Growth through Customer Analytics
-Employee Development for High Performance Teams
-Marketing Strategy for B2B Markets
-Business Analytics for Predictive Planning
-Supply Conduit Optimization for Sustainability
-Security Protocols for Remote Workforce
-HR Management for Talent Retention
-""".strip().split(
-    "\n"
-)
 
 react_prompt = """
 You are an AI agent tasked with improving a curriculum curation for a skill-based learning program. 
@@ -98,33 +72,22 @@ ReACT is not quite right here, how we define the fuction.
 """
 
 if __name__ == "__main__":
-    with open("cached.pkl", "rb") as f:
-        cached = pickle.load(f)
-    print(f"{len(cached)} objects cached")
-    for topic in example_topics:
-        c = Mentor(topic)
-        critique = review_curriculum(c, "Data Scientists")
-        curriculum = create_curriculum_text_for_review(c)
-        input_variables = {
-            "CURRICULUM": curriculum,
-            "CURATION_OBJECT": c.model_dump(),
-            "CRITIQUE": critique,
-        }
-        cached.append(input_variables)
-        with open("cached.pkl", "wb") as f:
-            pickle.dump(cached, f)
-
-
-"""
+    topic = "Data Science with Python"
+    print("Generating curriculum for", topic)
+    c = Mentor(topic)
+    print("Reviewing curriculum for", topic)
+    critique = review_curriculum(c, "Data Scientists")
+    print("\n=========\ncritique\n=========\n", critique)
+    curriculum = create_curriculum_text_for_review(c)
+    print("\n=========\ncurriculum\n=========\n", curriculum)
     m = Model("gpt")
     p = Prompt(react_prompt)
     conduit = Conduit(p, m)
     response = conduit.run(
         input_variables={
-            "CURRICULUM": curriculum,
+            "CURRICULUM": topic,
             "CURATION_OBJECT": c,
             "CRITIQUE": critique,
         }
     )
     print("\n=========\nresponse\n=========\n", response.content)
-"""

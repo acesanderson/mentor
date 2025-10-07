@@ -7,7 +7,7 @@ Three personas are leveraged:
 - a Course Librarian who is provided with the RAG (output of Curator queries) and designs a Curation object.
 """
 
-from Mentor.mentor.CurriculumModule import Curriculum
+from mentor.mentor.CurriculumModule import Curriculum
 from Curator import Curate
 from conduit.sync import (
     Prompt,

@@ -1,6 +1,6 @@
 from conduit import ReACT, Model, Parser
 from Curator import Curate
-from Mentor import (
+from mentor import (
     review_curriculum,
     learner_progression,
 )
