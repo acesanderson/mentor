@@ -26,9 +26,9 @@ import argparse
 # Configs
 # ------------------------------------------------
 
-if not Conduit._message_store:
-    Conduit._message_store = MessageStore(log_file=".log.json")
-Model._conduit_cache = ConduitCache()
+if not Conduit.message_store:
+    Conduit.message_store = MessageStore(log_file=".log.json")
+Model.conduit_cache = ConduitCache()
 preferred_model = "gpt"
 # preferred_model = "gemini2.5"
 
