@@ -9,3 +9,4 @@ mentor_evaluation.json
 .DS_Store
 agentic/.curation.json
 !blacklist.txt
+uv.lock
