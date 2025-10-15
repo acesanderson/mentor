@@ -522,6 +522,17 @@ class MentorChat(Chat):
         snapshot_text = Markdown(snapshot_text)
         self.console.print(snapshot_text)
 
+    def command_view_tocs(self):
+        """
+        Get the combined table of contents of the curation, nicely formatted.
+        """
+        if not self.curation:
+            self.console.print("[red]No curation.[/red]")
+            return
+        tocs = self.curation.TOCs
+        tocs = Markdown(tocs)
+        self.console.print(tocs)
+
     def command_view_difficulty(self):
         """
         Get the difficulty (LI Level) for each course.
@@ -1126,7 +1137,7 @@ class MentorChat(Chat):
         """
         Get a recommended sequence of courses.
         """
-        from mentor.evaluation.evaluation import recommend_sequence
+        from mentor.evaluation.sequence import recommend_sequence
 
         if not self.curation:
             self.console.print("No curation.")
@@ -1400,7 +1411,11 @@ class MentorChat(Chat):
         self.console.print("Workspace cleared.", style="green")
 
 
-if __name__ == "__main__":
+def main():
     model = Model("claude")
     chat = MentorChat(model)
     chat.chat()
+
+
+if __name__ == "__main__":
+    main()

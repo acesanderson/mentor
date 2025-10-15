@@ -32,7 +32,6 @@ def review_curriculum(curation: Curation, audience: str, model=Model("claude")) 
     """
     prompt = Prompt(curriculum_review_prompt_string)
     conduit = Conduit(prompt=prompt, model=model)
-    breakpoint()
     response = conduit.run(
         input_variables={"curriculum": curation.snapshot, "audience": audience}
     )
