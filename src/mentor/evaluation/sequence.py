@@ -1,5 +1,6 @@
-from Chain import Chain, Prompt, Model, Parser
-from Kramer import Curation
+from conduit.sync import Conduit, Prompt, Model, Response
+from conduit.parser.parser import Parser
+from kramer.courses.Curation import Curation
 from pydantic import BaseModel, Field
 from pathlib import Path
 
@@ -24,7 +25,7 @@ class Sequence(BaseModel):
     rationale: str = Field(description="The rationale behind the recommended sequence.")
 
 
-# Our chain
+# Our conduit
 def recommend_sequence(curation: Curation, preferred_model="claude") -> Sequence:
     """
     Recommend a sequence of courses based on the provided curation.
@@ -32,13 +33,14 @@ def recommend_sequence(curation: Curation, preferred_model="claude") -> Sequence
     prompt = Prompt(sequence_prompt)
     model = Model(preferred_model)
     parser = Parser(Sequence)  # type: ignore
-    chain = Chain(prompt=prompt, model=model, parser=parser)
-    response = chain.run(input_variables={"snapshot": curation.snapshot})
+    conduit = Conduit(prompt=prompt, model=model, parser=parser)
+    response = conduit.run(input_variables={"snapshot": curation.snapshot})
+    assert isinstance(response, Response)
     return response.content
 
 
 if __name__ == "__main__":
-    from Kramer import get_sample_curation
+    from kramer.courses.Curation import get_sample_curation
 
     curation = get_sample_curation()
     sequence = recommend_sequence(curation)

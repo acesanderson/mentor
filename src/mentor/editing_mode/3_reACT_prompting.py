@@ -1,12 +1,12 @@
-from Chain import Prompt, Model, Chain, MessageStore
+from conduit import Prompt, Model, Conduit, MessageStore
 from review_certificates import (
     review_curriculum,
     learner_progression,
     create_curriculum_text_for_review,
 )
-from Mentor import Mentor
+from mentor import Mentor
 
-Chain.message_store = MessageStore(log_file="log.json")
+Conduit.message_store = MessageStore(log_file="log.json")
 
 react_prompt = """
 You are an AI agent tasked with improving a curriculum curation for a skill-based learning program. 
@@ -82,8 +82,8 @@ if __name__ == "__main__":
     print("\n=========\ncurriculum\n=========\n", curriculum)
     m = Model("gpt")
     p = Prompt(react_prompt)
-    chain = Chain(p, m)
-    response = chain.run(
+    conduit = Conduit(p, m)
+    response = conduit.run(
         input_variables={
             "CURRICULUM": topic,
             "CURATION_OBJECT": c,

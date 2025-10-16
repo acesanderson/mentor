@@ -7,3 +7,6 @@ mentor_evaluation.json
 *.log
 *.cloudpickle
 .DS_Store
+agentic/.curation.json
+!blacklist.txt
+uv.lock

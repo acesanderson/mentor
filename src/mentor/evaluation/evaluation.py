@@ -2,8 +2,9 @@
 Adapted from the original review_certificates script from old Course project.
 """
 
-from Kramer import Curation, Course
-from Chain import Prompt, Model, Chain
+from kramer.courses.Curation import Curation
+from kramer.courses.Course import Course
+from conduit.sync import Prompt, Model, Conduit, Response
 from pathlib import Path
 
 
@@ -21,23 +22,21 @@ with open(dir_path / prompts / "title_prompt.jinja", "r") as f:
     title_prompt_string = f.read()
 with open(dir_path / prompts / "query_prompt.jinja", "r") as f:
     query_prompt_string = f.read()
-# Blacklist
-with open(dir_path / prompts / "blacklist.txt", "r") as f:
-    blacklist = ",".join(f.read().split("\n"))
 
 
-# Our chains
+# Our conduits
 def review_curriculum(curation: Curation, audience: str, model=Model("claude")) -> str:
     """
     This is a generic review prompt. Grain of salt on results.
     Prompt takes curation and audience as input variables.
     """
     prompt = Prompt(curriculum_review_prompt_string)
-    chain = Chain(prompt=prompt, model=model)
-    response = chain.run(
+    conduit = Conduit(prompt=prompt, model=model)
+    response = conduit.run(
         input_variables={"curriculum": curation.snapshot, "audience": audience}
     )
-    return response.content
+    assert isinstance(response, Response), "Response is not of type Response"
+    return str(response.content)
 
 
 def learner_progression(
@@ -48,11 +47,12 @@ def learner_progression(
     Prompt takes curation and audience as input variables.
     """
     prompt = Prompt(learner_progression_prompt_string)
-    chain = Chain(prompt=prompt, model=model)
-    response = chain.run(
+    conduit = Conduit(prompt=prompt, model=model)
+    response = conduit.run(
         input_variables={"curriculum": curation.TOCs, "audience": audience}
     )
-    return response.content
+    assert isinstance(response, Response), "Response is not of type Response"
+    return str(response.content)
 
 
 def classify_audience(
@@ -62,16 +62,17 @@ def classify_audience(
     Takes a curation object and returns a classification of the audience.
     """
     prompt = Prompt(audience_prompt_string)
-    chain = Chain(prompt=prompt, model=model)
+    conduit = Conduit(prompt=prompt, model=model)
     if isinstance(curation, str):
-        response = chain.run(input_variables={"curriculum": curation})
+        response = conduit.run(input_variables={"curriculum": curation})
     elif isinstance(curation, Curation):
-        response = chain.run(input_variables={"curriculum": curation.snapshot})
+        response = conduit.run(input_variables={"curriculum": curation.snapshot})
     elif isinstance(curation, Course):
-        response = chain.run(
+        response = conduit.run(
             input_variables={"curriculum": curation.course_TOC_verbose}
         )
-    return response.content
+    assert isinstance(response, Response), "Response is not of type Response"
+    return str(response.content)
 
 
 def title_certificate(curation: Curation, model=Model("llama3.1:latest")) -> str:
@@ -80,8 +81,7 @@ def title_certificate(curation: Curation, model=Model("llama3.1:latest")) -> str
     Prompt takes curation and black list (as defined in blacklist.conf) as input variables.
     """
     prompt = Prompt(title_prompt_string)
-    chain = Chain(prompt=prompt, model=model)
-    response = chain.run(
-        input_variables={"curation": curation.snapshot, "blacklist": blacklist}
-    )
-    return response.content
+    conduit = Conduit(prompt=prompt, model=model)
+    response = conduit.run(input_variables={"curation": curation.snapshot})
+    assert isinstance(response, Response), "Response is not of type Response"
+    return str(response.content)

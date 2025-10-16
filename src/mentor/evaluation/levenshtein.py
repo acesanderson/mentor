@@ -1,6 +1,6 @@
 from pathlib import Path
 import json
-from Kramer import Curation
+from kramer.courses.Curation import Curation
 import Levenshtein
 
 dir_path = Path(__file__).resolve().parent
@@ -9,7 +9,8 @@ json_file = dir_path / "mentor_evaluation.json"
 with open(json_file, "r") as file:
     data = json.load(file)
 
-if __name__ == "__main__":
+
+def evaluate_levenshtein(data, topic):
     curations = []
     for datum in data:
         json_obj, score = json.loads(datum[0]), datum[1]
@@ -18,7 +19,7 @@ if __name__ == "__main__":
     # Sort curations by score
     # curations.sort(key=lambda x: x[0], reverse=False)
     # Print the top 5 curations
-    title = "Business Analysis Foundations"
+    title = topic
     levenshtein_distances = []
     for _, curation in curations:
         levenshtein_distances.append(
@@ -28,3 +29,9 @@ if __name__ == "__main__":
     levenshtein_distances.sort(key=lambda x: x[0])
     for d in levenshtein_distances[:10]:
         print(d[1])
+        print("\n")
+
+
+if __name__ == "__main__":
+    topic = "Business Analysis Foundations"
+    evaluate_levenshtein(data, topic)

@@ -1,13 +1,13 @@
-from Chain import Prompt, Model, Chain, MessageStore
+from conduit import Prompt, Model, Conduit, MessageStore
 from review_certificates import (
     review_curriculum,
     learner_progression,
     create_curriculum_text_for_review,
 )
-from Mentor import Mentor
+from mentor import Mentor
 import pickle
 
-Chain.message_store = MessageStore(log_file="log.json")
+Conduit.message_store = MessageStore(log_file="log.json")
 
 example_topics = """
 Leadership Pipeline for Enterprise Growth
@@ -27,7 +27,7 @@ Revenue Growth through Customer Analytics
 Employee Development for High Performance Teams
 Marketing Strategy for B2B Markets
 Business Analytics for Predictive Planning
-Supply Chain Optimization for Sustainability
+Supply Conduit Optimization for Sustainability
 Security Protocols for Remote Workforce
 HR Management for Talent Retention
 """.strip().split(
@@ -118,8 +118,8 @@ if __name__ == "__main__":
 """
     m = Model("gpt")
     p = Prompt(react_prompt)
-    chain = Chain(p, m)
-    response = chain.run(
+    conduit = Conduit(p, m)
+    response = conduit.run(
         input_variables={
             "CURRICULUM": curriculum,
             "CURATION_OBJECT": c,

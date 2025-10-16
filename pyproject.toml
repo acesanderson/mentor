@@ -1,16 +1,38 @@
+[build-system]                                                             
+requires = ["hatchling"]                                                   
+build-backend = "hatchling.build"                                          
+
 [project]
 name = "mentor"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
-    "chain",
+    "conduit",
     "kramer",
+    "levenshtein>=0.27.1",
+    "motor>=3.7.1",
     "pandas>=2.3.2",
+    "pillow>=11.3.0",
+    "psycopg2-binary>=2.9.10",
+    "pymongo>=4.15.1",
     "rapidfuzz>=3.14.1",
+    "rich>=14.1.0",
 ]
 
+# ── Hatchling (build) ──────────────────────────────────────────────────────────
+# Point Hatchling at the src/ package; this is the critical bit for src-layout.
+[tool.hatch.build.targets.wheel]
+packages = ["src/mentor"]
+sources = ["src"]
+include = ["src/mentor/py.typed"]
+
 [tool.uv.sources]
-chain = { path = "../Chain", editable = true }
-kramer = { path = "../Kramer", editable = true }
+kramer = { path = "../kramer-project", editable = true }
+conduit = { path = "../conduit-project", editable = true }
+curator = { path = "../curator-project", editable = true }
+
+[project.scripts]
+mentor = "mentor.agentic.mentor_chat:main"
+curate = "mentor.curator.curate:main"
