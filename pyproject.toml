@@ -4,4 +4,13 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "chain",
+    "kramer",
+    "pandas>=2.3.2",
+    "rapidfuzz>=3.14.1",
+]
+
+[tool.uv.sources]
+chain = { path = "../Chain", editable = true }
+kramer = { path = "../Kramer", editable = true }
