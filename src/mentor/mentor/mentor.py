@@ -8,7 +8,7 @@ Three personas are leveraged:
 """
 
 from mentor.mentor.CurriculumModule import Curriculum
-from curator.curate import Curate
+from mentor.curator.curate import Curate
 from conduit.sync import (
     Prompt,
     Model,

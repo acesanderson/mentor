@@ -623,7 +623,7 @@ class MentorChat(Chat):
         Similarity search courses by a query string.
         Logic is custom since Curator returns course name and score (not Course objects).
         """
-        from curator.curate import Curate
+        from mentor.curator.curate import Curate
         from kramer.courses.Get import Get
 
         query = param
