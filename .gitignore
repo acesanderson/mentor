@@ -10,3 +10,4 @@ mentor_evaluation.json
 agentic/.curation.json
 !blacklist.txt
 uv.lock
+src/mentor/agentic/.curation.json
