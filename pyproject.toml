@@ -10,6 +10,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "conduit",
+    "curator",
     "kramer",
     "levenshtein>=0.27.1",
     "motor>=3.7.1",
@@ -31,7 +32,6 @@ include = ["src/mentor/py.typed"]
 [tool.uv.sources]
 kramer = { path = "../kramer-project", editable = true }
 conduit = { path = "../conduit-project", editable = true }
-curator = { path = "../curator-project", editable = true }
 
 [project.scripts]
 mentor = "mentor.agentic.mentor_chat:main"
