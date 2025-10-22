@@ -19,17 +19,17 @@ with console.status("[green]Loading...", spinner="dots"):
     from pathlib import Path
     import re
     from functools import partial
+    from xdg_base_dirs import xdg_data_home
 
 # Configs
-dir_path = Path(__file__).parent
-curation_save_file = dir_path / ".curation.json"
-aliases_file = dir_path / "aliases.json"
-log_file = dir_path / ".chat_log.txt"
+DIR_PATH = Path(__file__).parent
+CURATION_SAVE_FILE = xdg_data_home() / ".curation.json"
+ALIASES_FILE = DIR_PATH / "aliases.json"
+SYSTEM_PROMPT_FILE = DIR_PATH / "system_prompt.jinja"
 if not Conduit.message_store:
-    Conduit.message_store = MessageStore(log_file=log_file)
+    Conduit.message_store = MessageStore()
 _ = readline.get_current_history_length()
 T = TypeVar("T")  # This is part of the dance to make UniqueList work as a type hint.
-system_prompt_file = dir_path / "system_prompt.jinja"
 
 
 class UniqueList(list, Generic[T]):  # Note the use of our TypeVar T here.
@@ -54,7 +54,7 @@ class MentorChat(Chat):
     def __init__(self, model):
         super().__init__(model)
         # Our simple system prompt
-        self.system_prompt = system_prompt_file.read_text()
+        self.system_prompt = SYSTEM_PROMPT_FILE.read_text()
         # The console for printing
         self.console = console
         # The Curation we're building in the chat
@@ -65,8 +65,6 @@ class MentorChat(Chat):
         self.blacklist: UniqueList[Course] = UniqueList()
         # A course cache (for short term memory of numbers-> courses)
         self.course_cache: dict[int, str] = {}
-        # We want a log file for this one.
-        self.log_file = log_file
         # Save curriculum if it's generated.
         self.curriculum = None
         # Last cert you viewed -- saved in case you want to look at it again or promote it to curation
@@ -74,8 +72,8 @@ class MentorChat(Chat):
         # Last sequence you received from consult_sequence
         self.last_sequence = None
         # Load the aliases file
-        if aliases_file.exists():
-            with open(aliases_file, "r") as f:
+        if ALIASES_FILE.exists():
+            with open(ALIASES_FILE, "r") as f:
                 self.aliases = json.load(f)
         else:
             print("[red]No aliases file found.[/red]")
@@ -249,12 +247,12 @@ class MentorChat(Chat):
         return time_str
 
     def save_curation(self):
-        with open(curation_save_file, "w") as f:
+        with open(CURATION_SAVE_FILE, "w") as f:
             json.dump(self.curation.model_dump_json(), f)
 
     def load_curation(self) -> Curation:
-        if curation_save_file.exists():
-            with open(curation_save_file, "r") as f:
+        if CURATION_SAVE_FILE.exists():
+            with open(CURATION_SAVE_FILE, "r") as f:
                 try:
                     curation = Curation.model_validate_json(json.load(f))
                     return curation
@@ -878,7 +876,7 @@ class MentorChat(Chat):
         """
         self.curation = Curation(title="", courses=UniqueList())
         self.console.print("Curation cleared.")
-        with open(curation_save_file, "w") as f:
+        with open(CURATION_SAVE_FILE, "w") as f:
             pass
 
     # Reorder / move courses around.

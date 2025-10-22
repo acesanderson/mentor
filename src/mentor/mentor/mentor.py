@@ -1,4 +1,10 @@
 """
+CURRENTLY BROKEN
+What needs to be fixed for this to work:
+- conversation-level messagestore implementation (not singleton)
+"""
+
+"""
 This script builds a prompt flow over Curator.
 
 Three personas are leveraged:
@@ -28,9 +34,8 @@ import argparse
 
 if not Conduit.message_store:
     Conduit.message_store = MessageStore(log_file=".log.json")
-Model.conduit_cache = ConduitCache()
+Model.conduit_cache = ConduitCache(name="mentor")
 preferred_model = "gpt"
-# preferred_model = "gemini2.5"
 
 
 # Persona prompts
@@ -183,10 +188,9 @@ def lnd_curriculum(topic: str, cache=True) -> str:
     We have an L&D professional dream up an ideal curriculum.
     Returns a string.
     """
+    Conduit.message_store.ensure_system_message(persona_lnd)
     model = Model(preferred_model)
-    # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_lnd)
-    messages = create_system_message(persona_lnd)
     assert len(messages) == 1
     assert Conduit._message_store is not None
     Conduit._message_store.append(messages[0])
@@ -209,11 +213,8 @@ def curriculum_specialist_curriculum(
     Interprets the L&D professional's suggestions into a curriculum object.
     """
     model = Model(preferred_model)
-    # model = Model('llama3.1:latest')
     prompt = Prompt(prompt_curriculum_specialist)
     messages = create_system_message(persona_curriculum_specialist)
-    assert len(messages) == 1
-    assert Conduit._message_store is not None
     # We only allow one system message so this has to be a user message followed by an assistant ack.
     user_message = messages[0]
     user_message.role = "user"
