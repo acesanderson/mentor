@@ -19,6 +19,7 @@ dependencies = [
     "pymongo>=4.15.1",
     "rapidfuzz>=3.14.1",
     "rich>=14.1.0",
+    "siphonserver",
     "torch"
 ]
 
@@ -38,7 +39,8 @@ explicit = true
 torch = { index = "pytorch-cu128" }
 kramer = { path = "../kramer-project", editable = true }
 conduit = { path = "../conduit-project", editable = true }
+siphonserver = { path = "../siphonserver-project", editable = true }
 
 [project.scripts]
-mentor = "mentor.agentic.mentor_chat:main"
-curate = "mentor.curator.curate:main"
+mentor = "mentor.scripts.mentor_cli:main"
+curate = "mentor.scripts.curate_cli:main"

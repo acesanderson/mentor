@@ -1409,13 +1409,3 @@ class MentorChat(Chat):
         """
         self.workspace = UniqueList()
         self.console.print("Workspace cleared.", style="green")
-
-
-def main():
-    model = Model("claude")
-    chat = MentorChat(model)
-    chat.chat()
-
-
-if __name__ == "__main__":
-    main()

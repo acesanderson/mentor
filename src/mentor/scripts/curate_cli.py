@@ -1,0 +1,91 @@
+from siphonserver.client.siphonclient import (
+    SiphonClient,
+    CuratorRequest,
+    CuratorResponse,
+)
+import argparse
+from rich.console import Console
+
+console = Console()
+
+
+def query_server(
+    query_string: str,
+    k: int = 5,
+    n_results: int = 50,
+    model_name: str = "bge",
+    cached=True,
+) -> list[tuple]:
+    request = CuratorRequest(
+        query_string=query_string,
+        k=k,
+        n_results=n_results,
+        model_name=model_name,
+        cached=cached,
+    )
+    client = SiphonClient()
+    response: CuratorResponse = client.curate(request)
+    results = response.results
+    results_tuples = [(result.id, result.score) for result in results]
+    return results_tuples
+
+
+def main():
+    # Our arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument("query_string", nargs="?", help="A query for the text.")
+    parser.add_argument(
+        "-k",
+        "--number_responses",
+        type=int,
+        default=5,
+        help="Original pool size: this is 5 by default.",
+    )
+    parser.add_argument(
+        "-n",
+        "--original_batch_size",
+        type=int,
+        default=50,
+        help="Number of responses: this is 50 by default.",
+    )
+    parser.add_argument(
+        "-m",
+        "--model_name",
+        type=str,
+        default="bge",
+        help="Model name to use for embeddings: this is 'bge' by default.",
+    )
+    parser.add_argument(
+        "-c",
+        "--no_cache",
+        action="store_true",
+        default=False,
+        help="Disable caching for this query.",
+    )
+    args = parser.parse_args()
+    query_string = args.query_string
+    if args.number_responses:
+        k = args.number_responses
+    else:
+        k = 5
+    if args.original_batch_size:
+        n = args.original_batch_size
+    else:
+        n = 50
+    results = query_server(
+        query_string,
+        k=k,
+        n_results=n,
+        model_name=args.model_name,
+        cached=args.no_cache,
+    )
+    console.print(f"[green]Query: {query_string}[/green]")
+    console.print(
+        "[yellow]------------------------------------------------------------------------[/yellow]"
+    )
+    for result in results:
+        print(result)
+
+
+if __name__ == "__main__":
+    main()
