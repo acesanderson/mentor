@@ -27,7 +27,7 @@ def main():
         "-m",
         "--model_name",
         type=str,
-        default="bge",
+        default="mxbai",
         help="Model name to use for embeddings: this is 'bge' by default.",
     )
     parser.add_argument(
@@ -52,7 +52,7 @@ def main():
         k=k,
         n_results=n,
         model_name=args.model_name,
-        cached=args.no_cache,
+        cached=not args.no_cache,
     )
     console.print(f"[green]Query: {query_string}[/green]")
     console.print(
