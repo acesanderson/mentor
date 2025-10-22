@@ -20,6 +20,7 @@ dependencies = [
     "rapidfuzz>=3.14.1",
     "rich>=14.1.0",
     "siphonserver",
+    "torch"
 ]
 
 # ── Hatchling (build) ──────────────────────────────────────────────────────────
@@ -28,11 +29,6 @@ dependencies = [
 packages = ["src/mentor"]
 sources = ["src"]
 include = ["src/mentor/py.typed"]
-
-# -- Torch Dependency Management -----------------------------------------------
-[project.optional-dependencies]
-ml-server = ["torch==2.9.0+cu128"]
-default = ["torch==2.9.0"]
 
 [[tool.uv.index]]
 name = "pytorch-cu128"
