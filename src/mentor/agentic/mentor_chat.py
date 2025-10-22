@@ -634,11 +634,11 @@ class MentorChat(Chat):
         Similarity search courses by a query string.
         Logic is custom since Curator returns course name and score (not Course objects).
         """
-        from mentor.curator.curate import Curate
+        from mentor.curator.curate_client import query_server
         from kramer.courses.Get import Get
 
         query = param
-        results = Curate(query, n_results=100, k=10)
+        results = query_server(query, n_results=100, k=10)
         results = [(Get(course), score) for course, score in results]
         if any([course == None for (course, _) in results]):
             self.console.print(
