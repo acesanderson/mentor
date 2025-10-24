@@ -19,8 +19,6 @@ dependencies = [
     "pymongo>=4.15.1",
     "rapidfuzz>=3.14.1",
     "rich>=14.1.0",
-    "siphonserver",
-    "torch"
 ]
 
 # ── Hatchling (build) ──────────────────────────────────────────────────────────
@@ -30,18 +28,11 @@ packages = ["src/mentor"]
 sources = ["src"]
 include = ["src/mentor/py.typed"]
 
-[[tool.uv.index]]
-name = "pytorch-cu128"
-url = "https://download.pytorch.org/whl/cu128"
-explicit = true
-
 # ── uv sources (local/editable deps) ───────────────────────────────────────────
 # Also include torch from the custom index above
 [tool.uv.sources]
-torch = { index = "pytorch-cu128" }
 kramer = { path = "../kramer-project", editable = true }
 conduit = { path = "../conduit-project", editable = true }
-siphonserver = { path = "../siphonserver-project", editable = true }
 
 [project.scripts]
 mentor = "mentor.scripts.mentor_cli:main"
