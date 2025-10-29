@@ -1,8 +1,5 @@
-from siphonserver.client.siphonclient import (
-    SiphonClient,
-    CuratorRequest,
-    CuratorResponse,
-)
+from headwater_client.client.headwater_client import HeadwaterClient
+from headwater_api.classes import CuratorRequest, CuratorResponse
 
 
 def query_server(
@@ -19,8 +16,8 @@ def query_server(
         model_name=model_name,
         cached=cached,
     )
-    client = SiphonClient()
-    response: CuratorResponse = client.curate(request)
+    client = HeadwaterClient()
+    response: CuratorResponse = client.curator.curate(request)
     results = response.results
     results_tuples = [(result.id, result.score) for result in results]
     return results_tuples

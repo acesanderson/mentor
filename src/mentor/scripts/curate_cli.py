@@ -39,6 +39,9 @@ def main():
     )
     args = parser.parse_args()
     query_string = args.query_string
+    if not query_string:
+        console.print("[red]Error: You must provide a query string.[/red]")
+        return
     if args.number_responses:
         k = args.number_responses
     else:

@@ -11,6 +11,8 @@ requires-python = ">=3.12"
 dependencies = [
     "conduit",
     "kramer",
+    "headwater_client",
+    "headwater_api",
     "levenshtein>=0.27.1",
     "motor>=3.7.1",
     "pandas>=2.3.2",
@@ -33,6 +35,8 @@ include = ["src/mentor/py.typed"]
 [tool.uv.sources]
 kramer = { path = "../kramer-project", editable = true }
 conduit = { path = "../conduit-project", editable = true }
+headwater_api = { path = "../headwater/headwater-api", editable = true }
+headwater_client = { path = "../headwater/headwater-client", editable = true }
 
 [project.scripts]
 mentor = "mentor.scripts.mentor_cli:main"
