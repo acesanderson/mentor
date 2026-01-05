@@ -5,10 +5,6 @@ Three personas are leveraged:
 - an L&D specialist who designs an ideal curriculum for a given topic
 - a Curriculum Structuring Specialist who turns that into a structured object
 - a Course Librarian who is provided with the RAG (output of Curator queries) and designs a Curation object.
-
-
-
-'persona_curriculum_specialist', 'persona_lnd', 'persona_video_course_librarian'])
 """
 
 from mentor.mentor.CurriculumModule import Curriculum
