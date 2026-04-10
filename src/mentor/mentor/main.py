@@ -119,14 +119,6 @@ def identify_courses(curriculum: Curriculum) -> Curation:
     return curation_result
 
 
-topic = "Data Science"
-desc = lnd_curriculum(topic)
-curriculum = curriculum_specialist_curriculum(desc, topic)
-curation = identify_courses(curriculum)
-print(curation)
-exit()
-
-
 def Mentor(
     topic: str, cache: bool = True, return_curriculum: bool = False
 ) -> Curation | tuple[Curriculum, Curation]:
